@@ -316,42 +316,6 @@ export default function SitesPage() {
   return (
     <AppShell>
       <div className="h-[calc(100vh-4rem)] flex flex-col">
-        {/* Header */}
-        <div className="px-4 py-3 border-b border-stone-200 bg-white flex-shrink-0">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <div>
-              <h1 className="text-xl font-semibold text-stone-900">
-                {tripYear ? `Sites for ${tripYear.year}` : 'Sites'}
-              </h1>
-              <p className="text-sm text-stone-600">
-                {myVotes.length} of {MAX_VOTES} votes used
-                {filteredAndSortedSites.length !== sites.length && (
-                  <span className="ml-2 text-stone-400">
-                    ({filteredAndSortedSites.length} of {sites.length} shown)
-                  </span>
-                )}
-              </p>
-            </div>
-            {/* Mobile view toggle */}
-            <div className="flex md:hidden gap-2">
-              <Button
-                variant={view === 'list' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setView('list')}
-              >
-                List
-              </Button>
-              <Button
-                variant={view === 'map' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setView('map')}
-              >
-                Map
-              </Button>
-            </div>
-          </div>
-        </div>
-
         {/* Main content - split view */}
         <div className="flex-1 flex overflow-hidden">
           {/* List view - 60% */}
@@ -425,6 +389,26 @@ export default function SitesPage() {
                   <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-stone-400' : 'text-emerald-600'}`}>
                     {MAX_VOTES - myVotes.length}/{MAX_VOTES}
                   </span>
+                </div>
+
+                {/* Mobile view toggle */}
+                <div className="flex md:hidden gap-1">
+                  <Button
+                    variant={view === 'list' ? 'default' : 'outline'}
+                    size="sm"
+                    onClick={() => setView('list')}
+                    className="h-8"
+                  >
+                    List
+                  </Button>
+                  <Button
+                    variant={view === 'map' ? 'default' : 'outline'}
+                    size="sm"
+                    onClick={() => setView('map')}
+                    className="h-8"
+                  >
+                    Map
+                  </Button>
                 </div>
               </div>
             </div>
