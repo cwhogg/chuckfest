@@ -41,7 +41,6 @@ const difficultyColors: Record<string, string> = {
 
 // Get a seeded image URL from picsum.photos
 function getPlaceholderImage(siteId: string): string {
-  // Use site ID as seed for consistent images
   return `https://picsum.photos/seed/${siteId}/200/200`
 }
 
@@ -69,12 +68,11 @@ export function SiteCard({
   }
 
   const truncatedDescription = site.description
-    ? site.description.length > 80
-      ? site.description.substring(0, 80) + '...'
+    ? site.description.length > 100
+      ? site.description.substring(0, 100) + '...'
       : site.description
     : null
 
-  // Use first photo from array, or fall back to placeholder
   const photoUrl = site.photos && site.photos.length > 0 && !imageError
     ? site.photos[0]
     : getPlaceholderImage(site.id)
@@ -93,24 +91,21 @@ export function SiteCard({
       onMouseLeave={onMouseLeave}
     >
       <div className="flex">
-        {/* Left side - Content (70%) */}
+        {/* Left side - Content */}
         <div className="flex-1 p-3 flex flex-col min-w-0">
-          {/* Header row: number + name + region */}
+          {/* Header row: number + name */}
           <div className="flex items-start gap-2">
             <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">
               {number}
             </span>
             <div className="min-w-0 flex-1">
-              <h3 className="font-semibold text-base text-stone-900 leading-tight truncate">
+              <h3 className="font-semibold text-base text-stone-900 leading-tight">
                 {site.name}
               </h3>
               {site.region && (
-                <Badge
-                  variant="secondary"
-                  className="mt-1 text-xs font-normal bg-stone-100 text-stone-600 h-5"
-                >
+                <span className="text-xs text-stone-500 mt-0.5 block">
                   {site.region}
-                </Badge>
+                </span>
               )}
             </div>
           </div>
@@ -166,8 +161,8 @@ export function SiteCard({
             </p>
           )}
 
-          {/* Action row */}
-          <div className="flex items-center justify-between gap-2 mt-auto pt-2">
+          {/* View Details link */}
+          <div className="mt-auto pt-2">
             <Link href={`/sites/${site.id}`}>
               <Button
                 variant="ghost"
@@ -177,53 +172,67 @@ export function SiteCard({
                 View Details
               </Button>
             </Link>
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-stone-500">
-                {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
-              </span>
-              <Button
-                variant={isVoted ? 'default' : 'outline'}
-                size="sm"
-                onClick={handleVoteClick}
-                disabled={!isVoted && !canVote}
-                className={cn(
-                  'transition-all duration-150 active:scale-95 h-7 px-3 text-xs',
-                  isVoted
-                    ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
-                    : 'border-emerald-300 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-400'
-                )}
-              >
-                {isVoted ? (
-                  <span className="flex items-center gap-1">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                    </svg>
-                    Voted
-                  </span>
-                ) : (
-                  'Vote'
-                )}
-              </Button>
-            </div>
           </div>
         </div>
 
-        {/* Right side - Image (30%) */}
-        <div className="flex-shrink-0 w-[140px] relative">
-          {imageError ? (
-            <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center">
-              <svg className="w-10 h-10 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21l6-6 4 4 8-8M3 21h18M3 21V3h18v18" />
-              </svg>
+        {/* Right side - Image + Vote */}
+        <div className="flex-shrink-0 flex flex-col w-[180px]">
+          {/* Vote count - top right */}
+          <div className="text-right px-3 pt-2">
+            <span className="text-sm font-semibold text-emerald-700">
+              {site.vote_count}
+            </span>
+            <span className="text-xs text-stone-500 ml-1">
+              vote{site.vote_count !== 1 ? 's' : ''}
+            </span>
+          </div>
+
+          {/* Image */}
+          <div className="flex-1 px-3 py-2">
+            <div className="w-full h-[80px] rounded-lg overflow-hidden">
+              {imageError ? (
+                <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21l6-6 4 4 8-8M3 21h18M3 21V3h18v18" />
+                  </svg>
+                </div>
+              ) : (
+                <img
+                  src={photoUrl}
+                  alt={site.name}
+                  className="w-full h-full object-cover"
+                  onError={() => setImageError(true)}
+                />
+              )}
             </div>
-          ) : (
-            <img
-              src={photoUrl}
-              alt={site.name}
-              className="w-full h-full object-cover"
-              onError={() => setImageError(true)}
-            />
-          )}
+          </div>
+
+          {/* Vote button - bottom right */}
+          <div className="px-3 pb-3 text-right">
+            <Button
+              variant={isVoted ? 'default' : 'outline'}
+              size="sm"
+              onClick={handleVoteClick}
+              disabled={!isVoted && !canVote}
+              className={cn(
+                'transition-all duration-150 active:scale-95 h-7 px-3 text-xs',
+                isVoted
+                  ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
+                  : 'border-emerald-300 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-400'
+              )}
+            >
+              {isVoted ? (
+                <span className="flex items-center gap-1">
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  Voted
+                </span>
+              ) : (
+                'Vote'
+              )}
+            </Button>
+          </div>
         </div>
       </div>
     </Card>

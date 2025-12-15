@@ -353,11 +353,11 @@ export default function SitesPage() {
 
         {/* Main content - split view */}
         <div className="flex-1 flex overflow-hidden">
-          {/* List view - 55% */}
+          {/* List view - 60% */}
           <div
             className={`
               ${view === 'list' ? 'flex' : 'hidden'}
-              md:flex md:w-[55%] flex-col overflow-hidden border-r border-stone-200
+              md:flex md:w-[60%] flex-col overflow-hidden border-r border-stone-200
             `}
           >
             {/* Filter/Sort Row */}
@@ -455,11 +455,11 @@ export default function SitesPage() {
             </div>
           </div>
 
-          {/* Map view - 45% - sticky */}
+          {/* Map view - 40% - sticky */}
           <div
             className={`
               ${view === 'map' ? 'flex' : 'hidden'}
-              md:flex md:w-[45%] flex-col sticky top-0 h-full
+              md:flex md:w-[40%] flex-col sticky top-0 h-full
             `}
           >
             <SitesMap
