@@ -10,6 +10,29 @@ export const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 export const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
 
+// Test mode configuration
+export const EMAIL_TEST_MODE = process.env.EMAIL_TEST_MODE === 'true'
+export const EMAIL_TEST_RECIPIENT = process.env.EMAIL_TEST_RECIPIENT || ''
+
+/**
+ * Check if email test mode is enabled
+ */
+export function isEmailTestMode(): boolean {
+  return EMAIL_TEST_MODE
+}
+
+/**
+ * Get the test recipient email, or null if not configured
+ */
+export function getTestRecipient(): string | null {
+  if (!EMAIL_TEST_MODE) return null
+  if (!EMAIL_TEST_RECIPIENT) {
+    console.warn('EMAIL_TEST_MODE is true but EMAIL_TEST_RECIPIENT is not set')
+    return null
+  }
+  return EMAIL_TEST_RECIPIENT
+}
+
 export interface SendEmailOptions {
   to: string | string[]
   subject: string

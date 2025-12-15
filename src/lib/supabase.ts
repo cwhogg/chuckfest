@@ -1,13 +1,31 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables')
+// Create client lazily to avoid build-time errors when env vars aren't set
+let _supabase: SupabaseClient | null = null
+
+function getSupabaseClient(): SupabaseClient {
+  if (_supabase) return _supabase
+
+  if (!supabaseUrl || !supabaseAnonKey) {
+    throw new Error('Missing Supabase environment variables')
+  }
+
+  _supabase = createClient(supabaseUrl, supabaseAnonKey)
+  return _supabase
 }
 
-// Note: We're not using the Database generic type here because our types
-// are structured for application use, not for Supabase's type system.
-// Use type assertions (e.g., `data as Site[]`) when querying.
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Export a proxy that lazily initializes the client
+// This allows the build to succeed even without env vars
+export const supabase = new Proxy({} as SupabaseClient, {
+  get(_, prop) {
+    const client = getSupabaseClient()
+    const value = client[prop as keyof SupabaseClient]
+    if (typeof value === 'function') {
+      return value.bind(client)
+    }
+    return value
+  }
+})

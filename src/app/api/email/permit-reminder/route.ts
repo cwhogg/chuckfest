@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, isEmailTestMode, getTestRecipient } from '@/lib/email'
 import { formatDateInLA } from '@/lib/permits'
 import PermitReminderEmail from '@/emails/permit-reminder'
-import type { PermitReminder, Site, TripYear, Member } from '@/lib/types'
+import type { PermitReminder, Site, TripYear } from '@/lib/types'
 
 /**
  * POST /api/email/permit-reminder
@@ -45,24 +45,49 @@ export async function POST(request: NextRequest) {
 
     const reminder = reminderData as PermitReminder & { site: Site; trip_year: TripYear }
 
-    // Determine recipients
+    // Check for env-based test mode
+    const envTestMode = isEmailTestMode()
+    const envTestRecipient = getTestRecipient()
+
+    // Fetch all active members with names
+    const { data: members, error: membersError } = await supabase
+      .from('members')
+      .select('email, name')
+      .eq('is_active', true)
+
+    if (membersError) {
+      throw membersError
+    }
+
+    const memberList = members || []
+    const allRecipientEmails = memberList.map(m => m.email)
+    const memberNames = memberList.map(m => m.name)
+
+    // Determine recipients based on test modes
     let recipients: string[]
+    let wouldHaveSentTo: string[] = []
+    let isTestMode = false
 
     if (testEmail) {
-      // Test mode - only send to specified email
+      // Explicit testEmail parameter takes precedence
       recipients = [testEmail]
-    } else {
-      // Production mode - fetch all active members
-      const { data: members, error: membersError } = await supabase
-        .from('members')
-        .select('email')
-        .eq('is_active', true)
-
-      if (membersError) {
-        throw membersError
+      isTestMode = true
+    } else if (envTestMode) {
+      // Env-based test mode
+      if (!envTestRecipient) {
+        return NextResponse.json(
+          { success: false, error: 'EMAIL_TEST_MODE is enabled but EMAIL_TEST_RECIPIENT is not set' },
+          { status: 500 }
+        )
       }
-
-      recipients = (members as Pick<Member, 'email'>[]).map(m => m.email)
+      recipients = [envTestRecipient]
+      wouldHaveSentTo = memberNames
+      isTestMode = true
+      console.log(`TEST MODE: Would send to ${memberList.length} members: ${memberNames.join(', ')}`)
+      console.log(`TEST MODE: Actually sending to: ${envTestRecipient}`)
+    } else {
+      // Production mode
+      recipients = allRecipientEmails
     }
 
     if (recipients.length === 0) {
@@ -98,7 +123,9 @@ export async function POST(request: NextRequest) {
     })
 
     // Send the email
-    const subject = `Permits for ${reminder.site.name} open TOMORROW!`
+    const subject = isTestMode
+      ? `[TEST] Permits for ${reminder.site.name} open TOMORROW!`
+      : `Permits for ${reminder.site.name} open TOMORROW!`
 
     const result = await sendEmail({
       to: recipients,
@@ -117,8 +144,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Update reminder status (only if not a test)
-    if (!testEmail) {
+    // Update reminder status (only if not in any test mode)
+    if (!isTestMode) {
       await supabase
         .from('permit_reminders')
         .update({ status: 'reminder_sent' })
@@ -128,18 +155,21 @@ export async function POST(request: NextRequest) {
       await supabase.from('reminders_log').insert({
         reminder_type: 'permit_opening',
         reference_id: permitReminderId,
-        recipient_count: recipients.length,
+        recipient_count: allRecipientEmails.length,
         email_subject: subject,
       })
     }
 
     return NextResponse.json({
       success: true,
-      message: testEmail
-        ? `Test email sent to ${testEmail}`
+      testMode: isTestMode,
+      message: isTestMode
+        ? `Test email sent to ${recipients[0]}`
         : `Email sent to ${recipients.length} recipients`,
       emailId: result.id,
-      recipientCount: recipients.length,
+      recipientCount: isTestMode ? allRecipientEmails.length : recipients.length,
+      actualRecipients: recipients.length,
+      wouldHaveSentTo: wouldHaveSentTo.length > 0 ? wouldHaveSentTo : undefined,
     })
   } catch (error) {
     console.error('Error in POST /api/email/permit-reminder:', error)

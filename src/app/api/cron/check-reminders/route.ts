@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, isEmailTestMode, getTestRecipient } from '@/lib/email'
 import { getDueReminders, formatDateInLA } from '@/lib/permits'
 import PermitReminderEmail from '@/emails/permit-reminder'
 import type { TripYear } from '@/lib/types'
@@ -36,15 +36,21 @@ export async function GET(request: NextRequest) {
     )
   }
 
-  console.log('Cron job started: check-reminders')
+  const testMode = isEmailTestMode()
+  const testRecipient = getTestRecipient()
+
+  console.log(`Cron job started: check-reminders (testMode: ${testMode})`)
 
   const results = {
     checked: true,
     timestamp: new Date().toISOString(),
+    testMode,
+    testRecipient: testMode ? testRecipient : undefined,
     remindersSent: 0,
     remindersFound: 0,
     errors: [] as string[],
     details: [] as { site: string; success: boolean; error?: string }[],
+    wouldHaveSentTo: [] as string[],
   }
 
   try {
@@ -59,25 +65,41 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(results)
     }
 
-    // Fetch all active members
+    // Fetch all active members with names
     const { data: members, error: membersError } = await supabase
       .from('members')
-      .select('email')
+      .select('email, name')
       .eq('is_active', true)
 
     if (membersError) {
       throw new Error(`Failed to fetch members: ${membersError.message}`)
     }
 
-    const recipients = members?.map(m => m.email) || []
+    const memberList = members || []
+    const allRecipientEmails = memberList.map(m => m.email)
+    const memberNames = memberList.map(m => m.name)
 
-    if (recipients.length === 0) {
+    if (memberList.length === 0) {
       console.warn('No active members to send reminders to')
       results.errors.push('No active members found')
       return NextResponse.json(results)
     }
 
-    console.log(`Sending to ${recipients.length} recipients`)
+    // Determine actual recipients based on test mode
+    let recipients: string[]
+    if (testMode) {
+      if (!testRecipient) {
+        results.errors.push('EMAIL_TEST_MODE is enabled but EMAIL_TEST_RECIPIENT is not set')
+        return NextResponse.json(results, { status: 500 })
+      }
+      recipients = [testRecipient]
+      results.wouldHaveSentTo = memberNames
+      console.log(`TEST MODE: Would send to ${memberList.length} members: ${memberNames.join(', ')}`)
+      console.log(`TEST MODE: Actually sending to: ${testRecipient}`)
+    } else {
+      recipients = allRecipientEmails
+      console.log(`Sending to ${recipients.length} recipients`)
+    }
 
     // Process each reminder
     for (const reminder of dueReminders) {
@@ -122,7 +144,9 @@ export async function GET(request: NextRequest) {
           permitCost: reminder.site.permit_cost || undefined,
         })
 
-        const subject = `Permits for ${siteName} open TOMORROW!`
+        const subject = testMode
+          ? `[TEST] Permits for ${siteName} open TOMORROW!`
+          : `Permits for ${siteName} open TOMORROW!`
 
         // Send email
         const emailResult = await sendEmail({
@@ -132,23 +156,24 @@ export async function GET(request: NextRequest) {
         })
 
         if (emailResult.success) {
-          // Update reminder status
-          await supabase
-            .from('permit_reminders')
-            .update({ status: 'reminder_sent' })
-            .eq('id', reminder.id)
+          // Only update reminder status and log if NOT in test mode
+          if (!testMode) {
+            await supabase
+              .from('permit_reminders')
+              .update({ status: 'reminder_sent' })
+              .eq('id', reminder.id)
 
-          // Log to reminders_log
-          await supabase.from('reminders_log').insert({
-            reminder_type: 'permit_opening',
-            reference_id: reminder.id,
-            recipient_count: recipients.length,
-            email_subject: subject,
-          })
+            await supabase.from('reminders_log').insert({
+              reminder_type: 'permit_opening',
+              reference_id: reminder.id,
+              recipient_count: allRecipientEmails.length,
+              email_subject: subject,
+            })
+          }
 
           results.remindersSent++
           results.details.push({ site: siteName, success: true })
-          console.log(`Sent reminder for ${siteName}`)
+          console.log(`${testMode ? '[TEST] ' : ''}Sent reminder for ${siteName}`)
         } else {
           const errorMsg = `Failed to send email for ${siteName}: ${emailResult.error}`
           results.errors.push(errorMsg)
