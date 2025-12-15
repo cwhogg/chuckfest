@@ -95,18 +95,13 @@ export default function SitesPage() {
       setTripYear(currentTripYear)
 
       // Fetch sites with vote counts
-      const sitesUrl = currentTripYear
-        ? `/api/sites?tripYearId=${currentTripYear.id}`
-        : '/api/sites'
-      const sitesRes = await fetch(sitesUrl)
+      const sitesRes = await fetch('/api/sites')
       const sitesData = await sitesRes.json()
       setSites(sitesData.sites || [])
 
       // Fetch user's votes
-      if (currentMemberId && currentTripYear) {
-        const votesRes = await fetch(
-          `/api/votes?memberId=${currentMemberId}&tripYearId=${currentTripYear.id}`
-        )
+      if (currentMemberId) {
+        const votesRes = await fetch(`/api/votes?memberId=${currentMemberId}`)
         const votesData = await votesRes.json()
         setMyVotes(votesData.votes || [])
       }

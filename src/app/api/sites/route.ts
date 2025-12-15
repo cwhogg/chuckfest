@@ -1,17 +1,13 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
 /**
  * GET /api/sites
  *
  * Get all sites with vote counts
- * Query params: ?tripYearId=xxx (optional, for filtering vote counts)
  */
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
-    const { searchParams } = new URL(request.url)
-    const tripYearId = searchParams.get('tripYearId')
-
     // Get all sites
     const { data: sites, error } = await supabase
       .from('sites')
@@ -23,15 +19,9 @@ export async function GET(request: NextRequest) {
     }
 
     // Get vote counts for each site
-    let votesQuery = supabase
+    const { data: votes } = await supabase
       .from('votes')
       .select('site_id')
-
-    if (tripYearId) {
-      votesQuery = votesQuery.eq('trip_year_id', tripYearId)
-    }
-
-    const { data: votes } = await votesQuery
 
     // Count votes per site
     const voteCountMap: Record<string, number> = {}

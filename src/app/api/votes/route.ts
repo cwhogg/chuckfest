@@ -14,7 +14,6 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const memberId = searchParams.get('memberId')
     const siteId = searchParams.get('siteId')
-    const tripYearId = searchParams.get('tripYearId')
 
     let query = supabase
       .from('votes')
@@ -29,9 +28,6 @@ export async function GET(request: NextRequest) {
     }
     if (siteId) {
       query = query.eq('site_id', siteId)
-    }
-    if (tripYearId) {
-      query = query.eq('trip_year_id', tripYearId)
     }
 
     const { data, error } = await query
@@ -77,7 +73,6 @@ export async function POST(request: NextRequest) {
       .select('id')
       .eq('member_id', memberId)
       .eq('site_id', siteId)
-      .eq('trip_year_id', tripYearId)
       .maybeSingle()
 
     if (existingError) {
@@ -100,7 +95,6 @@ export async function POST(request: NextRequest) {
       .from('votes')
       .select('*', { count: 'exact', head: true })
       .eq('member_id', memberId)
-      .eq('trip_year_id', tripYearId)
 
     if (countError) {
       console.error('Error counting votes:', countError)
@@ -122,8 +116,7 @@ export async function POST(request: NextRequest) {
       .from('votes')
       .insert({
         member_id: memberId,
-        site_id: siteId,
-        trip_year_id: tripYearId
+        site_id: siteId
       })
       .select()
       .single()
