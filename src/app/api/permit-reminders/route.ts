@@ -12,6 +12,7 @@ import type { TripYear, Site } from '@/lib/types'
  * GET /api/permit-reminders
  *
  * Query params:
+ *   - tripYearId=xxx: Filter by trip year
  *   - upcoming=true: Get reminders due in the next 30 days
  *   - due=true: Get reminders ready to send now
  *   - days=N: Number of days to look ahead (with upcoming=true)
@@ -19,6 +20,7 @@ import type { TripYear, Site } from '@/lib/types'
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
+    const tripYearId = searchParams.get('tripYearId')
     const upcoming = searchParams.get('upcoming') === 'true'
     const due = searchParams.get('due') === 'true'
     const days = parseInt(searchParams.get('days') || '30', 10)
@@ -42,16 +44,24 @@ export async function GET(request: NextRequest) {
       })
     }
 
-    // Default: return all pending reminders
-    const { data, error } = await supabase
+    // Build query
+    let query = supabase
       .from('permit_reminders')
       .select(`
         *,
-        site:sites(*),
-        trip_year:trip_years(*)
+        site:sites(*)
       `)
-      .eq('status', 'pending')
       .order('reminder_datetime', { ascending: true })
+
+    // Filter by trip year if provided
+    if (tripYearId) {
+      query = query.eq('trip_year_id', tripYearId)
+    } else {
+      // Default: only pending
+      query = query.eq('status', 'pending')
+    }
+
+    const { data, error } = await query
 
     if (error) {
       throw error
