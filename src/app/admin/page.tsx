@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback } from 'react'
+import Link from 'next/link'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -506,7 +507,22 @@ export default function AdminPage() {
       {/* Header */}
       <header className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">ChuckfestAI Admin</h1>
+          <div className="flex items-center gap-4">
+            <Link href="/sites" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <svg
+                className="w-8 h-8 text-emerald-700"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M12 2L2 22h20L12 2zm0 3l7.5 15h-15L12 5z"/>
+              </svg>
+              <span className="text-xl font-bold text-emerald-800">
+                ChuckfestAI
+              </span>
+            </Link>
+            <span className="text-gray-400">|</span>
+            <h1 className="text-xl font-semibold text-gray-700">Admin</h1>
+          </div>
         </div>
       </header>
 
