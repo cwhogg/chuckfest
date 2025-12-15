@@ -72,13 +72,21 @@ export async function POST(request: NextRequest) {
     }
 
     // Check if user already voted for this site
-    const { data: existingVote } = await supabase
+    const { data: existingVote, error: existingError } = await supabase
       .from('votes')
       .select('id')
       .eq('member_id', memberId)
       .eq('site_id', siteId)
       .eq('trip_year_id', tripYearId)
-      .single()
+      .maybeSingle()
+
+    if (existingError) {
+      console.error('Error checking existing vote:', existingError)
+      return NextResponse.json(
+        { success: false, error: existingError.message },
+        { status: 400 }
+      )
+    }
 
     if (existingVote) {
       return NextResponse.json(
@@ -95,7 +103,11 @@ export async function POST(request: NextRequest) {
       .eq('trip_year_id', tripYearId)
 
     if (countError) {
-      throw countError
+      console.error('Error counting votes:', countError)
+      return NextResponse.json(
+        { success: false, error: countError.message },
+        { status: 400 }
+      )
     }
 
     if (count && count >= MAX_VOTES_PER_MEMBER) {
@@ -117,7 +129,11 @@ export async function POST(request: NextRequest) {
       .single()
 
     if (error) {
-      throw error
+      console.error('Supabase insert error:', error)
+      return NextResponse.json(
+        { success: false, error: error.message, details: error },
+        { status: 400 }
+      )
     }
 
     return NextResponse.json({
@@ -127,8 +143,9 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error('Error in POST /api/votes:', error)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
     return NextResponse.json(
-      { success: false, error: error instanceof Error ? error.message : 'Unknown error' },
+      { success: false, error: errorMessage },
       { status: 500 }
     )
   }
