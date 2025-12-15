@@ -9,7 +9,7 @@ const protectedRoutes = ['/sites', '/dates', '/past-trips']
 // Routes that don't require authentication
 const publicRoutes = ['/', '/admin', '/test-permits']
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Allow API routes
