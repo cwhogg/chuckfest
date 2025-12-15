@@ -192,7 +192,14 @@ export default function SitesPage() {
   }, [filteredAndSortedSites])
 
   const handleVote = async (siteId: string) => {
-    if (!memberId || !tripYear) return
+    if (!memberId) {
+      toast.error('Please select a member first')
+      return
+    }
+    if (!tripYear) {
+      toast.error('No active trip year found')
+      return
+    }
     if (myVotes.length >= MAX_VOTES) {
       toast.error(`You can only vote for ${MAX_VOTES} sites`)
       return
@@ -224,11 +231,11 @@ export default function SitesPage() {
         })
       })
 
-      if (!res.ok) {
-        throw new Error('Failed to vote')
-      }
-
       const data = await res.json()
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Failed to vote')
+      }
 
       // Update with real vote ID
       setMyVotes(prev =>
@@ -247,7 +254,7 @@ export default function SitesPage() {
           s.id === siteId ? { ...s, vote_count: s.vote_count - 1 } : s
         )
       )
-      toast.error('Failed to submit vote')
+      toast.error(error instanceof Error ? error.message : 'Failed to submit vote')
     }
   }
 
