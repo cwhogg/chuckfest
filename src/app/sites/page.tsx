@@ -424,6 +424,14 @@ export default function SitesPage() {
                     </SelectContent>
                   </Select>
                 </div>
+
+                {/* Votes remaining indicator */}
+                <div className="ml-auto flex items-center gap-2 bg-white border border-stone-200 rounded-md px-3 py-1.5">
+                  <span className="text-sm text-stone-600">Votes Remaining</span>
+                  <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-stone-400' : 'text-emerald-600'}`}>
+                    {MAX_VOTES - myVotes.length}/{MAX_VOTES}
+                  </span>
+                </div>
               </div>
             </div>
 
