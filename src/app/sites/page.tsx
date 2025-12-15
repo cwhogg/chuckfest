@@ -42,6 +42,7 @@ interface Site {
   difficulty: string | null
   permit_required: boolean
   vote_count: number
+  photos?: string[] | null
 }
 
 interface Vote {
@@ -172,6 +173,23 @@ export default function SitesPage() {
 
     return result
   }, [sites, regionFilter, difficultyFilter, sortBy])
+
+  // Create numbered sites for display (numbers based on filtered/sorted order)
+  const numberedSites = useMemo(() => {
+    const numberMap = new Map<string, number>()
+    filteredAndSortedSites.forEach((site, index) => {
+      numberMap.set(site.id, index + 1)
+    })
+    return numberMap
+  }, [filteredAndSortedSites])
+
+  // Sites with numbers for the map (only show filtered sites with their numbers)
+  const sitesForMap = useMemo(() => {
+    return filteredAndSortedSites.map((site, index) => ({
+      ...site,
+      number: index + 1
+    }))
+  }, [filteredAndSortedSites])
 
   const handleVote = async (siteId: string) => {
     if (!memberId || !tripYear) return
@@ -411,10 +429,11 @@ export default function SitesPage() {
                     : 'No sites match your filters.'}
                 </div>
               ) : (
-                filteredAndSortedSites.map(site => (
+                filteredAndSortedSites.map((site, index) => (
                   <SiteCard
                     key={site.id}
                     site={site}
+                    number={index + 1}
                     isVoted={votedSiteIds.has(site.id)}
                     canVote={canVote}
                     onVote={() => handleVote(site.id)}
@@ -444,7 +463,7 @@ export default function SitesPage() {
             `}
           >
             <SitesMap
-              sites={sites}
+              sites={sitesForMap}
               selectedSiteId={selectedSiteId}
               hoveredSiteId={hoveredSiteId}
               onSiteSelect={handleMapSiteSelect}

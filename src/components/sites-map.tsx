@@ -6,41 +6,6 @@ import L from 'leaflet'
 import Link from 'next/link'
 import 'leaflet/dist/leaflet.css'
 
-// Fix for default marker icons in Next.js
-const defaultIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-})
-
-const selectedIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [30, 49],
-  iconAnchor: [15, 49],
-  popupAnchor: [1, -40],
-  shadowSize: [49, 49],
-  className: 'selected-marker'
-})
-
-const hoveredIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [28, 45],
-  iconAnchor: [14, 45],
-  popupAnchor: [1, -37],
-  shadowSize: [45, 45],
-  className: 'hovered-marker'
-})
-
-L.Marker.prototype.options.icon = defaultIcon
-
 interface Site {
   id: string
   name: string
@@ -49,11 +14,51 @@ interface Site {
   vote_count: number
 }
 
+interface SiteWithNumber extends Site {
+  number: number
+}
+
 interface SitesMapProps {
-  sites: Site[]
+  sites: SiteWithNumber[]
   selectedSiteId?: string | null
   hoveredSiteId?: string | null
   onSiteSelect?: (siteId: string) => void
+}
+
+// Create a numbered marker icon
+function createNumberedIcon(number: number, isSelected: boolean, isHovered: boolean): L.DivIcon {
+  const size = isSelected ? 36 : isHovered ? 32 : 28
+  const fontSize = isSelected ? 14 : isHovered ? 13 : 12
+  const bgColor = isSelected ? '#059669' : isHovered ? '#10b981' : '#059669'
+  const borderColor = isSelected ? '#047857' : isHovered ? '#059669' : '#047857'
+  const shadow = isSelected || isHovered ? '0 4px 6px -1px rgba(0,0,0,0.3)' : '0 2px 4px rgba(0,0,0,0.2)'
+  const animation = isHovered && !isSelected ? 'animation: pulse 1s ease-in-out infinite;' : ''
+
+  return L.divIcon({
+    className: 'custom-numbered-marker',
+    html: `
+      <div style="
+        width: ${size}px;
+        height: ${size}px;
+        background-color: ${bgColor};
+        border: 2px solid ${borderColor};
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: ${fontSize}px;
+        font-family: system-ui, -apple-system, sans-serif;
+        box-shadow: ${shadow};
+        transition: all 0.2s ease;
+        ${animation}
+      ">${number}</div>
+    `,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+  })
 }
 
 // Component to handle map center changes
@@ -69,7 +74,7 @@ function MapUpdater({ center, selectedSiteId }: { center: [number, number], sele
   return null
 }
 
-// Component to add pulsing animation styles
+// Component to add global styles
 function MapStyles() {
   useEffect(() => {
     const styleId = 'sites-map-styles'
@@ -77,15 +82,13 @@ function MapStyles() {
       const style = document.createElement('style')
       style.id = styleId
       style.textContent = `
-        .hovered-marker {
-          animation: pulse 1s ease-in-out infinite;
-        }
-        .selected-marker {
-          filter: hue-rotate(120deg) brightness(1.2);
+        .custom-numbered-marker {
+          background: transparent !important;
+          border: none !important;
         }
         @keyframes pulse {
-          0%, 100% { transform: scale(1); opacity: 1; }
-          50% { transform: scale(1.1); opacity: 0.9; }
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.15); }
         }
       `
       document.head.appendChild(style)
@@ -107,7 +110,7 @@ function SiteMarker({
   isHovered,
   onSelect,
 }: {
-  site: Site
+  site: SiteWithNumber
   isSelected: boolean
   isHovered: boolean
   onSelect: () => void
@@ -121,30 +124,31 @@ function SiteMarker({
     }
   }, [isSelected])
 
-  const getIcon = () => {
-    if (isSelected) return selectedIcon
-    if (isHovered) return hoveredIcon
-    return defaultIcon
-  }
+  const icon = createNumberedIcon(site.number, isSelected, isHovered)
 
   return (
     <Marker
       ref={markerRef}
       position={[site.latitude!, site.longitude!]}
-      icon={getIcon()}
+      icon={icon}
       eventHandlers={{
         click: onSelect
       }}
     >
       <Popup>
-        <div className="min-w-[150px]">
-          <div className="font-semibold text-stone-900">{site.name}</div>
-          <div className="text-sm text-stone-600 mt-1">
+        <div className="min-w-[160px]">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold">
+              {site.number}
+            </span>
+            <span className="font-semibold text-stone-900">{site.name}</span>
+          </div>
+          <div className="text-sm text-stone-600 mb-2">
             {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
           </div>
           <Link
             href={`/sites/${site.id}`}
-            className="inline-block mt-2 text-sm text-emerald-700 hover:text-emerald-800 hover:underline font-medium"
+            className="inline-block text-sm text-emerald-700 hover:text-emerald-800 hover:underline font-medium"
           >
             View Details &rarr;
           </Link>
