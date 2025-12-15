@@ -59,6 +59,7 @@ interface Site {
   permit_type: string
   permit_open_days_before: number | null
   permit_open_date: string | null
+  photos: string[] | null
 }
 
 interface PermitReminder {
@@ -120,6 +121,8 @@ export default function AdminPage() {
   const [newMember, setNewMember] = useState({ name: '', email: '', phone: '' })
   const [selectedSites, setSelectedSites] = useState<string[]>([])
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
+  const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
+  const [savingPhoto, setSavingPhoto] = useState<string | null>(null)
 
   const showMessage = (type: 'success' | 'error', text: string) => {
     setMessage({ type, text })
@@ -415,6 +418,62 @@ export default function AdminPage() {
     }
   }
 
+  const saveSitePhoto = async (siteId: string) => {
+    const photoUrl = photoInputs[siteId]?.trim()
+    if (!photoUrl) {
+      showMessage('error', 'Please enter a photo URL')
+      return
+    }
+
+    setSavingPhoto(siteId)
+    try {
+      const res = await fetch(`/api/sites/${siteId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ photos: [photoUrl] }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Photo saved!')
+        // Clear the input and refresh data
+        setPhotoInputs(prev => ({ ...prev, [siteId]: '' }))
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to save photo')
+      console.error(error)
+    } finally {
+      setSavingPhoto(null)
+    }
+  }
+
+  const clearSitePhoto = async (siteId: string) => {
+    setSavingPhoto(siteId)
+    try {
+      const res = await fetch(`/api/sites/${siteId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ photos: null }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Photo cleared')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to clear photo')
+      console.error(error)
+    } finally {
+      setSavingPhoto(null)
+    }
+  }
+
   const formatDate = (dateStr: string) => {
     return new Date(dateStr).toLocaleDateString('en-US', {
       weekday: 'short',
@@ -465,11 +524,12 @@ export default function AdminPage() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Tabs defaultValue="trip-year" className="space-y-6">
-          <TabsList className="grid grid-cols-5 w-full max-w-2xl">
+          <TabsList className="grid grid-cols-6 w-full max-w-3xl">
             <TabsTrigger value="trip-year">Trip Year</TabsTrigger>
             <TabsTrigger value="dates">Dates</TabsTrigger>
             <TabsTrigger value="reminders">Reminders</TabsTrigger>
             <TabsTrigger value="members">Members</TabsTrigger>
+            <TabsTrigger value="site-images">Site Images</TabsTrigger>
             <TabsTrigger value="actions">Actions</TabsTrigger>
           </TabsList>
 
@@ -915,7 +975,109 @@ export default function AdminPage() {
             </Card>
           </TabsContent>
 
-          {/* SECTION 5: Quick Actions */}
+          {/* SECTION 5: Site Images */}
+          <TabsContent value="site-images" className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Site Images</CardTitle>
+                <CardDescription>
+                  Manage photos for each site. Paste image URLs from Wikimedia Commons or other sources.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {sites
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map((site) => {
+                      const hasPhoto = site.photos && site.photos.length > 0 && !site.photos[0].includes('placehold')
+                      const currentPhoto = hasPhoto ? site.photos![0] : null
+
+                      return (
+                        <div key={site.id} className="flex items-start gap-4 p-4 border rounded-lg">
+                          {/* Thumbnail */}
+                          <div className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
+                            {currentPhoto ? (
+                              <img
+                                src={currentPhoto}
+                                alt={site.name}
+                                className="w-full h-full object-cover"
+                                onError={(e) => {
+                                  (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${site.id}/80/80`
+                                }}
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
+                                No image
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Site info and input */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+                              <h4 className="font-medium text-sm">{site.name}</h4>
+                              {hasPhoto && (
+                                <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+                                  Has photo
+                                </Badge>
+                              )}
+                            </div>
+                            <p className="text-xs text-gray-500 mb-2">{site.region}</p>
+
+                            <div className="flex gap-2">
+                              <Input
+                                placeholder="Paste image URL here..."
+                                value={photoInputs[site.id] || ''}
+                                onChange={(e) => setPhotoInputs(prev => ({ ...prev, [site.id]: e.target.value }))}
+                                className="text-sm h-8"
+                              />
+                              <Button
+                                size="sm"
+                                onClick={() => saveSitePhoto(site.id)}
+                                disabled={savingPhoto === site.id || !photoInputs[site.id]?.trim()}
+                              >
+                                {savingPhoto === site.id ? '...' : 'Save'}
+                              </Button>
+                              {hasPhoto && (
+                                <Button
+                                  size="sm"
+                                  variant="ghost"
+                                  onClick={() => clearSitePhoto(site.id)}
+                                  disabled={savingPhoto === site.id}
+                                  className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                                >
+                                  Clear
+                                </Button>
+                              )}
+                            </div>
+
+                            {currentPhoto && (
+                              <p className="text-xs text-gray-400 mt-1 truncate" title={currentPhoto}>
+                                Current: {currentPhoto}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      )
+                    })}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Tips Card */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base">Finding Images</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-gray-600 space-y-2">
+                <p><strong>Wikimedia Commons:</strong> Search for &quot;[lake name] california&quot; at commons.wikimedia.org</p>
+                <p><strong>Getting the URL:</strong> Click on an image, then right-click the full-size image and copy the image URL</p>
+                <p><strong>URL format:</strong> Should end in .jpg, .jpeg, or .png (e.g., https://upload.wikimedia.org/...)</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* SECTION 6: Quick Actions */}
           <TabsContent value="actions" className="space-y-6">
             <Card>
               <CardHeader>

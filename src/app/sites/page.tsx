@@ -84,14 +84,12 @@ export default function SitesPage() {
   const fetchData = useCallback(async () => {
     try {
       const currentMemberId = getCurrentMemberId()
-      console.log('Current member ID:', currentMemberId)
       setMemberId(currentMemberId)
 
       // Fetch current trip year
       const tripYearRes = await fetch('/api/trip-years?current=true')
       const tripYearData = await tripYearRes.json()
       const currentTripYear = tripYearData.tripYear
-      console.log('Current trip year:', currentTripYear)
       setTripYear(currentTripYear)
 
       // Fetch sites with vote counts
@@ -218,20 +216,16 @@ export default function SitesPage() {
     )
 
     try {
-      console.log('Voting with:', { memberId, siteId, tripYearId: tripYear.id })
-
       const res = await fetch('/api/votes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           memberId,
-          siteId,
-          tripYearId: tripYear.id
+          siteId
         })
       })
 
       const data = await res.json()
-      console.log('Vote API response:', { status: res.status, ok: res.ok, data })
 
       if (!res.ok || !data.success) {
         throw new Error(data.error || 'Failed to vote')

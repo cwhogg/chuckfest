@@ -90,3 +90,58 @@ export async function GET(
     )
   }
 }
+
+/**
+ * PATCH /api/sites/[id]
+ *
+ * Update a site (photos, etc.)
+ */
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await params
+    const body = await request.json()
+
+    // Only allow updating certain fields
+    const allowedFields = ['photos', 'description', 'difficulty', 'distance_miles', 'elevation_gain_ft', 'peak_elevation_ft']
+    const updates: Record<string, unknown> = {}
+
+    for (const field of allowedFields) {
+      if (body[field] !== undefined) {
+        updates[field] = body[field]
+      }
+    }
+
+    if (Object.keys(updates).length === 0) {
+      return NextResponse.json(
+        { success: false, error: 'No valid fields to update' },
+        { status: 400 }
+      )
+    }
+
+    const { data, error } = await supabase
+      .from('sites')
+      .update(updates)
+      .eq('id', id)
+      .select()
+      .single()
+
+    if (error) {
+      throw error
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: 'Site updated',
+      site: data
+    })
+  } catch (error) {
+    console.error('Error in PATCH /api/sites/[id]:', error)
+    return NextResponse.json(
+      { success: false, error: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 500 }
+    )
+  }
+}
