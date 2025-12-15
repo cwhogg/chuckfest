@@ -53,16 +53,16 @@ export async function GET(request: NextRequest) {
  * POST /api/votes
  *
  * Add a vote
- * Body: { memberId: string, siteId: string, tripYearId: string }
+ * Body: { memberId: string, siteId: string }
  */
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { memberId, siteId, tripYearId } = body
+    const { memberId, siteId } = body
 
-    if (!memberId || !siteId || !tripYearId) {
+    if (!memberId || !siteId) {
       return NextResponse.json(
-        { success: false, error: 'memberId, siteId, and tripYearId are required' },
+        { success: false, error: 'memberId and siteId are required' },
         { status: 400 }
       )
     }
