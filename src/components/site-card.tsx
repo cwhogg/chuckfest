@@ -66,12 +66,6 @@ export function SiteCard({
     }
   }
 
-  const truncatedDescription = site.description
-    ? site.description.length > 100
-      ? site.description.substring(0, 100) + '...'
-      : site.description
-    : null
-
   const photoUrl = site.photos && site.photos.length > 0 && !imageError
     ? site.photos[0]
     : getPlaceholderImage(site.id)
@@ -154,28 +148,15 @@ export function SiteCard({
           </div>
 
           {/* Description */}
-          {truncatedDescription && (
-            <p className="mt-2 text-xs text-stone-500 line-clamp-2 leading-relaxed">
-              {truncatedDescription}
+          {site.description && (
+            <p className="mt-2 text-xs text-stone-500 line-clamp-4 leading-relaxed">
+              {site.description}
             </p>
           )}
-
-          {/* View Details button */}
-          <div className="mt-auto pt-2">
-            <Link href={`/sites/${site.id}`}>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-stone-600 hover:text-stone-900 h-7 px-2 text-xs"
-              >
-                View Details
-              </Button>
-            </Link>
-          </div>
         </div>
 
-        {/* Middle section - Image (~120px) */}
-        <div className="flex-shrink-0 w-[120px] p-2 flex items-center">
+        {/* Middle section - Image + View Details (~120px) */}
+        <div className="flex-shrink-0 w-[120px] p-2 flex flex-col items-center gap-1">
           <div className="w-full aspect-square rounded-lg overflow-hidden">
             {imageError ? (
               <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center">
@@ -192,6 +173,15 @@ export function SiteCard({
               />
             )}
           </div>
+          <Link href={`/sites/${site.id}`} className="w-full">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-stone-600 hover:text-stone-900 h-7 px-2 text-xs w-full"
+            >
+              View Details
+            </Button>
+          </Link>
         </div>
 
         {/* Right section - Vote area (~80px) */}
