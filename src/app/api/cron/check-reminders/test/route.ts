@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, isEmailTestMode, getTestRecipient } from '@/lib/email'
 import { getDueReminders, formatDateInLA } from '@/lib/permits'
 import PermitReminderEmail from '@/emails/permit-reminder'
 import type { TripYear } from '@/lib/types'
@@ -37,17 +37,28 @@ export async function POST(request: NextRequest) {
     // No body is fine
   }
 
-  console.log(`Test cron job started (dryRun: ${dryRun}, testEmail: ${testEmail || 'none'})`)
+  // Check env-based test mode if no explicit testEmail provided
+  const envTestMode = isEmailTestMode()
+  const envTestRecipient = getTestRecipient()
+
+  // Use env test recipient if no explicit testEmail and env test mode is enabled
+  if (!testEmail && envTestMode && envTestRecipient) {
+    testEmail = envTestRecipient
+  }
+
+  console.log(`Test cron job started (dryRun: ${dryRun}, testEmail: ${testEmail || 'none'}, envTestMode: ${envTestMode})`)
 
   const results = {
     checked: true,
     timestamp: new Date().toISOString(),
     mode: dryRun ? 'dry-run' : 'live',
+    testMode: envTestMode || !!testEmail,
     testEmail: testEmail || undefined,
     remindersSent: 0,
     remindersFound: 0,
     errors: [] as string[],
     details: [] as { site: string; success: boolean; error?: string }[],
+    wouldHaveSentTo: [] as string[],
   }
 
   try {
@@ -62,30 +73,36 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(results)
     }
 
-    // Determine recipients
-    let recipients: string[]
+    // Fetch all active members with names
+    const { data: members, error: membersError } = await supabase
+      .from('members')
+      .select('email, name')
+      .eq('is_active', true)
 
+    if (membersError) {
+      throw new Error(`Failed to fetch members: ${membersError.message}`)
+    }
+
+    const memberList = members || []
+    const allRecipientEmails = memberList.map(m => m.email)
+    const memberNames = memberList.map(m => m.name)
+
+    // Determine actual recipients based on test mode
+    let recipients: string[]
     if (testEmail) {
       recipients = [testEmail]
+      results.wouldHaveSentTo = memberNames
+      console.log(`TEST MODE: Would send to ${memberList.length} members: ${memberNames.join(', ')}`)
+      console.log(`TEST MODE: Actually sending to: ${testEmail}`)
     } else {
-      const { data: members, error: membersError } = await supabase
-        .from('members')
-        .select('email')
-        .eq('is_active', true)
-
-      if (membersError) {
-        throw new Error(`Failed to fetch members: ${membersError.message}`)
-      }
-
-      recipients = members?.map(m => m.email) || []
+      recipients = allRecipientEmails
+      console.log(`Sending to ${recipients.length} recipients`)
     }
 
     if (recipients.length === 0) {
       results.errors.push('No recipients found')
       return NextResponse.json(results)
     }
-
-    console.log(`Recipients: ${recipients.join(', ')}`)
 
     // Process each reminder
     for (const reminder of dueReminders) {
