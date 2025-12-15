@@ -1,11 +1,19 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback, useMemo, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import { AppShell } from '@/components/app-shell'
 import { SiteCard } from '@/components/site-card'
 import { Button } from '@/components/ui/button'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { getCurrentMemberId } from '@/lib/auth-client'
+import { toast } from 'sonner'
 
 // Dynamic import for the map to avoid SSR issues with Leaflet
 const SitesMap = dynamic(
@@ -24,8 +32,14 @@ interface Site {
   id: string
   name: string
   location: string | null
+  region: string | null
+  description: string | null
   latitude: number | null
   longitude: number | null
+  distance_miles: number | null
+  elevation_gain_ft: number | null
+  peak_elevation_ft: number | null
+  difficulty: string | null
   permit_required: boolean
   vote_count: number
 }
@@ -42,6 +56,9 @@ interface TripYear {
   status: string
 }
 
+type SortOption = 'votes' | 'name' | 'distance' | 'elevation'
+type DifficultyFilter = 'all' | 'easy' | 'moderate' | 'strenuous'
+
 const MAX_VOTES = 3
 
 export default function SitesPage() {
@@ -51,7 +68,16 @@ export default function SitesPage() {
   const [memberId, setMemberId] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [selectedSiteId, setSelectedSiteId] = useState<string | null>(null)
+  const [hoveredSiteId, setHoveredSiteId] = useState<string | null>(null)
   const [view, setView] = useState<'list' | 'map'>('list')
+
+  // Filter/sort state
+  const [sortBy, setSortBy] = useState<SortOption>('votes')
+  const [regionFilter, setRegionFilter] = useState<string>('all')
+  const [difficultyFilter, setDifficultyFilter] = useState<DifficultyFilter>('all')
+
+  // Refs for scrolling to cards
+  const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map())
 
   // Fetch data
   const fetchData = useCallback(async () => {
@@ -83,6 +109,7 @@ export default function SitesPage() {
       }
     } catch (error) {
       console.error('Error fetching data:', error)
+      toast.error('Failed to load sites')
     } finally {
       setLoading(false)
     }
@@ -92,9 +119,68 @@ export default function SitesPage() {
     fetchData()
   }, [fetchData])
 
+  // Get unique regions for filter dropdown
+  const regions = useMemo(() => {
+    const uniqueRegions = new Set<string>()
+    sites.forEach(site => {
+      if (site.region) {
+        uniqueRegions.add(site.region)
+      }
+    })
+    return Array.from(uniqueRegions).sort()
+  }, [sites])
+
+  // Filter and sort sites
+  const filteredAndSortedSites = useMemo(() => {
+    let result = [...sites]
+
+    // Apply region filter
+    if (regionFilter !== 'all') {
+      result = result.filter(site => site.region === regionFilter)
+    }
+
+    // Apply difficulty filter
+    if (difficultyFilter !== 'all') {
+      result = result.filter(
+        site => site.difficulty?.toLowerCase() === difficultyFilter
+      )
+    }
+
+    // Apply sorting
+    switch (sortBy) {
+      case 'votes':
+        result.sort((a, b) => b.vote_count - a.vote_count)
+        break
+      case 'name':
+        result.sort((a, b) => a.name.localeCompare(b.name))
+        break
+      case 'distance':
+        result.sort((a, b) => {
+          if (a.distance_miles === null) return 1
+          if (b.distance_miles === null) return -1
+          return a.distance_miles - b.distance_miles
+        })
+        break
+      case 'elevation':
+        result.sort((a, b) => {
+          if (a.elevation_gain_ft === null) return 1
+          if (b.elevation_gain_ft === null) return -1
+          return b.elevation_gain_ft - a.elevation_gain_ft
+        })
+        break
+    }
+
+    return result
+  }, [sites, regionFilter, difficultyFilter, sortBy])
+
   const handleVote = async (siteId: string) => {
     if (!memberId || !tripYear) return
-    if (myVotes.length >= MAX_VOTES) return
+    if (myVotes.length >= MAX_VOTES) {
+      toast.error(`You can only vote for ${MAX_VOTES} sites`)
+      return
+    }
+
+    const site = sites.find(s => s.id === siteId)
 
     // Optimistic update
     const optimisticVote: Vote = {
@@ -132,6 +218,8 @@ export default function SitesPage() {
           v.id === optimisticVote.id ? { ...v, id: data.vote.id } : v
         )
       )
+
+      toast.success(`Voted for ${site?.name || 'site'}`)
     } catch (error) {
       console.error('Error voting:', error)
       // Rollback
@@ -141,12 +229,15 @@ export default function SitesPage() {
           s.id === siteId ? { ...s, vote_count: s.vote_count - 1 } : s
         )
       )
+      toast.error('Failed to submit vote')
     }
   }
 
   const handleUnvote = async (siteId: string) => {
     const vote = myVotes.find(v => v.site_id === siteId)
     if (!vote) return
+
+    const site = sites.find(s => s.id === siteId)
 
     // Optimistic update
     setMyVotes(prev => prev.filter(v => v.id !== vote.id))
@@ -164,6 +255,8 @@ export default function SitesPage() {
       if (!res.ok) {
         throw new Error('Failed to remove vote')
       }
+
+      toast.success(`Removed vote for ${site?.name || 'site'}`)
     } catch (error) {
       console.error('Error removing vote:', error)
       // Rollback
@@ -173,6 +266,18 @@ export default function SitesPage() {
           s.id === siteId ? { ...s, vote_count: s.vote_count + 1 } : s
         )
       )
+      toast.error('Failed to remove vote')
+    }
+  }
+
+  // Handle map marker click - scroll to card and highlight
+  const handleMapSiteSelect = (siteId: string) => {
+    setSelectedSiteId(siteId)
+
+    // Scroll to the card
+    const cardElement = cardRefs.current.get(siteId)
+    if (cardElement) {
+      cardElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }
   }
 
@@ -193,7 +298,7 @@ export default function SitesPage() {
     <AppShell>
       <div className="h-[calc(100vh-4rem)] flex flex-col">
         {/* Header */}
-        <div className="px-4 py-3 border-b border-stone-200 bg-white">
+        <div className="px-4 py-3 border-b border-stone-200 bg-white flex-shrink-0">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div>
               <h1 className="text-xl font-semibold text-stone-900">
@@ -201,6 +306,11 @@ export default function SitesPage() {
               </h1>
               <p className="text-sm text-stone-600">
                 {myVotes.length} of {MAX_VOTES} votes used
+                {filteredAndSortedSites.length !== sites.length && (
+                  <span className="ml-2 text-stone-400">
+                    ({filteredAndSortedSites.length} of {sites.length} shown)
+                  </span>
+                )}
               </p>
             </div>
             {/* Mobile view toggle */}
@@ -225,20 +335,83 @@ export default function SitesPage() {
 
         {/* Main content - split view */}
         <div className="flex-1 flex overflow-hidden">
-          {/* List view */}
+          {/* List view - 55% */}
           <div
             className={`
               ${view === 'list' ? 'flex' : 'hidden'}
-              md:flex md:w-2/5 flex-col overflow-hidden border-r border-stone-200
+              md:flex md:w-[55%] flex-col overflow-hidden border-r border-stone-200
             `}
           >
+            {/* Filter/Sort Row */}
+            <div className="px-4 py-3 border-b border-stone-100 bg-stone-50 flex-shrink-0">
+              <div className="flex flex-wrap items-center gap-3">
+                {/* Sort dropdown */}
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-stone-600">Sort:</span>
+                  <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
+                    <SelectTrigger className="w-[140px] h-8 text-sm bg-white">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="votes">Most Votes</SelectItem>
+                      <SelectItem value="name">Name A-Z</SelectItem>
+                      <SelectItem value="distance">Shortest Hike</SelectItem>
+                      <SelectItem value="elevation">Most Elevation</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {/* Region filter */}
+                {regions.length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-stone-600">Region:</span>
+                    <Select value={regionFilter} onValueChange={setRegionFilter}>
+                      <SelectTrigger className="w-[160px] h-8 text-sm bg-white">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Regions</SelectItem>
+                        {regions.map(region => (
+                          <SelectItem key={region} value={region}>
+                            {region}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
+                {/* Difficulty filter */}
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-stone-600">Difficulty:</span>
+                  <Select
+                    value={difficultyFilter}
+                    onValueChange={(v) => setDifficultyFilter(v as DifficultyFilter)}
+                  >
+                    <SelectTrigger className="w-[120px] h-8 text-sm bg-white">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="all">All</SelectItem>
+                      <SelectItem value="easy">Easy</SelectItem>
+                      <SelectItem value="moderate">Moderate</SelectItem>
+                      <SelectItem value="strenuous">Strenuous</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </div>
+
+            {/* Sites list */}
             <div className="flex-1 overflow-y-auto p-4 space-y-3">
-              {sites.length === 0 ? (
+              {filteredAndSortedSites.length === 0 ? (
                 <div className="text-center py-12 text-stone-500">
-                  No sites available yet.
+                  {sites.length === 0
+                    ? 'No sites available yet.'
+                    : 'No sites match your filters.'}
                 </div>
               ) : (
-                sites.map(site => (
+                filteredAndSortedSites.map(site => (
                   <SiteCard
                     key={site.id}
                     site={site}
@@ -247,24 +420,34 @@ export default function SitesPage() {
                     onVote={() => handleVote(site.id)}
                     onUnvote={() => handleUnvote(site.id)}
                     isSelected={selectedSiteId === site.id}
-                    onSelect={() => setSelectedSiteId(site.id)}
+                    isHovered={hoveredSiteId === site.id}
+                    onMouseEnter={() => setHoveredSiteId(site.id)}
+                    onMouseLeave={() => setHoveredSiteId(null)}
+                    setRef={(el) => {
+                      if (el) {
+                        cardRefs.current.set(site.id, el)
+                      } else {
+                        cardRefs.current.delete(site.id)
+                      }
+                    }}
                   />
                 ))
               )}
             </div>
           </div>
 
-          {/* Map view */}
+          {/* Map view - 45% - sticky */}
           <div
             className={`
               ${view === 'map' ? 'flex' : 'hidden'}
-              md:flex md:w-3/5 flex-col
+              md:flex md:w-[45%] flex-col sticky top-0 h-full
             `}
           >
             <SitesMap
               sites={sites}
               selectedSiteId={selectedSiteId}
-              onSiteSelect={setSelectedSiteId}
+              hoveredSiteId={hoveredSiteId}
+              onSiteSelect={handleMapSiteSelect}
             />
           </div>
         </div>
