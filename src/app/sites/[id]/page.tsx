@@ -298,39 +298,35 @@ export default function SiteDetailPage() {
                 <p className="text-lg text-stone-600 mt-1">{site.region}</p>
               )}
             </div>
-            <div className="flex items-center gap-4">
-              {/* Ranking and votes */}
-              <div className="text-right">
-                <div className="flex items-center gap-2 justify-end">
-                  {site.rank !== null && (
-                    <>
-                      <span className="text-lg font-semibold text-stone-700">
-                        #{site.rank}{site.is_tied ? ' (tied)' : ''} of {site.total_sites}
-                      </span>
-                      <span className="text-stone-300">·</span>
-                    </>
-                  )}
-                  <span className="text-lg font-bold text-emerald-700">
-                    {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
-                  </span>
-                </div>
+            <div className="flex flex-col items-end gap-2">
+              {/* Vote count and button */}
+              <div className="flex items-center gap-4">
+                <span className="text-lg font-bold text-emerald-700">
+                  {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
+                </span>
+                {hasVoted ? (
+                  <Button
+                    variant="outline"
+                    onClick={handleUnvote}
+                    className="text-red-600 border-red-300 hover:bg-red-50"
+                  >
+                    Remove Vote
+                  </Button>
+                ) : (
+                  <Button
+                    onClick={handleVote}
+                    disabled={!canVote}
+                    className="bg-emerald-600 hover:bg-emerald-700"
+                  >
+                    Vote for this Site
+                  </Button>
+                )}
               </div>
-              {hasVoted ? (
-                <Button
-                  variant="outline"
-                  onClick={handleUnvote}
-                  className="text-red-600 border-red-300 hover:bg-red-50"
-                >
-                  Remove Vote
-                </Button>
-              ) : (
-                <Button
-                  onClick={handleVote}
-                  disabled={!canVote}
-                  className="bg-emerald-600 hover:bg-emerald-700"
-                >
-                  Vote for this Site
-                </Button>
+              {/* Rank - only show if has votes */}
+              {site.vote_count > 0 && site.rank !== null && (
+                <span className="text-sm text-stone-500">
+                  Ranked #{site.rank}{site.is_tied ? ' (tied)' : ''}
+                </span>
               )}
             </div>
           </div>
