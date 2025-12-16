@@ -132,7 +132,7 @@ export default function AdminPage() {
   const [newMember, setNewMember] = useState({ name: '', email: '', phone: '' })
   const [selectedSites, setSelectedSites] = useState<string[]>([])
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
-  const [datesUnlocked, setDatesUnlocked] = useState(false)
+  const [isEditingDates, setIsEditingDates] = useState(false)
   const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
   const [savingPhoto, setSavingPhoto] = useState<string | null>(null)
   const [coverPhotoInputs, setCoverPhotoInputs] = useState<Record<string, string>>({})
@@ -263,7 +263,7 @@ export default function AdminPage() {
 
       if (data.success) {
         showMessage('success', 'Trip dates locked!')
-        setDatesUnlocked(false)
+        setIsEditingDates(false)
         setSelectedDateOption('')
         fetchData()
       } else {
@@ -823,10 +823,11 @@ export default function AdminPage() {
               </CardHeader>
               <CardContent>
                 {!tripYear ? (
-                  <p className="text-gray-500">Create a trip year first</p>
+                  <p className="text-[#7a7067]">Create a trip year first</p>
                 ) : tripYear.final_start_date ? (
                   <div className="space-y-4">
-                    {!datesUnlocked ? (
+                    {/* STATE 1: Dates Locked (not editing) */}
+                    {!isEditingDates ? (
                       <div className="flex items-center gap-4 p-4 bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg">
                         <div className="flex-1">
                           <p className="text-sm text-[#4a5d42] font-medium">Current Dates</p>
@@ -834,34 +835,34 @@ export default function AdminPage() {
                             {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
                           </p>
                         </div>
-                        <div className="flex items-center gap-3 text-sm text-[#5c4033]">
-                          <span>Dates locked</span>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setDatesUnlocked(true)}
-                          >
-                            Unlock
-                          </Button>
-                        </div>
+                        <Button
+                          variant="outline"
+                          onClick={() => setIsEditingDates(true)}
+                          className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
+                        >
+                          Unlock Dates
+                        </Button>
                       </div>
                     ) : (
-                      <>
-                        <Alert className="border-orange-500 bg-orange-50">
-                          <AlertDescription className="text-orange-800">
+                      /* STATE 2 & 3: Dates Unlocked (editing mode) */
+                      <div className="space-y-4">
+                        <Alert className="border-[#c9a227] bg-[#f5e6c8]">
+                          <AlertDescription className="text-[#5c4033]">
                             Dates unlocked for editing. Select a new date range and click Lock Dates to save.
                           </AlertDescription>
                         </Alert>
-                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                          <p className="text-sm text-gray-600 font-medium">Current Dates</p>
-                          <p className="text-lg text-gray-700">
+
+                        <div className="bg-[#f5f3f0] border border-[#e8dcc8] rounded-lg p-4">
+                          <p className="text-sm text-[#7a7067] font-medium">Current Dates</p>
+                          <p className="text-lg text-[#5c4033]">
                             {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
                           </p>
                         </div>
+
                         <div className="space-y-2">
-                          <Label>Select New Date Range</Label>
+                          <Label className="text-[#3d352e]">Select New Date Range</Label>
                           <Select value={selectedDateOption} onValueChange={setSelectedDateOption}>
-                            <SelectTrigger>
+                            <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
                               <SelectValue placeholder="Choose a date range" />
                             </SelectTrigger>
                             <SelectContent>
@@ -873,34 +874,37 @@ export default function AdminPage() {
                             </SelectContent>
                           </Select>
                         </div>
+
                         <div className="flex gap-2">
                           <Button
                             onClick={lockDates}
                             disabled={!selectedDateOption || actionLoading === 'lockDates'}
+                            className="bg-[#5c4033] hover:bg-[#4a3429]"
                           >
                             {actionLoading === 'lockDates' ? 'Saving...' : 'Lock Dates'}
                           </Button>
                           <Button
                             variant="outline"
                             onClick={() => {
-                              setDatesUnlocked(false)
+                              setIsEditingDates(false)
                               setSelectedDateOption('')
                             }}
+                            className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
                           >
                             Cancel
                           </Button>
                         </div>
-                      </>
+                      </div>
                     )}
                   </div>
                 ) : dateOptions.length === 0 ? (
-                  <p className="text-gray-500">No date options available. Try creating a new trip year.</p>
+                  <p className="text-[#7a7067]">No date options available. Try creating a new trip year.</p>
                 ) : (
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <Label>Select Date Option</Label>
+                      <Label className="text-[#3d352e]">Select Date Option</Label>
                       <Select value={selectedDateOption} onValueChange={setSelectedDateOption}>
-                        <SelectTrigger>
+                        <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
                           <SelectValue placeholder="Choose a date range" />
                         </SelectTrigger>
                         <SelectContent>
@@ -914,6 +918,7 @@ export default function AdminPage() {
                     </div>
 
                     <Button
+                      className="bg-[#5c4033] hover:bg-[#4a3429]"
                       onClick={lockDates}
                       disabled={!selectedDateOption || actionLoading === 'lockDates'}
                     >
