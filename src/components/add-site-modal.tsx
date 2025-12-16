@@ -31,7 +31,6 @@ interface GeneratedSite {
   permit_notes: string
   photos: string[]
   status: string
-  permit_required: boolean
 }
 
 interface AddSiteModalProps {

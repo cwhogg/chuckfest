@@ -85,7 +85,6 @@ export async function POST(request: NextRequest) {
       elevation_gain_ft: body.elevation_gain_ft || null,
       peak_elevation_ft: body.peak_elevation_ft || null,
       permit_notes: body.permit_notes || null,
-      permit_required: body.permit_required ?? true,
       photos: body.photos || [],
       status: body.status || 'active',
     }

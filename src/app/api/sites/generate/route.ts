@@ -140,7 +140,6 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
         ...generatedData,
         photos: [imageUrl],
         status: 'active',
-        permit_required: true,
       }
     })
   } catch (error) {
