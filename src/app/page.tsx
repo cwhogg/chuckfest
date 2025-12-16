@@ -211,7 +211,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="absolute bottom-6 text-center text-stone-500 text-sm">
-          Annual backpacking adventure since 2003
+          Annual backpacking adventure since 2020
         </div>
       </div>
     </div>
