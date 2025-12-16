@@ -61,7 +61,7 @@ interface TripYear {
 type SortOption = 'votes' | 'name' | 'distance' | 'elevation'
 type DifficultyFilter = 'all' | 'easy' | 'moderate' | 'strenuous'
 
-const MAX_VOTES = 3
+const MAX_VOTES = 5
 
 export default function SitesPage() {
   const [sites, setSites] = useState<Site[]>([])

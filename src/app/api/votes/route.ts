@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
-const MAX_VOTES_PER_MEMBER = 3
+const MAX_VOTES_PER_MEMBER = 5
 
 /**
  * GET /api/votes
