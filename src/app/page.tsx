@@ -117,7 +117,7 @@ export default function Home() {
             ChuckfestAI
           </h1>
           <p className="text-xl text-amber-800">
-            Who&apos;s joining the adventure?
+            Are you joining the adventure?
           </p>
         </div>
 
