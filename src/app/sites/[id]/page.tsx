@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Textarea } from '@/components/ui/textarea'
 import { getCurrentMemberId } from '@/lib/auth-client'
+import { cn } from '@/lib/utils'
 
 interface Member {
   id: string
@@ -31,13 +32,20 @@ interface Voter {
 interface Site {
   id: string
   name: string
-  location: string | null
+  region: string | null
+  description: string | null
   latitude: number | null
   longitude: number | null
+  distance_miles: number | null
+  elevation_gain_ft: number | null
+  peak_elevation_ft: number | null
+  difficulty: string | null
   permit_required: boolean
   permit_url: string | null
-  permit_open_date: string | null
-  notes: string | null
+  permit_type: string | null
+  permit_notes: string | null
+  trail_info_url: string | null
+  photos: string[] | null
   vote_count: number
   voters: Voter[]
   comments: Comment[]
@@ -55,7 +63,13 @@ interface Vote {
   member_id: string
 }
 
-const MAX_VOTES = 3
+const MAX_VOTES = 5
+
+const difficultyColors: Record<string, string> = {
+  easy: 'bg-green-100 text-green-700 border-green-200',
+  moderate: 'bg-yellow-100 text-yellow-700 border-yellow-200',
+  strenuous: 'bg-red-100 text-red-700 border-red-200',
+}
 
 export default function SiteDetailPage() {
   const params = useParams()
@@ -69,6 +83,7 @@ export default function SiteDetailPage() {
   const [loading, setLoading] = useState(true)
   const [newComment, setNewComment] = useState('')
   const [submittingComment, setSubmittingComment] = useState(false)
+  const [imageError, setImageError] = useState(false)
 
   const fetchData = useCallback(async () => {
     try {
@@ -118,7 +133,6 @@ export default function SiteDetailPage() {
     if (!memberId || !tripYear || !site) return
     if (myVotes.length >= MAX_VOTES) return
 
-    // Optimistic update
     const optimisticVote: Vote = {
       id: 'temp-' + Date.now(),
       site_id: site.id,
@@ -164,7 +178,6 @@ export default function SiteDetailPage() {
     const vote = myVotes.find(v => v.site_id === site.id)
     if (!vote) return
 
-    // Optimistic update
     setMyVotes(prev => prev.filter(v => v.id !== vote.id))
     setSite(prev =>
       prev ? { ...prev, vote_count: Math.max(0, prev.vote_count - 1) } : prev
@@ -245,6 +258,14 @@ export default function SiteDetailPage() {
   const hasVoted = myVotes.some(v => v.site_id === site.id)
   const canVote = myVotes.length < MAX_VOTES
 
+  const photoUrl = site.photos && site.photos.length > 0 && !imageError
+    ? site.photos[0]
+    : null
+
+  const googleMapsUrl = site.latitude && site.longitude
+    ? `https://www.google.com/maps?q=${site.latitude},${site.longitude}`
+    : null
+
   return (
     <AppShell>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -269,103 +290,242 @@ export default function SiteDetailPage() {
           Back to Sites
         </Link>
 
-        {/* Site header */}
-        <div className="mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h1 className="text-2xl font-bold text-stone-900">{site.name}</h1>
-              {site.location && (
-                <p className="text-stone-600 mt-1">{site.location}</p>
-              )}
-              <div className="flex items-center gap-3 mt-3">
-                {site.permit_required && (
-                  <Badge variant="outline">Permit Required</Badge>
-                )}
-                <span className="text-sm text-stone-500">
-                  {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
-                </span>
-              </div>
+        {/* HEADER SECTION */}
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+          <div>
+            <h1 className="text-3xl font-bold text-stone-900">{site.name}</h1>
+            {site.region && (
+              <p className="text-lg text-stone-600 mt-1">{site.region}</p>
+            )}
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="text-right">
+              <span className="text-2xl font-bold text-emerald-700">{site.vote_count}</span>
+              <span className="text-stone-500 ml-1">vote{site.vote_count !== 1 ? 's' : ''}</span>
             </div>
-            <div>
-              {hasVoted ? (
-                <Button
-                  variant="outline"
-                  onClick={handleUnvote}
-                  className="text-red-600 border-red-300 hover:bg-red-50"
-                >
-                  Remove Vote
-                </Button>
-              ) : (
-                <Button
-                  onClick={handleVote}
-                  disabled={!canVote}
-                  className="bg-emerald-600 hover:bg-emerald-700"
-                >
-                  Vote for this Site
-                </Button>
-              )}
-            </div>
+            {hasVoted ? (
+              <Button
+                variant="outline"
+                onClick={handleUnvote}
+                className="text-red-600 border-red-300 hover:bg-red-50"
+              >
+                Remove Vote
+              </Button>
+            ) : (
+              <Button
+                onClick={handleVote}
+                disabled={!canVote}
+                className="bg-emerald-600 hover:bg-emerald-700"
+              >
+                Vote for this Site
+              </Button>
+            )}
           </div>
         </div>
 
+        {/* HERO IMAGE */}
+        <div className="mb-8 rounded-xl overflow-hidden bg-gradient-to-br from-stone-100 to-stone-200 h-[300px] sm:h-[400px]">
+          {photoUrl ? (
+            <img
+              src={photoUrl}
+              alt={site.name}
+              className="w-full h-full object-cover"
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="text-center text-stone-400">
+                <svg className="w-20 h-20 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <p className="text-sm">No photo available</p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* STATS BAR */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+          {site.distance_miles !== null && (
+            <div className="bg-white rounded-xl border border-stone-200 p-4 text-center">
+              <div className="text-2xl mb-1">📍</div>
+              <div className="text-xl font-bold text-stone-800">{site.distance_miles}</div>
+              <div className="text-sm text-stone-500">miles (one-way)</div>
+            </div>
+          )}
+          {site.elevation_gain_ft !== null && (
+            <div className="bg-white rounded-xl border border-stone-200 p-4 text-center">
+              <div className="text-2xl mb-1">⬆️</div>
+              <div className="text-xl font-bold text-stone-800">{site.elevation_gain_ft.toLocaleString()}</div>
+              <div className="text-sm text-stone-500">ft elevation gain</div>
+            </div>
+          )}
+          {site.peak_elevation_ft !== null && (
+            <div className="bg-white rounded-xl border border-stone-200 p-4 text-center">
+              <div className="text-2xl mb-1">⛺</div>
+              <div className="text-xl font-bold text-stone-800">{site.peak_elevation_ft.toLocaleString()}</div>
+              <div className="text-sm text-stone-500">ft camp elevation</div>
+            </div>
+          )}
+          {site.difficulty && (
+            <div className="bg-white rounded-xl border border-stone-200 p-4 text-center">
+              <div className="text-2xl mb-1">🏔️</div>
+              <Badge
+                variant="outline"
+                className={cn(
+                  'text-sm capitalize px-3 py-1',
+                  difficultyColors[site.difficulty.toLowerCase()] || 'bg-stone-100 text-stone-600'
+                )}
+              >
+                {site.difficulty}
+              </Badge>
+              <div className="text-sm text-stone-500 mt-1">difficulty</div>
+            </div>
+          )}
+        </div>
+
         <div className="grid gap-6">
-          {/* Site details */}
+          {/* DESCRIPTION CARD */}
+          {site.description && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">About this Site</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-stone-700 leading-relaxed whitespace-pre-wrap">
+                  {site.description}
+                </p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* DETAILS CARD */}
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">Details</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              {site.latitude && site.longitude && (
-                <div>
-                  <span className="text-sm font-medium text-stone-700">
-                    Coordinates:
-                  </span>
-                  <p className="text-stone-600">
-                    {site.latitude.toFixed(4)}, {site.longitude.toFixed(4)}
-                  </p>
-                </div>
-              )}
-              {site.permit_url && (
-                <div>
-                  <span className="text-sm font-medium text-stone-700">
-                    Permit Info:
-                  </span>
-                  <p>
+            <CardContent>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {site.latitude && site.longitude && (
+                  <div>
+                    <span className="text-sm font-medium text-stone-500 block mb-1">
+                      Coordinates
+                    </span>
                     <a
-                      href={site.permit_url}
+                      href={googleMapsUrl || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-700 hover:underline"
                     >
-                      View permit details
+                      {site.latitude.toFixed(4)}, {site.longitude.toFixed(4)}
                     </a>
-                  </p>
-                </div>
-              )}
-              {site.permit_open_date && (
-                <div>
-                  <span className="text-sm font-medium text-stone-700">
-                    Permit Opens:
-                  </span>
-                  <p className="text-stone-600">
-                    {new Date(site.permit_open_date).toLocaleDateString()}
-                  </p>
-                </div>
-              )}
-              {site.notes && (
-                <div>
-                  <span className="text-sm font-medium text-stone-700">
-                    Notes:
-                  </span>
-                  <p className="text-stone-600 whitespace-pre-wrap">
-                    {site.notes}
-                  </p>
-                </div>
-              )}
+                  </div>
+                )}
+                {site.permit_type && (
+                  <div>
+                    <span className="text-sm font-medium text-stone-500 block mb-1">
+                      Permit Type
+                    </span>
+                    <p className="text-stone-700 capitalize">{site.permit_type.replace('_', ' ')}</p>
+                  </div>
+                )}
+                {site.permit_required && (
+                  <div>
+                    <span className="text-sm font-medium text-stone-500 block mb-1">
+                      Permit Required
+                    </span>
+                    <Badge variant="outline" className="text-amber-700 border-amber-300 bg-amber-50">
+                      Yes - Permit Required
+                    </Badge>
+                  </div>
+                )}
+                {site.permit_notes && (
+                  <div className="sm:col-span-2">
+                    <span className="text-sm font-medium text-stone-500 block mb-1">
+                      Permit Notes
+                    </span>
+                    <p className="text-stone-700">{site.permit_notes}</p>
+                  </div>
+                )}
+              </div>
             </CardContent>
           </Card>
 
-          {/* Voters */}
+          {/* LINKS CARD */}
+          {(site.trail_info_url || site.permit_url || googleMapsUrl) && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Links</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-3">
+                  {site.trail_info_url && (
+                    <a
+                      href={site.trail_info_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="outline"
+                        className="text-green-700 border-green-300 hover:bg-green-50"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        AllTrails
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </Button>
+                    </a>
+                  )}
+                  {site.permit_url && (
+                    <a
+                      href={site.permit_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="outline"
+                        className="text-blue-700 border-blue-300 hover:bg-blue-50"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Permits / Recreation.gov
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </Button>
+                    </a>
+                  )}
+                  {googleMapsUrl && (
+                    <a
+                      href={googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="outline"
+                        className="text-stone-700 border-stone-300 hover:bg-stone-50"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Google Maps
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </Button>
+                    </a>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* VOTERS */}
           {site.voters.length > 0 && (
             <Card>
               <CardHeader>
@@ -391,7 +551,7 @@ export default function SiteDetailPage() {
             </Card>
           )}
 
-          {/* Comments */}
+          {/* COMMENTS */}
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">
@@ -427,7 +587,7 @@ export default function SiteDetailPage() {
               )}
 
               {/* Add comment form */}
-              <form onSubmit={handleAddComment} className="mt-6 space-y-3">
+              <form onSubmit={handleAddComment} className="mt-6 space-y-3 pt-4 border-t border-stone-100">
                 <Textarea
                   placeholder="Add a comment..."
                   value={newComment}
