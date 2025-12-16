@@ -132,7 +132,6 @@ export default function AdminPage() {
   const [newMember, setNewMember] = useState({ name: '', email: '', phone: '' })
   const [selectedSites, setSelectedSites] = useState<string[]>([])
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
-  const [isEditingDates, setIsEditingDates] = useState(false)
   const [manualStartDate, setManualStartDate] = useState('')
   const [manualEndDate, setManualEndDate] = useState('')
   const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
@@ -265,7 +264,6 @@ export default function AdminPage() {
 
       if (data.success) {
         showMessage('success', 'Trip dates locked!')
-        setIsEditingDates(false)
         setSelectedDateOption('')
         fetchData()
       } else {
@@ -301,8 +299,7 @@ export default function AdminPage() {
       const data = await res.json()
 
       if (data.success) {
-        showMessage('success', 'Trip dates updated!')
-        setIsEditingDates(false)
+        showMessage('success', 'Trip dates locked!')
         setManualStartDate('')
         setManualEndDate('')
         fetchData()
@@ -311,6 +308,36 @@ export default function AdminPage() {
       }
     } catch (error) {
       showMessage('error', 'Failed to save dates')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const unlockDates = async () => {
+    if (!tripYear) return
+
+    setActionLoading('unlockDates')
+    try {
+      const res = await fetch(`/api/trip-years/${tripYear.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          status: 'dates_open',
+          final_start_date: null,
+          final_end_date: null,
+        }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Dates unlocked! Members can now vote on dates.')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to unlock dates')
       console.error(error)
     } finally {
       setActionLoading(null)
@@ -865,116 +892,27 @@ export default function AdminPage() {
                 {!tripYear ? (
                   <p className="text-[#7a7067]">Create a trip year first</p>
                 ) : tripYear.final_start_date ? (
+                  /* Dates are locked */
                   <div className="space-y-4">
-                    {/* STATE 1: Dates Locked (not editing) */}
-                    {!isEditingDates ? (
-                      <div className="flex items-center gap-4 p-4 bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg">
-                        <div className="flex-1">
-                          <p className="text-sm text-[#4a5d42] font-medium">Current Dates</p>
-                          <p className="text-xl font-bold text-[#2d5016]">
-                            {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
-                          </p>
-                        </div>
-                        <Button
-                          variant="outline"
-                          onClick={() => setIsEditingDates(true)}
-                          className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
-                        >
-                          Unlock Dates
-                        </Button>
+                    <div className="flex items-center gap-4 p-4 bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg">
+                      <div className="flex-1">
+                        <p className="text-sm text-[#4a5d42] font-medium">Dates Locked</p>
+                        <p className="text-xl font-bold text-[#2d5016]">
+                          {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
+                        </p>
                       </div>
-                    ) : (
-                      /* STATE 2 & 3: Dates Unlocked (editing mode) */
-                      <div className="space-y-4">
-                        <Alert className="border-[#c9a227] bg-[#f5e6c8]">
-                          <AlertDescription className="text-[#5c4033]">
-                            Dates unlocked for editing. Enter new dates below.
-                          </AlertDescription>
-                        </Alert>
-
-                        <div className="bg-[#f5f3f0] border border-[#e8dcc8] rounded-lg p-4">
-                          <p className="text-sm text-[#7a7067] font-medium">Current Dates</p>
-                          <p className="text-lg text-[#5c4033]">
-                            {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
-                          </p>
-                        </div>
-
-                        {/* Manual date entry */}
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="space-y-2">
-                            <Label htmlFor="start-date" className="text-[#3d352e]">Start Date</Label>
-                            <Input
-                              id="start-date"
-                              type="date"
-                              value={manualStartDate}
-                              onChange={(e) => setManualStartDate(e.target.value)}
-                              className="bg-[#fffdf9] border-[#c9b896]"
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <Label htmlFor="end-date" className="text-[#3d352e]">End Date</Label>
-                            <Input
-                              id="end-date"
-                              type="date"
-                              value={manualEndDate}
-                              onChange={(e) => setManualEndDate(e.target.value)}
-                              className="bg-[#fffdf9] border-[#c9b896]"
-                            />
-                          </div>
-                        </div>
-
-                        {/* Date options dropdown (if available) */}
-                        {dateOptions.length > 0 && (
-                          <div className="space-y-2">
-                            <Label className="text-[#3d352e]">Or Select From Options</Label>
-                            <Select
-                              value={selectedDateOption}
-                              onValueChange={(value) => {
-                                setSelectedDateOption(value)
-                                const option = dateOptions.find(d => d.id === value)
-                                if (option) {
-                                  setManualStartDate(option.start_date)
-                                  setManualEndDate(option.end_date)
-                                }
-                              }}
-                            >
-                              <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
-                                <SelectValue placeholder="Choose a date range" />
-                              </SelectTrigger>
-                              <SelectContent>
-                                {dateOptions.map((option) => (
-                                  <SelectItem key={option.id} value={option.id}>
-                                    {formatDate(option.start_date)} - {formatDate(option.end_date)}
-                                  </SelectItem>
-                                ))}
-                              </SelectContent>
-                            </Select>
-                          </div>
-                        )}
-
-                        <div className="flex gap-2">
-                          <Button
-                            onClick={saveManualDates}
-                            disabled={!manualStartDate || !manualEndDate || actionLoading === 'lockDates'}
-                            className="bg-[#5c4033] hover:bg-[#4a3429]"
-                          >
-                            {actionLoading === 'lockDates' ? 'Saving...' : 'Save Dates'}
-                          </Button>
-                          <Button
-                            variant="outline"
-                            onClick={() => {
-                              setIsEditingDates(false)
-                              setSelectedDateOption('')
-                              setManualStartDate('')
-                              setManualEndDate('')
-                            }}
-                            className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
-                          >
-                            Cancel
-                          </Button>
-                        </div>
-                      </div>
-                    )}
+                      <Button
+                        variant="outline"
+                        onClick={unlockDates}
+                        disabled={actionLoading === 'unlockDates'}
+                        className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
+                      >
+                        {actionLoading === 'unlockDates' ? 'Unlocking...' : 'Unlock Dates'}
+                      </Button>
+                    </div>
+                    <p className="text-sm text-[#7a7067]">
+                      Click &quot;Unlock Dates&quot; to clear the locked dates and allow members to vote again.
+                    </p>
                   </div>
                 ) : (
                   /* No dates locked yet - allow manual entry or selection from options */
