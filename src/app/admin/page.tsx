@@ -133,6 +133,8 @@ export default function AdminPage() {
   const [selectedSites, setSelectedSites] = useState<string[]>([])
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
   const [isEditingDates, setIsEditingDates] = useState(false)
+  const [manualStartDate, setManualStartDate] = useState('')
+  const [manualEndDate, setManualEndDate] = useState('')
   const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
   const [savingPhoto, setSavingPhoto] = useState<string | null>(null)
   const [coverPhotoInputs, setCoverPhotoInputs] = useState<Record<string, string>>({})
@@ -271,6 +273,44 @@ export default function AdminPage() {
       }
     } catch (error) {
       showMessage('error', 'Failed to lock dates')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const saveManualDates = async () => {
+    if (!tripYear || !manualStartDate || !manualEndDate) return
+
+    if (manualEndDate < manualStartDate) {
+      showMessage('error', 'End date must be after start date')
+      return
+    }
+
+    setActionLoading('lockDates')
+    try {
+      const res = await fetch(`/api/trip-years/${tripYear.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          status: 'dates_locked',
+          final_start_date: manualStartDate,
+          final_end_date: manualEndDate,
+        }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Trip dates updated!')
+        setIsEditingDates(false)
+        setManualStartDate('')
+        setManualEndDate('')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to save dates')
       console.error(error)
     } finally {
       setActionLoading(null)
@@ -848,7 +888,7 @@ export default function AdminPage() {
                       <div className="space-y-4">
                         <Alert className="border-[#c9a227] bg-[#f5e6c8]">
                           <AlertDescription className="text-[#5c4033]">
-                            Dates unlocked for editing. Select a new date range and click Lock Dates to save.
+                            Dates unlocked for editing. Enter new dates below.
                           </AlertDescription>
                         </Alert>
 
@@ -859,35 +899,74 @@ export default function AdminPage() {
                           </p>
                         </div>
 
-                        <div className="space-y-2">
-                          <Label className="text-[#3d352e]">Select New Date Range</Label>
-                          <Select value={selectedDateOption} onValueChange={setSelectedDateOption}>
-                            <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
-                              <SelectValue placeholder="Choose a date range" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {dateOptions.map((option) => (
-                                <SelectItem key={option.id} value={option.id}>
-                                  {formatDate(option.start_date)} - {formatDate(option.end_date)}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
+                        {/* Manual date entry */}
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <Label htmlFor="start-date" className="text-[#3d352e]">Start Date</Label>
+                            <Input
+                              id="start-date"
+                              type="date"
+                              value={manualStartDate}
+                              onChange={(e) => setManualStartDate(e.target.value)}
+                              className="bg-[#fffdf9] border-[#c9b896]"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="end-date" className="text-[#3d352e]">End Date</Label>
+                            <Input
+                              id="end-date"
+                              type="date"
+                              value={manualEndDate}
+                              onChange={(e) => setManualEndDate(e.target.value)}
+                              className="bg-[#fffdf9] border-[#c9b896]"
+                            />
+                          </div>
                         </div>
+
+                        {/* Date options dropdown (if available) */}
+                        {dateOptions.length > 0 && (
+                          <div className="space-y-2">
+                            <Label className="text-[#3d352e]">Or Select From Options</Label>
+                            <Select
+                              value={selectedDateOption}
+                              onValueChange={(value) => {
+                                setSelectedDateOption(value)
+                                const option = dateOptions.find(d => d.id === value)
+                                if (option) {
+                                  setManualStartDate(option.start_date)
+                                  setManualEndDate(option.end_date)
+                                }
+                              }}
+                            >
+                              <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
+                                <SelectValue placeholder="Choose a date range" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {dateOptions.map((option) => (
+                                  <SelectItem key={option.id} value={option.id}>
+                                    {formatDate(option.start_date)} - {formatDate(option.end_date)}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                          </div>
+                        )}
 
                         <div className="flex gap-2">
                           <Button
-                            onClick={lockDates}
-                            disabled={!selectedDateOption || actionLoading === 'lockDates'}
+                            onClick={saveManualDates}
+                            disabled={!manualStartDate || !manualEndDate || actionLoading === 'lockDates'}
                             className="bg-[#5c4033] hover:bg-[#4a3429]"
                           >
-                            {actionLoading === 'lockDates' ? 'Saving...' : 'Lock Dates'}
+                            {actionLoading === 'lockDates' ? 'Saving...' : 'Save Dates'}
                           </Button>
                           <Button
                             variant="outline"
                             onClick={() => {
                               setIsEditingDates(false)
                               setSelectedDateOption('')
+                              setManualStartDate('')
+                              setManualEndDate('')
                             }}
                             className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
                           >
@@ -897,32 +976,68 @@ export default function AdminPage() {
                       </div>
                     )}
                   </div>
-                ) : dateOptions.length === 0 ? (
-                  <p className="text-[#7a7067]">No date options available. Try creating a new trip year.</p>
                 ) : (
+                  /* No dates locked yet - allow manual entry or selection from options */
                   <div className="space-y-4">
-                    <div className="space-y-2">
-                      <Label className="text-[#3d352e]">Select Date Option</Label>
-                      <Select value={selectedDateOption} onValueChange={setSelectedDateOption}>
-                        <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
-                          <SelectValue placeholder="Choose a date range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {dateOptions.map((option) => (
-                            <SelectItem key={option.id} value={option.id}>
-                              {formatDate(option.start_date)} - {formatDate(option.end_date)}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+                    {/* Manual date entry */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="initial-start-date" className="text-[#3d352e]">Start Date</Label>
+                        <Input
+                          id="initial-start-date"
+                          type="date"
+                          value={manualStartDate}
+                          onChange={(e) => setManualStartDate(e.target.value)}
+                          className="bg-[#fffdf9] border-[#c9b896]"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="initial-end-date" className="text-[#3d352e]">End Date</Label>
+                        <Input
+                          id="initial-end-date"
+                          type="date"
+                          value={manualEndDate}
+                          onChange={(e) => setManualEndDate(e.target.value)}
+                          className="bg-[#fffdf9] border-[#c9b896]"
+                        />
+                      </div>
                     </div>
+
+                    {/* Date options dropdown (if available) */}
+                    {dateOptions.length > 0 && (
+                      <div className="space-y-2">
+                        <Label className="text-[#3d352e]">Or Select From Options</Label>
+                        <Select
+                          value={selectedDateOption}
+                          onValueChange={(value) => {
+                            setSelectedDateOption(value)
+                            const option = dateOptions.find(d => d.id === value)
+                            if (option) {
+                              setManualStartDate(option.start_date)
+                              setManualEndDate(option.end_date)
+                            }
+                          }}
+                        >
+                          <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
+                            <SelectValue placeholder="Choose a date range" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {dateOptions.map((option) => (
+                              <SelectItem key={option.id} value={option.id}>
+                                {formatDate(option.start_date)} - {formatDate(option.end_date)}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    )}
 
                     <Button
                       className="bg-[#5c4033] hover:bg-[#4a3429]"
-                      onClick={lockDates}
-                      disabled={!selectedDateOption || actionLoading === 'lockDates'}
+                      onClick={saveManualDates}
+                      disabled={!manualStartDate || !manualEndDate || actionLoading === 'lockDates'}
                     >
-                      {actionLoading === 'lockDates' ? 'Locking...' : 'Lock Dates'}
+                      {actionLoading === 'lockDates' ? 'Saving...' : 'Lock Dates'}
                     </Button>
                   </div>
                 )}
