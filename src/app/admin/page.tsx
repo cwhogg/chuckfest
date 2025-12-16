@@ -827,29 +827,24 @@ export default function AdminPage() {
                 ) : tripYear.final_start_date ? (
                   <div className="space-y-4">
                     {!datesUnlocked ? (
-                      <>
-                        <Alert className="border-yellow-500 bg-yellow-50">
-                          <div className="flex items-center justify-between w-full">
-                            <AlertDescription className="text-yellow-800">
-                              Dates are locked. Be careful if changing.
-                            </AlertDescription>
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setDatesUnlocked(true)}
-                              className="ml-4"
-                            >
-                              Unlock Dates
-                            </Button>
-                          </div>
-                        </Alert>
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                      <div className="flex items-center gap-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <div className="flex-1">
                           <p className="text-sm text-green-600 font-medium">Current Dates</p>
                           <p className="text-xl font-bold text-green-800">
                             {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
                           </p>
                         </div>
-                      </>
+                        <div className="flex items-center gap-3 text-sm text-yellow-700">
+                          <span>Dates locked</span>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => setDatesUnlocked(true)}
+                          >
+                            Unlock
+                          </Button>
+                        </div>
+                      </div>
                     ) : (
                       <>
                         <Alert className="border-orange-500 bg-orange-50">
