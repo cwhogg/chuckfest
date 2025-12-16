@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, useMemo, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import { AppShell } from '@/components/app-shell'
 import { SiteCard } from '@/components/site-card'
+import { AddSiteModal } from '@/components/add-site-modal'
 import { Button } from '@/components/ui/button'
 import {
   Select,
@@ -71,6 +72,7 @@ export default function SitesPage() {
   const [selectedSiteId, setSelectedSiteId] = useState<string | null>(null)
   const [hoveredSiteId, setHoveredSiteId] = useState<string | null>(null)
   const [view, setView] = useState<'list' | 'map'>('list')
+  const [addSiteModalOpen, setAddSiteModalOpen] = useState(false)
 
   // Filter/sort state
   const [sortBy, setSortBy] = useState<SortOption>('votes')
@@ -384,11 +386,23 @@ export default function SitesPage() {
                 </div>
 
                 {/* Votes remaining indicator */}
-                <div className="ml-auto flex items-center gap-2 bg-white border border-stone-200 rounded-md px-3 py-1.5">
-                  <span className="text-sm text-stone-600">Votes Remaining</span>
-                  <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-stone-400' : 'text-emerald-600'}`}>
-                    {MAX_VOTES - myVotes.length}/{MAX_VOTES}
-                  </span>
+                <div className="ml-auto flex items-center gap-3">
+                  <div className="flex items-center gap-2 bg-white border border-stone-200 rounded-md px-3 py-1.5">
+                    <span className="text-sm text-stone-600">Votes Remaining</span>
+                    <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-stone-400' : 'text-emerald-600'}`}>
+                      {MAX_VOTES - myVotes.length}/{MAX_VOTES}
+                    </span>
+                  </div>
+                  <Button
+                    onClick={() => setAddSiteModalOpen(true)}
+                    size="sm"
+                    className="h-8"
+                  >
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                    Add Site
+                  </Button>
                 </div>
 
                 {/* Mobile view toggle */}
@@ -464,6 +478,12 @@ export default function SitesPage() {
           </div>
         </div>
       </div>
+
+      <AddSiteModal
+        open={addSiteModalOpen}
+        onOpenChange={setAddSiteModalOpen}
+        onSiteAdded={fetchData}
+      />
     </AppShell>
   )
 }
