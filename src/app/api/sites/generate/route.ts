@@ -17,6 +17,7 @@ interface GeneratedSite {
   elevation_gain_ft: number
   peak_elevation_ft: number
   permit_notes: string
+  trail_info_url: string
 }
 
 /**
@@ -76,7 +77,8 @@ Research and provide accurate details about this location. Return a JSON object 
   "distance_miles": <one-way hike distance to the destination>,
   "elevation_gain_ft": <total elevation gain>,
   "peak_elevation_ft": <elevation of the campsite/destination>,
-  "permit_notes": "Any important notes about permits, bear canisters, quotas, etc."
+  "permit_notes": "Any important notes about permits, bear canisters, quotas, etc.",
+  "trail_info_url": "URL to the AllTrails page for this trail/hike, or empty string if not found"
 }
 
 Be accurate with coordinates and permit information. If you're unsure about specific permit details, use reasonable defaults for Sierra Nevada wilderness areas (typically rolling permits, 168 days advance, 7am PT opening).

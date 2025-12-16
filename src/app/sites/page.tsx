@@ -43,6 +43,7 @@ interface Site {
   difficulty: string | null
   permit_required: boolean
   permit_url: string | null
+  trail_info_url: string | null
   vote_count: number
   photos?: string[] | null
 }
