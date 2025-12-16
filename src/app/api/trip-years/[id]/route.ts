@@ -15,7 +15,21 @@ export async function GET(
 
     const { data, error } = await supabase
       .from('trip_years')
-      .select('*')
+      .select(`
+        *,
+        site:final_site_id (
+          id,
+          name,
+          region,
+          permit_type,
+          permit_url,
+          permit_advance_days,
+          photos,
+          distance_miles,
+          elevation_gain_ft,
+          peak_elevation_ft
+        )
+      `)
       .eq('id', id)
       .single()
 
@@ -46,7 +60,7 @@ export async function GET(
  * PATCH /api/trip-years/[id]
  *
  * Update a trip year
- * Body: { status?, final_start_date?, final_end_date? }
+ * Body: { status?, final_start_date?, final_end_date?, final_site_id?, permits_obtained? }
  */
 export async function PATCH(
   request: NextRequest,
@@ -55,7 +69,7 @@ export async function PATCH(
   try {
     const { id } = await params
     const body = await request.json()
-    const { status, final_start_date, final_end_date } = body
+    const { status, final_start_date, final_end_date, final_site_id, permits_obtained } = body
 
     // Validate dates are Wed-Sun if provided
     if (final_start_date && final_end_date) {
@@ -90,6 +104,8 @@ export async function PATCH(
     if (status) updateData.status = status
     if (final_start_date !== undefined) updateData.final_start_date = final_start_date
     if (final_end_date !== undefined) updateData.final_end_date = final_end_date
+    if (final_site_id !== undefined) updateData.final_site_id = final_site_id
+    if (permits_obtained !== undefined) updateData.permits_obtained = permits_obtained
 
     if (Object.keys(updateData).length === 0) {
       return NextResponse.json(
@@ -102,7 +118,17 @@ export async function PATCH(
       .from('trip_years')
       .update(updateData)
       .eq('id', id)
-      .select()
+      .select(`
+        *,
+        sites:final_site_id (
+          id,
+          name,
+          region,
+          permit_type,
+          permit_url,
+          photos
+        )
+      `)
       .single()
 
     if (error) {

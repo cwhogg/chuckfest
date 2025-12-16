@@ -43,7 +43,16 @@ interface TripYear {
   status: string
   final_start_date: string | null
   final_end_date: string | null
+  final_site_id: string | null
+  permits_obtained: boolean
   created_at: string
+  site?: {
+    id: string
+    name: string
+    region: string | null
+    permit_type: string | null
+    permit_url: string | null
+  } | null
 }
 
 interface DateOption {
@@ -61,6 +70,7 @@ interface Site {
   permit_open_days_before: number | null
   permit_open_date: string | null
   photos: string[] | null
+  vote_count?: number
 }
 
 interface PermitReminder {
@@ -142,6 +152,7 @@ export default function AdminPage() {
   const [editingMember, setEditingMember] = useState<Member | null>(null)
   const [editMemberForm, setEditMemberForm] = useState({ name: '', email: '', phone: '', avatar_url: '', is_active: true })
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false)
+  const [selectedFinalSite, setSelectedFinalSite] = useState<string>('')
 
   const showMessage = (type: 'success' | 'error', text: string) => {
     setMessage({ type, text })
@@ -338,6 +349,64 @@ export default function AdminPage() {
       }
     } catch (error) {
       showMessage('error', 'Failed to unlock dates')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const updateFinalSite = async (siteId: string | null) => {
+    if (!tripYear) return
+
+    setActionLoading('updateSite')
+    try {
+      const res = await fetch(`/api/trip-years/${tripYear.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          final_site_id: siteId,
+          status: siteId ? 'site_selected' : tripYear.final_start_date ? 'dates_locked' : 'dates_open',
+        }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', siteId ? 'Final site selected!' : 'Site selection cleared')
+        setSelectedFinalSite('')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to update site')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const togglePermitsObtained = async (obtained: boolean) => {
+    if (!tripYear) return
+
+    setActionLoading('updatePermits')
+    try {
+      const res = await fetch(`/api/trip-years/${tripYear.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          permits_obtained: obtained,
+        }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', obtained ? 'Permits marked as obtained!' : 'Permits marked as not obtained')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to update permits status')
       console.error(error)
     } finally {
       setActionLoading(null)
@@ -879,6 +948,94 @@ export default function AdminPage() {
                 )}
               </CardContent>
             </Card>
+
+            {/* Final Site Selection */}
+            {tripYear && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Final Destination</CardTitle>
+                  <CardDescription>Select the final site for Chuckfest {tripYear.year}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {tripYear.site ? (
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-4 p-4 bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg">
+                        <div className="flex-1">
+                          <p className="text-sm text-[#4a5d42] font-medium">Selected Site</p>
+                          <p className="text-xl font-bold text-[#2d5016]">{tripYear.site.name}</p>
+                          {tripYear.site.region && (
+                            <p className="text-sm text-[#5c4033]">{tripYear.site.region}</p>
+                          )}
+                        </div>
+                        <Button
+                          variant="outline"
+                          onClick={() => updateFinalSite(null)}
+                          disabled={actionLoading === 'updateSite'}
+                          className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
+                        >
+                          {actionLoading === 'updateSite' ? 'Updating...' : 'Clear Selection'}
+                        </Button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <Label className="text-[#3d352e]">Select from top voted sites</Label>
+                        <Select value={selectedFinalSite} onValueChange={setSelectedFinalSite}>
+                          <SelectTrigger className="bg-[#fffdf9] border-[#c9b896]">
+                            <SelectValue placeholder="Choose a site" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {sites
+                              .sort((a, b) => (b.vote_count || 0) - (a.vote_count || 0))
+                              .slice(0, 10)
+                              .map((site) => (
+                                <SelectItem key={site.id} value={site.id}>
+                                  {site.name} {site.vote_count ? `(${site.vote_count} votes)` : ''}
+                                </SelectItem>
+                              ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <Button
+                        onClick={() => updateFinalSite(selectedFinalSite)}
+                        disabled={!selectedFinalSite || actionLoading === 'updateSite'}
+                        className="bg-[#5c4033] hover:bg-[#4a3429]"
+                      >
+                        {actionLoading === 'updateSite' ? 'Saving...' : 'Set Final Site'}
+                      </Button>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Permits Status */}
+            {tripYear && tripYear.final_site_id && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Permit Status</CardTitle>
+                  <CardDescription>Track permit status for the trip</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between p-4 bg-[#f5f3f0] border border-[#e8dcc8] rounded-lg">
+                    <div>
+                      <p className="font-medium text-[#3d352e]">Permits Obtained</p>
+                      <p className="text-sm text-[#7a7067]">
+                        {tripYear.permits_obtained
+                          ? 'Permits have been secured for this trip'
+                          : 'Permits have not yet been obtained'}
+                      </p>
+                    </div>
+                    <Switch
+                      checked={tripYear.permits_obtained || false}
+                      onCheckedChange={togglePermitsObtained}
+                      disabled={actionLoading === 'updatePermits'}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </TabsContent>
 
           {/* SECTION 2: Set Trip Dates */}

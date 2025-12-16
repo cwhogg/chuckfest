@@ -16,7 +16,21 @@ export async function GET(request: NextRequest) {
       // Get the most recent trip year that isn't completed
       const { data, error } = await supabase
         .from('trip_years')
-        .select('*')
+        .select(`
+          *,
+          site:final_site_id (
+            id,
+            name,
+            region,
+            permit_type,
+            permit_url,
+            permit_advance_days,
+            photos,
+            distance_miles,
+            elevation_gain_ft,
+            peak_elevation_ft
+          )
+        `)
         .neq('status', 'completed')
         .order('year', { ascending: false })
         .limit(1)
