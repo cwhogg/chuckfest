@@ -7,13 +7,11 @@ import { supabase } from '@/lib/supabase'
  * Get a single site with vote count, voters, ranking, and comments
  */
 export async function GET(
-  request: NextRequest,
+  _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params
-    const { searchParams } = new URL(request.url)
-    const tripYearId = searchParams.get('tripYearId')
 
     // Get the site
     const { data: site, error: siteError } = await supabase
@@ -33,7 +31,8 @@ export async function GET(
     }
 
     // Get voters for this site with member details
-    let votersQuery = supabase
+    // Note: votes table doesn't have trip_year_id - votes are global
+    const { data: votersData } = await supabase
       .from('votes')
       .select(`
         id,
@@ -41,26 +40,14 @@ export async function GET(
       `)
       .eq('site_id', id)
 
-    if (tripYearId) {
-      votersQuery = votersQuery.eq('trip_year_id', tripYearId)
-    }
-
-    const { data: votersData } = await votersQuery
-
     // Transform voters to flatten member data
     const voters = votersData?.map(v => v.member).filter(Boolean) || []
     const voteCount = voters.length
 
-    // Get all sites with their vote counts for ranking
-    let allVotesQuery = supabase
+    // Get all votes for ranking calculation
+    const { data: allVotes } = await supabase
       .from('votes')
       .select('site_id')
-
-    if (tripYearId) {
-      allVotesQuery = allVotesQuery.eq('trip_year_id', tripYearId)
-    }
-
-    const { data: allVotes } = await allVotesQuery
 
     // Count votes per site
     const voteCountMap: Record<string, number> = {}
