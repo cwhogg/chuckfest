@@ -57,6 +57,35 @@ export async function PATCH(
     const body = await request.json()
     const { status, final_start_date, final_end_date } = body
 
+    // Validate dates are Wed-Sun if provided
+    if (final_start_date && final_end_date) {
+      const startDate = new Date(final_start_date + 'T12:00:00') // Noon to avoid timezone issues
+      const endDate = new Date(final_end_date + 'T12:00:00')
+
+      // Wednesday = 3, Sunday = 0
+      if (startDate.getDay() !== 3) {
+        return NextResponse.json(
+          { success: false, error: 'Start date must be a Wednesday' },
+          { status: 400 }
+        )
+      }
+      if (endDate.getDay() !== 0) {
+        return NextResponse.json(
+          { success: false, error: 'End date must be a Sunday' },
+          { status: 400 }
+        )
+      }
+
+      // Check it's exactly 4 days (Wed to Sun)
+      const daysDiff = Math.round((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
+      if (daysDiff !== 4) {
+        return NextResponse.json(
+          { success: false, error: 'Trip must be exactly Wednesday through Sunday (4 days)' },
+          { status: 400 }
+        )
+      }
+    }
+
     const updateData: Record<string, unknown> = {}
     if (status) updateData.status = status
     if (final_start_date !== undefined) updateData.final_start_date = final_start_date
