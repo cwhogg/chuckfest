@@ -46,7 +46,7 @@ export async function GET(
  * PATCH /api/members/[id]
  *
  * Update a member
- * Body: { name?, email?, phone?, is_active? }
+ * Body: { name?, email?, phone?, is_active?, avatar_url? }
  */
 export async function PATCH(
   request: NextRequest,
@@ -55,13 +55,14 @@ export async function PATCH(
   try {
     const { id } = await params
     const body = await request.json()
-    const { name, email, phone, is_active } = body
+    const { name, email, phone, is_active, avatar_url } = body
 
     const updateData: Record<string, unknown> = {}
     if (name !== undefined) updateData.name = name
     if (email !== undefined) updateData.email = email
     if (phone !== undefined) updateData.phone = phone
     if (is_active !== undefined) updateData.is_active = is_active
+    if (avatar_url !== undefined) updateData.avatar_url = avatar_url
 
     if (Object.keys(updateData).length === 0) {
       return NextResponse.json(

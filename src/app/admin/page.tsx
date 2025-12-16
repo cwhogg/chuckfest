@@ -80,6 +80,7 @@ interface Member {
   email: string
   phone: string | null
   is_active: boolean
+  avatar_url: string | null
 }
 
 interface ReminderLog {
@@ -131,10 +132,15 @@ export default function AdminPage() {
   const [newMember, setNewMember] = useState({ name: '', email: '', phone: '' })
   const [selectedSites, setSelectedSites] = useState<string[]>([])
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
+  const [datesUnlocked, setDatesUnlocked] = useState(false)
   const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
   const [savingPhoto, setSavingPhoto] = useState<string | null>(null)
   const [coverPhotoInputs, setCoverPhotoInputs] = useState<Record<string, string>>({})
   const [savingCoverPhoto, setSavingCoverPhoto] = useState<string | null>(null)
+  const [editMemberDialogOpen, setEditMemberDialogOpen] = useState(false)
+  const [editingMember, setEditingMember] = useState<Member | null>(null)
+  const [editMemberForm, setEditMemberForm] = useState({ name: '', email: '', phone: '', avatar_url: '', is_active: true })
+  const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false)
 
   const showMessage = (type: 'success' | 'error', text: string) => {
     setMessage({ type, text })
@@ -257,6 +263,8 @@ export default function AdminPage() {
 
       if (data.success) {
         showMessage('success', 'Trip dates locked!')
+        setDatesUnlocked(false)
+        setSelectedDateOption('')
         fetchData()
       } else {
         showMessage('error', data.error)
@@ -389,6 +397,79 @@ export default function AdminPage() {
       }
     } catch (error) {
       showMessage('error', 'Failed to update member')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const openEditMember = (member: Member) => {
+    setEditingMember(member)
+    setEditMemberForm({
+      name: member.name,
+      email: member.email,
+      phone: member.phone || '',
+      avatar_url: member.avatar_url || '',
+      is_active: member.is_active,
+    })
+    setEditMemberDialogOpen(true)
+  }
+
+  const saveMember = async () => {
+    if (!editingMember) return
+
+    setActionLoading('saveMember')
+    try {
+      const res = await fetch(`/api/members/${editingMember.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: editMemberForm.name,
+          email: editMemberForm.email,
+          phone: editMemberForm.phone || null,
+          avatar_url: editMemberForm.avatar_url || null,
+          is_active: editMemberForm.is_active,
+        }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Member updated successfully')
+        setEditMemberDialogOpen(false)
+        setEditingMember(null)
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to update member')
+      console.error(error)
+    } finally {
+      setActionLoading(null)
+    }
+  }
+
+  const deleteMember = async () => {
+    if (!editingMember) return
+
+    setActionLoading('deleteMember')
+    try {
+      const res = await fetch(`/api/members/${editingMember.id}`, {
+        method: 'DELETE',
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Member deleted')
+        setDeleteConfirmOpen(false)
+        setEditMemberDialogOpen(false)
+        setEditingMember(null)
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to delete member')
       console.error(error)
     } finally {
       setActionLoading(null)
@@ -549,7 +630,9 @@ export default function AdminPage() {
   }
 
   const formatDate = (dateStr: string) => {
-    return new Date(dateStr).toLocaleDateString('en-US', {
+    // Add T12:00:00 to avoid timezone issues (YYYY-MM-DD is parsed as UTC midnight)
+    const date = new Date(dateStr + 'T12:00:00')
+    return date.toLocaleDateString('en-US', {
       weekday: 'short',
       month: 'short',
       day: 'numeric',
@@ -743,17 +826,77 @@ export default function AdminPage() {
                   <p className="text-gray-500">Create a trip year first</p>
                 ) : tripYear.final_start_date ? (
                   <div className="space-y-4">
-                    <Alert className="border-yellow-500 bg-yellow-50">
-                      <AlertDescription className="text-yellow-800">
-                        Dates are already locked. Be careful if changing.
-                      </AlertDescription>
-                    </Alert>
-                    <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                      <p className="text-sm text-green-600 font-medium">Current Dates</p>
-                      <p className="text-xl font-bold text-green-800">
-                        {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
-                      </p>
-                    </div>
+                    {!datesUnlocked ? (
+                      <>
+                        <Alert className="border-yellow-500 bg-yellow-50">
+                          <div className="flex items-center justify-between w-full">
+                            <AlertDescription className="text-yellow-800">
+                              Dates are locked. Be careful if changing.
+                            </AlertDescription>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => setDatesUnlocked(true)}
+                              className="ml-4"
+                            >
+                              Unlock Dates
+                            </Button>
+                          </div>
+                        </Alert>
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                          <p className="text-sm text-green-600 font-medium">Current Dates</p>
+                          <p className="text-xl font-bold text-green-800">
+                            {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
+                          </p>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <Alert className="border-orange-500 bg-orange-50">
+                          <AlertDescription className="text-orange-800">
+                            Dates unlocked for editing. Select a new date range and click Lock Dates to save.
+                          </AlertDescription>
+                        </Alert>
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                          <p className="text-sm text-gray-600 font-medium">Current Dates</p>
+                          <p className="text-lg text-gray-700">
+                            {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
+                          </p>
+                        </div>
+                        <div className="space-y-2">
+                          <Label>Select New Date Range</Label>
+                          <Select value={selectedDateOption} onValueChange={setSelectedDateOption}>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Choose a date range" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {dateOptions.map((option) => (
+                                <SelectItem key={option.id} value={option.id}>
+                                  {formatDate(option.start_date)} - {formatDate(option.end_date)}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
+                        <div className="flex gap-2">
+                          <Button
+                            onClick={lockDates}
+                            disabled={!selectedDateOption || actionLoading === 'lockDates'}
+                          >
+                            {actionLoading === 'lockDates' ? 'Saving...' : 'Lock Dates'}
+                          </Button>
+                          <Button
+                            variant="outline"
+                            onClick={() => {
+                              setDatesUnlocked(false)
+                              setSelectedDateOption('')
+                            }}
+                          >
+                            Cancel
+                          </Button>
+                        </div>
+                      </>
+                    )}
                   </div>
                 ) : dateOptions.length === 0 ? (
                   <p className="text-gray-500">No date options available. Try creating a new trip year.</p>
@@ -1042,6 +1185,7 @@ export default function AdminPage() {
                       <TableHead>Email</TableHead>
                       <TableHead>Phone</TableHead>
                       <TableHead>Active</TableHead>
+                      <TableHead className="w-20">Actions</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -1057,12 +1201,123 @@ export default function AdminPage() {
                             disabled={actionLoading === `member-${member.id}`}
                           />
                         </TableCell>
+                        <TableCell>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => openEditMember(member)}
+                            className="text-gray-600 hover:text-gray-900"
+                          >
+                            Edit
+                          </Button>
+                        </TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
                 </Table>
               </CardContent>
             </Card>
+
+            {/* Edit Member Dialog */}
+            <Dialog open={editMemberDialogOpen} onOpenChange={setEditMemberDialogOpen}>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>Edit Member</DialogTitle>
+                  <DialogDescription>
+                    Update member information or remove them from the group.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="space-y-4 py-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="edit-name">Name</Label>
+                    <Input
+                      id="edit-name"
+                      value={editMemberForm.name}
+                      onChange={(e) => setEditMemberForm({ ...editMemberForm, name: e.target.value })}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="edit-email">Email</Label>
+                    <Input
+                      id="edit-email"
+                      type="email"
+                      value={editMemberForm.email}
+                      onChange={(e) => setEditMemberForm({ ...editMemberForm, email: e.target.value })}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="edit-phone">Phone</Label>
+                    <Input
+                      id="edit-phone"
+                      value={editMemberForm.phone}
+                      onChange={(e) => setEditMemberForm({ ...editMemberForm, phone: e.target.value })}
+                      placeholder="Optional"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="edit-avatar">Avatar URL</Label>
+                    <Input
+                      id="edit-avatar"
+                      value={editMemberForm.avatar_url}
+                      onChange={(e) => setEditMemberForm({ ...editMemberForm, avatar_url: e.target.value })}
+                      placeholder="https://example.com/photo.jpg"
+                    />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <Label htmlFor="edit-active">Active Member</Label>
+                    <Switch
+                      id="edit-active"
+                      checked={editMemberForm.is_active}
+                      onCheckedChange={(checked) => setEditMemberForm({ ...editMemberForm, is_active: checked })}
+                    />
+                  </div>
+                </div>
+                <DialogFooter className="flex justify-between sm:justify-between">
+                  <Button
+                    variant="destructive"
+                    onClick={() => setDeleteConfirmOpen(true)}
+                    disabled={actionLoading === 'deleteMember'}
+                  >
+                    Delete
+                  </Button>
+                  <div className="flex gap-2">
+                    <Button variant="outline" onClick={() => setEditMemberDialogOpen(false)}>
+                      Cancel
+                    </Button>
+                    <Button
+                      onClick={saveMember}
+                      disabled={!editMemberForm.name || !editMemberForm.email || actionLoading === 'saveMember'}
+                    >
+                      {actionLoading === 'saveMember' ? 'Saving...' : 'Save'}
+                    </Button>
+                  </div>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+
+            {/* Delete Confirmation Dialog */}
+            <Dialog open={deleteConfirmOpen} onOpenChange={setDeleteConfirmOpen}>
+              <DialogContent className="sm:max-w-sm">
+                <DialogHeader>
+                  <DialogTitle>Delete Member?</DialogTitle>
+                  <DialogDescription>
+                    Are you sure you want to delete {editingMember?.name}? This action cannot be undone.
+                  </DialogDescription>
+                </DialogHeader>
+                <DialogFooter className="gap-2 sm:gap-0">
+                  <Button variant="outline" onClick={() => setDeleteConfirmOpen(false)}>
+                    Cancel
+                  </Button>
+                  <Button
+                    variant="destructive"
+                    onClick={deleteMember}
+                    disabled={actionLoading === 'deleteMember'}
+                  >
+                    {actionLoading === 'deleteMember' ? 'Deleting...' : 'Delete'}
+                  </Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
           </TabsContent>
 
           {/* SECTION 5: Site Images */}
