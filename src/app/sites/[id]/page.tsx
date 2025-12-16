@@ -15,17 +15,13 @@ import { cn } from '@/lib/utils'
 interface Member {
   id: string
   name: string
+  avatar_url?: string | null
 }
 
 interface Comment {
   id: string
   text: string
   created_at: string
-  member: Member
-}
-
-interface Voter {
-  id: string
   member: Member
 }
 
@@ -47,7 +43,10 @@ interface Site {
   trail_info_url: string | null
   photos: string[] | null
   vote_count: number
-  voters: Voter[]
+  voters: Member[]
+  rank: number | null
+  is_tied: boolean
+  total_sites: number
   comments: Comment[]
 }
 
@@ -291,36 +290,74 @@ export default function SiteDetailPage() {
         </Link>
 
         {/* HEADER SECTION */}
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
-          <div>
-            <h1 className="text-3xl font-bold text-stone-900">{site.name}</h1>
-            {site.region && (
-              <p className="text-lg text-stone-600 mt-1">{site.region}</p>
-            )}
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="text-right">
-              <span className="text-2xl font-bold text-emerald-700">{site.vote_count}</span>
-              <span className="text-stone-500 ml-1">vote{site.vote_count !== 1 ? 's' : ''}</span>
+        <div className="mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div className="flex-1">
+              <h1 className="text-3xl font-bold text-stone-900">{site.name}</h1>
+              {site.region && (
+                <p className="text-lg text-stone-600 mt-1">{site.region}</p>
+              )}
             </div>
-            {hasVoted ? (
-              <Button
-                variant="outline"
-                onClick={handleUnvote}
-                className="text-red-600 border-red-300 hover:bg-red-50"
-              >
-                Remove Vote
-              </Button>
-            ) : (
-              <Button
-                onClick={handleVote}
-                disabled={!canVote}
-                className="bg-emerald-600 hover:bg-emerald-700"
-              >
-                Vote for this Site
-              </Button>
-            )}
+            <div className="flex items-center gap-4">
+              {/* Ranking and votes */}
+              <div className="text-right">
+                <div className="flex items-center gap-2 justify-end">
+                  {site.rank !== null && (
+                    <>
+                      <span className="text-lg font-semibold text-stone-700">
+                        #{site.rank}{site.is_tied ? ' (tied)' : ''} of {site.total_sites}
+                      </span>
+                      <span className="text-stone-300">·</span>
+                    </>
+                  )}
+                  <span className="text-lg font-bold text-emerald-700">
+                    {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
+                  </span>
+                </div>
+              </div>
+              {hasVoted ? (
+                <Button
+                  variant="outline"
+                  onClick={handleUnvote}
+                  className="text-red-600 border-red-300 hover:bg-red-50"
+                >
+                  Remove Vote
+                </Button>
+              ) : (
+                <Button
+                  onClick={handleVote}
+                  disabled={!canVote}
+                  className="bg-emerald-600 hover:bg-emerald-700"
+                >
+                  Vote for this Site
+                </Button>
+              )}
+            </div>
           </div>
+
+          {/* Voters line */}
+          {site.voters.length > 0 ? (
+            <div className="mt-3 flex items-center gap-2 flex-wrap">
+              <span className="text-sm text-stone-500">Voted by:</span>
+              <div className="flex items-center gap-1">
+                {site.voters.slice(0, 6).map((voter, index) => (
+                  <div key={voter.id} className="flex items-center">
+                    <MemberAvatar name={voter.name} size="xs" />
+                    <span className="text-sm text-stone-700 ml-1">
+                      {voter.name}{index < Math.min(site.voters.length, 6) - 1 ? ',' : ''}
+                    </span>
+                  </div>
+                ))}
+                {site.voters.length > 6 && (
+                  <span className="text-sm text-stone-500 ml-1">
+                    +{site.voters.length - 6} more
+                  </span>
+                )}
+              </div>
+            </div>
+          ) : (
+            <p className="mt-3 text-sm text-stone-400">No votes yet</p>
+          )}
         </div>
 
         {/* HERO IMAGE */}
@@ -520,32 +557,6 @@ export default function SiteDetailPage() {
                       </Button>
                     </a>
                   )}
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {/* VOTERS */}
-          {site.voters.length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  Who&apos;s Voted ({site.voters.length})
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-3">
-                  {site.voters.map(voter => (
-                    <div
-                      key={voter.id}
-                      className="flex items-center gap-2 px-3 py-2 bg-stone-50 rounded-full"
-                    >
-                      <MemberAvatar name={voter.member.name} size="sm" />
-                      <span className="text-sm text-stone-700">
-                        {voter.member.name}
-                      </span>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>

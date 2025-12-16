@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 /**
  * GET /api/sites/[id]
  *
- * Get a single site with vote count and comments
+ * Get a single site with vote count, voters, ranking, and comments
  */
 export async function GET(
   request: NextRequest,
@@ -32,24 +32,12 @@ export async function GET(
       throw siteError
     }
 
-    // Get vote count for this site (optionally filtered by trip year)
-    let voteQuery = supabase
-      .from('votes')
-      .select('*', { count: 'exact', head: true })
-      .eq('site_id', id)
-
-    if (tripYearId) {
-      voteQuery = voteQuery.eq('trip_year_id', tripYearId)
-    }
-
-    const { count: voteCount } = await voteQuery
-
-    // Get voters for this site
+    // Get voters for this site with member details
     let votersQuery = supabase
       .from('votes')
       .select(`
         id,
-        member:members(id, name)
+        member:members(id, name, avatar_url)
       `)
       .eq('site_id', id)
 
@@ -57,7 +45,64 @@ export async function GET(
       votersQuery = votersQuery.eq('trip_year_id', tripYearId)
     }
 
-    const { data: voters } = await votersQuery
+    const { data: votersData } = await votersQuery
+
+    // Transform voters to flatten member data
+    const voters = votersData?.map(v => v.member).filter(Boolean) || []
+    const voteCount = voters.length
+
+    // Get all sites with their vote counts for ranking
+    let allVotesQuery = supabase
+      .from('votes')
+      .select('site_id')
+
+    if (tripYearId) {
+      allVotesQuery = allVotesQuery.eq('trip_year_id', tripYearId)
+    }
+
+    const { data: allVotes } = await allVotesQuery
+
+    // Count votes per site
+    const voteCountMap: Record<string, number> = {}
+    if (allVotes) {
+      for (const vote of allVotes) {
+        voteCountMap[vote.site_id] = (voteCountMap[vote.site_id] || 0) + 1
+      }
+    }
+
+    // Get total number of active sites
+    const { count: totalSites } = await supabase
+      .from('sites')
+      .select('*', { count: 'exact', head: true })
+      .eq('status', 'active')
+
+    // Calculate ranking (sites sorted by vote count descending)
+    const sitesWithVotes = Object.entries(voteCountMap)
+      .map(([siteId, votes]) => ({ siteId, votes }))
+      .sort((a, b) => b.votes - a.votes)
+
+    // Find this site's rank (only if it has votes)
+    let rank: number | null = null
+    let isTied = false
+
+    if (voteCount > 0) {
+      // Find position in sorted list
+      const position = sitesWithVotes.findIndex(s => s.siteId === id)
+      if (position !== -1) {
+        // Calculate actual rank (accounting for ties)
+        rank = 1
+        for (let i = 0; i < position; i++) {
+          if (sitesWithVotes[i].votes > sitesWithVotes[position].votes) {
+            rank++
+          }
+        }
+
+        // Check if tied with other sites
+        const currentVotes = sitesWithVotes[position].votes
+        const sitesWithSameVotes = sitesWithVotes.filter(s => s.votes === currentVotes)
+        isTied = sitesWithSameVotes.length > 1
+      }
+    }
 
     // Get comments for this site
     const { data: comments, error: commentsError } = await supabase
@@ -77,8 +122,11 @@ export async function GET(
       success: true,
       site: {
         ...site,
-        vote_count: voteCount || 0,
-        voters: voters || [],
+        vote_count: voteCount,
+        voters: voters,
+        rank: rank,
+        is_tied: isTied,
+        total_sites: totalSites || 0,
         comments: comments || []
       }
     })
