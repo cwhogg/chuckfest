@@ -42,6 +42,7 @@ interface Site {
   peak_elevation_ft: number | null
   difficulty: string | null
   permit_required: boolean
+  permit_url: string | null
   vote_count: number
   photos?: string[] | null
 }
