@@ -32,6 +32,7 @@ interface TripYear {
 }
 
 const navLinks = [
+  { href: '/dashboard', label: 'Dashboard' },
   { href: '/sites', label: 'Sites' },
   { href: '/dates', label: 'Dates' },
   { href: '/past-trips', label: 'Past Trips' },
@@ -83,7 +84,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/sites" className="flex items-center gap-2">
+            <Link href="/dashboard" className="flex items-center gap-2">
               <svg
                 className="w-8 h-8 text-[#2d5016]"
                 viewBox="0 0 24 24"

@@ -55,7 +55,7 @@ export default function Home() {
 
   const selectMember = (memberId: string) => {
     setCurrentMember(memberId)
-    router.push('/sites')
+    router.push('/dashboard')
   }
 
   const handleAddMember = async () => {
@@ -75,7 +75,7 @@ export default function Home() {
       if (data.success) {
         // Auto-select the new member and redirect
         setCurrentMember(data.member.id)
-        router.push('/sites')
+        router.push('/dashboard')
       } else {
         setError(data.error)
       }
