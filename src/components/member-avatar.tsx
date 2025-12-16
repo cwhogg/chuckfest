@@ -10,20 +10,20 @@ interface MemberAvatarProps {
 
 // Generate a consistent color from a name
 function stringToColor(str: string): string {
-  // Earth-tone palette for the camping/outdoor theme
+  // Earthy color palette for retro camping theme
   const colors = [
-    'bg-emerald-600', // Forest green
-    'bg-amber-700',   // Brown/amber
-    'bg-teal-600',    // Teal
-    'bg-orange-600',  // Burnt orange
-    'bg-lime-700',    // Olive green
-    'bg-yellow-700',  // Mustard
-    'bg-cyan-700',    // Deep cyan
-    'bg-green-700',   // Hunter green
-    'bg-rose-700',    // Dusty rose
-    'bg-indigo-600',  // Deep indigo
-    'bg-purple-700',  // Plum
-    'bg-red-700',     // Brick red
+    'bg-[#a65d4e]',  // rust
+    'bg-[#b8923a]',  // ochre
+    'bg-[#5e7c5a]',  // sage
+    'bg-[#5d6d7a]',  // slate
+    'bg-[#c67f5a]',  // clay
+    'bg-[#6b5344]',  // bark
+    'bg-[#6b7c4c]',  // olive
+    'bg-[#8a8279]',  // stone
+    'bg-[#9a6b4c]',  // copper
+    'bg-[#4a5d42]',  // moss
+    'bg-[#5a6a7a]',  // denim
+    'bg-[#7a4a52]',  // wine
   ]
 
   // Simple hash function

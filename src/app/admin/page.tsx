@@ -101,16 +101,16 @@ interface PastTrip {
 }
 
 const statusColors: Record<string, string> = {
-  planning: 'bg-blue-100 text-blue-800',
-  dates_open: 'bg-yellow-100 text-yellow-800',
-  dates_locked: 'bg-green-100 text-green-800',
-  trip_complete: 'bg-gray-100 text-gray-800',
-  completed: 'bg-gray-100 text-gray-800',
-  pending: 'bg-yellow-100 text-yellow-800',
-  reminder_sent: 'bg-blue-100 text-blue-800',
-  booked: 'bg-green-100 text-green-800',
-  missed: 'bg-red-100 text-red-800',
-  cancelled: 'bg-gray-100 text-gray-800',
+  planning: 'bg-[#e8f0e6] text-[#2d5016]',
+  dates_open: 'bg-[#f5e6c8] text-[#5c4033]',
+  dates_locked: 'bg-[#e8f0e6] text-[#4a5d42]',
+  trip_complete: 'bg-[#e8dcc8] text-[#5c4033]',
+  completed: 'bg-[#e8dcc8] text-[#5c4033]',
+  pending: 'bg-[#f5e6c8] text-[#5c4033]',
+  reminder_sent: 'bg-[#e8f0e6] text-[#2d5016]',
+  booked: 'bg-[#e8f0e6] text-[#4a5d42]',
+  missed: 'bg-[#f5e0dc] text-[#7a4a52]',
+  cancelled: 'bg-[#e8dcc8] text-[#7a7067]',
 }
 
 export default function AdminPage() {
@@ -652,32 +652,32 @@ export default function AdminPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-lg">Loading...</div>
+      <div className="min-h-screen bg-[#faf6f0] flex items-center justify-center">
+        <div className="text-lg text-[#5c4033]">Loading...</div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#faf6f0]">
       {/* Header */}
-      <header className="bg-white border-b">
+      <header className="bg-[#fffdf9] border-b border-[#e8dcc8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center gap-4">
             <Link href="/sites" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <svg
-                className="w-8 h-8 text-emerald-700"
+                className="w-8 h-8 text-[#2d5016]"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
                 <path d="M12 2L2 22h20L12 2zm0 3l7.5 15h-15L12 5z"/>
               </svg>
-              <span className="text-xl font-bold text-emerald-800">
+              <span className="text-xl font-bold text-[#2d5016]">
                 ChuckfestAI
               </span>
             </Link>
-            <span className="text-gray-400">|</span>
-            <h1 className="text-xl font-semibold text-gray-700">Admin</h1>
+            <span className="text-[#c9b896]">|</span>
+            <h1 className="text-xl font-semibold text-[#5c4033]">Admin</h1>
           </div>
         </div>
       </header>
@@ -724,9 +724,9 @@ export default function AdminPage() {
                     </div>
 
                     {tripYear.final_start_date && tripYear.final_end_date && (
-                      <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <p className="text-sm text-green-600 font-medium">Final Trip Dates</p>
-                        <p className="text-xl font-bold text-green-800">
+                      <div className="bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg p-4">
+                        <p className="text-sm text-[#4a5d42] font-medium">Final Trip Dates</p>
+                        <p className="text-xl font-bold text-[#2d5016]">
                           {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date)}
                         </p>
                       </div>
@@ -827,14 +827,14 @@ export default function AdminPage() {
                 ) : tripYear.final_start_date ? (
                   <div className="space-y-4">
                     {!datesUnlocked ? (
-                      <div className="flex items-center gap-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                      <div className="flex items-center gap-4 p-4 bg-[#e8f0e6] border border-[#c9d4c5] rounded-lg">
                         <div className="flex-1">
-                          <p className="text-sm text-green-600 font-medium">Current Dates</p>
-                          <p className="text-xl font-bold text-green-800">
+                          <p className="text-sm text-[#4a5d42] font-medium">Current Dates</p>
+                          <p className="text-xl font-bold text-[#2d5016]">
                             {formatDate(tripYear.final_start_date)} - {formatDate(tripYear.final_end_date!)}
                           </p>
                         </div>
-                        <div className="flex items-center gap-3 text-sm text-yellow-700">
+                        <div className="flex items-center gap-3 text-sm text-[#5c4033]">
                           <span>Dates locked</span>
                           <Button
                             variant="outline"

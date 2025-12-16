@@ -22,8 +22,8 @@ const SitesMap = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="w-full h-full bg-stone-100 flex items-center justify-center">
-        <div className="text-stone-500">Loading map...</div>
+      <div className="w-full h-full bg-[#e8dcc8] flex items-center justify-center">
+        <div className="text-[#7a7067]">Loading map...</div>
       </div>
     )
   }
@@ -311,7 +311,7 @@ export default function SitesPage() {
     return (
       <AppShell>
         <div className="flex items-center justify-center h-[calc(100vh-4rem)]">
-          <div className="text-stone-500">Loading sites...</div>
+          <div className="text-[#7a7067]">Loading sites...</div>
         </div>
       </AppShell>
     )
@@ -326,17 +326,17 @@ export default function SitesPage() {
           <div
             className={`
               ${view === 'list' ? 'flex' : 'hidden'}
-              md:flex md:w-[60%] flex-col overflow-hidden border-r border-stone-200
+              md:flex md:w-[60%] flex-col overflow-hidden border-r border-[#e8dcc8]
             `}
           >
             {/* Filter/Sort Row */}
-            <div className="px-4 py-3 border-b border-stone-100 bg-stone-50 flex-shrink-0">
+            <div className="px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0">
               <div className="flex flex-wrap items-center gap-3">
                 {/* Sort dropdown */}
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-stone-600">Sort:</span>
+                  <span className="text-sm text-[#5c4033]">Sort:</span>
                   <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
-                    <SelectTrigger className="w-[140px] h-8 text-sm bg-white">
+                    <SelectTrigger className="w-[140px] h-8 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -351,9 +351,9 @@ export default function SitesPage() {
                 {/* Region filter */}
                 {regions.length > 0 && (
                   <div className="flex items-center gap-2">
-                    <span className="text-sm text-stone-600">Region:</span>
+                    <span className="text-sm text-[#5c4033]">Region:</span>
                     <Select value={regionFilter} onValueChange={setRegionFilter}>
-                      <SelectTrigger className="w-[160px] h-8 text-sm bg-white">
+                      <SelectTrigger className="w-[160px] h-8 text-sm bg-[#fffdf9]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -370,12 +370,12 @@ export default function SitesPage() {
 
                 {/* Difficulty filter */}
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-stone-600">Difficulty:</span>
+                  <span className="text-sm text-[#5c4033]">Difficulty:</span>
                   <Select
                     value={difficultyFilter}
                     onValueChange={(v) => setDifficultyFilter(v as DifficultyFilter)}
                   >
-                    <SelectTrigger className="w-[120px] h-8 text-sm bg-white">
+                    <SelectTrigger className="w-[120px] h-8 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -389,16 +389,16 @@ export default function SitesPage() {
 
                 {/* Votes remaining indicator */}
                 <div className="ml-auto flex items-center gap-3">
-                  <div className="flex items-center gap-2 bg-white border border-stone-200 rounded-md px-3 py-1.5">
-                    <span className="text-sm text-stone-600">Votes Remaining</span>
-                    <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-stone-400' : 'text-emerald-600'}`}>
+                  <div className="flex items-center gap-2 bg-[#fffdf9] border border-[#c9b896] rounded-md px-3 py-1.5">
+                    <span className="text-sm text-[#5c4033]">Votes Remaining</span>
+                    <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
                       {MAX_VOTES - myVotes.length}/{MAX_VOTES}
                     </span>
                   </div>
                   <Button
                     onClick={() => setAddSiteModalOpen(true)}
                     size="sm"
-                    className="h-8"
+                    className="h-8 bg-[#5c4033] hover:bg-[#4a3429]"
                   >
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -430,9 +430,9 @@ export default function SitesPage() {
             </div>
 
             {/* Sites list */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-[#faf6f0]">
               {filteredAndSortedSites.length === 0 ? (
-                <div className="text-center py-12 text-stone-500">
+                <div className="text-center py-12 text-[#7a7067]">
                   {sites.length === 0
                     ? 'No sites available yet.'
                     : 'No sites match your filters.'}

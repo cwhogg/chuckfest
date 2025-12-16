@@ -88,12 +88,12 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-100 to-amber-50 relative overflow-hidden">
+    <div className="min-h-screen bg-[#faf6f0] relative overflow-hidden">
       {/* Topographic pattern overlay */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 Q70 30 50 50 T50 90' stroke='%23000' stroke-width='0.5' fill='none'/%3E%3Cpath d='M20 20 Q40 40 20 60 T20 100' stroke='%23000' stroke-width='0.5' fill='none'/%3E%3Cpath d='M80 0 Q100 20 80 40 T80 80' stroke='%23000' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 Q70 30 50 50 T50 90' stroke='%235c4033' stroke-width='0.5' fill='none'/%3E%3Cpath d='M20 20 Q40 40 20 60 T20 100' stroke='%235c4033' stroke-width='0.5' fill='none'/%3E%3Cpath d='M80 0 Q100 20 80 40 T80 80' stroke='%235c4033' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
           backgroundSize: '100px 100px',
         }}
       />
@@ -104,7 +104,7 @@ export default function Home() {
           <div className="flex items-center justify-center mb-4">
             {/* Mountain icon */}
             <svg
-              className="w-16 h-16 text-emerald-700"
+              className="w-16 h-16 text-[#2d5016]"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -113,31 +113,31 @@ export default function Home() {
               <path d="M7 14l3-4 2 2 4-5 4 7H4l3-4z" fill="white" opacity="0.5"/>
             </svg>
           </div>
-          <h1 className="text-5xl font-bold text-emerald-800 tracking-tight mb-2">
+          <h1 className="text-5xl font-bold text-[#2d5016] tracking-tight mb-2">
             ChuckfestAI
           </h1>
-          <p className="text-xl text-amber-800">
+          <p className="text-xl text-[#5c4033]">
             Are you joining the adventure?
           </p>
         </div>
 
         {/* Member Grid */}
         {loading ? (
-          <div className="text-stone-600">Loading...</div>
+          <div className="text-[#7a7067]">Loading...</div>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-3xl mb-12">
             {members.map((member) => (
               <button
                 key={member.id}
                 onClick={() => selectMember(member.id)}
-                className="group flex flex-col items-center p-4 rounded-xl transition-all duration-200 hover:bg-white/50 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                className="group flex flex-col items-center p-4 rounded-xl transition-all duration-200 hover:bg-[#fffdf9] hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#2d5016] focus:ring-offset-2"
               >
                 <MemberAvatar
                   name={member.name}
                   size="xl"
-                  className="mb-3 ring-4 ring-white shadow-md group-hover:ring-emerald-200 transition-all"
+                  className="mb-3 ring-4 ring-[#fffdf9] shadow-md group-hover:ring-[#e8dcc8] transition-all"
                 />
-                <span className="text-stone-800 font-medium text-center">
+                <span className="text-[#3d352e] font-medium text-center">
                   {member.name}
                 </span>
               </button>
@@ -148,7 +148,7 @@ export default function Home() {
         {/* New member link */}
         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
           <DialogTrigger asChild>
-            <button className="text-emerald-700 hover:text-emerald-800 underline underline-offset-4 font-medium transition-colors">
+            <button className="text-[#2d5016] hover:text-[#5c4033] underline underline-offset-4 font-medium transition-colors">
               I&apos;m new here
             </button>
           </DialogTrigger>
@@ -161,7 +161,7 @@ export default function Home() {
             </DialogHeader>
             <div className="space-y-4 py-4">
               {error && (
-                <div className="text-sm text-red-600 bg-red-50 p-3 rounded-lg">
+                <div className="text-sm text-[#b54c3a] bg-[#fdf2f0] p-3 rounded-lg">
                   {error}
                 </div>
               )}
@@ -201,7 +201,7 @@ export default function Home() {
               <Button
                 onClick={handleAddMember}
                 disabled={!newMember.name || !newMember.email || submitting}
-                className="bg-emerald-600 hover:bg-emerald-700"
+                className="bg-[#5c4033] hover:bg-[#4a3429]"
               >
                 {submitting ? 'Joining...' : 'Join the Crew'}
               </Button>
@@ -210,7 +210,7 @@ export default function Home() {
         </Dialog>
 
         {/* Footer */}
-        <div className="absolute bottom-6 text-center text-stone-500 text-sm">
+        <div className="absolute bottom-6 text-center text-[#7a7067] text-sm">
           Annual backpacking adventure since 2020
         </div>
       </div>

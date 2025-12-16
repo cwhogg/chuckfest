@@ -36,9 +36,9 @@ interface SiteCardProps {
 }
 
 const difficultyColors: Record<string, string> = {
-  easy: 'bg-green-100 text-green-700 border-green-200',
-  moderate: 'bg-yellow-100 text-yellow-700 border-yellow-200',
-  strenuous: 'bg-red-100 text-red-700 border-red-200',
+  easy: 'bg-[#e8f0e6] text-[#4a5d42] border-[#c9d4c5]',
+  moderate: 'bg-[#f5e6c8] text-[#5c4033] border-[#c9b896]',
+  strenuous: 'bg-[#f5e0dc] text-[#7a4a52] border-[#d4b8b4]',
 }
 
 function getPlaceholderImage(siteId: string): string {
@@ -76,11 +76,11 @@ export function SiteCard({
     <Card
       ref={setRef}
       className={cn(
-        'overflow-hidden transition-all duration-200 shadow-sm hover:shadow-md',
-        isSelected && 'ring-2 ring-emerald-500 bg-emerald-50/50',
-        isHovered && !isSelected && 'ring-2 ring-emerald-300 bg-emerald-50/30',
-        isVoted && 'border-l-4 border-l-emerald-500',
-        !isSelected && !isHovered && 'hover:bg-stone-50/50'
+        'overflow-hidden transition-all duration-200 shadow-sm hover:shadow-md bg-[#fffdf9] border-[#e8dcc8]',
+        isSelected && 'ring-2 ring-[#2d5016] bg-[#f5f8f4]',
+        isHovered && !isSelected && 'ring-2 ring-[#c9b896] bg-[#fdfcf8]',
+        isVoted && 'border-l-4 border-l-[#2d5016]',
+        !isSelected && !isHovered && 'hover:bg-[#fdfcf8]'
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -90,15 +90,15 @@ export function SiteCard({
         <div className="flex-1 p-3 flex flex-col min-w-0">
           {/* Header: number + name */}
           <div className="flex items-start gap-2">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2d5016] text-[#faf6f0] font-bold flex items-center justify-center text-xs">
               {number}
             </span>
             <div className="min-w-0 flex-1">
-              <h3 className="font-semibold text-base text-stone-900 leading-tight">
+              <h3 className="font-semibold text-base text-[#3d352e] leading-tight">
                 {site.name}
               </h3>
               {site.region && (
-                <span className="text-xs text-stone-500 mt-0.5 block">
+                <span className="text-xs text-[#7a7067] mt-0.5 block">
                   {site.region}
                 </span>
               )}
@@ -106,10 +106,10 @@ export function SiteCard({
           </div>
 
           {/* Stats row */}
-          <div className="flex flex-wrap items-center gap-2 mt-2 text-xs text-stone-600">
+          <div className="flex flex-wrap items-center gap-2 mt-2 text-xs text-[#5c4033]">
             {site.distance_miles !== null && (
               <span className="flex items-center gap-0.5">
-                <svg className="w-3 h-3 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 text-[#7a7067]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
                 {site.distance_miles}mi
@@ -117,7 +117,7 @@ export function SiteCard({
             )}
             {site.elevation_gain_ft !== null && (
               <span className="flex items-center gap-0.5">
-                <svg className="w-3 h-3 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 text-[#7a7067]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
                 {site.elevation_gain_ft.toLocaleString()}ft
@@ -125,7 +125,7 @@ export function SiteCard({
             )}
             {site.peak_elevation_ft !== null && (
               <span className="flex items-center gap-0.5">
-                <svg className="w-3 h-3 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 text-[#7a7067]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21l6-6 4 4 8-8" />
                 </svg>
                 {site.peak_elevation_ft.toLocaleString()}ft
@@ -136,7 +136,7 @@ export function SiteCard({
                 variant="outline"
                 className={cn(
                   'text-xs capitalize h-5 px-1.5',
-                  difficultyColors[site.difficulty.toLowerCase()] || 'bg-stone-100 text-stone-600'
+                  difficultyColors[site.difficulty.toLowerCase()] || 'bg-[#e8dcc8] text-[#5c4033]'
                 )}
               >
                 {site.difficulty}
@@ -146,25 +146,25 @@ export function SiteCard({
 
           {/* Description */}
           {site.description && (
-            <p className="mt-2 text-xs text-stone-500 line-clamp-2 leading-relaxed flex-1">
+            <p className="mt-2 text-xs text-[#7a7067] line-clamp-2 leading-relaxed flex-1">
               {site.description}
             </p>
           )}
 
           {/* Links row at bottom */}
-          <div className="flex items-center gap-1 mt-3 pt-2 border-t border-stone-100">
+          <div className="flex items-center gap-1 mt-3 pt-2 border-t border-[#e8dcc8]">
             <Link href={`/sites/${site.id}`}>
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-stone-600 hover:text-stone-900 h-6 px-2 text-xs"
+                className="text-[#5c4033] hover:text-[#3d352e] h-6 px-2 text-xs"
               >
                 View Details
               </Button>
             </Link>
             {site.trail_info_url && (
               <>
-                <span className="text-stone-300">·</span>
+                <span className="text-[#c9b896]">·</span>
                 <a
                   href={site.trail_info_url}
                   target="_blank"
@@ -173,7 +173,7 @@ export function SiteCard({
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-green-700 hover:text-green-900 hover:bg-green-50 h-6 px-2 text-xs"
+                    className="text-[#2d5016] hover:text-[#1a3009] hover:bg-[#e8f0e6] h-6 px-2 text-xs"
                   >
                     AllTrails
                     <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ export function SiteCard({
             )}
             {site.permit_url && (
               <>
-                <span className="text-stone-300">·</span>
+                <span className="text-[#c9b896]">·</span>
                 <a
                   href={site.permit_url}
                   target="_blank"
@@ -194,7 +194,7 @@ export function SiteCard({
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-amber-700 hover:text-amber-900 hover:bg-amber-50 h-6 px-2 text-xs"
+                    className="text-[#5c4033] hover:text-[#4a3429] hover:bg-[#f5e6c8] h-6 px-2 text-xs"
                   >
                     Permits
                     <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -211,10 +211,10 @@ export function SiteCard({
         <div className="flex-shrink-0 w-[140px] p-2 flex flex-col items-center gap-2">
           {/* Vote count at top */}
           <div className="text-center">
-            <span className="text-lg font-bold text-emerald-700">
+            <span className="text-lg font-bold text-[#2d5016]">
               {site.vote_count}
             </span>
-            <span className="text-xs text-stone-500 ml-1">
+            <span className="text-xs text-[#7a7067] ml-1">
               vote{site.vote_count !== 1 ? 's' : ''}
             </span>
           </div>
@@ -222,8 +222,8 @@ export function SiteCard({
           {/* Larger image */}
           <div className="w-full aspect-[4/3] rounded-lg overflow-hidden">
             {imageError ? (
-              <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center">
-                <svg className="w-10 h-10 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-full h-full bg-gradient-to-br from-[#e8dcc8] to-[#d4c8b4] flex items-center justify-center">
+                <svg className="w-10 h-10 text-[#5c4033]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21l6-6 4 4 8-8M3 21h18M3 21V3h18v18" />
                 </svg>
               </div>
@@ -246,8 +246,8 @@ export function SiteCard({
             className={cn(
               'transition-all duration-150 active:scale-95 h-8 px-3 text-xs w-full',
               isVoted
-                ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
-                : 'border-emerald-300 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-400'
+                ? 'bg-[#5a7c52] hover:bg-[#4a6844] text-[#faf6f0]'
+                : 'border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8] hover:border-[#b8a886]'
             )}
           >
             {isVoted ? (
