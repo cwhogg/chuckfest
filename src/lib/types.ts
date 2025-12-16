@@ -278,6 +278,7 @@ export type PastTrip = {
   elevation_gain_ft: number | null
   campsite_elevation_ft: number | null
   album_url: string | null
+  cover_photo_url: string | null
   notes: string | null
   created_at: string
 }
@@ -293,6 +294,7 @@ export type PastTripInsert = {
   elevation_gain_ft?: number | null
   campsite_elevation_ft?: number | null
   album_url?: string | null
+  cover_photo_url?: string | null
   notes?: string | null
   created_at?: string
 }

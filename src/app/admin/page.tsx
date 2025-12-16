@@ -91,6 +91,14 @@ interface ReminderLog {
   sent_at: string
 }
 
+interface PastTrip {
+  id: string
+  year: number
+  location_name: string | null
+  album_url: string | null
+  cover_photo_url: string | null
+}
+
 const statusColors: Record<string, string> = {
   planning: 'bg-blue-100 text-blue-800',
   dates_open: 'bg-yellow-100 text-yellow-800',
@@ -111,6 +119,7 @@ export default function AdminPage() {
   const [reminders, setReminders] = useState<PermitReminder[]>([])
   const [members, setMembers] = useState<Member[]>([])
   const [reminderLogs, setReminderLogs] = useState<ReminderLog[]>([])
+  const [pastTrips, setPastTrips] = useState<PastTrip[]>([])
   const [loading, setLoading] = useState(true)
   const [actionLoading, setActionLoading] = useState<string | null>(null)
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
@@ -124,6 +133,8 @@ export default function AdminPage() {
   const [selectedDateOption, setSelectedDateOption] = useState<string>('')
   const [photoInputs, setPhotoInputs] = useState<Record<string, string>>({})
   const [savingPhoto, setSavingPhoto] = useState<string | null>(null)
+  const [coverPhotoInputs, setCoverPhotoInputs] = useState<Record<string, string>>({})
+  const [savingCoverPhoto, setSavingCoverPhoto] = useState<string | null>(null)
 
   const showMessage = (type: 'success' | 'error', text: string) => {
     setMessage({ type, text })
@@ -172,6 +183,13 @@ export default function AdminPage() {
       const logsData = await logsRes.json()
       if (logsData.success) {
         setReminderLogs(logsData.logs)
+      }
+
+      // Fetch past trips
+      const pastTripsRes = await fetch('/api/past-trips')
+      const pastTripsData = await pastTripsRes.json()
+      if (pastTripsData.success) {
+        setPastTrips(pastTripsData.trips || [])
       }
     } catch (error) {
       console.error('Error fetching data:', error)
@@ -475,6 +493,61 @@ export default function AdminPage() {
     }
   }
 
+  const saveCoverPhoto = async (tripId: string) => {
+    const photoUrl = coverPhotoInputs[tripId]?.trim()
+    if (!photoUrl) {
+      showMessage('error', 'Please enter a photo URL')
+      return
+    }
+
+    setSavingCoverPhoto(tripId)
+    try {
+      const res = await fetch(`/api/past-trips/${tripId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ cover_photo_url: photoUrl }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Cover photo saved!')
+        setCoverPhotoInputs(prev => ({ ...prev, [tripId]: '' }))
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to save cover photo')
+      console.error(error)
+    } finally {
+      setSavingCoverPhoto(null)
+    }
+  }
+
+  const clearCoverPhoto = async (tripId: string) => {
+    setSavingCoverPhoto(tripId)
+    try {
+      const res = await fetch(`/api/past-trips/${tripId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ cover_photo_url: null }),
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        showMessage('success', 'Cover photo cleared')
+        fetchData()
+      } else {
+        showMessage('error', data.error)
+      }
+    } catch (error) {
+      showMessage('error', 'Failed to clear cover photo')
+      console.error(error)
+    } finally {
+      setSavingCoverPhoto(null)
+    }
+  }
+
   const formatDate = (dateStr: string) => {
     return new Date(dateStr).toLocaleDateString('en-US', {
       weekday: 'short',
@@ -540,12 +613,13 @@ export default function AdminPage() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Tabs defaultValue="trip-year" className="space-y-6">
-          <TabsList className="grid grid-cols-6 w-full max-w-3xl">
+          <TabsList className="grid grid-cols-7 w-full max-w-4xl">
             <TabsTrigger value="trip-year">Trip Year</TabsTrigger>
             <TabsTrigger value="dates">Dates</TabsTrigger>
             <TabsTrigger value="reminders">Reminders</TabsTrigger>
             <TabsTrigger value="members">Members</TabsTrigger>
             <TabsTrigger value="site-images">Site Images</TabsTrigger>
+            <TabsTrigger value="past-trips">Past Trips</TabsTrigger>
             <TabsTrigger value="actions">Actions</TabsTrigger>
           </TabsList>
 
@@ -1093,7 +1167,119 @@ export default function AdminPage() {
             </Card>
           </TabsContent>
 
-          {/* SECTION 6: Quick Actions */}
+          {/* SECTION 6: Past Trips Cover Photos */}
+          <TabsContent value="past-trips" className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Past Trip Cover Photos</CardTitle>
+                <CardDescription>
+                  Set cover photos for past trips. These appear on the Past Trips archive page.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {pastTrips
+                    .sort((a, b) => b.year - a.year)
+                    .map((trip) => {
+                      const hasPhoto = !!trip.cover_photo_url
+
+                      return (
+                        <div key={trip.id} className="flex items-start gap-4 p-4 border rounded-lg">
+                          {/* Thumbnail */}
+                          <div className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
+                            {hasPhoto ? (
+                              <img
+                                src={trip.cover_photo_url!}
+                                alt={trip.location_name || `${trip.year}`}
+                                className="w-full h-full object-cover"
+                                onError={(e) => {
+                                  (e.target as HTMLImageElement).style.display = 'none'
+                                }}
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
+                                No cover
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Trip info and input */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+                              <h4 className="font-medium text-sm">{trip.year}</h4>
+                              <span className="text-sm text-gray-600">{trip.location_name || 'Unknown location'}</span>
+                              {hasPhoto && (
+                                <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+                                  Has cover
+                                </Badge>
+                              )}
+                            </div>
+                            {trip.album_url && (
+                              <p className="text-xs text-blue-600 mb-2">
+                                <a href={trip.album_url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                  View album
+                                </a>
+                              </p>
+                            )}
+
+                            <div className="flex gap-2">
+                              <Input
+                                placeholder="Paste cover photo URL here..."
+                                value={coverPhotoInputs[trip.id] || ''}
+                                onChange={(e) => setCoverPhotoInputs(prev => ({ ...prev, [trip.id]: e.target.value }))}
+                                className="text-sm h-8"
+                              />
+                              <Button
+                                size="sm"
+                                onClick={() => saveCoverPhoto(trip.id)}
+                                disabled={savingCoverPhoto === trip.id || !coverPhotoInputs[trip.id]?.trim()}
+                              >
+                                {savingCoverPhoto === trip.id ? '...' : 'Save'}
+                              </Button>
+                              {hasPhoto && (
+                                <Button
+                                  size="sm"
+                                  variant="ghost"
+                                  onClick={() => clearCoverPhoto(trip.id)}
+                                  disabled={savingCoverPhoto === trip.id}
+                                  className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                                >
+                                  Clear
+                                </Button>
+                              )}
+                            </div>
+
+                            {trip.cover_photo_url && (
+                              <p className="text-xs text-gray-400 mt-1 truncate" title={trip.cover_photo_url}>
+                                Current: {trip.cover_photo_url}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      )
+                    })}
+
+                  {pastTrips.length === 0 && (
+                    <p className="text-gray-500 text-center py-8">No past trips found</p>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Tips Card */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base">Tips for Cover Photos</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-gray-600 space-y-2">
+                <p><strong>From Google Photos:</strong> Open an album, click a photo, then click the Share button and &quot;Get link&quot; (or right-click to copy image URL)</p>
+                <p><strong>Best size:</strong> Landscape orientation works best (will be cropped to 16:9)</p>
+                <p><strong>Falls back:</strong> If no cover photo is set, the page will use the linked site&apos;s photo if available</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* SECTION 7: Quick Actions */}
           <TabsContent value="actions" className="space-y-6">
             <Card>
               <CardHeader>

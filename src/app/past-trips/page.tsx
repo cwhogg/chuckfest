@@ -35,6 +35,7 @@ interface PastTrip {
   elevation_gain_ft: number | null
   campsite_elevation_ft: number | null
   album_url: string | null
+  cover_photo_url: string | null
   notes: string | null
   attendees: Member[]
 }
@@ -98,15 +99,21 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
       <div className="flex-1 mb-8">
         <div className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
           {/* Header with photo background or gradient */}
-          <div className="relative h-32 bg-gradient-to-br from-stone-100 to-stone-200 overflow-hidden">
-            {trip.site?.photos?.[0] && (
+          <div className="relative h-40 bg-gradient-to-br from-stone-100 to-stone-200 overflow-hidden">
+            {(trip.cover_photo_url || trip.site?.photos?.[0]) ? (
               <img
-                src={trip.site.photos[0]}
+                src={trip.cover_photo_url || trip.site?.photos?.[0] || ''}
                 alt={trip.location_name || ''}
-                className="absolute inset-0 w-full h-full object-cover opacity-80"
+                className="absolute inset-0 w-full h-full object-cover"
               />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg className="w-16 h-16 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
             {/* Trip number badge */}
             <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
