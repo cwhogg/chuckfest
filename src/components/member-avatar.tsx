@@ -10,29 +10,34 @@ interface MemberAvatarProps {
 
 // Generate a consistent color from a name
 function stringToColor(str: string): string {
-  // Earthy color palette for retro camping theme
+  // Earthy color palette with good variety - warm tones, browns, muted greens
   const colors = [
     'bg-[#a65d4e]',  // rust
-    'bg-[#b8923a]',  // ochre
-    'bg-[#5e7c5a]',  // sage
+    'bg-[#b8923a]',  // ochre/mustard
+    'bg-[#5e7c5a]',  // sage green
     'bg-[#5d6d7a]',  // slate
-    'bg-[#c67f5a]',  // clay
-    'bg-[#6b5344]',  // bark
+    'bg-[#c67f5a]',  // clay/terracotta
+    'bg-[#6b5344]',  // bark brown
     'bg-[#6b7c4c]',  // olive
-    'bg-[#8a8279]',  // stone
+    'bg-[#8a8279]',  // stone gray
     'bg-[#9a6b4c]',  // copper
     'bg-[#4a5d42]',  // moss
-    'bg-[#5a6a7a]',  // denim
-    'bg-[#7a4a52]',  // wine
+    'bg-[#7a4a52]',  // wine/burgundy
+    'bg-[#6b5266]',  // plum
   ]
 
-  // Simple hash function
+  // Better hash function for more even distribution
   let hash = 0
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i)
     hash = ((hash << 5) - hash) + char
     hash = hash & hash
   }
+  // Mix the bits more thoroughly
+  hash = Math.abs(hash)
+  hash = ((hash >> 16) ^ hash) * 0x45d9f3b
+  hash = ((hash >> 16) ^ hash) * 0x45d9f3b
+  hash = (hash >> 16) ^ hash
 
   return colors[Math.abs(hash) % colors.length]
 }
