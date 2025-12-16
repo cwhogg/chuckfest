@@ -60,6 +60,196 @@ function getNextStatus(current: AvailabilityStatus): AvailabilityStatus {
   return statusCycle[(currentIndex + 1) % statusCycle.length]
 }
 
+interface RankedDate {
+  id: string
+  label: string
+  rank: number
+  available: number
+  maybe: number
+  unavailable: number
+  availableMembers: string[]
+}
+
+function TopDatesSection({
+  dateOptions,
+  members
+}: {
+  dateOptions: DateOption[]
+  members: Member[]
+}) {
+  // Get dates with at least one response and rank them
+  const datesWithResponses = dateOptions
+    .filter((opt) => opt.stats.totalResponses > 0)
+    .map((opt) => ({
+      id: opt.id,
+      label: opt.label,
+      available: opt.stats.available,
+      maybe: opt.stats.maybe,
+      unavailable: opt.stats.unavailable,
+      availableMembers: opt.date_availability
+        .filter((a) => a.status === 'available')
+        .map((a) => {
+          const member = members.find((m) => m.id === a.member_id)
+          return member?.name || ''
+        })
+        .filter(Boolean)
+    }))
+    .sort((a, b) => {
+      // Primary: most available
+      if (b.available !== a.available) return b.available - a.available
+      // Tiebreaker: fewest unavailable
+      if (a.unavailable !== b.unavailable) return a.unavailable - b.unavailable
+      // Secondary tiebreaker: most maybe
+      return b.maybe - a.maybe
+    })
+
+  // Assign ranks (handling ties)
+  const rankedDates: RankedDate[] = []
+  let currentRank = 1
+
+  for (let i = 0; i < datesWithResponses.length && currentRank <= 3; i++) {
+    const date = datesWithResponses[i]
+
+    // Check if this date ties with the previous one
+    if (i > 0) {
+      const prev = datesWithResponses[i - 1]
+      if (
+        date.available === prev.available &&
+        date.unavailable === prev.unavailable &&
+        date.maybe === prev.maybe
+      ) {
+        // Same rank as previous (tie)
+        rankedDates.push({ ...date, rank: rankedDates[rankedDates.length - 1].rank })
+      } else {
+        // New rank
+        currentRank = rankedDates.length + 1
+        if (currentRank <= 3) {
+          rankedDates.push({ ...date, rank: currentRank })
+        }
+      }
+    } else {
+      rankedDates.push({ ...date, rank: 1 })
+    }
+  }
+
+  // Take only top 3 ranks worth
+  const topDates = rankedDates.slice(0, Math.min(rankedDates.length, 5)) // Allow some ties
+
+  if (topDates.length === 0) {
+    return (
+      <div className="mb-6 p-6 bg-stone-50 rounded-xl border border-stone-200 text-center">
+        <div className="text-stone-400 text-4xl mb-2">📅</div>
+        <p className="text-stone-600 font-medium">No responses yet</p>
+        <p className="text-stone-500 text-sm mt-1">Be the first to pick your dates!</p>
+      </div>
+    )
+  }
+
+  const getRankStyle = (rank: number) => {
+    switch (rank) {
+      case 1:
+        return {
+          border: 'border-amber-300',
+          bg: 'bg-gradient-to-br from-amber-50 to-yellow-50',
+          medal: '🥇',
+          label: '1st',
+          labelColor: 'text-amber-700'
+        }
+      case 2:
+        return {
+          border: 'border-stone-300',
+          bg: 'bg-gradient-to-br from-stone-50 to-slate-50',
+          medal: '🥈',
+          label: '2nd',
+          labelColor: 'text-stone-600'
+        }
+      case 3:
+        return {
+          border: 'border-orange-200',
+          bg: 'bg-gradient-to-br from-orange-50 to-amber-50',
+          medal: '🥉',
+          label: '3rd',
+          labelColor: 'text-orange-700'
+        }
+      default:
+        return {
+          border: 'border-stone-200',
+          bg: 'bg-stone-50',
+          medal: '',
+          label: `${rank}th`,
+          labelColor: 'text-stone-500'
+        }
+    }
+  }
+
+  return (
+    <div className="mb-6">
+      <h2 className="text-lg font-semibold text-stone-800 mb-3">Top Dates</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {topDates.slice(0, 3).map((date) => {
+          const style = getRankStyle(date.rank)
+          return (
+            <div
+              key={date.id}
+              className={`p-4 rounded-xl border-2 ${style.border} ${style.bg} transition-transform hover:scale-[1.02]`}
+            >
+              <div className="flex items-start justify-between mb-2">
+                <div>
+                  <span className="text-2xl mr-2">{style.medal}</span>
+                  <span className={`text-xs font-semibold ${style.labelColor}`}>
+                    {style.label}
+                  </span>
+                </div>
+              </div>
+              <div className="text-xl font-bold text-stone-800 mb-3">{date.label}</div>
+              <div className="space-y-1 text-sm">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-600 font-medium">&#10003;</span>
+                  <span className="text-stone-700">
+                    {date.available} available
+                  </span>
+                </div>
+                {date.maybe > 0 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-amber-600 font-medium">?</span>
+                    <span className="text-stone-600">{date.maybe} maybe</span>
+                  </div>
+                )}
+                {date.unavailable > 0 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-red-600 font-medium">&#10005;</span>
+                    <span className="text-stone-500">{date.unavailable} unavailable</span>
+                  </div>
+                )}
+              </div>
+              {date.availableMembers.length > 0 && (
+                <div className="mt-3 pt-3 border-t border-stone-200/50">
+                  <div className="flex -space-x-2">
+                    {date.availableMembers.slice(0, 5).map((name, idx) => (
+                      <div
+                        key={idx}
+                        className="w-7 h-7 rounded-full bg-emerald-100 border-2 border-white flex items-center justify-center text-xs font-medium text-emerald-700"
+                        title={name}
+                      >
+                        {name.charAt(0)}
+                      </div>
+                    ))}
+                    {date.availableMembers.length > 5 && (
+                      <div className="w-7 h-7 rounded-full bg-stone-100 border-2 border-white flex items-center justify-center text-xs font-medium text-stone-600">
+                        +{date.availableMembers.length - 5}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 function StatusCell({
   status,
   onClick,
@@ -494,6 +684,9 @@ export default function DatesPage() {
             Date voting is closed. The final dates have been selected.
           </div>
         )}
+
+        {/* Top Dates Section */}
+        <TopDatesSection dateOptions={dateOptions} members={members} />
 
         {/* Doodle Grid */}
         <Card>
