@@ -109,6 +109,12 @@ export async function POST(request: NextRequest) {
       ? `${tripStart.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}-${tripEnd.getDate()}, ${tripStart.getFullYear()}`
       : tripStart.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
 
+    // Calculate days until permits open (from reminder time to permit open time)
+    const reminderTime = new Date(reminder.reminder_datetime)
+    const permitOpenTime = new Date(reminder.permit_open_datetime)
+    const msPerDay = 24 * 60 * 60 * 1000
+    const daysUntilOpen = Math.round((permitOpenTime.getTime() - reminderTime.getTime()) / msPerDay)
+
     // Create the email component
     const emailComponent = PermitReminderEmail({
       siteName: reminder.site.name,
@@ -121,10 +127,10 @@ export async function POST(request: NextRequest) {
       peakElevationFt: reminder.site.peak_elevation_ft || undefined,
       permitNotes: reminder.site.permit_notes || undefined,
       permitCost: reminder.site.permit_cost || undefined,
+      daysUntilOpen,
     })
 
     // Generate ICS calendar file
-    const permitOpenTime = new Date(reminder.permit_open_datetime)
     const icsContent = generatePermitReminderICS({
       siteName: reminder.site.name,
       permitOpenTime,
@@ -133,10 +139,11 @@ export async function POST(request: NextRequest) {
     })
     const icsFilename = generateICSFilename(reminder.site.name)
 
-    // Send the email
+    // Send the email with dynamic subject based on days until open
+    const timeText = daysUntilOpen === 1 ? 'TOMORROW' : `in ${daysUntilOpen} days`
     const subject = isTestMode
-      ? `[TEST] Permits for ${reminder.site.name} open TOMORROW!`
-      : `Permits for ${reminder.site.name} open TOMORROW!`
+      ? `[TEST] Permits for ${reminder.site.name} open ${timeText}!`
+      : `Permits for ${reminder.site.name} open ${timeText}!`
 
     const result = await sendEmail({
       to: recipients,
@@ -145,6 +152,7 @@ export async function POST(request: NextRequest) {
       attachments: [{
         filename: icsFilename,
         content: Buffer.from(icsContent, 'utf-8'),
+        type: 'text/calendar',
       }],
     })
 

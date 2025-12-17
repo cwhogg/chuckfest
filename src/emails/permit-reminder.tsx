@@ -23,6 +23,7 @@ export interface PermitReminderEmailProps {
   peakElevationFt?: number
   permitNotes?: string
   permitCost?: number
+  daysUntilOpen?: number // 1 = tomorrow, 3 = in 3 days
 }
 
 export default function PermitReminderEmail({
@@ -36,11 +37,19 @@ export default function PermitReminderEmail({
   peakElevationFt = 9476,
   permitNotes = 'Bear canister REQUIRED. Max group size 15.',
   permitCost = 8,
+  daysUntilOpen = 1,
 }: PermitReminderEmailProps) {
+  // Generate dynamic text based on days until open
+  const urgencyText = daysUntilOpen === 1
+    ? "That's TOMORROW!"
+    : `That's in ${daysUntilOpen} days!`
+  const previewText = daysUntilOpen === 1
+    ? `Permits for ${siteName} open tomorrow!`
+    : `Permits for ${siteName} open in ${daysUntilOpen} days!`
   return (
     <Html>
       <Head />
-      <Preview>Permits for {siteName} open tomorrow!</Preview>
+      <Preview>{previewText}</Preview>
       <Body style={main}>
         <Container style={container}>
           {/* Header with retro camping feel */}
@@ -64,7 +73,7 @@ export default function PermitReminderEmail({
             <Section style={permitCard}>
               <Text style={permitCardLabel}>Permits Open</Text>
               <Text style={permitCardTime}>{permitOpenDatetime}</Text>
-              <Text style={permitCardUrgent}>That's TOMORROW!</Text>
+              <Text style={permitCardUrgent}>{urgencyText}</Text>
             </Section>
           </Section>
 

@@ -36,6 +36,7 @@ export function getTestRecipient(): string | null {
 export interface EmailAttachment {
   filename: string
   content: Buffer // Buffer content for the attachment
+  type?: string // MIME type (e.g., 'text/calendar' for ICS files)
 }
 
 export interface SendEmailOptions {

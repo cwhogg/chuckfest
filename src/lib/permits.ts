@@ -108,17 +108,24 @@ export function calculatePermitOpenDatetime(site: Site, tripStartDate: Date): Da
 }
 
 /**
- * Calculate when to send a reminder (24 hours before permits open)
+ * Days before permits open to send reminders
+ */
+export const REMINDER_DAYS_BEFORE = [3, 1] // 3 days before and 1 day before
+
+/**
+ * Calculate when to send a reminder
  *
  * @param permitOpenDatetime - When permits open
+ * @param daysBefore - How many days before to send the reminder
  * @returns Date object for when to send the reminder
  */
-export function calculateReminderDatetime(permitOpenDatetime: Date): Date {
-  return subDays(permitOpenDatetime, 1)
+export function calculateReminderDatetime(permitOpenDatetime: Date, daysBefore: number = 1): Date {
+  return subDays(permitOpenDatetime, daysBefore)
 }
 
 /**
  * Generate permit reminder objects for a trip year and list of sites
+ * Creates reminders for each interval in REMINDER_DAYS_BEFORE (3 days and 1 day before)
  *
  * @param tripYear - The trip year (must have final_start_date set)
  * @param sites - Array of sites to generate reminders for
@@ -152,18 +159,27 @@ export function generatePermitReminders(
         continue
       }
 
-      const reminderDatetime = calculateReminderDatetime(permitOpenDatetime)
+      // Create a reminder for each interval (3 days before and 1 day before)
+      for (const daysBefore of REMINDER_DAYS_BEFORE) {
+        const reminderDatetime = calculateReminderDatetime(permitOpenDatetime, daysBefore)
 
-      reminders.push({
-        trip_year_id: tripYear.id,
-        site_id: site.id,
-        target_trip_date: tripYear.final_start_date,
-        permit_open_datetime: permitOpenDatetime.toISOString(),
-        reminder_datetime: reminderDatetime.toISOString(),
-        status: 'pending'
-      })
+        // Skip if this reminder time is in the past
+        if (reminderDatetime < now) {
+          console.log(`Skipping ${daysBefore}-day reminder for ${site.name}: reminder time already passed`)
+          continue
+        }
 
-      console.log(`Generated reminder for ${site.name}: opens ${permitOpenDatetime.toISOString()}, remind ${reminderDatetime.toISOString()}`)
+        reminders.push({
+          trip_year_id: tripYear.id,
+          site_id: site.id,
+          target_trip_date: tripYear.final_start_date,
+          permit_open_datetime: permitOpenDatetime.toISOString(),
+          reminder_datetime: reminderDatetime.toISOString(),
+          status: 'pending'
+        })
+
+        console.log(`Generated ${daysBefore}-day reminder for ${site.name}: opens ${permitOpenDatetime.toISOString()}, remind ${reminderDatetime.toISOString()}`)
+      }
     } catch (error) {
       console.error(`Error generating reminder for ${site.name}:`, error)
     }
@@ -229,6 +245,7 @@ export async function getDueReminders(): Promise<(PermitReminder & { site: Site 
 
 /**
  * Insert permit reminders into the database, skipping duplicates
+ * Duplicates are determined by (trip_year_id, site_id, reminder_datetime)
  *
  * @param reminders - Array of PermitReminderInsert objects
  * @returns Array of inserted PermitReminder objects
@@ -244,13 +261,18 @@ export async function insertPermitReminders(
   const tripYearId = reminders[0].trip_year_id
   const { data: existing } = await supabase
     .from('permit_reminders')
-    .select('site_id')
+    .select('site_id, reminder_datetime')
     .eq('trip_year_id', tripYearId)
 
-  const existingSiteIds = new Set((existing || []).map(r => r.site_id))
+  // Create a set of "site_id|reminder_datetime" keys for quick lookup
+  const existingKeys = new Set(
+    (existing || []).map(r => `${r.site_id}|${r.reminder_datetime}`)
+  )
 
-  // Filter out reminders that already exist
-  const newReminders = reminders.filter(r => !existingSiteIds.has(r.site_id))
+  // Filter out reminders that already exist (matching site_id AND reminder_datetime)
+  const newReminders = reminders.filter(r =>
+    !existingKeys.has(`${r.site_id}|${r.reminder_datetime}`)
+  )
 
   if (newReminders.length === 0) {
     console.log('All reminders already exist, skipping insert')
