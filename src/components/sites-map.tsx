@@ -160,12 +160,12 @@ function SiteMarker({
           <div className="text-sm text-stone-600 mb-2">
             {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
           </div>
-          <Link
+          <a
             href={`/sites/${site.id}`}
             className="inline-block text-sm text-emerald-700 hover:text-emerald-800 hover:underline font-medium"
           >
             View Details &rarr;
-          </Link>
+          </a>
         </div>
       </Popup>
     </Marker>
