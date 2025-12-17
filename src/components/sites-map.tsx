@@ -195,6 +195,7 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
       center={center}
       zoom={7}
       className="w-full h-full"
+      style={{ minHeight: '100%', height: '100%' }}
       scrollWheelZoom={true}
     >
       <TileLayer

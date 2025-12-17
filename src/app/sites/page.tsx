@@ -486,16 +486,18 @@ export default function SitesPage() {
           {/* Map view - 40% on desktop, full width on mobile */}
           <div
             className={`
-              ${view === 'map' ? 'flex w-full' : 'hidden'}
-              md:flex md:w-[40%] flex-col sticky top-0 h-full
+              ${view === 'map' ? 'flex w-full h-full' : 'hidden'}
+              md:flex md:w-[40%] flex-col sticky top-0 md:h-full
             `}
           >
-            <SitesMap
-              sites={sitesForMap}
-              selectedSiteId={selectedSiteId}
-              hoveredSiteId={hoveredSiteId}
-              onSiteSelect={handleMapSiteSelect}
-            />
+            <div className="w-full h-full min-h-[calc(100vh-4rem)]">
+              <SitesMap
+                sites={sitesForMap}
+                selectedSiteId={selectedSiteId}
+                hoveredSiteId={hoveredSiteId}
+                onSiteSelect={handleMapSiteSelect}
+              />
+            </div>
           </div>
         </div>
       </div>
