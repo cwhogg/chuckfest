@@ -79,17 +79,28 @@ function MapResizer() {
   const map = useMap()
 
   useEffect(() => {
-    // Small delay to ensure container has rendered with correct dimensions
-    const timer = setTimeout(() => {
+    // Multiple invalidateSize calls to handle various timing issues
+    const timers = [
+      setTimeout(() => map.invalidateSize(), 0),
+      setTimeout(() => map.invalidateSize(), 100),
+      setTimeout(() => map.invalidateSize(), 300),
+      setTimeout(() => map.invalidateSize(), 500),
+    ]
+
+    // Use ResizeObserver for more reliable size detection
+    const container = map.getContainer()
+    const resizeObserver = new ResizeObserver(() => {
       map.invalidateSize()
-    }, 100)
+    })
+    resizeObserver.observe(container)
 
     // Also invalidate on window resize
     const handleResize = () => map.invalidateSize()
     window.addEventListener('resize', handleResize)
 
     return () => {
-      clearTimeout(timer)
+      timers.forEach(clearTimeout)
+      resizeObserver.disconnect()
       window.removeEventListener('resize', handleResize)
     }
   }, [map])
