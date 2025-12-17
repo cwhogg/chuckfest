@@ -3,7 +3,6 @@
 import { useEffect, useState, useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
-import Link from 'next/link'
 import 'leaflet/dist/leaflet.css'
 
 interface Site {
@@ -150,21 +149,38 @@ function SiteMarker({
       }}
     >
       <Popup>
-        <div className="min-w-[160px]">
-          <div className="flex items-center gap-2 mb-1">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold">
+        <div style={{ minWidth: '160px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '24px',
+              height: '24px',
+              borderRadius: '50%',
+              backgroundColor: '#059669',
+              color: 'white',
+              fontSize: '12px',
+              fontWeight: 'bold'
+            }}>
               {site.number}
             </span>
-            <span className="font-semibold text-stone-900">{site.name}</span>
+            <span style={{ fontWeight: 600, color: '#1c1917' }}>{site.name}</span>
           </div>
-          <div className="text-sm text-stone-600 mb-2">
+          <div style={{ fontSize: '14px', color: '#57534e', marginBottom: '8px' }}>
             {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
           </div>
           <a
             href={`/sites/${site.id}`}
-            className="inline-block text-sm text-emerald-700 hover:text-emerald-800 hover:underline font-medium"
+            style={{
+              display: 'inline-block',
+              fontSize: '14px',
+              color: '#047857',
+              fontWeight: 500,
+              textDecoration: 'none'
+            }}
           >
-            View Details &rarr;
+            View Details →
           </a>
         </div>
       </Popup>
