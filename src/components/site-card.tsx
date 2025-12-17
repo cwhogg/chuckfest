@@ -5,6 +5,12 @@ import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
 
 interface SiteCardProps {
@@ -59,6 +65,7 @@ export function SiteCard({
   setRef,
 }: SiteCardProps) {
   const [imageError, setImageError] = useState(false)
+  const [showDescriptionModal, setShowDescriptionModal] = useState(false)
 
   const handleVoteClick = () => {
     if (isVoted) {
@@ -147,9 +154,19 @@ export function SiteCard({
 
           {/* Description */}
           {site.description && (
-            <p className="mt-2 text-xs text-[#7a7067] line-clamp-2 leading-relaxed">
-              {site.description}
-            </p>
+            <button
+              onClick={() => setShowDescriptionModal(true)}
+              className="mt-2 text-left w-full group"
+            >
+              <p className="text-xs text-[#7a7067] line-clamp-3 leading-relaxed group-hover:text-[#5c4033] transition-colors">
+                {site.description}
+              </p>
+              {site.description.length > 120 && (
+                <span className="text-xs text-[#2d5016] hover:underline mt-0.5 inline-block">
+                  Read more
+                </span>
+              )}
+            </button>
           )}
         </div>
 
@@ -264,6 +281,46 @@ export function SiteCard({
           </>
         )}
       </div>
+
+      {/* Description Modal */}
+      <Dialog open={showDescriptionModal} onOpenChange={setShowDescriptionModal}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-[#3d352e]">{site.name}</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-3">
+            {site.region && (
+              <p className="text-sm text-[#7a7067]">{site.region}</p>
+            )}
+            <p className="text-sm text-[#5c4033] leading-relaxed whitespace-pre-wrap">
+              {site.description}
+            </p>
+            {/* Stats in modal */}
+            <div className="flex flex-wrap gap-3 pt-2 border-t border-[#e8dcc8] text-sm text-[#5c4033]">
+              {site.distance_miles !== null && (
+                <span>{site.distance_miles} mi</span>
+              )}
+              {site.elevation_gain_ft !== null && (
+                <span>{site.elevation_gain_ft.toLocaleString()} ft gain</span>
+              )}
+              {site.peak_elevation_ft !== null && (
+                <span>{site.peak_elevation_ft.toLocaleString()} ft peak</span>
+              )}
+              {site.difficulty && (
+                <Badge
+                  variant="outline"
+                  className={cn(
+                    'text-xs capitalize',
+                    difficultyColors[site.difficulty.toLowerCase()] || 'bg-[#e8dcc8] text-[#5c4033]'
+                  )}
+                >
+                  {site.difficulty}
+                </Badge>
+              )}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </Card>
   )
 }

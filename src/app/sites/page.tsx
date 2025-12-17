@@ -483,10 +483,10 @@ export default function SitesPage() {
             </div>
           </div>
 
-          {/* Map view - 40% - sticky */}
+          {/* Map view - 40% on desktop, full width on mobile */}
           <div
             className={`
-              ${view === 'map' ? 'flex' : 'hidden'}
+              ${view === 'map' ? 'flex w-full' : 'hidden'}
               md:flex md:w-[40%] flex-col sticky top-0 h-full
             `}
           >
