@@ -36,7 +36,6 @@ export function getTestRecipient(): string | null {
 export interface EmailAttachment {
   filename: string
   content: Buffer // Buffer content for the attachment
-  type?: string // MIME type (e.g., 'text/calendar' for ICS files)
 }
 
 export interface SendEmailOptions {
@@ -64,13 +63,27 @@ export async function sendEmail(options: SendEmailOptions): Promise<SendEmailRes
     }
   }
 
+  // Log attachment info for debugging
+  console.log('sendEmail called with attachments:', options.attachments?.length || 0)
+  if (options.attachments) {
+    options.attachments.forEach((att, i) => {
+      console.log(`  Attachment ${i}: ${att.filename}, buffer length: ${att.content?.length || 0}`)
+    })
+  }
+
+  // Transform attachments to Resend's expected format (only filename and content)
+  const resendAttachments = options.attachments?.map(att => ({
+    filename: att.filename,
+    content: att.content,
+  }))
+
   try {
     const { data, error } = await resend.emails.send({
       from: `ChuckfestAI <${FROM_EMAIL}>`,
       to: options.to,
       subject: options.subject,
       react: options.react,
-      attachments: options.attachments,
+      attachments: resendAttachments,
     })
 
     if (error) {

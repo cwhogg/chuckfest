@@ -145,14 +145,21 @@ export async function POST(request: NextRequest) {
       ? `[TEST] Permits for ${reminder.site.name} open ${timeText}!`
       : `Permits for ${reminder.site.name} open ${timeText}!`
 
+    // Create ICS attachment buffer
+    const icsBuffer = Buffer.from(icsContent, 'utf-8')
+    console.log('ICS attachment:', {
+      filename: icsFilename,
+      contentLength: icsContent.length,
+      bufferLength: icsBuffer.length,
+    })
+
     const result = await sendEmail({
       to: recipients,
       subject,
       react: emailComponent,
       attachments: [{
         filename: icsFilename,
-        content: Buffer.from(icsContent, 'utf-8'),
-        type: 'text/calendar',
+        content: icsBuffer,
       }],
     })
 
