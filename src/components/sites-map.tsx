@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
@@ -116,7 +116,7 @@ function MapStyles() {
   return null
 }
 
-// Marker component with ref handling
+// Marker component - simplified without React popup to avoid SSR/hydration issues
 function SiteMarker({
   site,
   isSelected,
@@ -129,6 +129,29 @@ function SiteMarker({
   onSelect: () => void
 }) {
   const markerRef = useRef<L.Marker>(null)
+
+  // Bind popup manually using Leaflet's native API to avoid React hydration issues
+  useEffect(() => {
+    if (markerRef.current) {
+      const popupContent = `
+        <div style="min-width: 160px;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+            <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #059669; color: white; font-size: 12px; font-weight: bold;">
+              ${site.number}
+            </span>
+            <span style="font-weight: 600; color: #1c1917;">${site.name}</span>
+          </div>
+          <div style="font-size: 14px; color: #57534e; margin-bottom: 8px;">
+            ${site.vote_count} vote${site.vote_count !== 1 ? 's' : ''}
+          </div>
+          <a href="/sites/${site.id}" style="display: inline-block; font-size: 14px; color: #047857; font-weight: 500; text-decoration: none;">
+            View Details →
+          </a>
+        </div>
+      `
+      markerRef.current.bindPopup(popupContent)
+    }
+  }, [site])
 
   // Open popup when selected via list click
   useEffect(() => {
@@ -147,44 +170,7 @@ function SiteMarker({
       eventHandlers={{
         click: onSelect
       }}
-    >
-      <Popup>
-        <div style={{ minWidth: '160px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <span style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '24px',
-              height: '24px',
-              borderRadius: '50%',
-              backgroundColor: '#059669',
-              color: 'white',
-              fontSize: '12px',
-              fontWeight: 'bold'
-            }}>
-              {site.number}
-            </span>
-            <span style={{ fontWeight: 600, color: '#1c1917' }}>{site.name}</span>
-          </div>
-          <div style={{ fontSize: '14px', color: '#57534e', marginBottom: '8px' }}>
-            {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
-          </div>
-          <a
-            href={`/sites/${site.id}`}
-            style={{
-              display: 'inline-block',
-              fontSize: '14px',
-              color: '#047857',
-              fontWeight: 500,
-              textDecoration: 'none'
-            }}
-          >
-            View Details →
-          </a>
-        </div>
-      </Popup>
-    </Marker>
+    />
   )
 }
 
