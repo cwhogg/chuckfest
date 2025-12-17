@@ -2,7 +2,7 @@
  * Date utilities for Chuckfest trip planning
  *
  * Chuckfest trips are always Wednesday-Sunday (5 days)
- * Valid date range: June 1 through August 14 each year
+ * Valid date range: June 1 through August 31 each year
  */
 
 export interface DateOption {
@@ -20,8 +20,8 @@ export function generateDateOptions(year: number): DateOption[] {
 
   // Start from June 1
   const rangeStart = new Date(year, 5, 1) // June 1 (months are 0-indexed)
-  // End by August 14 (trip must END by Aug 14, so last start is Aug 10)
-  const rangeEnd = new Date(year, 7, 14) // August 14
+  // End by August 31 (trip must END by Aug 31, so last start is Aug 27)
+  const rangeEnd = new Date(year, 7, 31) // August 31
 
   // Find the first Wednesday on or after June 1
   let current = new Date(rangeStart)
