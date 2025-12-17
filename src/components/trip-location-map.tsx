@@ -72,8 +72,8 @@ export function TripLocationMap({ latitude, longitude, className = '' }: TripLoc
 
   if (!isClient) {
     return (
-      <div className={`bg-stone-100 flex items-center justify-center ${className}`} style={{ minHeight: '128px' }}>
-        <div className="text-stone-400 text-sm">Loading map...</div>
+      <div className={`bg-stone-100 flex items-center justify-center ${className}`}>
+        <div className="text-stone-400 text-xs">...</div>
       </div>
     )
   }
@@ -82,11 +82,11 @@ export function TripLocationMap({ latitude, longitude, className = '' }: TripLoc
   const pinIcon = createPinIcon()
 
   return (
-    <div className={`trip-location-map ${className}`} style={{ minHeight: '128px' }}>
+    <div className={`trip-location-map ${className}`}>
       <MapContainer
         center={position}
-        zoom={11}
-        style={{ width: '100%', height: '100%', minHeight: '128px' }}
+        zoom={10}
+        style={{ width: '100%', height: '100%' }}
         scrollWheelZoom={false}
         dragging={false}
         zoomControl={false}

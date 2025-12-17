@@ -16,7 +16,7 @@ const TripLocationMap = dynamic(
   () => import('@/components/trip-location-map').then(mod => mod.TripLocationMap),
   {
     ssr: false,
-    loading: () => <div style={{ height: '128px', width: '100%' }} className="bg-stone-100 flex items-center justify-center text-stone-400 text-sm">Loading map...</div>
+    loading: () => <div className="w-full h-full bg-stone-100 flex items-center justify-center text-stone-400 text-xs">...</div>
   }
 )
 
@@ -149,37 +149,42 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
             </div>
           </div>
 
-          {/* Map */}
-          {trip.site?.latitude && trip.site?.longitude && (
-            <TripLocationMap
-              latitude={trip.site.latitude}
-              longitude={trip.site.longitude}
-              className="h-32 w-full"
-            />
-          )}
-
           {/* Content */}
           <div className="p-4">
-            {/* Stats row */}
-            <div className="flex flex-wrap gap-4 text-sm mb-4">
-              {trip.hike_miles && (
-                <div className="flex items-center gap-1.5">
-                  <span className="text-emerald-600">&#128694;</span>
-                  <span className="text-stone-700">{trip.hike_miles} mi</span>
+            {/* Map + Stats row */}
+            <div className="flex gap-4 mb-4">
+              {/* Map thumbnail */}
+              {trip.site?.latitude && trip.site?.longitude && (
+                <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden">
+                  <TripLocationMap
+                    latitude={trip.site.latitude}
+                    longitude={trip.site.longitude}
+                    className="w-full h-full"
+                  />
                 </div>
               )}
-              {trip.elevation_gain_ft && (
-                <div className="flex items-center gap-1.5">
-                  <span className="text-amber-600">&#9650;</span>
-                  <span className="text-stone-700">{trip.elevation_gain_ft.toLocaleString()} ft gain</span>
-                </div>
-              )}
-              {trip.campsite_elevation_ft && (
-                <div className="flex items-center gap-1.5">
-                  <span className="text-blue-600">&#9978;</span>
-                  <span className="text-stone-700">{trip.campsite_elevation_ft.toLocaleString()} ft camp</span>
-                </div>
-              )}
+
+              {/* Stats column */}
+              <div className="flex flex-col justify-center gap-1">
+                {trip.hike_miles && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-emerald-600">&#128694;</span>
+                    <span className="text-stone-700">{trip.hike_miles} mi</span>
+                  </div>
+                )}
+                {trip.elevation_gain_ft && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-amber-600">&#9650;</span>
+                    <span className="text-stone-700">{trip.elevation_gain_ft.toLocaleString()} ft gain</span>
+                  </div>
+                )}
+                {trip.campsite_elevation_ft && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-blue-600">&#9978;</span>
+                    <span className="text-stone-700">{trip.campsite_elevation_ft.toLocaleString()} ft camp</span>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Notes */}
