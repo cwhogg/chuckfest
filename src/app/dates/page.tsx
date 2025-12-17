@@ -77,9 +77,10 @@ function TopDatesSection({
   dateOptions: DateOption[]
   members: Member[]
 }) {
-  // Get dates with at least one response and rank them
+  // Get dates with at least one positive response (available or maybe) and rank them
+  // Dates with ONLY unavailable responses should NOT appear as top dates
   const datesWithResponses = dateOptions
-    .filter((opt) => opt.stats.totalResponses > 0)
+    .filter((opt) => opt.stats.available > 0 || opt.stats.maybe > 0)
     .map((opt) => ({
       id: opt.id,
       label: opt.label,
@@ -97,10 +98,10 @@ function TopDatesSection({
     .sort((a, b) => {
       // Primary: most available
       if (b.available !== a.available) return b.available - a.available
-      // Tiebreaker: fewest unavailable
-      if (a.unavailable !== b.unavailable) return a.unavailable - b.unavailable
-      // Secondary tiebreaker: most maybe
-      return b.maybe - a.maybe
+      // Tiebreaker: most maybe
+      if (b.maybe !== a.maybe) return b.maybe - a.maybe
+      // Secondary tiebreaker: fewest unavailable
+      return a.unavailable - b.unavailable
     })
 
   // Assign ranks (handling ties)
