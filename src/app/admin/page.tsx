@@ -832,15 +832,17 @@ export default function AdminPage() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Tabs defaultValue="trip-year" className="space-y-6">
-          <TabsList className="grid grid-cols-7 w-full max-w-4xl">
-            <TabsTrigger value="trip-year">Trip Year</TabsTrigger>
-            <TabsTrigger value="dates">Dates</TabsTrigger>
-            <TabsTrigger value="reminders">Reminders</TabsTrigger>
-            <TabsTrigger value="members">Members</TabsTrigger>
-            <TabsTrigger value="site-images">Site Images</TabsTrigger>
-            <TabsTrigger value="past-trips">Past Trips</TabsTrigger>
-            <TabsTrigger value="actions">Actions</TabsTrigger>
-          </TabsList>
+          <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+            <TabsList className="inline-flex w-auto min-w-full sm:grid sm:grid-cols-7 sm:w-full sm:max-w-4xl gap-1">
+              <TabsTrigger value="trip-year" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Trip Year</TabsTrigger>
+              <TabsTrigger value="dates" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Dates</TabsTrigger>
+              <TabsTrigger value="reminders" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Reminders</TabsTrigger>
+              <TabsTrigger value="members" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Members</TabsTrigger>
+              <TabsTrigger value="site-images" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Images</TabsTrigger>
+              <TabsTrigger value="past-trips" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Past Trips</TabsTrigger>
+              <TabsTrigger value="actions" className="flex-shrink-0 text-xs sm:text-sm px-2 sm:px-3">Actions</TabsTrigger>
+            </TabsList>
+          </div>
 
           {/* SECTION 1: Current Trip Year */}
           <TabsContent value="trip-year" className="space-y-6">
@@ -1146,24 +1148,26 @@ export default function AdminPage() {
                   <CardDescription>Generated Wed-Sun options for summer {tripYear?.year}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Start</TableHead>
-                        <TableHead>End</TableHead>
-                        <TableHead>Days</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {dateOptions.map((option) => (
-                        <TableRow key={option.id}>
-                          <TableCell>{formatDate(option.start_date)}</TableCell>
-                          <TableCell>{formatDate(option.end_date)}</TableCell>
-                          <TableCell>Wed - Sun</TableCell>
+                  <div className="overflow-x-auto -mx-6 px-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Start</TableHead>
+                          <TableHead>End</TableHead>
+                          <TableHead>Days</TableHead>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                      </TableHeader>
+                      <TableBody>
+                        {dateOptions.map((option) => (
+                          <TableRow key={option.id}>
+                            <TableCell className="whitespace-nowrap">{formatDate(option.start_date)}</TableCell>
+                            <TableCell className="whitespace-nowrap">{formatDate(option.end_date)}</TableCell>
+                            <TableCell>Wed - Sun</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
                 </CardContent>
               </Card>
             )}
@@ -1238,61 +1242,66 @@ export default function AdminPage() {
                 {reminders.length === 0 ? (
                   <p className="text-gray-500">No reminders generated yet</p>
                 ) : (
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Site</TableHead>
-                        <TableHead>Permits Open</TableHead>
-                        <TableHead>Reminder Date</TableHead>
-                        <TableHead>Status</TableHead>
-                        <TableHead>Actions</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {reminders
-                        .sort((a, b) => new Date(a.reminder_datetime).getTime() - new Date(b.reminder_datetime).getTime())
-                        .map((reminder) => (
-                          <TableRow key={reminder.id}>
-                            <TableCell className="font-medium">{reminder.site?.name || 'Unknown'}</TableCell>
-                            <TableCell>{formatDateTime(reminder.permit_open_datetime)}</TableCell>
-                            <TableCell>{formatDateTime(reminder.reminder_datetime)}</TableCell>
-                            <TableCell>
-                              <Badge className={statusColors[reminder.status] || 'bg-gray-100'}>
-                                {reminder.status.replace('_', ' ')}
-                              </Badge>
-                            </TableCell>
-                            <TableCell>
-                              <div className="flex gap-2">
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => sendReminder(reminder.id)}
-                                  disabled={actionLoading === `send-${reminder.id}`}
-                                >
-                                  {actionLoading === `send-${reminder.id}` ? '...' : 'Send Now'}
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => updateReminderStatus(reminder.id, 'booked')}
-                                  disabled={actionLoading === `reminder-${reminder.id}`}
-                                >
-                                  Booked
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  variant="ghost"
-                                  onClick={() => updateReminderStatus(reminder.id, 'cancelled')}
-                                  disabled={actionLoading === `reminder-${reminder.id}`}
-                                >
-                                  Cancel
-                                </Button>
-                              </div>
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                    </TableBody>
-                  </Table>
+                  <div className="overflow-x-auto -mx-6 px-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="whitespace-nowrap">Site</TableHead>
+                          <TableHead className="whitespace-nowrap">Permits Open</TableHead>
+                          <TableHead className="whitespace-nowrap">Reminder Date</TableHead>
+                          <TableHead>Status</TableHead>
+                          <TableHead>Actions</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {reminders
+                          .sort((a, b) => new Date(a.reminder_datetime).getTime() - new Date(b.reminder_datetime).getTime())
+                          .map((reminder) => (
+                            <TableRow key={reminder.id}>
+                              <TableCell className="font-medium whitespace-nowrap">{reminder.site?.name || 'Unknown'}</TableCell>
+                              <TableCell className="whitespace-nowrap">{formatDateTime(reminder.permit_open_datetime)}</TableCell>
+                              <TableCell className="whitespace-nowrap">{formatDateTime(reminder.reminder_datetime)}</TableCell>
+                              <TableCell>
+                                <Badge className={statusColors[reminder.status] || 'bg-gray-100'}>
+                                  {reminder.status.replace('_', ' ')}
+                                </Badge>
+                              </TableCell>
+                              <TableCell>
+                                <div className="flex gap-1 sm:gap-2">
+                                  <Button
+                                    size="sm"
+                                    variant="outline"
+                                    onClick={() => sendReminder(reminder.id)}
+                                    disabled={actionLoading === `send-${reminder.id}`}
+                                    className="text-xs px-2 h-8"
+                                  >
+                                    {actionLoading === `send-${reminder.id}` ? '...' : 'Send'}
+                                  </Button>
+                                  <Button
+                                    size="sm"
+                                    variant="outline"
+                                    onClick={() => updateReminderStatus(reminder.id, 'booked')}
+                                    disabled={actionLoading === `reminder-${reminder.id}`}
+                                    className="text-xs px-2 h-8"
+                                  >
+                                    Booked
+                                  </Button>
+                                  <Button
+                                    size="sm"
+                                    variant="ghost"
+                                    onClick={() => updateReminderStatus(reminder.id, 'cancelled')}
+                                    disabled={actionLoading === `reminder-${reminder.id}`}
+                                    className="text-xs px-2 h-8"
+                                  >
+                                    Cancel
+                                  </Button>
+                                </div>
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                      </TableBody>
+                    </Table>
+                  </div>
                 )}
               </CardContent>
             </Card>
@@ -1307,24 +1316,26 @@ export default function AdminPage() {
                 {reminderLogs.length === 0 ? (
                   <p className="text-gray-500">No reminders sent yet</p>
                 ) : (
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Sent At</TableHead>
-                        <TableHead>Subject</TableHead>
-                        <TableHead>Recipients</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {reminderLogs.map((log) => (
-                        <TableRow key={log.id}>
-                          <TableCell>{formatDateTime(log.sent_at)}</TableCell>
-                          <TableCell>{log.email_subject}</TableCell>
-                          <TableCell>{log.recipient_count}</TableCell>
+                  <div className="overflow-x-auto -mx-6 px-6">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="whitespace-nowrap">Sent At</TableHead>
+                          <TableHead>Subject</TableHead>
+                          <TableHead>Recipients</TableHead>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                      </TableHeader>
+                      <TableBody>
+                        {reminderLogs.map((log) => (
+                          <TableRow key={log.id}>
+                            <TableCell className="whitespace-nowrap">{formatDateTime(log.sent_at)}</TableCell>
+                            <TableCell className="max-w-[200px] sm:max-w-none truncate">{log.email_subject}</TableCell>
+                            <TableCell>{log.recipient_count}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
                 )}
               </CardContent>
             </Card>
@@ -1388,43 +1399,78 @@ export default function AdminPage() {
                 </Dialog>
               </CardHeader>
               <CardContent>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Name</TableHead>
-                      <TableHead>Email</TableHead>
-                      <TableHead>Phone</TableHead>
-                      <TableHead>Active</TableHead>
-                      <TableHead className="w-20">Actions</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {members.map((member) => (
-                      <TableRow key={member.id}>
-                        <TableCell className="font-medium">{member.name}</TableCell>
-                        <TableCell>{member.email}</TableCell>
-                        <TableCell>{member.phone || '-'}</TableCell>
-                        <TableCell>
+                {/* Desktop table view */}
+                <div className="hidden sm:block overflow-x-auto -mx-6 px-6">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead>Name</TableHead>
+                        <TableHead>Email</TableHead>
+                        <TableHead>Phone</TableHead>
+                        <TableHead>Active</TableHead>
+                        <TableHead className="w-20">Actions</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {members.map((member) => (
+                        <TableRow key={member.id}>
+                          <TableCell className="font-medium whitespace-nowrap">{member.name}</TableCell>
+                          <TableCell className="max-w-[200px] truncate">{member.email}</TableCell>
+                          <TableCell>{member.phone || '-'}</TableCell>
+                          <TableCell>
+                            <Switch
+                              checked={member.is_active}
+                              onCheckedChange={() => toggleMemberActive(member)}
+                              disabled={actionLoading === `member-${member.id}`}
+                            />
+                          </TableCell>
+                          <TableCell>
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => openEditMember(member)}
+                              className="text-gray-600 hover:text-gray-900"
+                            >
+                              Edit
+                            </Button>
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+
+                {/* Mobile card view */}
+                <div className="sm:hidden space-y-3">
+                  {members.map((member) => (
+                    <div key={member.id} className="p-4 border rounded-lg bg-white">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="min-w-0 flex-1">
+                          <p className="font-medium text-sm">{member.name}</p>
+                          <p className="text-xs text-gray-500 truncate">{member.email}</p>
+                          {member.phone && (
+                            <p className="text-xs text-gray-500">{member.phone}</p>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-2 flex-shrink-0">
                           <Switch
                             checked={member.is_active}
                             onCheckedChange={() => toggleMemberActive(member)}
                             disabled={actionLoading === `member-${member.id}`}
                           />
-                        </TableCell>
-                        <TableCell>
                           <Button
                             variant="ghost"
                             size="sm"
                             onClick={() => openEditMember(member)}
-                            className="text-gray-600 hover:text-gray-900"
+                            className="text-gray-600 hover:text-gray-900 h-8 px-2"
                           >
                             Edit
                           </Button>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </CardContent>
             </Card>
 
@@ -1548,62 +1594,84 @@ export default function AdminPage() {
                       const currentPhoto = hasPhoto ? site.photos![0] : null
 
                       return (
-                        <div key={site.id} className="flex items-start gap-4 p-4 border rounded-lg">
-                          {/* Thumbnail */}
-                          <div className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
-                            {currentPhoto ? (
-                              <img
-                                src={currentPhoto}
-                                alt={site.name}
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                  (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${site.id}/80/80`
-                                }}
-                              />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
-                                No image
+                        <div key={site.id} className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-4 border rounded-lg">
+                          {/* Thumbnail + info row on mobile */}
+                          <div className="flex items-start gap-3 sm:gap-4">
+                            {/* Thumbnail */}
+                            <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-gray-100">
+                              {currentPhoto ? (
+                                <img
+                                  src={currentPhoto}
+                                  alt={site.name}
+                                  className="w-full h-full object-cover"
+                                  onError={(e) => {
+                                    (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${site.id}/80/80`
+                                  }}
+                                />
+                              ) : (
+                                <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
+                                  No image
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Site info - visible on mobile next to thumbnail */}
+                            <div className="sm:hidden min-w-0 flex-1">
+                              <div className="flex items-center gap-2 mb-1">
+                                <h4 className="font-medium text-sm truncate">{site.name}</h4>
+                                {hasPhoto && (
+                                  <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200 flex-shrink-0">
+                                    Has photo
+                                  </Badge>
+                                )}
                               </div>
-                            )}
+                              <p className="text-xs text-gray-500">{site.region}</p>
+                            </div>
                           </div>
 
                           {/* Site info and input */}
                           <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-medium text-sm">{site.name}</h4>
-                              {hasPhoto && (
-                                <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
-                                  Has photo
-                                </Badge>
-                              )}
+                            {/* Desktop site info */}
+                            <div className="hidden sm:block">
+                              <div className="flex items-center gap-2 mb-1">
+                                <h4 className="font-medium text-sm">{site.name}</h4>
+                                {hasPhoto && (
+                                  <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+                                    Has photo
+                                  </Badge>
+                                )}
+                              </div>
+                              <p className="text-xs text-gray-500 mb-2">{site.region}</p>
                             </div>
-                            <p className="text-xs text-gray-500 mb-2">{site.region}</p>
 
-                            <div className="flex gap-2">
+                            <div className="flex flex-col sm:flex-row gap-2">
                               <Input
                                 placeholder="Paste image URL here..."
                                 value={photoInputs[site.id] || ''}
                                 onChange={(e) => setPhotoInputs(prev => ({ ...prev, [site.id]: e.target.value }))}
-                                className="text-sm h-8"
+                                className="text-sm h-9 flex-1"
                               />
-                              <Button
-                                size="sm"
-                                onClick={() => saveSitePhoto(site.id)}
-                                disabled={savingPhoto === site.id || !photoInputs[site.id]?.trim()}
-                              >
-                                {savingPhoto === site.id ? '...' : 'Save'}
-                              </Button>
-                              {hasPhoto && (
+                              <div className="flex gap-2">
                                 <Button
                                   size="sm"
-                                  variant="ghost"
-                                  onClick={() => clearSitePhoto(site.id)}
-                                  disabled={savingPhoto === site.id}
-                                  className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                                  onClick={() => saveSitePhoto(site.id)}
+                                  disabled={savingPhoto === site.id || !photoInputs[site.id]?.trim()}
+                                  className="flex-1 sm:flex-none h-9"
                                 >
-                                  Clear
+                                  {savingPhoto === site.id ? '...' : 'Save'}
                                 </Button>
-                              )}
+                                {hasPhoto && (
+                                  <Button
+                                    size="sm"
+                                    variant="ghost"
+                                    onClick={() => clearSitePhoto(site.id)}
+                                    disabled={savingPhoto === site.id}
+                                    className="text-red-600 hover:text-red-700 hover:bg-red-50 flex-1 sm:flex-none h-9"
+                                  >
+                                    Clear
+                                  </Button>
+                                )}
+                              </div>
                             </div>
 
                             {currentPhoto && (
@@ -1649,69 +1717,96 @@ export default function AdminPage() {
                       const hasPhoto = !!trip.cover_photo_url
 
                       return (
-                        <div key={trip.id} className="flex items-start gap-4 p-4 border rounded-lg">
-                          {/* Thumbnail */}
-                          <div className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
-                            {hasPhoto ? (
-                              <img
-                                src={trip.cover_photo_url!}
-                                alt={trip.location_name || `${trip.year}`}
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                  (e.target as HTMLImageElement).style.display = 'none'
-                                }}
-                              />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
-                                No cover
+                        <div key={trip.id} className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-4 border rounded-lg">
+                          {/* Thumbnail + info row on mobile */}
+                          <div className="flex items-start gap-3 sm:gap-4">
+                            {/* Thumbnail */}
+                            <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-gray-100">
+                              {hasPhoto ? (
+                                <img
+                                  src={trip.cover_photo_url!}
+                                  alt={trip.location_name || `${trip.year}`}
+                                  className="w-full h-full object-cover"
+                                  onError={(e) => {
+                                    (e.target as HTMLImageElement).style.display = 'none'
+                                  }}
+                                />
+                              ) : (
+                                <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center">
+                                  No cover
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Trip info - visible on mobile next to thumbnail */}
+                            <div className="sm:hidden min-w-0 flex-1">
+                              <div className="flex items-center gap-2 mb-1 flex-wrap">
+                                <h4 className="font-medium text-sm">{trip.year}</h4>
+                                <span className="text-sm text-gray-600 truncate">{trip.location_name || 'Unknown'}</span>
+                                {hasPhoto && (
+                                  <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+                                    Has cover
+                                  </Badge>
+                                )}
                               </div>
-                            )}
+                              {trip.album_url && (
+                                <a href={trip.album_url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">
+                                  View album
+                                </a>
+                              )}
+                            </div>
                           </div>
 
                           {/* Trip info and input */}
                           <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-medium text-sm">{trip.year}</h4>
-                              <span className="text-sm text-gray-600">{trip.location_name || 'Unknown location'}</span>
-                              {hasPhoto && (
-                                <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
-                                  Has cover
-                                </Badge>
+                            {/* Desktop trip info */}
+                            <div className="hidden sm:block">
+                              <div className="flex items-center gap-2 mb-1">
+                                <h4 className="font-medium text-sm">{trip.year}</h4>
+                                <span className="text-sm text-gray-600">{trip.location_name || 'Unknown location'}</span>
+                                {hasPhoto && (
+                                  <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+                                    Has cover
+                                  </Badge>
+                                )}
+                              </div>
+                              {trip.album_url && (
+                                <p className="text-xs text-blue-600 mb-2">
+                                  <a href={trip.album_url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                    View album
+                                  </a>
+                                </p>
                               )}
                             </div>
-                            {trip.album_url && (
-                              <p className="text-xs text-blue-600 mb-2">
-                                <a href={trip.album_url} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                                  View album
-                                </a>
-                              </p>
-                            )}
 
-                            <div className="flex gap-2">
+                            <div className="flex flex-col sm:flex-row gap-2">
                               <Input
                                 placeholder="Paste cover photo URL here..."
                                 value={coverPhotoInputs[trip.id] || ''}
                                 onChange={(e) => setCoverPhotoInputs(prev => ({ ...prev, [trip.id]: e.target.value }))}
-                                className="text-sm h-8"
+                                className="text-sm h-9 flex-1"
                               />
-                              <Button
-                                size="sm"
-                                onClick={() => saveCoverPhoto(trip.id)}
-                                disabled={savingCoverPhoto === trip.id || !coverPhotoInputs[trip.id]?.trim()}
-                              >
-                                {savingCoverPhoto === trip.id ? '...' : 'Save'}
-                              </Button>
-                              {hasPhoto && (
+                              <div className="flex gap-2">
                                 <Button
                                   size="sm"
-                                  variant="ghost"
-                                  onClick={() => clearCoverPhoto(trip.id)}
-                                  disabled={savingCoverPhoto === trip.id}
-                                  className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                                  onClick={() => saveCoverPhoto(trip.id)}
+                                  disabled={savingCoverPhoto === trip.id || !coverPhotoInputs[trip.id]?.trim()}
+                                  className="flex-1 sm:flex-none h-9"
                                 >
-                                  Clear
+                                  {savingCoverPhoto === trip.id ? '...' : 'Save'}
                                 </Button>
-                              )}
+                                {hasPhoto && (
+                                  <Button
+                                    size="sm"
+                                    variant="ghost"
+                                    onClick={() => clearCoverPhoto(trip.id)}
+                                    disabled={savingCoverPhoto === trip.id}
+                                    className="text-red-600 hover:text-red-700 hover:bg-red-50 flex-1 sm:flex-none h-9"
+                                  >
+                                    Clear
+                                  </Button>
+                                )}
+                              </div>
                             </div>
 
                             {trip.cover_photo_url && (

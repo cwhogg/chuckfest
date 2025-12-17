@@ -10,6 +10,15 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
+import dynamic from 'next/dynamic'
+
+const TripLocationMap = dynamic(
+  () => import('@/components/trip-location-map').then(mod => mod.TripLocationMap),
+  {
+    ssr: false,
+    loading: () => <div style={{ height: '128px', width: '100%' }} className="bg-stone-100 flex items-center justify-center text-stone-400 text-sm">Loading map...</div>
+  }
+)
 
 interface Member {
   id: string
@@ -21,6 +30,8 @@ interface Site {
   id: string
   name: string
   photos: string[] | null
+  latitude: number | null
+  longitude: number | null
 }
 
 interface PastTrip {
@@ -137,6 +148,15 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
               )}
             </div>
           </div>
+
+          {/* Map */}
+          {trip.site?.latitude && trip.site?.longitude && (
+            <TripLocationMap
+              latitude={trip.site.latitude}
+              longitude={trip.site.longitude}
+              className="h-32 w-full"
+            />
+          )}
 
           {/* Content */}
           <div className="p-4">
@@ -298,7 +318,7 @@ export default function PastTripsPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-stone-800 mb-2">Chuckfest Archives</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-stone-800 mb-2">Chuckfest Archives</h1>
           <p className="text-stone-600">
             {trips.length} adventure{trips.length !== 1 ? 's' : ''} since {trips.length > 0 ? trips[trips.length - 1].year : '2020'}
           </p>

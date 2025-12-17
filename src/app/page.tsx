@@ -113,10 +113,10 @@ export default function Home() {
               <path d="M7 14l3-4 2 2 4-5 4 7H4l3-4z" fill="white" opacity="0.5"/>
             </svg>
           </div>
-          <h1 className="text-5xl font-bold text-[#2d5016] tracking-tight mb-2">
+          <h1 className="text-3xl sm:text-5xl font-bold text-[#2d5016] tracking-tight mb-2">
             ChuckfestAI
           </h1>
-          <p className="text-xl text-[#5c4033]">
+          <p className="text-lg sm:text-xl text-[#5c4033]">
             Are you joining the adventure?
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
         {loading ? (
           <div className="text-[#7a7067]">Loading...</div>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-3xl mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-6 max-w-3xl mb-12">
             {members.map((member) => (
               <button
                 key={member.id}

@@ -259,11 +259,11 @@ export default function DashboardPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-6">
-            <h1 className="text-4xl font-bold text-[#2d5016] mb-2">
+            <h1 className="text-2xl sm:text-4xl font-bold text-[#2d5016] mb-2">
               Chuckfest {tripYear?.year || new Date().getFullYear()}
             </h1>
             {countdown && (
-              <p className="text-xl text-[#5c4033] mb-4">{countdown}</p>
+              <p className="text-lg sm:text-xl text-[#5c4033] mb-4">{countdown}</p>
             )}
           </div>
 
@@ -614,12 +614,12 @@ export default function DashboardPage() {
 
                     {/* Current user's response buttons */}
                     {!myAttendance ? (
-                      <div className="flex gap-2 pt-2">
+                      <div className="flex flex-wrap gap-2 pt-2">
                         <Button
                           size="sm"
                           onClick={() => updateAttendance('in')}
                           disabled={attendanceLoading}
-                          className="bg-[#2d5016] hover:bg-[#234012]"
+                          className="bg-[#2d5016] hover:bg-[#234012] flex-1 sm:flex-none min-w-[80px]"
                         >
                           I&apos;m In
                         </Button>
@@ -628,7 +628,7 @@ export default function DashboardPage() {
                           variant="outline"
                           onClick={() => updateAttendance('maybe')}
                           disabled={attendanceLoading}
-                          className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]"
+                          className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8] flex-1 sm:flex-none min-w-[80px]"
                         >
                           Maybe
                         </Button>
@@ -637,29 +637,29 @@ export default function DashboardPage() {
                           variant="ghost"
                           onClick={() => updateAttendance('out')}
                           disabled={attendanceLoading}
-                          className="text-[#7a7067] hover:bg-[#f5f3f0]"
+                          className="text-[#7a7067] hover:bg-[#f5f3f0] w-full sm:w-auto"
                         >
                           Can&apos;t Make It
                         </Button>
                       </div>
                     ) : (
-                      <div className="flex items-center justify-between pt-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pt-2">
                         <p className="text-sm text-[#5c4033]">
                           Your response: <span className="font-medium capitalize">{myAttendance.status}</span>
                         </p>
-                        <div className="flex gap-1">
+                        <div className="flex flex-wrap gap-1">
                           {myAttendance.status !== 'in' && (
-                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('in')} disabled={attendanceLoading} className="text-xs px-2">
+                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('in')} disabled={attendanceLoading} className="text-xs px-3 h-8">
                               I&apos;m In
                             </Button>
                           )}
                           {myAttendance.status !== 'maybe' && (
-                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('maybe')} disabled={attendanceLoading} className="text-xs px-2">
+                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('maybe')} disabled={attendanceLoading} className="text-xs px-3 h-8">
                               Maybe
                             </Button>
                           )}
                           {myAttendance.status !== 'out' && (
-                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('out')} disabled={attendanceLoading} className="text-xs px-2">
+                            <Button size="sm" variant="ghost" onClick={() => updateAttendance('out')} disabled={attendanceLoading} className="text-xs px-3 h-8">
                               Out
                             </Button>
                           )}

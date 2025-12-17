@@ -14,7 +14,7 @@ export async function GET() {
       .from('past_trips')
       .select(`
         *,
-        site:sites(id, name, photos),
+        site:sites(id, name, photos, latitude, longitude),
         past_trip_attendees(
           id,
           member:members(id, name, email)
