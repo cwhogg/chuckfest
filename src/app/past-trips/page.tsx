@@ -20,6 +20,14 @@ const TripLocationMap = dynamic(
   }
 )
 
+const FullScreenMap = dynamic(
+  () => import('@/components/trip-location-map').then(mod => mod.FullScreenMap),
+  {
+    ssr: false,
+    loading: () => <div className="w-full h-full bg-stone-100 flex items-center justify-center text-stone-400">Loading map...</div>
+  }
+)
+
 interface Member {
   id: string
   name: string
@@ -93,7 +101,7 @@ function StatCard({ label, value, unit, icon }: { label: string; value: string |
   )
 }
 
-function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) {
+function TripCard({ trip, tripNumber, onMapClick }: { trip: PastTrip; tripNumber: number; onMapClick: (lat: number, lng: number, name: string) => void }) {
   const [showAllAttendees, setShowAllAttendees] = useState(false)
 
   return (
@@ -185,13 +193,16 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
 
               {/* Right: Map thumbnail */}
               {trip.site?.latitude && trip.site?.longitude && (
-                <div className="flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => onMapClick(trip.site!.latitude!, trip.site!.longitude!, trip.location_name || trip.site!.name)}
+                  className="flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-emerald-500 transition-all"
+                >
                   <TripLocationMap
                     latitude={trip.site.latitude}
                     longitude={trip.site.longitude}
-                    className="w-full h-full"
+                    className="w-full h-full pointer-events-none"
                   />
-                </div>
+                </button>
               )}
             </div>
 
@@ -290,6 +301,11 @@ export default function PastTripsPage() {
   const [trips, setTrips] = useState<PastTrip[]>([])
   const [stats, setStats] = useState<Stats | null>(null)
   const [loading, setLoading] = useState(true)
+  const [expandedMap, setExpandedMap] = useState<{ lat: number; lng: number; name: string } | null>(null)
+
+  const handleMapClick = (lat: number, lng: number, name: string) => {
+    setExpandedMap({ lat, lng, name })
+  }
 
   useEffect(() => {
     async function fetchTrips() {
@@ -380,6 +396,7 @@ export default function PastTripsPage() {
                 key={trip.id}
                 trip={trip}
                 tripNumber={trips.length - index}
+                onMapClick={handleMapClick}
               />
             ))}
 
@@ -393,6 +410,16 @@ export default function PastTripsPage() {
           </div>
         )}
       </div>
+
+      {/* Full screen map modal */}
+      {expandedMap && (
+        <FullScreenMap
+          latitude={expandedMap.lat}
+          longitude={expandedMap.lng}
+          locationName={expandedMap.name}
+          onClose={() => setExpandedMap(null)}
+        />
+      )}
     </AppShell>
   )
 }
