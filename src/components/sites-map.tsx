@@ -167,7 +167,7 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
 
   if (!isClient) {
     return (
-      <div className="w-full h-full bg-stone-100 flex items-center justify-center">
+      <div className="w-full h-full bg-stone-100 flex items-center justify-center" style={{ minHeight: '400px' }}>
         <div className="text-stone-500">Loading map...</div>
       </div>
     )
@@ -191,28 +191,29 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
     : defaultCenter
 
   return (
-    <MapContainer
-      center={center}
-      zoom={7}
-      className="w-full h-full"
-      style={{ minHeight: '100%', height: '100%' }}
-      scrollWheelZoom={true}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <MapStyles />
-      <MapUpdater center={center} selectedSiteId={selectedSiteId} />
-      {sitesWithCoords.map(site => (
-        <SiteMarker
-          key={site.id}
-          site={site}
-          isSelected={site.id === selectedSiteId}
-          isHovered={site.id === hoveredSiteId}
-          onSelect={() => onSiteSelect?.(site.id)}
+    <div className="w-full h-full" style={{ minHeight: '400px', height: '100%' }}>
+      <MapContainer
+        center={center}
+        zoom={7}
+        style={{ width: '100%', height: '100%', minHeight: '400px' }}
+        scrollWheelZoom={true}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-      ))}
-    </MapContainer>
+        <MapStyles />
+        <MapUpdater center={center} selectedSiteId={selectedSiteId} />
+        {sitesWithCoords.map(site => (
+          <SiteMarker
+            key={site.id}
+            site={site}
+            isSelected={site.id === selectedSiteId}
+            isHovered={site.id === hoveredSiteId}
+            onSelect={() => onSiteSelect?.(site.id)}
+          />
+        ))}
+      </MapContainer>
+    </div>
   )
 }

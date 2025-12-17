@@ -320,55 +320,57 @@ export default function SitesPage() {
   return (
     <AppShell>
       <div className="h-[calc(100vh-4rem)] flex flex-col">
+        {/* Mobile header - always visible on mobile */}
+        <div className="md:hidden px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex gap-1">
+              <Button
+                variant={view === 'list' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setView('list')}
+                className="h-9"
+              >
+                List
+              </Button>
+              <Button
+                variant={view === 'map' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setView('map')}
+                className="h-9"
+              >
+                Map
+              </Button>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 bg-[#fffdf9] border border-[#c9b896] rounded-md px-2 py-1">
+                <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
+                  {MAX_VOTES - myVotes.length}/{MAX_VOTES}
+                </span>
+              </div>
+              <Button
+                onClick={() => setAddSiteModalOpen(true)}
+                size="sm"
+                className="h-9 bg-[#5c4033] hover:bg-[#4a3429]"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </Button>
+            </div>
+          </div>
+        </div>
+
         {/* Main content - split view */}
         <div className="flex-1 flex overflow-hidden">
-          {/* List view - 60% */}
+          {/* List view - 60% on desktop, full on mobile when selected */}
           <div
             className={`
               ${view === 'list' ? 'flex' : 'hidden'}
-              md:flex md:w-[60%] flex-col overflow-hidden border-r border-[#e8dcc8]
+              md:flex md:w-[60%] flex-col overflow-hidden border-r border-[#e8dcc8] w-full
             `}
           >
             {/* Filter/Sort Row */}
-            <div className="px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0 space-y-3">
-              {/* Mobile: View toggle + Add Site at top */}
-              <div className="flex md:hidden items-center justify-between gap-2">
-                <div className="flex gap-1">
-                  <Button
-                    variant={view === 'list' ? 'default' : 'outline'}
-                    size="sm"
-                    onClick={() => setView('list')}
-                    className="h-9"
-                  >
-                    List
-                  </Button>
-                  <Button
-                    variant={view === 'map' ? 'default' : 'outline'}
-                    size="sm"
-                    onClick={() => setView('map')}
-                    className="h-9"
-                  >
-                    Map
-                  </Button>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-1.5 bg-[#fffdf9] border border-[#c9b896] rounded-md px-2 py-1">
-                    <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
-                      {MAX_VOTES - myVotes.length}/{MAX_VOTES}
-                    </span>
-                  </div>
-                  <Button
-                    onClick={() => setAddSiteModalOpen(true)}
-                    size="sm"
-                    className="h-9 bg-[#5c4033] hover:bg-[#4a3429]"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </Button>
-                </div>
-              </div>
-
+            <div className="px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0">
               {/* Filters row - scrollable on mobile */}
               <div className="flex items-center gap-3 overflow-x-auto pb-1 -mb-1">
                 {/* Sort dropdown */}
@@ -483,21 +485,20 @@ export default function SitesPage() {
             </div>
           </div>
 
-          {/* Map view - 40% on desktop, full width on mobile */}
+          {/* Map view - 40% on desktop, full on mobile when selected */}
           <div
             className={`
-              ${view === 'map' ? 'flex w-full h-full' : 'hidden'}
-              md:flex md:w-[40%] flex-col sticky top-0 md:h-full
+              ${view === 'map' ? 'block w-full h-full' : 'hidden'}
+              md:block md:w-[40%] md:h-full
             `}
+            style={{ minHeight: view === 'map' ? 'calc(100vh - 4rem - 56px)' : undefined }}
           >
-            <div className="w-full h-full min-h-[calc(100vh-4rem)]">
-              <SitesMap
-                sites={sitesForMap}
-                selectedSiteId={selectedSiteId}
-                hoveredSiteId={hoveredSiteId}
-                onSiteSelect={handleMapSiteSelect}
-              />
-            </div>
+            <SitesMap
+              sites={sitesForMap}
+              selectedSiteId={selectedSiteId}
+              hoveredSiteId={hoveredSiteId}
+              onSiteSelect={handleMapSiteSelect}
+            />
           </div>
         </div>
       </div>
