@@ -85,7 +85,7 @@ export function TripLocationMap({ latitude, longitude, className = '' }: TripLoc
     <div className={`trip-location-map ${className}`}>
       <MapContainer
         center={position}
-        zoom={10}
+        zoom={5}
         style={{ width: '100%', height: '100%' }}
         scrollWheelZoom={false}
         dragging={false}
