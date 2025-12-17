@@ -45,6 +45,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [tripYear, setTripYear] = useState<TripYear | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   useEffect(() => {
     // Fetch current member
     const memberId = getCurrentMemberId()
