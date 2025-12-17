@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 import { sendEmail, isEmailTestMode, getTestRecipient } from '@/lib/email'
 import { formatDateInLA } from '@/lib/permits'
+import { generatePermitReminderICS, generateICSFilename } from '@/lib/ics'
 import PermitReminderEmail from '@/emails/permit-reminder'
 import type { TripYear, Site } from '@/lib/types'
 
@@ -36,7 +37,7 @@ export async function POST(
       )
     }
 
-    const reminder = reminderData as { id: string; trip_year_id: string; permit_open_datetime: string; site: Site }
+    const reminder = reminderData as { id: string; trip_year_id: string; permit_open_datetime: string; reminder_datetime: string; site: Site }
 
     // Fetch trip year
     const { data: tripYearData } = await supabase
@@ -92,6 +93,12 @@ export async function POST(
         : tripStart.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
     }
 
+    // Calculate days until permits open
+    const reminderTime = new Date(reminder.reminder_datetime)
+    const permitOpenTime = new Date(reminder.permit_open_datetime)
+    const msPerDay = 24 * 60 * 60 * 1000
+    const daysUntilOpen = Math.round((permitOpenTime.getTime() - reminderTime.getTime()) / msPerDay)
+
     // Create email
     const emailComponent = PermitReminderEmail({
       siteName: reminder.site.name,
@@ -104,17 +111,34 @@ export async function POST(
       peakElevationFt: reminder.site.peak_elevation_ft || undefined,
       permitNotes: reminder.site.permit_notes || undefined,
       permitCost: reminder.site.permit_cost || undefined,
+      daysUntilOpen,
     })
 
-    const subject = testMode
-      ? `[TEST] Permits for ${reminder.site.name} open TOMORROW!`
-      : `Permits for ${reminder.site.name} open TOMORROW!`
+    // Generate ICS calendar file
+    const icsContent = generatePermitReminderICS({
+      siteName: reminder.site.name,
+      permitOpenTime,
+      permitUrl: reminder.site.permit_url,
+      siteId: reminder.site.id,
+    })
+    const icsFilename = generateICSFilename(reminder.site.name)
+    const icsBuffer = Buffer.from(icsContent, 'utf-8')
 
-    // Send email
+    // Dynamic subject based on days until open
+    const timeText = daysUntilOpen === 1 ? 'TOMORROW' : `in ${daysUntilOpen} days`
+    const subject = testMode
+      ? `[TEST] Permits for ${reminder.site.name} open ${timeText}!`
+      : `Permits for ${reminder.site.name} open ${timeText}!`
+
+    // Send email with ICS attachment
     const emailResult = await sendEmail({
       to: recipients,
       subject,
       react: emailComponent,
+      attachments: [{
+        filename: icsFilename,
+        content: icsBuffer,
+      }],
     })
 
     if (!emailResult.success) {
