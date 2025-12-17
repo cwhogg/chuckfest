@@ -277,7 +277,7 @@ export default function DashboardPage() {
             {/* Card 1: Trip Dates */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300',
+                'bg-[#fffdf9] transition-all duration-300 flex flex-col',
                 highlightDates
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]'
@@ -301,7 +301,7 @@ export default function DashboardPage() {
                   )}
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1 flex flex-col">
                 {datesLocked ? (
                   <div>
                     <p className="text-lg font-semibold text-[#2d5016] mb-1">
@@ -312,42 +312,44 @@ export default function DashboardPage() {
                     </p>
                   </div>
                 ) : (
-                  <div className="space-y-3">
-                    {dateSummary ? (
-                      <>
-                        <p className="text-sm text-[#5c4033]">
-                          <span className="font-medium">{dateSummary.respondedCount}</span> of{' '}
-                          <span className="font-medium">{dateSummary.totalMembers}</span> have responded
-                        </p>
-                        {dateSummary.bestDates.length > 0 && (
-                          <div className="space-y-1">
-                            {dateSummary.bestDates.slice(0, 3).map((date, i) => (
-                              <div key={date.id} className="flex justify-between text-sm">
-                                <span className="text-[#3d352e]">
-                                  {formatDate(date.startDate)} - {formatDate(date.endDate)}
-                                </span>
-                                <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5]">
-                                  {date.available} available
-                                </Badge>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                        {dateSummary.notRespondedMembers.length > 0 && (
-                          <p className="text-xs text-[#7a7067]">
-                            Waiting on: {dateSummary.notRespondedMembers.slice(0, 3).map(m => m.name).join(', ')}
-                            {dateSummary.notRespondedMembers.length > 3 && ` +${dateSummary.notRespondedMembers.length - 3} more`}
+                  <div className="flex-1 flex flex-col">
+                    <div className="space-y-3 flex-1">
+                      {dateSummary ? (
+                        <>
+                          <p className="text-sm text-[#5c4033]">
+                            <span className="font-medium">{dateSummary.respondedCount}</span> of{' '}
+                            <span className="font-medium">{dateSummary.totalMembers}</span> have responded
                           </p>
-                        )}
-                      </>
-                    ) : (
-                      <p className="text-[#7a7067]">Date voting in progress</p>
-                    )}
-                    <Link href="/dates">
+                          {dateSummary.bestDates.length > 0 && (
+                            <div className="space-y-1">
+                              {dateSummary.bestDates.slice(0, 3).map((date) => (
+                                <div key={date.id} className="flex justify-between text-sm">
+                                  <span className="text-[#3d352e]">
+                                    {formatDate(date.startDate)} - {formatDate(date.endDate)}
+                                  </span>
+                                  <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5]">
+                                    {date.available} available
+                                  </Badge>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          {dateSummary.notRespondedMembers.length > 0 && (
+                            <p className="text-xs text-[#7a7067]">
+                              Waiting on: {dateSummary.notRespondedMembers.slice(0, 3).map(m => m.name).join(', ')}
+                              {dateSummary.notRespondedMembers.length > 3 && ` +${dateSummary.notRespondedMembers.length - 3} more`}
+                            </p>
+                          )}
+                        </>
+                      ) : (
+                        <p className="text-[#7a7067]">Date voting in progress</p>
+                      )}
+                    </div>
+                    <Link href="/dates" className="mt-auto pt-3">
                       <Button
                         size="sm"
                         className={cn(
-                          'w-full mt-2',
+                          'w-full',
                           hasSubmittedAvailability
                             ? 'bg-[#5c4033] hover:bg-[#4a3429]'
                             : 'bg-[#2d5016] hover:bg-[#234012]'
@@ -364,7 +366,7 @@ export default function DashboardPage() {
             {/* Card 2: Destination */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300',
+                'bg-[#fffdf9] transition-all duration-300 flex flex-col',
                 highlightSites && !siteSelected
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]'
@@ -389,7 +391,7 @@ export default function DashboardPage() {
                   )}
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1 flex flex-col">
                 {siteSelected && tripYear?.site ? (
                   <div className="space-y-3">
                     <div className="flex gap-3">
@@ -436,41 +438,43 @@ export default function DashboardPage() {
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-3">
-                    {topSites.length > 0 ? (
-                      <>
-                        <div className="space-y-2">
-                          {topSites.map((site, index) => (
-                            <Link
-                              key={site.id}
-                              href={`/sites/${site.id}`}
-                              className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#f5f3f0] transition-colors"
-                            >
-                              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold ${
-                                index === 0 ? 'bg-[#2d5016] text-[#faf6f0]' : 'bg-[#e8dcc8] text-[#5c4033]'
-                              }`}>
-                                {index + 1}
-                              </span>
-                              <div className="flex-1 min-w-0">
-                                <p className="font-medium text-[#3d352e] truncate">{site.name}</p>
-                                <p className="text-xs text-[#7a7067]">
-                                  {site.permit_type || 'Unknown permit type'}
-                                </p>
-                              </div>
-                              <Badge variant="outline" className="bg-[#e8dcc8] text-[#5c4033] border-[#c9b896]">
-                                {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
-                              </Badge>
-                            </Link>
-                          ))}
-                        </div>
-                        <p className="text-xs text-[#7a7067]">
-                          Your votes: {myVotes.length}/5 used
-                        </p>
-                      </>
-                    ) : (
-                      <p className="text-[#7a7067]">No sites voted on yet</p>
-                    )}
-                    <Link href="/sites">
+                  <div className="flex-1 flex flex-col">
+                    <div className="space-y-3 flex-1">
+                      {topSites.length > 0 ? (
+                        <>
+                          <div className="space-y-2">
+                            {topSites.map((site, index) => (
+                              <Link
+                                key={site.id}
+                                href={`/sites/${site.id}`}
+                                className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#f5f3f0] transition-colors"
+                              >
+                                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold ${
+                                  index === 0 ? 'bg-[#2d5016] text-[#faf6f0]' : 'bg-[#e8dcc8] text-[#5c4033]'
+                                }`}>
+                                  {index + 1}
+                                </span>
+                                <div className="flex-1 min-w-0">
+                                  <p className="font-medium text-[#3d352e] truncate">{site.name}</p>
+                                  <p className="text-xs text-[#7a7067]">
+                                    {site.permit_type || 'Unknown permit type'}
+                                  </p>
+                                </div>
+                                <Badge variant="outline" className="bg-[#e8dcc8] text-[#5c4033] border-[#c9b896]">
+                                  {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
+                                </Badge>
+                              </Link>
+                            ))}
+                          </div>
+                          <p className="text-xs text-[#7a7067]">
+                            Your votes: {myVotes.length}/5 used
+                          </p>
+                        </>
+                      ) : (
+                        <p className="text-[#7a7067]">No sites voted on yet</p>
+                      )}
+                    </div>
+                    <Link href="/sites" className="mt-auto pt-3">
                       <Button size="sm" className="w-full bg-[#5c4033] hover:bg-[#4a3429]">
                         Vote on Sites
                       </Button>
