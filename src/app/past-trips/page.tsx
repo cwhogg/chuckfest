@@ -151,11 +151,41 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
 
           {/* Content */}
           <div className="p-4">
-            {/* Map + Stats row */}
+            {/* Stats + Map row */}
             <div className="flex gap-4 mb-4">
-              {/* Map thumbnail */}
+              {/* Left: Stats and notes */}
+              <div className="flex-1 min-w-0">
+                {/* Stats */}
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm mb-2">
+                  {trip.hike_miles && (
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-emerald-600">&#128694;</span>
+                      <span className="text-stone-700">{trip.hike_miles} mi</span>
+                    </div>
+                  )}
+                  {trip.elevation_gain_ft && (
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-amber-600">&#9650;</span>
+                      <span className="text-stone-700">{trip.elevation_gain_ft.toLocaleString()} ft gain</span>
+                    </div>
+                  )}
+                  {trip.campsite_elevation_ft && (
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-blue-600">&#9978;</span>
+                      <span className="text-stone-700">{trip.campsite_elevation_ft.toLocaleString()} ft camp</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Notes */}
+                {trip.notes && (
+                  <p className="text-stone-600 text-sm italic">&ldquo;{trip.notes}&rdquo;</p>
+                )}
+              </div>
+
+              {/* Right: Map thumbnail */}
               {trip.site?.latitude && trip.site?.longitude && (
-                <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden">
                   <TripLocationMap
                     latitude={trip.site.latitude}
                     longitude={trip.site.longitude}
@@ -163,34 +193,7 @@ function TripCard({ trip, tripNumber }: { trip: PastTrip; tripNumber: number }) 
                   />
                 </div>
               )}
-
-              {/* Stats column */}
-              <div className="flex flex-col justify-center gap-1">
-                {trip.hike_miles && (
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-emerald-600">&#128694;</span>
-                    <span className="text-stone-700">{trip.hike_miles} mi</span>
-                  </div>
-                )}
-                {trip.elevation_gain_ft && (
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-amber-600">&#9650;</span>
-                    <span className="text-stone-700">{trip.elevation_gain_ft.toLocaleString()} ft gain</span>
-                  </div>
-                )}
-                {trip.campsite_elevation_ft && (
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-blue-600">&#9978;</span>
-                    <span className="text-stone-700">{trip.campsite_elevation_ft.toLocaleString()} ft camp</span>
-                  </div>
-                )}
-              </div>
             </div>
-
-            {/* Notes */}
-            {trip.notes && (
-              <p className="text-stone-600 text-sm mb-4 italic">&ldquo;{trip.notes}&rdquo;</p>
-            )}
 
             {/* Attendees section */}
             <div className="border-t border-stone-100 pt-4">
