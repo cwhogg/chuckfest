@@ -85,9 +85,10 @@ export function SiteCard({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
+      {/* Main content row */}
       <div className="flex">
-        {/* Left section - Content + Links at bottom */}
-        <div className="flex-1 p-3 flex flex-col min-w-0">
+        {/* Left section - Content */}
+        <div className="flex-1 p-3 pb-0 flex flex-col min-w-0">
           {/* Header: number + name */}
           <div className="flex items-start gap-2">
             <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2d5016] text-[#faf6f0] font-bold flex items-center justify-center text-xs">
@@ -146,65 +147,10 @@ export function SiteCard({
 
           {/* Description */}
           {site.description && (
-            <p className="mt-2 text-xs text-[#7a7067] line-clamp-2 leading-relaxed flex-1">
+            <p className="mt-2 text-xs text-[#7a7067] line-clamp-2 leading-relaxed">
               {site.description}
             </p>
           )}
-
-          {/* Links row at bottom */}
-          <div className="flex items-center gap-1 mt-3 pt-2 border-t border-[#e8dcc8]">
-            <Link href={`/sites/${site.id}`}>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-[#5c4033] hover:text-[#3d352e] h-6 px-2 text-xs"
-              >
-                View Details
-              </Button>
-            </Link>
-            {site.trail_info_url && (
-              <>
-                <span className="text-[#c9b896]">·</span>
-                <a
-                  href={site.trail_info_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-[#2d5016] hover:text-[#1a3009] hover:bg-[#e8f0e6] h-6 px-2 text-xs"
-                  >
-                    AllTrails
-                    <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </Button>
-                </a>
-              </>
-            )}
-            {site.permit_url && (
-              <>
-                <span className="text-[#c9b896]">·</span>
-                <a
-                  href={site.permit_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-[#5c4033] hover:text-[#4a3429] hover:bg-[#f5e6c8] h-6 px-2 text-xs"
-                  >
-                    Permits
-                    <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </Button>
-                </a>
-              </>
-            )}
-          </div>
         </div>
 
         {/* Right section - Vote count, Image, Vote button */}
@@ -262,6 +208,61 @@ export function SiteCard({
             )}
           </Button>
         </div>
+      </div>
+
+      {/* Links row - full width below both sections */}
+      <div className="flex items-center gap-1 mx-3 mb-3 pt-2 border-t border-[#e8dcc8]">
+        <Link href={`/sites/${site.id}`}>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-[#5c4033] hover:text-[#3d352e] h-6 px-2 text-xs"
+          >
+            View Details
+          </Button>
+        </Link>
+        {site.trail_info_url && (
+          <>
+            <span className="text-[#c9b896]">·</span>
+            <a
+              href={site.trail_info_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-[#2d5016] hover:text-[#1a3009] hover:bg-[#e8f0e6] h-6 px-2 text-xs"
+              >
+                AllTrails
+                <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </Button>
+            </a>
+          </>
+        )}
+        {site.permit_url && (
+          <>
+            <span className="text-[#c9b896]">·</span>
+            <a
+              href={site.permit_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-[#5c4033] hover:text-[#4a3429] hover:bg-[#f5e6c8] h-6 px-2 text-xs"
+              >
+                Permits
+                <svg className="w-2.5 h-2.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </Button>
+            </a>
+          </>
+        )}
       </div>
     </Card>
   )
