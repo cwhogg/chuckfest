@@ -84,35 +84,35 @@ export function ProgressTracker({ currentStage, className }: ProgressTrackerProp
       </div>
 
       {/* Mobile view - compact */}
-      <div className="sm:hidden">
-        <div className="flex items-center gap-1 overflow-x-auto pb-2">
+      <div className="sm:hidden overflow-x-auto -mx-4 px-4">
+        <div className="flex items-center justify-between min-w-[320px] pb-2">
           {stages.map((stage, index) => {
             const isCompleted = index < currentIndex
             const isCurrent = index === currentIndex
             const isFuture = index > currentIndex
 
             return (
-              <div key={stage.id} className="flex items-center">
-                <div className="flex flex-col items-center min-w-[60px]">
+              <div key={stage.id} className="flex items-center flex-1">
+                <div className="flex flex-col items-center flex-1">
                   <div
                     className={cn(
-                      'w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 border',
+                      'w-5 h-5 rounded-full flex items-center justify-center transition-all duration-300 border',
                       isCompleted && 'bg-[#2d5016] border-[#2d5016]',
                       isCurrent && 'bg-[#2d5016] border-[#2d5016] ring-2 ring-[#e8f0e6]',
                       isFuture && 'bg-[#fffdf9] border-[#c9b896]'
                     )}
                   >
                     {isCompleted ? (
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                       </svg>
                     ) : isCurrent ? (
-                      <div className="w-1.5 h-1.5 bg-white rounded-full" />
+                      <div className="w-1 h-1 bg-white rounded-full" />
                     ) : null}
                   </div>
                   <span
                     className={cn(
-                      'mt-1 text-[10px] font-medium text-center',
+                      'mt-1 text-[9px] font-medium text-center leading-tight',
                       isCompleted && 'text-[#2d5016]',
                       isCurrent && 'text-[#2d5016] font-bold',
                       isFuture && 'text-[#7a7067]'
@@ -124,7 +124,7 @@ export function ProgressTracker({ currentStage, className }: ProgressTrackerProp
                 {index < stages.length - 1 && (
                   <div
                     className={cn(
-                      'w-4 h-0.5 -mt-4',
+                      'w-2 h-0.5 -mt-3 flex-shrink-0',
                       index < currentIndex ? 'bg-[#2d5016]' : 'bg-[#e8dcc8]'
                     )}
                   />

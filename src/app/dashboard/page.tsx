@@ -297,7 +297,7 @@ export default function DashboardPage() {
                     Trip Dates
                   </CardTitle>
                   {highlightDates && !datesLocked && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">ACTION NEEDED</Badge>
+                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">ACTION NEEDED</Badge>
                   )}
                 </div>
               </CardHeader>
@@ -321,14 +321,14 @@ export default function DashboardPage() {
                             <span className="font-medium">{dateSummary.totalMembers}</span> have responded
                           </p>
                           {dateSummary.bestDates.length > 0 && (
-                            <div className="space-y-1">
+                            <div className="space-y-2">
                               {dateSummary.bestDates.slice(0, 3).map((date) => (
-                                <div key={date.id} className="flex justify-between text-sm">
+                                <div key={date.id} className="flex flex-col sm:flex-row sm:justify-between text-sm gap-1">
                                   <span className="text-[#3d352e]">
                                     {formatDate(date.startDate)} - {formatDate(date.endDate)}
                                   </span>
-                                  <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5]">
-                                    {date.available} available
+                                  <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5] w-fit text-xs">
+                                    {date.available} avail
                                   </Badge>
                                 </div>
                               ))}
@@ -387,7 +387,7 @@ export default function DashboardPage() {
                     Destination
                   </CardTitle>
                   {highlightSites && datesLocked && !siteSelected && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">CURRENT STEP</Badge>
+                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">CURRENT STEP</Badge>
                   )}
                 </div>
               </CardHeader>
