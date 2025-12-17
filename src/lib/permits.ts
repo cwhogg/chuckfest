@@ -228,7 +228,7 @@ export async function getDueReminders(): Promise<(PermitReminder & { site: Site 
 }
 
 /**
- * Insert permit reminders into the database
+ * Insert permit reminders into the database, skipping duplicates
  *
  * @param reminders - Array of PermitReminderInsert objects
  * @returns Array of inserted PermitReminder objects
@@ -240,9 +240,26 @@ export async function insertPermitReminders(
     return []
   }
 
+  // Check for existing reminders to avoid duplicates
+  const tripYearId = reminders[0].trip_year_id
+  const { data: existing } = await supabase
+    .from('permit_reminders')
+    .select('site_id')
+    .eq('trip_year_id', tripYearId)
+
+  const existingSiteIds = new Set((existing || []).map(r => r.site_id))
+
+  // Filter out reminders that already exist
+  const newReminders = reminders.filter(r => !existingSiteIds.has(r.site_id))
+
+  if (newReminders.length === 0) {
+    console.log('All reminders already exist, skipping insert')
+    return []
+  }
+
   const { data, error } = await supabase
     .from('permit_reminders')
-    .insert(reminders)
+    .insert(newReminders)
     .select()
 
   if (error) {
@@ -250,6 +267,7 @@ export async function insertPermitReminders(
     throw error
   }
 
+  console.log(`Inserted ${data.length} new reminders, skipped ${reminders.length - newReminders.length} duplicates`)
   return data as PermitReminder[]
 }
 
