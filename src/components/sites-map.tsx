@@ -74,35 +74,15 @@ function MapUpdater({ center, selectedSiteId }: { center: [number, number], sele
   return null
 }
 
-// Component to fix map size when container becomes visible
+// Component to fix map size
 function MapResizer() {
   const map = useMap()
 
   useEffect(() => {
-    // Multiple invalidateSize calls to handle various timing issues
-    const timers = [
-      setTimeout(() => map.invalidateSize(), 0),
-      setTimeout(() => map.invalidateSize(), 100),
-      setTimeout(() => map.invalidateSize(), 300),
-      setTimeout(() => map.invalidateSize(), 500),
-    ]
-
-    // Use ResizeObserver for more reliable size detection
-    const container = map.getContainer()
-    const resizeObserver = new ResizeObserver(() => {
-      map.invalidateSize()
-    })
-    resizeObserver.observe(container)
-
-    // Also invalidate on window resize
-    const handleResize = () => map.invalidateSize()
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      timers.forEach(clearTimeout)
-      resizeObserver.disconnect()
-      window.removeEventListener('resize', handleResize)
-    }
+    // Force size recalculation
+    map.invalidateSize()
+    const timer = setTimeout(() => map.invalidateSize(), 250)
+    return () => clearTimeout(timer)
   }, [map])
 
   return null
@@ -201,8 +181,8 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
 
   if (!isClient) {
     return (
-      <div className="w-full h-full bg-stone-100 flex items-center justify-center" style={{ minHeight: '400px' }}>
-        <div className="text-stone-500">Loading map...</div>
+      <div style={{ width: '100%', height: '100%', background: '#f5f5f4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#78716c' }}>Loading map...</div>
       </div>
     )
   }
@@ -225,32 +205,28 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
     : defaultCenter
 
   return (
-    <div className="relative w-full h-full" style={{ minHeight: '400px' }}>
-      <div className="absolute inset-0">
-        <MapContainer
-          center={center}
-          zoom={7}
-          style={{ width: '100%', height: '100%' }}
-          scrollWheelZoom={true}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <MapStyles />
-          <MapResizer />
-          <MapUpdater center={center} selectedSiteId={selectedSiteId} />
-          {sitesWithCoords.map(site => (
-            <SiteMarker
-              key={site.id}
-              site={site}
-              isSelected={site.id === selectedSiteId}
-              isHovered={site.id === hoveredSiteId}
-              onSelect={() => onSiteSelect?.(site.id)}
-            />
-          ))}
-        </MapContainer>
-      </div>
-    </div>
+    <MapContainer
+      center={center}
+      zoom={7}
+      style={{ width: '100%', height: '100%' }}
+      scrollWheelZoom={true}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <MapStyles />
+      <MapResizer />
+      <MapUpdater center={center} selectedSiteId={selectedSiteId} />
+      {sitesWithCoords.map(site => (
+        <SiteMarker
+          key={site.id}
+          site={site}
+          isSelected={site.id === selectedSiteId}
+          isHovered={site.id === hoveredSiteId}
+          onSelect={() => onSiteSelect?.(site.id)}
+        />
+      ))}
+    </MapContainer>
   )
 }

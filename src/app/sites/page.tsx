@@ -487,7 +487,7 @@ export default function SitesPage() {
 
           {/* Map view - 40% on desktop, full on mobile when selected */}
           {/* Desktop: always show */}
-          <div className="hidden md:relative md:block md:w-[40%] md:h-full">
+          <div className="hidden md:block md:w-[40%]" style={{ height: '100%' }}>
             <SitesMap
               sites={sitesForMap}
               selectedSiteId={selectedSiteId}
@@ -495,12 +495,9 @@ export default function SitesPage() {
               onSiteSelect={handleMapSiteSelect}
             />
           </div>
-          {/* Mobile: only mount when map view is selected */}
+          {/* Mobile: only render when map view is selected */}
           {view === 'map' && (
-            <div
-              className="relative w-full md:hidden"
-              style={{ height: 'calc(100vh - 4rem - 56px)' }}
-            >
+            <div className="block md:hidden" style={{ width: '100vw', height: 'calc(100vh - 120px)' }}>
               <SitesMap
                 sites={sitesForMap}
                 selectedSiteId={selectedSiteId}
