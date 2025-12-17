@@ -10,6 +10,7 @@ import type { TripYear, Site } from '@/lib/types'
  * POST /api/permit-reminders/[id]/send
  *
  * Manually send a specific permit reminder
+ * Body: { recipientEmails?: string[] } - optional list of specific recipients
  */
 export async function POST(
   request: NextRequest,
@@ -19,6 +20,15 @@ export async function POST(
     const { id } = await params
     const testMode = isEmailTestMode()
     const testRecipient = getTestRecipient()
+
+    // Parse request body for optional recipientEmails
+    let requestedRecipients: string[] | undefined
+    try {
+      const body = await request.json()
+      requestedRecipients = body.recipientEmails
+    } catch {
+      // No body or invalid JSON - use default behavior
+    }
 
     // Fetch the reminder with site data
     const { data: reminderData, error: reminderError } = await supabase
@@ -48,7 +58,7 @@ export async function POST(
 
     const tripYear = tripYearData as TripYear | null
 
-    // Fetch members
+    // Fetch all active members (for fallback and validation)
     const { data: members, error: membersError } = await supabase
       .from('members')
       .select('email, name')
@@ -60,12 +70,32 @@ export async function POST(
 
     const memberList = members || []
     const allRecipientEmails = memberList.map(m => m.email)
-    const memberNames = memberList.map(m => m.name)
 
-    // Determine recipients
+    // Determine recipients:
+    // 1. If specific recipients requested, use those (filtered to valid active members)
+    // 2. Otherwise, use all active members
     let recipients: string[]
     let wouldHaveSentTo: string[] = []
 
+    if (requestedRecipients && requestedRecipients.length > 0) {
+      // Filter to only include emails that are active members
+      recipients = requestedRecipients.filter(email => allRecipientEmails.includes(email))
+      if (recipients.length === 0) {
+        return NextResponse.json(
+          { success: false, error: 'No valid recipients selected' },
+          { status: 400 }
+        )
+      }
+    } else {
+      recipients = allRecipientEmails
+    }
+
+    // Get names for the recipients we're sending to
+    const recipientNames = memberList
+      .filter(m => recipients.includes(m.email))
+      .map(m => m.name)
+
+    // Handle test mode
     if (testMode) {
       if (!testRecipient) {
         return NextResponse.json(
@@ -73,10 +103,8 @@ export async function POST(
           { status: 500 }
         )
       }
+      wouldHaveSentTo = recipientNames
       recipients = [testRecipient]
-      wouldHaveSentTo = memberNames
-    } else {
-      recipients = allRecipientEmails
     }
 
     // Format dates
@@ -158,7 +186,7 @@ export async function POST(
       await supabase.from('reminders_log').insert({
         reminder_type: 'permit_opening',
         reference_id: id,
-        recipient_count: allRecipientEmails.length,
+        recipient_count: recipients.length,
         email_subject: subject,
       })
     }
@@ -167,8 +195,9 @@ export async function POST(
       success: true,
       testMode,
       message: testMode
-        ? `Test email sent to ${testRecipient}`
-        : `Email sent to ${recipients.length} recipients`,
+        ? `Test email sent to ${testRecipient} (would send to ${wouldHaveSentTo.length} recipients)`
+        : `Email sent to ${recipients.length} recipient${recipients.length === 1 ? '' : 's'}`,
+      recipientCount: recipients.length,
       wouldHaveSentTo: wouldHaveSentTo.length > 0 ? wouldHaveSentTo : undefined,
     })
   } catch (error) {

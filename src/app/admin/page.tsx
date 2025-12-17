@@ -153,6 +153,7 @@ export default function AdminPage() {
   const [editMemberForm, setEditMemberForm] = useState({ name: '', email: '', phone: '', avatar_url: '', is_active: true })
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false)
   const [selectedFinalSite, setSelectedFinalSite] = useState<string>('')
+  const [selectedRecipients, setSelectedRecipients] = useState<string[]>([])
 
   const showMessage = (type: 'success' | 'error', text: string) => {
     setMessage({ type, text })
@@ -220,6 +221,12 @@ export default function AdminPage() {
   useEffect(() => {
     fetchData()
   }, [fetchData])
+
+  // Initialize selectedRecipients with all active members when members change
+  useEffect(() => {
+    const activeMembers = members.filter(m => m.is_active)
+    setSelectedRecipients(activeMembers.map(m => m.id))
+  }, [members])
 
   const createTripYear = async () => {
     setActionLoading('createTripYear')
@@ -470,8 +477,15 @@ export default function AdminPage() {
   const sendReminder = async (id: string) => {
     setActionLoading(`send-${id}`)
     try {
+      // Get emails for selected recipients
+      const recipientEmails = members
+        .filter(m => selectedRecipients.includes(m.id))
+        .map(m => m.email)
+
       const res = await fetch(`/api/permit-reminders/${id}/send`, {
         method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ recipientEmails }),
       })
       const data = await res.json()
 
@@ -1175,6 +1189,69 @@ export default function AdminPage() {
 
           {/* SECTION 3: Permit Reminders */}
           <TabsContent value="reminders" className="space-y-6">
+            {/* Recipients Selection */}
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Recipients</CardTitle>
+                    <CardDescription>Select who will receive reminder emails</CardDescription>
+                  </div>
+                  <Badge variant="outline" className="text-sm">
+                    {selectedRecipients.length} of {members.filter(m => m.is_active).length} selected
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setSelectedRecipients(members.filter(m => m.is_active).map(m => m.id))}
+                    >
+                      Select All
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setSelectedRecipients([])}
+                    >
+                      Deselect All
+                    </Button>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-48 overflow-y-auto border rounded-lg p-3">
+                    {members
+                      .filter(m => m.is_active)
+                      .map((member) => (
+                        <div key={member.id} className="flex items-center space-x-2">
+                          <Checkbox
+                            id={`recipient-${member.id}`}
+                            checked={selectedRecipients.includes(member.id)}
+                            onCheckedChange={(checked) => {
+                              if (checked) {
+                                setSelectedRecipients([...selectedRecipients, member.id])
+                              } else {
+                                setSelectedRecipients(selectedRecipients.filter((id) => id !== member.id))
+                              }
+                            }}
+                          />
+                          <label
+                            htmlFor={`recipient-${member.id}`}
+                            className="text-sm font-medium cursor-pointer truncate"
+                          >
+                            {member.name}
+                          </label>
+                        </div>
+                      ))}
+                  </div>
+                  {members.filter(m => m.is_active).length === 0 && (
+                    <p className="text-sm text-gray-500">No active members. Add members in the Members tab.</p>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Generate Reminders */}
             <Card>
               <CardHeader>
