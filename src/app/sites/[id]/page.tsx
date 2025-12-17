@@ -3,7 +3,21 @@
 import { useEffect, useState, useCallback } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { AppShell } from '@/components/app-shell'
+
+// Dynamic import for the map to avoid SSR issues with Leaflet
+const SiteLocationMap = dynamic(
+  () => import('@/components/site-location-map').then(mod => ({ default: mod.SiteLocationMap })),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-full bg-stone-100 flex items-center justify-center rounded-xl">
+        <div className="text-stone-500">Loading map...</div>
+      </div>
+    )
+  }
+)
 import { MemberAvatar } from '@/components/member-avatar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -416,6 +430,39 @@ export default function SiteDetailPage() {
             </div>
           )}
         </div>
+
+        {/* LOCATION MAP */}
+        {site.latitude && site.longitude && (
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle className="text-lg">Location</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="h-[300px] rounded-xl overflow-hidden">
+                <SiteLocationMap
+                  latitude={site.latitude}
+                  longitude={site.longitude}
+                  name={site.name}
+                />
+              </div>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-sm text-stone-500">
+                  {site.latitude.toFixed(4)}, {site.longitude.toFixed(4)}
+                </span>
+                {googleMapsUrl && (
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-emerald-700 hover:underline"
+                  >
+                    Open in Google Maps
+                  </a>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         <div className="grid gap-6">
           {/* DESCRIPTION CARD */}
