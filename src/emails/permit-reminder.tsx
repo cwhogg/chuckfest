@@ -107,6 +107,15 @@ export default function PermitReminderEmail({
             </Section>
           )}
 
+          {/* Calendar Reminder */}
+          <Section style={calendarSection}>
+            <Text style={calendarIcon}>&#128197;</Text>
+            <Text style={calendarText}>
+              We've attached a calendar reminder that will alert you 15 minutes before permits open.
+              <strong> Add it to your calendar</strong> so you don't miss the window!
+            </Text>
+          </Section>
+
           {/* Instructions */}
           <Section style={instructionsSection}>
             <Text style={sectionTitle}>Game Plan</Text>
@@ -275,8 +284,28 @@ const detailValue = {
 }
 
 const ctaSection = {
-  padding: '8px 32px 32px',
+  padding: '8px 32px 24px',
   textAlign: 'center' as const,
+}
+
+const calendarSection = {
+  padding: '16px 32px 24px',
+  textAlign: 'center' as const,
+  backgroundColor: '#ecfdf5',
+  borderTop: '1px solid #d1fae5',
+  borderBottom: '1px solid #d1fae5',
+}
+
+const calendarIcon = {
+  fontSize: '28px',
+  margin: '0 0 8px 0',
+}
+
+const calendarText = {
+  color: '#065f46',
+  fontSize: '14px',
+  margin: '0',
+  lineHeight: '1.5',
 }
 
 const ctaButton = {

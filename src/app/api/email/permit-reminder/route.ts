@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 import { sendEmail, isEmailTestMode, getTestRecipient } from '@/lib/email'
 import { formatDateInLA } from '@/lib/permits'
+import { generatePermitReminderICS, generateICSFilename } from '@/lib/ics'
 import PermitReminderEmail from '@/emails/permit-reminder'
 import type { PermitReminder, Site, TripYear } from '@/lib/types'
 
@@ -122,6 +123,16 @@ export async function POST(request: NextRequest) {
       permitCost: reminder.site.permit_cost || undefined,
     })
 
+    // Generate ICS calendar file
+    const permitOpenTime = new Date(reminder.permit_open_datetime)
+    const icsContent = generatePermitReminderICS({
+      siteName: reminder.site.name,
+      permitOpenTime,
+      permitUrl: reminder.site.permit_url,
+      siteId: reminder.site.id,
+    })
+    const icsFilename = generateICSFilename(reminder.site.name)
+
     // Send the email
     const subject = isTestMode
       ? `[TEST] Permits for ${reminder.site.name} open TOMORROW!`
@@ -131,6 +142,11 @@ export async function POST(request: NextRequest) {
       to: recipients,
       subject,
       react: emailComponent,
+      attachments: [{
+        filename: icsFilename,
+        content: Buffer.from(icsContent).toString('base64'),
+        contentType: 'text/calendar',
+      }],
     })
 
     if (!result.success) {

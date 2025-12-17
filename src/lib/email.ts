@@ -33,10 +33,17 @@ export function getTestRecipient(): string | null {
   return EMAIL_TEST_RECIPIENT
 }
 
+export interface EmailAttachment {
+  filename: string
+  content: string // Base64 encoded content
+  contentType?: string
+}
+
 export interface SendEmailOptions {
   to: string | string[]
   subject: string
   react: React.ReactElement
+  attachments?: EmailAttachment[]
 }
 
 export interface SendEmailResult {
@@ -62,7 +69,12 @@ export async function sendEmail(options: SendEmailOptions): Promise<SendEmailRes
       from: `ChuckfestAI <${FROM_EMAIL}>`,
       to: options.to,
       subject: options.subject,
-      react: options.react
+      react: options.react,
+      attachments: options.attachments?.map(att => ({
+        filename: att.filename,
+        content: att.content,
+        content_type: att.contentType,
+      })),
     })
 
     if (error) {
