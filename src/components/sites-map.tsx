@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -116,25 +116,23 @@ function MapStyles() {
   return null
 }
 
-// Marker component - simplified without React popup to avoid SSR/hydration issues
+// Simple marker with native Leaflet popup - no React event handlers
 function SiteMarker({
   site,
   isSelected,
   isHovered,
-  onSelect,
 }: {
   site: SiteWithNumber
   isSelected: boolean
   isHovered: boolean
-  onSelect: () => void
 }) {
-  const markerRef = useRef<L.Marker>(null)
+  const icon = createNumberedIcon(site.number, isSelected, isHovered)
 
-  // Bind popup manually using Leaflet's native API to avoid React hydration issues
-  useEffect(() => {
-    if (markerRef.current) {
+  // Use a ref callback to bind popup after marker is created
+  const bindPopup = useCallback((marker: L.Marker | null) => {
+    if (marker) {
       const popupContent = `
-        <div style="min-width: 160px;">
+        <div style="min-width: 160px; font-family: system-ui, -apple-system, sans-serif;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
             <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: #059669; color: white; font-size: 12px; font-weight: bold;">
               ${site.number}
@@ -149,27 +147,19 @@ function SiteMarker({
           </a>
         </div>
       `
-      markerRef.current.bindPopup(popupContent)
-    }
-  }, [site])
+      marker.bindPopup(popupContent)
 
-  // Open popup when selected via list click
-  useEffect(() => {
-    if (isSelected && markerRef.current) {
-      markerRef.current.openPopup()
+      if (isSelected) {
+        marker.openPopup()
+      }
     }
-  }, [isSelected])
-
-  const icon = createNumberedIcon(site.number, isSelected, isHovered)
+  }, [site, isSelected])
 
   return (
     <Marker
-      ref={markerRef}
+      ref={bindPopup}
       position={[site.latitude!, site.longitude!]}
       icon={icon}
-      eventHandlers={{
-        click: onSelect
-      }}
     />
   )
 }
@@ -226,7 +216,6 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
           site={site}
           isSelected={site.id === selectedSiteId}
           isHovered={site.id === hoveredSiteId}
-          onSelect={() => onSiteSelect?.(site.id)}
         />
       ))}
     </MapContainer>
