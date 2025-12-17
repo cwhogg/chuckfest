@@ -362,11 +362,11 @@ export default function SitesPage() {
 
         {/* Main content - split view */}
         <div className="flex-1 flex overflow-hidden">
-          {/* List view - 60% on desktop, full on mobile when selected */}
+          {/* List view - 2/3 on desktop, full on mobile when selected */}
           <div
             className={`
               ${view === 'list' ? 'flex' : 'hidden'}
-              md:flex md:w-[60%] flex-col overflow-hidden border-r border-[#e8dcc8] w-full
+              md:flex md:w-2/3 flex-col overflow-hidden border-r border-[#e8dcc8] w-full
             `}
           >
             {/* Filter/Sort Row */}
@@ -485,9 +485,9 @@ export default function SitesPage() {
             </div>
           </div>
 
-          {/* Map view - 40% on desktop, full on mobile when selected */}
+          {/* Map view - 1/3 on desktop, full on mobile when selected */}
           {/* Desktop: always show */}
-          <div className="hidden md:block md:w-[40%]" style={{ height: '100%' }}>
+          <div className="hidden md:block md:w-1/3" style={{ height: '100%' }}>
             <SitesMap
               sites={sitesForMap}
               selectedSiteId={selectedSiteId}
