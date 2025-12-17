@@ -277,27 +277,27 @@ export default function DashboardPage() {
             {/* Card 1: Trip Dates */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300 flex flex-col',
+                'bg-[#fffdf9] transition-all duration-300 flex flex-col overflow-hidden',
                 highlightDates
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]'
               )}
             >
               <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
+                <div className="flex items-center justify-between gap-2">
+                  <CardTitle className="text-[#3d352e] flex items-center gap-2 min-w-0">
                     {datesLocked && (
-                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                       </svg>
                     )}
-                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    Trip Dates
+                    <span className="truncate">Trip Dates</span>
                   </CardTitle>
                   {highlightDates && !datesLocked && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">ACTION NEEDED</Badge>
+                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0">!</Badge>
                   )}
                 </div>
               </CardHeader>
@@ -323,12 +323,12 @@ export default function DashboardPage() {
                           {dateSummary.bestDates.length > 0 && (
                             <div className="space-y-2">
                               {dateSummary.bestDates.slice(0, 3).map((date) => (
-                                <div key={date.id} className="flex flex-col sm:flex-row sm:justify-between text-sm gap-1">
-                                  <span className="text-[#3d352e]">
+                                <div key={date.id} className="flex items-center justify-between text-sm gap-2">
+                                  <span className="text-[#3d352e] truncate min-w-0">
                                     {formatDate(date.startDate)} - {formatDate(date.endDate)}
                                   </span>
-                                  <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5] w-fit text-xs">
-                                    {date.available} avail
+                                  <Badge variant="outline" className="bg-[#e8f0e6] text-[#2d5016] border-[#c9d4c5] flex-shrink-0 text-xs whitespace-nowrap">
+                                    {date.available}
                                   </Badge>
                                 </div>
                               ))}
@@ -366,28 +366,31 @@ export default function DashboardPage() {
             {/* Card 2: Destination */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300 flex flex-col',
+                'bg-[#fffdf9] transition-all duration-300 flex flex-col overflow-hidden',
                 highlightSites && !siteSelected
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]'
               )}
             >
               <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
+                <div className="flex items-center justify-between gap-2">
+                  <CardTitle className="text-[#3d352e] flex items-center gap-2 min-w-0">
                     {siteSelected && (
-                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                       </svg>
                     )}
-                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Destination
+                    <span className="truncate">Destination</span>
                   </CardTitle>
                   {highlightSites && datesLocked && !siteSelected && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">CURRENT STEP</Badge>
+                    <>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 sm:hidden">!</Badge>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">CURRENT STEP</Badge>
+                    </>
                   )}
                 </div>
               </CardHeader>
@@ -447,21 +450,21 @@ export default function DashboardPage() {
                               <Link
                                 key={site.id}
                                 href={`/sites/${site.id}`}
-                                className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#f5f3f0] transition-colors"
+                                className="flex items-center gap-2 sm:gap-3 p-2 rounded-lg hover:bg-[#f5f3f0] transition-colors"
                               >
-                                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold ${
+                                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
                                   index === 0 ? 'bg-[#2d5016] text-[#faf6f0]' : 'bg-[#e8dcc8] text-[#5c4033]'
                                 }`}>
                                   {index + 1}
                                 </span>
                                 <div className="flex-1 min-w-0">
                                   <p className="font-medium text-[#3d352e] truncate">{site.name}</p>
-                                  <p className="text-xs text-[#7a7067]">
+                                  <p className="text-xs text-[#7a7067] truncate">
                                     {site.permit_type || 'Unknown permit type'}
                                   </p>
                                 </div>
-                                <Badge variant="outline" className="bg-[#e8dcc8] text-[#5c4033] border-[#c9b896]">
-                                  {site.vote_count} vote{site.vote_count !== 1 ? 's' : ''}
+                                <Badge variant="outline" className="bg-[#e8dcc8] text-[#5c4033] border-[#c9b896] flex-shrink-0 text-xs">
+                                  {site.vote_count}
                                 </Badge>
                               </Link>
                             ))}
@@ -487,7 +490,7 @@ export default function DashboardPage() {
             {/* Card 3: Who's In */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300',
+                'bg-[#fffdf9] transition-all duration-300 overflow-hidden',
                 highlightAttendance
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]',
@@ -495,20 +498,23 @@ export default function DashboardPage() {
               )}
             >
               <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
+                <div className="flex items-center justify-between gap-2">
+                  <CardTitle className="text-[#3d352e] flex items-center gap-2 min-w-0">
                     {allMembersResponded && permitsObtained && (
-                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                       </svg>
                     )}
-                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Who&apos;s In
+                    <span className="truncate">Who&apos;s In</span>
                   </CardTitle>
                   {highlightAttendance && !myAttendance && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">ACTION NEEDED</Badge>
+                    <>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 sm:hidden">!</Badge>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">ACTION NEEDED</Badge>
+                    </>
                   )}
                 </div>
               </CardHeader>
@@ -674,7 +680,7 @@ export default function DashboardPage() {
             {/* Card 4: Permit Status */}
             <Card
               className={cn(
-                'bg-[#fffdf9] transition-all duration-300',
+                'bg-[#fffdf9] transition-all duration-300 overflow-hidden',
                 highlightPermits
                   ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
                   : 'border-[#e8dcc8]',
@@ -682,20 +688,23 @@ export default function DashboardPage() {
               )}
             >
               <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
+                <div className="flex items-center justify-between gap-2">
+                  <CardTitle className="text-[#3d352e] flex items-center gap-2 min-w-0">
                     {permitsObtained && (
-                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                       </svg>
                     )}
-                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#2d5016] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    Permit Status
+                    <span className="truncate">Permit Status</span>
                   </CardTitle>
                   {highlightPermits && !permitsObtained && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">CURRENT STEP</Badge>
+                    <>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 sm:hidden">!</Badge>
+                      <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs flex-shrink-0 hidden sm:inline-flex">CURRENT STEP</Badge>
+                    </>
                   )}
                 </div>
               </CardHeader>
