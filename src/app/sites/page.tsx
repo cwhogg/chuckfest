@@ -488,10 +488,10 @@ export default function SitesPage() {
           {/* Map view - 40% on desktop, full on mobile when selected */}
           <div
             className={`
-              ${view === 'map' ? 'block w-full h-full' : 'hidden'}
-              md:block md:w-[40%] md:h-full
+              ${view === 'map' ? 'relative w-full' : 'hidden'}
+              md:relative md:block md:w-[40%] md:h-full
             `}
-            style={{ minHeight: view === 'map' ? 'calc(100vh - 4rem - 56px)' : undefined }}
+            style={view === 'map' ? { height: 'calc(100vh - 4rem - 56px)' } : undefined}
           >
             <SitesMap
               sites={sitesForMap}

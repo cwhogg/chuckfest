@@ -74,6 +74,29 @@ function MapUpdater({ center, selectedSiteId }: { center: [number, number], sele
   return null
 }
 
+// Component to fix map size when container becomes visible
+function MapResizer() {
+  const map = useMap()
+
+  useEffect(() => {
+    // Small delay to ensure container has rendered with correct dimensions
+    const timer = setTimeout(() => {
+      map.invalidateSize()
+    }, 100)
+
+    // Also invalidate on window resize
+    const handleResize = () => map.invalidateSize()
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [map])
+
+  return null
+}
+
 // Component to add global styles
 function MapStyles() {
   useEffect(() => {
@@ -191,29 +214,32 @@ export function SitesMap({ sites, selectedSiteId, hoveredSiteId, onSiteSelect }:
     : defaultCenter
 
   return (
-    <div className="w-full h-full" style={{ minHeight: '400px', height: '100%' }}>
-      <MapContainer
-        center={center}
-        zoom={7}
-        style={{ width: '100%', height: '100%', minHeight: '400px' }}
-        scrollWheelZoom={true}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <MapStyles />
-        <MapUpdater center={center} selectedSiteId={selectedSiteId} />
-        {sitesWithCoords.map(site => (
-          <SiteMarker
-            key={site.id}
-            site={site}
-            isSelected={site.id === selectedSiteId}
-            isHovered={site.id === hoveredSiteId}
-            onSelect={() => onSiteSelect?.(site.id)}
+    <div className="relative w-full h-full" style={{ minHeight: '400px' }}>
+      <div className="absolute inset-0">
+        <MapContainer
+          center={center}
+          zoom={7}
+          style={{ width: '100%', height: '100%' }}
+          scrollWheelZoom={true}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-        ))}
-      </MapContainer>
+          <MapStyles />
+          <MapResizer />
+          <MapUpdater center={center} selectedSiteId={selectedSiteId} />
+          {sitesWithCoords.map(site => (
+            <SiteMarker
+              key={site.id}
+              site={site}
+              isSelected={site.id === selectedSiteId}
+              isHovered={site.id === hoveredSiteId}
+              onSelect={() => onSiteSelect?.(site.id)}
+            />
+          ))}
+        </MapContainer>
+      </div>
     </div>
   )
 }
