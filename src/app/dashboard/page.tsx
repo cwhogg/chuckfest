@@ -480,75 +480,7 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
 
-            {/* Card 3: Permit Status */}
-            <Card
-              className={cn(
-                'bg-[#fffdf9] transition-all duration-300',
-                highlightPermits
-                  ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
-                  : 'border-[#e8dcc8]',
-                !siteSelected && 'opacity-60'
-              )}
-            >
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
-                    {permitsObtained && (
-                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                      </svg>
-                    )}
-                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    Permit Status
-                  </CardTitle>
-                  {highlightPermits && !permitsObtained && (
-                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">CURRENT STEP</Badge>
-                  )}
-                </div>
-              </CardHeader>
-              <CardContent>
-                {!siteSelected ? (
-                  <p className="text-[#7a7067]">Select destination first</p>
-                ) : permitsObtained ? (
-                  <div className="flex items-center gap-2">
-                    <svg className="w-6 h-6 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                    </svg>
-                    <span className="font-semibold text-[#2d5016]">Permits secured!</span>
-                  </div>
-                ) : (
-                  <div className="space-y-3">
-                    {tripYear?.site && (
-                      <>
-                        <div>
-                          <p className="font-medium text-[#3d352e]">{tripYear.site.permit_type || 'Recreation.gov'}</p>
-                          {tripYear.site.permit_advance_days && (
-                            <p className="text-sm text-[#5c4033]">
-                              Opens {tripYear.site.permit_advance_days} days before trip
-                            </p>
-                          )}
-                        </div>
-                        <p className="text-sm text-[#7a7067]">Permits not yet obtained</p>
-                        {tripYear.site.permit_url && (
-                          <a href={tripYear.site.permit_url} target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" size="sm" className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]">
-                              Go to Permits Site
-                              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                              </svg>
-                            </Button>
-                          </a>
-                        )}
-                      </>
-                    )}
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* Card 4: Who's In */}
+            {/* Card 3: Who's In */}
             <Card
               className={cn(
                 'bg-[#fffdf9] transition-all duration-300',
@@ -729,6 +661,74 @@ export default function DashboardPage() {
                           )}
                         </div>
                       </div>
+                    )}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+
+            {/* Card 4: Permit Status */}
+            <Card
+              className={cn(
+                'bg-[#fffdf9] transition-all duration-300',
+                highlightPermits
+                  ? 'border-2 border-[#2d5016] bg-[#f5f9f4] shadow-lg'
+                  : 'border-[#e8dcc8]',
+                !siteSelected && 'opacity-60'
+              )}
+            >
+              <CardHeader className="pb-3">
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-[#3d352e] flex items-center gap-2">
+                    {permitsObtained && (
+                      <svg className="w-5 h-5 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                      </svg>
+                    )}
+                    <svg className="w-5 h-5 text-[#2d5016]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Permit Status
+                  </CardTitle>
+                  {highlightPermits && !permitsObtained && (
+                    <Badge className="bg-[#f5e6c8] text-[#5c4033] text-xs">CURRENT STEP</Badge>
+                  )}
+                </div>
+              </CardHeader>
+              <CardContent>
+                {!siteSelected ? (
+                  <p className="text-[#7a7067]">Select destination first</p>
+                ) : permitsObtained ? (
+                  <div className="flex items-center gap-2">
+                    <svg className="w-6 h-6 text-[#2d5016]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg>
+                    <span className="font-semibold text-[#2d5016]">Permits secured!</span>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    {tripYear?.site && (
+                      <>
+                        <div>
+                          <p className="font-medium text-[#3d352e]">{tripYear.site.permit_type || 'Recreation.gov'}</p>
+                          {tripYear.site.permit_advance_days && (
+                            <p className="text-sm text-[#5c4033]">
+                              Opens {tripYear.site.permit_advance_days} days before trip
+                            </p>
+                          )}
+                        </div>
+                        <p className="text-sm text-[#7a7067]">Permits not yet obtained</p>
+                        {tripYear.site.permit_url && (
+                          <a href={tripYear.site.permit_url} target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" size="sm" className="border-[#c9b896] text-[#5c4033] hover:bg-[#e8dcc8]">
+                              Go to Permits Site
+                              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                            </Button>
+                          </a>
+                        )}
+                      </>
                     )}
                   </div>
                 )}
