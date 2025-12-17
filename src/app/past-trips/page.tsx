@@ -101,7 +101,7 @@ function StatCard({ label, value, unit, icon }: { label: string; value: string |
   )
 }
 
-function TripCard({ trip, tripNumber, onMapClick }: { trip: PastTrip; tripNumber: number; onMapClick: (lat: number, lng: number, name: string) => void }) {
+function TripCard({ trip, tripNumber, onMapClick, hideMapThumbnail }: { trip: PastTrip; tripNumber: number; onMapClick: (lat: number, lng: number, name: string) => void; hideMapThumbnail?: boolean }) {
   const [showAllAttendees, setShowAllAttendees] = useState(false)
 
   return (
@@ -192,7 +192,7 @@ function TripCard({ trip, tripNumber, onMapClick }: { trip: PastTrip; tripNumber
               </div>
 
               {/* Right: Map thumbnail */}
-              {trip.site?.latitude && trip.site?.longitude && (
+              {trip.site?.latitude && trip.site?.longitude && !hideMapThumbnail && (
                 <button
                   onClick={() => onMapClick(trip.site!.latitude!, trip.site!.longitude!, trip.location_name || trip.site!.name)}
                   className="flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-emerald-500 transition-all"
@@ -397,6 +397,7 @@ export default function PastTripsPage() {
                 trip={trip}
                 tripNumber={trips.length - index}
                 onMapClick={handleMapClick}
+                hideMapThumbnail={!!expandedMap}
               />
             ))}
 
