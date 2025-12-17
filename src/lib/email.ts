@@ -35,8 +35,7 @@ export function getTestRecipient(): string | null {
 
 export interface EmailAttachment {
   filename: string
-  content: string // Base64 encoded content
-  contentType?: string
+  content: Buffer // Buffer content for the attachment
 }
 
 export interface SendEmailOptions {
@@ -70,11 +69,7 @@ export async function sendEmail(options: SendEmailOptions): Promise<SendEmailRes
       to: options.to,
       subject: options.subject,
       react: options.react,
-      attachments: options.attachments?.map(att => ({
-        filename: att.filename,
-        content: att.content,
-        content_type: att.contentType,
-      })),
+      attachments: options.attachments,
     })
 
     if (error) {

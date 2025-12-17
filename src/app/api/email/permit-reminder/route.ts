@@ -144,8 +144,7 @@ export async function POST(request: NextRequest) {
       react: emailComponent,
       attachments: [{
         filename: icsFilename,
-        content: Buffer.from(icsContent).toString('base64'),
-        contentType: 'text/calendar',
+        content: Buffer.from(icsContent, 'utf-8'),
       }],
     })
 
