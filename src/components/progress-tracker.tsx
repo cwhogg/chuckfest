@@ -29,13 +29,13 @@ export function ProgressTracker({ currentStage, className }: ProgressTrackerProp
     <div className={cn('w-full', className)}>
       {/* Desktop view */}
       <div className="hidden sm:block">
-        <div className="flex items-center justify-between relative">
-          {/* Background line */}
-          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-[#e8dcc8]" />
+        <div className="flex items-start justify-between relative">
+          {/* Background line - positioned at center of circles (16px = half of 32px circle) */}
+          <div className="absolute left-0 right-0 top-4 h-0.5 bg-[#e8dcc8]" />
 
           {/* Progress line */}
           <div
-            className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 bg-[#2d5016] transition-all duration-500"
+            className="absolute left-0 top-4 h-0.5 bg-[#2d5016] transition-all duration-500"
             style={{ width: `${(currentIndex / (stages.length - 1)) * 100}%` }}
           />
 
