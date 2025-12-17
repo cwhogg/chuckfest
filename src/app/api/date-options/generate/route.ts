@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
  * POST /api/date-options/generate
  *
  * Generate date options for a trip year
- * Creates 11 Wed-Sun options from June 1 - Aug 14
+ * Creates Wed-Sun options from June 1 - Aug 31
  *
  * Body: { tripYearId: string }
  */
@@ -51,8 +51,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Generate date options: Wed-Sun windows from June 1 to Aug 14
-    // We want approximately 11 options, each starting on a Wednesday
+    // Generate date options: Wed-Sun windows from June 1 to Aug 31
     const dateOptions: { trip_year_id: string; start_date: string; end_date: string }[] = []
 
     // Find the first Wednesday on or after June 1
@@ -61,13 +60,18 @@ export async function POST(request: NextRequest) {
       currentDate.setDate(currentDate.getDate() + 1)
     }
 
-    // Generate options until we pass Aug 14
-    const endLimit = new Date(year, 7, 14) // Aug 14
+    // Generate options until trip end date would exceed Aug 31
+    const endLimit = new Date(year, 7, 31) // Aug 31
 
-    while (currentDate <= endLimit) {
+    while (true) {
       const startDate = new Date(currentDate)
       const endDate = new Date(currentDate)
       endDate.setDate(endDate.getDate() + 4) // Wed to Sun = 4 days later
+
+      // Stop if end date exceeds Aug 31
+      if (endDate > endLimit) {
+        break
+      }
 
       dateOptions.push({
         trip_year_id: tripYearId,
