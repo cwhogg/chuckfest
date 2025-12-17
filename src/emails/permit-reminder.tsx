@@ -6,8 +6,6 @@ import {
   Heading,
   Hr,
   Html,
-  Img,
-  Link,
   Preview,
   Section,
   Text,
@@ -17,8 +15,8 @@ import * as React from 'react'
 export interface PermitReminderEmailProps {
   siteName: string
   siteRegion?: string
-  permitOpenDatetime: string // formatted string like "January 16, 2025 at 7:00 AM PT"
-  tripDates: string // formatted string like "July 15-19, 2025"
+  permitOpenDatetime: string
+  tripDates: string
   permitUrl?: string
   distanceMiles?: number
   elevationGainFt?: number
@@ -42,55 +40,67 @@ export default function PermitReminderEmail({
   return (
     <Html>
       <Head />
-      <Preview>Permits for {siteName} open tomorrow at 7am PT!</Preview>
+      <Preview>Permits for {siteName} open tomorrow!</Preview>
       <Body style={main}>
         <Container style={container}>
-          {/* Header */}
+          {/* Header with retro camping feel */}
           <Section style={header}>
-            <Text style={logo}>ChuckfestAI</Text>
-            <Text style={badge}>PERMIT ALERT</Text>
+            <Text style={headerPines}>. * . * .</Text>
+            <Text style={logo}>Chuckfest</Text>
+            <Text style={tagline}>Annual Backpacking Trip</Text>
           </Section>
 
-          {/* Hero */}
+          {/* Alert Banner */}
+          <Section style={alertBanner}>
+            <Text style={alertLabel}>PERMIT ALERT</Text>
+          </Section>
+
+          {/* Main Content */}
           <Section style={heroSection}>
             <Heading style={siteTitleStyle}>{siteName}</Heading>
             {siteRegion && <Text style={regionStyle}>{siteRegion}</Text>}
 
-            <Section style={alertBox}>
-              <Text style={alertEmoji}>&#9200;</Text>
-              <Text style={alertTitle}>Permits Open TOMORROW!</Text>
-              <Text style={alertDatetime}>{permitOpenDatetime}</Text>
+            {/* Permit Open Time Card */}
+            <Section style={permitCard}>
+              <Text style={permitCardLabel}>Permits Open</Text>
+              <Text style={permitCardTime}>{permitOpenDatetime}</Text>
+              <Text style={permitCardUrgent}>That's TOMORROW!</Text>
             </Section>
+          </Section>
+
+          {/* Divider */}
+          <Section style={dividerSection}>
+            <Text style={dividerText}>~ ~ ~</Text>
           </Section>
 
           {/* Trip Details */}
           <Section style={detailsSection}>
             <Text style={sectionTitle}>Trip Details</Text>
-            <Section style={detailsGrid}>
-              <Section style={detailItem}>
+            <Section style={detailsCard}>
+              <Section style={detailRow}>
                 <Text style={detailLabel}>Booking For</Text>
                 <Text style={detailValue}>{tripDates}</Text>
               </Section>
               {distanceMiles && (
-                <Section style={detailItem}>
+                <Section style={detailRow}>
                   <Text style={detailLabel}>Distance</Text>
-                  <Text style={detailValue}>{distanceMiles} miles</Text>
+                  <Text style={detailValue}>{distanceMiles} miles one-way</Text>
                 </Section>
               )}
               {elevationGainFt && (
-                <Section style={detailItem}>
+                <Section style={detailRow}>
                   <Text style={detailLabel}>Elevation Gain</Text>
                   <Text style={detailValue}>{elevationGainFt.toLocaleString()} ft</Text>
                 </Section>
               )}
               {peakElevationFt && (
-                <Section style={detailItem}>
+                <Section style={detailRow}>
                   <Text style={detailLabel}>Camp Elevation</Text>
                   <Text style={detailValue}>{peakElevationFt.toLocaleString()} ft</Text>
                 </Section>
               )}
               {permitCost !== undefined && (
-                <Section style={detailItem}>
+                <Section style={detailRow}>
                   <Text style={detailLabel}>Permit Cost</Text>
                   <Text style={detailValue}>${permitCost}/person</Text>
                 </Section>
@@ -102,35 +112,35 @@ export default function PermitReminderEmail({
           {permitUrl && (
             <Section style={ctaSection}>
               <Button style={ctaButton} href={permitUrl}>
-                Go to Recreation.gov &rarr;
+                Book on Recreation.gov
               </Button>
             </Section>
           )}
 
           {/* Calendar Reminder */}
           <Section style={calendarSection}>
-            <Text style={calendarIcon}>&#128197;</Text>
+            <Text style={calendarTitle}>Calendar Reminder Attached</Text>
             <Text style={calendarText}>
-              We've attached a calendar reminder that will alert you 15 minutes before permits open.
-              <strong> Add it to your calendar</strong> so you don't miss the window!
+              We've attached a .ics file that will alert you 15 minutes before permits open.
+              Add it to your calendar so you don't miss the window!
             </Text>
           </Section>
 
-          {/* Instructions */}
-          <Section style={instructionsSection}>
+          {/* Game Plan */}
+          <Section style={gamePlanSection}>
             <Text style={sectionTitle}>Game Plan</Text>
-            <Section style={instructionsList}>
-              <Text style={instructionItem}>
-                <span style={checkmark}>&#10003;</span> Be online at <strong>6:55 AM PT</strong>
+            <Section style={checklistCard}>
+              <Text style={checklistItem}>
+                <span style={checkbox}>[ ]</span> Be online at <strong>6:55 AM PT</strong>
               </Text>
-              <Text style={instructionItem}>
-                <span style={checkmark}>&#10003;</span> Log into recreation.gov <strong>in advance</strong>
+              <Text style={checklistItem}>
+                <span style={checkbox}>[ ]</span> Log into recreation.gov <strong>in advance</strong>
               </Text>
-              <Text style={instructionItem}>
-                <span style={checkmark}>&#10003;</span> Have payment info ready
+              <Text style={checklistItem}>
+                <span style={checkbox}>[ ]</span> Have payment info ready
               </Text>
-              <Text style={instructionItem}>
-                <span style={checkmark}>&#10003;</span> Know your group size and entry date
+              <Text style={checklistItem}>
+                <span style={checkbox}>[ ]</span> Know your group size and entry date
               </Text>
             </Section>
 
@@ -142,14 +152,12 @@ export default function PermitReminderEmail({
             )}
           </Section>
 
-          <Hr style={hr} />
-
           {/* Footer */}
           <Section style={footer}>
-            <Text style={footerText}>
-              Sent by <strong>ChuckfestAI</strong>
-            </Text>
-            <Text style={footerLuck}>Good luck!</Text>
+            <Hr style={footerHr} />
+            <Text style={footerPines}>. * . * . * . * .</Text>
+            <Text style={footerText}>Good luck out there!</Text>
+            <Text style={footerBrand}>Sent with love by Chuckfest</Text>
           </Section>
         </Container>
       </Body>
@@ -157,230 +165,318 @@ export default function PermitReminderEmail({
   )
 }
 
-// Styles
+// ===================
+// RETRO CAMPING STYLES
+// ===================
+
+// Color Palette (matches app)
+const colors = {
+  cream: '#faf6f0',
+  warmWhite: '#fffdf9',
+  lightTan: '#e8dcc8',
+  tan: '#c9b896',
+  brown: '#5c4033',
+  darkBrown: '#3d352e',
+  mutedText: '#7a7067',
+  forestGreen: '#2d5016',
+  lightGreen: '#e8f0e6',
+  amber: '#c9a227',
+  lightAmber: '#f5e6c8',
+}
+
 const main = {
-  backgroundColor: '#f4f1eb',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  backgroundColor: colors.cream,
+  fontFamily: 'Georgia, "Times New Roman", serif',
 }
 
 const container = {
-  backgroundColor: '#ffffff',
+  backgroundColor: colors.warmWhite,
   margin: '0 auto',
   padding: '0',
-  maxWidth: '600px',
-  borderRadius: '8px',
-  overflow: 'hidden' as const,
-  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+  maxWidth: '560px',
+  border: `2px solid ${colors.tan}`,
+  borderRadius: '4px',
 }
 
 const header = {
-  backgroundColor: '#2d5016',
-  padding: '24px 32px',
+  backgroundColor: colors.forestGreen,
+  padding: '28px 32px 24px',
   textAlign: 'center' as const,
 }
 
-const logo = {
-  color: '#ffffff',
-  fontSize: '24px',
-  fontWeight: '700' as const,
+const headerPines = {
+  color: colors.lightGreen,
+  fontSize: '16px',
+  letterSpacing: '8px',
   margin: '0 0 8px 0',
-  letterSpacing: '-0.5px',
+  opacity: '0.7',
 }
 
-const badge = {
-  display: 'inline-block',
-  backgroundColor: '#fbbf24',
-  color: '#78350f',
-  fontSize: '11px',
+const logo = {
+  color: colors.warmWhite,
+  fontSize: '36px',
+  fontWeight: '400' as const,
+  fontFamily: 'Georgia, "Times New Roman", serif',
+  margin: '0',
+  letterSpacing: '2px',
+}
+
+const tagline = {
+  color: colors.lightGreen,
+  fontSize: '12px',
+  fontWeight: '400' as const,
+  textTransform: 'uppercase' as const,
+  letterSpacing: '3px',
+  margin: '4px 0 0 0',
+  opacity: '0.9',
+}
+
+const alertBanner = {
+  backgroundColor: colors.amber,
+  padding: '10px 32px',
+  textAlign: 'center' as const,
+}
+
+const alertLabel = {
+  color: colors.darkBrown,
+  fontSize: '13px',
   fontWeight: '700' as const,
-  padding: '4px 12px',
-  borderRadius: '12px',
-  letterSpacing: '1px',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  textTransform: 'uppercase' as const,
+  letterSpacing: '2px',
   margin: '0',
 }
 
 const heroSection = {
   padding: '32px 32px 24px',
   textAlign: 'center' as const,
+  backgroundColor: colors.warmWhite,
 }
 
 const siteTitleStyle = {
-  color: '#1a1a1a',
+  color: colors.darkBrown,
   fontSize: '32px',
-  fontWeight: '700' as const,
+  fontWeight: '400' as const,
+  fontFamily: 'Georgia, "Times New Roman", serif',
   margin: '0 0 4px 0',
   lineHeight: '1.2',
 }
 
 const regionStyle = {
-  color: '#666666',
-  fontSize: '16px',
+  color: colors.mutedText,
+  fontSize: '15px',
+  fontStyle: 'italic' as const,
   margin: '0 0 24px 0',
 }
 
-const alertBox = {
-  backgroundColor: '#fef3c7',
-  border: '2px solid #f59e0b',
-  borderRadius: '12px',
-  padding: '24px',
+const permitCard = {
+  backgroundColor: colors.lightAmber,
+  border: `2px solid ${colors.amber}`,
+  borderRadius: '4px',
+  padding: '20px 24px',
   margin: '0',
 }
 
-const alertEmoji = {
-  fontSize: '32px',
-  margin: '0 0 8px 0',
-}
-
-const alertTitle = {
-  color: '#92400e',
-  fontSize: '24px',
+const permitCardLabel = {
+  color: colors.brown,
+  fontSize: '11px',
   fontWeight: '700' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  textTransform: 'uppercase' as const,
+  letterSpacing: '2px',
   margin: '0 0 8px 0',
 }
 
-const alertDatetime = {
-  color: '#b45309',
-  fontSize: '18px',
-  fontWeight: '600' as const,
+const permitCardTime = {
+  color: colors.darkBrown,
+  fontSize: '20px',
+  fontWeight: '400' as const,
+  fontFamily: 'Georgia, "Times New Roman", serif',
+  margin: '0 0 8px 0',
+}
+
+const permitCardUrgent = {
+  color: colors.brown,
+  fontSize: '16px',
+  fontWeight: '700' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  margin: '0',
+}
+
+const dividerSection = {
+  padding: '0',
+  textAlign: 'center' as const,
+}
+
+const dividerText = {
+  color: colors.tan,
+  fontSize: '20px',
+  letterSpacing: '8px',
   margin: '0',
 }
 
 const detailsSection = {
   padding: '24px 32px',
-  backgroundColor: '#f9fafb',
+  backgroundColor: colors.cream,
 }
 
 const sectionTitle = {
-  color: '#374151',
-  fontSize: '14px',
-  fontWeight: '600' as const,
+  color: colors.brown,
+  fontSize: '11px',
+  fontWeight: '700' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   textTransform: 'uppercase' as const,
-  letterSpacing: '0.5px',
+  letterSpacing: '2px',
   margin: '0 0 16px 0',
 }
 
-const detailsGrid = {
-  margin: '0',
+const detailsCard = {
+  backgroundColor: colors.warmWhite,
+  border: `1px solid ${colors.lightTan}`,
+  borderRadius: '4px',
+  padding: '16px 20px',
 }
 
-const detailItem = {
-  display: 'inline-block',
-  width: '50%',
-  verticalAlign: 'top' as const,
-  padding: '0 0 12px 0',
+const detailRow = {
+  padding: '8px 0',
+  borderBottom: `1px solid ${colors.lightTan}`,
 }
 
 const detailLabel = {
-  color: '#6b7280',
+  color: colors.mutedText,
   fontSize: '12px',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   margin: '0 0 2px 0',
 }
 
 const detailValue = {
-  color: '#1f2937',
+  color: colors.darkBrown,
   fontSize: '16px',
-  fontWeight: '600' as const,
+  fontWeight: '400' as const,
   margin: '0',
 }
 
 const ctaSection = {
-  padding: '8px 32px 24px',
+  padding: '8px 32px 28px',
   textAlign: 'center' as const,
+  backgroundColor: colors.cream,
+}
+
+const ctaButton = {
+  backgroundColor: colors.forestGreen,
+  color: colors.warmWhite,
+  fontSize: '15px',
+  fontWeight: '600' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  padding: '14px 28px',
+  borderRadius: '4px',
+  textDecoration: 'none',
+  display: 'inline-block',
+  border: `2px solid ${colors.forestGreen}`,
 }
 
 const calendarSection = {
-  padding: '16px 32px 24px',
+  padding: '20px 32px',
   textAlign: 'center' as const,
-  backgroundColor: '#ecfdf5',
-  borderTop: '1px solid #d1fae5',
-  borderBottom: '1px solid #d1fae5',
+  backgroundColor: colors.lightGreen,
+  borderTop: `1px solid ${colors.tan}`,
+  borderBottom: `1px solid ${colors.tan}`,
 }
 
-const calendarIcon = {
-  fontSize: '28px',
+const calendarTitle = {
+  color: colors.forestGreen,
+  fontSize: '14px',
+  fontWeight: '700' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   margin: '0 0 8px 0',
 }
 
 const calendarText = {
-  color: '#065f46',
+  color: colors.darkBrown,
   fontSize: '14px',
   margin: '0',
   lineHeight: '1.5',
 }
 
-const ctaButton = {
-  backgroundColor: '#2d5016',
-  color: '#ffffff',
-  fontSize: '16px',
-  fontWeight: '600' as const,
-  padding: '14px 32px',
-  borderRadius: '8px',
-  textDecoration: 'none',
-  display: 'inline-block',
-}
-
-const instructionsSection = {
+const gamePlanSection = {
   padding: '24px 32px',
-  backgroundColor: '#ffffff',
+  backgroundColor: colors.warmWhite,
 }
 
-const instructionsList = {
-  margin: '0 0 20px 0',
+const checklistCard = {
+  backgroundColor: colors.cream,
+  border: `1px solid ${colors.lightTan}`,
+  borderRadius: '4px',
+  padding: '16px 20px',
+  marginBottom: '16px',
 }
 
-const instructionItem = {
-  color: '#374151',
+const checklistItem = {
+  color: colors.darkBrown,
   fontSize: '15px',
-  margin: '0 0 10px 0',
-  lineHeight: '1.5',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  margin: '0 0 12px 0',
+  lineHeight: '1.4',
 }
 
-const checkmark = {
-  color: '#059669',
-  fontWeight: '700' as const,
-  marginRight: '8px',
+const checkbox = {
+  color: colors.tan,
+  fontFamily: 'monospace',
+  marginRight: '10px',
 }
 
 const notesBox = {
-  backgroundColor: '#fef2f2',
-  border: '1px solid #fecaca',
-  borderRadius: '8px',
+  backgroundColor: colors.lightAmber,
+  border: `1px solid ${colors.amber}`,
+  borderRadius: '4px',
   padding: '16px',
 }
 
 const notesTitle = {
-  color: '#991b1b',
-  fontSize: '13px',
-  fontWeight: '600' as const,
+  color: colors.brown,
+  fontSize: '12px',
+  fontWeight: '700' as const,
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  textTransform: 'uppercase' as const,
+  letterSpacing: '1px',
   margin: '0 0 8px 0',
 }
 
 const notesText = {
-  color: '#7f1d1d',
+  color: colors.darkBrown,
   fontSize: '14px',
   margin: '0',
   lineHeight: '1.5',
-}
-
-const hr = {
-  borderColor: '#e5e7eb',
-  margin: '0',
 }
 
 const footer = {
   padding: '24px 32px',
   textAlign: 'center' as const,
-  backgroundColor: '#f9fafb',
+  backgroundColor: colors.cream,
+}
+
+const footerHr = {
+  borderColor: colors.lightTan,
+  margin: '0 0 20px 0',
+}
+
+const footerPines = {
+  color: colors.tan,
+  fontSize: '14px',
+  letterSpacing: '6px',
+  margin: '0 0 12px 0',
 }
 
 const footerText = {
-  color: '#6b7280',
-  fontSize: '14px',
+  color: colors.brown,
+  fontSize: '18px',
+  fontFamily: 'Georgia, "Times New Roman", serif',
+  fontStyle: 'italic' as const,
   margin: '0 0 8px 0',
 }
 
-const footerLuck = {
-  color: '#374151',
-  fontSize: '18px',
+const footerBrand = {
+  color: colors.mutedText,
+  fontSize: '12px',
   margin: '0',
 }
