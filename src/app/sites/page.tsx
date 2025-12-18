@@ -341,23 +341,11 @@ export default function SitesPage() {
                 Map
               </Button>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="flex items-center gap-1.5 bg-[#fffdf9] border border-[#c9b896] rounded-md px-2 py-1">
-                <span className="text-sm text-[#5c4033]">Votes</span>
-                <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
-                  {MAX_VOTES - myVotes.length}/{MAX_VOTES}
-                </span>
-              </div>
-              <Button
-                onClick={() => setAddSiteModalOpen(true)}
-                size="sm"
-                className="h-9 bg-[#5c4033] hover:bg-[#4a3429] text-white"
-              >
-                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                </svg>
-                Add
-              </Button>
+            <div className="flex items-center gap-1.5 bg-[#fffdf9] border border-[#c9b896] rounded-md px-2 py-1">
+              <span className="text-sm text-[#5c4033]">Votes</span>
+              <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
+                {MAX_VOTES - myVotes.length}/{MAX_VOTES}
+              </span>
             </div>
           </div>
         </div>
@@ -376,10 +364,11 @@ export default function SitesPage() {
               {/* Filters row - fits on mobile */}
               <div className="flex items-center gap-2 sm:gap-3">
                 {/* Sort dropdown */}
-                <div className="flex items-center gap-2 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+                  <span className="text-base sm:hidden">↕️</span>
                   <span className="text-sm text-[#5c4033] hidden sm:inline">Sort:</span>
                   <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
-                    <SelectTrigger className="w-[105px] sm:w-[140px] h-9 text-sm bg-[#fffdf9]">
+                    <SelectTrigger className="w-[90px] sm:w-[140px] h-9 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -393,10 +382,11 @@ export default function SitesPage() {
 
                 {/* Region filter */}
                 {regions.length > 0 && (
-                  <div className="flex items-center gap-2 flex-shrink-0">
+                  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+                    <span className="text-base sm:hidden">📍</span>
                     <span className="text-sm text-[#5c4033] hidden sm:inline">Region:</span>
                     <Select value={regionFilter} onValueChange={setRegionFilter}>
-                      <SelectTrigger className="w-[105px] sm:w-[160px] h-9 text-sm bg-[#fffdf9]">
+                      <SelectTrigger className="w-[90px] sm:w-[160px] h-9 text-sm bg-[#fffdf9]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -412,13 +402,14 @@ export default function SitesPage() {
                 )}
 
                 {/* Difficulty filter */}
-                <div className="flex items-center gap-2 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+                  <span className="text-base sm:hidden">⛰️</span>
                   <span className="text-sm text-[#5c4033] hidden sm:inline">Difficulty:</span>
                   <Select
                     value={difficultyFilter}
                     onValueChange={(v) => setDifficultyFilter(v as DifficultyFilter)}
                   >
-                    <SelectTrigger className="w-[75px] sm:w-[120px] h-9 text-sm bg-[#fffdf9]">
+                    <SelectTrigger className="w-[70px] sm:w-[120px] h-9 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -429,6 +420,18 @@ export default function SitesPage() {
                     </SelectContent>
                   </Select>
                 </div>
+
+                {/* Mobile: Add Site button */}
+                <Button
+                  onClick={() => setAddSiteModalOpen(true)}
+                  size="sm"
+                  className="md:hidden h-9 bg-[#5c4033] hover:bg-[#4a3429] text-white flex-shrink-0"
+                >
+                  <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                  Add
+                </Button>
 
                 {/* Desktop: Votes remaining indicator + Add Site */}
                 <div className="ml-auto hidden md:flex items-center gap-3 flex-shrink-0">
