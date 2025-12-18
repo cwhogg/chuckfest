@@ -373,13 +373,13 @@ export default function SitesPage() {
           >
             {/* Filter/Sort Row */}
             <div className="px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0">
-              {/* Filters row - scrollable on mobile */}
-              <div className="flex items-center gap-3 overflow-x-auto pb-1 -mb-1">
+              {/* Filters row - fits on mobile */}
+              <div className="flex items-center gap-2 sm:gap-3">
                 {/* Sort dropdown */}
                 <div className="flex items-center gap-2 flex-shrink-0">
                   <span className="text-sm text-[#5c4033] hidden sm:inline">Sort:</span>
                   <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
-                    <SelectTrigger className="w-[130px] sm:w-[140px] h-9 text-sm bg-[#fffdf9]">
+                    <SelectTrigger className="w-[105px] sm:w-[140px] h-9 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -396,7 +396,7 @@ export default function SitesPage() {
                   <div className="flex items-center gap-2 flex-shrink-0">
                     <span className="text-sm text-[#5c4033] hidden sm:inline">Region:</span>
                     <Select value={regionFilter} onValueChange={setRegionFilter}>
-                      <SelectTrigger className="w-[130px] sm:w-[160px] h-9 text-sm bg-[#fffdf9]">
+                      <SelectTrigger className="w-[105px] sm:w-[160px] h-9 text-sm bg-[#fffdf9]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -418,7 +418,7 @@ export default function SitesPage() {
                     value={difficultyFilter}
                     onValueChange={(v) => setDifficultyFilter(v as DifficultyFilter)}
                   >
-                    <SelectTrigger className="w-[110px] sm:w-[120px] h-9 text-sm bg-[#fffdf9]">
+                    <SelectTrigger className="w-[75px] sm:w-[120px] h-9 text-sm bg-[#fffdf9]">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
