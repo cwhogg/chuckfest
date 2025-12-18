@@ -320,8 +320,8 @@ export default function SitesPage() {
   return (
     <AppShell>
       <div className="h-[calc(100vh-4rem)] flex flex-col">
-        {/* Mobile header - always visible on mobile */}
-        <div className="md:hidden px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0">
+        {/* Mobile header - sticky on mobile */}
+        <div className="md:hidden px-4 py-3 border-b border-[#e8dcc8] bg-[#faf6f0] flex-shrink-0 sticky top-16 z-40">
           <div className="flex items-center justify-between gap-2">
             <div className="flex gap-1">
               <Button
@@ -343,6 +343,7 @@ export default function SitesPage() {
             </div>
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1.5 bg-[#fffdf9] border border-[#c9b896] rounded-md px-2 py-1">
+                <span className="text-sm text-[#5c4033]">Votes</span>
                 <span className={`text-sm font-semibold ${MAX_VOTES - myVotes.length === 0 ? 'text-[#7a7067]' : 'text-[#2d5016]'}`}>
                   {MAX_VOTES - myVotes.length}/{MAX_VOTES}
                 </span>
@@ -350,11 +351,12 @@ export default function SitesPage() {
               <Button
                 onClick={() => setAddSiteModalOpen(true)}
                 size="sm"
-                className="h-9 bg-[#5c4033] hover:bg-[#4a3429]"
+                className="h-9 bg-[#5c4033] hover:bg-[#4a3429] text-white"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
+                Add
               </Button>
             </div>
           </div>
