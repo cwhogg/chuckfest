@@ -120,6 +120,8 @@ export type Site = {
   permit_lottery_results: string | null
   permit_cost: number | null
   permit_notes: string | null
+  national_forest: string | null
+  trail_info_url: string | null
 }
 
 export type SiteInsert = {
@@ -147,6 +149,8 @@ export type SiteInsert = {
   permit_lottery_results?: string | null
   permit_cost?: number | null
   permit_notes?: string | null
+  national_forest?: string | null
+  trail_info_url?: string | null
 }
 
 export type SiteUpdate = Partial<SiteInsert>

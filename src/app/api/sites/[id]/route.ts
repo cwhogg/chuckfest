@@ -174,7 +174,7 @@ export async function PATCH(
     const body = await request.json()
 
     // Only allow updating certain fields
-    const allowedFields = ['photos', 'description', 'difficulty', 'distance_miles', 'elevation_gain_ft', 'peak_elevation_ft']
+    const allowedFields = ['photos', 'description', 'difficulty', 'distance_miles', 'elevation_gain_ft', 'peak_elevation_ft', 'national_forest', 'trail_info_url']
     const updates: Record<string, unknown> = {}
 
     for (const field of allowedFields) {
