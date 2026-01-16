@@ -127,6 +127,40 @@ export async function GET(
 }
 
 /**
+ * DELETE /api/sites/[id]
+ *
+ * Delete a site
+ */
+export async function DELETE(
+  _request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await params
+
+    const { error } = await supabase
+      .from('sites')
+      .delete()
+      .eq('id', id)
+
+    if (error) {
+      throw error
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: 'Site deleted'
+    })
+  } catch (error) {
+    console.error('Error in DELETE /api/sites/[id]:', error)
+    return NextResponse.json(
+      { success: false, error: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 500 }
+    )
+  }
+}
+
+/**
  * PATCH /api/sites/[id]
  *
  * Update a site (photos, etc.)
