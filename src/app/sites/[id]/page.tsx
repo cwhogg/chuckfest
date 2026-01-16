@@ -53,6 +53,7 @@ interface Site {
   permit_required: boolean
   permit_url: string | null
   permit_type: string | null
+  permit_entry_point: string | null
   permit_notes: string | null
   trail_info_url: string | null
   photos: string[] | null
@@ -507,6 +508,17 @@ export default function SiteDetailPage() {
                       Permit Type
                     </span>
                     <p className="text-stone-700 capitalize">{site.permit_type.replace('_', ' ')}</p>
+                  </div>
+                )}
+                {site.permit_entry_point && (
+                  <div className="sm:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-3">
+                    <span className="text-sm font-medium text-amber-700 block mb-1">
+                      🎫 Entry Point (for permit booking)
+                    </span>
+                    <p className="text-lg font-semibold text-amber-900">{site.permit_entry_point}</p>
+                    <p className="text-xs text-amber-600 mt-1">
+                      Select this entry point when booking on recreation.gov
+                    </p>
                   </div>
                 )}
                 {site.permit_required && (
