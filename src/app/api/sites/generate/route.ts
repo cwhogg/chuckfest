@@ -1,6 +1,60 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
-import { getEntrancesForWilderness, verifyEntryPoint, PermitEntrance } from '@/lib/ridb'
+import { getEntrancesForWilderness, verifyEntryPoint } from '@/lib/ridb'
+
+/**
+ * Hardcoded entry point mappings based on research
+ * These are checked FIRST before falling back to RIDB API
+ */
+const HARDCODED_ENTRY_POINTS: { pattern: RegExp; entryPoint: string; region?: RegExp }[] = [
+  // Inyo National Forest / John Muir Wilderness / Ansel Adams Wilderness
+  { pattern: /ediza/i, entryPoint: 'High Trail' },
+  { pattern: /thousand island/i, entryPoint: 'High Trail' },
+  { pattern: /shadow lake/i, entryPoint: 'High Trail' },
+  { pattern: /garnet lake/i, entryPoint: 'High Trail' },
+  { pattern: /big pine/i, entryPoint: 'Big Pine Creek North Fork' },
+  { pattern: /chickenfoot|little lakes valley|gem lakes/i, entryPoint: 'Mono Pass' },
+  { pattern: /cottonwood lake/i, entryPoint: 'Cottonwood Lakes' },
+  { pattern: /kearsarge/i, entryPoint: 'Kearsarge Pass' },
+  { pattern: /long lake.*bishop|bishop.*long lake/i, entryPoint: 'Bishop Pass' },
+  { pattern: /bishop pass/i, entryPoint: 'Bishop Pass' },
+  { pattern: /sabrina/i, entryPoint: 'Sabrina' },
+  { pattern: /piute/i, entryPoint: 'Piute Pass' },
+  { pattern: /duck lake|duck pass/i, entryPoint: 'Duck Pass' },
+  { pattern: /mcgee/i, entryPoint: 'McGee Pass' },
+  { pattern: /hilton lakes/i, entryPoint: 'Hilton Lakes' },
+  // Desolation Wilderness
+  { pattern: /velma/i, entryPoint: 'Bayview', region: /desolation/i },
+  { pattern: /gilmore/i, entryPoint: 'Glen Alpine', region: /desolation/i },
+  { pattern: /aloha/i, entryPoint: 'Echo Lakes', region: /desolation/i },
+  { pattern: /susie/i, entryPoint: 'Glen Alpine', region: /desolation/i },
+  // Hoover Wilderness
+  { pattern: /green lake|east lake/i, entryPoint: 'Green Creek', region: /hoover/i },
+  { pattern: /virginia/i, entryPoint: 'Virginia Lakes', region: /hoover/i },
+  // Sequoia & Kings Canyon
+  { pattern: /pear lake|heather lake|aster lake/i, entryPoint: 'Lakes Trail (Wolverton)', region: /sequoia|kings canyon/i },
+  { pattern: /mosquito lake/i, entryPoint: 'Mosquito Lakes #1-5', region: /sequoia|mineral king/i },
+  { pattern: /redwood canyon/i, entryPoint: 'Redwood Canyon' },
+  { pattern: /bearpaw/i, entryPoint: 'High Sierra Trail' },
+  // Dinkey Lakes Wilderness
+  { pattern: /cliff lake|dinkey/i, entryPoint: 'Dinkey Lakes' },
+]
+
+/**
+ * Look up entry point from hardcoded mappings
+ */
+function getHardcodedEntryPoint(siteName: string, region: string): string | null {
+  for (const mapping of HARDCODED_ENTRY_POINTS) {
+    if (mapping.pattern.test(siteName)) {
+      // Check region constraint if specified
+      if (mapping.region && !mapping.region.test(region)) {
+        continue
+      }
+      return mapping.entryPoint
+    }
+  }
+  return null
+}
 
 interface GeneratedSite {
   name: string
@@ -155,11 +209,23 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
       )
     }
 
-    // Verify entry point against RIDB if we have an API key
+    // HYBRID APPROACH: Check hardcoded mappings first, then fall back to RIDB
     let entryPointVerified = false
     let availableEntryPoints: { id: string; name: string }[] = []
+    let entryPointSource: 'hardcoded' | 'ridb' | 'ai' | null = null
 
-    if (process.env.RIDB_API_KEY && generatedData.region) {
+    // Step 1: Check hardcoded mappings first (most reliable)
+    const hardcodedEntryPoint = getHardcodedEntryPoint(generatedData.name, generatedData.region)
+
+    if (hardcodedEntryPoint) {
+      generatedData.permit_entry_point = hardcodedEntryPoint
+      entryPointVerified = true
+      entryPointSource = 'hardcoded'
+      console.log(`Entry point from hardcoded mapping: ${hardcodedEntryPoint}`)
+    }
+
+    // Step 2: If no hardcoded match, try RIDB API
+    if (!entryPointVerified && process.env.RIDB_API_KEY && generatedData.region) {
       try {
         // Get available entry points for this wilderness area
         const entrances = await getEntrancesForWilderness(generatedData.region)
@@ -170,7 +236,7 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
             name: e.PermitEntranceName,
           }))
 
-          // Verify the AI's suggested entry point
+          // Verify the AI's suggested entry point against RIDB
           if (generatedData.permit_entry_point) {
             const verified = await verifyEntryPoint(
               generatedData.permit_entry_point,
@@ -181,17 +247,25 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
               // Use the exact name from RIDB
               generatedData.permit_entry_point = verified.PermitEntranceName
               entryPointVerified = true
+              entryPointSource = 'ridb'
+              console.log(`Entry point verified via RIDB: ${verified.PermitEntranceName}`)
             } else {
-              // AI's suggestion not found - clear it so user can select
-              console.log(`Entry point "${generatedData.permit_entry_point}" not found in RIDB`)
+              // AI's suggestion not found - clear it so user can select from dropdown
+              console.log(`Entry point "${generatedData.permit_entry_point}" not found in RIDB, clearing for user selection`)
               generatedData.permit_entry_point = ''
             }
           }
         }
       } catch (error) {
         console.error('Error verifying entry point with RIDB:', error)
-        // Continue without verification
+        // Continue without verification - user can still select manually
       }
+    }
+
+    // Step 3: If we still have an unverified AI suggestion (no RIDB key), keep it but mark unverified
+    if (!entryPointVerified && generatedData.permit_entry_point) {
+      entryPointSource = 'ai'
+      console.log(`Entry point from AI (unverified): ${generatedData.permit_entry_point}`)
     }
 
     // Return the generated data with the provided image URL
@@ -203,6 +277,7 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
         status: 'active',
       },
       entryPointVerified,
+      entryPointSource,
       availableEntryPoints: availableEntryPoints.length > 0 ? availableEntryPoints : undefined,
     })
   } catch (error) {

@@ -117,7 +117,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       updated: updates.length,
-      skipped: skipped.length,
+      skippedCount: skipped.length,
       updates,
       skipped,
     })
