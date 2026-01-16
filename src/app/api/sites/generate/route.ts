@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
+import { getEntrancesForWilderness, verifyEntryPoint, PermitEntrance } from '@/lib/ridb'
 
 interface GeneratedSite {
   name: string
@@ -105,7 +106,7 @@ Be accurate with coordinates and permit information. If you're unsure about spec
 IMPORTANT: Return ONLY the JSON object, no additional text or markdown formatting.`
 
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-4o',
       messages: [
         {
           role: 'system',
@@ -154,6 +155,45 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
       )
     }
 
+    // Verify entry point against RIDB if we have an API key
+    let entryPointVerified = false
+    let availableEntryPoints: { id: string; name: string }[] = []
+
+    if (process.env.RIDB_API_KEY && generatedData.region) {
+      try {
+        // Get available entry points for this wilderness area
+        const entrances = await getEntrancesForWilderness(generatedData.region)
+
+        if (entrances.length > 0) {
+          availableEntryPoints = entrances.map(e => ({
+            id: e.PermitEntranceID,
+            name: e.PermitEntranceName,
+          }))
+
+          // Verify the AI's suggested entry point
+          if (generatedData.permit_entry_point) {
+            const verified = await verifyEntryPoint(
+              generatedData.permit_entry_point,
+              generatedData.region
+            )
+
+            if (verified) {
+              // Use the exact name from RIDB
+              generatedData.permit_entry_point = verified.PermitEntranceName
+              entryPointVerified = true
+            } else {
+              // AI's suggestion not found - clear it so user can select
+              console.log(`Entry point "${generatedData.permit_entry_point}" not found in RIDB`)
+              generatedData.permit_entry_point = ''
+            }
+          }
+        }
+      } catch (error) {
+        console.error('Error verifying entry point with RIDB:', error)
+        // Continue without verification
+      }
+    }
+
     // Return the generated data with the provided image URL
     return NextResponse.json({
       success: true,
@@ -161,7 +201,9 @@ IMPORTANT: Return ONLY the JSON object, no additional text or markdown formattin
         ...generatedData,
         photos: [imageUrl],
         status: 'active',
-      }
+      },
+      entryPointVerified,
+      availableEntryPoints: availableEntryPoints.length > 0 ? availableEntryPoints : undefined,
     })
   } catch (error) {
     console.error('Error in POST /api/sites/generate:', error)

@@ -11,7 +11,19 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { toast } from 'sonner'
+
+interface EntryPoint {
+  id: string
+  name: string
+}
 
 interface GeneratedSite {
   name: string
@@ -46,6 +58,8 @@ export function AddSiteModal({ open, onOpenChange, onSiteAdded }: AddSiteModalPr
   const [generating, setGenerating] = useState(false)
   const [saving, setSaving] = useState(false)
   const [generatedSite, setGeneratedSite] = useState<GeneratedSite | null>(null)
+  const [availableEntryPoints, setAvailableEntryPoints] = useState<EntryPoint[]>([])
+  const [entryPointVerified, setEntryPointVerified] = useState(false)
 
   const handleGenerate = async () => {
     if (!siteName.trim()) {
@@ -72,7 +86,14 @@ export function AddSiteModal({ open, onOpenChange, onSiteAdded }: AddSiteModalPr
       }
 
       setGeneratedSite(data.site)
-      toast.success('Site details generated!')
+      setAvailableEntryPoints(data.availableEntryPoints || [])
+      setEntryPointVerified(data.entryPointVerified || false)
+
+      if (data.availableEntryPoints?.length > 0 && !data.entryPointVerified) {
+        toast.success('Site generated! Please select the entry point.')
+      } else {
+        toast.success('Site details generated!')
+      }
     } catch (error) {
       console.error('Error generating site:', error)
       toast.error(error instanceof Error ? error.message : 'Failed to generate site details')
@@ -113,11 +134,15 @@ export function AddSiteModal({ open, onOpenChange, onSiteAdded }: AddSiteModalPr
     setSiteName('')
     setImageUrl('')
     setGeneratedSite(null)
+    setAvailableEntryPoints([])
+    setEntryPointVerified(false)
     onOpenChange(false)
   }
 
   const handleStartOver = () => {
     setGeneratedSite(null)
+    setAvailableEntryPoints([])
+    setEntryPointVerified(false)
   }
 
   return (
@@ -260,13 +285,49 @@ export function AddSiteModal({ open, onOpenChange, onSiteAdded }: AddSiteModalPr
 
               {/* Permit info */}
               <div className="border-t border-stone-200 pt-3 space-y-1">
-                {generatedSite.permit_entry_point && (
+                {/* Entry Point Selection/Display */}
+                {availableEntryPoints.length > 0 ? (
+                  <div className="mb-3">
+                    <Label className="text-stone-700 font-medium">Entry Point (recreation.gov)</Label>
+                    {entryPointVerified && generatedSite.permit_entry_point ? (
+                      <div className="mt-1 text-sm bg-green-50 border border-green-200 rounded px-2 py-1.5">
+                        <span className="text-green-700 font-medium">✓ Verified:</span>{' '}
+                        <span className="font-semibold text-green-900">{generatedSite.permit_entry_point}</span>
+                        <p className="text-xs text-green-600 mt-0.5">This entry point exists in recreation.gov</p>
+                      </div>
+                    ) : (
+                      <div className="mt-1">
+                        <Select
+                          value={generatedSite.permit_entry_point || ''}
+                          onValueChange={(value) => {
+                            setGeneratedSite({ ...generatedSite, permit_entry_point: value })
+                            setEntryPointVerified(true)
+                          }}
+                        >
+                          <SelectTrigger className="w-full bg-amber-50 border-amber-300">
+                            <SelectValue placeholder="Select entry point..." />
+                          </SelectTrigger>
+                          <SelectContent className="max-h-60">
+                            {availableEntryPoints.map((ep) => (
+                              <SelectItem key={ep.id} value={ep.name}>
+                                {ep.name}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <p className="text-xs text-amber-600 mt-1">
+                          Select the entry point to book on recreation.gov
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ) : generatedSite.permit_entry_point ? (
                   <div className="text-sm bg-amber-50 border border-amber-200 rounded px-2 py-1.5 mb-2">
                     <span className="text-amber-700 font-medium">Entry Point:</span>{' '}
                     <span className="font-semibold text-amber-900">{generatedSite.permit_entry_point}</span>
                     <p className="text-xs text-amber-600 mt-0.5">Select this trailhead when booking permits</p>
                   </div>
-                )}
+                ) : null}
                 <div className="text-sm">
                   <span className="text-stone-500">Permit Type:</span>{' '}
                   <span className="font-medium capitalize">{generatedSite.permit_type?.replace('_', ' ')}</span>
