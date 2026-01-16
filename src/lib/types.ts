@@ -102,6 +102,7 @@ export type Site = {
   latitude: number | null
   longitude: number | null
   permit_url: string | null
+  permit_entry_point: string | null
   difficulty: SiteDifficulty | null
   distance_miles: number | null
   elevation_gain_ft: number | null
@@ -129,6 +130,7 @@ export type SiteInsert = {
   latitude?: number | null
   longitude?: number | null
   permit_url?: string | null
+  permit_entry_point?: string | null
   difficulty?: SiteDifficulty | null
   distance_miles?: number | null
   elevation_gain_ft?: number | null

@@ -25,6 +25,7 @@ interface SiteCardProps {
     difficulty: string | null
     permit_required: boolean
     permit_url: string | null
+    permit_entry_point?: string | null
     trail_info_url: string | null
     vote_count: number
     photos?: string[] | null
@@ -278,6 +279,11 @@ export function SiteCard({
                 </svg>
               </Button>
             </a>
+            {site.permit_entry_point && (
+              <span className="text-[10px] text-amber-700 bg-amber-50 border border-amber-200 rounded px-1.5 py-0.5 ml-1">
+                → {site.permit_entry_point}
+              </span>
+            )}
           </>
         )}
       </div>

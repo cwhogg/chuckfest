@@ -12,6 +12,7 @@ interface GeneratedSite {
   permit_advance_days: number
   permit_open_time: string
   permit_cost: number
+  permit_entry_point: string
   difficulty: string
   distance_miles: number
   elevation_gain_ft: number
@@ -68,11 +69,12 @@ Research and provide accurate details about this location. Return a JSON object 
   "description": "2-3 compelling sentences describing the destination, its scenery, and appeal for backpackers",
   "latitude": <decimal latitude>,
   "longitude": <decimal longitude>,
-  "permit_url": "URL to recreation.gov or relevant permit page",
+  "permit_url": "URL to recreation.gov or relevant permit page for this wilderness area",
   "permit_type": "rolling" or "fixed_date" or "lottery",
   "permit_advance_days": <number of days in advance permits open, typically 168 or 180 for Sierra wilderness>,
   "permit_open_time": "07:00",
   "permit_cost": <approximate cost in dollars>,
+  "permit_entry_point": "The exact trailhead or entry point name to select when booking the permit (e.g., 'Agnew Meadows', 'Rush Creek', 'Lyell Canyon')",
   "difficulty": "easy" or "moderate" or "strenuous",
   "distance_miles": <one-way hike distance to the destination>,
   "elevation_gain_ft": <total elevation gain>,
@@ -80,6 +82,13 @@ Research and provide accurate details about this location. Return a JSON object 
   "permit_notes": "Any important notes about permits, bear canisters, quotas, etc.",
   "trail_info_url": "URL to the AllTrails page for this trail/hike, or empty string if not found"
 }
+
+IMPORTANT for permit_entry_point: This is the specific trailhead name that appears in the permit system dropdown on recreation.gov. For example:
+- To reach Ediza Lake, select "Agnew Meadows" entry point
+- To reach Thousand Island Lake via Shadow Lake, select "Agnew Meadows" entry point
+- To reach Lyell Canyon, select "Lyell Canyon" entry point
+- To reach Cathedral Lakes, select "Cathedral Lakes" entry point
+Find the correct entry point that provides access to this destination.
 
 Be accurate with coordinates and permit information. If you're unsure about specific permit details, use reasonable defaults for Sierra Nevada wilderness areas (typically rolling permits, 168 days advance, 7am PT opening).
 

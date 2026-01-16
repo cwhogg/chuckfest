@@ -24,6 +24,7 @@ interface GeneratedSite {
   permit_advance_days: number
   permit_open_time: string
   permit_cost: number
+  permit_entry_point: string
   difficulty: string
   distance_miles: number
   elevation_gain_ft: number
@@ -259,6 +260,13 @@ export function AddSiteModal({ open, onOpenChange, onSiteAdded }: AddSiteModalPr
 
               {/* Permit info */}
               <div className="border-t border-stone-200 pt-3 space-y-1">
+                {generatedSite.permit_entry_point && (
+                  <div className="text-sm bg-amber-50 border border-amber-200 rounded px-2 py-1.5 mb-2">
+                    <span className="text-amber-700 font-medium">Entry Point:</span>{' '}
+                    <span className="font-semibold text-amber-900">{generatedSite.permit_entry_point}</span>
+                    <p className="text-xs text-amber-600 mt-0.5">Select this trailhead when booking permits</p>
+                  </div>
+                )}
                 <div className="text-sm">
                   <span className="text-stone-500">Permit Type:</span>{' '}
                   <span className="font-medium capitalize">{generatedSite.permit_type?.replace('_', ' ')}</span>
