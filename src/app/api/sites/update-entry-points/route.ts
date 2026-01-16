@@ -19,25 +19,31 @@ const ENTRY_POINT_MAPPINGS: { pattern: RegExp; entryPoint: string; region?: RegE
   { pattern: /bishop pass/i, entryPoint: 'Bishop Pass' },
   { pattern: /sabrina/i, entryPoint: 'Sabrina' },
   { pattern: /piute/i, entryPoint: 'Piute Pass' },
-  { pattern: /duck lake|duck pass/i, entryPoint: 'Duck Pass' },
+  { pattern: /duck lake|duck pass|purple lake|lake virginia/i, entryPoint: 'Duck Pass' },
   { pattern: /mcgee/i, entryPoint: 'McGee Pass' },
   { pattern: /hilton lakes/i, entryPoint: 'Hilton Lakes' },
+  { pattern: /evolution/i, entryPoint: 'Piute Pass' },
 
   // Desolation Wilderness (233261)
   { pattern: /velma/i, entryPoint: 'Bayview', region: /desolation/i },
   { pattern: /gilmore/i, entryPoint: 'Glen Alpine', region: /desolation/i },
-  { pattern: /aloha/i, entryPoint: 'Echo Lakes', region: /desolation/i },
+  { pattern: /aloha|tamarack/i, entryPoint: 'Echo Lakes', region: /desolation/i },
   { pattern: /susie/i, entryPoint: 'Glen Alpine', region: /desolation/i },
 
   // Hoover Wilderness (445856)
   { pattern: /green lake|east lake/i, entryPoint: 'Green Creek', region: /hoover/i },
   { pattern: /virginia/i, entryPoint: 'Virginia Lakes', region: /hoover/i },
+  { pattern: /20 lakes|saddlebag/i, entryPoint: 'Saddlebag Lake', region: /hoover/i },
 
   // Sequoia & Kings Canyon (445857)
   { pattern: /pear lake|heather lake|aster lake/i, entryPoint: 'Lakes Trail (Wolverton)', region: /sequoia|kings canyon/i },
   { pattern: /mosquito lake/i, entryPoint: 'Mosquito Lakes #1-5', region: /sequoia|mineral king/i },
   { pattern: /redwood canyon/i, entryPoint: 'Redwood Canyon' },
   { pattern: /bearpaw/i, entryPoint: 'High Sierra Trail' },
+  { pattern: /rae lakes/i, entryPoint: 'Woods Creek', region: /kings canyon/i },
+
+  // Yosemite Wilderness (445859)
+  { pattern: /matterhorn/i, entryPoint: 'Twin Lakes', region: /yosemite/i },
 
   // Dinkey Lakes Wilderness (445858)
   { pattern: /cliff lake|dinkey/i, entryPoint: 'Dinkey Lakes' },
