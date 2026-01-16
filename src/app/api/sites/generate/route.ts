@@ -83,12 +83,22 @@ Research and provide accurate details about this location. Return a JSON object 
   "trail_info_url": "URL to the AllTrails page for this trail/hike, or empty string if not found"
 }
 
-IMPORTANT for permit_entry_point: This is the specific trailhead name that appears in the permit system dropdown on recreation.gov. For example:
-- To reach Ediza Lake, select "Agnew Meadows" entry point
-- To reach Thousand Island Lake via Shadow Lake, select "Agnew Meadows" entry point
-- To reach Lyell Canyon, select "Lyell Canyon" entry point
-- To reach Cathedral Lakes, select "Cathedral Lakes" entry point
-Find the correct entry point that provides access to this destination.
+IMPORTANT for permit_entry_point: This is the EXACT entry point name as it appears in the recreation.gov permit system dropdown - NOT the physical trailhead name. These are often different!
+
+To find this:
+1. Search for first-person trip reports, blog posts, or forum discussions from people who camped at this destination
+2. Look for what permit entry point they actually booked on recreation.gov
+3. The entry point name must match exactly what appears in the recreation.gov system
+
+Examples of the difference between physical trailhead vs permit entry point:
+- Ediza Lake: Physical trailhead is "Agnew Meadows", but permit entry point is "High Trail"
+- Thousand Island Lake: Physical trailhead is "Agnew Meadows", but permit entry point is "High Trail" or "River Trail"
+- Cathedral Lakes: Entry point is "Cathedral Lakes" (same as destination)
+
+Common John Muir Wilderness entry points: High Trail, River Trail, Duck Pass, Mammoth Pass, McGee Pass, Piute Pass, Bishop Pass, etc.
+Common Ansel Adams Wilderness entry points: Fernandez, Norris, Lillian Lake Loop, etc.
+
+If unsure, leave this field empty rather than guessing wrong.
 
 Be accurate with coordinates and permit information. If you're unsure about specific permit details, use reasonable defaults for Sierra Nevada wilderness areas (typically rolling permits, 168 days advance, 7am PT opening).
 
