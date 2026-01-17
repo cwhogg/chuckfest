@@ -31,10 +31,26 @@ export async function GET() {
       }
     }
 
-    // Add vote counts to sites
+    // Get visited site IDs from past_trips
+    const { data: pastTrips } = await supabase
+      .from('past_trips')
+      .select('site_id')
+      .not('site_id', 'is', null)
+
+    const visitedSiteIds = new Set<string>()
+    if (pastTrips) {
+      for (const trip of pastTrips) {
+        if (trip.site_id) {
+          visitedSiteIds.add(trip.site_id)
+        }
+      }
+    }
+
+    // Add vote counts and visited status to sites
     const sitesWithVotes = sites?.map(site => ({
       ...site,
-      vote_count: voteCountMap[site.id] || 0
+      vote_count: voteCountMap[site.id] || 0,
+      is_visited: visitedSiteIds.has(site.id)
     })) || []
 
     return NextResponse.json({

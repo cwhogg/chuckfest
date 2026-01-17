@@ -47,6 +47,7 @@ interface Site {
   trail_info_url: string | null
   vote_count: number
   photos?: string[] | null
+  is_visited?: boolean
 }
 
 interface Vote {
@@ -134,6 +135,9 @@ export default function SitesPage() {
   // Filter and sort sites
   const filteredAndSortedSites = useMemo(() => {
     let result = [...sites]
+
+    // Filter out visited sites
+    result = result.filter(site => !site.is_visited)
 
     // Apply region filter
     if (regionFilter !== 'all') {
