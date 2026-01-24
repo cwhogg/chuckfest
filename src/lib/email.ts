@@ -14,6 +14,9 @@ export const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.de
 export const EMAIL_TEST_MODE = process.env.EMAIL_TEST_MODE === 'true'
 export const EMAIL_TEST_RECIPIENT = process.env.EMAIL_TEST_RECIPIENT || ''
 
+// Kill switch to disable all outbound emails
+export const EMAILS_DISABLED = process.env.EMAILS_DISABLED === 'true'
+
 /**
  * Check if email test mode is enabled
  */
@@ -55,6 +58,14 @@ export interface SendEmailResult {
  * Send an email using Resend
  */
 export async function sendEmail(options: SendEmailOptions): Promise<SendEmailResult> {
+  if (EMAILS_DISABLED) {
+    console.log('Emails disabled - skipping send to:', options.to)
+    return {
+      success: true,
+      id: 'disabled-' + Date.now()
+    }
+  }
+
   if (!resend) {
     console.error('Resend client not initialized - RESEND_API_KEY missing')
     return {
