@@ -1,4 +1,4 @@
-import { listIdeas } from '@/server/sites'
+import { listIdeas, type Site } from '@/server/sites'
 import { Badge, Card, Empty } from '@/components/ui'
 import { ActionButton } from '@/components/action-button'
 import { SiteForm } from '../sites/site-form'
@@ -23,7 +23,7 @@ export default async function AdminIdeasPage() {
           <div className="flex flex-wrap items-start justify-between gap-2">
             <div>
               <p className="text-lg font-semibold">{idea.name}</p>
-              <p className="text-sm text-muted">from {submittedBy ?? 'unknown'}</p>
+              <p className="text-sm text-muted">from {submittedBy ?? 'unknown'}{idea.draft ? ' · researched details ready, check them before approving' : ''}</p>
               {idea.notes && <p className="mt-1 text-[15px]">{idea.notes}</p>}
               {idea.link && (
                 <a href={idea.link} target="_blank" rel="noreferrer" className="text-sm text-lake break-all">
@@ -40,7 +40,11 @@ export default async function AdminIdeasPage() {
             <div className="mt-3">
               <SiteForm
                 action={approveHikeIdea.bind(null, idea.id)}
-                defaults={{ name: idea.name, sources: idea.link ? [{ label: `Suggested by ${submittedBy ?? 'a member'}`, url: idea.link }] : [] }}
+                defaults={
+                  idea.draft
+                    ? (idea.draft as Partial<Site>)
+                    : { name: idea.name, sources: idea.link ? [{ label: `Suggested by ${submittedBy ?? 'a member'}`, url: idea.link }] : [] }
+                }
                 submitLabel="Approve and add"
               />
             </div>
