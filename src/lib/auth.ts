@@ -1,68 +1,79 @@
-import { cookies } from 'next/headers'
-import { supabase } from './supabase'
-import type { Member } from './types'
+import 'server-only'
+import { betterAuth } from 'better-auth'
+import { drizzleAdapter } from 'better-auth/adapters/drizzle'
+import { magicLink } from 'better-auth/plugins/magic-link'
+import { nextCookies } from 'better-auth/next-js'
+import { createAuthEndpoint, APIError } from 'better-auth/api'
+import { setSessionCookie } from 'better-auth/cookies'
+import * as z from 'zod'
+import { db } from '@/db'
+import { members, sessions, accounts, verifications } from '@/db/schema'
+import { sendEmail } from '@/server/notify'
+import { magicLinkEmail } from '@/emails/magic-link'
 
-const COOKIE_NAME = 'chuckfest_member_id'
-const COOKIE_MAX_AGE = 60 * 60 * 24 * 365 // 1 year
-
-/**
- * Server-side: Get the current member from the cookie
- */
-export async function getCurrentMember(): Promise<Member | null> {
-  try {
-    const cookieStore = await cookies()
-    const memberId = cookieStore.get(COOKIE_NAME)?.value
-
-    if (!memberId) {
-      return null
-    }
-
-    const { data, error } = await supabase
-      .from('members')
-      .select('*')
-      .eq('id', memberId)
-      .single()
-
-    if (error || !data) {
-      return null
-    }
-
-    return data as Member
-  } catch {
-    return null
-  }
-}
+const NINETY_DAYS = 60 * 60 * 24 * 90
 
 /**
- * Server-side: Set the current member cookie
+ * Personal links: each member has a long-lived link (/api/auth/personal-link?token=…)
+ * that signs them in on any device. Admins can reissue it, which invalidates the old one.
  */
-export async function setCurrentMemberServer(memberId: string): Promise<void> {
-  const cookieStore = await cookies()
-  cookieStore.set(COOKIE_NAME, memberId, {
-    httpOnly: false, // Allow client-side access
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    maxAge: COOKIE_MAX_AGE,
-    path: '/',
-  })
-}
+const personalLink = () => ({
+  id: 'personal-link',
+  endpoints: {
+    personalLinkSignIn: createAuthEndpoint(
+      '/personal-link',
+      { method: 'GET', query: z.object({ token: z.string().min(20), next: z.string().optional() }) },
+      async (ctx) => {
+        const next = ctx.query.next?.startsWith('/') ? ctx.query.next : '/'
+        const user = await ctx.context.adapter.findOne<{ id: string; isActive: boolean }>({
+          model: 'user',
+          where: [{ field: 'personalLinkToken', value: ctx.query.token }],
+        })
+        if (!user || !user.isActive) throw ctx.redirect('/login?error=link')
+        const session = await ctx.context.internalAdapter.createSession(user.id)
+        if (!session) throw new APIError('INTERNAL_SERVER_ERROR')
+        const fullUser = await ctx.context.internalAdapter.findUserById(user.id)
+        if (!fullUser) throw ctx.redirect('/login?error=link')
+        await setSessionCookie(ctx, { session, user: fullUser })
+        throw ctx.redirect(next)
+      },
+    ),
+  },
+  rateLimit: [{ pathMatcher: (p: string) => p.startsWith('/personal-link'), window: 60, max: 10 }],
+})
 
-/**
- * Server-side: Clear the current member cookie
- */
-export async function clearCurrentMemberServer(): Promise<void> {
-  const cookieStore = await cookies()
-  cookieStore.delete(COOKIE_NAME)
-}
+export const auth = betterAuth({
+  appName: 'ChuckFest',
+  database: drizzleAdapter(db, {
+    provider: 'pg',
+    schema: { user: members, session: sessions, account: accounts, verification: verifications },
+  }),
+  session: { expiresIn: NINETY_DAYS, updateAge: 60 * 60 * 24 },
+  user: {
+    additionalFields: {
+      role: { type: 'string', input: false, defaultValue: 'member' },
+      phone: { type: 'string', required: false, input: false },
+      isActive: { type: 'boolean', input: false, defaultValue: true },
+      personalLinkToken: { type: 'string', required: false, input: false, returned: false },
+    },
+  },
+  plugins: [
+    magicLink({
+      disableSignUp: true,
+      expiresIn: 60 * 30,
+      sendMagicLink: async ({ email, url }) => {
+        const message = magicLinkEmail(url)
+        await sendEmail({
+          kind: 'magic_link',
+          dedupeKey: `magic_link:${email}:${url}`,
+          to: email,
+          ...message,
+        })
+      },
+    }),
+    personalLink(),
+    nextCookies(),
+  ],
+})
 
-/**
- * Get just the member ID from cookie (doesn't fetch from DB)
- */
-export async function getCurrentMemberId(): Promise<string | null> {
-  try {
-    const cookieStore = await cookies()
-    return cookieStore.get(COOKIE_NAME)?.value || null
-  } catch {
-    return null
-  }
-}
+export type Session = typeof auth.$Infer.Session

@@ -1,138 +1,43 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* ChuckFest palette: paper, bark and pine, with lake blue and ember accents. */
+@theme {
+  --color-paper: #faf6f0;
+  --color-card: #fffdf9;
+  --color-line: #e8dcc8;
+  --color-ink: #3d352e;
+  --color-muted: #7a7067;
+  --color-bark: #5c4033;
+  --color-pine: #2f5d3a;
+  --color-pine-soft: #e8f0e6;
+  --color-lake: #3b6e8f;
+  --color-lake-soft: #e4eef4;
+  --color-gold: #c9a227;
+  --color-gold-soft: #f5e6c8;
+  --color-ember: #b5502b;
+  --color-ember-soft: #f7e3da;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-:root {
-  --radius: 0.625rem;
-
-  /* Earthy Camping Theme Colors */
-  --background: #faf6f0;           /* warm cream */
-  --foreground: #3d352e;           /* charcoal brown */
-  --card: #fffdf9;                 /* off-white */
-  --card-foreground: #3d352e;      /* charcoal brown */
-  --popover: #fffdf9;              /* off-white */
-  --popover-foreground: #3d352e;   /* charcoal brown */
-  --primary: #5c4033;              /* primary brown */
-  --primary-foreground: #faf6f0;   /* cream */
-  --secondary: #e8dcc8;            /* light tan */
-  --secondary-foreground: #5c4033; /* brown */
-  --muted: #e8dcc8;                /* light tan */
-  --muted-foreground: #7a7067;     /* warm gray */
-  --accent: #e8dcc8;               /* light tan */
-  --accent-foreground: #5c4033;    /* brown */
-  --destructive: #b54c3a;          /* earthy red */
-  --border: #e8dcc8;               /* light tan */
-  --input: #c9b896;                /* tan */
-  --ring: #2d5016;                 /* forest green */
-  --chart-1: #2d5016;              /* forest green */
-  --chart-2: #5c4033;              /* brown */
-  --chart-3: #5a7c52;              /* muted green */
-  --chart-4: #c9b896;              /* tan */
-  --chart-5: #a65d4e;              /* rust */
-  --sidebar: #fffdf9;              /* off-white */
-  --sidebar-foreground: #3d352e;   /* charcoal brown */
-  --sidebar-primary: #2d5016;      /* forest green */
-  --sidebar-primary-foreground: #faf6f0; /* cream */
-  --sidebar-accent: #e8dcc8;       /* light tan */
-  --sidebar-accent-foreground: #5c4033; /* brown */
-  --sidebar-border: #c9b896;       /* tan */
-  --sidebar-ring: #2d5016;         /* forest green */
-
-  /* Custom theme colors */
-  --forest-green: #2d5016;
-  --brown: #5c4033;
-  --tan: #c9b896;
-  --light-tan: #e8dcc8;
-  --cream: #faf6f0;
-  --off-white: #fffdf9;
-  --charcoal: #3d352e;
-  --warm-gray: #7a7067;
-  --success: #5a7c52;
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+body {
+  font-family: var(--font-sans);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-bark);
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lake);
+  outline-offset: 2px;
 }
