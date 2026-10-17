@@ -18,10 +18,11 @@ export function shortDate(isoDate: string): string {
   return `${WEEKDAYS[weekday(isoDate)]} ${MONTHS[m - 1]} ${d}`
 }
 
-/** "Jun 3 – 7" or "Jun 29 – Jul 3" */
+/** "Jun 3 – 7", "Jun 29 – Jul 3", or "Jul 4" for a single day */
 export function rangeLabel({ startDate, endDate }: DateWindow): string {
   const [, sm, sd] = startDate.split('-').map(Number)
   const [, em, ed] = endDate.split('-').map(Number)
+  if (startDate === endDate) return `${MONTHS[sm - 1]} ${sd}`
   return sm === em ? `${MONTHS[sm - 1]} ${sd} – ${ed}` : `${MONTHS[sm - 1]} ${sd} – ${MONTHS[em - 1]} ${ed}`
 }
 

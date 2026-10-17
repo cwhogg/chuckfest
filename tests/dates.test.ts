@@ -31,6 +31,7 @@ describe('labels', () => {
     expect(shortDate('2027-06-02')).toBe('Wed Jun 2')
     expect(rangeLabel({ startDate: '2027-06-02', endDate: '2027-06-06' })).toBe('Jun 2 – 6')
     expect(rangeLabel({ startDate: '2027-06-30', endDate: '2027-07-04' })).toBe('Jun 30 – Jul 4')
+    expect(rangeLabel({ startDate: '2027-07-04', endDate: '2027-07-04' })).toBe('Jul 4')
   })
 })
 

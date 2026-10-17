@@ -81,9 +81,19 @@ export async function getPermitPlan(tripId: string) {
     .from(members)
     .where(and(eq(members.role, 'admin'), eq(members.isActive, true)))
 
+  // Chosen site first, then backups in rank order, then by opening time.
+  const [trip] = await db.select({ siteId: tripYears.siteId }).from(tripYears).where(eq(tripYears.id, tripId))
+  const ranks = await db.select().from(tripBackupSites).where(eq(tripBackupSites.tripYearId, tripId))
+  const order = (siteId: string) => (siteId === trip?.siteId ? 0 : (ranks.find((r) => r.siteId === siteId)?.rank ?? 99))
+  windows.sort((a, b) => order(a.site.id) - order(b.site.id) || a.window.opensAt.getTime() - b.window.opensAt.getTime())
+
   const secured = attempts.some((a) => a.attempt.outcome === 'got_it')
   return {
-    windows: windows.map((w) => ({ ...w, attempts: attempts.filter((a) => a.attempt.windowId === w.window.id) })),
+    windows: windows.map((w) => ({
+      ...w,
+      role: w.site.id === trip?.siteId ? ('chosen' as const) : ('backup' as const),
+      attempts: attempts.filter((a) => a.attempt.windowId === w.window.id),
+    })),
     volunteers,
     admins,
     secured,

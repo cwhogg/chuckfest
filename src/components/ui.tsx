@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type { ComponentProps, ReactNode } from 'react'
 import { clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
 export function cn(...parts: Parameters<typeof clsx>) {
-  return clsx(...parts)
+  return twMerge(clsx(...parts))
 }
 
 const buttonStyles = {

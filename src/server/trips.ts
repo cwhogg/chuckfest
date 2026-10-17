@@ -8,6 +8,8 @@ import {
   dateOptions,
   dateResponses,
   members,
+  pastTripAttendees,
+  pastTrips,
   sites,
   siteVotes,
   tripBackupSites,
@@ -233,4 +235,33 @@ export async function getAttendance(tripId: string) {
     const r = rows.find((x) => x.memberId === m.id)
     return { ...m, status: r?.status ?? null, notes: r?.notes ?? null }
   })
+}
+
+// ---------------------------------------------------------------------------
+// Archive: a finished trip becomes a history entry
+// ---------------------------------------------------------------------------
+
+export async function archiveTrip(actorId: string, tripId: string) {
+  const trip = await getTrip(tripId)
+  if (!trip) throw new Error('Unknown trip')
+  const [site] = trip.siteId ? await db.select().from(sites).where(eq(sites.id, trip.siteId)) : []
+  const [existing] = await db.select().from(pastTrips).where(eq(pastTrips.year, trip.year))
+  const values = {
+    year: trip.year,
+    startDate: trip.startDate,
+    endDate: trip.endDate,
+    siteId: trip.siteId,
+    locationName: site?.name ?? null,
+    hikeMiles: site?.distanceMiles ?? null,
+    elevationGainFt: site?.elevationGainFt ?? null,
+    campElevationFt: site?.campElevationFt ?? null,
+  }
+  const pastTripId = existing
+    ? (await db.update(pastTrips).set(values).where(eq(pastTrips.id, existing.id)).returning())[0].id
+    : (await db.insert(pastTrips).values(values).returning())[0].id
+  const going = await db.select({ memberId: attendance.memberId }).from(attendance).where(and(eq(attendance.tripYearId, tripId), eq(attendance.status, 'in')))
+  if (going.length) await db.insert(pastTripAttendees).values(going.map((g) => ({ pastTripId, memberId: g.memberId }))).onConflictDoNothing()
+  await db.update(tripYears).set({ stage: 'archive' }).where(eq(tripYears.id, tripId))
+  await audit(actorId, 'trip.archive', { tripId, pastTripId })
+  return pastTripId
 }
