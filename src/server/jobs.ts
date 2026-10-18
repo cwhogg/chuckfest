@@ -17,14 +17,12 @@ import { sendEmail, sendSms } from './notify'
 import { personalLinkFor } from './members'
 import { alarmRecipients, upcomingWindows } from './permits'
 import { getActiveTrip } from './trips'
+import { siteOrigin } from '@/lib/site-url'
 
 type Member = typeof members.$inferSelect
 
 export function appUrl(path = '/') {
-  const base =
-    process.env.APP_URL ??
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000')
-  return new URL(path, base).toString()
+  return new URL(path, siteOrigin()).toString()
 }
 
 /** A one-tap link that signs the member in and lands on `next`. */

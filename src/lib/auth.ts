@@ -10,6 +10,7 @@ import { db } from '@/db'
 import { members, sessions, accounts, verifications } from '@/db/schema'
 import { sendEmail } from '@/server/notify'
 import { magicLinkEmail } from '@/emails/magic-link'
+import { siteOrigin, trustedOrigins } from '@/lib/site-url'
 
 const NINETY_DAYS = 60 * 60 * 24 * 90
 
@@ -44,6 +45,8 @@ const personalLink = () => ({
 
 export const auth = betterAuth({
   appName: 'ChuckFest',
+  baseURL: process.env.BETTER_AUTH_URL ?? siteOrigin(),
+  trustedOrigins: trustedOrigins(),
   database: drizzleAdapter(db, {
     provider: 'pg',
     schema: { user: members, session: sessions, account: accounts, verification: verifications },
