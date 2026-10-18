@@ -1,0 +1,145 @@
+{
+  "candidate": {
+    "name": "Round Top Lake",
+    "area": "Mokelumne Wilderness (Eldorado National Forest)",
+    "trailhead": "Carson Pass",
+    "why": "Volcanic Round Top and The Sisters with famous wildflowers."
+  },
+  "site": {
+    "name": "Round Top Lake",
+    "region": "Central Sierra - Mokelumne Wilderness (Carson Pass Management Area)",
+    "area": "Carson Pass, Eldorado National Forest",
+    "description": "A small alpine lake above treeline beneath Round Top and The Sisters, known for its wildflowers and reached from Carson Pass or Woods Lake. Day hikes from camp reach Winnemucca, Fourth of July and Frog Lakes, and Round Top can be scrambled (Class 3 at the top). Not recommended for this group: overnight groups are capped at 8, stays at Round Top are limited to 2 nights, and permits are same-day, first-come first-served.",
+    "latitude": 38.666,
+    "longitude": -120.012,
+    "difficulty": "moderate",
+    "distanceMiles": 3.4,
+    "elevationGainFt": 1000,
+    "campElevationFt": 9364,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "08:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Carson Pass (Trail 18E13) or Woods Lake (Trail 17E47)",
+    "permitGroupSizeLimit": 8,
+    "permitUrl": null,
+    "permitNotes": "Requires a Carson Pass Management Area permit; the general self-issue Mokelumne permit is not valid here. In summer (Memorial Day to Labor Day), free permits are issued in person at the Carson Pass Information Station on Hwy 88 at 8:00 AM, same day only, first-come first-served. There is no reservation, lottery or recreation.gov listing. The quota is 14 sites a day, 5 of them at Round Top, one permit per site, and the 2025 handout says permits typically go within moments of opening. Maximum stay at Round Top is 2 nights. Split groups may not camp or travel within 1 mile of each other. The permit names your starting trailhead. No campfires; stoves require a California Campfire Permit. Parking is $5/day at Carson Pass or $10/day at Woods Lake. After Labor Day there is no quota or assigned sites; the station usually closes around Sept 30, after which permits come from the Amador Ranger District (209-259-3774), including by email.",
+    "sceneryScore": 24,
+    "experienceScore": 13,
+    "accessScore": 16,
+    "permitScore": 2,
+    "rankingNotes": "A scenic, short volcanic-alpine hike, but an 8-person cap, a 2-night limit and same-day permits rule it out for 12 people over 4 nights; better as a day hike.",
+    "sources": [
+      {
+        "label": "USFS Carson Pass Management Area permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/carson-pass-management-area-permits"
+      },
+      {
+        "label": "USFS Mokelumne general overnight permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits"
+      },
+      {
+        "label": "USFS Lost Cabin Mine Trail - Round Top Lake",
+        "url": "https://www.fs.usda.gov/r05/eldorado/recreation/trails/lost-cabin-mine-trail-round-top-lake"
+      },
+      {
+        "label": "USFS Carson Pass - Lake Winnemucca Trail",
+        "url": "https://www.fs.usda.gov/r05/eldorado/recreation/trails/carson-pass-lake-winnemucca-trail"
+      },
+      {
+        "label": "USFS Know before you go - Mokelumne",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/know-you-go-mokelumne-wilderness"
+      },
+      {
+        "label": "USFS Mokelumne day use permit parking",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-day-use-permit-parking"
+      },
+      {
+        "label": "USFS 2025 permit instructions",
+        "url": "https://www.fs.usda.gov/media/246202"
+      },
+      {
+        "label": "USFS 2025 Moke Permit Instructions Summer PDF",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/eldorado/publication/2025%20Moke%20Permit%20Instructions%20Summer.pdf"
+      },
+      {
+        "label": "USFS 2023 permit instructions",
+        "url": "https://www.fs.usda.gov/media/121988"
+      },
+      {
+        "label": "USFS Mokelumne regulations",
+        "url": "https://www.fs.usda.gov/media/246222"
+      },
+      {
+        "label": "ENFIA Carson Pass",
+        "url": "https://enfia.org/discover/carson-pass/"
+      },
+      {
+        "label": "PCTA local permits",
+        "url": "https://www.pcta.org/discover-the-trail/permits/local-permits/"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/explore-mokelumne-wilderness/backpacking-trails-mokelumne-wilderness/"
+      },
+      {
+        "label": "AllTrails Winnemucca and Round Top Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/winnemucca-and-round-top-lakes--2"
+      },
+      {
+        "label": "AllTrails Woods, Winnemucca and Round Top Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/woods-winnemucca-and-round-top-lakes"
+      },
+      {
+        "label": "komoot",
+        "url": "https://www.komoot.com/smarttour/e2813341160/winnemucca-and-round-top-lakes"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/trails/winnemucca-lake-to-round-top-lake/"
+      },
+      {
+        "label": "Tahoe to Whitney - Round Top Lake",
+        "url": "https://tahoetowhitney.com/TY-Carson_Pass_to_Ebbetts%20Pass/Round_Top_Lake.html"
+      },
+      {
+        "label": "Tahoe to Whitney - Trail to Woods Lake",
+        "url": "https://tahoetowhitney.com/TY-Carson_Pass_to_Ebbetts%20Pass/Trail_to_Woods_Lake.html"
+      },
+      {
+        "label": "Tahoe to Whitney - Eldorado NF permits",
+        "url": "https://tahoetowhitney.com/Permitting_Authorities/El_Dorado_National_Forest.html"
+      },
+      {
+        "label": "liveandlethike",
+        "url": "https://liveandlethike.com/2023/08/27/round-top-winnemucca-lake-loop-mokelumne-wilderness-ca/"
+      },
+      {
+        "label": "NorCal Hiker",
+        "url": "https://www.norcalhiker.com/round-top-and-winnemucca-lake/"
+      },
+      {
+        "label": "beaut-tree",
+        "url": "https://beaut-tree.net/round-top-winnemucca-lake-loop-a-5-mile-jaunt-from-campsite-to-high-country/"
+      },
+      {
+        "label": "Trailspotting",
+        "url": "https://www.trailspotting.com/2021/07/round-top-at-kit-carson-pass.html"
+      },
+      {
+        "label": "High Sierra Topix forum",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=14947&start=30"
+      },
+      {
+        "label": "Wilderness Portal",
+        "url": "https://www.wildernessportal.com/trails/round-top-lake"
+      }
+    ],
+    "caveats": "Coordinates (38.666, -120.012) are the researcher's unverified estimate, not checked against USGS or CalTopo. Distance is about 3.4-3.5 mi one-way from Carson Pass, or 2.5 mi from Woods Lake (steeper, about 1,100-1,300 ft gain). Carson Pass gain is about 900-1,130 ft; the 1,000 ft figure is the researcher's planning estimate. Lake elevation is about 9,340-9,364 ft. Peak elevation was not established. Older Forest Service handouts say 13 sites while listing 14, and a 2018 forum post cites 6 sites at Round Top; the current figure is 5. The PCTA page describing phone reservations is outdated. Proposed Forest Service fee changes (from July 31, 2026), including an overnight CPMA permit fee, could apply in 2027. The 2026 permit handout could not be opened and recent closures were not searched; forest-wide fire restrictions and High fire danger are in effect. The claim that the 2021 Caldor and Tamarack fires did not burn this area is unverified. Fishing was not verified. Call the Amador Ranger District at (209) 259-3774 before relying on this."
+  },
+  "notes": "I'll research this using agency pages, recreation.gov, and trip reports.\nI don't recommend Round Top Lake for this trip. It scores **55/100** (scenery 24, experience 13, access 16, permit 2). The scenery and the hiking distance are fine. The problem is the rules: a group of 12 can't legally camp there together for 4 nights.\n\n**Why it doesn't work:**\n- **Group size:** Overnight groups are capped at **8 people** per permit. Day hikes allow 12.\n- **Splitting doesn't help.** The Forest Service says split groups may not \"camp or travel within one mile of a related group.\" Round Top is a small lake with only 5 designated sites, so two halves of the group can't both camp there.\n- **Stay limit:** You can stay at most **2 nights** at Round Top Lake. Your trip is 4.\n- **Permits:** There's no reservation, lottery or recreation.gov listing. Summer permits are issued in person, first-come first-served, on the day you start. The Forest Service's own 2025 handout says they typically \"go within moments of opening every day.\"\n\n**Trail facts**\n| Item | Figure | Sources |\n|---|---|---|\n| Carson Pass trailhead → lake | **About 3.4–3.5 mi one-way**: 2.5 mi to Winnemucca Lake (Forest Service), then about 0.9 mi more (Trailforks segment of 4,754 ft) | Forest Service, Trailforks; komoot also gives 3.4 mi; AllTrails gives 6.9 mi round trip |\n| Carson Pass gain | **About 900–1,130 ft**. Komoot says 894 ft one-way; AllTrails says 1,131 ft for the round trip. I'd plan for about 1,000 ft. | |\n| Woods Lake trailhead → lake (Lost Cabin Mine Trail 17E47) | **2.5 mi** per the Forest Service. Trip reports agree (2.4 mi to the junction; \"just over two miles\"). It's steeper, about 1,100–1,300 ft of gain. | Forest Service, liveandlethike, norcalhiker, beaut-tree |\n| Lake elevation | **About 9,340–9,364 ft**. Trailforks puts the segment's end at 9,364 ft. | |\n| Coordinates | **About 38.666 N, 120.012 W. Not verified.** I ran out of search capacity before I could check this against USGS or CalTopo. | My own estimate |\n\nBoth routes are shorter and easier than your usual 3.6–5.5 mi and about 1,600 ft.\n\n**Permit system (from Forest Service pages updated March and April 2026)**\n- **Where you camp:** Round Top Lake is in the **Carson Pass Management Area (CPMA)**. Only a CPMA permit is valid there; the general self-issue Mokelumne permit doesn't cover it.\n- **Season and time:** In summer (Memorial Day to Labor Day), permits are issued in person at the **Carson Pass Information Station on Highway 88 at 8:00 AM**, for the same day only.\n- **Rolling window or lottery:** None. Booking URL: none. Info pages are fs.usda.gov/r05/eldorado/wilderness/carson-pass-management-area-permits and fs.usda.gov/r05/eldorado/recreation/trails/lost-cabin-mine-trail-round-top-lake.\n- **Quota:** 14 sites a day: 3 at Winnemucca, 5 at Round Top, 6 at Fourth of July Lake. One permit per site.\n- **Stay limits:** 2 nights at Round Top and Winnemucca; 3 nights at Fourth of July.\n- **Entry point:** Your permit names the trailhead and you must start there: either Carson Pass (Trail 18E13) or Woods Lake (Trail 17E47).\n- **Other rules:** No campfires anywhere in the Mokelumne Wilderness, and you need a California Campfire Permit to use a stove. Dogs must be leashed. No camping at Frog Lake or Woods Lake.\n- **Fees:** The permit is free. Parking is $5/day at Carson Pass or $10/day at Woods Lake.\n- **Off-season:** After Labor Day there's no quota or assigned sites. The station usually stays open until about September 30; after that, permits come from the Amador Ranger District, including by email.\n\n**Conflicting figures and which I trust**\n- **Number of sites:** The 2023 and 2025 Forest Service handouts say \"13 sites,\" but they list 3 + 5 + 6, which is 14. The April 2026 web page says 14, and I trust that.\n- **Sites at Round Top:** A 2018 forum post quotes an older Forest Service page saying 6 sites at Round Top. The current figure is 5.\n- **How to get a permit:** The Pacific Crest Trail Association page says you can phone the Monday of your trip week. That's out of date. The Forest Service says no reservations, same day only.\n- **Trailhead fees:** The Forest Service is proposing fee changes as of July 31, 2026, including a fee for overnight CPMA permits (reported by the Eldorado National Forest's partner nonprofit). That could change things for 2027, so check in spring.\n\n**Fire, closures and access**\n- Agency pages currently show forest-wide fire restrictions and \"High\" fire danger. None of them mention a trail closure.\n- From memory, and not checked: the 2021 Caldor and Tamarack fires burned nearby but didn't burn this area.\n- **Not checked:** I couldn't open the newest 2026 permit handout (fs.usda.gov/media/254867) or search for recent closures, so call the Amador Ranger District at (209) 259-3774 before relying on this.\n\n**Scores**\n- **Scenery 24/35:** Lovely, and above treeline under Round Top and The Sisters, with famous wildflowers. But the lake is small and the peaks are volcanic, not the granite and turquoise water you love. It's a clear step below Thousand Island Lake (35) and Lamarck Lakes (28).\n- **Experience 13/25:** The day hikes are excellent. You can reach Winnemucca, Fourth of July and Frog Lakes from camp, or scramble up Round Top (Class 3 at the top). But the 2-night limit rules out a basecamp, the 8-person cap breaks up the group, campfires are banned, and day-hiker traffic is heavy. I didn't verify the fishing.\n- **Access 16/20:** Trailheads are on paved Highway 88, open year-round. Distance and climb are below your sweet spot, and you'd have to queue at the station at 8 AM on your start day.\n- **Permit 2/20:** This is close to impossible for 12 people on the same lake.\n\nIf you still want to see Round Top, it's an easy day hike: up to 12 people can go without a permit. Base camp somewhere that allows larger groups. From memory, and not checked here, the Emigrant Wilderness allows 15 per group.\n\n**URLs used**\n- https://www.fs.usda.gov/r05/eldorado/wilderness/carson-pass-management-area-permits\n- https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits\n- https://www.fs.usda.gov/r05/eldorado/recreation/trails/lost-cabin-mine-trail-round-top-lake\n- https://www.fs.usda.gov/r05/eldorado/recreation/trails/carson-pass-lake-winnemucca-trail\n- https://www.fs.usda.gov/r05/eldorado/wilderness/know-you-go-mokelumne-wilderness\n- https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-day-use-permit-parking\n- https://www.fs.usda.gov/media/246202 (2025 permit instructions)\n- https://www.fs.usda.gov/sites/nfs/files/r05/eldorado/publication/2025%20Moke%20Permit%20Instructions%20Summer.pdf\n- https://www.fs.usda.gov/media/121988 (2023 permit instructions)\n- https://www.fs.usda.gov/media/246222 (Mokelumne regulations)\n- https://www.fs.usda.gov/media/254867 (2026 instructions; couldn't open)\n- https://enfia.org/discover/carson-pass/\n- https://www.pcta.org/discover-the-trail/permits/local-permits/\n- https://sierrarecmagazine.com/explore-mokelumne-wilderness/backpacking-trails-mokelumne-wilderness/\n- https://www.alltrails.com/trail/us/california/winnemucca-and-round-top-lakes--2\n- https://www.alltrails.com/trail/us/california/woods-winnemucca-and-round-top-lakes\n- https://www.komoot.com/smarttour/e2813341160/winnemucca-and-round-top-lakes\n- https://www.trailforks.com/trails/winnemucca-lake-to-round-top-lake/\n- https://tahoetowhitney.com/TY-Carson_Pass_to_Ebbetts%20Pass/Round_Top_Lake.html\n- https://tahoetowhitney.com/TY-Carson_Pass_to_Ebbetts%20Pass/Trail_to_Woods_Lake.html\n- https://tahoetowhitney.com/Permitting_Authorities/El_Dorado_National_Forest.html\n- https://liveandlethike.com/2023/08/27/round-top-winnemucca-lake-loop-mokelumne-wilderness-ca/\n- https://www.norcalhiker.com/round-top-and-winnemucca-lake/\n- https://beaut-tree.net/round-top-winnemucca-lake-loop-a-5-mile-jaunt-from-campsite-to-high-country/\n- https://www.trailspotting.com/2021/07/round-top-at-kit-carson-pass.html\n- https://www.highsierratopix.com/community/viewtopic.php?t=14947&start=30\n- https://www.wildernessportal.com/trails/round-top-lake"
+}

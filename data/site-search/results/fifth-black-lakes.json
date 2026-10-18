@@ -1,0 +1,197 @@
+{
+  "candidate": {
+    "name": "Fifth / Black Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "North Fork Big Pine",
+    "why": "Temple Crag views and a day hike to Palisade Glacier."
+  },
+  "site": {
+    "name": "Fifth Lake / Black Lake via North Fork Big Pine Creek",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Big Pine Creek North Fork, Inyo National Forest",
+    "description": "Basecamp at Fifth Lake (or Black Lake) in the Big Pine Lakes basin. From here you can day-hike to the turquoise First through Third Lakes under Temple Crag, Sixth and Seventh Lakes, Sam Mack Meadow and the Palisade Glacier viewpoint. The scenery is outstanding, but the climb is about twice the group's usual and permits are very competitive.",
+    "latitude": 37.131,
+    "longitude": -118.5087,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.35,
+    "elevationGainFt": 3343,
+    "campElevationFt": 10787,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Big Pine Creek North Fork (JM23)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Quota of 25 people/day from May 1 to Nov 1, first-come first-served with no lottery. 15 spots open 6 months ahead in a daily rolling window at 7:00 AM PT (a Jul 14, 2027 start opens Jan 14, 2027). The other 10 open 2 weeks ahead at 7 AM on the same weekday. Group max is 15 including day hikers, and separate groups can't combine to exceed 15. Leader and alternate names can't be changed. The permit must be printed by 10 AM on the start date or it is canceled. Cost is $6 per permit plus $5 per person. Cancellations return to the calendar within 24 hrs. A group of 12 needs 12 of the 15 advance spots. A separate commercial quota (15 PO; 8 O/G) exists; ask the Inyo permit office about a packer-supported option.",
+    "sceneryScore": 32,
+    "experienceScore": 22,
+    "accessScore": 10,
+    "permitScore": 6,
+    "rankingNotes": "Iconic glacier-fed lakes basecamp with the best day-hike menu, but a long climb and a very hard 12-person permit (70/100).",
+    "sources": [
+      {
+        "label": "USFS Big Pine Creek North Fork Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/big-pine-creek-north-fork-trail"
+      },
+      {
+        "label": "USFS Inyo Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "USFS Trail Quota Sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "USFS Trail Names and Quotas 2021",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf"
+      },
+      {
+        "label": "USFS Inyo Alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "USFS Big Pine Creek South Fork Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/big-pine-creek-south-fork-trail"
+      },
+      {
+        "label": "USFS Big Pine Creek Campground",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/big-pine-creek-campground"
+      },
+      {
+        "label": "John Muir Wilderness map",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Recreation.gov group campsite",
+        "url": "https://recreation.gov/camping/campgrounds/232236"
+      },
+      {
+        "label": "Timberline Trails",
+        "url": "https://www.timberlinetrails.com/NorthForkBigPineCreek.html"
+      },
+      {
+        "label": "She Dreams of Alpine",
+        "url": "https://www.shedreamsofalpine.com/blog/big-pine-creek-north-fork-trail"
+      },
+      {
+        "label": "AllTrails Fifth, Fourth and Black Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/fifth-fourth-and-black-lakes-from-big-pine-campground"
+      },
+      {
+        "label": "AllTrails Big Pine Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/big-pine-lakes-trail"
+      },
+      {
+        "label": "AllTrails Big Pine backpacking",
+        "url": "https://www.alltrails.com/us/california/big-pine/backpacking"
+      },
+      {
+        "label": "Backcountrycow",
+        "url": "http://www.backcountrycow.com/blog/2014/north-fork-big-pine-backpacking"
+      },
+      {
+        "label": "Our Infinite Earth",
+        "url": "https://ourinfiniteearth.com/backpacking-hiking-to-big-pine-lakes-via-north-fork-of-big-pine-creek/"
+      },
+      {
+        "label": "Jan's Jaunts",
+        "url": "https://jansjaunts.wordpress.com/2026/09/03/ca-inyo-national-forest-john-muir-wilderness-big-pine-creek-trailhead-hiking-the-lakes-loop-08-26/"
+      },
+      {
+        "label": "Wilderness Portal",
+        "url": "https://www.wildernessportal.com/trails/north-fork-big-pine-creek"
+      },
+      {
+        "label": "Trail to Peak",
+        "url": "https://trailtopeak.com/2017/07/09/hiking-to-big-pine-lakes-via-the-north-fork-trail/"
+      },
+      {
+        "label": "Medium Out and Backpack",
+        "url": "https://medium.com/out-and-backpack/backpacking-big-pine-lakes-7fd35b14c5fd"
+      },
+      {
+        "label": "Backcountry Post",
+        "url": "https://backcountrypost.com/threads/big-pine-lakes-%E2%80%93-john-muir-wilderness.10786/"
+      },
+      {
+        "label": "Bonjour Becky",
+        "url": "https://www.bonjourbecky.com/backpacking-big-pine-lakes-permits/"
+      },
+      {
+        "label": "Yiftah Shahar",
+        "url": "https://www.yiftahshahar.com/2025/09/north-fork-big-pine-lakes-hike-eastern.html"
+      },
+      {
+        "label": "Banana Backpacks",
+        "url": "https://trail.bananabackpacks.com/big-pine-lakes-ultimate-guide-to-big-pine-creek-north-fork-trail/"
+      },
+      {
+        "label": "CalWild",
+        "url": "https://www.calwild.org/big-pine-creek-north-fork-trail/"
+      },
+      {
+        "label": "High Sierra Trails",
+        "url": "https://highsierratrails.com/big_pine/big_pine_resources.html"
+      },
+      {
+        "label": "Spearhead Adventure",
+        "url": "https://spearheadadventure.com/big-pine-lakes"
+      },
+      {
+        "label": "OutdoorStatus trip",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/big-pine-lakes/"
+      },
+      {
+        "label": "OutdoorStatus permit",
+        "url": "https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/"
+      },
+      {
+        "label": "PermitRanger",
+        "url": "https://permitranger.com/permit-release-calendar"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Mountain Project forum",
+        "url": "https://www.mountainproject.com/forum/message/118978261"
+      },
+      {
+        "label": "Fishbrain Fifth Lake",
+        "url": "https://fishbrain.com/fishing-waters/6wHmr5hB/fifth-lake"
+      },
+      {
+        "label": "Fishbrain Black Lake",
+        "url": "https://fishbrain.com/fishing-waters/I2XYZiXE/black-lake"
+      },
+      {
+        "label": "HookandBullet",
+        "url": "https://www.hookandbullet.com/fishing-big-pine-lakes-big-pine-ca/"
+      },
+      {
+        "label": "Dave's Sierra Fishing",
+        "url": "http://www.davessierrafishing.com/destinations2/big_pine_lakes.html"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/campground/big-pine-creek-campground-305"
+      },
+      {
+        "label": "California's Best Camping",
+        "url": "https://www.californiasbestcamping.com/inyo/big_pine.html"
+      }
+    ],
+    "caveats": "Distances vary by source: 6.3 to 6.8 mi one way to Fifth Lake, and 5.25 to 5.5 mi to Black Lake (Black Lake option: about 2,900 ft gain, about 10,645 ft camp, 37.1324, -118.4945). Climb estimates range from 3,050 to 3,546 ft; AllTrails' 3,343 ft is the preferred figure, close to the 3,500 ft hard limit. Fifth Lake elevation ranges from 10,750 to 10,850 ft by source. Coordinates come from Fishbrain and were not checked against USGS. AllTrails and Backcountrycow figures come from search-result text only. The overnight lot vs. day-use trailhead mileage is unclear; plan for the longer distance. Older sources describing walk-up permits at 11 AM and a June–September quota season are outdated. Stage 1 fire restrictions are in effect and there are no campfires on this trail. No closures were listed as of late September 2026. The campground had no drinking water in 2024. Snow lingers at the upper lakes into June. Fifth Lake is considered less dramatic than First through Third Lakes. A group of 12 will likely need neighboring campsites. It's unconfirmed whether a packer currently operates there. permitAdvanceDays is null because the window is defined as 6 months, not a fixed day count."
+  },
+  "notes": "I scored **Fifth Lake / Black Lake via the North Fork of Big Pine Creek at 70/100** (scenery 32, experience 22, access 10, permit 6). The scenery is as good as anything you've done, but the hike in is about twice your usual climb and a 12-person permit is very hard to get. I wasn't able to open AllTrails or Backcountrycow directly, so figures from those come from search-result text.\n\n## Trail numbers\n\n| Item | Best estimate | What the sources say |\n|---|---|---|\n| **One-way miles to Fifth Lake** | **about 6.3–6.8 mi** | AllTrails: 12.7 mi round trip (6.35 one way). She Dreams of Alpine: 12.6 mi round trip. Timberline Trails and Our Infinite Earth: 6.8 mi |\n| **One-way miles to Black Lake** | **about 5.3–5.5 mi** | Our Infinite Earth: 5.25 mi. Jan's Jaunts (Aug 2026 trip report): 5.5 mi |\n| **Climb to Fifth Lake** | **about 3,100–3,350 ft** | Our Infinite Earth: 3,050. Backcountrycow: 3,100. AllTrails: 3,343. She Dreams: about 3,546 |\n| **Climb to Black Lake** | **about 2,850–2,900 ft** | Our Infinite Earth: 2,850. Jan's Jaunts: 2,900 |\n| **Camp elevation** | Fifth **10,787 ft**, Black **about 10,645 ft** | Fifth: 10,750 (Timberline), 10,787 (Backcountrycow), 10,850 (Our Infinite Earth). Black: 10,645 / 10,649 / 10,650 |\n| **Coordinates** | Fifth **37.1310, -118.5087**; Black **37.1324, -118.4945** | From Fishbrain; HookandBullet's pin for the upper lakes (37.1322, -118.5093) agrees. I couldn't check these against the official USGS place-name database, so confirm them on a topo map |\n| **Trailhead** | Day-use trailhead about 7,700–7,800 ft; large paved backpacker lot by the pack station | At the end of Glacier Lodge Road, about 10–11 mi west of the town of Big Pine |\n\n**Which numbers I trust:** For the climb I'd use AllTrails' **~3,343 ft**. The trailhead is about 7,700 ft and Fifth Lake is 10,787 ft, so the net climb alone is about 3,100 ft, and the trail's ups and downs add more. She Dreams' ~3,546 ft looks inflated, though its wording is unclear. For Fifth Lake's elevation I trust **10,787 ft** because it's a precise figure that looks like a map elevation; the rounded figures look like guesses. **This puts Fifth Lake close to your 3,500 ft hard limit and well above your 2,377 ft maximum so far.**\n\nThe overnight-lot route is also confusing. Timberline says starting from the day-use trailhead saves about 1.5 mi. OutdoorStatus lists the overnight lot to Second Lake as 4.8 mi, while Timberline gives 5.1 mi from the day-use trailhead. Plan for the longer number.\n\n## Permits\n- **Entry point name:** \"Big Pine Creek North Fork,\" trail code **JM23**.\n- **Booking:** https://www.recreation.gov/permits/233262\n- **Quota (May 1–Nov 1):** 25 people per day. **15 spots open 6 months ahead and 10 open 2 weeks ahead.** The 6-month release is a daily rolling window at **7:00 AM Pacific** (a July 4 start opens January 4). The 2-week release comes out at 7 AM on the same weekday two weeks before.\n- **No lottery** for this trailhead; it's first-come, first-served.\n- **Example for next summer:** a start on Wednesday, July 14, 2027 opens **Thursday, January 14, 2027 at 7:00 AM PT**. The 2-week spots for that date open Wednesday, June 30.\n- **Group size:** 15 maximum, day hikers included, and separate groups can't combine to go over 15.\n- **Other rules:**\n  - The leader and alternate names can't be changed.\n  - You must print the permit by 10 AM on your start date or it's canceled.\n  - Cost is $6 per permit plus $5 per person.\n  - Cancelled spots go back on the calendar within 24 hours.\n- **Splitting into two permits doesn't really help.** You'd still need 12 of the 15 advance spots on one day.\n- **Possible workaround:** the quota sheet lists a separate commercial quota (\"15 (PO); 8 (O/G)\"), which I read as pack outfitters vs. outfitter/guides. Ask the Inyo permit office whether a packer-supported trip could use it. I couldn't confirm a packer is currently operating there.\n\n**Outdated or conflicting permit info:**\n- Spearhead Adventure says 10 walk-up spots are released at 11 AM the day before. She Dreams says \"10 walk-in\" and a June–September quota season. Both are out of date: the walk-up spots are now released online 2 weeks ahead, and the season runs May–November.\n- PermitRanger says reservations close a week before your trip. The Forest Service says you can book up to the day of the trip if space is left.\n- I trust the Forest Service and recreation.gov pages in both cases.\n\n## Fires, closures and access\n- **No closures for Big Pine Creek or Glacier Lodge Road** on the Inyo alerts page as of late September 2026. Forest-wide Stage 1 fire restrictions are in effect, and campfires are banned on this trail anyway.\n- The Forest Service trail page was updated in August 2025. Big Pine Creek Campground is open for the 2026 season, but it had no drinking water in 2024.\n- **Snow:** AllTrails reviews from March–April 2026 report snow past Third Lake. The upper lakes hold snow into June, which doesn't matter for a July–August trip.\n- The South Fork bridge washed out in 2011, but that doesn't affect the North Fork route.\n- **Night before:** recreation.gov lists a paved group campsite at Big Pine Creek for up to 25 tent campers. That's a good place to acclimatize before starting at 7,700 ft.\n\n## Scoring\n\n**Scenery: 32/35.** First through Third Lakes are glacier-fed turquoise lakes under Temple Crag, and the Palisade Glacier is above the basin. It's among the most iconic views in the Eastern Sierra. Fifth Lake itself is reviewed as \"aquamarine\" and a highlight, but one guide says it's \"not as remarkable as the first three.\" The trade-off is that you camp at the less dramatic lake and day-hike to the most famous ones.\n\n**Experience: 22/25.**\n- **Day hikes:** about the best basecamp menu you could want: Sixth and Seventh Lakes, Summit Lake, First–Third Lakes, Sam Mack Meadow and the Palisade Glacier viewpoint.\n- **Fishing:** Third through Sixth Lakes have rainbow and brook trout, Black Lake is mostly brook trout, and the highest lake has golden trout.\n- **Campsites:** Fifth Lake has plenty of sites tucked in trees near the outlet, though 12 people will probably need neighboring sites.\n- **Downsides:** swimming is cold, the area is busy, and there are no campfires.\n\n**Access: 10/20.** Fifth Lake is about 1–1.3 mi over your sweet spot and roughly twice your usual climb. The paved road and big lot are easy. Black Lake fits better (about 5.4 mi and 2,900 ft), but I found much less information about group-size campsites there.\n\n**Permit: 6/20.** This is one of Inyo's most competitive trailheads, and a group of 12 needs 80% of the advance spots on a single day. You'd need to be on recreation.gov right at 7:00 AM exactly six months out. It scores below Thousand Island's 8 because the quota is small.\n\n**Total: 70/100**, compared with Thousand Island 81 and Lamarck 79. Your Wednesday start helps a little with the permit. If you can't get 12 spots, trying for two smaller permits at the 2-week release is risky.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/big-pine-creek-north-fork-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/big-pine-creek-south-fork-trail\n- https://www.fs.usda.gov/r05/inyo/recreation/big-pine-creek-campground\n- https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf\n- https://www.recreation.gov/permits/233262\n- https://recreation.gov/camping/campgrounds/232236\n- https://www.timberlinetrails.com/NorthForkBigPineCreek.html\n- https://www.shedreamsofalpine.com/blog/big-pine-creek-north-fork-trail\n- https://www.alltrails.com/trail/us/california/fifth-fourth-and-black-lakes-from-big-pine-campground\n- https://www.alltrails.com/trail/us/california/big-pine-lakes-trail\n- https://www.alltrails.com/us/california/big-pine/backpacking\n- http://www.backcountrycow.com/blog/2014/north-fork-big-pine-backpacking\n- https://ourinfiniteearth.com/backpacking-hiking-to-big-pine-lakes-via-north-fork-of-big-pine-creek/\n- https://jansjaunts.wordpress.com/2026/09/03/ca-inyo-national-forest-john-muir-wilderness-big-pine-creek-trailhead-hiking-the-lakes-loop-08-26/\n- https://www.wildernessportal.com/trails/north-fork-big-pine-creek\n- https://trailtopeak.com/2017/07/09/hiking-to-big-pine-lakes-via-the-north-fork-trail/\n- https://medium.com/out-and-backpack/backpacking-big-pine-lakes-7fd35b14c5fd\n- https://backcountrypost.com/threads/big-pine-lakes-%E2%80%93-john-muir-wilderness.10786/\n- https://www.bonjourbecky.com/backpacking-big-pine-lakes-permits/\n- https://www.yiftahshahar.com/2025/09/north-fork-big-pine-lakes-hike-eastern.html\n- https://trail.bananabackpacks.com/big-pine-lakes-ultimate-guide-to-big-pine-creek-north-fork-trail/\n- https://www.calwild.org/big-pine-creek-north-fork-trail/\n- https://highsierratrails.com/big_pine/big_pine_resources.html\n- https://spearheadadventure.com/big-pine-lakes\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/big-pine-lakes/\n- https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/\n- https://permitranger.com/permit-release-calendar\n- https://backcountryemily.com/california-backpacking-permits/\n- https://www.mountainproject.com/forum/message/118978261\n- https://fishbrain.com/fishing-waters/6wHmr5hB/fifth-lake\n- https://fishbrain.com/fishing-waters/I2XYZiXE/black-lake\n- https://www.hookandbullet.com/fishing-big-pine-lakes-big-pine-ca/\n- http://www.davessierrafishing.com/destinations2/big_pine_lakes.html\n- https://campflare.com/campground/big-pine-creek-campground-305\n- https://www.californiasbestcamping.com/inyo/big_pine.html"
+}

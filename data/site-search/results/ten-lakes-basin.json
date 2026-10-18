@@ -1,0 +1,173 @@
+{
+  "candidate": {
+    "name": "Ten Lakes Basin",
+    "area": "Yosemite National Park",
+    "trailhead": "Ten Lakes",
+    "why": "Basin perched above the Grand Canyon of the Tuolumne, reached over a panoramic pass."
+  },
+  "site": {
+    "name": "Ten Lakes Basin",
+    "region": "Yosemite National Park - Yosemite Wilderness (Tioga Road)",
+    "area": "Ten Lakes Basin",
+    "description": "Granite-rimmed lakes reached over Ten Lakes Pass from Tioga Road, with a big panorama from the pass and lots of lakes to explore. It makes a strong basecamp with good swimming and day hikes to Grant Lakes and the Grand Mountain ridge.",
+    "latitude": 37.8522,
+    "longitude": -119.576,
+    "difficulty": "moderate",
+    "distanceMiles": 6.07,
+    "elevationGainFt": 2200,
+    "campElevationFt": 8957,
+    "peakElevationFt": 9686,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "lottery",
+    "permitAdvanceDays": 7,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Ten Lakes",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445859",
+    "permitNotes": "Quota is 40 people per day: 24 reservable by lottery and 16 released one week ahead. NPS rates demand as Medium. 60% of spots go to a weekly lottery 24 weeks ahead; you apply Sunday–Saturday, results come the following Monday, and you must accept and pay by Thursday. Lottery leftovers go first-come, first-served at 9 am PT about 22 weeks ahead. The other 40% go first-come, first-served 7 days ahead at 7 am PT. You can reserve up to 3 days before the trip. Group size is 15 maximum on trail and 8 maximum for travel more than 1/4 mile off trail. Subgroups must start from separate trailheads and camp at least 1/2 mile apart, so apply as one group with a stated minimum. Fees are $10 per application plus $5 per person. The leader must pick up the permit in person at a wilderness center, either the day before (8–5) or the same day (8–11, or held until 5 pm if requested). Bear canisters are required.",
+    "sceneryScore": 27,
+    "experienceScore": 21,
+    "accessScore": 15,
+    "permitScore": 13,
+    "rankingNotes": "Overlooked granite lake basin and strong basecamp off Tioga Road, with a medium-demand permit; total score 76/100.",
+    "sources": [
+      {
+        "label": "NPS Wilderness Permit Reservations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wpres.htm"
+      },
+      {
+        "label": "NPS Trailheads",
+        "url": "https://www.nps.gov/yose/planyourvisit/trailheads.htm"
+      },
+      {
+        "label": "NPS Wilderness Regulations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildregs.htm"
+      },
+      {
+        "label": "NPS Wilderness Regulations (home)",
+        "url": "https://home.nps.gov/yose/planyourvisit/wildregs.htm"
+      },
+      {
+        "label": "NPS Backpacking Groups",
+        "url": "https://www.nps.gov/yose/planyourvisit/backpackinggroups.htm"
+      },
+      {
+        "label": "Yosemite Compendium",
+        "url": "https://www.nps.gov/yose/learn/management/upload/yose-compendium.pdf"
+      },
+      {
+        "label": "NPS Tioga Road Backpacking Trails",
+        "url": "https://home.nps.gov/yose/planyourvisit/tioga-road-backpacking-trails.htm"
+      },
+      {
+        "label": "NPS Fire Info",
+        "url": "https://www.nps.gov/yose/blogs/fireinfo.htm"
+      },
+      {
+        "label": "Recreation.gov Yosemite Permits",
+        "url": "https://www.recreation.gov/permits/445859"
+      },
+      {
+        "label": "Wildland Trekking permits",
+        "url": "https://wildlandtrekking.com/visiting-yosemite/yosemite-backpacking-permits/"
+      },
+      {
+        "label": "onX Ten Lakes Trail",
+        "url": "https://www.onxmaps.com/hiking/n2qv98myxz95/ten-lakes-trail"
+      },
+      {
+        "label": "HikeArizona",
+        "url": "https://hikearizona.com/decoder.php?ZTN=19392"
+      },
+      {
+        "label": "Trailforks 10 Lakes Trail",
+        "url": "https://www.trailforks.com/trails/10-lakes-trail/"
+      },
+      {
+        "label": "AllTrails Ten Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/ten-lakes-trail--3"
+      },
+      {
+        "label": "AllTrails Grant Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/grant-lakes"
+      },
+      {
+        "label": "YosemiteHikes Ten Lakes",
+        "url": "https://www.yosemitehikes.com/tioga-road/ten-lakes/ten-lakes.htm"
+      },
+      {
+        "label": "YosemiteHikes trail map",
+        "url": "https://www.yosemitehikes.com/tioga-road/ten-lakes/trail-map.htm"
+      },
+      {
+        "label": "YosemiteHikes Tioga Road",
+        "url": "https://www.yosemitehikes.com/tioga-road/yosemite-tioga-road.htm"
+      },
+      {
+        "label": "hike734",
+        "url": "https://hike734.com/hikingyosemite/ten-lakes/"
+      },
+      {
+        "label": "Outdoor Aunties trip report",
+        "url": "https://outdooraunties.medium.com/trip-report-backpacking-ten-lakes-yosemite-ca-ecabdc9266c7"
+      },
+      {
+        "label": "Oceans and Forests Adventures",
+        "url": "https://www.oceansandforestsadventures.com/yosemitenationalpark/ten-lakes-loop"
+      },
+      {
+        "label": "Outdoorsy Tribe",
+        "url": "https://www.outdoorsytribe.com/post/ten-lakes-trail-to-grant-lake-yosemite-national-park-ca"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/backpacking/backpack-10-lakes-basin-in-yosemite"
+      },
+      {
+        "label": "nbrhd.net 2017 report",
+        "url": "http://www.nbrhd.net/Backpacking/2017JTenLakesYosemite/TenLakesYosemite2017.htm"
+      },
+      {
+        "label": "Hiking Project",
+        "url": "https://www.hikingproject.com/trail/7009380/ten-lakes-trail"
+      },
+      {
+        "label": "Yosemite forum",
+        "url": "https://www.yosemite.ca.us/forum/viewtopic.php?f=7&t=1843"
+      },
+      {
+        "label": "MyMotherLode fires (1852667)",
+        "url": "https://www.mymotherlode.com/news/local/1852667/two-yosemite-lightning-strike-fires-grow.html"
+      },
+      {
+        "label": "MyMotherLode fires (4318697)",
+        "url": "https://mymotherlode.com/news/local/4318697/yosemite-updates-lightning-fires-burning-in-park.html"
+      },
+      {
+        "label": "Sierra News Online",
+        "url": "https://sierranewsonline.com/hiking-up-ten-lakes-trail-to-grant-lakes/"
+      },
+      {
+        "label": "Tioga Watch",
+        "url": "https://tiogawatch.wordpress.com/2025/05/22/05-22-25-tioga-road-opens-on-memorial-day-5-26-25/"
+      },
+      {
+        "label": "Yosemite Conservancy 2026",
+        "url": "https://yosemite.org/know-before-you-go-yosemite-in-2026/"
+      },
+      {
+        "label": "Active NorCal",
+        "url": "https://www.activenorcal.com/yosemites-tioga-road-closed-tuesday-afternoon-as-snow-returns-to-the-high-country/"
+      },
+      {
+        "label": "Nomad Lawyer Dome Fire",
+        "url": "https://www.nomadlawyer.org/yosemite-dome-fire-glacier-point-road-closure-visitor-guide-2026"
+      }
+    ],
+    "caveats": "Coordinates are for the trailhead (37.8522, -119.5760), not the lake. The lake's coordinates are unconfirmed (rough estimate about 37.90 N, 119.53 W); verify on CalTopo or a USGS map. Distance to the first big lake is about 6.0–6.1 mi one-way; NPS implies 5.9 mi and YosemiteHikes 6.5 mi. Elevation gain is about 2,200 ft in, then about 750 ft down to the lakes, which you climb back on the way out. The NPS figure of 1,500 ft is too low. Camp elevation of about 8,930–8,960 ft applies to the lower lakes; upper-lake elevations are unconfirmed. The pass high point is given as 9,640–9,686 ft. Lottery open and close dates are not fixed calendar dates: there is a weekly lottery 24 weeks ahead. The 2021 Lukens Fire left a burn scar near the trailhead. The 2025 Kibbie and Breeze fires were visible from the trail but caused no closures. Tioga Road opening dates vary by year. In-person permits are issued for same-day starts only while Tuolumne Meadows Campground is closed. Expect heavy mosquitoes in early summer. Several NPS pages were read from search excerpts only."
+  },
+  "notes": "I'd score Ten Lakes Basin **76/100: scenery 27, experience 21, access 15, permit 13**. It meets every hard limit. On your scale it lands a few points below Lamarck (79) and Thousand Island (81). The lake is lovely granite country that sources call an \"overlooked gem,\" but it isn't jaw-dropping, and it's lower and a bit longer than your group's usual trip.\n\n## Key figures\n\n| Item | Best figure | Notes / conflicts |\n|---|---|---|\n| **One-way miles to camp** | **About 6.0–6.1 mi** to the first big lake on the trail | onX 6.07 mi, HikeArizona 6.06 mi and Trailforks about 6 mi all agree. NPS says 11.8 mi round trip (5.9 one-way). YosemiteHikes says 13 mi round trip (6.5 one-way). Higher numbers (7.8 mi; 15 mi round trip) are for camps or loops deeper in the basin. |\n| **Elevation gain going in** | **About 2,200 ft up, then about 750 ft down** to the lakes | onX: +2,189 / −753. Trailforks: +2,211 / −746. HikeArizona: 2,244 ft total. The NPS figure of **1,500 ft is too low**: the climb from trailhead to pass alone is about 2,120 ft. YosemiteHikes' 2,700 ft and other reports' 3,000–3,600 ft are round-trip totals. **On Sunday you climb about 750 ft back up to the pass.** |\n| Trailhead / high point | Trailhead about 7,490–7,520 ft; Ten Lakes Pass about 9,640–9,686 ft | Sources differ only slightly. |\n| **Camp elevation** | **About 8,930–8,960 ft** (lower lakes) | Trailforks puts the trail's end at 8,957 ft, and onX's numbers work out to about 8,930 ft. Upper lakes are higher, but I couldn't confirm their elevations. That's well below Cottonwood's 11,105 ft. |\n| **Coordinates** | Trailhead **37.8522, −119.5760** (Tioga Rd, about 20 mi east of Crane Flat) | Trailforks and AllTrails agree. **I couldn't confirm the lake's coordinates.** My rough estimate is about 37.90 N, 119.53 W; check it on CalTopo or the USGS map before relying on it. |\n\n**Which sources I trust:** onX, Trailforks and HikeArizona, because three separate GPS-based figures agree within 0.1 mi and 60 ft. I trust NPS for rules and quotas but not for its 1,500 ft gain figure.\n\n## Permits (Yosemite Wilderness)\n\n- **Entry point:** \"Ten Lakes\" trailhead. The quota is **24 people reservable by lottery plus 16 people released one week ahead**, so 40 per day. NPS rates permit demand as \"Medium.\"\n- **Booking:** https://www.recreation.gov/permits/445859\n- **How spots are released:** 60% go to a weekly lottery 24 weeks ahead. You apply Sunday–Saturday, results come the following Monday, and you must accept and pay by Thursday. Lottery leftovers go first-come, first-served at **9 am PT** about 22 weeks ahead. The other 40% go first-come, first-served **7 days ahead at 7 am PT**. You can reserve up to 3 days before the trip.\n- **Example dates for a Wednesday, July 21, 2027 start (my calculation):** apply around Jan 31–Feb 6, 2027. The week-ahead release would be Wednesday, July 14 at 7 am. Check against the NPS permit-dates page.\n- **Group size:** **15 maximum on trail; 8 maximum for travel more than ¼ mile off trail** (including peak climbs).\n- **Splitting is hard in Yosemite.** Subgroups must start from separate trailheads and camp at least ½ mile apart. So apply as one group of 12 and state a minimum number you'd accept.\n- **Fees:** $10 per application plus $5 per person (about $70 for 12).\n- **Pickup:** the leader must collect the permit in person at a wilderness center, either the day before (8–5) or the same day (8–11, or held until 5 pm if requested).\n- **Realistic odds:** 12 people take half of the 24 lottery spots, and 12 of the 16 week-ahead spots would be very hard to grab. Your best chance is the lottery with a weekday start.\n\n## Fire, closures and access\n\n- **Tioga Road** opened May 26 in 2025 and May 15 in 2026, with a short snow closure on May 26, 2026. It closed November 12, 2025.\n- **2021:** the lightning-caused Lukens Fire (about 450 acres) burned north of Tioga Road near the trailhead. Nearby Lukens Lake/Yosemite Creek trails closed, and a 2021 report describes a burn scar at the start of the trail.\n- **2025:** the Kibbie and Breeze lightning fires near Hetch Hetchy were visible from the Ten Lakes Trail, with no trail closures.\n- **2026:** a \"Dome Fire\" closed Glacier Point Road, on the south side of the park, not near Ten Lakes. That came from a non-agency site only.\n- **Same-day permits:** because Tuolumne Meadows Campground is closed, in-person permits are issued for same-day starts only.\n- **Seasonal:** heavy mosquitoes in early summer (2017 report). Bear canisters required.\n\n## Scoring rationale\n\n- **Scenery 27/35:** granite-rimmed lakes and a big panorama from the pass. It's prettier than iconic; well short of Thousand Island's Banner/Ritter backdrop, and slightly below Lamarck.\n- **Experience 21/25:** a strong basecamp with lots of lakes to explore and good swimming. Day hikes include Grant Lakes (about a 1 mi fork near the pass) and the Grand Mountain ridge. One old forum post says the lower lakes have a lot of brook trout. Points off because off-trail exploring requires splitting into groups of 8 or fewer, and big group sites take some hunting.\n- **Access 15/20:** about 6 mi and about 2,200 ft is above your 5.5 mi / 1,600 ft sweet spot, plus the 750 ft climb out on Sunday. On the plus side, the trailhead is paved and on the main road, with a vault toilet.\n- **Permit 13/20:** a medium-demand trailhead with a decent quota, but 12 people take a large share of it, and splitting doesn't help.\n\n## Sources\n\nI hit the tool's usage limit mid-research, so several NPS pages were read from search excerpts rather than full fetches.\n- https://www.nps.gov/yose/planyourvisit/wpres.htm (fetched in full)\n- https://www.nps.gov/yose/planyourvisit/trailheads.htm\n- https://www.nps.gov/yose/planyourvisit/wildregs.htm\n- https://home.nps.gov/yose/planyourvisit/wildregs.htm\n- https://www.nps.gov/yose/planyourvisit/backpackinggroups.htm\n- https://www.nps.gov/yose/learn/management/upload/yose-compendium.pdf\n- https://home.nps.gov/yose/planyourvisit/tioga-road-backpacking-trails.htm\n- https://www.nps.gov/yose/blogs/fireinfo.htm\n- https://www.recreation.gov/permits/445859\n- https://wildlandtrekking.com/visiting-yosemite/yosemite-backpacking-permits/\n- https://www.onxmaps.com/hiking/n2qv98myxz95/ten-lakes-trail\n- https://hikearizona.com/decoder.php?ZTN=19392\n- https://www.trailforks.com/trails/10-lakes-trail/\n- https://www.alltrails.com/trail/us/california/ten-lakes-trail--3\n- https://www.alltrails.com/trail/us/california/grant-lakes\n- https://www.yosemitehikes.com/tioga-road/ten-lakes/ten-lakes.htm\n- https://www.yosemitehikes.com/tioga-road/ten-lakes/trail-map.htm\n- https://www.yosemitehikes.com/tioga-road/yosemite-tioga-road.htm\n- https://hike734.com/hikingyosemite/ten-lakes/\n- https://outdooraunties.medium.com/trip-report-backpacking-ten-lakes-yosemite-ca-ecabdc9266c7\n- https://www.oceansandforestsadventures.com/yosemitenationalpark/ten-lakes-loop\n- https://www.outdoorsytribe.com/post/ten-lakes-trail-to-grant-lake-yosemite-national-park-ca\n- https://www.theoutbound.com/yosemite/backpacking/backpack-10-lakes-basin-in-yosemite\n- http://www.nbrhd.net/Backpacking/2017JTenLakesYosemite/TenLakesYosemite2017.htm\n- https://www.hikingproject.com/trail/7009380/ten-lakes-trail\n- https://www.yosemite.ca.us/forum/viewtopic.php?f=7&t=1843\n- https://www.mymotherlode.com/news/local/1852667/two-yosemite-lightning-strike-fires-grow.html\n- https://mymotherlode.com/news/local/4318697/yosemite-updates-lightning-fires-burning-in-park.html\n- https://sierranewsonline.com/hiking-up-ten-lakes-trail-to-grant-lakes/\n- https://tiogawatch.wordpress.com/2025/05/22/05-22-25-tioga-road-opens-on-memorial-day-5-26-25/\n- https://yosemite.org/know-before-you-go-yosemite-in-2026/\n- https://www.activenorcal.com/yosemites-tioga-road-closed-tuesday-afternoon-as-snow-returns-to-the-high-country/\n- https://www.nomadlawyer.org/yosemite-dome-fire-glacier-point-road-closure-visitor-guide-2026"
+}

@@ -1,0 +1,253 @@
+{
+  "candidate": {
+    "name": "Dicks & Fontanillis Lakes",
+    "area": "Desolation Wilderness (Lake Tahoe Basin Management Unit)",
+    "trailhead": "Eagle Falls (Emerald Bay)",
+    "why": "Two granite lakes under Dicks Peak next to Velma, with a Dicks Pass day hike for views over Lake Tahoe."
+  },
+  "site": {
+    "name": "Dicks & Fontanillis Lakes from Eagle Falls",
+    "region": "Lake Tahoe - Desolation Wilderness",
+    "area": "Desolation Wilderness",
+    "description": "A classic Desolation granite basecamp at Dicks Lake under Dicks Peak, with Fontanillis Lake's granite slabs and islands about 1/3 mi away and Lake Tahoe views on the way in. Day options include Dicks Pass, a Dicks Peak scramble, Fontanillis falls and the Velma Lakes, along with good fishing and swimming. Expect heavy PCT/TRT traffic and limited campsites big enough for 12.",
+    "latitude": 38.9207,
+    "longitude": -120.1532,
+    "difficulty": "moderate",
+    "distanceMiles": 5,
+    "elevationGainFt": 2000,
+    "campElevationFt": 8274,
+    "peakElevationFt": 9974,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Zone 23 Dick's Lake (start at Eagle Falls Trailhead)",
+    "permitGroupSizeLimit": 12,
+    "permitUrl": "https://recreation.gov/permits/233261",
+    "permitNotes": "Desolation permits are booked by first-night zone, not trailhead. The rolling window opens 6 months to 1 day before entry, with 70% of quota online and 30% held for walk-in at the Placerville Ranger Station; Taylor Creek is not issuing permits. Third-party guides say each day opens at 7:00 AM PT; the Forest Service page gives no time. No lottery. Quota season runs from the Friday before Memorial Day through Sept 30. Zone 23 quota is 16/day with only 11 online, so a group of 12 can't book it online, and splitting the group to stay at the same destination isn't allowed. Workarounds: cut the group to 11, or book Zone 16 Middle Velma for the first night (its quota is unconfirmed). Reservation fee is $6; overnight fees ($5/person for one night, $10 for 2–14 nights, $100 cap) may be outdated. Bear canisters are required and campfires are banned.",
+    "sceneryScore": 25,
+    "experienceScore": 19,
+    "accessScore": 14,
+    "permitScore": 8,
+    "rankingNotes": "Great Desolation granite basecamp under Dicks Peak with a Dicks Pass day hike, but Zone 23 can't be booked online for 12 and it's next door to the Velma Lakes, already visited (66/100).",
+    "sources": [
+      {
+        "label": "USFS Desolation permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits"
+      },
+      {
+        "label": "USFS Desolation Wilderness",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness"
+      },
+      {
+        "label": "USFS trails & trailheads",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads"
+      },
+      {
+        "label": "USFS Eagle Falls trailhead",
+        "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/eagle-falls-picnic-area-and-trailhead"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://recreation.gov/permits/233261"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/233261"
+      },
+      {
+        "label": "DESOWV rec opps",
+        "url": "https://desowv.org/files/Desolation_Wilderness_Rec_Opps_2019.pdf"
+      },
+      {
+        "label": "DESOWV rog",
+        "url": "https://desowv.org/files/rog_wild_deso.pdf"
+      },
+      {
+        "label": "DESOWV guide",
+        "url": "https://desowv.org/files/DWTPG_2019-compressed.pdf"
+      },
+      {
+        "label": "DESOWV trail conditions",
+        "url": "https://desowv.org/index.php?option=com_trailconditions&Itemid=26"
+      },
+      {
+        "label": "DESOWV trail conditions 2",
+        "url": "https://desowv.org/component/trailconditions/"
+      },
+      {
+        "label": "Discover Echo Summit",
+        "url": "http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html"
+      },
+      {
+        "label": "High Sierra Trails resources",
+        "url": "https://highsierratrails.com/fontanillis_dicks_lakes/fontanillis_dicks_lakes_resources.html"
+      },
+      {
+        "label": "High Sierra Trails overview",
+        "url": "https://www.highsierratrails.com/fontanillis_dicks_lakes/fontanillis_dicks_lakes_overview.html"
+      },
+      {
+        "label": "Little Grunts",
+        "url": "https://www.littlegrunts.com/backpacking-fontanillis-lake-desolation-wilderness/"
+      },
+      {
+        "label": "Outdoorstatus trip",
+        "url": "https://outdoorstatus.com/trips/us/california/desolation-wilderness/fontanillis-lake-and-dicks-peak/"
+      },
+      {
+        "label": "Outdoorstatus permit",
+        "url": "https://outdoorstatus.com/permits/us/california/desolation-wilderness/wilderness-permit/"
+      },
+      {
+        "label": "Permit Ranger",
+        "url": "https://permitranger.com/permits/desolation"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Permit Alert",
+        "url": "https://www.permitalert.app/permits/desolation-wilderness"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/"
+      },
+      {
+        "label": "Sierra Rec mileage",
+        "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/"
+      },
+      {
+        "label": "Tahoe Rim Trail permits",
+        "url": "https://tahoerimtrail.org/permits-and-regulations/"
+      },
+      {
+        "label": "Wikipedia Desolation",
+        "url": "https://en.wikipedia.org/wiki/Desolation_Wilderness"
+      },
+      {
+        "label": "Wikipedia Eagle Falls trailhead",
+        "url": "https://en.wikipedia.org/wiki/Eagle_Falls_trailhead"
+      },
+      {
+        "label": "Wikipedia Dicks Peak",
+        "url": "https://en.wikipedia.org/wiki/Dicks_Peak"
+      },
+      {
+        "label": "Topozone Fontanillis",
+        "url": "https://www.topozone.com/california/el-dorado-ca/lake/fontanillis-lake/"
+      },
+      {
+        "label": "Topozone Dicks Pass",
+        "url": "https://www.topozone.com/california/el-dorado-ca/gap/dicks-pass/"
+      },
+      {
+        "label": "Topozone Middle Velma",
+        "url": "https://www.topozone.com/california/el-dorado-ca/lake/middle-velma-lake/"
+      },
+      {
+        "label": "Lakes of Desolation",
+        "url": "http://www.lakesofdesolation.com/lakes/fontanillis-lake"
+      },
+      {
+        "label": "Tahoe to Whitney mileages",
+        "url": "https://tahoetowhitney.com/picturetrail/Tahoe_to_Alpine/Meeks_to_Echo_Summit/Maps/Meeks_to_Echo_Summit_Mileages.html"
+      },
+      {
+        "label": "Tahoe to Whitney Fontanillis",
+        "url": "https://tahoetowhitney.com/picturetrail/Tahoe_to_Alpine/Meeks_to_Echo_Summit/Fontanillis_Lake.html"
+      },
+      {
+        "label": "Trailforks loop",
+        "url": "https://www.trailforks.com/route/fontanillis-lake-loop/"
+      },
+      {
+        "label": "Backcountrycow",
+        "url": "https://www.backcountrycow.com/blog/fontanillis-lake-dicks-peak-desolation"
+      },
+      {
+        "label": "Lily Tang",
+        "url": "https://lilymtang.com/blog/late-summer-backpacking-by-fontanillis-lake/"
+      },
+      {
+        "label": "Stephen Berei 2013",
+        "url": "https://stephenberei.wordpress.com/2013/09/16/love-these-lakes-and-this-hike-dicks-and-fontanillis-lakes/"
+      },
+      {
+        "label": "Crespoweb",
+        "url": "https://arturo.crespoweb.com/outing/deswild.html"
+      },
+      {
+        "label": "Stanford Desolation",
+        "url": "https://mally.stanford.edu/~sr/desolation/index.html"
+      },
+      {
+        "label": "Tahoe Activities",
+        "url": "https://www.tahoeactivities.com/eagle-falls-hiking-trail/"
+      },
+      {
+        "label": "Tahoe Daily Tribune",
+        "url": "https://www.tahoedailytribune.com/entertainment/take-a-hike-dicks-pass-in-desolation-wilderness/"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/desolation-wilderness-area/179411"
+      },
+      {
+        "label": "PCTA Eagle Falls",
+        "url": "https://explore.pcta.org/trailheads/eagle-falls-trailhead"
+      },
+      {
+        "label": "Somewhere Outside",
+        "url": "https://www.somewhereoutside.co/blog/beginner-backpacking-trips-desolation-wilderness"
+      },
+      {
+        "label": "Visit Lake Tahoe",
+        "url": "https://visitlaketahoe.com/attractions/eagle-falls/"
+      },
+      {
+        "label": "TTD Route 30",
+        "url": "https://tahoetransportation.org/routes/route-30-emerald-bay-shuttle/"
+      },
+      {
+        "label": "TTD Route 30 b",
+        "url": "https://tahoetransportation.org/route-30/"
+      },
+      {
+        "label": "Keep Tahoe Blue shuttle",
+        "url": "https://www.keeptahoeblue.org/news/emerald-bay-shuttle-service-begins-june-26-online-reservations-now-available/"
+      },
+      {
+        "label": "Tahoe Fund shuttle 2026",
+        "url": "https://www.tahoefund.org/news/emerald-bay-shuttle-returns-for-summer-2026-with-expanded-season/"
+      },
+      {
+        "label": "Elements Mtn 2025",
+        "url": "https://elementsmtn.co/2025/07/emerald-bays-new-2025-shuttle-service-replaces-roadside-parking/"
+      },
+      {
+        "label": "Active NorCal",
+        "url": "https://www.activenorcal.com/lake-tahoes-emerald-bay-is-getting-a-daily-shuttle-and-reservations-just-opened/"
+      },
+      {
+        "label": "CA State Parks",
+        "url": "https://www.parks.ca.gov/?page_id=506"
+      },
+      {
+        "label": "Moderately Adventurous",
+        "url": "https://moderatelyadventurous.com/california-eagle-lake-hike-lake-tahoe/"
+      },
+      {
+        "label": "Komoot",
+        "url": "https://www.komoot.com/smarttour/e1278496788/eagle-falls-trail"
+      }
+    ],
+    "caveats": "Coordinates and camp elevation (8,274 ft) are for Fontanillis Lake (USGS via topozone); Dicks Lake sits about 8,420 ft and its coordinate (~38.913, -120.144) is an unsourced estimate. permitAdvanceDays is null because the window is stated as 6 months, not a day count. Mileage conflicts: the Forest Service gives 4.3 mi to Dicks and 4.9 to Fontanillis, High Sierra Trails 5.2 to Dicks, and GPS loops 10–10.6 mi round trip; about 5 mi is used. Gain is reported from 1,921 to about 2,300 ft one-way (loops log 2,552–2,825 ft), with a dip to about 7,960 ft at the Velma junction. Trailhead elevation is about 6,580 ft, not the ~7,100 ft on the USFS and Wikipedia pages. The 7 AM open time comes from third parties only. Fee figures may be outdated. Zone 16 quota is unconfirmed. Parking is a major problem: roadside parking around Emerald Bay was eliminated in 2025, the Eagle Falls lot has only about 15–20 spaces, Vikingsholm bans overnight parking, and the shuttle (2026 season June 26–Sept 7, $5) is an option. 2026 forest-wide fire restrictions; Caldor Fire burn areas are not on this route. No closures found."
+  },
+  "notes": "I'll research this thoroughly. Starting with several parallel searches.\nI researched Dicks & Fontanillis Lakes from Eagle Falls (Desolation Wilderness). **It scores 66/100.** The scenery and basecamp are very good, but there's a serious permit problem for a group of 12, and it's right next to Velma Lakes, which you've already done.\n\n## Key facts\n\n| Item | Best figure | Notes / conflicts |\n|---|---|---|\n| **One-way miles** | **About 5.0–5.2 mi to Dicks Lake; about 5 mi to Fontanillis** | The Forest Service tables say 4.3 mi to Dicks and 4.9 to Fontanillis. High Sierra Trails says 5.2 to Dicks. GPS reports give 10–10.6 mi round trip as a loop. **I trust about 5 mi.** The Forest Service figures look short compared with every GPS report. |\n| **Elevation gain** | **About 2,000–2,300 ft one-way, counting all the climbing** | High Sierra Trails says 1,921 ft and a 2013 trip report says about 2,000. Full loops log 2,552 ft (Trailforks) and 2,825 ft (Backcountrycow). The trail climbs to about 8,500 ft, drops to the Velma junction (about 7,960 ft), then climbs again. That's above your 1,600 ft average and close to your 2,377 ft maximum, but well under your 3,500 ft limit. |\n| **Trailhead elevation** | **About 6,580 ft** | High Sierra Trails says 6,579, SummitPost 6,600, Trailforks 6,585. The Forest Service's own trailhead page and Wikipedia say about 7,100 ft, which is wrong. The lake (Emerald Bay) sits at about 6,225 ft, just below the trailhead. |\n| **Camp elevation** | **Dicks Lake about 8,420 ft; Fontanillis about 8,274–8,290 ft** | Other figures: Dicks 8,400+ to 8,450, Fontanillis 8,300–8,360. I trust 8,274 for Fontanillis, from the USGS place-name database (via topozone). |\n| **Coordinates** | **Fontanillis: 38.9207, -120.1532** (USGS via topozone) | **Dicks Lake: about 38.913, -120.144.** That's my own estimate, placed between Fontanillis and Dicks Pass (38.9052, -120.1352). I couldn't find a sourced coordinate, so check it on a map. The lakes are about 1/3 mi apart. |\n\n## Permit system\n- **Booking URL:** recreation.gov/permits/233261\n- **What you book:** Desolation doesn't use trailhead quotas. You book the zone where you'll sleep the first night. Here that's **Zone 23 \"Dick's Lake\"**, which covers both lakes. You start at Eagle Falls Trailhead.\n- **Window:** a rolling window, **6 months to 1 day before your entry date**. 70% of each zone's quota can be booked online; 30% is held for walk-in, same-day permits at the Placerville Ranger Station in Camino. Taylor Creek isn't issuing permits until further notice. There's **no lottery**. Several third-party guides say each day opens at **7:00 AM Pacific**; the Forest Service page doesn't give a time.\n  - Example: Wednesday, July 14, 2027 should open Jan 14, 2027 at 7 AM PT.\n- **Quota season:** Friday before Memorial Day through Sept 30.\n- **Group size:** **maximum 12**. Bear canisters are required and campfires are banned.\n- **Fees:** $6 reservation fee. Overnight fees were listed as $5 per person for one night or $10 per person for 2–14 nights, capped at $100 per permit; check this, the source may be out of date.\n\n**The big catch:** Zone 23 allows only **16 people per day, and just 11 of those can be booked online**. So **12 people can't book Zone 23 online at all.** The Forest Service also says **\"You cannot split your group and stay at the same destination together,\"** so splitting into two permits isn't an option.\n\nRealistic workarounds:\n1. Cut the group to 11 and book at exactly 7 AM PT on release day. One booking by anyone else for that date blocks you.\n2. Book a nearby zone for the first night, such as **Zone 16 Middle Velma** (High Sierra Trails suggests exactly this). Then move to Dicks/Fontanillis about a mile away for nights 2–4. I couldn't confirm Zone 16's quota, so check it fits 12.\n\n## Access and closure issues\n- **No fire or trail closures found.** Volunteer trail reports from Aug–Sept 2026 say the Eagle Falls and Velma trails were dry and in good shape. Forest-wide fire restrictions were in effect in 2026, and recreation.gov still warns about burned areas from the 2021 Caldor Fire (not on this route).\n- **Parking is the real access problem.**\n  - Since 2025, roadside parking around Emerald Bay has been eliminated: no-parking signs and posts, $100+ tickets and towing.\n  - The Eagle Falls lot is tiny, about 15–20 spaces, and fills every summer day. You'd need 3–4 cars.\n  - Overnight parking is listed as allowed there for a fee. Older sources say overnight permit holders don't pay the day fee.\n  - The State Park's Vikingsholm lot bans overnight parking even with a backcountry permit.\n  - A shuttle ran June 26–Sept 7 in 2026 ($5 one way), from Camp Richardson ($12/day parking) or Sugar Pine Point.\n  - A Wednesday arrival helps.\n\n## Score: 66/100\n\n- **Scenery: 25/35.** Dicks Lake sits right under Dicks Peak (9,974 ft); Fontanillis has granite slabs and islands. It's classic Desolation granite with views of Lake Tahoe on the way in. But it's lower (about 8,400 ft) and more forested than your recent high camps, and it's not truly iconic. It's also next door to Velma Lakes, so it would feel like a repeat.\n- **Experience: 19/25.** It's a very good basecamp:\n  - Dicks Pass (9,390 ft, about 1 mi) looks down on Half Moon, Susie and Aloha lakes.\n  - The Dicks Peak scramble is a strong day hike.\n  - Fontanillis falls and the Velma Lakes are close by.\n  - Fishing is described as \"excellent,\" and swimming off the granite is good.\n  - Downsides: the area gets heavy traffic from the Pacific Crest and Tahoe Rim trails, and campsites big enough for 12 are limited.\n- **Access: 14/20.** Distance is right in your sweet spot, but the gain runs high and parking is hard.\n- **Permit: 8/20.** Booking Zone 23 is near-impossible for 12 people. With the first-night workaround it's manageable.\n\n## Sources used\n- https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads\n- https://www.fs.usda.gov/r05/laketahoebasin/recreation/eagle-falls-picnic-area-and-trailhead\n- https://recreation.gov/permits/233261\n- https://campflare.com/permit/233261\n- https://desowv.org/files/Desolation_Wilderness_Rec_Opps_2019.pdf\n- https://desowv.org/files/rog_wild_deso.pdf\n- https://desowv.org/files/DWTPG_2019-compressed.pdf\n- https://desowv.org/index.php?option=com_trailconditions&Itemid=26\n- https://desowv.org/component/trailconditions/\n- http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html\n- https://highsierratrails.com/fontanillis_dicks_lakes/fontanillis_dicks_lakes_resources.html\n- https://www.highsierratrails.com/fontanillis_dicks_lakes/fontanillis_dicks_lakes_overview.html\n- https://www.littlegrunts.com/backpacking-fontanillis-lake-desolation-wilderness/\n- https://outdoorstatus.com/trips/us/california/desolation-wilderness/fontanillis-lake-and-dicks-peak/\n- https://outdoorstatus.com/permits/us/california/desolation-wilderness/wilderness-permit/\n- https://permitranger.com/permits/desolation\n- https://backcountryemily.com/california-backpacking-permits/\n- https://www.permitalert.app/permits/desolation-wilderness\n- https://sierrarecmagazine.com/explore-desolation-wilderness/\n- https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/\n- https://tahoerimtrail.org/permits-and-regulations/\n- https://en.wikipedia.org/wiki/Desolation_Wilderness\n- https://en.wikipedia.org/wiki/Eagle_Falls_trailhead\n- https://en.wikipedia.org/wiki/Dicks_Peak\n- https://www.topozone.com/california/el-dorado-ca/lake/fontanillis-lake/\n- https://www.topozone.com/california/el-dorado-ca/gap/dicks-pass/\n- https://www.topozone.com/california/el-dorado-ca/lake/middle-velma-lake/\n- http://www.lakesofdesolation.com/lakes/fontanillis-lake\n- https://tahoetowhitney.com/picturetrail/Tahoe_to_Alpine/Meeks_to_Echo_Summit/Maps/Meeks_to_Echo_Summit_Mileages.html\n- https://tahoetowhitney.com/picturetrail/Tahoe_to_Alpine/Meeks_to_Echo_Summit/Fontanillis_Lake.html\n- https://www.trailforks.com/route/fontanillis-lake-loop/\n- https://www.backcountrycow.com/blog/fontanillis-lake-dicks-peak-desolation\n- https://lilymtang.com/blog/late-summer-backpacking-by-fontanillis-lake/\n- https://stephenberei.wordpress.com/2013/09/16/love-these-lakes-and-this-hike-dicks-and-fontanillis-lakes/\n- https://arturo.crespoweb.com/outing/deswild.html\n- https://mally.stanford.edu/~sr/desolation/index.html\n- https://www.tahoeactivities.com/eagle-falls-hiking-trail/\n- https://www.tahoedailytribune.com/entertainment/take-a-hike-dicks-pass-in-desolation-wilderness/\n- https://www.summitpost.org/desolation-wilderness-area/179411\n- https://explore.pcta.org/trailheads/eagle-falls-trailhead\n- https://www.somewhereoutside.co/blog/beginner-backpacking-trips-desolation-wilderness\n- https://visitlaketahoe.com/attractions/eagle-falls/\n- https://tahoetransportation.org/routes/route-30-emerald-bay-shuttle/\n- https://tahoetransportation.org/route-30/\n- https://www.keeptahoeblue.org/news/emerald-bay-shuttle-service-begins-june-26-online-reservations-now-available/\n- https://www.tahoefund.org/news/emerald-bay-shuttle-returns-for-summer-2026-with-expanded-season/\n- https://elementsmtn.co/2025/07/emerald-bays-new-2025-shuttle-service-replaces-roadside-parking/\n- https://www.activenorcal.com/lake-tahoes-emerald-bay-is-getting-a-daily-shuttle-and-reservations-just-opened/\n- https://www.parks.ca.gov/?page_id=506\n- https://moderatelyadventurous.com/california-eagle-lake-hike-lake-tahoe/\n- https://www.komoot.com/smarttour/e1278496788/eagle-falls-trail"
+}

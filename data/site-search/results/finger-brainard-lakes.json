@@ -1,0 +1,137 @@
+{
+  "candidate": {
+    "name": "Finger / Brainard Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "South Fork Big Pine",
+    "why": "Turquoise glacial lakes under Middle Palisade."
+  },
+  "site": {
+    "name": "Brainerd Lake (camp) with day hike to Finger Lake",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "South Fork Big Pine Creek, Inyo National Forest",
+    "description": "Camp at granite-lined Brainerd Lake with views of the Palisade Crest, then day-hike about half a mile up a boulder field to turquoise, glacier-fed Finger Lake below Middle Palisade. The trail sees little use, but the climb is steep and rough, and a group of 12 needs the entry point's entire daily quota.",
+    "latitude": 37.09064,
+    "longitude": -118.45747,
+    "difficulty": "strenuous",
+    "distanceMiles": 5.5,
+    "elevationGainFt": 2900,
+    "campElevationFt": 10272,
+    "peakElevationFt": 10800,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": 180,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Big Pine Creek South Fork (JM24)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Daily quota is 12 people: 7 spots release 6 months ahead and 5 release 2 weeks ahead. Commercial groups draw from the same quota. There is no lottery. The 7:00 AM Pacific release time comes from third-party trackers, not the Forest Service. The quota applies to the entry day only. The leader and alternate names can't be changed. The permit can be printed up to 7 days before and is cancelled if not printed by the no-show deadline. Cancelled spots return within 24 hours. A group of 12 needs all 7 spots at the 6-month release plus all 5 at the 2-week release on the same day. Backup plan: also book 5 people for the following day and cancel if not needed (check cancellation fees). Don't confuse this entry point with North Fork (JM23). Campfires are banned above 10,000 ft.",
+    "sceneryScore": 31,
+    "experienceScore": 19,
+    "accessScore": 12,
+    "permitScore": 9,
+    "rankingNotes": "Camp at the 'good' lake (Brainerd) and day-hike to the 'epic' one (Finger Lake), one of the most memorable lakes in the Big Pine area. Total score 71/100.",
+    "sources": [
+      {
+        "label": "Inyo NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Inyo NF alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://recreation.gov/permits/233262"
+      },
+      {
+        "label": "John Muir Wilderness (USFS)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf"
+      },
+      {
+        "label": "JMT minimum impact wilderness regulations",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf"
+      },
+      {
+        "label": "Inyo NF hiking",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/opportunities/hiking"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "High Sierra Trails",
+        "url": "https://highsierratrails.com/big_pine/big_pine_resources.html"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/south-fork-big-pine-creek/"
+      },
+      {
+        "label": "Follow Tiff's Journey",
+        "url": "https://followtiffsjourney.com/big-pine-south-fork/"
+      },
+      {
+        "label": "Stav is Lost",
+        "url": "https://stavislost.com/hikes/trail/middle-palisade-via-south-fork-big-pine-creek/"
+      },
+      {
+        "label": "AmericanSouthwest",
+        "url": "https://www.americansouthwest.net/california/eastern-sierra/south-fork-big-pine-creek-trail.html"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/trails/south-fork-big-pine-creek/"
+      },
+      {
+        "label": "HikeArizona",
+        "url": "https://hikearizona.com/decoder.php?ZTN=11907"
+      },
+      {
+        "label": "Binoculars in the Backcountry",
+        "url": "https://binocularsinthebackcountry.blogspot.com/2015/07/finger-lake-and-north-dome.html"
+      },
+      {
+        "label": "Mid Sierra Musing",
+        "url": "https://midsierramusing.blogspot.com/2018/10/day-hike-to-finger-lake-south-fork-big.html"
+      },
+      {
+        "label": "Quincy Koetz",
+        "url": "https://quincykoetz.com/2019/10/middle-palisade-climb-october-2019/"
+      },
+      {
+        "label": "Dave's Sierra Fishing",
+        "url": "http://www.davessierrafishing.com/destinations2/big_pine_lakes.html"
+      },
+      {
+        "label": "Topozone Brainerd Lake",
+        "url": "http://www.topozone.com/california/inyo-ca/lake/brainerd-lake/"
+      },
+      {
+        "label": "Topozone Finger Lake",
+        "url": "https://www.topozone.com/california/inyo-ca/lake/finger-lake-8/"
+      },
+      {
+        "label": "YellowMaps",
+        "url": "https://www.yellowmaps.com/usgs/topo.cfm?map=ca-223501-finger-lake"
+      },
+      {
+        "label": "Wikipedia: Glacier Lodge",
+        "url": "https://en.wikipedia.org/wiki/Glacier_Lodge"
+      }
+    ],
+    "caveats": "Distance and gain use the high end of the ranges (5.3–5.5 mi and 2,500–2,900 ft one-way to Brainerd). Sources conflict: Dave's Sierra Fishing gives 4 mi and 2,200 ft, AmericanSouthwest 5 mi and 2,470 ft. Gain to Finger Lake is about 3,200–3,570 ft, so camping there likely exceeds the 3,500 ft limit, and there is no maintained trail (boulder scramble). Finger Lake's elevation is about 10,790–10,800 ft; YellowMaps' 10,895 ft looks like an error. Brainerd's elevation is 10,272 ft per Topozone (Trailforks says about 10,285 ft). The overnight lot is about half a mile below the day-hiker lot and adds distance. The creek-crossing bridge was destroyed in 2011 and missing in 2021, but 2025 photos show one. Expect late snow in the upper gully, heavy mosquitoes, and loose switchbacks. Stage 1 fire restrictions are in effect, with no closures as of mid-October 2026, but the detailed wilderness-rules and campfire pages were not opened, so recheck alerts before the trip. The 7 AM release time is unconfirmed by the Forest Service. Current fish populations were not verified."
+  },
+  "notes": "I'd score it **71/100 (scenery 31, experience 19, access 12, permit 9)**. That's about 8–10 points below Thousand Island Lake and Lamarck Lakes. Finger Lake is about as dramatic as anything your group has done. The trip loses points on the climb, which is well over your past maximum, and on the permit: a group of 12 needs the trailhead's entire daily quota.\n\nThe plan that fits your rules is to **camp at Brainerd Lake and day-hike to Finger Lake**. Camping at Finger Lake itself likely breaks your 3,500 ft limit, and there's no trail to it. (Brainerd and Brainard are the same lake; the USGS map uses \"Brainerd.\")\n\n## Route numbers (from the Big Pine Creek trailhead, about 10 mi west of Big Pine on US-395)\n\n| | Brainerd Lake (camp) | Finger Lake (day hike) |\n|---|---|---|\n| One-way miles | **About 5.3–5.5** from the overnight lot | About 0.5 mi past Brainerd, so about 5.8–6.0 total |\n| Gain, one-way | **About 2,500–2,900 ft** | About 530 more ft, so about 3,200–3,570 total |\n| Lake elevation | **10,272 ft** | **About 10,790–10,800 ft** |\n| Coordinates | **37.09064, -118.45747** | **37.08624, -118.46018** |\n| Trail | Maintained trail ends here | No maintained trail: a faint path up a boulder field with easy scrambling |\n\n**Where the sources disagree:**\n- **Miles to Brainerd:**\n  - AmericanSouthwest says 5 mi and 2,470 ft.\n  - Modern Hiker reaches it at 5.3 mi on the day-hiker route.\n  - A 2020 trip report with GPS (Follow Tiff's Journey) logged 5.47 mi from the overnight lot. I trust this one most for backpackers.\n  - Dave's Sierra Fishing says 4 mi and 2,200 ft, which looks too low.\n  - HikeArizona says 12 mi round trip and 2,900 ft.\n- **Gain to Finger Lake:**\n  - Tiff's GPS shows 3,568 ft, just over your cap.\n  - Modern Hiker's 4,300 ft goes with its 11.5 mi round-trip figure, so it probably counts the climbs in both directions.\n  - Another blog says 3,400 ft for a 12 mi round trip.\n- **Finger Lake's elevation:**\n  - Topozone (which uses the federal place-name database) says 10,800 ft and Tiff's GPS says 10,789 ft. I trust these.\n  - YellowMaps says 10,895 ft, which looks like an error.\n- **Brainerd's elevation:** Topozone says 10,272 ft and Trailforks says about 10,285 ft. The 10,256 ft figure some people quote is one I couldn't confirm.\n- **Overnight parking:** the backpacker lot sits about half a mile below the day-hiker lot. Modern Hiker says that route adds about 1.5 mi and about 300 ft to the round trip. That's why the sources' mileages differ.\n\n## Permits (Inyo National Forest, all booked on Recreation.gov)\n- **Entry point:** \"Big Pine Creek South Fork,\" code **JM24**. Don't confuse it with North Fork (JM23).\n- **Daily quota: 12 people total.** 7 spots open **6 months ahead** and 5 more open **2 weeks ahead**. Commercial groups (such as guided Middle Palisade climbs) draw from the same 12 spots.\n- **Release timing:** spots are released daily, 6 months before each entry date, at **7:00 AM Pacific**. The 7 AM time comes from third-party trackers; the Forest Service page doesn't state it. **There is no lottery** for this entry point.\n- **Group size limit:** 15 people in the John Muir Wilderness.\n- **Other rules:**\n  - The quota applies to the entry day only.\n  - Only the named leader or alternate can use the permit, and those names can't be changed.\n  - You can print the permit at home up to 7 days before. If you don't print it by the no-show deadline, it's cancelled.\n  - Cancelled spots go back on the calendar within 24 hours.\n  - Campfires are banned above 10,000 ft in the John Muir Wilderness, which includes Brainerd.\n- **Booking:** https://www.recreation.gov/permits/233262\n- **What this means for 12 people:** a single permit can hold at most 7 at the 6-month release. You would need 7 spots at 6 months plus all 5 spots at the 2-week release, all on the same Wednesday. If any other party books even one spot that day, the plan breaks.\n- **Backup plan:** at the 6-month opening, also book 5 people for Thursday. If you get the Wednesday spots at the 2-week release, cancel Thursday. Check the cancellation fees first.\n- The trail itself sees little use, which helps. One trip reporter got a last-minute walk-up permit in June 2020.\n\n## Fire, closures and access\n- The Inyo alerts page (as of mid-October 2026) lists **no closures for Big Pine Creek or the South Fork**. Forest-wide Stage 1 fire restrictions are in effect, and I found no recent fires in the canyon. I hit the tool's usage limit before I could open the detailed wilderness-rules and campfire pages, so check alerts again before you go.\n- **Known hazards:**\n  - **Creek crossing on the South Fork:** Trailforks says avalanches destroyed the bridge in 2011, and a hiker found no bridge in 2021. Photos from a July 2025 trip (Stav is Lost) show a bridge again.\n  - **Switchbacks:** about 1,000 ft of rocky, exposed climbing, with loose footing near the top.\n  - **Late snow** can linger in the gully near the top of the climb.\n  - **Mosquitoes** are heavy in the marshy basin before Brainerd.\n\n## Scoring\n- **Scenery: 31/35.** Modern Hiker calls Finger Lake possibly the most memorable lake in the whole Big Pine area. It's turquoise water fed by glacier melt, in a narrow granite slot below Middle Palisade. Brainerd is lined with granite and has views of the Palisade Crest, but it's ordinary by comparison. You'd camp at the \"good\" lake and visit the \"epic\" one.\n- **Experience: 19/25.** Brainerd has plenty of campsites overlooking the lake. The Finger Lake day trip is short (a 40-minute scramble up in one report) and a real highlight, and you can continue up toward the Middle Palisade glacier. Other day hikes are mostly off-trail. There's fishing information but I didn't verify current fish. No campfires and the mosquitoes cost points.\n- **Access: 12/20.** The mileage fits your 3.6–5.5 mi sweet spot almost perfectly. The climb doesn't: roughly 2,500–2,900 ft one-way versus your ~1,600 ft average and 2,377 ft maximum. The drive is easy (paved road from US-395), but the trail is rough, there may be a creek to wade, and the overnight lot adds distance.\n- **Permit: 9/20.** Demand is low, but a group of 12 needs the whole daily quota, split across the two release dates. That's about as hard as Thousand Island Lake (scored 8) for a different reason.\n- **Total: 71/100.**\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://recreation.gov/permits/233262\n- https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf\n- https://www.fs.usda.gov/r05/inyo/recreation/opportunities/hiking\n- https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://highsierratrails.com/big_pine/big_pine_resources.html\n- https://modernhiker.com/hike/south-fork-big-pine-creek/\n- https://followtiffsjourney.com/big-pine-south-fork/\n- https://stavislost.com/hikes/trail/middle-palisade-via-south-fork-big-pine-creek/\n- https://www.americansouthwest.net/california/eastern-sierra/south-fork-big-pine-creek-trail.html\n- https://www.trailforks.com/trails/south-fork-big-pine-creek/\n- https://hikearizona.com/decoder.php?ZTN=11907\n- https://binocularsinthebackcountry.blogspot.com/2015/07/finger-lake-and-north-dome.html\n- https://midsierramusing.blogspot.com/2018/10/day-hike-to-finger-lake-south-fork-big.html\n- https://quincykoetz.com/2019/10/middle-palisade-climb-october-2019/\n- http://www.davessierrafishing.com/destinations2/big_pine_lakes.html\n- http://www.topozone.com/california/inyo-ca/lake/brainerd-lake/\n- https://www.topozone.com/california/inyo-ca/lake/finger-lake-8/\n- https://www.yellowmaps.com/usgs/topo.cfm?map=ca-223501-finger-lake\n- https://en.wikipedia.org/wiki/Glacier_Lodge"
+}

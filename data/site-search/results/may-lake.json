@@ -1,0 +1,177 @@
+{
+  "candidate": {
+    "name": "May Lake",
+    "area": "Yosemite National Park",
+    "trailhead": "May Lake",
+    "why": "Short hike with a Mt. Hoffmann climb for views over the whole park."
+  },
+  "site": {
+    "name": "May Lake",
+    "region": "Yosemite National Park - Tioga Road",
+    "area": "Yosemite Wilderness",
+    "description": "A blue granite-ringed lake beneath the face of Mt. Hoffmann, reached by a short 1.2-mile hike from May Lake Road off Tioga Road. The backpackers' camp on the southeast shore has bear boxes, a water spigot and a flush toilet, so it works well as a basecamp for the standout Mt. Hoffmann summit day hike. It is crowded with day hikers and High Sierra Camp guests, and swimming is restricted.",
+    "latitude": 37.84722,
+    "longitude": -119.49361,
+    "difficulty": "easy",
+    "distanceMiles": 1.2,
+    "elevationGainFt": 485,
+    "campElevationFt": 9270,
+    "peakElevationFt": 10845,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "lottery",
+    "permitAdvanceDays": 7,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "May Lake",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445859",
+    "permitNotes": "Daily quota is 25 people: 15 by weekly lottery (60%) and 10 released on Recreation.gov 7 days ahead at 7:00 PT (40%), bookable until 3 days before the start. The lottery runs 24 weeks before the start date, with applications Sunday 12:01 am to Saturday 11:59 pm PT, from mid-November to early May. Results arrive Monday by 5 pm, winners must accept by Thursday, and unclaimed spaces release Friday at 9 am PT. For Tioga Road trailheads, the lottery covers only start dates from the third Thursday in June onward. For a July 14, 2027 start, the lottery week is around late January 2027; confirm in the NPS dates table. Group limit is 15, or 8 for cross-country travel more than 1/4 mile off trail. A group of 12 needs 12 of the 15 lottery spots and cannot fit in the 10-person week-ahead quota. NPS removes groups that split one party into multiple lottery entries. A legitimate workaround is a second party entering at Porcupine Creek (12 lottery / 8 week-ahead), about 3 mi and 700 ft from May Lake. Not to be confused with the 'May Lake to Snow Creek' entry point. Fees ($10 per application plus $5 per person) and in-person pickup come from a third-party guide; verify them.",
+    "sceneryScore": 27,
+    "experienceScore": 18,
+    "accessScore": 13,
+    "permitScore": 9,
+    "rankingNotes": "Easy, scenic basecamp under Mt. Hoffmann with a great summit day hike, but too short to feel epic, and a 12-person permit is hard to get (67/100).",
+    "sources": [
+      {
+        "label": "NPS May Lake Trailhead",
+        "url": "https://www.nps.gov/places/000/may-lake-trailhead.htm"
+      },
+      {
+        "label": "NPS Wilderness Permit Reservations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wpres.htm"
+      },
+      {
+        "label": "NPS Wilderness FAQ",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildfaq.htm"
+      },
+      {
+        "label": "NPS Wilderness Regulations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildregs.htm"
+      },
+      {
+        "label": "NPS Wilderness Permits",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildpermits.htm"
+      },
+      {
+        "label": "NPS Trailheads",
+        "url": "https://www.nps.gov/yose/planyourvisit/trailheads.htm"
+      },
+      {
+        "label": "NPS Wilderness Permit Dates",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm"
+      },
+      {
+        "label": "NPS Tioga Road",
+        "url": "https://www.nps.gov/yose/planyourvisit/tioga.htm"
+      },
+      {
+        "label": "NPS early Tioga Road opening news",
+        "url": "https://www.nps.gov/yose/learn/news/yosemite-national-park-announces-summer-reopenings-full-campground-access-and-early-tioga-road-opening.htm"
+      },
+      {
+        "label": "Yosemitehikes May Lake",
+        "url": "https://www.yosemitehikes.com/tioga-road/may-lake/may-lake.htm"
+      },
+      {
+        "label": "Yosemitehikes swimming sign",
+        "url": "https://www.yosemitehikes.com/tioga-road/may-lake/gallery-swimming-sign.htm"
+      },
+      {
+        "label": "Wikipedia May Lake",
+        "url": "https://en.wikipedia.org/wiki/May_Lake_(California)"
+      },
+      {
+        "label": "AllTrails May Lake",
+        "url": "https://www.alltrails.com/trail/us/california/may-lake--7"
+      },
+      {
+        "label": "AllTrails Sunrise Camp to May Lake",
+        "url": "https://www.alltrails.com/trail/us/california/sunrise-camp-to-may-lake-trail"
+      },
+      {
+        "label": "Hikespeak",
+        "url": "https://www.hikespeak.com/trails/may-lake-yosemite-hike/"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/hiking/hike-to-may-lake"
+      },
+      {
+        "label": "Islands.com",
+        "url": "https://www.islands.com/2205673/may-lake-trail-yosemite-national-park-short-forest-hike-gorgeous-mountain-views-camping-fishing/"
+      },
+      {
+        "label": "TripAdvisor May Lake Trail",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g61000-d3511438-Reviews-May_Lake_Trail-Yosemite_National_Park_California.html"
+      },
+      {
+        "label": "TripAdvisor forum May Lake",
+        "url": "https://www.tripadvisor.com/ShowTopic-g61000-i315-k6111531-May_Lake-Yosemite_National_Park_California.html"
+      },
+      {
+        "label": "TripAdvisor High Sierra Camps",
+        "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d650703-Reviews-Yosemite_High_Sierra_Camps-Yosemite_National_Park_California.html"
+      },
+      {
+        "label": "TripAdvisor HSC review",
+        "url": "https://www.tripadvisor.com/ShowUserReviews-g61000-d650703-r1070175483-Yosemite_High_Sierra_Camps-Yosemite_National_Park_California.html"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/yosemite-high-camps-2025/"
+      },
+      {
+        "label": "Press Democrat HSC 2025",
+        "url": "https://www.pressdemocrat.com/2025/05/16/yosemite-national-park-wont-be-opening-its-coveted-high-sierra-camps-this-year-heres-why/"
+      },
+      {
+        "label": "SF Chronicle",
+        "url": "https://www.sfchronicle.com/opinion/openforum/article/high-sierra-camps-yosemite-22277366.php"
+      },
+      {
+        "label": "National Parks Traveler",
+        "url": "https://www.nationalparkstraveler.org/2026/05/yosemite-national-park-reopening-trails-and-campgrounds-ahead-summer-season"
+      },
+      {
+        "label": "Yosemite Conservancy 2026",
+        "url": "https://yosemite.org/know-before-you-go-yosemite-in-2026/"
+      },
+      {
+        "label": "Nomad Lawyer Dome Fire",
+        "url": "https://www.nomadlawyer.org/yosemite-dome-fire-glacier-point-road-closure-visitor-guide-2026"
+      },
+      {
+        "label": "Press Democrat fire 2026",
+        "url": "https://www.pressdemocrat.com/2026/09/01/fire-breaks-out-near-yosemite-national-park-highway-140-closed/"
+      },
+      {
+        "label": "Yosemite.com permits",
+        "url": "https://www.yosemite.com/plan-your-trip/yosemite-wilderness-permits/"
+      },
+      {
+        "label": "Wildernessbeta",
+        "url": "https://wildernessbeta.com/permits/yosemite-wilderness/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/yosemite-backpacking-permits-guide/"
+      },
+      {
+        "label": "Travel Yosemite fishing",
+        "url": "https://www.travelyosemite.com/things-to-do/fishing"
+      },
+      {
+        "label": "Fishbrain May Lake",
+        "url": "https://fishbrain.com/fishing-waters/hl-iy1C7/may-lake"
+      },
+      {
+        "label": "Alibaba (rejected 9,500 ft figure)",
+        "url": "https://wellness.alibaba.com/outdoor/may-lake-high-sierra-camp-guide"
+      }
+    ],
+    "caveats": "Facts come from search-engine copies of these pages because direct fetches failed. Distance and gain vary slightly by source (2.4–2.5 mi round trip, 475–500 ft); NPS figures are used. A 9,500 ft lake elevation from a low-quality page was rejected. NPS says May Lake Road is unpaved and may be closed in early summer, adding 1.75 mi each way; other sources call it paved. Overnight parking ends Oct 15, and the lot fills by about 10:30 am. High Sierra Camps closed in 2025 and May Lake's camp operated in 2026, so expect crowds. Swimming is disputed and likely restricted near camp because the lake may be a water supply. Camping limited to the designated backpackers' camp is unconfirmed. Exact lottery open and close dates for 2027 are not established, so they are left null. Fees come from a third-party source. The Mt. Hoffmann upper route is partly off-trail, so the 8-person cross-country limit may apply. The 2026 Dome and Colorado fires did not affect May Lake."
+  },
+  "notes": "**May Lake scores 67/100 (scenery 27, experience 18, access 13, permit 9).** It meets every hard limit, but it isn't an \"epic\" trip for this group. The lake is pretty, but the hike in is only about 1.2 miles. The best scenery comes from day hikes away from camp. And a single permit for 12 people is hard to get.\n\n## Key facts\n\n| Item | Value | Source I trust |\n|---|---|---|\n| One-way miles | **1.2 mi** (2.4 mi round trip) | NPS trailhead page |\n| Elevation gain | **~485 ft** | NPS |\n| Trailhead elevation | 8,710 ft | yosemitehikes.com |\n| Camp/lake elevation | **9,270 ft** | Wikipedia, yosemitehikes, 2026 trip report |\n| Coordinates | **37.84722° N, 119.49361° W** (37°50′50″N 119°29′37″W) | Wikipedia |\n| Trailhead access | End of May Lake Road, 1.75 mi north of Tioga Road (Hwy 120) | NPS |\n| Camp | May Lake Backpackers' Camp on the southeast shore, with bear boxes, a water spigot, a flush toilet and campsites along the shore. The High Sierra Camp is at the north end. | AllTrails |\n\n**Conflicting figures:**\n- **Distance and gain:** NPS says 2.4 mi round trip and 485 ft. AllTrails says 2.4 mi and 488 ft, Hikespeak 2.4 mi and 475 ft, yosemitehikes 2.5 mi and 500 ft, The Outbound 1.3 mi one-way. They all agree closely; I use NPS.\n- **Lake elevation:** One low-quality AI-written page (alibaba.com) says \"~9,500 ft.\" I ignored it in favor of 9,270 ft.\n- **Side-road length:** Sources give 1.7, 1.75, 1.8 or 2 mi; I use NPS's 1.75.\n- **Road surface:** NPS calls the road unpaved and says it may be closed in early summer, which adds 1.75 mi each way. AllTrails calls it paved, and a 2021 review says the parking lot is paved. I trust NPS on the closure risk.\n\n## Permits (Yosemite Wilderness Permit)\n\n- **Entry point name:** \"May Lake.\" It's a different trailhead from \"May Lake to Snow Creek.\"\n- **Quota (NPS trailhead page):** 15 people per day by lottery plus 10 people per day released one week ahead, for 25 total.\n- **Group size:** 15 people maximum, or 8 for any cross-country travel more than ¼ mile off trail (NPS wilderness regulations).\n- **Lottery:**\n  - 60% of the quota goes through a weekly lottery 24 weeks before the start date. Applications run Sunday 12:01 am to Saturday 11:59 pm PT, from mid-November to early May.\n  - Results come Monday by 5 pm, and winners must accept and pay by Thursday.\n  - Unclaimed spaces are released Friday at 9 am PT.\n  - For Tioga Road trailheads, the 24-week lottery only covers start dates from the third Thursday in June onward.\n  - For a Wednesday, July 14, 2027 start, the lottery week falls around late January 2027. Confirm it in the NPS dates table.\n- **Week-ahead release:** The other 40% opens on Recreation.gov 7 days before the start date at 7 am PT, and stays bookable until 3 days before.\n- **Fees:** $10 per application plus $5 per person if you win, and permits are picked up in person. These come from a third-party guide (wildernessbeta), not NPS, so verify them.\n- **Booking URL:** recreation.gov/permits/445859\n- **The big problem for 12 people:**\n  - A single permit for 12 needs 12 of the 15 lottery spots that day.\n  - All 12 can't fit in one week-ahead booking, because the whole week-ahead quota is only 10.\n  - The NPS FAQ says groups applying together in the lottery will be removed, so splitting one group into two lottery entries isn't allowed.\n  - A legitimate workaround is a second party entering at another trailhead. Porcupine Creek (12 lottery / 8 week-ahead) is about 3 mi and 700 ft to May Lake according to AllTrails.\n- **Camping rule (unconfirmed):** I believe camping at May Lake is limited to the designated backpackers' camp. I couldn't confirm this on the NPS regulations page, so check it.\n\n## Closures, fire and access (as of fall 2026)\n\n- **Tioga Road** opened May 15, 2026, the earliest in 16 years (NPS). The May Lake trailhead is only drivable while Tioga Road is open, and overnight parking ends October 15. The parking lot filled by about 10:30 am in a 2021 review.\n- **High Sierra Camps:** They were closed in 2025 because of water and toilet failures. NPS said \"most\" would return in 2026, and July and August 2026 trip reports confirm May Lake's camp operated. Expect cabin guests alongside the backpackers' camp.\n- **Fires in 2026:** The Dome Fire closed the Glacier Point Road area, but sources said Tioga Pass and Tuolumne stayed open. The Colorado Fire (September 2026) was on Hwy 140 outside the park, and the park reported its other entrances open. Neither affected May Lake.\n- **Park entry:** There was no timed-entry reservation system in 2026.\n- **Swimming is disputed:** yosemitehikes shows a no-swimming sign on the south bank, and some guides call May Lake a water-supply lake. A forum answer says swimming is only banned near the water intake. Assume restrictions near camp.\n- **Fishing:** Fishbrain catch logs show brook trout, up to about 12 in. Yosemite requires artificial lures or flies with barbless hooks.\n\n## Score: 67/100\n\n- **Scenery 27/35:** A blue lake under the granite face of Mt. Hoffmann (10,845 ft), with Half Dome and Clouds Rest views on the approach. The camp area is partly forested. The Mt. Hoffmann summit (about 2 mi and 1,500 ft from the lake) is the standout view, but the lake itself isn't at Thousand Island level.\n- **Experience 18/25:** Strong basecamp facilities and an excellent Hoffmann day hike. Brook trout fishing is decent. Points come off because swimming is restricted, the lake is crowded with day hikers and camp guests, and four nights a mile from the car can feel like car camping. The upper Hoffmann route is partly off-trail, so the 8-person cross-country limit may apply; plan to split the group for that hike.\n- **Access 13/20:** The 1.2 mi and ~500 ft are well below your 3.6–5.5 mi and ~1,600 ft sweet spot. Add the long Tioga Road drive, the side road's possible early-season closure and limited parking. Starting from Porcupine Creek gets closer to your usual hike length.\n- **Permit 9/20:** 12 people need 80% of the day's lottery quota, and the week-ahead quota of 10 can't take you as one group. A Wednesday start and late-season dates help a little.\n\n## URLs used\nDirect page fetches failed, so these facts come from the search engine's copies of these pages.\n- https://www.nps.gov/places/000/may-lake-trailhead.htm\n- https://www.nps.gov/yose/planyourvisit/wpres.htm\n- https://www.nps.gov/yose/planyourvisit/wildfaq.htm\n- https://www.nps.gov/yose/planyourvisit/wildregs.htm\n- https://www.nps.gov/yose/planyourvisit/wildpermits.htm\n- https://www.nps.gov/yose/planyourvisit/trailheads.htm\n- https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm\n- https://www.nps.gov/yose/planyourvisit/tioga.htm\n- https://www.nps.gov/yose/learn/news/yosemite-national-park-announces-summer-reopenings-full-campground-access-and-early-tioga-road-opening.htm\n- https://www.yosemitehikes.com/tioga-road/may-lake/may-lake.htm\n- https://www.yosemitehikes.com/tioga-road/may-lake/gallery-swimming-sign.htm\n- https://en.wikipedia.org/wiki/May_Lake_(California)\n- https://www.alltrails.com/trail/us/california/may-lake--7\n- https://www.alltrails.com/trail/us/california/sunrise-camp-to-may-lake-trail\n- https://www.hikespeak.com/trails/may-lake-yosemite-hike/\n- https://www.theoutbound.com/yosemite/hiking/hike-to-may-lake\n- https://www.islands.com/2205673/may-lake-trail-yosemite-national-park-short-forest-hike-gorgeous-mountain-views-camping-fishing/\n- https://www.tripadvisor.com/Attraction_Review-g61000-d3511438-Reviews-May_Lake_Trail-Yosemite_National_Park_California.html\n- https://www.tripadvisor.com/ShowTopic-g61000-i315-k6111531-May_Lake-Yosemite_National_Park_California.html\n- https://www.tripadvisor.com/Hotel_Review-g61000-d650703-Reviews-Yosemite_High_Sierra_Camps-Yosemite_National_Park_California.html\n- https://www.tripadvisor.com/ShowUserReviews-g61000-d650703-r1070175483-Yosemite_High_Sierra_Camps-Yosemite_National_Park_California.html\n- https://sierrarecmagazine.com/yosemite-high-camps-2025/\n- https://www.pressdemocrat.com/2025/05/16/yosemite-national-park-wont-be-opening-its-coveted-high-sierra-camps-this-year-heres-why/\n- https://www.sfchronicle.com/opinion/openforum/article/high-sierra-camps-yosemite-22277366.php\n- https://www.nationalparkstraveler.org/2026/05/yosemite-national-park-reopening-trails-and-campgrounds-ahead-summer-season\n- https://yosemite.org/know-before-you-go-yosemite-in-2026/\n- https://www.nomadlawyer.org/yosemite-dome-fire-glacier-point-road-closure-visitor-guide-2026\n- https://www.pressdemocrat.com/2026/09/01/fire-breaks-out-near-yosemite-national-park-highway-140-closed/\n- https://www.yosemite.com/plan-your-trip/yosemite-wilderness-permits/\n- https://wildernessbeta.com/permits/yosemite-wilderness/\n- https://backcountryemily.com/yosemite-backpacking-permits-guide/\n- https://www.travelyosemite.com/things-to-do/fishing\n- https://fishbrain.com/fishing-waters/hl-iy1C7/may-lake\n- https://wellness.alibaba.com/outdoor/may-lake-high-sierra-camp-guide (only for the 9,500 ft figure I rejected)"
+}

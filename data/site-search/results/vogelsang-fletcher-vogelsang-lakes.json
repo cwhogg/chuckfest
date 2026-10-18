@@ -1,0 +1,129 @@
+{
+  "candidate": {
+    "name": "Vogelsang (Fletcher/Vogelsang Lakes)",
+    "area": "Yosemite National Park",
+    "trailhead": "Rafferty Creek",
+    "why": "Lakes above 10,000 ft with day hikes to Vogelsang Pass and Evelyn Lake."
+  },
+  "site": {
+    "name": "Vogelsang (Fletcher and Vogelsang Lakes) from Rafferty Creek",
+    "region": "Yosemite National Park - Tuolumne Meadows high country",
+    "area": "Vogelsang / Rafferty Creek",
+    "description": "Fletcher and Vogelsang Lakes sit beneath 11,000-ft peaks, about 7 miles up Rafferty Creek from Tuolumne Meadows. The area is one of Yosemite's best basecamps, with day hikes to Vogelsang Pass, Vogelsang and Fletcher Peaks, and Evelyn, Ireland, Emeric and Boothe Lakes. Camping is required in the designated Vogelsang backpackers' camp.",
+    "latitude": 37.799,
+    "longitude": -119.343,
+    "difficulty": "moderate",
+    "distanceMiles": 7,
+    "elevationGainFt": 1650,
+    "campElevationFt": 10100,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "lottery",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "00:01",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Rafferty Creek to Vogelsang",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445859",
+    "permitNotes": "Quota is 12 people by weekly lottery plus 8 in a week-ahead release, for 20 per day. The lottery covers 60% of the quota and opens about 24 weeks ahead. Applications run Sunday 12:01 am to Saturday 11:59 pm PT, results arrive Monday by 5 pm, and you must accept by Thursday 11:59 pm. Leftover spots go first-come, first-served Friday at 9 am. You can list up to 8 options. For Tuolumne/Tioga Road trailheads, the lottery covers start dates from the third Thursday in June onward. The remaining 40% opens 7 days before the start date at 07:00 PT and stays open until 3 days before. Only one applicant is allowed per group; groups applying together are removed from the lottery. Group limit is 15 on trail and 8 cross-country. Fees are $10 per application plus $5 per person. No permits are held for walk-ups. Estimated 2027 application weeks (unofficial): Jul 14 start, Jan 17-23; Jul 21, Jan 24-30; Jul 28, Jan 31-Feb 6; Aug 4, Feb 7-13.",
+    "sceneryScore": 31,
+    "experienceScore": 21,
+    "accessScore": 16,
+    "permitScore": 5,
+    "rankingNotes": "Near Thousand Island-level scenery and a top Yosemite basecamp, but a group of 12 needs the entire 12-person lottery quota.",
+    "sources": [
+      {
+        "label": "NPS Yosemite trailheads",
+        "url": "https://www.nps.gov/yose/planyourvisit/trailheads.htm"
+      },
+      {
+        "label": "NPS wilderness permit reservations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wpres.htm"
+      },
+      {
+        "label": "NPS wilderness permit dates",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm"
+      },
+      {
+        "label": "NPS 2026 permit reservation window CSV",
+        "url": "https://www.nps.gov/common/uploads/sortable_dataset/yose/A308BF91-D5BB-F570-594A6DDB97F0EB1A/yose-2026WildernessPermitReservationsWindow.csv?t=1785061817172"
+      },
+      {
+        "label": "NPS wilderness FAQ",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildfaq.htm"
+      },
+      {
+        "label": "NPS wilderness regulations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildregs.htm"
+      },
+      {
+        "label": "Yosemite compendium",
+        "url": "https://www.nps.gov/yose/learn/management/upload/yose-compendium.pdf"
+      },
+      {
+        "label": "Recreation.gov Yosemite permits",
+        "url": "https://www.recreation.gov/permits/445859"
+      },
+      {
+        "label": "Yosemite Conservancy wilderness hub",
+        "url": "https://yosemite.org/experience/wilderness-hub/"
+      },
+      {
+        "label": "AllTrails Vogelsang",
+        "url": "https://www.alltrails.com/trail/us/california/vogelsang"
+      },
+      {
+        "label": "AllTrails Fletcher Lake",
+        "url": "https://www.alltrails.com/poi/us/california/yosemite-valley/fletcher-lake"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/vogelsang-and-lyell-canyon-in-yosemite/"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/backpacking/backpack-to-fletcher-lake-and-summit-vogelsang-peak"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/national-parks/explore-yosemite-national-park/yosemite-hiking-and-backpacking/fletcher-lake-and-vogelsang-high-sierra-camp/"
+      },
+      {
+        "label": "Nature Outside",
+        "url": "https://www.natureoutside.com/the-high-sierra-loop-merced-lake-to-vogelsang/"
+      },
+      {
+        "label": "Yosemite.com Vogelsang HSC",
+        "url": "https://www.yosemite.com/places-to-stay/camping-and-rv/vogelsang-high-sierra-camp/"
+      },
+      {
+        "label": "TravelYosemite High Sierra Camps",
+        "url": "https://www.travelyosemite.com/lodging/high-sierra-camps/trips"
+      },
+      {
+        "label": "MyYosemitePark High Sierra Camp",
+        "url": "https://www.myyosemitepark.com/where-to-stay-camp-eat/hotels-cabins/high-sierra-camp/"
+      },
+      {
+        "label": "GearJunkie",
+        "url": "https://gearjunkie.com/outdoor/yosemite-high-sierra-camps"
+      },
+      {
+        "label": "SF Chronicle opinion",
+        "url": "https://www.sfchronicle.com/opinion/openforum/article/high-sierra-camps-yosemite-22277366.php"
+      },
+      {
+        "label": "Wikipedia Fletcher Peak",
+        "url": "https://en.wikipedia.org/wiki/Fletcher_Peak"
+      },
+      {
+        "label": "Wikipedia Vogelsang Pass",
+        "url": "https://en.wikipedia.org/wiki/Vogelsang_Pass"
+      }
+    ],
+    "caveats": "Coordinates are estimates derived from nearby Fletcher Peak and Vogelsang Pass; verify on CalTopo or USGS. Distance ranges 6.8-7.2 mi, and higher figures (19 mi, 2,800+ ft) include a climb of Vogelsang Peak. Lake elevations are read from the map and unverified. 2027 permit dates are extrapolated; NPS has not posted the 2027 calendar. NPS pages differ slightly on the week-ahead release close (3 vs 8 days before). Vogelsang High Sierra Camp has been closed 2024-2026, so expect no water or toilets; filter lake water. Camping must be in the designated campground within 1 mile of the HSC, which likely includes Upper Fletcher Lake. Campfires are banned above 9,600 ft, and bear canisters are required. Fires/smoke, Tioga Road opening and 2027 park entry reservation rules were not checked; Tioga Road may open as late as July after big-snow winters. Peak elevation is not established."
+  },
+  "notes": "# Vogelsang (Fletcher and Vogelsang Lakes) from Rafferty Creek, Yosemite: 73/100 (31/21/16/5)\n\n**Bottom line:** The scenery is close to Thousand Island Lake level, and the area is excellent for a basecamp. The low score comes from the permit. The Rafferty Creek lottery quota is **12 people per day**, so your group would need every lottery spot for that start date. Yosemite also doesn't let a group get around this by applying as two parties. The hike in is about 7 miles, which is longer than you usually go, though the climb fits your range.\n\n**Caveat:** My research tool hit its usage limit partway through. I didn't get to check fires, road conditions, NPS's own mileage page, or official lake coordinates. Those are marked as unverified below.\n\n## Trip numbers\n\n| Metric | Value | Sources and conflicts |\n|---|---|---|\n| One-way miles to camp | **About 7 mi** (6.8–7.2) | AllTrails: 14.3 mi round trip (7.15 each way). Sierra Rec Magazine: \"approx. 7 miles.\" Modern Hiker: Tuolumne Pass at about 6.8 mi, with camp just past it. The Outbound lists 19 mi round trip, but that includes a climb of Vogelsang Peak. **I trust about 7 mi.** |\n| Elevation gain | **About 1,600–1,700 ft** to Fletcher Lake. Add about 200 ft for Vogelsang Lake. | AllTrails: 1,669 ft. The Outbound (2,887 ft) and Modern Hiker (2,800 ft) include the peak or the full loop. The trail starts at about 8,600 ft (The Outbound). **I trust about 1,650 ft.** |\n| Camp elevation | **About 10,100–10,150 ft** (backpackers' camp and Fletcher Lake). Vogelsang Lake is about 10,340 ft. | Nature Outside: the camp is at 10,100 ft. Yosemite.com: \"over 10,000 ft.\" The lake elevations are my reading of the USGS map, not checked this session. |\n| Coordinates | Fletcher Lake about **37.799, -119.343**. Vogelsang Lake about **37.786, -119.343**. | ⚠️ **Estimates** based on Wikipedia's coordinates for Fletcher Peak (37.7918, -119.3358) and Vogelsang Pass (37.7797, -119.3408). Check them on CalTopo or USGS before using. |\n\n## Permits\n\n- **Entry point name:** \"Rafferty Creek to Vogelsang.\" Park at the wilderness center or the Dog Lake lot. The trailhead has flush toilets.\n- **Daily quota:** 12 people by lottery plus 8 people first-come, first-served, so 20 a day in total.\n- **Group size:** Up to 15 on trails, or 8 for cross-country travel more than ¼ mile off trail. A group of 12 is allowed.\n- **Splitting the group:** The FAQ says \"Each trip may only have one applicant per group planning to travel together. Groups applying together will be removed from the lottery.\" In practice that means one permit for all 12. It also rules out two people each entering the same lottery for the same trip.\n- **Lottery:** It holds 60% of the quota and opens about 24 weeks ahead. You apply anytime Sunday 12:01 am to Saturday 11:59 pm Pacific. Results come Monday by 5 pm, and you must accept by Thursday at 11:59 pm. Leftover spots go first-come, first-served on Friday at 9 am. You can list up to 8 options (dates, trailheads, group sizes).\n  - For Tuolumne Meadows / Tioga Road trailheads, the lottery only covers start dates from the third Thursday in June onward.\n- **Week-ahead release:** The other 40% opens 7 days before the start date at 7:00 am Pacific and stays open until 3 days before. The FAQ also says pre-season leftovers end 8 days before; it's a small discrepancy between pages.\n  - The trailheads page says no permits are held for walk-ups. Only unclaimed permits are handed out in person on the start day.\n- **Fees:** $10 per application plus $5 per person.\n- **Booking:** https://www.recreation.gov/permits/445859\n- **Estimated 2027 dates:** NPS hasn't posted the 2027 calendar yet. I worked these out from the 2026 pattern, where application week opens 175 days before the Sunday of the start week.\n\n| Start date (Wed) | Lottery application week | Results | Week-ahead release (7 am) |\n|---|---|---|---|\n| Jul 14, 2027 | Jan 17–23, 2027 | Jan 25 | Jul 7 |\n| Jul 21, 2027 | Jan 24–30 | Feb 1 | Jul 14 |\n| Jul 28, 2027 | Jan 31–Feb 6 | Feb 8 | Jul 21 |\n| Aug 4, 2027 | Feb 7–13 | Feb 15 | Jul 28 |\n\n## Rules and closures that matter\n\n- **Designated campground required.** Within one mile of a High Sierra Camp you must stay in the designated campground. That means the Vogelsang backpackers' camp, not a site of your choice on the lakeshore.\n  - Upper Fletcher Lake and probably Vogelsang Lake are within that mile. The Outbound suggests camping at Upper Fletcher anyway. **Confirm with the Tuolumne Meadows Wilderness Center.**\n- **No campfires.** Fires are banned above 9,600 ft, and you can't camp within 4 trail miles of Tuolumne Meadows. Bear canisters are required.\n- **Vogelsang High Sierra Camp has been closed since 2024.** It was closed for 2024 (Yosemite.com) and in 2025 (MyYosemitePark; TravelYosemite says no camps opened in 2025). GearJunkie reports it didn't open in 2026 either. An SF Chronicle opinion piece warns about its future.\n  - The 2025 closure was blamed on unavailable drinking water and toilets. Expect **no water tap or toilets at the backpackers' camp**; filter lake water.\n- **Not checked (tool limit):** wildfires or smoke in 2026, Tioga Road opening date (it is seasonal and can open as late as July after big-snow winters), and any 2027 park entry reservation rules. Check https://www.nps.gov/yose/planyourvisit/conditions.htm.\n\n## Score: 73/100\n\n- **Scenery 31/35:** Fletcher and Vogelsang Lakes sit beneath 11,000-ft peaks. The view south from Vogelsang Pass toward Gallison Lake and the Clark Range is a classic Yosemite high-country sight. Below Thousand Island because the walk in is mostly forest and long meadows, and the lakes are less of a showpiece than Banner and Ritter.\n- **Experience 21/25:** It's one of the best basecamps in Yosemite. Day hikes include Vogelsang Pass, Vogelsang and Fletcher Peaks (class 2), and the Evelyn, Ireland, Emeric and Boothe Lakes. The fishing is good and the lakes are cold for swimming. Points off because you must use the designated campground, can't have a campfire, have no services while the camp is closed, and should expect July mosquitoes in the meadows.\n- **Access 16/20:** The climb and the camp elevation match your group well, and the high camp continues your trend. The 7 miles is about 1.5 miles past your longest trip. The trailhead depends on Tioga Road opening for the season.\n- **Permit 5/20:** A group of 12 needs all 12 lottery spots for one date at a popular Tuolumne trailhead. The 8-person week-ahead release can't cover you unless lottery spots go unused. The alternative is to send some of the group in from Lyell Canyon (6 lottery + 4 week-ahead spots), but that is a different trip of 10+ miles. This is even harder than Thousand Island's 8.\n\n**Advice:** Enter all four Wednesday lotteries and use all 8 options, including a backup group size of 8–10 in case not everyone can go. Also hold a backup destination outside the park.\n\n## URLs used\n- https://www.nps.gov/yose/planyourvisit/trailheads.htm\n- https://www.nps.gov/yose/planyourvisit/wpres.htm\n- https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm\n- https://www.nps.gov/common/uploads/sortable_dataset/yose/A308BF91-D5BB-F570-594A6DDB97F0EB1A/yose-2026WildernessPermitReservationsWindow.csv?t=1785061817172\n- https://www.nps.gov/yose/planyourvisit/wildfaq.htm\n- https://www.nps.gov/yose/planyourvisit/wildregs.htm\n- https://www.nps.gov/yose/learn/management/upload/yose-compendium.pdf\n- https://www.recreation.gov/permits/445859\n- https://yosemite.org/experience/wilderness-hub/\n- https://www.alltrails.com/trail/us/california/vogelsang\n- https://www.alltrails.com/poi/us/california/yosemite-valley/fletcher-lake\n- https://modernhiker.com/hike/vogelsang-and-lyell-canyon-in-yosemite/\n- https://www.theoutbound.com/yosemite/backpacking/backpack-to-fletcher-lake-and-summit-vogelsang-peak\n- https://sierrarecmagazine.com/national-parks/explore-yosemite-national-park/yosemite-hiking-and-backpacking/fletcher-lake-and-vogelsang-high-sierra-camp/\n- https://www.natureoutside.com/the-high-sierra-loop-merced-lake-to-vogelsang/\n- https://www.yosemite.com/places-to-stay/camping-and-rv/vogelsang-high-sierra-camp/\n- https://www.travelyosemite.com/lodging/high-sierra-camps/trips\n- https://www.myyosemitepark.com/where-to-stay-camp-eat/hotels-cabins/high-sierra-camp/\n- https://gearjunkie.com/outdoor/yosemite-high-sierra-camps\n- https://www.sfchronicle.com/opinion/openforum/article/high-sierra-camps-yosemite-22277366.php\n- https://en.wikipedia.org/wiki/Fletcher_Peak\n- https://en.wikipedia.org/wiki/Vogelsang_Pass"
+}

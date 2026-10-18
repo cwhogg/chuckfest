@@ -1,0 +1,157 @@
+{
+  "candidate": {
+    "name": "Upper Morgan Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Morgan Pass",
+    "why": "11,100-ft lake just past Little Lakes Valley."
+  },
+  "site": {
+    "name": "Upper Morgan Lake via Mosquito Flat / Morgan Pass",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Rock Creek / Little Lakes Valley, Inyo National Forest",
+    "description": "An easy hike from the highest paved trailhead in the Sierra, through iconic Little Lakes Valley and over Morgan Pass, to a very high camp in a narrow talus bowl. The camp itself is less dramatic than the valley on the way in, but the day hikes nearby are top-tier: Gem, Chickenfoot, Treasure and Long Lakes, Mono Pass, Ruby Lake and Lower Morgan's sandy beach. Getting the permit is the hard part.",
+    "latitude": 37.38848,
+    "longitude": -118.74469,
+    "difficulty": "easy",
+    "distanceMiles": 4.2,
+    "elevationGainFt": 1000,
+    "campElevationFt": 10940,
+    "peakElevationFt": 11110,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Little Lakes Valley (JM09)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF quota is 25 people/day from May 1 to Nov 1: 15 spots in the 6-month release, 10 in the 2-week release, plus a separate 10 for commercial outfitters. 60% of the quota opens 6 months ahead on the same date (e.g., a Jul 14, 2027 start opens Jan 14, 2027). 40% opens 2 weeks ahead on the same weekday. Both releases open at 7 AM Pacific. No lottery. Do not use a Mono Pass (JM08) permit. Group max is 15 including day use, and groups can't combine to exceed 15. Fees are $6 per reservation plus $5 per person. You can print at home starting 7 days before; the permit is canceled if not printed by 10 AM on the entry day. Date changes or refunds are allowed if you cancel at least 12 days ahead. No campfires, bear canisters required, bighorn sheep habitat, camp at least 100 ft from water. The same permit allows camping at Gem Lakes.",
+    "sceneryScore": 26,
+    "experienceScore": 19,
+    "accessScore": 18,
+    "permitScore": 10,
+    "rankingNotes": "An easy ~4.2 mi walk through iconic Little Lakes Valley to a very high camp with top-tier day hikes. The hard part is the permit, which requires being online at exactly 7 AM.",
+    "sources": [
+      {
+        "label": "Inyo NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "USFS Little Lakes Valley Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/little-lakes-valley-trail"
+      },
+      {
+        "label": "Inyo wilderness regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "JMT minimum impact wilderness regulations",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "USFS Rock Creek Road closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road"
+      },
+      {
+        "label": "Sierra Rec Magazine road closure",
+        "url": "https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/"
+      },
+      {
+        "label": "USFS Rock Fire closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure"
+      },
+      {
+        "label": "Sierra Wave Rock Fire order",
+        "url": "https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/"
+      },
+      {
+        "label": "CAL FIRE Rock Fire",
+        "url": "https://www.fire.ca.gov/incidents/2026/7/20/rock-fire"
+      },
+      {
+        "label": "Wikipedia 2026 California wildfires",
+        "url": "https://en.wikipedia.org/wiki/2026_California_wildfires"
+      },
+      {
+        "label": "HikingWalking Little Lakes",
+        "url": "https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/little_lakes/little_lakes_detail"
+      },
+      {
+        "label": "TopoZone Upper Morgan Lake",
+        "url": "https://www.topozone.com/california/inyo-ca/lake/upper-morgan-lake/"
+      },
+      {
+        "label": "AllTrails Mosquito Flat to Morgan Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/mosquito-flat-to-morgan-lakes"
+      },
+      {
+        "label": "AllTrails (prod)",
+        "url": "https://prod.alltrails.com/trail/us/california/mosquito-flat-to-morgan-lakes"
+      },
+      {
+        "label": "TheOutbound",
+        "url": "https://www.theoutbound.com/yosemite/hiking/hike-mosquito-flat-to-morgan-lakes"
+      },
+      {
+        "label": "Wikiloc Lower Morgan",
+        "url": "https://www.wikiloc.com/hiking-trails/mosquito-flat-to-lower-morgan-lake-50463375"
+      },
+      {
+        "label": "Gaia GPS Upper Morgan",
+        "url": "https://www.gaiagps.com/hike/227738/upper-morgan-lake/"
+      },
+      {
+        "label": "Eastside Sports conditions report",
+        "url": "https://eastsidesports.com/blogs/adventures-trip-reports/07-may-2025-conditions-report-rock-creek-little-lakes-valley-morgan-pass"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=12917"
+      },
+      {
+        "label": "eispiraten trip report",
+        "url": "https://eispiraten.com/viewtopic.php?t=9266"
+      },
+      {
+        "label": "AmericanSouthwest",
+        "url": "https://www.americansouthwest.net/california/eastern-sierra/little-lakes-valley-trail.html"
+      },
+      {
+        "label": "Alameda Post",
+        "url": "https://alamedapost.com/features/nature/todays-california-treasure-rock-creek-road-and-little-lakes-valley/"
+      },
+      {
+        "label": "BackcountryEmily Little Lakes Valley",
+        "url": "https://backcountryemily.com/backpack-to-little-lakes-valley/"
+      },
+      {
+        "label": "BackcountryEmily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Hikeset JMT permits 2027",
+        "url": "https://hikeset.com/blog/jmt-permits-2027/"
+      },
+      {
+        "label": "Campflare Inyo",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Wikipedia Mount Morgan",
+        "url": "https://en.wikipedia.org/wiki/Mount_Morgan_(Inyo_County,_California)"
+      }
+    ],
+    "caveats": "Distance estimates range from 4.2 mi (HikingWalking) to 4.6 mi (Gaia). AllTrails, TheOutbound and Wikiloc figures of 9.6–10.7 mi round trip, and gains of 1,453–1,719 ft, are for the Lower lake. Gain going in is ~900–1,000 ft, and the return requires a ~170 ft climb back to the pass. Morgan Pass height ranges from 11,106 to 11,130 ft. Camp elevation is 10,940 ft (HikingWalking) or 10,938 ft (TopoZone/USGS). AllTrails gives slightly different coordinates (37.38856, -118.74641). Permit release split is disputed: BackcountryEmily says 50% at 6 months and Hikeset says the second release is 7 days out, but the Forest Service and Recreation.gov say 60%/40% at 6 months/2 weeks. Advance days aren't given as a fixed number (6 months same date; 2 weeks same weekday). The old mine road to Pine Creek is unusable because the hillside is unstable, so you must exit via Mosquito Flat. Rock Creek Road is closed Oct 19–23, 2026 (doesn't affect summer). The 2026 Rock Fire closures are about 25 mi south. The 2026 Cinder Complex fire's affected trails are unconfirmed, so check alerts before booking. Space for 12 people at camp is unconfirmed, the ground is rocky, and fish stocking is unconfirmed. You'll sleep at ~10,940 ft on the first night. Parking fills up. Reviews of the lake are mixed."
+  },
+  "notes": "**Upper Morgan Lake via Mosquito Flat / Morgan Pass: 73/100** (scenery 26, experience 19, access 18, permit 10)\n\nIt's an easy hike to a very high camp with outstanding day hikes nearby. Getting the permit is the hard part. The camp itself is less dramatic than the Little Lakes Valley you walk through to reach it. I checked current conditions as of October 17, 2026, so these notes are for a summer 2027 trip.\n\n## Trail numbers\n\n| Item | Best figure | Sources that disagree |\n|---|---|---|\n| Trailhead (Mosquito Flat) | ~10,240–10,255 ft. It's the highest trailhead in the Sierra, reached by paved road. | 10,255 (Alameda Post); 10,239 (lowest point on a Wikiloc GPS track) |\n| Morgan Pass | ~11,110 ft, 3.7 mi from the trailhead | 11,106 (Eastside Sports); 11,108 (Wikiloc); 11,130 (AmericanSouthwest) |\n| **One-way distance to camp** | **~4.2–4.6 mi** | HikingWalking: pass at 3.7 mi, then 0.5 mi down to the upper lake, so ~4.2 mi. Gaia lists 4.6 mi. AllTrails, TheOutbound and Wikiloc give 9.6–10.7 mi round trip, but those routes go to the *Lower* lake (Wikiloc puts Lower Morgan at almost exactly 5 mi). |\n| **Elevation gain** | **~900–1,000 ft going in.** You drop ~170 ft from the pass to the lake, then climb that ~170 ft back to the pass on the way out. | AllTrails' 1,568 ft and 1,719 ft and Wikiloc's 1,453 ft are round-trip totals to the lower lake. |\n| **Camp elevation** | **~10,940 ft** | 10,940 (HikingWalking); 10,938 (TopoZone, which uses USGS data) |\n| **Coordinates** | **37.38848° N, −118.74469° W** | AllTrails waypoint: 37.38856, −118.74641 |\n\n**Which sources I trust:** HikingWalking for the distance, because it measures each segment separately. GPS tracks usually run 5–10% longer. TopoZone/USGS for the lake's elevation and coordinates. Treat AllTrails totals as Lower-lake round trips.\n\n## Permit system (Inyo National Forest)\n- **Exact entry point name:** \"Little Lakes Valley,\" trail code **JM09**. The Forest Service trail page says Mono Pass trips need a different permit (JM08). Don't try to reach Morgan on a Mono Pass permit.\n- **Quota:** 25 people a day from May 1 to November 1. The 6-month release has **15 spots**, the 2-week release has **10**, and commercial outfitters have a separate 10.\n- **Rolling window:** Reservations open daily at **7 AM Pacific**.\n  - 60% of the quota opens **6 months ahead on the same date**. For example, a Wednesday, July 14, 2027 start opens January 14, 2027.\n  - 40% opens **2 weeks ahead on the same weekday**.\n- **Lottery:** None. Inyo only uses a lottery for Mt. Whitney.\n- **Group size:** **15 maximum**, and that includes day use. Recreation.gov also says groups can't combine to go over 15. So 12 people fit on one permit, and two permits that camp together are fine as long as the total stays at 15 or under.\n- **Booking URL:** https://www.recreation.gov/permits/233262\n- **Fees:** $6 per reservation plus $5 per person.\n- **Printing and no-shows:** You can print at home starting 7 days before. The permit is canceled if it isn't printed by **10 AM on the entry day**.\n- **Changes and refunds:** You can change dates or get a refund if you cancel at least 12 days ahead.\n- **Rules:** No campfires anywhere in the valley. Bear canisters are required. It's bighorn sheep habitat. Camp at least 100 ft from water.\n- **Conflicting permit info:** BackcountryEmily says 50% of permits open 6 months ahead, and Hikeset says the second release is 7 days out. Both disagree with the Forest Service and Recreation.gov (60% at 6 months, 40% at 2 weeks), which I trust.\n\n## Fires, closures and access\n- **Rock Creek Road** closes from the pack station to Mosquito Flat on **October 19–23, 2026** for maintenance. This doesn't affect summer.\n- **The old mine road from Morgan Lakes down to Pine Creek can't be used** because the hillside is unstable. You have to go out the way you came, via Mosquito Flat.\n- **The 2026 Rock Fire** (12,008 acres, fully contained) closed the Sawmill, Taboose, Red Lake and Birch Lake trails through December 31, 2026. That area is about 25 mi south, so it doesn't affect this route.\n- **Not confirmed:** The 2026 Cinder Complex fire (2,784 acres, Inyo County). The Forest Service page about which trails it affected wouldn't load, so I couldn't confirm where it was. The forest's permit page (updated September 28, 2026) lists no closures in the Rock Creek area. Check the forest's alerts page before booking.\n\n## Scoring\n- **Scenery 26/35:** Hiking through Little Lakes Valley, with Bear Creek Spire, Abbot, Dade and Mills above you, is iconic. Upper Morgan itself sits in a narrow talus bowl east of the pass, past a boulder field and the old mining road. Reviews are mixed: one AllTrails reviewer called it \"a stunning turquoise color,\" while a High Sierra Topix report found it \"pretty uninviting.\"\n- **Experience 19/25:** The day hikes are top-tier: Gem, Chickenfoot, Treasure and Long Lakes, Mono Pass and Ruby Lake, and Lower Morgan, which has a sandy beach. On the downside, there are no campfires, the ground is rocky, and I couldn't confirm space for 12 people. One trip report found friendlier campsites between the upper and lower lakes. I also couldn't find an agency source on fish stocking.\n- **Access 18/20:** The distance is in your sweet spot. The gain is low (~1,000 ft) and the road is paved. The catch is sleeping at about 10,940 ft on the first night. Parking fills up, and from Southern California it's about a 5-hour drive.\n- **Permit 10/20:** Getting 12 of the 15 six-month spots on a single day means being online at exactly 7 AM. Several guides call this the most popular trailhead in Inyo. A Wednesday start helps. As a backup, you could split into two permits of 6, though the 2-week release is a gamble.\n\n**Tip:** The same JM09 permit lets you camp at Gem Lakes instead, which is arguably more scenic. You could keep Morgan as a day hike.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/little-lakes-valley-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road\n- https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/\n- https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure\n- https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/\n- https://www.fire.ca.gov/incidents/2026/7/20/rock-fire\n- https://en.wikipedia.org/wiki/2026_California_wildfires\n- https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/little_lakes/little_lakes_detail\n- https://www.topozone.com/california/inyo-ca/lake/upper-morgan-lake/\n- https://www.alltrails.com/trail/us/california/mosquito-flat-to-morgan-lakes\n- https://prod.alltrails.com/trail/us/california/mosquito-flat-to-morgan-lakes\n- https://www.theoutbound.com/yosemite/hiking/hike-mosquito-flat-to-morgan-lakes\n- https://www.wikiloc.com/hiking-trails/mosquito-flat-to-lower-morgan-lake-50463375\n- https://www.gaiagps.com/hike/227738/upper-morgan-lake/\n- https://eastsidesports.com/blogs/adventures-trip-reports/07-may-2025-conditions-report-rock-creek-little-lakes-valley-morgan-pass\n- https://highsierratopix.com/community/viewtopic.php?t=12917\n- https://eispiraten.com/viewtopic.php?t=9266\n- https://www.americansouthwest.net/california/eastern-sierra/little-lakes-valley-trail.html\n- https://alamedapost.com/features/nature/todays-california-treasure-rock-creek-road-and-little-lakes-valley/\n- https://backcountryemily.com/backpack-to-little-lakes-valley/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://hikeset.com/blog/jmt-permits-2027/\n- https://campflare.com/permit/inyo\n- https://en.wikipedia.org/wiki/Mount_Morgan_(Inyo_County,_California)"
+}

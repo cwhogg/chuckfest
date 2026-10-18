@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Dicks & Fontanillis Lakes",
+    "area": "Desolation Wilderness (Lake Tahoe Basin Management Unit)",
+    "trailhead": "Eagle Falls (Emerald Bay)",
+    "why": "Two granite lakes under Dicks Peak next to Velma, with a Dicks Pass day hike for views over Lake Tahoe."
+  },
+  {
+    "name": "Lake Schmidell",
+    "area": "Desolation Wilderness (Eldorado National Forest)",
+    "trailhead": "Wrights Lake via Rockbound Pass",
+    "why": "Desolation's wildest corner of glacier-polished granite, with day hikes to Lakes Lois and Doris."
+  },
+  {
+    "name": "Island Lake",
+    "area": "Desolation Wilderness (Eldorado National Forest)",
+    "trailhead": "Twin Lakes TH (Wrights Lake)",
+    "why": "Granite-slab lake full of small islands under the Crystal Range."
+  },
+  {
+    "name": "Lake of the Woods / Ropi Lake",
+    "area": "Desolation Wilderness (Lake Tahoe Basin Management Unit)",
+    "trailhead": "Echo Lakes (water taxi optional)",
+    "why": "Base for climbing Pyramid Peak, Desolation's highest point."
+  },
+  {
+    "name": "Round Top Lake",
+    "area": "Mokelumne Wilderness (Eldorado National Forest)",
+    "trailhead": "Carson Pass",
+    "why": "Volcanic Round Top and The Sisters with famous wildflowers."
+  },
+  {
+    "name": "Raymond Lake",
+    "area": "Mokelumne Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Pacific Crest Trail at Ebbetts Pass",
+    "why": "Little-known lake under the spires of Raymond Peak."
+  },
+  {
+    "name": "Peeler Lake",
+    "area": "Hoover Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Twin Lakes / Robinson Creek",
+    "why": "Deep-blue lake on the Sierra crest at the Yosemite boundary with excellent fishing."
+  },
+  {
+    "name": "Crown Lake",
+    "area": "Hoover Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Twin Lakes",
+    "why": "Walled in by Crown Point, with day hikes to Snow Lake and Rock Island Pass."
+  },
+  {
+    "name": "Kennedy Lake",
+    "area": "Emigrant Wilderness (Stanislaus National Forest)",
+    "trailhead": "Kennedy Meadows (Hwy 108)",
+    "why": "Huge volcanic cliffs of Kennedy and Leavitt Peaks with few people."
+  },
+  {
+    "name": "Deer Lake",
+    "area": "Emigrant Wilderness (Stanislaus National Forest)",
+    "trailhead": "Crabtree or Gianelli Cabin",
+    "why": "Classic granite-slab lake country with day trips to Wire and Buck Lakes plus fishing."
+  },
+  {
+    "name": "Ten Lakes Basin",
+    "area": "Yosemite National Park",
+    "trailhead": "Ten Lakes",
+    "why": "Basin perched above the Grand Canyon of the Tuolumne, reached over a panoramic pass."
+  },
+  {
+    "name": "Vogelsang (Fletcher/Vogelsang Lakes)",
+    "area": "Yosemite National Park",
+    "trailhead": "Rafferty Creek",
+    "why": "Lakes above 10,000 ft with day hikes to Vogelsang Pass and Evelyn Lake."
+  },
+  {
+    "name": "May Lake",
+    "area": "Yosemite National Park",
+    "trailhead": "May Lake",
+    "why": "Short hike with a Mt. Hoffmann climb for views over the whole park."
+  },
+  {
+    "name": "Lake Vernon",
+    "area": "Yosemite National Park",
+    "trailhead": "Hetch Hetchy (O'Shaughnessy Dam)",
+    "why": "Huge granite slabs, passing Wapama Falls on the way."
+  },
+  {
+    "name": "Ostrander Lake",
+    "area": "Yosemite National Park",
+    "trailhead": "Glacier Point Road",
+    "why": "Granite bowl with a stone ski hut and Horse Ridge views to Half Dome."
+  },
+  {
+    "name": "Minaret Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Devils Postpile (Reds Meadow shuttle)",
+    "why": "The Minarets tower right behind the lake, with off-trail day trips to Cecile and Iceberg Lakes."
+  },
+  {
+    "name": "Iceberg Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Agnew Meadows",
+    "why": "Lake under Clyde Minaret's sheer wall."
+  },
+  {
+    "name": "Gem Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Rush Creek (Silver Lake)",
+    "why": "Turquoise dammed lake with an old tram line along the trail."
+  },
+  {
+    "name": "Lillian Lake",
+    "area": "Sierra National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Fernandez TH",
+    "why": "Quiet west-side granite lakes with Chain Lakes day hikes."
+  },
+  {
+    "name": "Deer Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Lake George, then Mammoth Crest",
+    "why": "High ridge walk along the volcanic Mammoth Crest with Ritter Range views."
+  },
+  {
+    "name": "Pioneer Basin",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Mono Pass",
+    "why": "Big lake basin under Mts. Stanford, Crocker, Hopkins and Huntington."
+  },
+  {
+    "name": "Fourth Recess Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Mono Pass",
+    "why": "Waterfall-fed lake inside a cliff-walled side canyon."
+  },
+  {
+    "name": "Big McGee / Steelhead Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "McGee Creek",
+    "why": "Red-, white- and purple-banded peaks with a McGee Pass day hike."
+  },
+  {
+    "name": "Lake Dorothy",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Convict Lake",
+    "why": "Wild canyon geology with off-trail day trips to Bighorn Lake and Lake Wit-So-Nah-Pah."
+  },
+  {
+    "name": "Honeymoon / Upper Pine Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Pine Creek",
+    "why": "Cliff-hemmed, waterfall-fed lake with few visitors and an Italy Pass day hike."
+  },
+  {
+    "name": "Humphreys Basin",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "North Lake (Piute Pass)",
+    "why": "Wide granite plateau full of lakes under Mt. Humphreys, with golden trout."
+  },
+  {
+    "name": "Treasure Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "South Lake",
+    "why": "Glacial bowl under Mt. Johnson with a Bishop Pass day hike."
+  },
+  {
+    "name": "Finger / Brainard Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "South Fork Big Pine",
+    "why": "Turquoise glacial lakes under Middle Palisade."
+  },
+  {
+    "name": "Fifth / Black Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "North Fork Big Pine",
+    "why": "Temple Crag views and a day hike to Palisade Glacier."
+  },
+  {
+    "name": "Graveyard Lakes",
+    "area": "Sierra National Forest (John Muir Wilderness)",
+    "trailhead": "Lake Edison area",
+    "why": "Remote west-side granite basin."
+  },
+  {
+    "name": "Upper Morgan Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Morgan Pass",
+    "why": "11,100-ft lake just past Little Lakes Valley."
+  },
+  {
+    "name": "Dusy Basin",
+    "area": "Kings Canyon National Park",
+    "trailhead": "South Lake via Bishop Pass (Inyo permit)",
+    "why": "Bare granite basin with high lakes and towering peaks."
+  },
+  {
+    "name": "Charlotte Lake",
+    "area": "Kings Canyon National Park",
+    "trailhead": "Onion Valley via Kearsarge Pass",
+    "why": "Beyond the Kearsarge Lakes with Charlotte Dome as the backdrop."
+  },
+  {
+    "name": "Franklin Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King",
+    "why": "Rainbow-colored rock with a Franklin Pass day hike."
+  },
+  {
+    "name": "Monarch Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King (Sawtooth)",
+    "why": "Under Sawtooth Peak, with a Sawtooth Pass view NPS calls one of the grandest in the southern Sierra."
+  },
+  {
+    "name": "Crystal Lake",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King (Sawtooth)",
+    "why": "Steep climb to a dammed alpine lake with views over the valley."
+  },
+  {
+    "name": "Twin Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Lodgepole",
+    "why": "Lakes under Silliman Crest."
+  },
+  {
+    "name": "Jennie Lake",
+    "area": "Sequoia National Forest (Jennie Lakes Wilderness)",
+    "trailhead": "Big Meadows",
+    "why": "Granite cirque with no permit needed if you stay inside the wilderness."
+  },
+  {
+    "name": "Chicken Spring Lake",
+    "area": "Inyo National Forest (Golden Trout Wilderness)",
+    "trailhead": "Cottonwood Pass",
+    "why": "At about 11,250 ft, the closest match to the well-loved Cottonwood Lakes."
+  },
+  {
+    "name": "Maggie Lakes",
+    "area": "Sequoia National Forest (Golden Trout Wilderness)",
+    "trailhead": "Summit TH (Mountain Home)",
+    "why": "Rarely visited west-side lakes with golden trout."
+  }
+]

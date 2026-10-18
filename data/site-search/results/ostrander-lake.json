@@ -1,0 +1,177 @@
+{
+  "candidate": {
+    "name": "Ostrander Lake",
+    "area": "Yosemite National Park",
+    "trailhead": "Glacier Point Road",
+    "why": "Granite bowl with a stone ski hut and Horse Ridge views to Half Dome."
+  },
+  "site": {
+    "name": "Ostrander Lake",
+    "region": "Yosemite National Park - Glacier Point Road",
+    "area": "Yosemite Wilderness",
+    "description": "A granite-wrapped basecamp lake at about 8,500 ft beneath the roughly 900 ft cliff of Horse Ridge, with plenty of benched campsites on the west and north shores, trout fishing, and swimmable water. The trail has views of the Clark Range and the back of Half Dome, and Horse Ridge makes a good scramble day hike. The 2026 Dome Fire crossed the access trail, so check whether it has reopened before planning.",
+    "latitude": 37.6244,
+    "longitude": -119.5506,
+    "difficulty": "moderate",
+    "distanceMiles": 6.2,
+    "elevationGainFt": 1600,
+    "campElevationFt": 8500,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "lottery",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Ostrander (Lost Bear Meadow)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445859",
+    "permitNotes": "Daily quota is 25: 15 through the lottery plus 10 in the week-ahead release. 60% of spots go through a weekly lottery 24 weeks ahead. Each application week runs Sunday 12:01 am to Saturday 11:59 pm Pacific; results come Monday, and you must accept and pay by Thursday. Up to 8 options per application. Lotteries run mid-November to early May. Leftover spots go first-come, first-served at 9 am Pacific on the Friday 22 weeks ahead. The other 40% is released 7 days ahead at 7 am Pacific. For a mid-July 2027 start, the lottery week is around mid-to-late January 2027; confirm the exact week. Group limit is 15 on trail, or 8 if traveling more than 1/4 mile off-trail. A group of 12 would use 12 of the 15 daily lottery spots. Backup entry point: Bridalveil Creek (15+10). Fees: $10 per application plus $5 per person; maximum 6 future reservations. The trip leader or alternate must pick up the permit in person at a wilderness center, the day before (8-5) or the same day (8-11). Campfires are allowed in existing rings below 9,600 ft unless restrictions are in effect.",
+    "sceneryScore": 21,
+    "experienceScore": 17,
+    "accessScore": 15,
+    "permitScore": 13,
+    "rankingNotes": "66/100: solid granite basecamp lake with fishing and a Horse Ridge scramble, but not iconic, and the access trail was burned by the 2026 Dome Fire.",
+    "sources": [
+      {
+        "label": "NPS Wilderness Permit Reservations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wpres.htm"
+      },
+      {
+        "label": "NPS Wilderness FAQ",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildfaq.htm"
+      },
+      {
+        "label": "NPS Trailheads",
+        "url": "https://www.nps.gov/yose/planyourvisit/trailheads.htm"
+      },
+      {
+        "label": "NPS Wilderness Regulations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildregs.htm"
+      },
+      {
+        "label": "NPS Glacier Point Hikes",
+        "url": "https://www.nps.gov/yose/planyourvisit/glacierhikes.htm"
+      },
+      {
+        "label": "NPS Conditions",
+        "url": "https://www.nps.gov/yose/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "NPS Dome Fire Update Oct 5 2026",
+        "url": "https://www.nps.gov/yose/learn/news/dome-fire-update-october-5-2026-morning.htm"
+      },
+      {
+        "label": "NPS Dome Fire Update Oct 12 2026",
+        "url": "https://www.nps.gov/yose/learn/news/dome-fire-update-october-12-2026-morning.htm"
+      },
+      {
+        "label": "NPS Dome Fire Update Oct 13 2026",
+        "url": "https://www.nps.gov/yose/learn/news/dome-fire-update-october-13-2026-morning.htm"
+      },
+      {
+        "label": "NPS Dome Fire Update Oct 2 2026",
+        "url": "https://www.nps.gov/yose/learn/news/dome-fire-update-october-2-2026-morning.htm"
+      },
+      {
+        "label": "Recreation.gov Yosemite Wilderness Permits",
+        "url": "https://www.recreation.gov/permits/445859"
+      },
+      {
+        "label": "CAL FIRE Dome Fire",
+        "url": "https://www.fire.ca.gov/incidents/2026/9/15/dome-fire"
+      },
+      {
+        "label": "InciWeb Dome Fire",
+        "url": "https://inciweb.wildfire.gov/incident-information/caynp-dome-fire"
+      },
+      {
+        "label": "AccuWeather Dome Fire human-caused",
+        "url": "https://www.accuweather.com/en/weather-news/yosemites-dome-fire-identified-as-human-caused/1942128"
+      },
+      {
+        "label": "KMPH Dome Fire acreage",
+        "url": "https://kmph.com/news/local/dome-fire-burns-over-6000-acres"
+      },
+      {
+        "label": "KMPH Glacier Point Road closure",
+        "url": "https://kmph.com/news/local/yosemite-officials-glacier-point-road-closure-not-season-ending-no-imminent-threat"
+      },
+      {
+        "label": "MyMotherLode Glacier Point Road reopening",
+        "url": "https://mymotherlode.com/news/local/11208812/glacier-point-road-to-reopen.html"
+      },
+      {
+        "label": "Unofficial Networks ski hut wrap",
+        "url": "https://unofficialnetworks.com/2026/10/12/firefighters-wrap-historic-yosemite-ski-hut-to-protect-it-from-wildfire/"
+      },
+      {
+        "label": "YosemiteHikes Ostrander Lake",
+        "url": "https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/ostrander-lake.htm"
+      },
+      {
+        "label": "YosemiteHikes Trail Map",
+        "url": "https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/trail-map.htm"
+      },
+      {
+        "label": "YosemiteHikes Reviews",
+        "url": "https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/reviews.htm"
+      },
+      {
+        "label": "Wikipedia Ostrander Lake",
+        "url": "https://en.wikipedia.org/wiki/Ostrander_Lake"
+      },
+      {
+        "label": "Trailforks Ostrander Lake",
+        "url": "https://www.trailforks.com/trails/ostrander-lake/"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/ostrander-lake-in-yosemite-national-park/"
+      },
+      {
+        "label": "AllTrails (search snippet only)",
+        "url": "https://www.alltrails.com/trail/us/california/ostrander-lake-trail"
+      },
+      {
+        "label": "Sierra News Online 1",
+        "url": "https://sierranewsonline.com/hiking-to-ostrander-lake-2/"
+      },
+      {
+        "label": "Sierra News Online 2",
+        "url": "https://sierranewsonline.com/hiking-from-glacier-point-road-to-ostrander-lake-2/"
+      },
+      {
+        "label": "Sierra News Online 3",
+        "url": "https://sierranewsonline.com/ostrander-lake-hike-318/"
+      },
+      {
+        "label": "Hike734",
+        "url": "https://hike734.com/hikingyosemite/ostrander-lake/"
+      },
+      {
+        "label": "Wanderlizt",
+        "url": "https://www.wanderlizt.com/post/backpacking-to-ostrander-lake-in-yosemite"
+      },
+      {
+        "label": "Outdoorstatus (wrong mileage)",
+        "url": "https://outdoorstatus.com/trips/us/california/yosemite-national-park/ostrander-lake/"
+      },
+      {
+        "label": "Wilderness Beta Yosemite permits",
+        "url": "https://wildernessbeta.com/permits/yosemite-wilderness/"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=16424"
+      },
+      {
+        "label": "Sierra Rec Magazine Glacier Point project",
+        "url": "https://sierrarecmagazine.com/yosemite-national-park-shares-update-of-glacier-point-project/"
+      }
+    ],
+    "caveats": "The 2026 Dome Fire (started Sept 15, about 6,788 acres, 100% contained Oct 17, 2026) crossed the Ostrander Lake Trail on Oct 1. As of mid-October 2026, all trails heading south or east from Glacier Point Road, including Ostrander, were closed, and no source says whether the trail will reopen for summer 2027. Expect burned-tree hazards and trail repair; check the NPS conditions page before entering the January lottery. The first miles also pass through 1987 and 2017 Empire Fire burn scars, with about 0.75 mi of exposed, overgrown brush, so the trail is hot and exposed. Glacier Point Road was closed Sept 23 to Oct 10, 2026 and has reopened. Mileage figures range from 12 to 12.59 mi round trip; the 4.5 mi figure from Outdoorstatus is wrong. Elevation gain figures range from 1,500 to 1,833 ft. Camp elevation is roughly 8,500-8,550 ft. Coordinates come from Wikipedia and were not checked against USGS maps. The exact lottery week was not confirmed because the park's permit-dates page timed out. Bridalveil Creek mileage as a backup entry point is unconfirmed. The ski hut is closed in summer."
+  },
+  "notes": "I'd give Ostrander Lake **66/100 (Scenery 21 / Experience 17 / Access 15 / Permit 13)**. It's a good basecamp lake with granite views, but it isn't the iconic, high-alpine kind of place your group wants. There's also a new problem: a wildfire burned across the access trail in fall 2026, and that may still affect summer 2027.\n\n## Recent fire and closures (most important)\n- **2026 Dome Fire.** Started Sept 15, 2026 near Chilnualna Falls, caused by an abandoned campfire. About 6,788 acres. CAL FIRE lists it as 100% contained on Oct 17, 2026.\n- **It reached the trail.** On Oct 1 the fire crossed the Ostrander Lake Trail. Firefighters wrapped the Ostrander Ski Hut at the lake in fire-resistant material and set up sprinklers. A helicopter crashed southeast of the lake on Sept 20, killing both pilots.\n- **Still closed as of mid-October 2026.** The park says every trail heading south or east from Glacier Point Road is closed, which includes Ostrander. Glacier Point Road itself was closed Sept 23 to Oct 10 and has reopened. No source says yet whether the trail will reopen for summer 2027. Expect burned-tree hazards and trail repair.\n- **Older burns.** The first miles of trail already go through scars from a 1987 fire and the 2017 Empire Fire. A 2024–25 trip report describes about 0.75 mi of exposed, overgrown brush on the climb.\n- **Older road closure.** Glacier Point Road was closed all of 2022 for rebuilding. That work is done.\n\n## Key figures\n| Item | Value | Notes / conflicts |\n|---|---|---|\n| One-way miles | **~6.2 mi** | Park service: 12 mi round trip. YosemiteHikes: 12.4. AllTrails: 12.3. Trailforks: 6.1 one-way. Modern Hiker: exactly 6 mi. GPS logs from Sierra News Online: 12.56–12.59 round trip. Outdoorstatus says 4.5 mi, which is wrong. I trust about 6.2 mi. |\n| Elevation gain | **~1,600–1,650 ft** | Park service: 1,500. YosemiteHikes: 1,600. Trailforks: 1,645 up, 113 down. Modern Hiker and a 2024–25 trip report: 1,800. AllTrails: 1,833. The park figure looks rounded; the 1,800s probably count small ups and downs. |\n| Camp elevation | **~8,500–8,550 ft** | Most sources say 8,500, which is rounded. GPS tracks end around 8,547; tracks that reach 8,613–8,625 likely include the area around the hut. |\n| Trailhead | ~7,000 ft, Glacier Point Road | Signed lot with a vault toilet |\n| Coordinates | **37.6244, −119.5506** | From Wikipedia; I didn't check this against USGS maps myself |\n\n## Permits (Yosemite wilderness permit)\n- **Entry point name:** \"Ostrander (Lost Bear Meadow)\". Daily limit: 15 people through the lottery plus 10 in the week-ahead release, so 25 a day.\n- **Backup entry point:** \"Bridalveil Creek\" (15 + 10). The trail from the campground connects to the Ostrander route. I haven't confirmed the mileage, but it's a possible second trailhead if you split.\n- **Group size:** maximum 15 on trail, or 8 if traveling more than ¼ mile off-trail. Your 12 fit on one permit. The catch is that 12 people take up 12 of the 15 lottery spots for that day.\n- **Booking:** https://www.recreation.gov/permits/445859\n  - 60% of spots go through a weekly lottery 24 weeks ahead.\n  - The application week runs Sunday 12:01 am to Saturday 11:59 pm Pacific. Results come Monday, and you must accept and pay by Thursday.\n  - Up to 8 options per application. You can mix dates, trailheads and group sizes (for example, 12 on Ostrander, or 6 on each trailhead).\n  - Lotteries run from mid-November to early May.\n  - Leftover spots go first-come, first-served at 9 am Pacific on the Friday 22 weeks ahead.\n  - The other 40% is released 7 days ahead at 7 am Pacific.\n- **For a mid-July 2027 Wednesday start**, the lottery week falls around mid-to-late January 2027. The park's permit-dates page timed out, so check the exact week there.\n- **Fees:** $10 per application plus $5 per person. You can hold at most 6 future reservations.\n- **Pickup:** the trip leader or alternate must pick up in person at a wilderness center, either the day before (8–5) or the same day (8–11).\n- **Campfires:** allowed in existing fire rings below 9,600 ft, unless fire restrictions are in effect.\n\n## Scoring\n- **Scenery 21/35.** A pretty lake under Horse Ridge, a cliff about 900 ft high above its south end. The trail has views of the Clark Range and the back of Half Dome. YosemiteHikes calls it a \"pretty, granite-wrapped\" lake typical of the area, which isn't iconic. The water isn't turquoise, it's only 8,500 ft, and the approach now goes through fresh burn.\n- **Experience 17/25.**\n  - Plenty of campsites on benches on the west and north shores, with fire rings.\n  - Recent trip reports describe good trout fishing (10–12 in) and cold but swimmable water.\n  - Scrambling Horse Ridge is a great day hike.\n  - Few other well-known day hikes start from camp. The ski hut is closed in summer.\n- **Access 15/20.** About 0.7 mi longer than your sweet spot, but the gain matches it. Paved road to the trailhead. It's a long drive into Yosemite, and the trail is hot and exposed after the fires.\n- **Permit 13/20.** The daily limit is decent and YosemiteHikes calls crowds \"medium.\" But your group needs 12 of the 15 lottery spots on a single day, and Yosemite's lottery is competitive. A Wednesday start helps. I found no official demand rating for this trailhead.\n\nCaveat: if the trail is still closed in summer 2027, it's a no-go no matter what it scores. Check the park's conditions page before you enter the January lottery.\n\n## URLs used\n- https://www.nps.gov/yose/planyourvisit/wpres.htm\n- https://www.nps.gov/yose/planyourvisit/wildfaq.htm\n- https://www.nps.gov/yose/planyourvisit/trailheads.htm\n- https://www.nps.gov/yose/planyourvisit/wildregs.htm\n- https://www.nps.gov/yose/planyourvisit/glacierhikes.htm\n- https://www.nps.gov/yose/planyourvisit/conditions.htm\n- https://www.nps.gov/yose/learn/news/dome-fire-update-october-5-2026-morning.htm\n- https://www.nps.gov/yose/learn/news/dome-fire-update-october-12-2026-morning.htm\n- https://www.nps.gov/yose/learn/news/dome-fire-update-october-13-2026-morning.htm\n- https://www.nps.gov/yose/learn/news/dome-fire-update-october-2-2026-morning.htm\n- https://www.recreation.gov/permits/445859\n- https://www.fire.ca.gov/incidents/2026/9/15/dome-fire\n- https://inciweb.wildfire.gov/incident-information/caynp-dome-fire\n- https://www.accuweather.com/en/weather-news/yosemites-dome-fire-identified-as-human-caused/1942128\n- https://kmph.com/news/local/dome-fire-burns-over-6000-acres\n- https://kmph.com/news/local/yosemite-officials-glacier-point-road-closure-not-season-ending-no-imminent-threat\n- https://mymotherlode.com/news/local/11208812/glacier-point-road-to-reopen.html (it says the road closed in \"mid-December,\" a typo for Sept 23)\n- https://unofficialnetworks.com/2026/10/12/firefighters-wrap-historic-yosemite-ski-hut-to-protect-it-from-wildfire/\n- https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/ostrander-lake.htm\n- https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/trail-map.htm\n- https://www.yosemitehikes.com/glacier-point-road/ostrander-lake/reviews.htm\n- https://en.wikipedia.org/wiki/Ostrander_Lake\n- https://www.trailforks.com/trails/ostrander-lake/\n- https://modernhiker.com/hike/ostrander-lake-in-yosemite-national-park/\n- https://www.alltrails.com/trail/us/california/ostrander-lake-trail (search snippet only; the page wouldn't load)\n- https://sierranewsonline.com/hiking-to-ostrander-lake-2/\n- https://sierranewsonline.com/hiking-from-glacier-point-road-to-ostrander-lake-2/\n- https://sierranewsonline.com/ostrander-lake-hike-318/\n- https://hike734.com/hikingyosemite/ostrander-lake/\n- https://www.wanderlizt.com/post/backpacking-to-ostrander-lake-in-yosemite\n- https://outdoorstatus.com/trips/us/california/yosemite-national-park/ostrander-lake/ (source of the wrong 4.5 mi figure)\n- https://wildernessbeta.com/permits/yosemite-wilderness/\n- https://www.highsierratopix.com/community/viewtopic.php?t=16424\n- https://sierrarecmagazine.com/yosemite-national-park-shares-update-of-glacier-point-project/"
+}

@@ -1,0 +1,165 @@
+{
+  "candidate": {
+    "name": "Minaret Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Devils Postpile (Reds Meadow shuttle)",
+    "why": "The Minarets tower right behind the lake, with off-trail day trips to Cecile and Iceberg Lakes."
+  },
+  "site": {
+    "name": "Minaret Lake",
+    "region": "Eastern Sierra - Ansel Adams Wilderness",
+    "area": "Reds Meadow / Devils Postpile, Mammoth Lakes (Inyo National Forest)",
+    "description": "A deep-blue alpine lake directly beneath Clyde Minaret and the jagged Minarets, with scenery close to Thousand Island Lake's. Camp here works as a base for day hikes to Cecile and Iceberg Lakes (rough class-2 scrambling) and Volcanic Ridge. The daily quota of 10 people is smaller than the group of 12, and there are no campfires.",
+    "latitude": 37.6594,
+    "longitude": -119.1567,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.7,
+    "elevationGainFt": 2400,
+    "campElevationFt": 9799,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Minaret Lake (AA11)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "The quota is 10 people per day from May 1 to November 1. A trip report says 6 spots are reservable 6 months ahead (same calendar date, 7 AM Pacific) and 4 are released 2 weeks ahead (same weekday, 7 AM). Booking is online only, first come first served, with no lottery. The group size maximum is 15 including day use, and permits can't be combined to exceed 15. A group of 12 can't start here on one day, so either go with 10 people or split into two groups of 6 on back-to-back days. Print your permit up to 7 days ahead and before 10 AM on the start date, or it's canceled. You must start on the permitted date and at the permitted entry point, and leader or alternate names can't be changed. Recreation.gov only issues reservations on days Reds Meadow Road is expected to be fully open. Bear canisters are required, and campfires are banned at Minaret Lake under a forest order in effect to June 10, 2027. The permit doesn't cover the JMT north of Johnston Meadow.",
+    "sceneryScore": 33,
+    "experienceScore": 21,
+    "accessScore": 11,
+    "permitScore": 3,
+    "rankingNotes": "Top-tier view of the Minarets over a deep-blue lake, but the 10-person daily quota and the Reds Meadow road schedule make it a poor fit for a group of 12 (68/100).",
+    "sources": [
+      {
+        "label": "Recreation.gov permit 233262",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "USFS Minaret Lake Trail",
+        "url": "https://fs.usda.gov/r05/inyo/recreation/trails/minaret-lake-trail"
+      },
+      {
+        "label": "USFS recarea",
+        "url": "https://www.fs.usda.gov/recarea/inyo/recreation/recarea/?recid=20540&actid=42"
+      },
+      {
+        "label": "Inyo wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo wilderness regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "Reds Meadow Road reconstruction",
+        "url": "https://www.fs.usda.gov/r05/inyo/projects/reds-meadow-road-reconstruction"
+      },
+      {
+        "label": "Campfire restrictions order",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/05-04-50-25-04%20Ansel%20Adams%20&%20John%20Muir%20Campfire%20Restrictions.pdf"
+      },
+      {
+        "label": "NPS Devils Postpile conditions",
+        "url": "https://www.nps.gov/depo/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "The Sheet 2026-04-30",
+        "url": "https://thesheetnews.com/2026/04/30/the-end-of-the-road-construction/"
+      },
+      {
+        "label": "Visit Mammoth opening updates",
+        "url": "https://www.visitmammoth.com/blogs/summer-opening-updates-reds-meadow-valley-and-yosemite-national-park/"
+      },
+      {
+        "label": "Visit Mammoth activity updates",
+        "url": "https://www.visitmammoth.com/travel-info/activity-updates/"
+      },
+      {
+        "label": "Mono County spring update",
+        "url": "https://www.monocounty.org/blog/post/spring-update-and-current-conditions/"
+      },
+      {
+        "label": "2025 Reds shuttle brochure",
+        "url": "https://www.estransit.com/files/de6ec915f/2025RedsShuttleBrochure.pdf"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=23381"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/destinations/explore-mammoth-california/hiking-backpacking-from-reds-meadow/"
+      },
+      {
+        "label": "TopoQuest",
+        "url": "https://topoquest.com/place/california/lake/minaret-lake/263664"
+      },
+      {
+        "label": "Topozone",
+        "url": "https://www.topozone.com/california/madera-ca/lake/minaret-lake/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Minaret_Lake"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/minaret-lake"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/minaret-lake-via-devils-postpile/"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/minaret-lake/"
+      },
+      {
+        "label": "She Dreams of Alpine",
+        "url": "https://www.shedreamsofalpine.com/blog/minaret-lake-hike"
+      },
+      {
+        "label": "Somewhere Sierra",
+        "url": "https://somewheresierra.com/minaretlake/"
+      },
+      {
+        "label": "Outdoor Aunties",
+        "url": "https://outdooraunties.medium.com/trip-report-backpacking-minaret-lake-ansel-adams-wilderness-ca-a220049d0ae5"
+      },
+      {
+        "label": "Backcountrycow",
+        "url": "https://www.backcountrycow.com/blog/backpacking-minaret-lake-mammoth"
+      },
+      {
+        "label": "Hike Now Work Later",
+        "url": "https://hikenoworklater.com/2015/08/12/trail-report-devils-postpile-national-monument-minaret-lake-trail/"
+      },
+      {
+        "label": "Stormdude",
+        "url": "https://stormdude.com/hab/hikes/ml/ml.html"
+      },
+      {
+        "label": "Raimer Adventures",
+        "url": "https://raimeradventures.wordpress.com/2021/06/06/minaret-lake/"
+      },
+      {
+        "label": "Follow Tiff's Journey",
+        "url": "https://followtiffsjourney.com/minaret-lake-loop/"
+      },
+      {
+        "label": "Explore More Nature",
+        "url": "https://www.exploremorenature.com/minaretcecileiceberglakes"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      }
+    ],
+    "caveats": "Distance is about 6.7–7 mi one way; Stormdude says 8 mi. Gain estimates range from 2,300 to 2,600 ft, and the 2,400–2,600 ft range is considered most reliable. Camp is 9,799 ft (USGS); others round to 9,800. Wikipedia's coordinates differ by about 120 m. The 6/4 quota split comes from a trip report. permitAdvanceDays is null because the two release windows (6 months and 2 weeks) don't fit a single day count. She Dreams of Alpine gives the quota season as June to mid-September, but the Forest Service says May 1 to November 1. In 2026, from July 6 to September 2, Reds Meadow Road was open only Thursday 7 AM to Sunday 11 PM, so Wednesday starts weren't possible, and the shuttle was mandatory. Construction may extend into 2027 (likely a few weeks of paving near Minaret Vista), so check the status before the booking window opens. Road opening dates varied: July 21 in 2023, July 3 in 2025, June 13 in 2026, so early-July trips carry snow risk. Fire reports weren't checked directly; check Inyo alerts and InciWeb. Fishing quality is unverified. Finding campsites for 12 near the lake will be tight."
+  },
+  "notes": "I scored **Minaret Lake 68/100 (33 / 21 / 11 / 3)**. The scenery is close to Thousand Island Lake's, but two problems keep it out of the group's top tier. The daily permit quota is smaller than the group, and road construction in 2026 made a Wednesday start impossible.\n\n## The two dealbreakers\n\n**1. The permit quota is 10 people a day, and the group is 12.** The Forest Service trail page says that from May 1 to November 1 overnight visitors are limited to 10 people per day (fs.usda.gov Minaret Lake Trail page and recarea page). One trip report breaks this down as 6 reservable 6 months ahead and 4 released 2 weeks ahead. That matches Inyo's standard 60/40 split. So 12 people can't all start at this entry point on the same day, even with two permits. The workable options are:\n- Two groups of 6 starting on back-to-back days. Each needs all 6 reservable spots at 7:00 AM on its release day.\n- Cap the trip at 10 people: 6 from the 6-month release plus 4 from the 2-week release.\n\nThe Minaret Lake permit doesn't cover the John Muir Trail north of Johnston Meadow. Using another entry point's permit to camp here would go against the quota's intent, so I wouldn't count on that. Ask the Inyo wilderness office if you want to try it.\n\n**2. In 2026 the road wasn't open on Wednesdays.** From July 6 to September 2, 2026, Reds Meadow Road was open only from 7 AM Thursday to 11 PM Sunday, and the shuttle was mandatory (The Sheet, April 30, 2026). Recreation.gov only takes reservations from the Reds Meadow trailheads, including Minaret Lake, on days the road is expected to be fully open. Overnight permits aren't issued while the road is closed. The Forest Service hoped to finish construction by the end of 2026. If it runs into 2027, the remaining work would probably be a few weeks of paving near Minaret Vista. **Check the status before the booking window opens.**\n\n## Trip facts\n\n| Item | Best figure | Sources / conflicts |\n|---|---|---|\n| One-way distance | **About 6.7–7 mi** | AllTrails 13.4 mi round trip; Modern Hiker 13.5; Somewhere Sierra 13.4; OutdoorStatus 7 one-way; trip reports say 6.5–7. Stormdude says 8, which I think is high. |\n| Elevation gain | **About 2,400–2,600 ft** | AllTrails 2,375; Outdoor Aunties 2,347; Somewhere Sierra 2,437; Hike Now Work Later about 2,500; Backcountrycow 2,586; Modern Hiker 2,600; OutdoorStatus 2,300. The net climb from about 7,560 ft to 9,800 ft is about 2,240 ft. I trust the 2,400–2,600 range. |\n| Camp elevation | **9,799 ft** | The USGS place-name database via TopoQuest gives 9,799 ft; Wikipedia, Topozone and Modern Hiker round to 9,800. |\n| Coordinates | **37.6594° N, 119.1567° W** | From the USGS database via TopoQuest. Wikipedia's 37.6597, −119.1581 is about 120 m away. |\n| Trailhead | Devils Postpile Visitor Center (shuttle stop #6) | Follows the JMT/PCT past Minaret Falls, then turns up Minaret Creek at Johnston Meadow. |\n\n## Permit system\n- **Entry point:** \"Minaret Lake\" (code AA11), Ansel Adams Wilderness, Inyo National Forest.\n- **Booking:** recreation.gov/permits/233262, online only.\n- **Release times:** 60% of the quota opens 6 months ahead at 7 AM Pacific, on the same calendar date (a July 14 start opens January 14). The other 40% opens 2 weeks ahead, on the same weekday, at 7 AM.\n- **Quota season:** May 1 to November 1. She Dreams of Alpine says \"June to mid-September,\" but I trust the Forest Service.\n- **No lottery.** I found none for this trailhead; first come, first served.\n- **Group size:** 15 maximum, day use included. Permits can't be combined to exceed 15, so two permits totaling 12 are fine.\n- **Pickup:** print your own permit up to 7 days ahead, and before 10 AM on the start date or it's canceled. The group must start on the date and at the entry point on the permit, and leader or alternate names can't be changed.\n- **Rules:** bear canisters required. No campfires at Minaret Lake (forest order in effect to June 10, 2027).\n\n## Access and closure history\n- **Shuttle:** mandatory, from the Mammoth Mountain Adventure Center (Main Lodge). In 2025 a day pass was $15 per adult. Private cars are allowed only when the road is open and the shuttle isn't running.\n- **Road opening dates (NPS):** 2023 opened July 21 after the big snow year; 2025 opened July 3; 2026 opened June 13. Early-July trips carry some snow risk.\n- **Fire:** none of the 2026 agency pages I read (Inyo regulations updated September 28, 2026; NPS alerts; the Recreation.gov notice) mentions a fire closure here. I ran out of searches before I could check fire reports directly, so look at Inyo alerts and InciWeb before booking.\n\n## Score: 68/100\n\n- **Scenery, 33/35.** Clyde Minaret and the Minarets rise right above a deep-blue lake, as dramatic as anything in the Sierra. I took 2 points off Thousand Island because the Minarets are dark volcanic rock rather than classic white granite.\n- **Experience, 21/25.** Strong day hikes from camp: Cecile and Iceberg Lakes (rough, class-2 scrambling) and Volcanic Ridge, about 11,500 ft. Points off because there are no campfires and finding sites for 12 near the lake will be tight. I couldn't verify fishing quality from these sources.\n- **Access, 11/20.** About 7 mi and 2,500 ft is roughly 1.5 times their usual distance and gain, though within the hard limits. The mandatory shuttle and the road schedule add hassle.\n- **Permit, 3/20.** With a quota of 10 a day and only 6 reservable, one group of 12 on one day isn't possible. It only works as a 10-person trip or two parties on different days.\n\n**Bottom line:** the view is outstanding, but this entry point doesn't fit a group of 12. Do it only if you'll go with 10, or split across two start days, and the 2027 road schedule allows Wednesday starts.\n\n## URLs used\n- https://www.recreation.gov/permits/233262\n- https://fs.usda.gov/r05/inyo/recreation/trails/minaret-lake-trail\n- https://www.fs.usda.gov/recarea/inyo/recreation/recarea/?recid=20540&actid=42\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.fs.usda.gov/r05/inyo/projects/reds-meadow-road-reconstruction\n- https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/05-04-50-25-04%20Ansel%20Adams%20&%20John%20Muir%20Campfire%20Restrictions.pdf\n- https://www.nps.gov/depo/planyourvisit/conditions.htm\n- https://thesheetnews.com/2026/04/30/the-end-of-the-road-construction/\n- https://www.visitmammoth.com/blogs/summer-opening-updates-reds-meadow-valley-and-yosemite-national-park/\n- https://www.visitmammoth.com/travel-info/activity-updates/\n- https://www.monocounty.org/blog/post/spring-update-and-current-conditions/\n- https://www.estransit.com/files/de6ec915f/2025RedsShuttleBrochure.pdf\n- https://highsierratopix.com/community/viewtopic.php?t=23381\n- https://sierrarecmagazine.com/destinations/explore-mammoth-california/hiking-backpacking-from-reds-meadow/\n- https://topoquest.com/place/california/lake/minaret-lake/263664\n- https://www.topozone.com/california/madera-ca/lake/minaret-lake/\n- https://en.wikipedia.org/wiki/Minaret_Lake\n- https://www.alltrails.com/trail/us/california/minaret-lake\n- https://modernhiker.com/hike/minaret-lake-via-devils-postpile/\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/minaret-lake/\n- https://www.shedreamsofalpine.com/blog/minaret-lake-hike\n- https://somewheresierra.com/minaretlake/\n- https://outdooraunties.medium.com/trip-report-backpacking-minaret-lake-ansel-adams-wilderness-ca-a220049d0ae5\n- https://www.backcountrycow.com/blog/backpacking-minaret-lake-mammoth\n- https://hikenoworklater.com/2015/08/12/trail-report-devils-postpile-national-monument-minaret-lake-trail/\n- https://stormdude.com/hab/hikes/ml/ml.html\n- https://raimeradventures.wordpress.com/2021/06/06/minaret-lake/\n- https://followtiffsjourney.com/minaret-lake-loop/\n- https://www.exploremorenature.com/minaretcecileiceberglakes\n- https://backcountryemily.com/california-backpacking-permits/"
+}

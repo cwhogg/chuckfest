@@ -1,0 +1,153 @@
+{
+  "candidate": {
+    "name": "Honeymoon / Upper Pine Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Pine Creek",
+    "why": "Cliff-hemmed, waterfall-fed lake with few visitors and an Italy Pass day hike."
+  },
+  "site": {
+    "name": "Honeymoon Lake",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Pine Creek, Inyo National Forest (near Bishop)",
+    "description": "A medium-sized lake ringed by rock and meadow, about 6.1 mi up Pine Creek Canyon past Pine Lake. It makes an excellent basecamp for day hikes to Granite Park, Pine Creek Pass, Italy Pass and Mt. Julius Caesar. The trip starts with a steep, exposed climb, and a group of 12 needs two entry permits.",
+    "latitude": 37.3396214,
+    "longitude": -118.7433647,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.1,
+    "elevationGainFt": 3200,
+    "campElevationFt": 10436,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Pine Creek Pass (JMT) (JM11)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF rolling first-come, first-served permits; no lottery. Daily limits apply May 1 to Nov 1. 60% of spots release 6 months before the start date and 40% release 2 weeks before, both at 7:00 AM Pacific. Cancelled spots return within 24 hours. JM11 Pine Creek Pass allows 15 people per day (9 at the 6-month release, 6 at the 2-week release). JM10 Italy Pass (Pine Creek) allows 8 per day (5 and 3). Both start at the same trailhead and pass Honeymoon Lake. A group of 12 needs two permits with two leaders: either 9 on JM11 plus 3 on JM10 at the 6-month release, or 9 at 6 months plus 3 from the 2-week release. Cost is $6 per permit plus $5 per person. Permits are self-printed and are cancelled if not printed before the no-show deadline. Call the Inyo wilderness office to confirm the two permit groups can camp together.",
+    "sceneryScore": 26,
+    "experienceScore": 21,
+    "accessScore": 10,
+    "permitScore": 11,
+    "rankingNotes": "Strong basecamp with a real 'wow' day hike to Granite Park, but a tier below epic and a steep 3,200 ft climb in (68/100).",
+    "sources": [
+      {
+        "label": "Inyo NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "JMT Min Impact Wilderness Regs",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf"
+      },
+      {
+        "label": "John Muir Wilderness map",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf"
+      },
+      {
+        "label": "Campflare Inyo",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Backcountry Emily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Backcountry Emily Granite Park",
+        "url": "https://backcountryemily.com/granite-park-backpacking/"
+      },
+      {
+        "label": "Pathloom Inyo permits",
+        "url": "https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind"
+      },
+      {
+        "label": "The Big Outside permits",
+        "url": "https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/"
+      },
+      {
+        "label": "Sierra Rec quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Sierra Rec Pine Creek reopened",
+        "url": "https://sierrarecmagazine.com/inyo-national-forest-announces-pine-creek-trail-re-opened-gable-lakes-trail-repairs-underway/"
+      },
+      {
+        "label": "AllTrails Pine Lake and Honeymoon Lake",
+        "url": "https://www.alltrails.com/trail/us/california/pine-lake-and-honeymoon-lake"
+      },
+      {
+        "label": "AllTrails Honeymoon Lake Trail",
+        "url": "https://prod.alltrails.com/trail/us/california/honeymoon-lake-trail"
+      },
+      {
+        "label": "AllTrails recording",
+        "url": "https://www.alltrails.com/explore/recording/pine-creek-to-honeymoon-lake"
+      },
+      {
+        "label": "AllTrails Upper Pine Lake",
+        "url": "https://www.alltrails.com/poi/us/california/bishop/upper-pine-lake"
+      },
+      {
+        "label": "yourownhike",
+        "url": "https://yourownhike.com/trips/inyonf2020jun/"
+      },
+      {
+        "label": "Mid Sierra Musing",
+        "url": "https://midsierramusing.blogspot.com/2020/08/pine-creek-trail-to-honeymoon-lake-part.html"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=22347"
+      },
+      {
+        "label": "Calitrails",
+        "url": "https://calitrails.com/2012/05/31/pine-creek-to-honeymoon-lake/"
+      },
+      {
+        "label": "Beyond Limits on Foot",
+        "url": "https://beyond-limits-on-foot.com/pine-creek-to-honeymoon-lake-inyo-national-forest/"
+      },
+      {
+        "label": "Calipidder",
+        "url": "https://www.calipidder.com/2010/10/pine-creek-to-granite-park-bear-lakes-loop-day-1/"
+      },
+      {
+        "label": "TopoZone Honeymoon Lake",
+        "url": "https://www.topozone.com/california/inyo-ca/lake/honeymoon-lake-2/"
+      },
+      {
+        "label": "HometownLocator",
+        "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,261439,n,honeymoon%20lake.cfm"
+      },
+      {
+        "label": "Mindat",
+        "url": "https://www.mindat.org/feature-5357830.html"
+      },
+      {
+        "label": "Inyo County road update 3/14/23",
+        "url": "https://www.inyocounty.us/sites/default/files/2023-03/CURRENT%20ROAD%20UPDATE%203.14.23%20REV.%20B.pdf"
+      },
+      {
+        "label": "Inyo County road update 4/12/23",
+        "url": "https://www.inyocounty.us/sites/default/files/2023-04/CURRENT%20ROAD%20UPDATE%204.12.23.pdf"
+      },
+      {
+        "label": "Inyo County road update 3/17/26",
+        "url": "https://www.inyocounty.us/sites/default/files/2026-03/CURRENT%20ROAD%20UPDATE%20%20%2003.17.26.pdf"
+      }
+    ],
+    "caveats": "One-way distance figures vary from 5.85 to 6.5 mi, and gain varies from about 3,000 to 3,225 ft. The two-month and two-week releases were not stated as exact day counts, so permitAdvanceDays is left null. It is unconfirmed whether two separate permit groups can camp together. A 2021 rockslide closed the trail temporarily; it has since been repaired. Pine Creek Rd closed for flooding in March 2023 and was open per the March 2026 county report. Current Forest Service alerts and 2025–26 fires were not checked. The trail has two creek crossings that can run high in snowmelt, and the climb is exposed and hot. No campfires are allowed. Upper Pine Lake's coordinates and elevation are unknown, and its fallback-camp figures are estimates."
+  },
+  "notes": "Now the official quota sheet and other key sources.\nHoneymoon Lake fits all of your hard limits, but I score it **68/100**, a good trip rather than an epic one. The two big catches are the climb in, which is about twice your usual gain, and that a group of 12 needs two permits.\n\n## Key facts\n\n| Item | Finding | Source I trust |\n|---|---|---|\n| **Trailhead** | Pine Creek, about 12 mi north of Bishop off US-395, up Pine Creek Canyon Rd. Trailhead is at about 7,440 ft. | yourownhike (7,440 ft); Backcountry Emily rounds it to 7,500 |\n| **Miles to Honeymoon Lake (one way)** | **About 6.1 mi.** Other figures: 5.85, 6.0, 6.26 and 6.5 mi. | AllTrails' main listing (12.2 mi round trip), which matches most of the other numbers |\n| **Gain to Honeymoon** | **About 3,200 ft.** AllTrails GPS gives 3,149–3,225 ft; blogs say \"3,000 ft,\" which is closer to the net climb. | AllTrails |\n| **Upper Pine Lake (fallback camp)** | About 4.5–5.4 mi and roughly 2,800 ft of gain. These are my estimates from Backcountry Emily's distances and AllTrails' 10.7-mi round-trip route. | Not confirmed |\n| **Camp elevation** | **Honeymoon Lake is about 10,436 ft.** I couldn't confirm Upper Pine Lake's elevation. | TopoZone (USGS Mount Tom map) |\n| **Honeymoon Lake coordinates** | **37.3396214, -118.7433647** (USGS place-name database ID 261439) | TopoZone, HometownLocator and Mindat all agree |\n| **Upper Pine Lake coordinates** | Not found. It's on the trail between Pine Lake and Honeymoon Lake. | Check CalTopo or the USGS place-name database |\n\n**About the climb:** Backcountry Emily (2024) gained 2,300 ft in the first 2.75 mi, on exposed switchbacks along an old mining road. It's hot by mid-morning, so start early. There are two creek crossings that can run high during snowmelt: the Lower Pine Lake outlet (on a log) and the Honeymoon outlet.\n\n## Permits\n- **System:** Inyo National Forest permits are first-come, first-served on a rolling window. **There is no lottery.** The season with daily limits runs May 1 to November 1.\n  - 60% of each day's spots open 6 months before the start date.\n  - The other 40% open 2 weeks before.\n  - Releases happen at **7:00 AM Pacific**. Cancelled spots come back within 24 hours.\n  - Example: a Wednesday, July 14, 2027 start opens January 14, 2027.\n- **Booking:** https://www.recreation.gov/permits/233262. Cost is $6 per permit plus $5 per person. You print the permit yourself, and the reservation is cancelled if you don't print it before the no-show deadline.\n- **Entry points, from the Forest Service's official limits sheet:**\n  - **\"Pine Creek Pass (JMT)\", code JM11:** 15 people per day, with 9 available at 6 months and 6 at 2 weeks.\n  - **\"Italy Pass (Pine Creek)\", code JM10:** 8 people per day, with 5 available at 6 months and 3 at 2 weeks.\n  - Both start from the same trailhead and both trails pass Honeymoon Lake.\n- **Group size:** the maximum is 15 people.\n- **The problem for 12 people:** no single entry point has 12 spots at the 6-month release. Two ways to do it:\n  - **Option A:** book 9 on JM11 and 3 on JM10 at 7:00 AM on release day. That's 12 of the 14 spots available that day.\n  - **Option B:** book 9 at 6 months, then get 3 more from the 2-week release.\n\n  Either way, you'll have two permits with two different leaders. Pine Creek is less crowded than nearby trailheads, but these daily limits are small. I'm inferring that a party on two different entry permits can camp together at Honeymoon; Backcountry Emily says Granite Park trips should book Italy Pass. **Call the Inyo wilderness office to confirm before you book.**\n\n## Fire, closures and access\n- **2021:** a rockslide at about 8,700 ft closed the trail from July 21 to August 2. It was repaired and reopened.\n- **March 2023:** Pine Creek Road closed for flooding. It was open again by April 2023.\n- **March 2026:** the latest Inyo County road report shows Pine Creek Rd **open**.\n- I couldn't check current Forest Service alerts or 2025–26 fires because I hit my search limit, so check those before you go.\n- **At the trailhead:** a dirt parking lot with bear lockers, no toilets or water, and no campground.\n- **Rules:** no campfires (the lake is above 10,000 ft). Camps must be at least 100 ft from water and the trail.\n\n## Score: 68/100\n\n- **Scenery 26/35.** Pine Creek canyon has huge granite walls and waterfalls, and Pine Lake is a gem. But Honeymoon itself is a medium-sized lake ringed by rocks and meadow, and one report calls Upper Pine Lake \"much smaller and boggier.\" It's not as iconic as Thousand Island or Upper Lamarck, and you won't get turquoise water.\n- **Experience 21/25.** It's an excellent basecamp. Lower Granite Park is about 1 mi and 600 ft above camp, there's a longer Granite Park loop, and Pine Creek Pass is about 2 mi away. Italy Pass and a scramble up Mt. Julius Caesar are big-day options. A 2022 trip report did exactly this camp-plus-day-hike plan. Trout are reported at Pine Lake's outlet and people fish at Honeymoon. The downsides: campsites for 12 are spread out (Backcountry Emily found the west shore sites too close to the trail), the lake is cold and windy for swimming, and the route to Granite Park is a faint, unmaintained trail marked with rock piles.\n- **Access 10/20.** 6.1 mi is a bit past your sweet spot. 3,200 ft is double your average and close to your 3,500-ft limit, on a steep, exposed climb. The drive is easy and fully paved.\n- **Permit 11/20.** Demand is lower than at the popular Inyo trailheads, but the daily limits are small and you need two permits.\n\n**Upper Pine Lake as camp:** about 66 (24/18/13/11). It's a slightly easier hike in but a weaker basecamp.\n\n**Verdict:** a strong basecamp with a real \"wow\" day hike to Granite Park. It's still a tier below your epic benchmarks, and the climb in costs more than you're used to.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf\n- https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/JOHN%20MUIR%20WILDERNESS.pdf\n- https://campflare.com/permit/inyo\n- https://backcountryemily.com/california-backpacking-permits/\n- https://backcountryemily.com/granite-park-backpacking/\n- https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind\n- https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://sierrarecmagazine.com/inyo-national-forest-announces-pine-creek-trail-re-opened-gable-lakes-trail-repairs-underway/\n- https://www.alltrails.com/trail/us/california/pine-lake-and-honeymoon-lake\n- https://prod.alltrails.com/trail/us/california/honeymoon-lake-trail\n- https://www.alltrails.com/explore/recording/pine-creek-to-honeymoon-lake\n- https://www.alltrails.com/poi/us/california/bishop/upper-pine-lake\n- https://yourownhike.com/trips/inyonf2020jun/\n- https://midsierramusing.blogspot.com/2020/08/pine-creek-trail-to-honeymoon-lake-part.html\n- https://www.highsierratopix.com/community/viewtopic.php?t=22347\n- https://calitrails.com/2012/05/31/pine-creek-to-honeymoon-lake/\n- https://beyond-limits-on-foot.com/pine-creek-to-honeymoon-lake-inyo-national-forest/\n- https://www.calipidder.com/2010/10/pine-creek-to-granite-park-bear-lakes-loop-day-1/\n- https://www.topozone.com/california/inyo-ca/lake/honeymoon-lake-2/\n- https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,261439,n,honeymoon%20lake.cfm\n- https://www.mindat.org/feature-5357830.html\n- https://www.inyocounty.us/sites/default/files/2023-03/CURRENT%20ROAD%20UPDATE%203.14.23%20REV.%20B.pdf\n- https://www.inyocounty.us/sites/default/files/2023-04/CURRENT%20ROAD%20UPDATE%204.12.23.pdf\n- https://www.inyocounty.us/sites/default/files/2026-03/CURRENT%20ROAD%20UPDATE%20%20%2003.17.26.pdf"
+}

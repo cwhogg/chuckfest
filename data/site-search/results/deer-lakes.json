@@ -1,0 +1,137 @@
+{
+  "candidate": {
+    "name": "Deer Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Lake George, then Mammoth Crest",
+    "why": "High ridge walk along the volcanic Mammoth Crest with Ritter Range views."
+  },
+  "site": {
+    "name": "Deer Lakes via Mammoth Crest",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Mammoth Lakes Basin (Lake George / Crystal Lake TH)",
+    "description": "A steep, exposed climb from Lake George up to Mammoth Crest, with huge views of the Ritter Range, Middle Fork canyon and Silver Divide, then a descent to three high-alpine lakes. It makes a good basecamp for day hikes along the crest and to Duck, Pika, Barney and Upper Deer Lakes. Campsites are rocky and exposed, there are no campfires, and fitting 12 people will be tight.",
+    "latitude": 37.5615,
+    "longitude": -118.9922,
+    "difficulty": "strenuous",
+    "distanceMiles": 5.75,
+    "elevationGainFt": 2250,
+    "campElevationFt": 10600,
+    "peakElevationFt": 11190,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Deer Lakes",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF wilderness permit with rolling daily release at 7 AM Pacific; no lottery. Quota is 10 people per day from May 1 to Nov 1: 6 spots open 6 months ahead (e.g., July 4 entry opens Jan 4) and 4 open 2 weeks ahead. Commercial and public permits share the quota. Group size limit is 15, and separate groups can't combine to exceed it. The group must start on the permit date at the permit entry point. The permit is cancelled if not printed by 10 AM on the entry date; it can be printed at home up to a week ahead. All 12 can't enter here on one day. Suggested split: 6 on Deer Lakes and 6 on Duck Pass (quota 30, 18 reservable 6 months ahead), connected by a use trail over a saddle.",
+    "sceneryScore": 27,
+    "experienceScore": 18,
+    "accessScore": 14,
+    "permitScore": 10,
+    "rankingNotes": "Spectacular Mammoth Crest ridge walk to a high-alpine lake basecamp, but the 10-person daily quota forces a split group and the climb in is steep and dry.",
+    "sources": [
+      {
+        "label": "USFS Deer Lakes trail page",
+        "url": "https://www.fs.usda.gov/recarea/inyo/recreation/outdoorlearning/recarea?actid=50&recid=20498"
+      },
+      {
+        "label": "Inyo trail names and quotas (2021)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Inyo wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "Mammoth Mill Site closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/mammoth-mill-site-area-and-trail-closure"
+      },
+      {
+        "label": "Outdoorstatus",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/lake-george-to-deer-lakes/"
+      },
+      {
+        "label": "Hikingwalking",
+        "url": "https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/mammoth_lakes/mammoth_crest/mammoth_crest_detail"
+      },
+      {
+        "label": "AllTrails Deer Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/lake-george-to-deer-lakes"
+      },
+      {
+        "label": "AllTrails Mammoth Crest Loop",
+        "url": "https://www.alltrails.com/trail/us/california/mammoth-crest-loop"
+      },
+      {
+        "label": "AllTrails Lake George",
+        "url": "https://www.alltrails.com/poi/us/california/mammoth-lakes/lake-george"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/mammoth-crest/695333"
+      },
+      {
+        "label": "HikeArizona",
+        "url": "https://hikearizona.com/decoder.php?ZTN=20019"
+      },
+      {
+        "label": "NWHikers",
+        "url": "https://www.nwhikers.net/forums/viewtopic.php?p=1233583"
+      },
+      {
+        "label": "Follow Tiff's Journey",
+        "url": "https://followtiffsjourney.com/hike-mammoth-crest/"
+      },
+      {
+        "label": "The Unremarkable Climber",
+        "url": "https://theunremarkableclimber.com/deer-lakes-trail-duck-lake-pass-backpacking-mammoth-lakes/"
+      },
+      {
+        "label": "Forever She Wanders - Deer Lakes Loop",
+        "url": "https://forevershewanders.com/backpacking-deer-lakes-loop-a-solo-backcountry-birthday/"
+      },
+      {
+        "label": "Forever She Wanders - Mammoth Crest Loop",
+        "url": "https://forevershewanders.com/backpacking-mammoth-crest-loop/"
+      },
+      {
+        "label": "Evan Quarnstrom",
+        "url": "https://evanquarnstrom.com/2020/07/28/gems-eastern-sierra-nevada-deer-lakes-loop/"
+      },
+      {
+        "label": "Eastern Sierra Now May 2026",
+        "url": "https://www.easternsierranow.com/mammoth-lakes-community-e-news-may-1-2026/"
+      },
+      {
+        "label": "Mono County update",
+        "url": "https://www.monocounty.org/blog/post/spring-update-and-current-conditions/"
+      },
+      {
+        "label": "Town of Mammoth Lakes",
+        "url": "https://www.townofmammothlakes.ca.gov/228/Parks-and-Facilities-Update"
+      },
+      {
+        "label": "Mammoth Trails conditions",
+        "url": "https://www.mammothtrails.org/trail-conditions/"
+      },
+      {
+        "label": "CAL FIRE Mammoth Fire",
+        "url": "https://www.fire.ca.gov/incidents/2025/7/24/mammoth-fire"
+      }
+    ],
+    "caveats": "Distance figures conflict: 5.4 mi one way (Outdoorstatus) up to 12.1 mi round trip (AllTrails); 5.75 mi is used here. Gain is about 2,200–2,300 ft going in, plus about 600 ft of descent to the lakes and about 700 ft of climb back over the crest on the way out. The 3,000+ ft figures are round-trip totals. Camp elevation and coordinates come from Outdoorstatus map pins and were not checked against official sources. permitAdvanceDays is left null because the release is stated as 6 months (6 spots) and 2 weeks (4 spots), not a single day count. The quota table is a 2021 PDF, and the trail code is truncated. Fishing, permit fees and the Duck Pass-to-Deer Lakes mileage (estimated at about 6–7 mi with some route-finding) are unconfirmed. No campfires are allowed above 10,000 ft, and a forest-wide Stage 1 fire restriction was in effect. Bear canisters are highly recommended. No camping at Crystal Lake. The hike in is exposed with little water, Lake George parking can mean long waits, and lakes fill on holiday weekends. The old Deer Creek trail has been impassable since the 2011–12 windstorm. HikeArizona's map shows part of the 2020 Creek Fire perimeter near the loop. Reds Meadow Road is closed for reconstruction, which only affects side trips toward Devils Postpile. The Lakes Basin road was listed open as of June 3, 2026."
+  },
+  "notes": "# Deer Lakes via Mammoth Crest (Lake George / Crystal Lake TH): **69/100**\n\n**The main problem is permits.** The Deer Lakes entry point allows only 10 people per day. Only 6 of those spots can be booked 6 months ahead, so all 12 of you can't start there on the same day. Getting 6 spots at once is also hard: if anyone else books even one seat that day, a group of 6 no longer fits. The scenery is very good but probably not \"talk about it for years\" good, and the hike in is steeper and harder than your usual trip.\n\n## Trail facts\n\n| Item | Best figure | Sources and conflicts |\n|---|---|---|\n| **One-way miles to camp** | **About 5.5–6 mi** to Lower/Middle Deer Lake. Upper Deer Lake is a bit farther. | Outdoorstatus says 5.4 mi. Hikingwalking says 11.5 mi round trip (5.75 each way). AllTrails says 12.1 mi round trip (about 6). An NWHikers report says 11.2 mi round trip. SummitPost says about 5 mi. HikeArizona's separate Deer Lakes page says 11.4 mi round trip. |\n| **Elevation gain going in** | **About 2,200–2,300 ft**, plus about 600 ft of descent from the crest down to the lakes. | Outdoorstatus says 2,300 ft. Hikingwalking says 2,165 ft to the 11,190 ft high point on the crest. The 3,000–3,175 ft figures (AllTrails, HikeArizona Deer Lakes page) are **round-trip** totals, because you climb about 600–700 ft back over the crest on the way out. Outdoorstatus lists 700 ft of gain for the return. Loop reports of 2,933–3,748 ft include Duck Pass and other side trips. |\n| **Trailhead / high point** | About 9,020–9,040 ft / about 11,190–11,200 ft | HikeArizona, Hikingwalking and NWHikers agree. |\n| **Camp elevation** | **About 10,600 ft** | From Outdoorstatus's campsite map pin (3,230 m). I couldn't confirm official elevations for each lake. |\n| **Coordinates** | **About 37.5615° N, 118.9922° W** (camp area). Trailhead is about 37.6036° N, 119.0112° W. | From Outdoorstatus map pins. I couldn't check them against the official USGS place-name database (GNIS). The Wikipedia \"Upper Deer Lake\" article is a different lake in Idaho. |\n\n**Which sources I trust:** For distance and gain I trust Outdoorstatus and Hikingwalking, because their separate segment numbers add up consistently. I treat the AllTrails figures as round-trip totals. For rules I trust the Forest Service trail page. The Forest Service quota table is a 2021 PDF, but its 10-person quota matches the current Forest Service trail page.\n\n## Permits\n- **System:** Inyo National Forest Wilderness Permits, booked at **https://www.recreation.gov/permits/233262**. There's **no lottery**; it's a rolling daily release.\n- **Entry point name:** **\"Deer Lakes\"** in the Inyo quota table. The trail code is cut off in the PDF text (\"JM0…\").\n- **Quota:** 10 people per day from May 1 to Nov 1. 6 spots open 6 months ahead and 4 open 2 weeks ahead. Commercial and public permits share the same quota.\n- **Release times:** Every day at **7 AM Pacific**. For example, a July 4 entry opens January 4. The 40% share opens 2 weeks ahead on the same weekday at 7 AM.\n- **Other rules:**\n  - Groups are limited to **15 people**, and separate groups can't combine to go over 15.\n  - The group has to start on the date and at the entry point on the permit.\n  - The permit is cancelled if it isn't printed by **10 AM on the entry date**. You can print it at home up to a week ahead.\n- **Splitting the group:** Put 6 people on Deer Lakes. Put the other 6 on **Duck Pass** (quota 30, 18 reservable 6 months ahead), which connects to Deer Lakes by a use trail over a saddle. Twelve camping together stays under the 15-person limit. I couldn't confirm the Duck Pass-to-Deer Lakes mileage; I estimate about 6–7 mi, with some route-finding.\n\n## Fire, closures and access\n- **No closures affecting this trail that I could find.** The Lake Mary gate opened May 2, 2026, and the Lakes Basin road was listed open as of June 3, 2026.\n- **No campfires** at Deer Lakes or anywhere above 10,000 ft. A Stage 1 fire restriction was also in effect across the forest.\n- **Food storage:** The Forest Service says there are probably no suitable trees for hanging food, so it highly recommends bear canisters.\n- **No camping at Crystal Lake.**\n- **Old Deer Creek trail:** Impassable since a 2011–12 windstorm knocked down thousands of trees.\n- **Other notes:**\n  - The 2025 \"Mammoth Fire\" was in Modoc County, not here.\n  - HikeArizona's map shows part of the 2020 Creek Fire perimeter near the Deer Lakes loop.\n  - Reds Meadow Road is closed for reconstruction, which only matters for side trips toward Devils Postpile.\n  - The Mammoth Mill Site closure is near Old Mammoth Road, not the Lakes Basin.\n- **Trip reports warn** that the hike in is exposed with little water, parking at Lake George can mean a long wait on busy days, and Middle Deer Lake was full on a holiday weekend.\n\n## Score: 69/100\n\n- **Scenery: 27/35.** The walk along Mammoth Crest has huge views of the Ritter Range, the Middle Fork canyon, Duck Lake and the Silver Divide. The three lakes are pretty high-alpine lakes, but they're less iconic than Thousand Island Lake.\n- **Experience: 18/25.** It works well as a basecamp, with day hikes along the crest, over to Duck Lake, Pika Lake and Barney Lake, and to Upper Deer Lake. However:\n  - Campsites are rocky and exposed, so fitting 12 people will be tight.\n  - You can't have campfires.\n  - One report says the water was only warm enough to swim for about 45 minutes a day.\n  - **I couldn't confirm the fishing.**\n- **Access: 14/20.** The drive is easy (paved, just outside Mammoth). But 2,200–2,300 ft of gain is above your usual 1,600 ft, near your 2,377 ft maximum. The 5.5–6 mi is also at the top of your 3.6–5.5 mi range. The climb is steep, exposed and dry, ending at about 10,600 ft, and there's a climb back over the crest on the way out.\n- **Permit: 10/20.** It has the same 10/6/4 quota that Lamarck got 12 for. I scored it lower because you'd have to split across two entry points or days, and you need 6 seats free at once on the 7 AM release.\n\n**Gaps:** I ran out of web searches before I could confirm the fishing, the official lake coordinates and elevations, the permit fees, or the Duck Pass-to-Deer Lakes mileage. Check those before committing.\n\n## URLs used\n- https://www.fs.usda.gov/recarea/inyo/recreation/outdoorlearning/recarea?actid=50&recid=20498\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://www.fs.usda.gov/r05/inyo/alerts/mammoth-mill-site-area-and-trail-closure\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/lake-george-to-deer-lakes/\n- https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/mammoth_lakes/mammoth_crest/mammoth_crest_detail\n- https://www.alltrails.com/trail/us/california/lake-george-to-deer-lakes\n- https://www.alltrails.com/trail/us/california/mammoth-crest-loop\n- https://www.alltrails.com/poi/us/california/mammoth-lakes/lake-george\n- https://www.summitpost.org/mammoth-crest/695333\n- https://hikearizona.com/decoder.php?ZTN=20019\n- https://www.nwhikers.net/forums/viewtopic.php?p=1233583\n- https://followtiffsjourney.com/hike-mammoth-crest/\n- https://theunremarkableclimber.com/deer-lakes-trail-duck-lake-pass-backpacking-mammoth-lakes/\n- https://forevershewanders.com/backpacking-deer-lakes-loop-a-solo-backcountry-birthday/\n- https://forevershewanders.com/backpacking-mammoth-crest-loop/\n- https://evanquarnstrom.com/2020/07/28/gems-eastern-sierra-nevada-deer-lakes-loop/\n- https://www.easternsierranow.com/mammoth-lakes-community-e-news-may-1-2026/\n- https://www.monocounty.org/blog/post/spring-update-and-current-conditions/\n- https://www.townofmammothlakes.ca.gov/228/Parks-and-Facilities-Update\n- https://www.mammothtrails.org/trail-conditions/\n- https://www.fire.ca.gov/incidents/2025/7/24/mammoth-fire"
+}

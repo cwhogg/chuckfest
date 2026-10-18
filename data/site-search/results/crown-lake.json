@@ -1,0 +1,101 @@
+{
+  "candidate": {
+    "name": "Crown Lake",
+    "area": "Hoover Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Twin Lakes",
+    "why": "Walled in by Crown Point, with day hikes to Snow Lake and Rock Island Pass."
+  },
+  "site": {
+    "name": "Crown Lake",
+    "region": "Eastern Sierra - Hoover Wilderness",
+    "area": "Twin Lakes / Robinson Creek, Bridgeport Ranger District, Humboldt-Toiyabe National Forest",
+    "description": "A small granite-bowl lake under Crown Point, The Juggernaut and Sawtooth Ridge, with strong reflections and excellent day hikes to Kerrick Meadow, Peeler Lake, Mule Pass and Rock Island Pass. The hike in is about 8 miles and 2,600 ft, well beyond the group's usual range, but permits are relatively easy with no lottery and a 15-person group limit. Consider splitting the approach with one night at Barney Lake.",
+    "latitude": 38.12,
+    "longitude": -119.43,
+    "difficulty": "strenuous",
+    "distanceMiles": 8,
+    "elevationGainFt": 2600,
+    "campElevationFt": 9473,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Robinson Creek",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445856",
+    "permitNotes": "Quota season June 15–Oct 15; Robinson Creek 50/day (25 advance on rolling 6-month window, 25 released 3 days before entry). Recreation.gov says 3-day release at 7 a.m. PDT; FS page says 8 a.m. MST; 6-month release time unstated. Max group 15; separate permits can't combine above 15. $8/person 13+ plus $6 fee (~$102 for 12). Cancel 14+ days ahead for refund. Signed paper permit printed by 10 a.m. on start day. Bear canisters required; camp 100 ft from lakes, streams, trails. Barney Lake: one night only, no fires. Possible Sawtooth Ridge Zone 8-person cap—call Bridgeport RD 760-932-7070. FS quota table code HH077 (possibly a typo, also assigned to Little Slide Canyon).",
+    "sceneryScore": 30,
+    "experienceScore": 20,
+    "accessScore": 10,
+    "permitScore": 15,
+    "rankingNotes": "Top-tier granite-bowl scenery and day hikes with an easy no-lottery permit, but a long 8 mi / 2,600 ft approach (75/100; ~80 if split via Barney Lake).",
+    "sources": [
+      {
+        "label": "USFS Hoover Wilderness",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness"
+      },
+      {
+        "label": "USFS Hoover Wilderness Permits",
+        "url": "https://fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness-permits"
+      },
+      {
+        "label": "Recreation.gov Hoover Wilderness Permits",
+        "url": "https://www.recreation.gov/permits/445856"
+      },
+      {
+        "label": "USFS Robinson Creek Trailhead",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/robinson-creek-trailhead"
+      },
+      {
+        "label": "USFS Twin Lakes camping closure",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/camping-closure-twin-lakes-bridgeport-ranger-district"
+      },
+      {
+        "label": "USFS Twin Lakes Road camping prohibition",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/twin-lakes-road-camping-prohibition-bridgeport-ranger-district"
+      },
+      {
+        "label": "Permit Ranger Hoover",
+        "url": "https://permitranger.com/permits/hoover"
+      },
+      {
+        "label": "Sierra Rec Magazine permit fees",
+        "url": "https://sierrarecmagazine.com/new-hoover-wilderness-permit-fees/"
+      },
+      {
+        "label": "High Sierra Trails Barney Lake",
+        "url": "https://highsierratrails.com/barney/barney_resources.html"
+      },
+      {
+        "label": "Live and Let Hike",
+        "url": "https://liveandlethike.com/2021/01/02/crown-lake-kerrick-meadow-peeler-lake-loop-hoover-wilderness-yosemite-national-park-ca/"
+      },
+      {
+        "label": "Lily Tang",
+        "url": "https://lilymtang.com/blog/crown-point-loop-hoover-wilderness/"
+      },
+      {
+        "label": "Saumya trip report",
+        "url": "https://saumyadebray.blogspot.com/2025/09/yosemite-matterhorn-canyonbenson-lake.html"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/barney-robinson-and-crown-lakes-trail"
+      },
+      {
+        "label": "Campendium Mono Village",
+        "url": "https://maps.campendium.com/us/bridgeport-ca/vacation-rentals/annetts-mono-village"
+      },
+      {
+        "label": "Wikipedia Crown Point",
+        "url": "https://en.wikipedia.org/wiki/Crown_Point_(Sierra_Nevada)"
+      }
+    ],
+    "caveats": "Coordinates are an unconfirmed estimate—verify on CalTopo. Mileage ranges 7.6–8.5 and gain 2,500–2,867 ft across sources. Release time conflict (7 a.m. PDT vs 8 a.m. MST); 6-month release time not stated. Sawtooth Ridge Zone 8-person cap boundary unconfirmed. AllTrails alert unread. Twin Lakes Road camping ban (Mar 2026–Mar 2031) outside developed campgrounds; Stage 1 fire restrictions in 2026. No trailhead parking—paid lot at Mono Village. Limited campsites for 12; fish species in Crown Lake unconfirmed."
+  },
+  "notes": "I scored Crown Lake **75/100 (30 / 20 / 10 / 15)**. That puts it a few points below Thousand Island Lake (81) and Lamarck Lakes (79). The scenery and day hikes are top tier, but the hike in is about 8 miles with about 2,600 ft of gain, well beyond what your group has done before. The permit is the easiest part: Hoover Wilderness has no lottery and allows up to 15 people on one permit. The research tools stopped working partway through, so I could not confirm the lake's coordinates or check AllTrails' current alert.\n\n## Trail facts\n\n| Item | Best figure | What the sources say |\n|---|---|---|\n| One-way miles | **About 8 mi** (7.6–8.5) | Live and Let Hike: 7.6 mi to the lake (2021). Lily Tang: 8.3 mi from Crown Lake back to the trailhead (Oct 2024). AllTrails: 16.9 mi round trip (8.45 each way). Saumya (Aug 2025): \"8+ miles.\" |\n| Gain | **About 2,500–2,850 ft** | Live and Let Hike: \"nearly 2,500 ft.\" Lily Tang: 2,583 ft lost on the hike out. Saumya: 2,800 ft. AllTrails: 2,867 ft. |\n| Camp elevation | **9,473 ft** | Lily Tang. Nearby Peeler Lake is 9,488 ft and Rock Island Pass is 10,157 ft. |\n| Start elevation | 7,100–7,300 ft | The Forest Service lists the Robinson Creek trailhead at 7,300 ft. Mono Village (where you park) is about 7,100 ft, and Lily Tang's GPS low point is 7,142 ft. |\n| Coordinates | **About 38.12° N, 119.43° W (my estimate, not confirmed)** | My lookups were blocked before I could get the official figure. Crown Point, which towers over the lake, is at 38.1110° N, 119.4576° W (Wikipedia). Check the lake on CalTopo before relying on this. |\n\n**Which numbers I trust:** I'd plan on about 8 miles and 2,600 ft. Trip reports that start from the paid lot at Mono Village include an extra walk through the resort to the trailhead, which explains the higher figures. The steepest part comes late: about 700 ft of switchbacks in roughly half a mile after the creek crossing at mile 4.85. Both numbers are within your hard limits but about 50–75% above your usual 4.5 mi / 1,600 ft.\n\n## Permits\n\n- **Booking page:** recreation.gov/permits/445856, listed as \"Humboldt-Toiyabe National Forest – Hoover Wilderness Permits.\"\n- **Entry point:** \"Robinson Creek.\" The Forest Service quota table gives its code as HH077, but it also gives HH077 to Little Slide Canyon, so one of those is probably a typo.\n- **Quota season:** June 15 to October 15. Robinson Creek allows 50 people per day: 25 bookable in advance and 25 released close to the date.\n- **No lottery.** The advance half is a rolling 6‑month window.\n  - Example: a Wednesday, July 14, 2027 start would open around January 14, 2027.\n  - The other half is released 3 days before entry. For a Wednesday start, that's the Sunday before.\n- **Release time conflict:**\n  - Recreation.gov says the 3‑day release is at 7 a.m. PDT.\n  - The Forest Service page says 8 a.m. MST.\n  - Permit Ranger (a third‑party guide) says 7 a.m. Pacific for both releases.\n  - I trust recreation.gov. Recreation.gov doesn't state the time for the 6‑month release, so I'd be online at 7 a.m. Pacific.\n- **Group size:** 15 maximum, so one permit covers 12 people. Groups on separate permits can't combine above 15. Note that a group of 12 would use about half of a day's 25 advance spots.\n- **Cost:** $8 per person aged 13+ plus a $6 fee, so about $102 for 12 adults. Cancel at least 14 days ahead for a refund. You must carry a signed paper permit, printed by 10 a.m. on the day you start.\n- **Camping and fire rules:**\n  - Bear canisters are required.\n  - Camp at least 100 ft from lakes, streams and trails. Live and Let Hike says 50 yards; I trust the agency's 100 ft.\n  - Barney Lake: one night only, no camping within 100 ft of the shore, and no campfires.\n- **Group-size risk to check:** the \"Sawtooth Ridge Zone\" caps groups at 8 people. Crown Lake sits below the western end of Sawtooth Ridge, and I couldn't confirm where the zone's boundary is. Call the Bridgeport Ranger District at 760‑932‑7070 before booking.\n\n## Fire, closures and access\n\n- I found no trail or wilderness closures. The Forest Service lists the Robinson Creek trailhead as open.\n- There's a **camping ban within 0.5 mi of Twin Lakes Road** from March 5, 2026 to March 5, 2031. Only the developed campgrounds (Robinson Creek, Lower Twin, Honeymoon Flat and others) are exempt, so book one of those for the night before.\n- Bridgeport Ranger District had Stage 1 fire restrictions and \"High\" fire danger in 2026.\n- There's no parking at the trailhead itself. You pay to park at Mono Village, 13.5 mi from Bridgeport.\n- AllTrails shows \"1 alert\" on this trail, but I couldn't read what it says.\n\n## Scores\n\n- **Scenery 30/35:** The lake sits in a granite bowl under Crown Point, The Juggernaut and Sawtooth Ridge, with strong reflections. Live and Let Hike called it \"one of the most stunning places\" the author had seen. It's not quite Thousand Island Lake: the lake is small and has a marshy meadow on its south side.\n- **Experience 20/25:** Day hikes are excellent: an 8.8‑mile loop through Kerrick Meadow and Peeler Lake, plus Mule Pass and Rock Island Pass. Hoover Wilderness lakes hold brook, brown, rainbow and golden trout, but I couldn't confirm which live in Crown Lake. Campsites are limited (\"some decent\" ones east of the creek, plus the meadow), so space for 12 is uncertain. Expect a few other groups on summer weekends.\n- **Access 10/20:** It's about 8 mi and 2,600 ft, with a steep finish at altitude, plus the walk from paid parking. That's far outside your sweet spot.\n- **Permit 15/20:** There's no lottery, one permit covers 12, a Wednesday start helps, and the 3‑day release is a backup. Lily Tang describes Hoover permits as \"much less competitive\" than in the neighboring Inyo National Forest wilderness areas. The risk is that 12 people take half a day's advance spots.\n\n**Suggestion:** spend the first night near Barney Lake (about 4 mi, about 1,200 ft, roughly 8,250 ft). That's a lake camp within your sweet spot, and one night is the legal limit there. Move up to Crown Lake on Thursday, which is about 3.5–4 mi and 1,250 ft. Spend two nights there and hike out Sunday, about 8 mi mostly downhill. Done that way, I'd raise access to about 15, for a total of about 80.\n\n## Sources\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness\n- https://fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness-permits\n- https://www.recreation.gov/permits/445856\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/robinson-creek-trailhead\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/camping-closure-twin-lakes-bridgeport-ranger-district\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/twin-lakes-road-camping-prohibition-bridgeport-ranger-district\n- https://permitranger.com/permits/hoover\n- https://sierrarecmagazine.com/new-hoover-wilderness-permit-fees/\n- https://highsierratrails.com/barney/barney_resources.html\n- https://liveandlethike.com/2021/01/02/crown-lake-kerrick-meadow-peeler-lake-loop-hoover-wilderness-yosemite-national-park-ca/\n- https://lilymtang.com/blog/crown-point-loop-hoover-wilderness/\n- https://saumyadebray.blogspot.com/2025/09/yosemite-matterhorn-canyonbenson-lake.html\n- https://www.alltrails.com/trail/us/california/barney-robinson-and-crown-lakes-trail\n- https://maps.campendium.com/us/bridgeport-ca/vacation-rentals/annetts-mono-village\n- https://en.wikipedia.org/wiki/Crown_Point_(Sierra_Nevada)"
+}

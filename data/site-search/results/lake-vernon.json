@@ -1,0 +1,181 @@
+{
+  "candidate": {
+    "name": "Lake Vernon",
+    "area": "Yosemite National Park",
+    "trailhead": "Hetch Hetchy (O'Shaughnessy Dam)",
+    "why": "Huge granite slabs, passing Wapama Falls on the way."
+  },
+  "site": {
+    "name": "Lake Vernon",
+    "region": "Yosemite National Park - Hetch Hetchy",
+    "area": "Hetch Hetchy",
+    "description": "A large, quiet granite-bowl lake reached from O'Shaughnessy Dam past Beehive Meadow, with big slab campsites, warm swimming and wild rainbow trout. It makes a good basecamp for day hikes to Laurel Lake, Tiltill Valley and Jack Main Canyon. The approach is long, hot and exposed, and the camp sits low, so it suits a May–June shoulder-season trip better than a main summer trip.",
+    "latitude": 38.0135,
+    "longitude": -119.7238,
+    "difficulty": "strenuous",
+    "distanceMiles": 9.6,
+    "elevationGainFt": 3400,
+    "campElevationFt": 6568,
+    "peakElevationFt": 6960,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "lottery",
+    "permitAdvanceDays": 7,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Beehive Meadows",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445859",
+    "permitNotes": "NPS rates demand Low. Daily quota is 35: 21 people by lottery (60%) plus 14 released one week ahead (40%). The weekly lottery runs 24 weeks ahead: apply Sunday 12:01 am to Saturday 11:59 pm Pacific, roughly mid-November through early May; results come Monday by 5 pm; accept and pay by Thursday 11:59 pm; up to 8 choices per application. Leftover lottery spots go first-come, first-served the second Friday at 9 am Pacific. The week-ahead release opens 7 days before the start date at 7 am Pacific and stays open until 3 days before. Group limit is 15 on trail, 8 if more than a quarter mile off trail, so all 12 fit on one permit; have only one person apply, because duplicate applications are removed from the lottery. Fees: $10 per application plus $5 per person, non-refundable. Up to 3 alternate leaders, added when you apply. The leader or an alternate must pick up the permit in person, the day before (8 am–5 pm) or the same day (8–11 am). Permit holders can stay one night before and after in the Hetch Hetchy backpackers' campground. Example 2027 lottery windows (author's calculation, unverified): July 14 start, apply Jan 24–30; July 21, apply Jan 31–Feb 6; Aug 4, apply Feb 14–20.",
+    "sceneryScore": 23,
+    "experienceScore": 18,
+    "accessScore": 6,
+    "permitScore": 19,
+    "rankingNotes": "Pretty, quiet granite-bowl lake with an easy permit, but the camp is low, the approach is long and hot, and gain is at your limit; better as a shoulder-season trip.",
+    "sources": [
+      {
+        "label": "NPS Hetch Hetchy area trails",
+        "url": "https://www.nps.gov/yose/planyourvisit/hetch-hetchy-area-trails.htm"
+      },
+      {
+        "label": "NPS trailheads",
+        "url": "https://www.nps.gov/yose/planyourvisit/trailheads.htm"
+      },
+      {
+        "label": "NPS wilderness reservations",
+        "url": "https://www.nps.gov/yose/planyourvisit/wpres.htm"
+      },
+      {
+        "label": "NPS wilderness permit dates",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm"
+      },
+      {
+        "label": "NPS wilderness FAQ",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildfaq.htm"
+      },
+      {
+        "label": "NPS wilderness permits",
+        "url": "https://www.nps.gov/yose/planyourvisit/wildpermits.htm"
+      },
+      {
+        "label": "NPS conditions",
+        "url": "https://www.nps.gov/yose/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "NPS Instagram links",
+        "url": "https://www.nps.gov/yose/learn/news/instagram-links.htm"
+      },
+      {
+        "label": "NPS Vernon Fire 1",
+        "url": "https://www.nps.gov/yose/vernonfire1.htm"
+      },
+      {
+        "label": "NPS Vernon Fire 2",
+        "url": "https://www.nps.gov/yose/vernonfire2.htm"
+      },
+      {
+        "label": "NPS Slope Fire",
+        "url": "https://www.nps.gov/yose/learn/news/slopefire4.htm"
+      },
+      {
+        "label": "NPS Dome Fire update",
+        "url": "https://www.nps.gov/yose/learn/news/dome-fire-update-september-25-2026-morning.htm"
+      },
+      {
+        "label": "NPS 2019 wilderness permits brochure",
+        "url": "https://npshistory.com/publications/yose/brochures/wilderness-permits-2019.pdf"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/445859"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/yosemite"
+      },
+      {
+        "label": "Wildland Trekking",
+        "url": "https://wildlandtrekking.com/visiting-yosemite/yosemite-backpacking-permits/"
+      },
+      {
+        "label": "Wikipedia Lake Vernon",
+        "url": "https://en.wikipedia.org/wiki/Lake_Vernon"
+      },
+      {
+        "label": "Wikipedia Hetch Hetchy to Lake Vernon Trail",
+        "url": "https://en.wikipedia.org/wiki/Hetch_Hetchy_to_Lake_Vernon_Trail"
+      },
+      {
+        "label": "Natural Atlas",
+        "url": "https://naturalatlas.com/lakes/lake-vernon-664823"
+      },
+      {
+        "label": "Backpacker",
+        "url": "https://www.backpacker.com/trips/yosemite-national-park-hetch-hetchy-vernon-lake-loop/"
+      },
+      {
+        "label": "Backpacking Light",
+        "url": "https://backpackinglight.com/forums/topic/16066/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/hetch-hetchy-loop-backpacking-yosemite/"
+      },
+      {
+        "label": "Forever She Wanders",
+        "url": "https://forevershewanders.com/mud-waterfalls-backpacking-the-hetch-hetchy-loop/"
+      },
+      {
+        "label": "Unexpected Occurrence",
+        "url": "https://unexpectedoccurrence.com/backpacking-hetch-hetchy-loop-3-days/"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=22244"
+      },
+      {
+        "label": "AllTrails Lake Vernon",
+        "url": "https://www.alltrails.com/trail/us/california/lake-vernon"
+      },
+      {
+        "label": "AllTrails Hetch Hetchy loop via Lake Vernon",
+        "url": "https://www.alltrails.com/trail/us/california/hetch-hetchy-loop-via-lake-vernon"
+      },
+      {
+        "label": "AllTrails Hetch Hetchy loop 2",
+        "url": "https://www.alltrails.com/trail/us/california/hetch-hetchy-loop--2"
+      },
+      {
+        "label": "AllTrails Hetch Hetchy list",
+        "url": "https://www.alltrails.com/lists/hetch-hetchy--2"
+      },
+      {
+        "label": "Hiking Project Hetch Hetchy loop",
+        "url": "https://www.hikingproject.com/trail/7030695/hetch-hetchy-loop"
+      },
+      {
+        "label": "Hiking Project O'Shaughnessy Dam",
+        "url": "https://www.hikingproject.com/trail/7009822/oshaughnessy-dam-viewpoint"
+      },
+      {
+        "label": "Yelp",
+        "url": "https://www.yelp.com/biz/laurel-lake-and-lake-vernon-trail-yosemite-national-park"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=TTOePzpMBXQ"
+      },
+      {
+        "label": "Spokesman-Review",
+        "url": "https://www.spokesman.com/stories/2026/sep/01/fire-breaks-out-near-yosemite-national-park-highwa/"
+      },
+      {
+        "label": "Active NorCal",
+        "url": "https://activenorcal.com/glacier-point-road-is-open-again-as-yosemites-dome-fire-hits-69-containment"
+      }
+    ],
+    "caveats": "Elevation gain is uncertain: NPS says 2,700 ft, but net climb from the dam (3,815 ft) to the trail high point (6,960 ft) is at least 3,150 ft, and a GPS trip report logged 3,623 ft, so ~3,400 ft is a working estimate at or above the 3,500 ft limit. Mileage sources conflict: NPS 19.1 mi round trip, AllTrails 19.4, Wikipedia 11.5 one way, GPS report 12.77. Camp elevation is 6,568 ft per Wikipedia and Natural Atlas versus 6,564 ft per Backpacking Light. Coordinates are the lake center; Backpacker marks campsites at 38.0114, -119.7325 and 38.0075, -119.7259. The group size limit comes from a 2019 brochure. Lottery open/close dates vary by start date (about mid-November through early May). Hetch Hetchy Road runs sunrise to sunset (Hiking Project says 7 am), so no pre-dawn starts. Fire restrictions applied at and below 8,000 ft from August 1, 2026. The 2010 Vernon Fire left burn scars. AllTrails 2024 reports downed trees, overgrown and muddy sections, cairn-only stretches, bears, rattlesnakes, mosquitoes and heat. No current closures."
+  },
+  "notes": "I scored Lake Vernon (via Hetch Hetchy) at **66/100** (scenery 23, experience 18, access 6, permit 19). It's a pretty, quiet granite-bowl lake that's easy to get a permit for. But it doesn't fit your group well. It's long and hot to reach, the camp is low, and it isn't the kind of epic place people talk about for years. Its elevation gain may also break your 3,500 ft limit (see below).\n\n## Key facts\n\n| Item | Best figure | Sources and conflicts |\n|---|---|---|\n| **One-way miles to camp** | **About 9.6 mi** (9.5–9.7) | National Park Service (NPS): 19.1 mi round trip. AllTrails: 19.4 mi out and back. Backcountry Emily: about 9.5 mi from Beehive Meadows. Wikipedia lists the trail as 11.5 mi, but that appears to run past the first campsites. One GPS trip report (May 2024) logged 12.77 mi from the backpackers' campground, which probably includes detours. **I trust NPS and AllTrails.** |\n| **Elevation gain (one way)** | **About 3,200–3,600 ft** | NPS says 2,700 ft, but that can't be right. The dam is at 3,815 ft and a trip report puts the trail's high point at 6,960 ft, so the net climb alone is at least 3,150 ft before any ups and downs. The GPS trip report logged 3,623 ft. NPS's loop figure (4,450 ft) is also lower than the trip reports (5,730–5,816 ft). **I don't trust the NPS gain number.** Treat gain as roughly 3,400 ft, right at your limit. |\n| **Camp elevation** | **6,564–6,568 ft** | Wikipedia and Natural Atlas say 6,568 ft; a Backpacking Light trip report says 6,564 ft. This is near the bottom of your past range (6,300–11,105 ft) and goes against your trend toward higher camps. |\n| **Coordinates** | **38.0135, −119.7238** (center of the lake) | Wikipedia. Backpacker magazine marks a \"superb lake campsite\" on rock slabs at 38.0114, −119.7325 and a north-end campsite at 38.0075, −119.7259. |\n| **Trailhead** | O'Shaughnessy Dam, Hetch Hetchy, about 3,815 ft | You cross the dam, go through the tunnel, climb about 1.8 mi of switchbacks, pass Beehive Meadow (reliable spring), then cross dry, exposed granite to the lake. |\n\n## Permits\n\n- **Entry point name: \"Beehive Meadows.\"** The NPS trailhead page says to use it for camping near Beehive Meadows, Laurel Lake or Lake Vernon. NPS rates demand as **Low**.\n- **Daily quota:** 21 people by lottery plus 14 people released one week ahead, so 35 a day.\n- **Group size:** 15 maximum on trail, 8 if more than a quarter mile off trail (from a 2019 NPS brochure; recent third-party summaries match). **All 12 of you fit on one permit.** The NPS FAQ says groups that send separate applications for the same trip are removed from the lottery, so have one person apply.\n- **Booking:** https://www.recreation.gov/permits/445859. Reservations cover trips from about late April to mid-October.\n  - **Lottery (60% of quota), 24 weeks ahead.** You apply Sunday 12:01 am to Saturday 11:59 pm Pacific, about mid-November through early May. Each week's lottery covers start dates from a Saturday to the following Friday. Results come Monday by 5 pm, and you must accept and pay by Thursday 11:59 pm. You can list up to 8 date/trailhead/group-size choices.\n  - **Leftover lottery spots:** go on sale first-come, first-served the second Friday at 9 am Pacific.\n  - **Week-ahead release (40% of quota):** opens 7 days before the start date at 7 am Pacific, and stays open until 3 days before.\n  - **Fees:** $10 per application plus $5 per person (non-refundable). Up to 3 alternate leaders, who must be added when you apply.\n  - **Example 2027 lottery dates (my calculation, check against the NPS table when it's published):** for a Wednesday July 14 start, apply Jan 24–30, 2027. For July 21, apply Jan 31–Feb 6. For Aug 4, apply Feb 14–20.\n- **Pickup:** the trip leader or an alternate must pick up the permit in person, the day before (8 am–5 pm) or the same day (8–11 am). A 2022 trip report describes picking one up at the Hetch Hetchy gate. Permit holders can stay one night before and after in the Hetch Hetchy backpackers' campground, which is open all year.\n\n## Fire, closures and access\n\n- **Nothing currently closed.** The NPS conditions page says Hetch Hetchy Road is open sunrise to sunset and the area has no closures. The 2026 Dome Fire (Wawona/Glacier Point) and Colorado Fire (Hwy 140) were far to the south.\n- **Road hours conflict:** Hiking Project says the road opens at 7 am; NPS says sunrise. I trust NPS. Either way, no pre-dawn starts from the trailhead, and you must be out by sunset.\n- **Campfires:** fire restrictions applied at and below 8,000 ft from August 1, 2026. The lake (about 6,568 ft) would likely be under similar rules in late summer.\n- **Fire history:** the lightning-caused Vernon Fire burned about 230 acres near the lake in 2010, and the trail was closed until October 2010. Expect some old burn scars.\n- **Recent trail conditions (AllTrails, 2024):** downed trees, overgrown stretches, muddy meadows between Vernon and Rancheria, a stretch near the lake marked only by cairns, active bears, rattlesnakes, mosquitoes, and a hot, exposed climb.\n\n## Score: 66/100\n\n- **Scenery 23/35.** A large lake in a granite bowl with slabs, Mahan Peak and views of Hetch Hetchy and Wapama Falls on the way. It's beautiful, but low-elevation and partly forested. It's well short of Thousand Island (35) and below Lamarck (28).\n- **Experience 18/25.** It's a good basecamp: big slab campsites, warm swimming, wild rainbow trout, and day hikes to Laurel Lake, Tiltill Valley and Jack Main Canyon, plus off-trail granite. It's quiet. Bears, bugs and heat take points off.\n- **Access 6/20.** It's about twice your usual distance and gain, mostly exposed climbing from 3,800 ft in summer heat, with gain at or over your limit. Logistics are easy: the backpackers' campground is at the trailhead.\n- **Permit 19/20.** Low demand, 35 spots a day, and one permit covers all 12.\n\n**Bottom line:** it's under your 10-mile limit, but the gain is borderline, and the low, hot camp is the opposite of the high alpine trips you love. It works better as a May–June shoulder-season trip than as your main summer trip.\n\n## URLs used\n- https://www.nps.gov/yose/planyourvisit/hetch-hetchy-area-trails.htm\n- https://www.nps.gov/yose/planyourvisit/trailheads.htm\n- https://www.nps.gov/yose/planyourvisit/wpres.htm\n- https://www.nps.gov/yose/planyourvisit/wildpermitdates.htm\n- https://www.nps.gov/yose/planyourvisit/wildfaq.htm\n- https://www.nps.gov/yose/planyourvisit/wildpermits.htm\n- https://www.nps.gov/yose/planyourvisit/conditions.htm\n- https://www.nps.gov/yose/learn/news/instagram-links.htm\n- https://www.nps.gov/yose/vernonfire1.htm\n- https://www.nps.gov/yose/vernonfire2.htm\n- https://www.nps.gov/yose/learn/news/slopefire4.htm\n- https://www.nps.gov/yose/learn/news/dome-fire-update-september-25-2026-morning.htm\n- https://npshistory.com/publications/yose/brochures/wilderness-permits-2019.pdf\n- https://www.recreation.gov/permits/445859\n- https://campflare.com/permit/yosemite\n- https://wildlandtrekking.com/visiting-yosemite/yosemite-backpacking-permits/\n- https://en.wikipedia.org/wiki/Lake_Vernon\n- https://en.wikipedia.org/wiki/Hetch_Hetchy_to_Lake_Vernon_Trail\n- https://naturalatlas.com/lakes/lake-vernon-664823\n- https://www.backpacker.com/trips/yosemite-national-park-hetch-hetchy-vernon-lake-loop/\n- https://backpackinglight.com/forums/topic/16066/\n- https://backcountryemily.com/hetch-hetchy-loop-backpacking-yosemite/\n- https://forevershewanders.com/mud-waterfalls-backpacking-the-hetch-hetchy-loop/\n- https://unexpectedoccurrence.com/backpacking-hetch-hetchy-loop-3-days/\n- https://www.highsierratopix.com/community/viewtopic.php?t=22244\n- https://www.alltrails.com/trail/us/california/lake-vernon\n- https://www.alltrails.com/trail/us/california/hetch-hetchy-loop-via-lake-vernon\n- https://www.alltrails.com/trail/us/california/hetch-hetchy-loop--2\n- https://www.alltrails.com/lists/hetch-hetchy--2\n- https://www.hikingproject.com/trail/7030695/hetch-hetchy-loop\n- https://www.hikingproject.com/trail/7009822/oshaughnessy-dam-viewpoint\n- https://www.yelp.com/biz/laurel-lake-and-lake-vernon-trail-yosemite-national-park\n- https://www.youtube.com/watch?v=TTOePzpMBXQ\n- https://www.spokesman.com/stories/2026/sep/01/fire-breaks-out-near-yosemite-national-park-highwa/\n- https://activenorcal.com/glacier-point-road-is-open-again-as-yosemites-dome-fire-hits-69-containment"
+}

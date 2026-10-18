@@ -1,0 +1,109 @@
+{
+  "candidate": {
+    "name": "Deer Lake",
+    "area": "Emigrant Wilderness (Stanislaus National Forest)",
+    "trailhead": "Crabtree or Gianelli Cabin",
+    "why": "Classic granite-slab lake country with day trips to Wire and Buck Lakes plus fishing."
+  },
+  "site": {
+    "name": "Deer Lake",
+    "region": "Western Sierra - Emigrant Wilderness",
+    "area": "Stanislaus National Forest",
+    "description": "A 19-acre granite-basin lake at 8,461 ft with clear water, trout fishing and swimming. It makes an excellent multi-night basecamp, with Jewelry, Gem, Wood, Buck, Long and Wire Lakes all within day-hike distance. At 11.3 miles from Crabtree it exceeds the group's 10-mile one-way limit.",
+    "latitude": 0,
+    "longitude": 0,
+    "difficulty": "strenuous",
+    "distanceMiles": 11.3,
+    "elevationGainFt": 0,
+    "campElevationFt": 8461,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Crabtree Trailhead",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits",
+    "permitNotes": "Free permit with no quota and no reservations: no Recreation.gov booking, rolling window, opening time or lottery. Pick it up in person at Sugar Pine Ranger Station (Hwy 108; self-issue kiosk when the office is closed), Calaveras Ranger Station or the Supervisor's Office in Sonora. Some third-party sites still list Summit Ranger Station, but the Forest Service page lists Sugar Pine. Gianelli Cabin Trailhead is an alternate entry. Group limit is 15, so a group of 12 fits on one permit; associated groups must camp and travel at least 1 mile apart. No camping within 100 ft of lakes, streams or trails. Campfires require a CAL FIRE permit, are banned above 9,000 ft and are subject to seasonal restrictions. Deer Lake has no one-night limit. Pack and saddle animals cannot be kept overnight within 1/4 mile of the lake.",
+    "sceneryScore": 23,
+    "experienceScore": 21,
+    "accessScore": 4,
+    "permitScore": 19,
+    "rankingNotes": "Easy, quota-free permit and a superb day-hike basecamp, but at 11.3 miles it breaks the distance limit (67/100).",
+    "sources": [
+      {
+        "label": "USFS Emigrant Trail Mileages 2012",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/stanislaus/Trail%20Mileages%20-%20Emigrant%202012.pdf"
+      },
+      {
+        "label": "Stanislaus NF Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits"
+      },
+      {
+        "label": "Emigrant Wilderness Use Rules Renewal",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/alerts/renewal-emigrant-wilderness-use-rules"
+      },
+      {
+        "label": "Bell Meadow Trailhead",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/recreation/bell-meadow-th"
+      },
+      {
+        "label": "USFS ECI-ROG publication",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/ECI-ROG.pdf"
+      },
+      {
+        "label": "Backpacking Light trip report",
+        "url": "https://backpackinglight.com/forums/topic/16654/"
+      },
+      {
+        "label": "Kevin Gong Emigrant Wilderness",
+        "url": "https://kevingong.com/Hiking/EmigrantWilderness2.html"
+      },
+      {
+        "label": "Fly Fishing the Sierra",
+        "url": "https://flyfishingthesierra.com/emigrant-wilderness/"
+      },
+      {
+        "label": "OutdoorStatus Buck Lakes",
+        "url": "https://outdoorstatus.com/trips/us/california/emigrant-wilderness/buck-lakes-from-crabtree-trailhead/"
+      },
+      {
+        "label": "SummitPost Gianelli Cabin",
+        "url": "https://www.summitpost.org/gianelli-cabin/200281"
+      },
+      {
+        "label": "Wikipedia Camp Lake",
+        "url": "https://en.wikipedia.org/wiki/Camp_Lake_(California)"
+      },
+      {
+        "label": "AllTrails Gem Lake",
+        "url": "https://www.alltrails.com/trail/us/california/gem-lake-via-crabtree-trailhead"
+      },
+      {
+        "label": "High Sierra Trails Emigrant resources",
+        "url": "https://highsierratrails.com/emigrant/emigrant_resources.html"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/the-western-sierra/backpacking-emigrant-wilderness/"
+      },
+      {
+        "label": "Union Democrat",
+        "url": "https://www.uniondemocrat.com/news/article_67e05b4d-9910-40be-b4f3-ba476ac508b2.html"
+      },
+      {
+        "label": "MyMotherLode fire news",
+        "url": "https://mymotherlode.com/news/local/11017422/stf-firefighters-battling-blaze-in-emigrant-wilderness.html"
+      },
+      {
+        "label": "Dave's Sierra Fishing Buck Lakes",
+        "url": "http://www.davessierrafishing.com/destinations2/buck_lakes.html"
+      }
+    ],
+    "caveats": "IMPORTANT: latitude, longitude and elevationGainFt are set to 0 as placeholders because the schema requires numbers; they are not real values. Coordinates are unverified (a rough guess of 38.17N, 119.80W could be off by about a mile); verify on CalTopo or USGS GNIS. Elevation gain is unconfirmed: the estimate is about 2,300-2,800 ft one way, since the trail drops to about 7,570 ft at Piute Creek; OutdoorStatus says 2,500 ft. The trip fails the 10-mile limit: 11.3 mi from Crabtree, 12.3 from Gianelli and 11.9 from Bell Meadow. Other mileage claims are about 11 mi (2008 trip report) and 13 mi (OutdoorStatus, likely too high). Crabtree Road is closed to all vehicles for the 2025/2026 season, with no stated reason or reopening date, and the closure may also affect Gianelli access; call Sugar Pine Ranger Station first. The October 2026 Piute Fire (about 4 acres near Piute Lake, beside the route) may have left minor burn damage. The July 2026 Grouse Fire is off-route. The rules order date is in conflict (permit page says July 8, 2025; Order STF-16-2026-08 says July 8, 2026 - June 30, 2029). Research stopped at the tool limit. Closer alternatives: Gem Lake (9.5 mi) and Chewing Gum Lake (4.1 mi from Gianelli)."
+  },
+  "notes": "**Deer Lake (Emigrant Wilderness) breaks one of your hard limits: it's more than 10 miles one way from both trailheads.** The Forest Service puts it at 11.3 miles from Crabtree and 12.3 from Gianelli Cabin. If you score it anyway, it gets **67 out of 100**. Permits are easy and the basecamp is good, but the distance and a road closure drag the access score down. Searches in this write-up stopped when I hit the tool limit, so a few items below are unconfirmed and marked as such.\n\n## Key facts\n\n| Item | Finding | Source I trust |\n|---|---|---|\n| **One-way miles** | **From Crabtree: 11.3 mi** (trailhead at 7,160 ft). From Gianelli Cabin: 12.3 mi (8,600 ft). From Bell Meadow: 11.9 mi. | Forest Service trail-mileage sheet |\n| Conflicting mileage | A 2008 Backpacking Light trip report says about 11 mi from Crabtree. OutdoorStatus says 13 mi and 2,500 ft of gain. | I trust the Forest Service figure. 13 mi looks too high. |\n| **Elevation gain** | Not confirmed by an official source. The lake is only about 1,300 ft above the Crabtree trailhead, but the trail drops to about 7,570 ft at Piute Creek and climbs again. Expect **about 2,300–2,800 ft of gain one way**. From Gianelli the lake is lower than the trailhead, so the hike out is the harder half. | My estimate, built from the trip reports and the OutdoorStatus 2,500 ft figure. It's under your 3,500 ft limit but well over your ~1,600 ft average. |\n| **Camp elevation** | **8,461 ft.** The lake is 19 acres. | Two independent sources agree: the 2008 trip report and flyfishingthesierra.com. |\n| **Coordinates** | **Not verified.** My rough estimate is about 38.17°N, 119.80°W, a little east of Jewelry Lake. It could be off by a mile or so. For reference, Camp Lake is at 38.166°N, 119.880°W (Wikipedia). | Check on CalTopo or USGS GNIS before using |\n| Route | Crabtree → Camp Lake (2.6 mi) → Bear Lake (3.9) → Lake Valley → Piute Meadow → Gem Lake (9.5) → Jewelry Lake (10.5) → Deer Lake (11.3) | Forest Service mileage sheet |\n\n## Permits\n\n- **System:** The permit is free, with **no quota and no reservations**. There's no Recreation.gov booking, no rolling window, no opening time and no lottery.\n- **Where to get it:** In person at Sugar Pine Ranger Station (Hwy 108), Calaveras Ranger Station or the Supervisor's Office in Sonora. Sugar Pine has a self-issue kiosk for when the office is closed.\n  - Some third-party sites still send you to \"Summit Ranger Station.\" The current Forest Service permit page lists Sugar Pine instead, and I trust the Forest Service.\n- **Entry point:** Crabtree Trailhead or Gianelli Cabin Trailhead, both run by the Stanislaus National Forest.\n- **Group size:** The limit is **15 people**, for day or overnight use, so your group of 12 fits on one permit.\n  - Splitting doesn't really work here. Groups that belong together must camp and travel at least one mile apart.\n- **Other rules:**\n  - No camping within 100 ft of lakes, streams or trails.\n  - Campfires need a CAL FIRE permit. They're banned above 9,000 ft, so Deer Lake is below the cutoff, but seasonal fire restrictions still apply.\n  - Deer Lake has **no one-night limit**, unlike Camp and Bear Lakes, so a multi-night basecamp is allowed.\n  - Pack and saddle animals can't be kept overnight within ¼ mile of Deer Lake.\n- **Date conflict:** The permits page says the rules order runs July 8, 2025 – June 30, 2029. The order itself (STF-16-2026-08) says July 8, **2026** – June 30, 2029. I trust the order.\n\n## Fire, closures and access problems\n\n- **Crabtree Road:** The Forest Service's Bell Meadow trailhead page says *\"Crabtree Road is closed to all vehicle traffic for the 2025/2026 season.\"* I couldn't find out why, or whether it reopens for summer 2027.\n  - SummitPost says the Crabtree and Gianelli routes split at a signed junction on the same approach road. The closure could affect both trailheads.\n  - **Call Sugar Pine Ranger Station before planning around this trip.**\n- **Piute Fire (October 2026):** A lightning fire of about 4 acres near Piute Lake, which is right next to the Crabtree route. It was held in by granite and the lake. Expect minor burn damage, not a closure.\n- **Grouse Fire (July 2026):** About 4–5 acres east of Relief Reservoir, on the Kennedy Meadows side. It's not on your route.\n\n## Score: 67 / 100 (fails the distance limit)\n\n- **Scenery: 23/35.** Pretty granite-basin lake with clear water, and a trip report called it \"prettier and larger than Jewelry Lake.\" But at 8,461 ft it's forest-fringed, gentle Emigrant country, not a dramatic high-alpine setting. It's clearly below Lamarck Lakes (28) and nowhere near Thousand Island Lake (35).\n- **Experience: 21/25.** A very good basecamp. Jewelry, Gem, Wood, Buck, Long and Wire Lakes are all day-hike distance, there's trout fishing and swimming, and multi-night stays are allowed. Campfires are possible when there are no fire restrictions.\n- **Access: 4/20.** About 11.3 miles is double your 4.5-mile average, with likely about 2,500 ft of up-and-down. The road status is uncertain. For comparison, Thousand Island Lake got 14 at roughly 8 miles.\n- **Permit: 19/20.** No quota, free, and 15 people allowed. One point off because it must be picked up in person.\n\n**Closer options in the same area:**\n- **Gem Lake** is 9.5 mi from Crabtree, just under your limit, and Deer Lake is a 1.8-mile day hike from there.\n- **Chewing Gum Lake** is 4.1 mi from Gianelli, inside your sweet spot, but the scenery is a step down.\n\n## URLs used\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/stanislaus/Trail%20Mileages%20-%20Emigrant%202012.pdf\n- https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/stanislaus/alerts/renewal-emigrant-wilderness-use-rules\n- https://www.fs.usda.gov/r05/stanislaus/recreation/bell-meadow-th\n- https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/ECI-ROG.pdf\n- https://backpackinglight.com/forums/topic/16654/\n- https://kevingong.com/Hiking/EmigrantWilderness2.html\n- https://flyfishingthesierra.com/emigrant-wilderness/\n- https://outdoorstatus.com/trips/us/california/emigrant-wilderness/buck-lakes-from-crabtree-trailhead/\n- https://www.summitpost.org/gianelli-cabin/200281\n- https://en.wikipedia.org/wiki/Camp_Lake_(California)\n- https://www.alltrails.com/trail/us/california/gem-lake-via-crabtree-trailhead\n- https://highsierratrails.com/emigrant/emigrant_resources.html\n- https://sierrarecmagazine.com/the-western-sierra/backpacking-emigrant-wilderness/\n- https://www.uniondemocrat.com/news/article_67e05b4d-9910-40be-b4f3-ba476ac508b2.html\n- https://mymotherlode.com/news/local/11017422/stf-firefighters-battling-blaze-in-emigrant-wilderness.html\n- http://www.davessierrafishing.com/destinations2/buck_lakes.html"
+}

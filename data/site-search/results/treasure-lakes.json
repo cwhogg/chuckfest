@@ -1,0 +1,117 @@
+{
+  "candidate": {
+    "name": "Treasure Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "South Lake",
+    "why": "Glacial bowl under Mt. Johnson with a Bishop Pass day hike."
+  },
+  "site": {
+    "name": "Treasure Lakes (South Lake)",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Bishop Creek - South Lake, Inyo National Forest",
+    "description": "A less-visited granite basin under Mount Thompson, Mount Goode and Hurd Peak, reached by a short trail from South Lake. The lower lakes hold small rainbow-golden hybrids, and the fishless upper lakes are dramatic. It makes a strong high basecamp for day hikes to Hurd Peak, Bishop Pass and the Chocolate Lakes loop.",
+    "latitude": 37.1377,
+    "longitude": -118.5748,
+    "difficulty": "moderate",
+    "distanceMiles": 2.8,
+    "elevationGainFt": 1100,
+    "campElevationFt": 10650,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Treasure Lakes – South Lake (JM20)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Quota is 10 people/day from May 1 to Nov 1. Of these, 6 are reservable 6 months ahead (e.g., a July 4 start opens Jan 4) and 4 are released 2 weeks ahead, both at 7:00 AM Pacific. There is no lottery. The permit does not include Bishop Pass or the JMT. Groups cannot combine to exceed 15 and must start on the entry date and location on the permit. A group of 12 cannot all start the same day; options are two 6-person permits on consecutive days, or 6+4 plus 2 on another day. Print the permit by 10 AM on the start day. The $6 fee is nonrefundable. Bear canisters are required, and there are no campfires above 10,400 ft. Phone: 760-873-2526.",
+    "sceneryScore": 27,
+    "experienceScore": 20,
+    "accessScore": 18,
+    "permitScore": 11,
+    "rankingNotes": "Short, high granite basecamp under Mount Goode with great day hikes, but the 10/day quota makes permits for 12 hard to get.",
+    "sources": [
+      {
+        "label": "USFS Treasure Lakes Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/treasure-lakes-trail"
+      },
+      {
+        "label": "USFS Inyo Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "USFS Trail Quota Sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Recreation.gov Inyo Permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "USFS Wilderness Regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "CAL FIRE Rock Fire",
+        "url": "https://www.fire.ca.gov/incidents/2026/7/20/rock-fire"
+      },
+      {
+        "label": "InciWeb Rock Fire",
+        "url": "https://inciweb.wildfire.gov/incident-information/cainf-rock-fire"
+      },
+      {
+        "label": "Sierra Wave Rock Fire closure order",
+        "url": "https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/"
+      },
+      {
+        "label": "Sierra Wave South Lake Road",
+        "url": "https://sierrawave.net/south-lake-road-reconstruction-implementing-no-overnight-parking/"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/hike-to-treasure-lakes/"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/hiking/explore-the-treasure-lakes-trail"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/trails/treasure-lakes-trail/"
+      },
+      {
+        "label": "Lovers Passport",
+        "url": "https://theloverspassport.com/treasure-lake-via-south-lake-day-hike/"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/treasure-lakes-trail"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/treasure-lakes/"
+      },
+      {
+        "label": "SierraFish",
+        "url": "https://www.sierrafish.com/lakes/treasure-lakes-ic/treasure-lakes-ic.php"
+      },
+      {
+        "label": "TopoZone Treasure Lakes",
+        "url": "https://www.topozone.com/california/inyo-ca/lake/treasure-lakes/"
+      },
+      {
+        "label": "Bishop Visitor South Lake",
+        "url": "https://bishopvisitor.com/places/south-lake/"
+      },
+      {
+        "label": "Sierra Rec Magazine quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      }
+    ],
+    "caveats": "The coordinates are the TopoZone map point, which marks the upper lakes at about 11,145 ft. The lower lakes are at approximately 37.149, -118.574 (older datum, approximate). Camp elevation is about 10,650–10,690 ft at the lower lakes and about 11,080–11,150 ft at the upper lakes. Gain figures conflict: about 1,100–1,200 ft one way versus 866 ft net. Kevin Gong's elevations appear to be GPS error. Do not confuse these lakes with the Treasure Lakes in Little Lakes Valley. Campsite capacity for 12 is unverified. Camping here on a Bishop Pass permit is unconfirmed, so call the permit office. The exact advance-day count for the rolling window was not stated (described as 6 months). The Rock Fire (2026, 100% contained) and the Rock Creek Road closure do not affect this area. The South Lake lot fills, though overnight parking is allowed below Parchers Resort. Fishing info is from an older report."
+  },
+  "notes": "I'll start by researching the trail stats, the permit system, and any current conditions.\nKey finding so far: the Treasure Lakes entry point quota looks like only 10 people per day. I'll check that against agency sources and look at the permit rules and current alerts.\nThe Rock Fire was at Poverty Hills / Sawmill Pass, south of Big Pine, so it isn't in the Bishop Creek drainage. Next I'll pull the official Inyo permit page and quota list.\nNow the trail numbers and lake elevation/coordinates.\nWatch out: there are two \"Treasure Lakes\" in Inyo NF. One is in Little Lakes Valley (Rock Creek, Mount Abbot quad); the other is at South Lake (Mount Thompson quad). I'll keep them separate.\n**Treasure Lakes (South Lake) scores 76/100: scenery 27/35, experience 20/25, access 18/20, permits 11/20.** It's a beautiful, high, short basecamp with good day hikes. The catch is the permit: only 10 people per day can start on this entry point, so your group of 12 can't all start on the same day.\n\n## Key facts\n\n| Item | Finding | Confidence |\n|---|---|---|\n| Trailhead | South Lake (Bishop Pass trailhead), about 9,770–9,810 ft, roughly 20 miles west of Bishop on Hwy 168 | High |\n| Route | Follows the Bishop Pass trail to a junction at about 0.8 mi, then the Treasure Lakes trail. It drops about 0.6 mi to cross the creek, then climbs granite to the lakes. | High |\n| **One-way miles** | **About 2.8 mi** to the lower lakes; about 3.3–3.5 mi to the upper lakes (rough use trail and cross-country) | High |\n| **Elevation gain** | **About 1,100–1,200 ft** one way (about 900 ft net, because of the dip after the junction) | Medium-high |\n| **Camp elevation** | Lower lakes about **10,650–10,690 ft**; upper lakes about **11,080–11,150 ft** | Medium |\n| **Coordinates** | Official map point for \"Treasure Lakes\" on the Mount Thompson map (via TopoZone): **37.1377 N, −118.5748 W** (labelled at about 11,145 ft, i.e. the upper group). The lower lakes are around **37.149 N, −118.574 W** (from SierraFish's map link; older datum, so approximate). | Medium |\n| Setting | The Forest Service calls it a \"less visited\" granite basin under Mount Thompson, Mount Goode and Hurd Peak | High |\n| Fishing | Lakes 1–2 (lower): fast action for 7–11\" rainbow × golden hybrids. **The upper lakes have no fish** because of frog restoration. This is an older report. | Medium |\n| Rules | Bear canisters required; **no campfires above 10,400 ft**, which covers the whole basin; groups of no more than 15, including day use | High (Forest Service) |\n\n## Permit system (from the Forest Service and recreation.gov)\n\n- **Entry point name:** \"Treasure Lakes – South Lake,\" code **JM20**. The Forest Service says the Treasure Lakes permit **does not include Bishop Pass or the John Muir Trail**.\n- **Quota:** **10 people per day**, May 1–Nov 1. **6 can be reserved 6 months ahead** and **4 are released 2 weeks ahead**. For comparison, Bishop Pass (JM21) allows 36 per day (22 + 14).\n- **Booking window:** a rolling window that opens **daily at 7:00 AM Pacific**. For example, a July 4 start opens January 4. The remaining 40% is released at 7 AM on the same weekday, 2 weeks before.\n- **No lottery** (Inyo uses a lottery only for Whitney). Cancelled spots go back on the calendar within 24 hours.\n- **Group size:** up to 15. \"Groups cannot combine to exceed 15 people,\" and every group \"must start on entry date and location on permit.\"\n- **Other rules:** print the permit by 10 AM on the start day or it's cancelled (you can print at home up to 7 days before). The $6 reservation fee isn't refundable. You can change the start date online 12 or more days ahead if space is available.\n- **Booking URL:** https://www.recreation.gov/permits/233262 (permit office phone listed there: 760-873-2526)\n\n**What this means for 12 people:** at most 10 can start on any one day, and at the 6-month release you can get at most 6. Realistic options:\n1. **Two 6-person permits on back-to-back days** (for example, Tuesday and Wednesday). Each one has to take the *entire* 6-person release at exactly 7:00 AM. If anyone else books even one spot first, that day is gone.\n2. **6 people at the 6-month release plus 4 at the 2-week release** for Wednesday (10 total), with 2 people starting another day.\n3. **Use Bishop Pass permits for part of the group.** That quota is much bigger, but I **couldn't confirm** that a Bishop Pass permit lets you camp at Treasure Lakes. The Forest Service treats them as separate entry trails. **Call the permit office before relying on this.**\n\nSince it's now about October 2026, permits for a summer 2027 trip open daily from January 2027.\n\n## Fires, closures and access\n- **Rock Fire (July 2026):** 12,008 acres, 100% contained. It started at Poverty Hills near Hwy 395, and its closure order covers the Sawmill Pass area, far south of Bishop Creek. **It doesn't affect South Lake.**\n- Stage 1 fire restrictions were active in 2026, which doesn't matter here since campfires are banned in the basin anyway. You need a free California Campfire Permit to use a stove.\n- The Rock Creek Road closure (October 2026) is in a different drainage and doesn't affect this trip.\n- The South Lake Road rebuild (no overnight parking in July 2020) is finished.\n- **Parking:** the paved lot at South Lake fills up. The Forest Service allows overnight parking along the road below Parchers Resort, about 1 mile down. With 12 people, plan to carpool and arrive early.\n- The South Lake reservoir is sometimes drawn way down, which only affects how it looks.\n- I found no current alerts for the trail itself.\n\n## Conflicting figures and which I trust\n\n| Measure | Sources | Which I trust |\n|---|---|---|\n| Distance | Modern Hiker 5.3 mi round trip; Lovers Passport 5.4 round trip; AllTrails 5.6; Tiff's Journey (Aug 2025) 5.76; The Outbound 5.79; Kevin Gong 6.0; SierraFish 2.69 one way; OutdoorStatus 2.9 one way | **About 2.8 mi one way to the lower lakes.** The differences come from which lake each person stopped at. |\n| Gain | Lovers Passport 866 ft; OutdoorStatus 1,100 ft going in plus 200 ft coming out; The Outbound 1,375 round trip; Modern Hiker 1,465 round trip | **About 1,100–1,200 ft going in.** 866 is just the net change in elevation. The round-trip figures include re-climbing the dip on the way out. |\n| Lake elevation | Lovers Passport 10,686 (lower lake); Trailforks segment top 11,083; TopoZone map point 11,145 | Both can be right: they describe the lower and upper lakes. |\n| Kevin Gong's elevations (start 9,082, max 9,907 ft) | — | **Not trustworthy.** These can't be right for a basin at 10,600 ft or higher; probably a GPS error. |\n| Same name, different place | There is another \"Treasure Lakes\" in Little Lakes Valley (37.388, −118.765, 11,181 ft). The Game & Fish golden trout article and one of the Campobserver listings refer to that one. | Ignore those sources for this trip. |\n\n## Score: 76/100\n\n| Category | Score | Why |\n|---|---|---|\n| Scenery | **27/35** | A real granite cirque under Mount Goode, Mount Thompson and Hurd Peak, and the upper lakes are dramatic. Still, it's a step below iconic places like Thousand Island Lake (35), and about the same as or slightly below Lamarck Lakes (28). |\n| Experience | **20/25** | Strong day hikes from camp: the upper lakes, Hurd Peak, a talus cross-country route to Saddlerock and Long Lakes, Bishop Pass, and the Chocolate Lakes loop. Easy fishing for small trout in the lower lakes only, and cold swims. **There's no campfire.** I couldn't verify whether the small, rocky basin has room for 12 to camp together; expect two or three nearby sites. |\n| Access | **18/20** | About 2.8 mi and 1,200 ft, a bit under your 3.6–5.5 mi / 1,600 ft sweet spot. Camp at 10,650–11,100 ft fits your trend toward higher camps. It's a short paved drive from Bishop, but parking is tight. |\n| Permit | **11/20** | Same quota as Lamarck (10 per day: 6 + 4). A group of 12 can never start together, so you'd need two perfectly timed 7 AM bookings. I scored it slightly below Lamarck because Bishop Pass hopefuls who miss out sometimes book Treasure instead. |\n\nBottom line: it fits all your hard limits and makes a great high basecamp. Getting the permits for 12 is the real challenge, and it's only a strong option if you're ready to split into two staggered permits. A good fallback is to get Bishop Pass permits, camp at Long Lake or Saddlerock, and day-hike to Treasure Lakes.\n\nI hit the search limit before I could check campsite capacity or exact lower-lake coordinates from a modern map, or ask about camping at Treasure Lakes on a Bishop Pass permit. Those are worth one phone call to the permit office.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/treasure-lakes-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/little-lakes-valley-trail\n- https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure (search summary only; the page itself wouldn't load)\n- https://www.fire.ca.gov/incidents/2026/7/20/rock-fire\n- https://inciweb.wildfire.gov/incident-information/cainf-rock-fire\n- https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/\n- https://abc30.com/post/rock-fire-burning-inyo-county-forces-partial-closure-national-forest/19564908/\n- https://sierrawave.net/temporary-closure-of-rock-creek-road\n- https://sierrawave.net/south-lake-road-reconstruction-implementing-no-overnight-parking/\n- https://www.highsierratopix.com/community/viewtopic.php?t=20383&start=10\n- https://bishopvisitor.com/places/south-lake/\n- https://modernhiker.com/hike/hike-to-treasure-lakes/\n- https://www.theoutbound.com/yosemite/hiking/explore-the-treasure-lakes-trail\n- https://www.trailforks.com/trails/treasure-lakes-trail/\n- https://theloverspassport.com/treasure-lake-via-south-lake-day-hike/\n- https://followtiffsjourney.com/treasure-lakes/ (search summary only)\n- https://www.alltrails.com/trail/us/california/treasure-lakes-trail\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/treasure-lakes/\n- https://www.sierrafish.com/lakes/treasure-lakes-ic/treasure-lakes-ic.php\n- https://www.topozone.com/california/inyo-ca/lake/treasure-lakes/\n- https://www.topozone.com/california/inyo-ca/lake/treasure-lakes-2/ (the Little Lakes Valley lakes with the same name)\n- https://100peaks.com/blog/2018/11/12/treasure-lakes-backpacking-sophias-first-time-overnight-in-the-sierra\n- https://kevingong.com/Hiking/201910TreasureLakes.html\n- https://backpackinglight.com/forums/topic/sierra-people-difference-between-south-land-and-treasure-lake-trailheads/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://campflare.com/permit/inyo\n- https://campobserver.com/facilities/inyo-national-forest-treasure-lakes\n- https://backcountryemily.com/california-backpacking-permits/\n- https://www.highsierratopix.com/community/viewtopic.php?t=22275\n- https://www.gameandfishmag.com/editorial/backcountry-trek-for-golden-trout/361575 (about the other Treasure Lakes; listed only to explain why I excluded it)"
+}

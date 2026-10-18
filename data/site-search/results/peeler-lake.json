@@ -1,0 +1,93 @@
+{
+  "candidate": {
+    "name": "Peeler Lake",
+    "area": "Hoover Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Twin Lakes / Robinson Creek",
+    "why": "Deep-blue lake on the Sierra crest at the Yosemite boundary with excellent fishing."
+  },
+  "site": {
+    "name": "Peeler Lake",
+    "region": "Eastern Sierra - Hoover Wilderness",
+    "area": "Twin Lakes / Robinson Creek (Bridgeport)",
+    "description": "A big, deep-blue, granite-ringed lake sitting right on the Sierra Crest at the Yosemite boundary, between Crown Point and Cirque Mountain. It makes an excellent base camp, with day hikes to Kerrick Meadow, Rock Island Pass, Snow Lake, Crown Lake and Crown Point, plus strong trout fishing. The hike in is about 8 miles with 2,400–2,800 ft of climbing, and the quieter west shore is the best bet for a group of 12.",
+    "latitude": 38.12047,
+    "longitude": -119.46785,
+    "difficulty": "strenuous",
+    "distanceMiles": 8,
+    "elevationGainFt": 2800,
+    "campElevationFt": 9488,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Robinson Creek",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445856",
+    "permitNotes": "Rolling reservations on Recreation.gov with no lottery. Quota season runs June 15 to Oct 15 at 50 people per day: 25 reservable in advance and 25 released late. The advance half opens 6 months ahead on a rolling window, at 7:00 AM PT per two permit-guide sites (Recreation.gov doesn't state a time). The late half releases 3 days before entry at 7 AM PDT. Cost is $8 per person aged 13 and up plus a $6 reservation fee (about $102 for 12). Maximum group size is 15, or 8 in the Sawtooth Ridge Zone; Peeler is likely outside that zone. Everyone must start on the permit's entry date and trailhead. Print the permit by 10 AM PT on entry day or it is cancelled as a no-show. Cancel 14 or more days ahead for a refund. The leader's name can't be changed, and one person can hold at most 3 reservations. Bear canisters are required, and wood or charcoal fires are banned within ¼ mile of the lake.",
+    "sceneryScore": 30,
+    "experienceScore": 22,
+    "accessScore": 12,
+    "permitScore": 14,
+    "rankingNotes": "Epic Crest-side granite lake with the best day hikes on the list; a harder hike in, but an easy permit if you book a Wednesday entry the morning it opens.",
+    "sources": [
+      {
+        "label": "USFS Hoover Wilderness",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness"
+      },
+      {
+        "label": "USFS Hoover Wilderness Permits",
+        "url": "https://fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness-permits"
+      },
+      {
+        "label": "USFS Robinson Creek Trailhead",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/robinson-creek-trailhead"
+      },
+      {
+        "label": "Recreation.gov Hoover Wilderness Permits",
+        "url": "https://www.recreation.gov/permits/445856"
+      },
+      {
+        "label": "Permit Ranger",
+        "url": "https://permitranger.com/permits/hoover"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Peeler_Lake"
+      },
+      {
+        "label": "TopoQuest",
+        "url": "https://topoquest.com/place/california/lake/peeler-lake/1652854"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/twin-lakes-to-peeler-lake"
+      },
+      {
+        "label": "The Lost Longboarder",
+        "url": "https://www.thelostlongboarder.com/backpacking-peeler-lake-loop-hoover-wilderness/"
+      },
+      {
+        "label": "Live and Let Hike",
+        "url": "https://liveandlethike.com/2021/01/02/crown-lake-kerrick-meadow-peeler-lake-loop-hoover-wilderness-yosemite-national-park-ca/"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/backpacking/hike-to-peeler-lake"
+      },
+      {
+        "label": "High Sierra Trails",
+        "url": "https://www.highsierratrails.com/barney/barney_overview.html"
+      }
+    ],
+    "caveats": "Mileage is about 7.5 mi to the east shore and about 8 mi to the northwest camps; The Outbound's figures conflict with themselves and were ignored. Gain is about 2,400 ft net and about 2,800 ft total, though trailhead elevation varies by source (7,027–7,300 ft). The 7 AM open time for advance permits comes from third-party sites, not Recreation.gov. Entry code HH077 may be a typo in the Forest Service table. The Sawtooth Ridge Zone boundary is unconfirmed, so call Bridgeport Ranger District at 760-932-7070. The Humboldt-Toiyabe alerts page couldn't be checked, and an AllTrails alert couldn't be read, though no known closures or burns were found. Paid parking at Mono Village was $10 in 2020; the current fee is unconfirmed. Expect mosquitoes and higher creek crossings early in the season. The 2020 walk-up permit info is outdated."
+  },
+  "notes": "# Peeler Lake (Hoover Wilderness, via Twin Lakes / Robinson Creek): research and score\n\n**Score: 78/100** (Scenery 30 · Experience 22 · Access 12 · Permit 14)\n\nPeeler Lake looks and feels epic. It's a big, deep-blue lake ringed by granite and sitting right on the Sierra Crest, with some of the best day hikes from camp on your list. The two weak spots are getting there and the permit. It's about 8 miles and roughly 2,400–2,800 ft of climbing each way, nearly double your usual hike, though still within your hard limits. The permit is very gettable if you book a Wednesday entry the morning it opens.\n\n---\n\n## 1. Trail and lake facts\n\n| Item | Best figure | Sources and conflicts |\n|---|---|---|\n| **One-way miles** | **~7.5 mi to the east shore, ~8 mi to camps on the northwest side** | **Lost Longboarder (trip report):** 4 mi to Barney Lake, then 2.8 mi to the junction, then 0.7 mi to the lake, \"8 mile day.\" **Live and Let Hike:** reaches the Peeler/Crown junction at 6.2 mi, which agrees. **AllTrails:** 16.1 mi round trip, about 8.05 each way. **The Outbound** disagrees with itself (16.19 mi round trip, but its text says \"around 11 mile out-and-back\" and \"4.5 + 4.5\"), so I ignored it. **I trust ~8 mi.** |\n| **Elevation gain** | **~2,400 ft net, ~2,800 ft total climbing** | **Lost Longboarder:** 2,400 ft net (Twin Lakes 7,095 ft to 9,489 ft). **AllTrails:** 2,782 ft. **Outbound:** 2,927 ft. **Starting elevation varies by source:** Forest Service trailhead page says 7,300 ft (the signed trailhead is past the resort), highsierratrails says 7,027 ft, Lost Longboarder says 7,095 ft. The hardest part is about 700 ft of switchbacks in half a mile after the creek crossing at about mile 4.85 (Live and Let Hike). |\n| **Camp elevation** | **9,488 ft** | USGS name database (via TopoQuest) and Wikipedia say 9,488. Lost Longboarder says 9,489. |\n| **Coordinates** | **38.12047° N, 119.46785° W** (USGS Matterhorn Peak map) | Wikipedia gives 38°07′14″N 119°28′04″W, which matches. |\n| **Trailhead / parking** | Mono Village Resort at the end of Twin Lakes Rd, 13.5 mi from Bridgeport. Paid parking; the trailhead itself has none (Forest Service). | A 2020 report paid $10. I couldn't confirm the current fee. |\n\n**Setting:** The lake sits on the Yosemite boundary (there's a boundary marker on the northwest shore), between Crown Point (11,346 ft) and Cirque Mountain. It's deep, cold and granite-lined. The Outbound reports rainbow trout over 12 inches. The east shore gets busy, and Live and Let Hike says the quieter west shore has better views.\n\n**Day hikes from camp:**\n- Kerrick Meadow, Rock Island Pass and Snow Lake loop (about 9 mi)\n- Crown Lake and Robinson Lakes\n- Crown Point summit (cross-country, described as straightforward)\n- Mule Pass and Ice Lakes\n\n## 2. Permits\n\n- **System:** Rolling reservations on Recreation.gov. **There is no lottery.**\n- **Booking URL:** https://www.recreation.gov/permits/445856, listed as \"Humboldt-Toiyabe National Forest – Hoover Wilderness Permits.\"\n- **Exact entry point name:** **\"Robinson Creek.\"** A 2021 trip report links it as division 8561. The Forest Service table gives the code HH077, but that same code is also listed for Little Slide Canyon, so the table may have a typo.\n- **Quota season:** June 15 – October 15. Robinson Creek allows **50 people per day: 25 reservable in advance and 25 released late.**\n- **When permits open:**\n  - **Advance half:** 6 months ahead on a rolling window. Two permit-guide sites say it opens at **7:00 AM PT**; Recreation.gov doesn't state a time. Example: a Wednesday, July 21, 2027 entry opens around January 21, 2027.\n  - **Late half:** 3 days before entry, at **7 AM PDT** according to Recreation.gov. The Forest Service page says \"8 a.m. (MST),\" which is probably the same moment in Mountain time. I trust Recreation.gov.\n- **Group size:** **Maximum 15 people.** In the Sawtooth Ridge Zone the limit is 8. I couldn't confirm the zone's boundary. Peeler is almost certainly outside it, but confirm with the Bridgeport Ranger District at 760-932-7070.\n  - Separate permits can't hike or camp together if they add up to more than 15. Your 12 fit on **one permit** either way.\n- **Cost:** $8 per person aged 13 and up, plus a $6 reservation fee. That's about $102 for 12 adults.\n- **Other rules:**\n  - Everyone must start on the entry date and trailhead on the permit.\n  - Print the permit by 10 AM PT on entry day or it's treated as a no-show and cancelled.\n  - Cancel at least 14 days ahead for a refund.\n  - The leader's name can't be changed after booking.\n  - One person can hold at most 3 reservations at a time.\n- **Camp rules:**\n  - Bear canisters are required.\n  - Camp at least 100 ft from water and trails.\n  - **No wood or charcoal fires within ¼ mile of Peeler Lake**; gas stoves are fine.\n  - Day hikes into Yosemite need no extra permit, but Yosemite's rules apply there (for example, no pets).\n- **Outdated info to ignore:** The 2020 Lost Longboarder post describes a shorter quota season and walk-up permits at the ranger station. That's no longer how it works; all permits now go through Recreation.gov.\n\n## 3. Fire, closure and access problems\n\n- **I couldn't open the Humboldt-Toiyabe alerts page** because my tools hit their usage limit. Before booking, check https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts.\n- I found **no closure or recent burn affecting Robinson Creek** in the sources I could read.\n- Recent AllTrails reviews suggest the trail is open and in good shape:\n  - May 2, 2026: some snow near Peeler, \"nothing major.\"\n  - Sept 5, 2026: \"not crowded.\"\n  - July 2025: good condition, three crossings of Robinson Creek that early-season hikers waded without taking shoes off.\n- AllTrails shows \"1 alert\" on the trail page, but I couldn't see what it says.\n- Expect mosquitoes and higher creek crossings early in the season.\n\n## 4. Scoring\n\n- **Scenery 30/35:** A huge deep-blue granite lake on the Crest, with Crown Lake and Snow Lake as day trips. It's just short of Thousand Island Lake's signature Banner Peak backdrop, but clearly above Lamarck.\n- **Experience 22/25:** An excellent base camp. Several great day hikes, strong trout fishing, and cold but swimmable water. Points off because the east shore gets crowded, campfires aren't allowed, and you'll have to hunt for spots big enough for 12, most likely on the quieter west side.\n- **Access 12/20:** About 8 mi and 2,400–2,800 ft is roughly 1.7 times your usual distance and well over your usual climb. On the plus side, there's no shuttle, parking is easy (though paid), and the first 4 miles are gentle. One way to soften it: spend night 1 near Barney Lake (4–5 mi in; one night is allowed there, with camp more than 100 ft from the shore), then hike 3.5 mi to Peeler on Thursday. Each day then fits your usual range.\n- **Permit 14/20:** A group of 12 needs about half of the 25 advance spots for one day. That's very likely for a Wednesday if you book the morning it opens. The late release is a backup. It's far less competitive than the Inyo National Forest permits.\n\n**Total: 78**, essentially level with Lamarck (79) and just below Thousand Island (81). It's better scenery than Lamarck, but a harder hike in.\n\n## URLs used\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness\n- https://fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness-permits\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/robinson-creek-trailhead\n- https://www.recreation.gov/permits/445856 (and the division link /permits/445856/divisions/8561 cited in Live and Let Hike)\n- https://permitranger.com/permits/hoover\n- https://backcountryemily.com/california-backpacking-permits/\n- https://en.wikipedia.org/wiki/Peeler_Lake\n- https://topoquest.com/place/california/lake/peeler-lake/1652854\n- https://www.alltrails.com/trail/us/california/twin-lakes-to-peeler-lake\n- https://www.thelostlongboarder.com/backpacking-peeler-lake-loop-hoover-wilderness/\n- https://liveandlethike.com/2021/01/02/crown-lake-kerrick-meadow-peeler-lake-loop-hoover-wilderness-yosemite-national-park-ca/\n- https://www.theoutbound.com/yosemite/backpacking/hike-to-peeler-lake\n- https://www.highsierratrails.com/barney/barney_overview.html\n- To check, not read: https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts"
+}

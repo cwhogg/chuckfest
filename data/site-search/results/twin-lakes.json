@@ -1,0 +1,169 @@
+{
+  "candidate": {
+    "name": "Twin Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Lodgepole",
+    "why": "Lakes under Silliman Crest."
+  },
+  "site": {
+    "name": "Twin Lakes",
+    "region": "Sequoia National Park - Lodgepole",
+    "area": "Sequoia & Kings Canyon National Parks",
+    "description": "Forest-ringed subalpine lakes in a granite basin below the Silliman Crest and Twin Peaks, reached via Cahoon Gap from Lodgepole. Strong basecamp with bear boxes and a pit toilet, plus day hikes to Silliman Pass, Mt. Silliman and Twin Peaks. Pleasant rather than epic scenery.",
+    "latitude": 36.658,
+    "longitude": -118.716,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.8,
+    "elevationGainFt": 2900,
+    "campElevationFt": 9446,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Twin Lakes",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445857",
+    "permitNotes": "First come, first served, no lottery. Reservations open 6 months before the start date at 7:00 AM PT, and online booking closes 1 week before the trip. Use Twin Lakes as both entry and exit, with first-night camp 'Twin Lakes (Clover Creek)'. Entry point and date can't be changed after booking. Fees are $15 per permit plus $5 per person. Group limit is 15 on trail and 12 off trail. Pick up at Lodgepole Visitor Center (7:00 AM-3:30 PM) by 10:00 AM on the start day, or call 559-565-3766, or the reservation is cancelled. Walk-ups are available from 1:00 PM the day before. Daily quota is unconfirmed; check the NPS EntryPointMapAll PDF. The 2026 quota season ran May 22 to Sept 26; 2027 dates aren't posted yet. Busy on weekends, quieter midweek.",
+    "sceneryScore": 22,
+    "experienceScore": 19,
+    "accessScore": 12,
+    "permitScore": 15,
+    "rankingNotes": "Solid midweek basecamp with an easy permit and a Silliman Pass day hike, but a long haul for nice-not-epic subalpine lakes (68/100).",
+    "sources": [
+      {
+        "label": "NPS wilderness permits",
+        "url": "https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm"
+      },
+      {
+        "label": "NPS trail descriptions",
+        "url": "https://www.nps.gov/seki/planyourvisit/traildesc.htm"
+      },
+      {
+        "label": "NPS Twin Lakes trailhead",
+        "url": "https://www.nps.gov/places/000/twin-lakes-trailhead.htm"
+      },
+      {
+        "label": "NPS minimum impact restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS trail conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/trailcond.htm"
+      },
+      {
+        "label": "NPS trail conditions (home)",
+        "url": "https://home.nps.gov/seki/planyourvisit/trailcond.htm"
+      },
+      {
+        "label": "NPS conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "NPS current fires",
+        "url": "https://www.nps.gov/seki/learn/nature/current_fires.htm"
+      },
+      {
+        "label": "NPS fire restrictions",
+        "url": "https://www.nps.gov/seki/learn/nature/fire-restrictions.htm"
+      },
+      {
+        "label": "NPS KNP Complex fire",
+        "url": "https://www.nps.gov/seki/learn/nature/knp-complex-fire.htm"
+      },
+      {
+        "label": "NPS news feed",
+        "url": "https://www.nps.gov/feeds/getnewsrss.htm?id=seki"
+      },
+      {
+        "label": "Recreation.gov SEKI permits",
+        "url": "https://www.recreation.gov/permits/445857"
+      },
+      {
+        "label": "outdoorstatus",
+        "url": "https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/twin-lakes/"
+      },
+      {
+        "label": "permitsnag SEKI",
+        "url": "https://permitsnag.com/permits/california/sequoia-kings-canyon"
+      },
+      {
+        "label": "permitsnag Bubbs Creek",
+        "url": "https://permitsnag.com/permits/california/sequoia-kings-canyon/seki-cedar-grove-bubbs-creek"
+      },
+      {
+        "label": "permitranger",
+        "url": "https://permitranger.com/permits/seki"
+      },
+      {
+        "label": "campflare",
+        "url": "https://campflare.com/permit/sequoia-kings"
+      },
+      {
+        "label": "High Sierra Trails",
+        "url": "https://www.highsierratrails.com/elizabeth_pass/elizabeth_pass_resources.html"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/twin-lakes-sequoia-national-park/"
+      },
+      {
+        "label": "liveandlethike",
+        "url": "https://liveandlethike.com/2021/08/22/deadman-canyon-loop-sequoia-kings-canyon-national-parks-ca/"
+      },
+      {
+        "label": "hikeeatcamp",
+        "url": "http://hikeeatcamp.blogspot.com/2015/07/twinlakestrail.html"
+      },
+      {
+        "label": "redwoodhikes",
+        "url": "https://www.redwoodhikes.com/SequoiaNP/TwinLakes.html"
+      },
+      {
+        "label": "Hiking Project",
+        "url": "https://www.hikingproject.com/trail/7008527/twin-lakes-trail"
+      },
+      {
+        "label": "The Dyrt",
+        "url": "https://thedyrt.com/camping/california/twin-lakes-ca"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/route/twin-lakes-trail-41356/"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/twin-lakes-trail"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/california/hiking/twin-lakes-trail"
+      },
+      {
+        "label": "Sierra Rec Silliman Pass",
+        "url": "https://sierrarecmagazine.com/silliman-pass-backpacking-route-sequoia/"
+      },
+      {
+        "label": "Sierra Rec 2024",
+        "url": "https://sierrarecmagazine.com/kings-canyon-and-sequoia-national-park-backpacking-2024/"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/sierra-loop-sequioa-kings-canyon/426873"
+      },
+      {
+        "label": "Wikipedia Silliman Pass",
+        "url": "https://en.wikipedia.org/wiki/Silliman_Pass"
+      },
+      {
+        "label": "Wikipedia Twin Peaks",
+        "url": "https://en.wikipedia.org/wiki/Twin_Peaks_(Sequoia_National_Park)"
+      }
+    ],
+    "caveats": "Distance sources range from 6.5 to 7.05 mi; the NPS figure of 6.8 is used. One-way gain is ~2,900 ft per outdoorstatus; other figures are round-trip or low estimates. Camp elevation is given as 9,419-9,446 ft across sources; Trailforks' 9,446 is used. Coordinates are approximate (The Dyrt) and weren't checked against a USGS map. Peak elevation is null because no single summit is established; Cahoon Gap (8,645 ft) is the high point en route. Permit advance days are null because the notes give 6 months rather than a day count. Daily quota is unconfirmed. Burned areas from an older fire (likely the 2021 KNP Complex, inferred) carry hazard-tree risk. No campfires above 9,000 ft. Fish presence is unconfirmed. Downed trees were reported near Ranger and Lost Lakes in July 2026. Expect Generals Highway delays. A 2024 source naming Giant Forest Museum as the pickup point conflicts with NPS (Lodgepole)."
+  },
+  "notes": "**Twin Lakes (Sequoia NP, from Lodgepole): 68/100 (Scenery 22, Experience 19, Access 12, Permit 15)**\n\nTwin Lakes passes all of your hard limits. The permit is fairly easy to get for a Wednesday start, there's a good pass to day-hike to, and the camp has infrastructure. But it's not an \"epic\" trip. The hike in is about 50% longer and gains about 80% more than your usual trip, and the lakes are nice subalpine lakes rather than famous scenery. It ranks well below Thousand Island (81) and Lamarck (79).\n\n## Key facts\n\n| Item | Value | Most trusted source |\n|---|---|---|\n| One-way miles | **6.8 mi** | NPS trailhead page |\n| Elevation gain (one-way) | **About 2,900 ft total**. The straight rise is about 2,700 ft (Lodgepole ~6,720 ft to the lakes ~9,420–9,450 ft). The trail climbs over Cahoon Gap (8,645 ft) and drops a little before the lakes, so expect ~200–300 ft of climbing on the way out too. | outdoorstatus, liveandlethike, hikeeatcamp |\n| Camp elevation | **About 9,420–9,450 ft** | Trailforks (9,446), The Dyrt (9,445), hikeeatcamp (9,419) |\n| Coordinates (campsites/lakes, approx.) | **36.658, -118.716**. Not checked against a USGS map. | The Dyrt. Twin Peaks (36.662, -118.714) and Silliman Pass (36.663, -118.707) per Wikipedia sit just north and east, which fits. |\n| Trailhead | Lodgepole Campground. GPS for driving: 36.6053, -118.7229 | NPS, outdoorstatus |\n| First place you're allowed to camp | Cahoon Meadow, about 3 mi in | NPS trail descriptions |\n\n**Conflicting figures**\n- **Distance:** sources range from 6.5 mi (Sierra Rec Magazine, \"approximate\") to 7.05 mi (redwoodhikes, 14.1 mi round trip). AllTrails says 6.85 mi (13.7 round trip). Modern Hiker says 6.8 (13.6 round trip). I trust the NPS figure of 6.8.\n- **Gain:** sources range from 2,000–2,500 ft (Sierra Rec, too low) to 3,231 ft (AllTrails) or 3,284 ft (The Outbound). Those last two are round-trip totals, so they include the climb back out. Trailforks gives 3,170 ft. I trust about 2,900 ft one-way (outdoorstatus), which also matches 2,700 ft of straight rise plus the dip after Cahoon Gap.\n- **Where to pick up the permit:** a 2024 Sierra Rec article says only Giant Forest Museum. The current NPS page says Lodgepole Visitor Center during quota season. Trust NPS.\n\n## Permits\n- **System:** first come, first served on a rolling window. **There is no lottery.** On Recreation.gov, SEKI's only lottery permits are for Mt. Whitney (permitsnag).\n- **Booking URL:** https://www.recreation.gov/permits/445857\n- **Entry point:** **\"Twin Lakes\"**. Put Twin Lakes as the exit too, and choose first-night camp area \"Twin Lakes (Clover Creek)\" (outdoorstatus).\n- **Window:** reservations open 6 months before your start date, released daily at 7:00 AM Pacific. Online booking closes 1 week before the trip. Your entry point and date can't be changed after booking (NPS).\n  - Example: a Wednesday, July 14, 2027 start should open around January 14, 2027 at 7 AM PT.\n  - The 2027 quota season dates aren't posted yet. In 2026 it ran May 22 to Sept 26.\n- **Walk-up permits:** from 1:00 PM the day before. Pick up reserved permits by 10:00 AM on your start day, or call 559-565-3766. Otherwise your reservation is cancelled. Lodgepole Visitor Center permit desk hours are 7:00 AM–3:30 PM.\n- **Fees:** $15 per permit plus $5 per person.\n- **Group size:** **15 on trail, 12 off trail.** \"Off trail\" means more than half a mile from a maintained trail. A group of 12 fits on one permit, so no need to split. If you do split, the two groups can't camp within half a mile of each other if the combined total is over the limit.\n- **Daily quota:** **I couldn't confirm Twin Lakes' daily quota.** NPS publishes it on its entry-quota map (EntryPointMapAll PDF). Check that 12 reservable spots can exist on one date.\n- **Demand:** Recreation.gov says the lake basins near Lodgepole are \"busy on weekends but can be quiet mid-week.\" Your Wednesday start helps.\n\n## Rules and logistics at camp\n- **No campfires.** Fires are banned above 9,000 ft in the Kaweah drainage.\n- **Food storage:** campsites have bear boxes and a pit toilet (Hiking Project, The Dyrt). Bear canisters aren't listed as required here. With 12 people sharing the boxes, I'd still bring some.\n- **Fishing:** California state rules apply above 9,000 ft. **I couldn't confirm that the lakes currently hold fish.**\n- **Swimming:** an old SummitPost report mentions people swimming.\n\n## Fires, closures, access\n- **Old fire:** an undated NPS fire update describes containment lines north of Lodgepole. It says the fire was spreading toward the granite near Kettle Peak, Twin Peaks and Mt. Silliman. Its details suggest it's from the 2021 KNP Complex fire, but the date is my inference. NPS warns about hazard trees in burned areas.\n- **Current fires:** NPS's Current Fires page (updated June 9, 2026) said there were no fires in the parks.\n- **2026 trail reports:** Silliman Pass was \"almost snow free\" on June 4, 2026. Downed trees were reported around Seville, Ranger and Lost Lakes on July 23, 2026.\n- **Roads:** NPS notes traffic delays on the Generals Highway between Giant Forest and Highway 180, which affects the north approach.\n- **No closures** affecting the Twin Lakes Trail turned up.\n\n## Scoring\n- **Scenery 22/35:** forest-ringed lakes in a granite basin below the Silliman Crest and Twin Peaks. Pretty and higher up than many of your trips, but not jaw-dropping and not turquoise. Redwoodhikes calls the approach \"somewhat mundane pine forest\" and the lakes \"small.\"\n- **Experience 19/25:** a strong basecamp. Day hikes include Silliman Pass (about 1 mi and ~1,000 ft up), with views and a route down to Ranger, Beville and Lost Lakes. Mt. Silliman (scramble) and Twin Peaks are also options. Campsites are well spaced, with bear boxes and a toilet. Points off for no campfires and unconfirmed fishing.\n- **Access 12/20:** 6.8 mi and ~2,900 ft is well beyond your 4.5 mi / 1,600 ft average. On the plus side, there's no shuttle, a large paved lot and Lodgepole Campground for the night before. The long drive into the park costs a little.\n- **Permit 15/20:** no lottery, a 15-person limit, and a quieter midweek start. You'll still need to book at 7 AM six months out.\n\n**Bottom line:** a good backup or a second-tier pick. If you want this area to feel epic, the real payoff is over Silliman Pass at Ranger and Lost Lakes. That means a shorter day hike (or a move) from Twin Lakes, at the cost of more mileage.\n\n## URLs used\n- https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm\n- https://www.nps.gov/places/000/twin-lakes-trailhead.htm\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/trailcond.htm\n- https://home.nps.gov/seki/planyourvisit/trailcond.htm\n- https://www.nps.gov/seki/planyourvisit/conditions.htm\n- https://www.nps.gov/seki/learn/nature/current_fires.htm\n- https://www.nps.gov/seki/learn/nature/fire-restrictions.htm\n- https://www.nps.gov/seki/learn/nature/knp-complex-fire.htm\n- https://www.nps.gov/feeds/getnewsrss.htm?id=seki\n- https://www.recreation.gov/permits/445857\n- https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/twin-lakes/\n- https://permitsnag.com/permits/california/sequoia-kings-canyon\n- https://permitsnag.com/permits/california/sequoia-kings-canyon/seki-cedar-grove-bubbs-creek\n- https://permitranger.com/permits/seki\n- https://campflare.com/permit/sequoia-kings\n- https://www.highsierratrails.com/elizabeth_pass/elizabeth_pass_resources.html\n- https://modernhiker.com/hike/twin-lakes-sequoia-national-park/\n- https://liveandlethike.com/2021/08/22/deadman-canyon-loop-sequoia-kings-canyon-national-parks-ca/\n- http://hikeeatcamp.blogspot.com/2015/07/twinlakestrail.html\n- https://www.redwoodhikes.com/SequoiaNP/TwinLakes.html\n- https://www.hikingproject.com/trail/7008527/twin-lakes-trail\n- https://thedyrt.com/camping/california/twin-lakes-ca\n- https://www.trailforks.com/route/twin-lakes-trail-41356/\n- https://www.alltrails.com/trail/us/california/twin-lakes-trail\n- https://www.theoutbound.com/california/hiking/twin-lakes-trail\n- https://sierrarecmagazine.com/silliman-pass-backpacking-route-sequoia/\n- https://sierrarecmagazine.com/kings-canyon-and-sequoia-national-park-backpacking-2024/\n- https://www.summitpost.org/sierra-loop-sequioa-kings-canyon/426873\n- https://en.wikipedia.org/wiki/Silliman_Pass\n- https://en.wikipedia.org/wiki/Twin_Peaks_(Sequoia_National_Park)"
+}

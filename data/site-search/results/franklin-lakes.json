@@ -1,0 +1,169 @@
+{
+  "candidate": {
+    "name": "Franklin Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King",
+    "why": "Rainbow-colored rock with a Franklin Pass day hike."
+  },
+  "site": {
+    "name": "Franklin Lakes",
+    "region": "Southern Sierra - Mineral King, Sequoia National Park",
+    "area": "Mineral King",
+    "description": "A high camp at Lower Franklin Lake in a dramatic cirque under Florence Peak and Rainbow Mountain, with red and orange metamorphic rock set against granite. It makes an excellent basecamp for day hikes to Franklin Pass, Florence Peak, Upper Franklin Lake and Farewell Gap, and there is brook trout fishing. The climb is steeper than the group's past trips.",
+    "latitude": 36.42,
+    "longitude": -118.56,
+    "difficulty": "strenuous",
+    "distanceMiles": 5.7,
+    "elevationGainFt": 2698,
+    "campElevationFt": 10331,
+    "peakElevationFt": 10488,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Franklin Pass",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445857",
+    "permitNotes": "First-come, first-served rolling release with no lottery. Permits open 6 months before the start date at 7:00 AM Pacific and can be booked until 1 week before the trip. Quota season (2026) runs May 22–Sep 26. Some walk-up permits are issued at the Mineral King Ranger Station from 1 pm the day before entry. Fees are $15 per permit plus $5 per person. Pick up in person with ID by 10 am on the start date or the reservation is cancelled; call 559-565-3766 to arrange a late pickup. Group limit is 15 on trail and 12 off trail. The daily quota is about 30 per permitsnag.com, which is unconfirmed. Do not book Farewell Gap. The entry point name appears as Franklin Pass, Franklin, or Franklin Lakes depending on the source.",
+    "sceneryScore": 29,
+    "experienceScore": 20,
+    "accessScore": 12,
+    "permitScore": 14,
+    "rankingNotes": "Dramatic, colorful high cirque basecamp under Florence Peak with a rolling permit and no lottery, but the gain is steep and the drive is slow (75/100).",
+    "sources": [
+      {
+        "label": "NPS SEKI Wilderness Permits",
+        "url": "https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm"
+      },
+      {
+        "label": "NPS Minimum Impact Restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS Road Construction",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-construction.htm"
+      },
+      {
+        "label": "NPS Wilderness Permits short link",
+        "url": "https://go.nps.gov/sekiwildernesspermits"
+      },
+      {
+        "label": "NPS Trail Descriptions",
+        "url": "https://www.nps.gov/seki/planyourvisit/traildesc.htm"
+      },
+      {
+        "label": "NPS Mineral King road news",
+        "url": "https://www.nps.gov/seki/learn/news/mineral-king-road-construction-closures-and-delays-in-place-through-2027.htm"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/445857"
+      },
+      {
+        "label": "Recreation.gov availability",
+        "url": "https://recreation.gov/permits/445857/registration/detailed-availability"
+      },
+      {
+        "label": "hikingwalking.com",
+        "url": "https://www.hikingwalking.com/index.php/destinations/ca/ca_sws/mineral_king/franklin_lakes/franklin_lakes_detail"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/backpacking/backpack-to-franklin-lakes-franklin-pass"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/franklin-lake/"
+      },
+      {
+        "label": "AllTrails Franklin Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/franklin-lakes--3"
+      },
+      {
+        "label": "AllTrails Franklin Pass",
+        "url": "https://www.alltrails.com/trail/us/california/franklin-pass-trail--2"
+      },
+      {
+        "label": "AllTrails Sequoia guide",
+        "url": "https://www.alltrails.com/guides/us/california/backpacking-trips-in-sequoia-national-park"
+      },
+      {
+        "label": "AllTrails Farewell Gap-Franklin Lakes",
+        "url": "https://alltrails.com/trail/us/california/farewell-gap-franklin-lakes"
+      },
+      {
+        "label": "AllTrails Mineral King list",
+        "url": "https://www.alltrails.com/lists/mineral-king-trails"
+      },
+      {
+        "label": "Backcountry Post",
+        "url": "https://backcountrypost.com/threads/seki-mineral-king-loop-june-2021.9861/"
+      },
+      {
+        "label": "Calihike blog",
+        "url": "http://calihike.blogspot.com/2013/07/days-976-978-mineral-king-franklin.html?m=1"
+      },
+      {
+        "label": "Exploring Wild",
+        "url": "https://exploringwild.com/mineral-king-loop-variations/"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/franklin-lakes/"
+      },
+      {
+        "label": "OutdoorStatus 2022",
+        "url": "https://outdoorstatus.com/trips/sequoia-kings-canyon-national-parks/franklin-lakes/?date=2022-06-12"
+      },
+      {
+        "label": "permitsnag",
+        "url": "https://permitsnag.com/permits/california/sequoia-kings-canyon"
+      },
+      {
+        "label": "ReserveNature",
+        "url": "https://reservenature.com/permit/california/sequoia-and-kings-canyon-national-parks-wilderness-permits"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/sequoia-kings"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/kings-canyon-and-sequoia-national-park-backpacking-2024/"
+      },
+      {
+        "label": "Our Valley Voice",
+        "url": "https://www.ourvalleyvoice.com/2025/05/02/mineral-king-road-construction-closures-delays-in-place-through-2027/"
+      },
+      {
+        "label": "National Parks Traveler",
+        "url": "https://www.nationalparkstraveler.org/2025/04/mineral-king-road-construction-sequoia-national-park"
+      },
+      {
+        "label": "ABC30",
+        "url": "https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/"
+      },
+      {
+        "label": "Sierra Sun Times",
+        "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/66671-sequoia-and-kings-canyon-national-parks-announce-mineral-king-road-construction-closures-and-delays-in-place-through-2027-does-not-impact-the-majority-of-visitors"
+      },
+      {
+        "label": "Wikipedia Florence Peak",
+        "url": "https://en.wikipedia.org/wiki/Florence_Peak_(California)"
+      },
+      {
+        "label": "Wikipedia Farewell Gap",
+        "url": "https://en.wikipedia.org/wiki/Farewell_Gap"
+      }
+    ],
+    "caveats": "Coordinates (36.42, -118.56) are the researcher's own estimate and have not been verified. Distance figures conflict: 5.5–6.3 mi one way, with about 5.6–5.8 mi to the campsites per hikingwalking.com. Elevation gain ranges from 2,500 to 2,800 ft; 2,698 ft is used here. Peak elevation is the trail's high point on the way to camp (10,488 ft), not a summit. The daily quota of 30 is unconfirmed third-party data. The entry point name is inconsistent across sources. permitAdvanceDays is null because the window is stated as 6 months rather than a fixed number of days. Mineral King Road construction runs through fall 2027 and the 2027 schedule is not yet published. Fires are banned above 9,000 ft, bear spray is prohibited, and marmots damage cars. The lower lake is dammed. Flat campsites are limited. No fire or closure was found affecting the route, but this is not fully verified."
+  },
+  "notes": "I'll research this thoroughly. Let me start with several parallel searches.\nNow let's get the trail-specific details and the recreation.gov entry point.\nI'd score Franklin Lakes **75/100: scenery 29, experience 20, access 12, permit 14**. That puts it a little below Lamarck Lakes (79) and Thousand Island Lake (81). The camp is high and the backdrop is dramatic, but it's above the group's usual effort level. It's about 5.6–6.0 miles and 2,600–2,700 ft of gain, which is more climbing than any past trip. Getting to the trailhead is also slow, and the road has construction scheduled through fall 2027.\n\nMy search tool hit its usage limit before I finished. Three things are not confirmed from an official source: the lake's coordinates, the official daily permit quota, and whether there have been any recent fires near the route.\n\n## Key facts\n\n| Item | Value | Source I trust |\n|---|---|---|\n| One-way miles to camp | **About 5.6–5.8 mi** to the campsites; 6.0 mi to the lake viewpoint | hikingwalking.com mile-by-mile description. A trail sign at mile 0.6 reads \"5.4 mi to Franklin Lakes\", which matches. |\n| Elevation gain | **About 2,600–2,700 ft** (trailhead about 7,800 ft; trail tops out at 10,488 ft) | hikingwalking.com (2,698 ft) and AllTrails (2,657–2,726 ft) |\n| Camp elevation | **Lower Franklin Lake 10,331 ft**; Upper Franklin Lake 10,578 ft (no trail) | hikingwalking.com |\n| Coordinates | **About 36.42°N, 118.56°W**. This is my own estimate, not from a source. Florence Peak (36.4061, −118.5509 per Wikipedia) rises south of the lakes. | Unverified. Check it on CalTopo or the USGS Mineral King map. |\n| Hard limits (10 mi / 3,500 ft) | Passes both | — |\n\n**Where the numbers disagree:**\n- Distance and gain:\n  - The Outbound: 5.7 mi, 2,500 ft\n  - OutdoorStatus: 5.5 mi, 2,500 ft\n  - Modern Hiker: 11.4 mi round trip, 2,800 ft\n  - AllTrails: 12.2 mi round trip\n  - Backcountry Post trip report: 6.3 mi, 2,698 ft\n\n  I trust hikingwalking.com most because it logs the route mile by mile and matches the trail sign. The 5.5-mile figures probably stop short of the lake.\n- Trailhead elevation: sources give 7,790, 7,820 or 7,831 ft. The differences don't matter.\n- The lower lake is held back by an old dam, so some of the shoreline is reservoir-like.\n\n## Permits (Sequoia & Kings Canyon National Parks)\n\n- **Booking URL:** https://www.recreation.gov/permits/445857\n- **System:** first-come, first-served on a rolling basis. **There is no lottery.**\n- **Window:** 6 months ahead of the start date, released daily at **7:00 AM Pacific**. You can book until 1 week before the trip. For example, a Wednesday July 14, 2027 start opens Thursday January 14, 2027 at 7:00 AM.\n- **Quota season (2026):** May 22–Sep 26. Some walk-up permits are given out at the Mineral King Ranger Station starting at 1 pm the day before entry.\n- **Fees:** $15 per permit plus $5 per person.\n- **Pickup:** in person, with ID, by 10 am on the start date or the reservation is cancelled. You can call 559-565-3766 to arrange a late pickup.\n- **Entry point name:** this is inconsistent across sources.\n  - The park's trail descriptions use **\"Franklin Pass Trail / Franklin Pass trailhead\"**, and Exploring Wild says the entry point is \"Franklin Pass\".\n  - Third-party trackers of recreation.gov show it as **\"Franklin\"** or \"Franklin Lakes\".\n  - **Don't book \"Farewell Gap\".** That's a separate entry point that requires camping the first night in the Golden Trout Wilderness, outside the park.\n- **Group size:** maximum **15 on trail** and 12 off trail, so a group of 12 fits on one permit. Two permits of 6 also works. Groups traveling together can't camp within half a mile of each other only if their combined size is over the limit, which yours isn't.\n- **Daily quota:** permitsnag.com says 30 people a day. That's a third-party figure I couldn't confirm with the park's trip planner. Exploring Wild says this entry point has the highest quota of the Mineral King loop trailheads. Modern Hiker notes it \"routinely reaches its quota\" for walk-ups.\n\n## Rules and access problems\n\n- **Mineral King Road construction runs through fall 2027.** That covers a summer 2027 trip.\n  - In 2025, weekdays had a full closure from 10 am to 4 pm, with one pass-through at 1 pm. Weekends were open.\n  - The fall 2026 schedule was heavier.\n  - The 2027 schedule hasn't been published yet.\n  - Since you start on a Wednesday, plan to drive up Tuesday, pick up the permit after 1 pm, and camp nearby (Cold Springs campground is in the valley).\n- **Marmots chew car hoses and wiring at Mineral King.** Rangers recommend wrapping cars in tarps.\n- **No campfires.** Fires are banned above 9,000 ft on this side of the Great Western Divide.\n- **Bear spray is not allowed in the park.** There are bear lockers at the lakes; one reviewer said they're limited, so bring bear canisters.\n- **Fishing:** reports describe small brook trout and \"good fishing.\" A California fishing license is required.\n- **Fires and closures:** I found no fire or closure affecting this route. The only closure in the park's trail descriptions is Redwood Canyon (damaged by the 2021 KNP Complex fire), which is elsewhere. Please check https://www.nps.gov/seki/planyourvisit/conditions.htm before the trip.\n\n## Score: 75/100\n\n- **Scenery 29/35.** A dramatic cirque under Florence Peak and Rainbow Mountain, with red and orange metamorphic rock against granite. It's striking and unusual, but it isn't turquoise-water, Ansel-Adams-iconic like Thousand Island Lake, and the dam takes a little away. I put it one point above Lamarck.\n- **Experience 20/25.** An excellent basecamp. Day hikes from camp:\n  - Franklin Pass (11,760 ft, 1.9 mi away), with views into the Kern country\n  - Florence Peak (12,432 ft, a non-technical scramble)\n  - Upper Franklin Lake\n  - Farewell Gap\n\n  It also has fishing and a high camp. Points off because reviewers say flat sites are limited, so 12 people will likely spread over 2–3 sites, and because there are no campfires.\n- **Access 12/20.** The distance is slightly above your 5.5-mile sweet spot. The gain is about 1,000 ft above your 1,600-ft average and above your hardest past trip (2,377 ft). The road is a slow, narrow mountain drive with construction delays.\n- **Permit 14/20.** The rolling system with no lottery is easier than Thousand Island Lake (8). A Wednesday start and a fairly large quota help. But a group of 12 uses a big share of a roughly 30-person daily quota, and Mineral King is popular, so you'll need to book right at 7:00 AM on release day.\n\n## URLs used\n- https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/road-construction.htm\n- https://go.nps.gov/sekiwildernesspermits\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm\n- https://www.nps.gov/seki/learn/news/mineral-king-road-construction-closures-and-delays-in-place-through-2027.htm (search snippet only)\n- https://www.recreation.gov/permits/445857\n- https://recreation.gov/permits/445857/registration/detailed-availability (search snippet only)\n- https://www.hikingwalking.com/index.php/destinations/ca/ca_sws/mineral_king/franklin_lakes/franklin_lakes_detail\n- https://www.theoutbound.com/yosemite/backpacking/backpack-to-franklin-lakes-franklin-pass\n- https://modernhiker.com/hike/franklin-lake/\n- https://www.alltrails.com/trail/us/california/franklin-lakes--3\n- https://www.alltrails.com/trail/us/california/franklin-pass-trail--2\n- https://www.alltrails.com/guides/us/california/backpacking-trips-in-sequoia-national-park\n- https://alltrails.com/trail/us/california/farewell-gap-franklin-lakes\n- https://www.alltrails.com/lists/mineral-king-trails\n- https://backcountrypost.com/threads/seki-mineral-king-loop-june-2021.9861/\n- http://calihike.blogspot.com/2013/07/days-976-978-mineral-king-franklin.html?m=1\n- https://exploringwild.com/mineral-king-loop-variations/\n- https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/franklin-lakes/\n- https://outdoorstatus.com/trips/sequoia-kings-canyon-national-parks/franklin-lakes/?date=2022-06-12\n- https://permitsnag.com/permits/california/sequoia-kings-canyon\n- https://reservenature.com/permit/california/sequoia-and-kings-canyon-national-parks-wilderness-permits (search snippet only)\n- https://campflare.com/permit/sequoia-kings\n- https://backcountryemily.com/california-backpacking-permits/\n- https://sierrarecmagazine.com/kings-canyon-and-sequoia-national-park-backpacking-2024/\n- https://www.ourvalleyvoice.com/2025/05/02/mineral-king-road-construction-closures-delays-in-place-through-2027/\n- https://www.nationalparkstraveler.org/2025/04/mineral-king-road-construction-sequoia-national-park\n- https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/\n- https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/66671-sequoia-and-kings-canyon-national-parks-announce-mineral-king-road-construction-closures-and-delays-in-place-through-2027-does-not-impact-the-majority-of-visitors\n- https://en.wikipedia.org/wiki/Florence_Peak_(California)\n- https://en.wikipedia.org/wiki/Farewell_Gap\n\nBefore booking, check three things: the official Franklin Pass quota on page 11 of the park's Wilderness Trip Planner, the lake coordinates on a USGS map, and the 2027 road construction schedule once it's posted."
+}

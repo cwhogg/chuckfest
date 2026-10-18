@@ -1,0 +1,141 @@
+{
+  "candidate": {
+    "name": "Lake Schmidell",
+    "area": "Desolation Wilderness (Eldorado National Forest)",
+    "trailhead": "Wrights Lake via Rockbound Pass",
+    "why": "Desolation's wildest corner of glacier-polished granite, with day hikes to Lakes Lois and Doris."
+  },
+  "site": {
+    "name": "Lake Schmidell",
+    "region": "Central Sierra - Desolation Wilderness",
+    "area": "Eldorado National Forest - Wrights Lake / Rockbound Trailhead",
+    "description": "A classic Desolation Wilderness granite lake reached from Wrights Lake over Rockbound Pass, with granite-bench campsites and good swimming. It makes a solid basecamp for day hikes to Lois/Doris and McConnell/Horseshoe/Leland lakes. It is roughly twice the group's usual distance, and the zone quota can't hold 12 people on the first night.",
+    "latitude": 38.92916,
+    "longitude": -120.20885,
+    "difficulty": "strenuous",
+    "distanceMiles": 8.4,
+    "elevationGainFt": 2000,
+    "campElevationFt": 7880,
+    "peakElevationFt": 8650,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Zone 14 Schmidell (start at Rockbound Trailhead)",
+    "permitGroupSizeLimit": 12,
+    "permitUrl": "https://www.recreation.gov/permits/233261",
+    "permitNotes": "First-come, first-served; no lottery. Released 6 months ahead, daily at 7:00 am PT (the time comes from Backcountry Emily, not an agency page). Quotas are by destination zone, and the first night must be spent in the booked zone. Quotas apply from the Friday before Memorial Day through Sept 30. 70% of each zone's limit is online and 30% is walk-in at the Placerville Ranger Station in Camino (opens 8 am). Zone 14's limit is 10, with 7 bookable online (DiscoverEchoSummit; not confirmed on recreation.gov), so a group of 12 must split. Book about 6-7 in Zone 14 and the rest in Zone 21 Lois (6), Zone 25 Maud (8) or Zone 10 Lelands (13), then everyone camps together at Schmidell from night 2. Fees: $6 per permit plus $5 per adult for one night or $10 for 2-14 nights; $100 maximum per permit. Print up to 7 days before entry; cancel 8 or more days out for a refund. Bear canisters required; campfires banned.",
+    "sceneryScore": 27,
+    "experienceScore": 20,
+    "accessScore": 12,
+    "permitScore": 11,
+    "rankingNotes": "Classic Desolation granite basecamp over Rockbound Pass, but a long hike and a small 7-person online zone quota.",
+    "sources": [
+      {
+        "label": "USFS Desolation trails and trailheads",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads"
+      },
+      {
+        "label": "USFS Desolation permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits"
+      },
+      {
+        "label": "USFS road and trail status",
+        "url": "https://www.fs.usda.gov/r05/eldorado/conditions/road-and-trail-status"
+      },
+      {
+        "label": "Recreation.gov Desolation permit",
+        "url": "https://www.recreation.gov/permits/233261"
+      },
+      {
+        "label": "DiscoverEchoSummit permits",
+        "url": "http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html"
+      },
+      {
+        "label": "DesoWV Rec Opps 2019",
+        "url": "https://desowv.org/files/Desolation_Wilderness_Rec_Opps_2019.pdf"
+      },
+      {
+        "label": "DesoWV trip planning guide",
+        "url": "https://desowv.org/files/DWTPG_2019-compressed.pdf"
+      },
+      {
+        "label": "DesoWV ROG",
+        "url": "https://desowv.org/files/rog_wild_deso.pdf"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Campflare Desolation",
+        "url": "https://campflare.com/permit/desolation"
+      },
+      {
+        "label": "Campflare 233261",
+        "url": "https://campflare.com/permit/233261"
+      },
+      {
+        "label": "CalTopo F16VKK1",
+        "url": "https://caltopo.com/m/F16VKK1"
+      },
+      {
+        "label": "CalTopo 4JC9",
+        "url": "https://caltopo.com/m/4JC9"
+      },
+      {
+        "label": "TopoQuest",
+        "url": "https://www.topoquest.com/place-detail.php?id=232653"
+      },
+      {
+        "label": "TopoZone",
+        "url": "https://www.topozone.com/california/el-dorado-ca/reservoir/lake-schmidell/"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/trips/us/california/desolation-wilderness/schmidell-lake/"
+      },
+      {
+        "label": "AllTrails Lois and Schmidell",
+        "url": "https://www.alltrails.com/trail/us/california/lake-lois-and-lake-schmidell"
+      },
+      {
+        "label": "AllTrails POI",
+        "url": "https://www.alltrails.com/poi/us/california/pollock-pines/lake-schmidell"
+      },
+      {
+        "label": "AllTrails recording",
+        "url": "https://www.alltrails.com/explore/recording/desolation-wilderness-wrights-lake-to-lake-schmidell--4"
+      },
+      {
+        "label": "AllTrails Red Peak Stock Trail",
+        "url": "https://www.alltrails.com/trail/us/california/red-peak-stock-trail--2"
+      },
+      {
+        "label": "AllTrails Blakely Trail",
+        "url": "https://www.alltrails.com/trail/us/california/lake-schmidell-via-blakely-trail-16e07"
+      },
+      {
+        "label": "HikeArizona",
+        "url": "https://hikearizona.com/decoder.php?ZTN=21298"
+      },
+      {
+        "label": "jeremyr.blog 2024",
+        "url": "https://jeremyr.blog/posts/photos/2024-07-rockbound/"
+      },
+      {
+        "label": "Lily Tang blog",
+        "url": "https://lilymtang.com/blog/fall-backpacking-lake-schmidell-fontanillis/"
+      },
+      {
+        "label": "Tahoe Rim Trail permits",
+        "url": "https://tahoerimtrail.org/permits-and-regulations/"
+      }
+    ],
+    "caveats": "Distance figures conflict: 8.4 mi (Forest Service), 8.2 (OutdoorStatus), 8.55 (AllTrails) and 9.1 (one hiker's GPS); expect about 9 mi on the ground. Gain in is about 1,800-2,100 ft (2,000 used), with 2,700-3,200 ft round trip. The 6-month advance window is not converted to a day count. Zone 14's quota of 10 (7 online) is unconfirmed on recreation.gov. The pass height is 8,650 ft per AllTrails; a 2024 blog says nearly 9,000 ft. A Caldor Fire burn-area warning is posted; the note that it missed the Rockbound route is from memory and unverified. Forest-wide fire restrictions were in effect in October 2026. Twin Lakes Trailhead was briefly closed in Sept 2026. Snow may linger on the pass into July, and mosquitoes are heavy in July. Fishing is unconfirmed, and it is unknown whether one site fits 12."
+  },
+  "notes": "I'll research this thoroughly, starting with the agency pages and trip reports.\nI'd score Lake Schmidell **70/100** (scenery 27, experience 20, access 12, permit 11). The scenery is excellent. But it's about twice the group's usual distance, the camp is low for them, and the permit zone can't hold 12 people on the first night.\n\n## Key facts\n\n| Item | Finding | Source I trust |\n|---|---|---|\n| **One-way miles** | **8.4 mi** officially. Hikers' GPS shows 8.2–9.1 mi; plan on about 8.5–9 mi. | Forest Service trailhead table |\n| **Elevation gain** | About **1,800–2,100 ft going in** and about 900–1,100 ft coming out, so roughly 2,700–3,200 ft round trip | Trip reports agree |\n| **Camp elevation** | **7,880 ft** | USGS (via TopoQuest/TopoZone); AllTrails gives 2,402 m, the same figure |\n| **Coordinates** | **38.92916° N, 120.20885° W** | USGS. OutdoorStatus marks a campsite at 38.9283, -120.2066 |\n| **Trailhead / high point** | Rockbound Trailhead at Wrights Lake, about 6,965 ft. Rockbound Pass is about 8,650 ft. | AllTrails, OutdoorStatus |\n\n**Where the figures disagree:**\n- **Distance:** Forest Service 8.4, OutdoorStatus 8.2, AllTrails 17.1 round trip (8.55 each way), one hiker's GPS 9.1. I use 8.4 as the official number and expect 9 on the ground.\n- **Gain:** AllTrails says 3,166 ft round trip; OutdoorStatus says 1,800 in plus 900 out. A July 2025 hiker said the first day was about 2,000 ft, roughly two-thirds of the trip's total climbing. That matches my estimate above.\n- **Ignore these:**\n  - An AllTrails recording showing 4.4 mi and 1,621 ft is a partial track.\n  - \"Lake Schmidell Trail 16E07, 2.27 mi\" (HikeArizona) is just one trail segment.\n  - Lily Tang's \"20 mi / 3,952 ft\" is a two-lake trip.\n- **Pass height:** AllTrails says 8,650 ft; a 2024 blog says \"nearly 9000.\" I trust 8,650.\n\n## Permits\n- **System:** Desolation Wilderness Permit on recreation.gov: https://www.recreation.gov/permits/233261. There's **no lottery**; it's first-come, first-served.\n- **What you book:** Desolation limits people by destination zone, not by trailhead. Book **Zone \"14 Schmidell\"** and start at Rockbound Trailhead. You must spend your first night in that zone; after that you can camp anywhere.\n- **When it opens:** **6 months ahead, released daily at 7:00 am PT**. The 7:00 am time comes from Backcountry Emily, not an agency page.\n  - Example: Wednesday July 21, 2027 opens about January 21, 2027.\n  - Limits apply from the Friday before Memorial Day through Sept 30.\n- **Walk-ups:** 70% of each zone's daily limit is bookable online; 30% is same-day walk-in at the Placerville Ranger Station in Camino, which opens at 8 am.\n- **Group size:** 12 maximum together at any time. The agency notes that many zones hold fewer than 12.\n- **⚠️ The big problem:** Zone 14's daily limit is **10 people, and only 7 can be booked online** (DiscoverEchoSummit table; the 7 matches the Forest Service's 70% rule). I couldn't confirm the current number on recreation.gov.\n  - Your group of 12 can't all start in Zone 14, even on two permits.\n  - Workaround: one permit of about 6–7 for Zone 14, and a second for a nearby zone:\n    - Zone 21 Lois: 6 bookable\n    - Zone 25 Maud: 8 bookable\n    - Zone 10 Lelands: 13 bookable\n  - Everyone camps together at Schmidell from night 2.\n  - One small booking by another party can block you, so be online at exactly 7:00 am.\n- **Fees and rules:**\n  - $6 per permit, plus $5 per adult for one night or $10 for 2–14 nights; $100 maximum per permit.\n  - Permits can be printed 7 days before entry; cancel 8 or more days out for a refund.\n  - Bear canisters are required and campfires are banned.\n\n## Fire, closures and access\n- **Road:** Forest Road 11N26 (Highway 50 to Wrights Lake) was listed as open. Wrights Lake is about 87 mi from Sacramento, and the trailhead parking fee is waived for overnight permit holders.\n- **Fire:** recreation.gov carries a general warning about the 2021 Caldor Fire burn area. From memory, not from a source I checked, that fire burned the southern edge of Desolation near Highway 50, not the Rockbound route. In October 2026 the Forest Service listed fire restrictions in effect forest-wide.\n- **Twin Lakes Trailhead:** A Sept 20, 2026 review said it was briefly closed with the water off; the hiker used Rockbound instead.\n- **Trail conditions:** Snow can linger on the pass into July; in early July 2025 microspikes weren't needed. The climb to the pass is exposed and windy. Mosquitoes were \"oppressive\" at dusk in July.\n\n## Score: 70/100\n- **Scenery 27/35:** Classic Desolation granite and views from Rockbound Pass. A 2024 group called it \"perfect,\" with granite benches and swimming. It's not as iconic as Thousand Island, and at 7,880 ft it's well below your recent high camps.\n- **Experience 20/25:** A good basecamp, with day hikes to the Lois/Doris and McConnell/Horseshoe/Leland lakes, warmer swimming, and granite-bench sites. I couldn't confirm the fishing because I hit my search limit, and I don't know whether one site fits 12.\n- **Access 12/20:** About 8.4–9 mi with about 2,000 ft of gain. That's under your 10 mi / 3,500 ft limits but far beyond your 4.5 mi average. It's less hiking and less hassle than Thousand Island once the pass is behind you.\n- **Permit 11/20:** First-come booking and a Wednesday start help. The 7-spot zone and the forced split across two zones hurt.\n\n## URLs used\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads\n- https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits\n- https://www.fs.usda.gov/r05/eldorado/conditions/road-and-trail-status\n- https://www.recreation.gov/permits/233261\n- http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html\n- https://desowv.org/files/Desolation_Wilderness_Rec_Opps_2019.pdf\n- https://desowv.org/files/DWTPG_2019-compressed.pdf\n- https://desowv.org/files/rog_wild_deso.pdf\n- https://backcountryemily.com/california-backpacking-permits/\n- https://campflare.com/permit/desolation\n- https://campflare.com/permit/233261\n- https://caltopo.com/m/F16VKK1\n- https://caltopo.com/m/4JC9\n- https://www.topoquest.com/place-detail.php?id=232653\n- https://www.topozone.com/california/el-dorado-ca/reservoir/lake-schmidell/\n- https://outdoorstatus.com/trips/us/california/desolation-wilderness/schmidell-lake/\n- https://www.alltrails.com/trail/us/california/lake-lois-and-lake-schmidell\n- https://www.alltrails.com/poi/us/california/pollock-pines/lake-schmidell\n- https://www.alltrails.com/explore/recording/desolation-wilderness-wrights-lake-to-lake-schmidell--4\n- https://www.alltrails.com/trail/us/california/red-peak-stock-trail--2\n- https://www.alltrails.com/trail/us/california/lake-schmidell-via-blakely-trail-16e07\n- https://hikearizona.com/decoder.php?ZTN=21298\n- https://jeremyr.blog/posts/photos/2024-07-rockbound/\n- https://lilymtang.com/blog/fall-backpacking-lake-schmidell-fontanillis/\n- https://tahoerimtrail.org/permits-and-regulations/\n\n**Still to check:** Zone 14's current limit in the recreation.gov booking calendar, and whether there are fish in the lake (California Department of Fish and Wildlife or recent trip reports)."
+}

@@ -1,0 +1,157 @@
+{
+  "candidate": {
+    "name": "Iceberg Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Agnew Meadows",
+    "why": "Lake under Clyde Minaret's sheer wall."
+  },
+  "site": {
+    "name": "Iceberg Lake",
+    "region": "Eastern Sierra - Ansel Adams Wilderness",
+    "area": "Inyo National Forest - Reds Meadow / Agnew Meadows",
+    "description": "A turquoise, often iceberg-dotted lake directly beneath the Minarets, reached via Shadow Lake and Ediza Lake from Agnew Meadows. Excellent day hikes to Cecile Lake, Minaret Lake and Volcanic Ridge, but the lakeshore is rocky, exposed and cold, with limited flat ground for a group of 12.",
+    "latitude": 37.6704116,
+    "longitude": -119.1691178,
+    "difficulty": "strenuous",
+    "distanceMiles": 8.3,
+    "elevationGainFt": 1900,
+    "campElevationFt": 9780,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Shadow Creek (JMT) (Agnew Meadow) - AA07",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Quota of 30 people/day: 18 (60%) release 6 months ahead on the same date (e.g., July 4 entry opens January 4), 12 (40%) release 2 weeks ahead. Opens daily at 7:00 a.m. Pacific. No lottery. Max group 15; groups can't combine to exceed 15. A group of 12 needs 12 of the 18 advance spots, so book right at release. Splitting into two permits doesn't add quota. Cost is $6/permit + $5/person ($66 for 12). Print by 10 a.m. on the entry date or it's canceled; printing at home is allowed up to a week ahead. In 2026, permits could only be booked for days Reds Meadow Road was open (Thu–Sun).",
+    "sceneryScore": 34,
+    "experienceScore": 19,
+    "accessScore": 13,
+    "permitScore": 7,
+    "rankingNotes": "One of the Sierra's most dramatic lakes, under the Minarets (73/100). It trails Thousand Island Lake because it has less room for 12, a longer approach and equally hard permits.",
+    "sources": [
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Inyo NF Reds Meadow Road project",
+        "url": "https://www.fs.usda.gov/r05/inyo/projects/reds-meadow-road-reconstruction"
+      },
+      {
+        "label": "Inyo NF Reds Meadow Road alert",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/reds-meadow-road-reconstruction-project"
+      },
+      {
+        "label": "Inyo NF wilderness use restrictions",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/wilderness-use-restrictions"
+      },
+      {
+        "label": "Inyo NF wilderness regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "NPS Devils Postpile conditions",
+        "url": "https://www.nps.gov/depo/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "The Sheet - end of road construction",
+        "url": "https://thesheetnews.com/2026/04/30/the-end-of-the-road-construction/"
+      },
+      {
+        "label": "Sierra Rec - Inyo trail quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Sierra Rec - Iceberg Lake",
+        "url": "https://sierrarecmagazine.com/article/iceberg-lake-in-ansel-adams-wilderness/"
+      },
+      {
+        "label": "Hikespeak - Iceberg Lake",
+        "url": "https://www.hikespeak.com/trails/iceberg-lake-ansel-adams-wilderness/"
+      },
+      {
+        "label": "Hikespeak - Ansel Adams tag",
+        "url": "https://www.hikespeak.com/tag/ansel-adams-wilderness/"
+      },
+      {
+        "label": "Hikespeak - Ediza Lake",
+        "url": "https://www.hikespeak.com/trails/ediza-lake-ansel-adams-wilderness/"
+      },
+      {
+        "label": "She Dreams of Alpine",
+        "url": "https://www.shedreamsofalpine.com/blog/ediza-lake-iceberg-lake"
+      },
+      {
+        "label": "Forever She Wanders",
+        "url": "https://forevershewanders.com/backpacking-iceberg-lake-in-ansel-adams-wilderness/"
+      },
+      {
+        "label": "Follow Tiff's Journey - Minaret Lake loop",
+        "url": "https://followtiffsjourney.com/minaret-lake-loop/"
+      },
+      {
+        "label": "jeremyr.blog - Lake Ediza",
+        "url": "https://jeremyr.blog/posts/photos/202209-lakeediza/"
+      },
+      {
+        "label": "AllTrails - Shadow and Ediza Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/shadow-and-ediza-lakes-trail"
+      },
+      {
+        "label": "AllTrails - Iceberg Lake POI",
+        "url": "https://www.alltrails.com/poi/us/california/mammoth-lakes/iceberg-lake"
+      },
+      {
+        "label": "Modern Hiker - Ediza Lake",
+        "url": "https://modernhiker.com/hike/ediza-lake/"
+      },
+      {
+        "label": "TopoZone - Iceberg Lake",
+        "url": "https://www.topozone.com/california/madera-ca/lake/iceberg-lake-6/"
+      },
+      {
+        "label": "HometownLocator - Iceberg Lake",
+        "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,261678,n,iceberg%20lake.cfm"
+      },
+      {
+        "label": "Outdoor Status - Ediza Lake",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/ediza-lake/"
+      },
+      {
+        "label": "Timberline Trails - Ritter",
+        "url": "https://www.timberlinetrails.com/RitterGettingStarted.html"
+      },
+      {
+        "label": "Campflare - Inyo permits",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Backcountry Emily - CA permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "High Sierra Topix 24646",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=24646"
+      },
+      {
+        "label": "High Sierra Topix 23381",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=23381"
+      },
+      {
+        "label": "Sierra Wave - Reds Meadow Road update",
+        "url": "https://sierrawave.net/reds-meadow-road-reconstruction-update/"
+      },
+      {
+        "label": "Eastern Sierra Now - Reds Meadow Road update",
+        "url": "https://www.easternsierranow.com/reds-meadow-road-reconstruction-update-2/"
+      }
+    ],
+    "caveats": "Distance figures conflict: 7.5–7.75 mi one way (AllTrails, Sierra Rec) and one 19 mi round-trip outlier; ~8.3 mi from Hikespeak's segments is used. Gain of ~1,900 ft is estimated; others range from 1,263 to ~2,286 ft. Advance days are given as '6 months' rather than a fixed day count, so permitAdvanceDays is null. Reds Meadow Road reconstruction: in 2026 the road was open only Thu–Sun from July 6 to Sep 2, making Wednesday entries impossible. Completion was targeted for end of 2026, but some 2027 paving is possible, so recheck before January 2027. A shuttle from Main Lodge is mandatory while buses run. Late snow: the road opened July 21 (2023) and July 3 (2025), and the lake is often icy into July. Fire status was not fully checked (Stage 1 restrictions as of Oct 2026). Fish presence is unconfirmed. Flat ground for 12 tents is limited; an Ediza west-side base camp could raise the score to ~76."
+  },
+  "notes": "I scored **Iceberg Lake at 73/100 (34/19/13/7)**. It's one of the most dramatic lakes in the Sierra and it fits all your hard limits. It falls short of Thousand Island Lake, which uses the same trailhead, because it has fewer campsites for 12, a longer approach and permits that are just as hard to get.\n\n## Key facts\n\n| Item | Figure I trust | Other figures and why I chose this one |\n|---|---|---|\n| One-way distance | **About 8.3 mi** | Hikespeak gives 7.0 mi to Ediza's outlet, then 0.3 mi along the shore to the Iceberg junction, then about 1 mi up. AllTrails says 15.0 mi round trip (7.5 one way) and a Sierra Rec day hike logged 15.5 mi (7.75). One blog says 19 mi round trip, which is an outlier. Hikespeak breaks the route into segments, so I trust it most. |\n| Elevation gain | **About 1,900 ft one way** | The trailhead is about 8,300 ft. The trail drops into the river canyon near Olaine Lake, climbs about 1,250 ft to Ediza (about 9,300 ft), then about 500 ft more on steep switchbacks. One trip report gives 1,885 ft, which matches that math. The AllTrails (2,286 ft) and She Dreams of Alpine (about 2,200 ft) totals cover the whole round trip. One report's 940 ft + 323 ft looks too low. |\n| Camp elevation | **9,780 ft** | USGS topo listing (Mount Ritter map, via TopoZone). She Dreams of Alpine says \"nearly 9,800.\" |\n| Coordinates | **37.6704116, -119.1691178** | USGS place-name record #261678 (via TopoZone and HometownLocator). |\n\n## Permits (Inyo National Forest)\n- **Entry point:** \"Shadow Creek,\" listed as \"Shadow Creek (JMT) (Agnew Meadow),\" code AA07.\n- **Quota:** 30 people per day. 18 spots open 6 months ahead and 12 open 2 weeks ahead. This comes from Sierra Rec's 2023 table, and the 60/40 split on Recreation.gov matches it.\n- **How booking works:** There's no lottery here; the Whitney lottery doesn't apply. It's a rolling window that opens daily at **7:00 a.m. Pacific**. 60% of spots release 6 months ahead (a July 4 entry opens January 4). The other 40% release 2 weeks ahead on the same weekday.\n  - For a Wednesday, July 14, 2027 entry, booking opens January 14, 2027.\n- **Group size:** 15 people maximum, and groups can't combine to exceed 15. Your 12 fits on one permit, but you need 12 of the 18 advance spots on a single day, so you realistically have to book right at 7:00 on release day. Splitting into two permits doesn't add any quota.\n- **Cost and pickup:** $6 per permit plus $5 per person, so $66 for 12. You must print the permit by 10 a.m. on your entry date or it's canceled. You can print at home up to a week before.\n- **Book at:** https://www.recreation.gov/permits/233262\n\n## Closures, access and rules\n- **Road construction is the big risk.** Reds Meadow Road, the only way to Agnew Meadows, is being rebuilt.\n  - **2026:** From July 6 to September 2 the road was open only Thursday 7 a.m. to Sunday 11 p.m. Permits for Shadow Creek and the other Reds Meadow trailheads could only be booked for days the road was open. **A Wednesday entry was impossible.**\n  - **2027:** A local newspaper (The Sheet) reported in April 2026 that the Forest Service aimed to finish by the end of 2026. Any work spilling into 2027 would likely be a few weeks of paving near Minaret Vista. Recheck the Inyo project page before January 2027.\n- **Shuttle:** When buses run (7 a.m.–7 p.m.), backpackers must take the shuttle from Mammoth Mountain Main Lodge. A wilderness permit doesn't exempt you.\n- **Late snow:** The road has opened as late as July 21 (2023) and July 3 (2025). The lake is often ringed with snow or ice into July, so aim for late July or August.\n- **Fire:** As of October 2026 the Inyo alerts showed Stage 1 fire restrictions and moderate fire danger, with no wilderness closures listed. I ran out of search budget before I could check for fires specifically, so check again before the trip.\n- **Camping rules:**\n  - No camping within 100 ft of lakes, streams or trails.\n  - No camping within ⅛ mile of Ediza's south side, within 300 ft of Shadow Lake, or between the Shadow Creek Trail and the creek.\n  - No campfires.\n\n## Scoring\n- **Scenery: 34/35.** A turquoise, often iceberg-dotted lake right under the Minarets, with Ritter and Banner above Ediza on the way in. It's almost Thousand Island level and arguably wilder.\n- **Experience: 19/25.** The day hikes are superb: Cecile Lake (0.6 mi, about 436 ft), the Minaret Lake cross-country loop, Volcanic Ridge and Ediza. The weaknesses:\n  - Iceberg is rocky, exposed and cold, with limited flat ground for 12 tents beyond the meadow just below it.\n  - Swimming is frigid.\n  - **I couldn't confirm whether Iceberg Lake has fish.**\n- **Access: 13/20.** It's within your limits but about 3.8 mi and 300 ft more than your sweet spot, with a steep final climb, the mandatory shuttle and the construction uncertainty.\n- **Permit: 7/20.** Shadow Creek is very popular, and 12 of 18 advance spots means you have to book the instant the window opens.\n\n**Possible fix:** Base camp on Ediza's west side (about 9,300 ft, roughly 7.3 mi, more room) and day-hike to Iceberg and Cecile. That would likely raise Experience and Access by a few points, to roughly 76.\n\n## URLs used\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/projects/reds-meadow-road-reconstruction\n- https://www.fs.usda.gov/r05/inyo/alerts/reds-meadow-road-reconstruction-project\n- https://www.fs.usda.gov/r05/inyo/alerts/wilderness-use-restrictions\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.nps.gov/depo/planyourvisit/conditions.htm\n- https://thesheetnews.com/2026/04/30/the-end-of-the-road-construction/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://sierrarecmagazine.com/article/iceberg-lake-in-ansel-adams-wilderness/\n- https://www.hikespeak.com/trails/iceberg-lake-ansel-adams-wilderness/\n- https://www.hikespeak.com/tag/ansel-adams-wilderness/\n- https://www.hikespeak.com/trails/ediza-lake-ansel-adams-wilderness/\n- https://www.shedreamsofalpine.com/blog/ediza-lake-iceberg-lake\n- https://forevershewanders.com/backpacking-iceberg-lake-in-ansel-adams-wilderness/\n- https://followtiffsjourney.com/minaret-lake-loop/\n- https://jeremyr.blog/posts/photos/202209-lakeediza/\n- https://www.alltrails.com/trail/us/california/shadow-and-ediza-lakes-trail\n- https://www.alltrails.com/poi/us/california/mammoth-lakes/iceberg-lake\n- https://modernhiker.com/hike/ediza-lake/\n- https://www.topozone.com/california/madera-ca/lake/iceberg-lake-6/\n- https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,261678,n,iceberg%20lake.cfm\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/ediza-lake/\n- https://www.timberlinetrails.com/RitterGettingStarted.html\n- https://campflare.com/permit/inyo\n- https://backcountryemily.com/california-backpacking-permits/\n- https://highsierratopix.com/community/viewtopic.php?t=24646\n- https://highsierratopix.com/community/viewtopic.php?t=23381\n- https://sierrawave.net/reds-meadow-road-reconstruction-update/\n- https://www.easternsierranow.com/reds-meadow-road-reconstruction-update-2/"
+}

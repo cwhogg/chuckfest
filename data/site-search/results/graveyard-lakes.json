@@ -1,0 +1,197 @@
+{
+  "candidate": {
+    "name": "Graveyard Lakes",
+    "area": "Sierra National Forest (John Muir Wilderness)",
+    "trailhead": "Lake Edison area",
+    "why": "Remote west-side granite basin."
+  },
+  "site": {
+    "name": "Graveyard Lakes",
+    "region": "Sierra National Forest - John Muir Wilderness",
+    "area": "Lake Edison / Kaiser Pass corridor (near Vermilion Valley Resort)",
+    "description": "A remote fishing basecamp below the granite cliffs of Graveyard Peak and the Silver Divide, with a forested lower lake and a larger upper lake above treeline. The fishing is excellent, and day hikes from camp include Silver Fox Pass, Goodale Pass and a class 2 scramble of Graveyard Peak. There are no campfires, and the lower lake has limited campsites for a large group.",
+    "latitude": 37.442,
+    "longitude": -118.972,
+    "difficulty": "strenuous",
+    "distanceMiles": 7.5,
+    "elevationGainFt": 2500,
+    "campElevationFt": 10000,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Devils/Graveyard (J62)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445858",
+    "permitNotes": "Sierra National Forest, booked on recreation.gov. No lottery; permits are real-time first-come, first-served. The daily quota is 12 reservable spots plus 8 more released 2 weeks before the start date. The quota is shared with Devils Bathtub. 60% of the quota opens on a rolling basis 6 months ahead, and recreation.gov also mentions a first-week-of-January release. The open time is unverified: a 2021 forum post said 7:00 a.m. Pacific, but that may refer to Inyo National Forest. Fees are a $6 non-refundable reservation fee plus $5 per person. For pickup, call 559-855-5355 or 559-877-2210 up to 3 days before the trip. A group of 12 needs the entire reservable quota for that day. Backup plan: split the group 6 on a reservation and 6 on the two-week release. Campfires are banned. A bear canister or a proper counterbalance hang is required.",
+    "sceneryScore": 24,
+    "experienceScore": 21,
+    "accessScore": 10,
+    "permitScore": 13,
+    "rankingNotes": "A solid, low-crowd fishing basecamp with good day hikes, held back by a long approach, a slow Kaiser Pass drive and a tiny shared permit quota.",
+    "sources": [
+      {
+        "label": "High Sierra Trails - trail",
+        "url": "https://highsierratrails.com/graveyard/graveyard_trail.html"
+      },
+      {
+        "label": "High Sierra Trails - overview",
+        "url": "https://www.highsierratrails.com/graveyard/graveyard_overview.html"
+      },
+      {
+        "label": "High Sierra Trails - resources",
+        "url": "https://highsierratrails.com/graveyard/graveyard_resources.html"
+      },
+      {
+        "label": "High Sierra Trails - destination",
+        "url": "https://highsierratrails.com/graveyard/graveyard_destination.html"
+      },
+      {
+        "label": "10adventures",
+        "url": "https://www.10adventures.com/hikes/sierra-national-forest/graveyard-lakes-trail/"
+      },
+      {
+        "label": "Mid Sierra Musing 2014",
+        "url": "https://midsierramusing.blogspot.com/2014/06/overnight-hike-to-graveyard-lakes.html"
+      },
+      {
+        "label": "Dave's Sierra Fishing",
+        "url": "http://www.davessierrafishing.com/destinations/graveyard_lakes.html"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/graveyard-lakes-trail"
+      },
+      {
+        "label": "Hiiker",
+        "url": "https://hiiker.app/hikes/california/fresno-county/graveyard-lakes-via-goodale-pass-trail"
+      },
+      {
+        "label": "OCCHAT",
+        "url": "https://www.occhat.org/trek-ideas-item/graveyard-lakes"
+      },
+      {
+        "label": "Sierra Hiking Trails 2015",
+        "url": "http://www.sierrahikingtrails.com/portfolio/graveyard-lakes-2015/"
+      },
+      {
+        "label": "jamin86 trip report",
+        "url": "https://backpacking.jamin86.com/trips/graveyard_trail.html"
+      },
+      {
+        "label": "stormdude",
+        "url": "https://stormdude.com/hab/backpacks/silver/silver.html"
+      },
+      {
+        "label": "onX",
+        "url": "https://www.onxmaps.com/hiking/gd6g21rn7zo9/graveyard-lakes-28e15"
+      },
+      {
+        "label": "outdoorstatus Graveyard Lakes",
+        "url": "https://outdoorstatus.com/trips/us/california/sierra-national-forest/graveyard-lakes/"
+      },
+      {
+        "label": "outdoorstatus Devils Bathtub",
+        "url": "https://outdoorstatus.com/trips/us/california/sierra-national-forest/devils-bathtub/"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/devil-s-bathtub-trailhead-ansel-adams-wilderness/557422"
+      },
+      {
+        "label": "Wikipedia Graveyard Peak",
+        "url": "https://en.wikipedia.org/wiki/Graveyard_Peak"
+      },
+      {
+        "label": "Wikipedia Lake Thomas A Edison",
+        "url": "https://en.wikipedia.org/wiki/Lake_Thomas_A_Edison"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/445858"
+      },
+      {
+        "label": "USFS obtaining wilderness permit",
+        "url": "https://www.fs.usda.gov/r05/sierra/permits/obtaining-wilderness-permit"
+      },
+      {
+        "label": "USFS permits",
+        "url": "https://www.fs.usda.gov/r05/sierra/permits"
+      },
+      {
+        "label": "USFS J62 trailhead",
+        "url": "https://www.fs.usda.gov/r05/sierra/recreation/trails/j62-devils-bathtub-graveyard-trailhead"
+      },
+      {
+        "label": "USFS J62 PDF",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/Devil%27s%20and%20Graveyard%20J62.pdf"
+      },
+      {
+        "label": "USFS trailhead quotas",
+        "url": "https://www.fs.usda.gov/r05/sierra/wilderness/trailhead-quotas"
+      },
+      {
+        "label": "USFS Mono Creek trailhead",
+        "url": "https://www.fs.usda.gov/r05/sierra/recreation/mono-creek-trailhead"
+      },
+      {
+        "label": "USFS conditions",
+        "url": "https://www.fs.usda.gov/r05/sierra/conditions"
+      },
+      {
+        "label": "USFS closures",
+        "url": "https://www.fs.usda.gov/r05/sierra/alerts/recreation-site-road-and-trail-closure"
+      },
+      {
+        "label": "Garnet Fire closure order",
+        "url": "https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-order"
+      },
+      {
+        "label": "Garnet Fire closure order 12",
+        "url": "https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-order-05-15-52-25-12"
+      },
+      {
+        "label": "Garnet Fire closure update 13",
+        "url": "https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-update-05-15-52-25-13"
+      },
+      {
+        "label": "USFS alert 88149",
+        "url": "https://fs.usda.gov/alerts/sierra/alerts-notices/?aid=88149"
+      },
+      {
+        "label": "CAL FIRE Garnet Fire",
+        "url": "https://www.fire.ca.gov/incidents/2025/8/24/garnet-fire/updates/f27537da-0f1a-49d1-8095-1705b2bb77b3"
+      },
+      {
+        "label": "Sierra News Online",
+        "url": "https://sierranewsonline.com/wilderness-permit-reservations-for-sierra-national-forest-moving-to-recreation-gov/"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=21259"
+      },
+      {
+        "label": "The Big Outside",
+        "url": "https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/"
+      },
+      {
+        "label": "Backpack the Sierra",
+        "url": "https://www.backpackthesierra.com/permits-and-processes"
+      },
+      {
+        "label": "Sisyphus Kaiser Pass Rd",
+        "url": "https://sisyphusdw7.com/tag/kaiser-pass-rd/"
+      },
+      {
+        "label": "VVR directions",
+        "url": "https://vvr.place/contact/directions/"
+      }
+    ],
+    "caveats": "Coordinates are not verified: they come from reading the 2015 report's figure as degrees and decimal minutes. One-way distance figures range from 7.4 to 9 mi; 7.5 mi to Lower Graveyard Lake is the chosen value. Elevation gain is cited as about 2,400–2,600 ft, with other sources giving 2,150–3,000 ft. Lower lake elevation is cited as 9,940–10,040 ft; the upper lake is about 10,260 ft. The permit open time is unconfirmed. Permits open 6 months ahead, but the exact advance-day count is not established. Some sources wrongly give Ansel Adams Wilderness or the Mono Creek entry point. 2026 trail, road and campfire conditions are not verified. Kaiser Pass Road is open roughly late May to mid-November and is a slow, narrow drive. The Garnet Fire (2025) burned south of this corridor, with no known impact on the basin. The Creek Fire note comes from the researcher's memory rather than a source."
+  },
+  "notes": "I'll start by researching the trail facts, the permit system, and current conditions at the same time.\nI scored Graveyard Lakes **68/100** (scenery 24, experience 21, access 10, permit 13). It's a very good fishing basecamp and fits all your hard limits, but it's not an \"epic\" trip on the level of Thousand Island Lake or Lamarck Lakes. It's 2–3 miles longer and about 900 ft steeper than your sweet spot, and the drive in is slow.\n\n**A note on my research:** search tools stopped working partway through, so I couldn't check 2026 trail or road conditions. I also couldn't confirm the lake's exact coordinates or the time permits open each day. Both are flagged below.\n\n## Key facts\n\n| Item | Best figure | Notes |\n|---|---|---|\n| **One-way miles** | **About 7.5 mi to Lower Graveyard Lake; about 8.3 mi to Upper** | Sources range from 7.4 to 9 mi (see below) |\n| **Elevation gain** | **About 2,400–2,600 ft** | Trailhead is at 7,600 ft (Forest Service) |\n| **Camp elevation** | **Lower lake about 9,950–10,040 ft; Upper about 10,260 ft** | Lower lake sits right around 10,000 ft and still has some trees |\n| **Coordinates** | **About 37.442° N, 118.972° W (Lower lake), not verified** | Check on the USGS Graveyard Peak topo map. Graveyard Peak itself is at 37.4513, -118.9899 |\n| **Trailhead** | Near Vermilion Valley Resort (VVR) at the west end of Lake Edison | About 3 hours from Fresno |\n\n**Conflicting figures and which I trust:**\n- **Distance and gain:**\n  - High Sierra Trails, Dave's Sierra Fishing: 8 mi / about 2,200 ft\n  - A 2009 trip report (jamin86): 7.5 mi / 2,150 ft\n  - Orange County Council of Boy Scouts (occhat): about 7.5 mi / +2,400 ft\n  - A 2015 trip report (sierrahikingtrails): 7.4 mi\n  - outdoorstatus: 8.1 mi / 2,500 ft\n  - AllTrails: 16.6 mi round trip / 2,762 ft\n  - 10adventures: 25.1 km / 779 m\n  - A 2014 trip report: about 18 mi round trip, \"about 3,000 ft\" to the highest lake\n  - onX: the lake trail leaves the Goodale Pass trail at mile 6.6, then climbs 932 ft over 1.67 mi to the upper lake (9,339 to 10,260 ft)\n  - **I trust onX plus the trip reports: about 7.5 mi to the lower lake.** The 2,150–2,240 ft figures look like plain elevation differences that leave out the ups and downs along the way.\n- **Lake elevation:** High Sierra Trails says 9,940 ft; the 2015 report says 10,036 ft.\n- **Coordinates:** The 2015 report lists \"37.2654, -118.5833,\" which is clearly wrong as decimal degrees (it would put the lake on the Eastern Sierra side). I read it as degrees and decimal minutes (37°26.54′, 118°58.33′). That gives the point in the table, about 1 mile east-southeast of Graveyard Peak, which makes sense, but it's my interpretation.\n- **Wilderness:** Two sources say Ansel Adams Wilderness. That's wrong; the Forest Service says John Muir Wilderness.\n\n## Permits (Sierra National Forest, recreation.gov)\n- **Booking URL:** https://www.recreation.gov/permits/445858\n- **Exact entry point: \"Devils/Graveyard\" (J62).** The occhat page says to book the \"Mono Creek\" entry point, which looks wrong. A permit is only valid from the entry point printed on it.\n- **Daily quota is tiny:** 12 reservable spots plus 8 more released two weeks ahead, first-come first-served. The quota is shared with Devils Bathtub, a popular, easier destination. One older summitpost page lists a different trailhead (J61, 18/12); it's outdated.\n- **Booking window:** 60% of the quota opens on a rolling basis 6 months before the start date. Recreation.gov also says permits are released in the first week of January and then 6 months ahead. The other 40% opens 2 weeks before the start date.\n- **Open time:** Not stated on the agency pages. A 2021 forum post reported 7:00 a.m. Pacific for new dates, but it may refer to Inyo National Forest. Check this.\n- **No lottery.** It's real-time first-come, first-served.\n- **Group size:** Maximum 15 per permit.\n- **Fees:** $6 per reservation (non-refundable) plus $5 per person.\n- **Pickup:** Call 559-855-5355 or 559-877-2210 up to 3 days before the trip.\n- **Campfires:** None. The Forest Service bans them above 10,000 ft, and two sources say they're banned at all the Graveyard Lakes.\n- **Bear storage:** A bear canister or a proper counterbalance hang.\n- **What this means for 12 people:** One permit for 12 takes the whole day's reservable quota, so you need to book the instant the Wednesday date opens. If anyone books first, it fails. Backup: put 6 on a reservation and 6 on the two-week release (which only has 8 spots).\n\n## Fire, closures and access\n- **Garnet Fire (August 2025):** Lightning-caused, about 58,800 acres, in the Kings River/Dinkey/Courtright/Wishon area. That's south of the Lake Edison and Kaiser Pass corridor. The closure order for the burn area ran through March 31, 2026. I found no fire impact on the Graveyard basin.\n- **Creek Fire (2020):** From memory rather than these sources, it burned near the Huntington Lake approach, not the lakes.\n- **Kaiser Pass Road:** The last 14.5 miles open around May 22 (Memorial Day weekend) and close around November 15, snow permitting. The road is narrow, often single-lane, with potholes and blind curves; one August 2025 traveler took about 1 hr 45 min for 23 miles. The Forest Service doesn't recommend it for buses, large RVs or trailers.\n- **Not verified for 2026:** trail, road and campfire conditions. Call the High Sierra Ranger Station before committing.\n\n## Score: 68/100\n- **Scenery 24/35:** Granite cliffs of Graveyard Peak and the Silver Divide, a forested lower lake, and a larger upper lake above treeline. Pretty, but not famous, and I found no turquoise-water reports. It's well below Thousand Island Lake (35) and Lamarck (28).\n- **Experience 21/25:**\n  - **Fishing:** Excellent. Brook trout of 8–12 in. in the lower lake, rainbows up to 14 in. in the upper lakes.\n  - **Day hikes from camp:**\n    - several lakes within about 0.5 mi\n    - Silver Fox Pass\n    - Graveyard Peak (a class 2 scramble)\n    - off-trail lakes below the peak\n    - Goodale Pass\n  - **Downsides:** No campfires, and the lower lake has only \"at least three good campsites,\" so 12 people may have to spread out.\n  - **Bonus:** VVR before or after the trip.\n- **Access 10/20:** About 7.5 mi and 2,500 ft, roughly 3 miles and 900 ft over your sweet spot (still within your hard limits). Add the slow Kaiser Pass drive.\n- **Permit 13/20:** Demand is low (remote trailhead, light crowds), but the 12-spot daily quota equals your whole group and is shared with Devils Bathtub. A Wednesday start helps.\n\n## Sources\n- https://highsierratrails.com/graveyard/graveyard_trail.html\n- https://www.highsierratrails.com/graveyard/graveyard_overview.html\n- https://highsierratrails.com/graveyard/graveyard_resources.html\n- https://highsierratrails.com/graveyard/graveyard_destination.html\n- https://www.10adventures.com/hikes/sierra-national-forest/graveyard-lakes-trail/\n- https://midsierramusing.blogspot.com/2014/06/overnight-hike-to-graveyard-lakes.html\n- http://www.davessierrafishing.com/destinations/graveyard_lakes.html\n- https://www.alltrails.com/trail/us/california/graveyard-lakes-trail\n- https://hiiker.app/hikes/california/fresno-county/graveyard-lakes-via-goodale-pass-trail\n- https://www.occhat.org/trek-ideas-item/graveyard-lakes\n- http://www.sierrahikingtrails.com/portfolio/graveyard-lakes-2015/\n- https://backpacking.jamin86.com/trips/graveyard_trail.html\n- https://stormdude.com/hab/backpacks/silver/silver.html\n- https://www.onxmaps.com/hiking/gd6g21rn7zo9/graveyard-lakes-28e15\n- https://outdoorstatus.com/trips/us/california/sierra-national-forest/graveyard-lakes/\n- https://outdoorstatus.com/trips/us/california/sierra-national-forest/devils-bathtub/\n- https://www.summitpost.org/devil-s-bathtub-trailhead-ansel-adams-wilderness/557422\n- https://en.wikipedia.org/wiki/Graveyard_Peak\n- https://en.wikipedia.org/wiki/Lake_Thomas_A_Edison\n- https://www.recreation.gov/permits/445858\n- https://www.fs.usda.gov/r05/sierra/permits/obtaining-wilderness-permit\n- https://www.fs.usda.gov/r05/sierra/permits\n- https://www.fs.usda.gov/r05/sierra/recreation/trails/j62-devils-bathtub-graveyard-trailhead\n- https://www.fs.usda.gov/sites/nfs/files/r05/sierra/publication/Devil%27s%20and%20Graveyard%20J62.pdf\n- https://www.fs.usda.gov/r05/sierra/wilderness/trailhead-quotas\n- https://www.fs.usda.gov/r05/sierra/recreation/mono-creek-trailhead\n- https://www.fs.usda.gov/r05/sierra/conditions\n- https://www.fs.usda.gov/r05/sierra/alerts/recreation-site-road-and-trail-closure\n- https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-order\n- https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-order-05-15-52-25-12\n- https://fs.usda.gov/r05/sierra/alerts/garnet-fire-closure-update-05-15-52-25-13\n- https://fs.usda.gov/alerts/sierra/alerts-notices/?aid=88149\n- https://www.fire.ca.gov/incidents/2025/8/24/garnet-fire/updates/f27537da-0f1a-49d1-8095-1705b2bb77b3\n- https://sierranewsonline.com/wilderness-permit-reservations-for-sierra-national-forest-moving-to-recreation-gov/\n- https://www.highsierratopix.com/community/viewtopic.php?t=21259\n- https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/\n- https://www.backpackthesierra.com/permits-and-processes\n- https://sisyphusdw7.com/tag/kaiser-pass-rd/\n- https://vvr.place/contact/directions/"
+}

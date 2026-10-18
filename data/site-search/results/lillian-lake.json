@@ -1,0 +1,157 @@
+{
+  "candidate": {
+    "name": "Lillian Lake",
+    "area": "Sierra National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Fernandez TH",
+    "why": "Quiet west-side granite lakes with Chain Lakes day hikes."
+  },
+  "site": {
+    "name": "Lillian Lake (via Fernandez Trailhead)",
+    "region": "Sierra National Forest - Ansel Adams Wilderness",
+    "area": "Bass Lake Ranger District, Beasore Road area (Madera County)",
+    "description": "A granite-backed lake with partly wooded shores, set among a cluster of nearby lakes and reached by about 6 miles of trail from the Fernandez Trailhead. It works well as a base camp, with day hikes to Shirley, Rainbow, Chittenden, Lady, Staniford, Vandeburg, Rutherford and Anne lakes. It is lower and gentler than the group's recent trips, which makes it a solid backup.",
+    "latitude": 37.56288,
+    "longitude": -119.36474,
+    "difficulty": "moderate",
+    "distanceMiles": 6.1,
+    "elevationGainFt": 1800,
+    "campElevationFt": 8861,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "A61 Fernandez",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445858",
+    "permitNotes": "Reservations open on a rolling basis 6 months before the start date at 7:00 AM PT. The daily quota is 21: 13 advance spots plus 8 that open 2 weeks before at 7 AM PT (a 60/40 split). There is no lottery. Fees are $6 per permit plus $5 per person. Only the leader or the named alternate may use the permit. The 15-person limit comes from Forest Order 05-15-00-26-04, in effect through June 2028. A group of 12 takes up nearly all 13 advance spots, so book at 7:00 sharp or split into two permits. Pickup is at Bass Lake Ranger District, Mon–Fri 8:00–4:30; call (559) 877-2218 to confirm. Walton Trailhead is an alternate entry, but its quota is unconfirmed.",
+    "sceneryScore": 22,
+    "experienceScore": 20,
+    "accessScore": 16,
+    "permitScore": 15,
+    "rankingNotes": "A reliable, easy-to-permit base camp with many lakes to day-hike, but less dramatic scenery than the group's showpiece trips (73/100).",
+    "sources": [
+      {
+        "label": "USFS A61 Fernandez Trailhead",
+        "url": "https://www.fs.usda.gov/r05/sierra/recreation/trails/a61-fernandez-trailhead"
+      },
+      {
+        "label": "USFS Lillian Lake Trail",
+        "url": "https://www.fs.usda.gov/r05/sierra/recreation/trails/lillian-lake-trail"
+      },
+      {
+        "label": "USFS Trailhead Quotas",
+        "url": "https://www.fs.usda.gov/r05/sierra/wilderness/trailhead-quotas"
+      },
+      {
+        "label": "USFS Obtaining Wilderness Permit",
+        "url": "https://www.fs.usda.gov/r05/sierra/permits/obtaining-wilderness-permit"
+      },
+      {
+        "label": "USFS Wilderness Regulations",
+        "url": "https://www.fs.usda.gov/r05/sierra/wilderness/sierra-national-forest-wilderness-regulations"
+      },
+      {
+        "label": "USFS Wilderness Use Restrictions",
+        "url": "https://www.fs.usda.gov/r05/sierra/alerts/wilderness-use-restrictions"
+      },
+      {
+        "label": "USFS Campfire Restrictions",
+        "url": "https://www.fs.usda.gov/r05/sierra/alerts/ansel-adams-and-john-muir-wilderness-campfire-restrictions"
+      },
+      {
+        "label": "USFS Campfire Restrictions Order",
+        "url": "https://www.fs.usda.gov/r05/sierra/alerts/wilderness-campfire-restrictions-order"
+      },
+      {
+        "label": "USFS Alerts",
+        "url": "https://www.fs.usda.gov/r05/sierra/alerts"
+      },
+      {
+        "label": "USFS Conditions",
+        "url": "https://www.fs.usda.gov/r05/sierra/conditions"
+      },
+      {
+        "label": "Recreation.gov Sierra NF Permits",
+        "url": "https://www.recreation.gov/permits/445858"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/permits/us/california/sierra-national-forest/wilderness-permit/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "HST 24867",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=24867"
+      },
+      {
+        "label": "HST 22967",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=22967"
+      },
+      {
+        "label": "HST 20533",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=20533"
+      },
+      {
+        "label": "HST 20687",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=20687"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/lillian-lake-trail"
+      },
+      {
+        "label": "Gaia GPS",
+        "url": "https://www.gaiagps.com/hike/369373/lillian-lake-trail/"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/trails/lillian-lake/"
+      },
+      {
+        "label": "onX",
+        "url": "https://www.onxmaps.com/hiking/e3l6ogldlzw4/lillian-lake-loop"
+      },
+      {
+        "label": "Hiking Project",
+        "url": "https://www.hikingproject.com/trail/7084524/lillian-lake-loop"
+      },
+      {
+        "label": "Topozone",
+        "url": "https://www.topozone.com/california/madera-ca/lake/lillian-lake/"
+      },
+      {
+        "label": "Komoot",
+        "url": "https://www.komoot.com/highlight/7239510"
+      },
+      {
+        "label": "Verber",
+        "url": "http://verber.com/mark/outdoors/destinations/lillian-lake.html"
+      },
+      {
+        "label": "Burmeister",
+        "url": "https://www.markburmeister.com/tripreport.php?tripid=49"
+      },
+      {
+        "label": "Sowden",
+        "url": "https://paulsowden.com/2018/06/lillian-lake-loop/"
+      },
+      {
+        "label": "Sierra News Online",
+        "url": "https://sierranewsonline.com/lillian-lake-loop-hike/"
+      },
+      {
+        "label": "Indi Nomads",
+        "url": "http://indinomads.com/ansel-adams-wilderness-lillian-lake-loop/"
+      }
+    ],
+    "caveats": "Distance figures vary from 5.9 to 6.2 mi; the Forest Service's 5.7 mi covers only the Lillian Lake Trail itself. The 1,800 ft gain is an estimate (AllTrails gives 2,240 ft round trip; Gaia gives 1,391 ft). Camp elevation is 8,861 ft per USGS, or 8,891 ft per Komoot. permitAdvanceDays is null because the window is stated as '6 months' rather than a day count. Difficulty is not explicitly rated in the notes. The research tool limit was hit partway through, so some items are unconfirmed. It is unconfirmed whether the 2025 Garnet Fire or 2020 Creek Fire affected this route. The campfire order has site-specific no-fire maps that could not be opened. onX and Hiking Project report a ¼-mile no-camping zone around the outlet that the current Forest Service order does not list. Beasore Road is rough and was closed in parts in 2022–23. Pickup method may differ (one blog says permits are not available in person). Deep snow can hide the trail near the lake around July 1 in big snow years."
+  },
+  "notes": "I'll research this thoroughly. Starting with several searches in parallel.\nNow let me find the recreation.gov permit page and its booking rules.\nI scored **Lillian Lake from Fernandez Trailhead at 73/100**. It's a strong, easy-to-run basecamp trip, but the scenery isn't as dramatic as the trips you call \"epic.\" I hit my research tool limit partway through, so a few items below are marked as unconfirmed.\n\n## Key facts\n\n| Item | Figure | Sources and which I trust |\n|---|---|---|\n| **One-way miles** | **About 6.0–6.2 mi** on the Fernandez/Vandeburg route | AllTrails: 12.3 mi out-and-back (6.15 each way). Gaia: 5.9 mi. Two trip reports: about 6 mi (Verber, Sowden). Coming from the Walton side is about 7 mi (Burmeister). The Forest Service's \"5.7 mi\" is the length of the Lillian Lake Trail itself, not trailhead to lake. I trust **~6.1 mi**. |\n| **Gain to camp** | **About 1,800 ft** (my estimate) | AllTrails gives 2,240 ft for the full round trip. Using roughly 7,500 ft at the trailhead and 8,880 ft at the lake (+1,380 net), I estimate ~1,810 ft up and ~430 ft down on the way in. Gaia says 1,391 ft, which looks like net gain only. Trailforks' 1,058 ft is just one trail segment. |\n| **Trailhead elevation** | About 7,500 ft | onX low point 7,495 ft; Verber says \"7500ft.\" A Norris-area report lists 7,144 ft as its low point. |\n| **Camp elevation** | **About 8,860–8,890 ft** | USGS name database via Topozone: 8,861 ft. Komoot: 2,710 m (8,891 ft). Either way, it's lower than your recent trips (Cottonwood was 11,105 ft). |\n| **Lake coordinates** | **37.56288, −119.36474** | USGS (Timber Knob map) via Topozone. Komoot's 37.56298, −119.3605 is probably a point on the east shore. |\n\n## Permits\n\n- **System:** Sierra National Forest wilderness permits on Recreation.gov: **https://www.recreation.gov/permits/445858**\n- **Entry point:** **\"A61 Fernandez\"** (Ansel Adams Wilderness, Bass Lake Ranger District).\n- **Daily quota:** 13 spots book 6 months ahead and 8 more open 2 weeks ahead, 21 people per day in total. The Forest Service describes this as a 60/40 split.\n- **Booking window:**\n  - Reservations open on a rolling basis **6 months before the start date at 7:00 AM Pacific**.\n  - Each January's first release covers roughly May–June.\n  - The remaining spots open **2 weeks before at 7 AM PT**.\n  - **There is no lottery.**\n  - Example: a Wednesday, July 14, 2027 start opens about Jan 14, 2027, with the 2-week release about June 30.\n- **Group size:** 15 people maximum, per the permit page and Forest Order 05-15-00-26-04 (in effect through June 2028). Twelve fits on one permit.\n- **Fees:** $6 per permit plus $5 per person. Only the leader or the named alternate may pick up or use the permit.\n- **Pickup:** The Forest Service lists Bass Lake Ranger District, Mon–Fri 8:00–4:30, which suits a Wednesday start. One planning blog says permits aren't available in person. Call (559) 877-2218 to confirm the current process.\n- **Strategy:** Twelve people take up nearly all 13 advance spots, so if anyone else books that day first, you won't fit. Book at 7:00 AM sharp. If needed, split into two permits (for example 6 and 6, or 8 now and 4 at the 2-week release). Wednesday entries should have little competition. One trip reporter found Fernandez full and used the nearby Walton trailhead instead. I didn't confirm Walton's quota number.\n\n## Fire, closures and access\n\n- **Roads:** Route is Hwy 41 → Road 222 → Beasore Road (about 21 mi) → Forest Road 5S05 to the trailhead. On the Forest Service conditions page, Beasore Road was **open** when I checked (Oct 2026), and Minarets Road was open with a loose-gravel warning. A trip reporter called the road in \"very rough.\" In 2022–23 the Norris Creek bridge was out and part of Beasore was closed, but Fernandez stayed reachable. It's about 6.5 hours from the Bay Area.\n- **Fires:** None of the current Forest Service alerts mention closures at Fernandez or Lillian. The only burn-area alert is for the 2025 Garnet Fire. I couldn't confirm whether it or the 2020 Creek Fire touched this route; I believe both are elsewhere in the forest. Confirm with the ranger district.\n- **Campfires:** The new order (Aug 7, 2026 – Dec 31, 2027) bans fires above 10,000 ft north of the boundary line. The lake is about 8,900 ft, so that ban doesn't apply. The order also has site-specific no-fire zones on maps I couldn't open, so check those.\n- **Camping-rule conflict:** onX and Hiking Project say no camping within ¼ mile of Lillian Lake's outlet, or of Rainbow Lake. The current Forest Service order lists only the standard 100-ft lake setback and a Lower Golden Trout Lake rule. I trust the current order, but plan to camp away from the outlet anyway.\n- **Snow:** In a big snow year, one group found deep snow hiding the trail near the lake around July 1.\n\n## Score: 73/100\n\n- **Scenery: 22/35.** A pretty granite-backed lake with partly wooded shores and a cluster of nearby lakes. It's nice, but not at the Thousand Island or Lamarck level of wow.\n- **Experience: 20/25.** Hiking Project calls it \"an excellent base camp.\"\n  - **Day hikes:** Shirley, Rainbow, Chittenden, Lady (views to the Ritter Range), Staniford, Vandeburg, plus the spur to Rutherford and Anne.\n  - **Fishing:** Fish run deep, and the wooded shore makes fly casting awkward.\n  - **Swimming:** One reporter felt the water was around 70°F.\n  - **Room for 12:** You'll need to spread out across sites.\n- **Access: 16/20.** About 6 mi and 1,800 ft is a bit over your 4.5 mi / 1,600 ft sweet spot, and the drive is long with a rough last stretch.\n- **Permit: 15/20.** Demand is low to moderate and there are 21 spots a day, but 12 people barely fit in the advance pool.\n\n**Bottom line:** It's a reliable trip and probably easy to get, but it's lower and gentler than where your group has been heading. It's a good backup if you miss a permit for a showpiece destination.\n\n## URLs used\n- https://www.fs.usda.gov/r05/sierra/recreation/trails/a61-fernandez-trailhead\n- https://www.fs.usda.gov/r05/sierra/recreation/trails/lillian-lake-trail\n- https://www.fs.usda.gov/r05/sierra/wilderness/trailhead-quotas\n- https://www.fs.usda.gov/r05/sierra/permits/obtaining-wilderness-permit\n- https://www.fs.usda.gov/r05/sierra/wilderness/sierra-national-forest-wilderness-regulations\n- https://www.fs.usda.gov/r05/sierra/alerts/wilderness-use-restrictions\n- https://www.fs.usda.gov/r05/sierra/alerts/ansel-adams-and-john-muir-wilderness-campfire-restrictions\n- https://www.fs.usda.gov/r05/sierra/alerts/wilderness-campfire-restrictions-order\n- https://www.fs.usda.gov/r05/sierra/alerts\n- https://www.fs.usda.gov/r05/sierra/conditions\n- https://www.recreation.gov/permits/445858\n- https://outdoorstatus.com/permits/us/california/sierra-national-forest/wilderness-permit/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://www.highsierratopix.com/community/viewtopic.php?t=24867\n- https://www.highsierratopix.com/community/viewtopic.php?t=22967\n- https://www.highsierratopix.com/community/viewtopic.php?t=20533\n- https://www.highsierratopix.com/community/viewtopic.php?t=20687\n- https://www.alltrails.com/trail/us/california/lillian-lake-trail\n- https://www.gaiagps.com/hike/369373/lillian-lake-trail/\n- https://www.trailforks.com/trails/lillian-lake/\n- https://www.onxmaps.com/hiking/e3l6ogldlzw4/lillian-lake-loop\n- https://www.hikingproject.com/trail/7084524/lillian-lake-loop\n- https://www.topozone.com/california/madera-ca/lake/lillian-lake/\n- https://www.komoot.com/highlight/7239510\n- http://verber.com/mark/outdoors/destinations/lillian-lake.html\n- https://www.markburmeister.com/tripreport.php?tripid=49\n- https://paulsowden.com/2018/06/lillian-lake-loop/\n- https://sierranewsonline.com/lillian-lake-loop-hike/\n- http://indinomads.com/ansel-adams-wilderness-lillian-lake-loop/"
+}

@@ -1,0 +1,153 @@
+{
+  "candidate": {
+    "name": "Island Lake",
+    "area": "Desolation Wilderness (Eldorado National Forest)",
+    "trailhead": "Twin Lakes TH (Wrights Lake)",
+    "why": "Granite-slab lake full of small islands under the Crystal Range."
+  },
+  "site": {
+    "name": "Island Lake",
+    "region": "Desolation Wilderness - Crystal Range",
+    "area": "Wrights Lake / Twin Lakes Trailhead, Eldorado National Forest",
+    "description": "A glacial bowl under the Crystal Range with granite islands, on the far side of the Mount Price ridge from Lake Aloha. It makes a strong basecamp, with Twin, Boomerang and Umpa lakes nearby, good swimming, and off-trail scrambles toward the Crystal Range. It is a short, easy-access trip from Wrights Lake, but it is a popular day hike.",
+    "latitude": 38.8753,
+    "longitude": -120.1877,
+    "difficulty": "moderate",
+    "distanceMiles": 3.5,
+    "elevationGainFt": 1300,
+    "campElevationFt": 8156,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "32. Twin",
+    "permitGroupSizeLimit": 12,
+    "permitUrl": "https://www.recreation.gov/permits/233261",
+    "permitNotes": "Booking is rolling, from 6 months to 1 day before the entry date; there is no lottery. Quotas apply from the Friday before Memorial Day through September 30. Zone 32 allows 20 people per day: 14 reservable online and about 6 walk-in. Walk-in permits (30% of each day's quota) are issued same-day at the Placerville Ranger Station in Camino. The group must spend its first night in zone 32. A group of 12 needs 12 of the 14 online spots, and Permit Ranger rates demand 93/100. Hard-sided bear canisters are required. No campfires. Camp at least 100 ft from water and trails. Permits can be printed starting 7 days before entry, and a signed paper copy must be carried. Fees (third-party source, may be out of date): $6 per permit plus $5 per person. Taylor Creek Visitor Center is not issuing permits.",
+    "sceneryScore": 27,
+    "experienceScore": 19,
+    "accessScore": 18,
+    "permitScore": 10,
+    "rankingNotes": "Beautiful granite-island lake only 3.5 mi from Wrights Lake, but a group of 12 needs nearly all of zone 32's 14 online permit spots.",
+    "sources": [
+      {
+        "label": "FS Desolation Wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits"
+      },
+      {
+        "label": "FS Desolation Wilderness",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness"
+      },
+      {
+        "label": "FS trails and trailheads",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads"
+      },
+      {
+        "label": "FS Twin Lakes Trailhead",
+        "url": "https://www.fs.usda.gov/r05/eldorado/recreation/twin-lakes-trailhead"
+      },
+      {
+        "label": "FS road and trail status",
+        "url": "https://www.fs.usda.gov/r05/eldorado/conditions/road-and-trail-status"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/233261"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/233261"
+      },
+      {
+        "label": "Permit Ranger Desolation",
+        "url": "https://permitranger.com/permits/desolation"
+      },
+      {
+        "label": "Permit Ranger 32 Twin",
+        "url": "https://permitranger.com/passes/ca/desolation/32-twin"
+      },
+      {
+        "label": "Discover Echo Summit",
+        "url": "http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html"
+      },
+      {
+        "label": "TopoZone Island Lake",
+        "url": "https://www.topozone.com/california/el-dorado-ca/lake/island-lake-29/"
+      },
+      {
+        "label": "Sierra Rec Twin Lake Trail",
+        "url": "https://sierrarecmagazine.com/discover-the-treasures-of-the-twin-lake-trail-in-desolation-wilderness/"
+      },
+      {
+        "label": "Sierra Rec mileage",
+        "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/"
+      },
+      {
+        "label": "Lily Tang",
+        "url": "https://lilymtang.com/blog/island-and-twin-lakes-desolation/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/desolationwilderness-islandlake/"
+      },
+      {
+        "label": "Backcountry Cow",
+        "url": "https://www.backcountrycow.com/blog/backpacking-island-twin-lakes"
+      },
+      {
+        "label": "Live and Let Hike",
+        "url": "https://liveandlethike.com/2021/08/24/twin-lakes-boomerang-lake-island-lake-desolation-wilderness-ca/"
+      },
+      {
+        "label": "Backpackers Review",
+        "url": "https://backpackers-review.com/trip-reports/desolation-wilderness-twin-lakes/"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/island-and-twin-lakes"
+      },
+      {
+        "label": "CalExplornia 1",
+        "url": "https://www.calexplornia.com/twin-lakes-trail/"
+      },
+      {
+        "label": "CalExplornia 2",
+        "url": "https://www.calexplornia.com/twin-lakes-trail-a-moderately-strenuous-trail-with-plenty-of-lakes-to-explore/"
+      },
+      {
+        "label": "onX",
+        "url": "https://www.onxmaps.com/hiking/rezk4jygv6lk/twin-lakes-trail-16e12"
+      },
+      {
+        "label": "CapRadio Caldor",
+        "url": "https://www.capradio.org/articles/2021/09/16/caldor-fire-latest-updates/"
+      },
+      {
+        "label": "Sierra Rec Caldor reopening",
+        "url": "https://sierrarecmagazine.com/partial-reopening-caldor-fire-closure-replaces-forest-wide-closure-and-fire-restrictions-increase/"
+      },
+      {
+        "label": "Ledger reduced closure",
+        "url": "https://www.ledger.news/news/reduced-caldor-fire-closure-reopens-more-of-the-eldorado-national-forest/article_25ddb1cc-53a6-11ec-adc1-e7efb447db6c.html"
+      },
+      {
+        "label": "South Tahoe Now",
+        "url": "https://southtahoenow.com/10/14/2021/reduced-fire-closure-area-eldorado-national-forest"
+      },
+      {
+        "label": "Ledger Wrights Lake advisory",
+        "url": "https://www.ledger.news/news/press_releases/placerville-wrights-lake-travel-advisory/article_42439b34-31e8-11ee-ad9a-37f34327b63a.html"
+      },
+      {
+        "label": "Mt Democrat Wrights Tie Road",
+        "url": "https://www.mtdemocrat.com/news/wrights-tie-road-to-close-for-a-month-during-meadow-restoration-work/article_d826915a-4369-11ee-8a43-dba9cdbdbce4.html"
+      }
+    ],
+    "caveats": "permitAdvanceDays is left null because the notes give the window only as 6 months, not a day count. The 7:00 AM PT opening time comes only from Permit Ranger and is unconfirmed. Elevation gain is about 1,160–1,250 ft net and 1,300–1,500 ft counting ups and downs; 1,300 is used. Lake elevation is 8,156 ft (USGS-based) vs 8,120 ft (Sierra Rec). Distance: other sources list 6.3–7 mi round trip or about 4 mi up; the FS 3.5 mi is used. The FS page's 27 mi drive on Wrights Lake Road looks like an error. Trip-report numbers come from search excerpts, not full reads. The 2021 Caldor Fire burned near Wrights Lake; roads are now listed as open (FS, about mid-2026). Snow can linger into July, and there may be a seasonal road closure about 1.5 mi before the trailhead. Parking is about $10 per day and the lot may fill, which can lengthen the hike. Group campsites meeting the 100-ft rule are limited, and fishing quality is unconfirmed."
+  },
+  "notes": "Let me fetch the key agency pages.\nI'd score Island Lake **74/100: scenery 27, experience 19, access 18, permit 10**. Getting there is easy and the lake is beautiful. What holds it back is a hard permit for 12 people and a camp lower than your recent trips. It's a strong \"great trip,\" but probably not the one you'll talk about for years like Thousand Island.\n\nI fetched the agency and recreation.gov pages in full. A tool limit stopped me partway through, so the trip-report numbers below come from search-result excerpts of those pages, not full reads.\n\n## Key facts\n\n| Item | Finding |\n|---|---|\n| Trailhead | Twin Lakes Trailhead at Wrights Lake. Forest Service (FS) coordinates: 38.84963, -120.225762. Starts at about 6,960 ft |\n| One-way miles | **3.5 mi** (FS trailhead chart; Sierra Rec Magazine and Lily Tang agree). Plan on 3.5–4 mi to a campsite |\n| Elevation gain | About 1,160–1,250 ft net. **About 1,300–1,500 ft** counting the ups and downs |\n| Camp elevation | **About 8,150 ft** (USGS-based 8,156 ft; Sierra Rec says 8,120 ft) |\n| Lake coordinates | **38.8753° N, -120.1877° W** (USGS Rockbound Valley map, via TopoZone) |\n| Setting | A glacial bowl under the Crystal Range, on the other side of the Mount Price ridge from Lake Aloha |\n\n## Permit system\n- **Booking page:** recreation.gov, Desolation Wilderness Permit (https://www.recreation.gov/permits/233261).\n- **Exact entry point:** destination zone **\"32. Twin\"**, which covers Twin Lakes, Island Lake, Boomerang Lake and Umpa Lake. Your group must spend its first night in that zone. After that you can move.\n- **Quota:** limits apply from the Friday before Memorial Day through September 30. Zone 32 allows **20 people per day: 14 reservable online and about 6 walk-in.**\n- **Release window:** rolling, 6 months to 1 day before your entry date. **There's no lottery.**\n  - Opening time: 7:00 AM Pacific, according to Permit Ranger. The Forest Service page doesn't say, so check on recreation.gov.\n  - Example: a Wednesday, July 14, 2027 entry should open around January 14, 2027.\n- **Walk-in permits:** 30% of each day's quota is handed out same-day at the Placerville Ranger Station in Camino, 7 days a week. That station is on Highway 50, on your way in.\n- **Group size:** 12 maximum together at any time, for both day and overnight use.\n- **Other rules:**\n  - Hard-sided bear canisters are required, with fines up to $5,000.\n  - No campfires; stoves are allowed.\n  - Camp at least 100 ft from water and trails.\n  - You can print permits starting 7 days before entry, and you must carry a signed paper copy.\n  - Fees (from a third-party page, may be out of date): $6 per permit plus $5 per person.\n- **What this means for 12 people:** you need 12 of the 14 online spots for one date. One small party booking first would knock you out. Permit Ranger rates demand for this zone **93/100**.\n  - Splitting into two permits for the same zone doesn't help, because you still need 12 of the 14 spots.\n  - Backups: half the group books zone 32 and half books a nearby zone for night 1, then you join up. Or you count on the walk-in spots, which is risky.\n\n## Fire, closures and access\n- **Caldor Fire (2021):** active fire burned near Wrights Lake, and Wrights Lake Road was closed. Wrights Lake later reopened, first only by way of Wrights Tie Road.\n- **Wrights Tie Road:** a half-mile stretch was closed for about a month from September 5, 2023 for meadow repair work. That project is finished.\n- **Current road status:** the FS road-status page (last checked about mid-2026) lists both Wrights Lake Road and Wrights Tie Road as **Open**.\n- **Fire rules:** fire restrictions are in effect across the forest. That doesn't affect you, since campfires are already banned here.\n- **Snow:** can linger into July. An AllTrails note mentions a seasonal road closure about 1.5 mi before the trailhead.\n- **Parking:** about $10 per vehicle per day. If the trailhead lot is full and you park at Wrights Lake, one AllTrails reviewer's round trip grew to 9.7 mi.\n- **Permit pickup:** the Taylor Creek Visitor Center isn't issuing permits until further notice.\n\n## Conflicting figures and which I trust\n- **Distance:**\n  - FS, Sierra Rec and Lily Tang all say 3.5 mi one way.\n  - AllTrails lists 6.5 mi round trip; Backcountry Cow lists 6.6 mi round trip but also says \"four miles\" up.\n  - Backcountry Emily says 6.3–7 mi round trip depending on campsite.\n  - **I trust the FS 3.5 mi.**\n- **Gain:**\n  - Sierra Rec 1,160 ft; AllTrails 1,220; Lily Tang 1,250; CalExplornia about 1,300; Backcountry Cow 1,370; Backcountry Emily ±1,500.\n  - **Use about 1,300–1,500 ft as the real effort.**\n- **Lake elevation:** 8,120 ft (Sierra Rec) vs 8,156 ft (USGS-based). **I trust the USGS figure.**\n- **Drive:** the FS trailhead page says to drive 27 miles on Wrights Lake Road. CalExplornia says about 8 mi to the visitor center plus about 2 mi to the trailhead. **27 looks like an FS error.**\n- **Opening time:** only Permit Ranger gives one (7 AM PT). Treat it as unconfirmed.\n\n## Scoring\n\n**Scenery: 27/35.** Granite islands, a glacial bowl and Crystal Range peaks make it truly beautiful. But it isn't on the level of Thousand Island and Banner Peak, and at about 8,150 ft it's far below Cottonwood's 11,105 ft.\n\n**Experience: 19/25.**\n- **Strong basecamp.** Twin, Boomerang and Umpa lakes are close by. Off-trail scrambles head toward the Crystal Range, and the Grouse/Hemlock/Smith lakes branch starts from the same trailhead.\n- **Good swimming.**\n- **Fishing quality:** I couldn't confirm it from a reliable source.\n- **Crowds:** it's a very popular day hike.\n- **Group camping:** sites for 12 on granite that also meet the 100-ft rule are limited. Island Lake isn't one of the designated-campsite lakes.\n\n**Access: 18/20.** At 3.5 mi and about 1,300–1,500 ft it sits right at the short end of your sweet spot. The road is paved, the walk-in permit station is on your route, and the main risk is parking.\n\n**Permit: 10/20.** Zone 32 has 14 reservable spots, so a group of 12 must book exactly at release and hope no one else grabs a few. Its 14 online spots put it a little ahead of Lamarck's calibration, but very high demand cancels that out. Weekdays (you enter on Wednesday) help.\n\n**Total: 74/100.** If you go, bigger day hikes (over to Lake Aloha, or up Pyramid Peak or Mount Price) would add the \"epic\" factor.\n\n## URLs used\n- https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads\n- https://www.fs.usda.gov/r05/eldorado/recreation/twin-lakes-trailhead\n- https://www.fs.usda.gov/r05/eldorado/conditions/road-and-trail-status\n- https://www.recreation.gov/permits/233261\n- https://campflare.com/permit/233261\n- https://permitranger.com/permits/desolation\n- https://permitranger.com/passes/ca/desolation/32-twin\n- http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html\n- https://www.topozone.com/california/el-dorado-ca/lake/island-lake-29/\n- https://sierrarecmagazine.com/discover-the-treasures-of-the-twin-lake-trail-in-desolation-wilderness/\n- https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/\n- https://lilymtang.com/blog/island-and-twin-lakes-desolation/\n- https://backcountryemily.com/desolationwilderness-islandlake/\n- https://www.backcountrycow.com/blog/backpacking-island-twin-lakes\n- https://liveandlethike.com/2021/08/24/twin-lakes-boomerang-lake-island-lake-desolation-wilderness-ca/\n- https://backpackers-review.com/trip-reports/desolation-wilderness-twin-lakes/\n- https://www.alltrails.com/trail/us/california/island-and-twin-lakes\n- https://www.calexplornia.com/twin-lakes-trail/\n- https://www.calexplornia.com/twin-lakes-trail-a-moderately-strenuous-trail-with-plenty-of-lakes-to-explore/\n- https://www.onxmaps.com/hiking/rezk4jygv6lk/twin-lakes-trail-16e12\n- https://www.capradio.org/articles/2021/09/16/caldor-fire-latest-updates/\n- https://sierrarecmagazine.com/partial-reopening-caldor-fire-closure-replaces-forest-wide-closure-and-fire-restrictions-increase/\n- https://www.ledger.news/news/reduced-caldor-fire-closure-reopens-more-of-the-eldorado-national-forest/article_25ddb1cc-53a6-11ec-adc1-e7efb447db6c.html\n- https://southtahoenow.com/10/14/2021/reduced-fire-closure-area-eldorado-national-forest\n- https://www.ledger.news/news/press_releases/placerville-wrights-lake-travel-advisory/article_42439b34-31e8-11ee-ad9a-37f34327b63a.html\n- https://www.mtdemocrat.com/news/wrights-tie-road-to-close-for-a-month-during-meadow-restoration-work/article_d826915a-4369-11ee-8a43-dba9cdbdbce4.html"
+}

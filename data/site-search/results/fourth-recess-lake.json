@@ -1,0 +1,209 @@
+{
+  "candidate": {
+    "name": "Fourth Recess Lake",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Mono Pass",
+    "why": "Waterfall-fed lake inside a cliff-walled side canyon."
+  },
+  "site": {
+    "name": "Fourth Recess Lake",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Rock Creek / Mono Pass (Mosquito Flat trailhead)",
+    "description": "A roughly 30-acre lake in a steep granite cirque with a waterfall at the head and Mono Rock above. You reach it over 12,050-ft Mono Pass, passing Ruby Lake, Summit Lake and the Trail Lakes. It makes an excellent basecamp, with day hikes to Pioneer Basin, Third Recess and Golden Lake, plus fishing and swimming.",
+    "latitude": 37.439,
+    "longitude": -118.785,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.5,
+    "elevationGainFt": 2073,
+    "campElevationFt": 10138,
+    "peakElevationFt": 12050,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Mono Pass (JMT) (Rock Creek) - JM08",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Daily quota is 20: 12 spots open 6 months ahead and 8 more 2 weeks ahead, on the same weekday as the entry date. Reservations open daily at 7:00 AM Pacific, with no lottery. The quota season runs May 1 to Nov 1. Group limit is 15 including day use, and groups can't combine to exceed 15. The permit must be printed by 10 AM on the entry date or it's canceled (printing allowed up to 7 days ahead). Fees are $6 per reservation plus $5 per person. The leader and alternate can't be changed, and you can change the entry date online only 12 or more days before the trip. A group of 12 needs all 12 advance spots at the opening; the fallback is splitting across the 6-month and 2-week releases. Ask the Inyo permit office (760-873-2526) before relying on Little Lakes Valley JM09.",
+    "sceneryScore": 30,
+    "experienceScore": 22,
+    "accessScore": 13,
+    "permitScore": 12,
+    "rankingNotes": "A spectacular granite-cirque basecamp over Mono Pass with a great layover-day lineup. It's held back by about 6.5 miles each way over a 12,000-ft pass and an all-or-nothing 7 AM permit grab. Score 77/100.",
+    "sources": [
+      {
+        "label": "Inyo NF Mono Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/mono-pass-trail"
+      },
+      {
+        "label": "Inyo NF Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Inyo trail names and quotas",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf"
+      },
+      {
+        "label": "USFS media",
+        "url": "https://www.fs.usda.gov/media/123246"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Rock Creek Road closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road"
+      },
+      {
+        "label": "Rock Fire closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure"
+      },
+      {
+        "label": "InciWeb Rock Fire",
+        "url": "https://inciweb.wildfire.gov/incident-information/cainf-rock-fire"
+      },
+      {
+        "label": "CAL FIRE Rock Fire",
+        "url": "https://www.fire.ca.gov/incidents/2026/7/20/rock-fire"
+      },
+      {
+        "label": "Sierra Wave road closure",
+        "url": "https://sierrawave.net/temporary-closure-of-rock-creek-road/"
+      },
+      {
+        "label": "Sierra Rec road closure",
+        "url": "https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/"
+      },
+      {
+        "label": "Sierra Wave Rock Fire order",
+        "url": "https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/"
+      },
+      {
+        "label": "ABC30 Rock Fire",
+        "url": "https://abc30.com/post/rock-fire-burning-inyo-county-forces-partial-closure-national-forest/19564908/"
+      },
+      {
+        "label": "The Sheet Rock Fire",
+        "url": "https://thesheetnews.com/2026/07/23/rock-fire-update/"
+      },
+      {
+        "label": "YourCentralValley Rock Fire",
+        "url": "https://www.yourcentralvalley.com/news/wildfires/inyo-forest-rock-fire-closure/"
+      },
+      {
+        "label": "Backcountry Emily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Inga's Adventures Inyo permits",
+        "url": "https://ingasadventures.com/deciphering-the-inyo-national-forest-permit-system/"
+      },
+      {
+        "label": "Sierra Rec quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "High Sierra Trails Pioneer resources",
+        "url": "https://www.highsierratrails.com/pioneer_basin/pioneer_resources.html"
+      },
+      {
+        "label": "100peaks trip report",
+        "url": "https://100peaks.com/blog/2022/9/12/fourth-recess-lake-from-mono-pass-backpacking-2022-always-go-into-the-lake"
+      },
+      {
+        "label": "Hikingtales",
+        "url": "https://hikingtales.com/sierra-nevada/mono-pass-to-piute-pass-july-2022/day-2-mono-pass-to-fourth-recess/"
+      },
+      {
+        "label": "Dave's Sierra Fishing",
+        "url": "http://www.davessierrafishing.com/destinations2/fourth_recess_lake.html"
+      },
+      {
+        "label": "Hiking Project",
+        "url": "https://www.hikingproject.com/trail/7086567/fourth-recess-lake-trail-29e41"
+      },
+      {
+        "label": "High Sierra Trails Pioneer destination",
+        "url": "https://highsierratrails.com/pioneer_basin/pioneer_destination.html"
+      },
+      {
+        "label": "High Sierra Topix",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=18587"
+      },
+      {
+        "label": "Calitrails",
+        "url": "https://calitrails.com/2012/07/11/mosquito-flats-to-mono-creek-where-no-dog-has-napped-before/"
+      },
+      {
+        "label": "snwburd",
+        "url": "https://www.snwburd.com/bob/trip_reports/fourth_recess_1.html"
+      },
+      {
+        "label": "Electricant",
+        "url": "https://electricant.net/grundyman/4threcess.html"
+      },
+      {
+        "label": "Fly Fishing the Sierra",
+        "url": "https://flyfishingthesierra.com/mono-creek/"
+      },
+      {
+        "label": "AllTrails recording",
+        "url": "https://www.alltrails.com/explore/recording/mosquito-flat-to-fourth-recess-lake"
+      },
+      {
+        "label": "AllTrails POI",
+        "url": "https://www.alltrails.com/poi/us/california/shaver-lake/fourth-recess-lake"
+      },
+      {
+        "label": "AllTrails Mono Pass",
+        "url": "https://www.alltrails.com/trail/us/california/mono-pass-from-mosquito-flat-trailhead"
+      },
+      {
+        "label": "Komoot",
+        "url": "https://www.komoot.com/smarttour/e1412859121/fourth-recess-lake-via-mono-pass-john-muir-wilderness"
+      },
+      {
+        "label": "Trailforks branch",
+        "url": "https://www.trailforks.com/trails/fourth-recess-lake-branch/"
+      },
+      {
+        "label": "Trailforks trail",
+        "url": "https://www.trailforks.com/trails/fourth-recess-lake-trail/"
+      },
+      {
+        "label": "Mapcarta",
+        "url": "https://mapcarta.com/23046354"
+      },
+      {
+        "label": "The Dyrt",
+        "url": "https://thedyrt.com/camping/california/4th-recess-lake-john-muir-wilderness"
+      },
+      {
+        "label": "American Southwest",
+        "url": "https://www.americansouthwest.net/california/eastern-sierra/ruby-lake-mono-pass-mt-starr.html"
+      },
+      {
+        "label": "HikingWalking",
+        "url": "https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/mono_pass_rockcreek/mono_pass_rockcreek_detail"
+      },
+      {
+        "label": "Trail to Peak",
+        "url": "https://trailtopeak.com/2020/07/25/hiking-to-mono-pass-via-mosquito-flat-camping-overnight-at-ruby-lake/"
+      },
+      {
+        "label": "Mammoth Times",
+        "url": "https://www.mammothtimes.com/sports/big-effort-big-reward-hiking-the-mono-pass-trail/article_ac96b202-da95-11eb-9aba-8fb074c44661.html"
+      }
+    ],
+    "caveats": "The lake-center coordinates (37.439, -118.785) are the researcher's estimate; the trail start is 37.4437, -118.7865 per Trailforks, so verify on a USGS map. One-way distance estimates range from 6.03 to 8 miles, and gain in is about 2,000-2,100 ft with about 1,950 ft back over the pass on the way out. Camp elevation figures range from 10,125 to 10,154 ft, and Mono Pass from 12,040 to 12,060 ft. The 6-month advance window is stated in months, not days, so permitAdvanceDays is left null. The lake is likely in the Sierra NF portion of the wilderness (unconfirmed), but the Inyo permit applies. The Rock Fire (July 2026) closure doesn't affect this route. Rock Creek Road is closed Oct 19-23, 2026. Expect no campfires and required bear canisters. Campsites get crowded in mid-to-late summer, and there is altitude risk on day 1. Early-season snow on the pass and 2026 trail conditions are unverified. Several sources were read only as search excerpts."
+  },
+  "notes": "Let me try fetching the other trip reports one at a time.\n# Fourth Recess Lake (from Mosquito Flat over Mono Pass): research and score\n\n**Score: 77/100.** Scenery 30, Experience 22, Access 13, Permit 12.\n\nIt lands just below Lamarck Lakes (79) and Thousand Island Lake (81). It's a better basecamp than Lamarck, with a very good layover-day lineup. It loses points for three things: about 6.5 miles each way with a 12,000-ft pass in both directions, a group of 12 needing every one of the 12 spots released 6 months out, and campsites that get crowded.\n\n## Key facts\n\n| Item | Best figure | Range across sources and notes |\n|---|---|---|\n| Trailhead | Mosquito Flat, about 10,230 ft | 10,220 (americansouthwest), 10,232 (trailtopeak GPS) |\n| Mono Pass | about 12,050 ft | 12,040 (Forest Service flyer), 12,050, 12,060 (hikingwalking) |\n| One-way miles to camp | **about 6.5 mi** | 6.03 (AllTrails GPS recording), 6.5 (guidebook cited by 100peaks), about 7.3 if you add up flyfishingthesierra's segments, 8 (Komoot says 16 round trip) |\n| Gain on the way in | **about 2,000–2,100 ft** (then about 1,900 ft of descent) | 2,073 (AllTrails recording); \"about 2,000 ft each way\" (100peaks) |\n| Gain on the way out | about 1,950 ft, all of it between 10,100 and 12,050 ft | Komoot gives about 3,935 ft for the round trip, which matches |\n| Camp elevation | **about 10,138 ft** | 10,125 (flyfishingthesierra), 10,138 (Mapcarta and AllTrails: 3,090 m), 10,154 (The Dyrt) |\n| Coordinates | Longitude −118.7854 (Mapcarta). The north end of the lakeshore trail starts at **37.4437, −118.7865** (Trailforks) | My estimate for the lake's center is about **37.439, −118.785**. I worked that out because the lake runs about 0.9 km north–south. Check it on a USGS map. |\n| Lake | About 30 acres, about 0.5 mi long | Granite cliffs and a waterfall at the head of the canyon that 100peaks puts at about 750 ft |\n\n**Which figures I trust:** about 3.7–3.9 miles to the pass. AllTrails contradicts itself on this, saying both \"about 3.3\" and \"just over 4.\" From the pass, flyfishingthesierra gives about 2.5 miles down to the Fourth Recess junction, and Hiking Project and Calitrails both put the lake 0.5 mile or less up from the junction. I'd plan on **6.5 miles and about 2,000 ft in each direction**. I treat Komoot's 16 miles as a high outlier.\n\n**Land-management detail:** Mapcarta and AllTrails place the lake in Fresno County, on the west side of the crest. I believe that's the Sierra National Forest part of the John Muir Wilderness, but I didn't confirm it with an agency. Either way, the permit you need is Inyo's, because the trip enters from Rock Creek.\n\n## Permit system (from Inyo National Forest and recreation.gov)\n\n- **Entry point name:** \"Mono Pass (JMT) (Rock Creek)\", code **JM08**. \"JMT\" here only means the trail connects to the John Muir Trail. Don't confuse it with the Mono Pass near Yosemite.\n- **Daily quota:** 20 people. **12 open 6 months ahead**, and **8 are added 2 weeks ahead**, on the same weekday as the entry date. The quota season runs May 1 to Nov 1.\n- **Opening time:** reservations open daily at **7:00 AM Pacific**, on a rolling basis. There's **no lottery** (Inyo only runs one for Mt. Whitney). Example: for a Wednesday, July 14, 2027 entry, the 12 advance spots open **Thursday, Jan 14, 2027**. The other 8 open **Wednesday, June 30, 2027**.\n- **Group size:** 15 maximum, and that includes day use. Groups can't combine to go over 15, so two permits of 6 are fine.\n- **Other rules:**\n  - The group must start on the date and at the entry point shown on the permit.\n  - The leader and alternate can't be changed.\n  - You must print the permit by 10 AM on the entry date or it's canceled. You can print up to 7 days ahead.\n  - Fees are $6 per reservation plus $5 per person. That's $66 for one permit of 12.\n  - You can change the entry date online only 12 or more days before the trip.\n- **Booking URL:** https://www.recreation.gov/permits/233262\n- **What this means for 12 people:** you have to get all 12 advance spots in the first minutes at 7:00 AM. If anyone else books even one spot first, your fallback is to split the group. One permit would be booked at the 6-month opening and the other at the 2-week release, which is risky.\n  - Little Lakes Valley (JM09, 25 per day, 15 advance) starts at the same trailhead. It's a different entry trail, though, so **ask the Inyo permit office (760-873-2526) before relying on it**.\n  - One sign that demand isn't extreme: 100peaks got a permit for two people at the 2-week release in August 2022.\n\n## Fires, closures and access\n\n- **Rock Fire (July 2026):** 12,008 acres, now 100% contained, near Big Pine and Aberdeen. Its closure order runs through Dec 31, 2026 and covers the Sawmill, Red Lake, Taboose and Birch Lake trails. It's well south of Rock Creek and **doesn't affect this route**. The Cinder Complex fire is in the same southern area.\n- **Rock Creek Road** is closed from the pack station to Mosquito Flat on **Oct 19–23, 2026** for maintenance. That doesn't matter for a summer trip.\n- **Rules:**\n  - The Forest Service trail page says no campfires above 10,000 ft. Hiking Project says no campfires at the lake. Plan on stoves only.\n  - Bear canisters are required between the trailhead and Mono Pass, and they're the only practical option past the pass.\n- **Trailhead:** the road is paved to the trailhead at about 10,230 ft. The parking lot fills up, and some trip reports mention using overflow parking down the road. The Mosquito Flat backpacker campground is one-night-only, which works for acclimatizing the night before. Going from 10,200 to 12,000 ft on the first day is a real altitude-sickness risk for some of the group.\n- **Not verified:** the north side of the pass may hold snow early in big snow years. I didn't find a source for 2026 trail conditions.\n\n## How I scored it\n\n- **Scenery 30/35:** The lake sits in a steep granite cirque with a waterfall at the head and Mono Rock above it. The hike in passes Ruby Lake, which the Forest Service describes as emerald water under sheer granite walls, plus Summit Lake and the Trail Lakes, with views of the Recesses and Pioneer Basin from the pass. It's spectacular, but it isn't as famous as the Banner and Ritter views at Thousand Island Lake. The lower end of the lake is forested, and no source I found describes turquoise water.\n- **Experience 22/25:** This is an excellent basecamp.\n  - **Day hikes:** Dave's Sierra Fishing puts Pioneer Basin's lowest lake 1.5 miles away and its largest lake 3 miles away and 1,000 ft up. A High Sierra Topix poster calls a camp at one of those lakes \"arguably one of our finest locations in the range.\" Third Recess Lake, Snow Lakes and Golden Lake are other options, and peak-baggers can scramble Mono Rock.\n  - **Fishing:** sources report rainbows and brookies in the lake (easy catches, mostly small), goldens in Golden Creek and Third Recess, and trout eaten for dinner.\n  - **Swimming:** cold, but trip reports describe good swimming.\n  - **Campsites (why it isn't higher):** sites are on both sides of the lake, and one report mentions a \"huge\" site. But Hiking Project says the lake gets crowded in mid-to-late summer, so 12 people may need two neighboring sites.\n- **Access 13/20:** About 1 mile longer than your 5.5-mile upper end. The gain is near your past maximum, and you climb about 1,950 ft back to 12,050 ft on the way out. The paved road and high trailhead help.\n- **Permit 12/20:** All 12 spots released 6 months ahead are needed for one group of 12. That's better than Lamarck structurally, since its whole daily quota is only 10. It's an all-or-nothing booking at 7:00 AM.\n\n## Sources\n\n**Tool limits:** I hit the tool-use limit partway through. For several trip reports I could only read search-result excerpts, not the full pages. Those were Hikingtales, Electricant, snwburd, Calitrails, High Sierra Topix, Komoot, AllTrails, Trailforks and Mapcarta.\n\n**Agency pages**\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/mono-pass-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf\n- https://www.fs.usda.gov/media/123246\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road\n- https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure\n- https://inciweb.wildfire.gov/incident-information/cainf-rock-fire\n- https://www.fire.ca.gov/incidents/2026/7/20/rock-fire\n\n**News**\n- https://sierrawave.net/temporary-closure-of-rock-creek-road/\n- https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/\n- https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/\n- https://abc30.com/post/rock-fire-burning-inyo-county-forces-partial-closure-national-forest/19564908/\n- https://thesheetnews.com/2026/07/23/rock-fire-update/\n- https://www.yourcentralvalley.com/news/wildfires/inyo-forest-rock-fire-closure/\n\n**Permit guides**\n- https://backcountryemily.com/california-backpacking-permits/\n- https://ingasadventures.com/deciphering-the-inyo-national-forest-permit-system/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://www.highsierratrails.com/pioneer_basin/pioneer_resources.html\n\n**Trip reports and route pages**\n- https://100peaks.com/blog/2022/9/12/fourth-recess-lake-from-mono-pass-backpacking-2022-always-go-into-the-lake\n- https://hikingtales.com/sierra-nevada/mono-pass-to-piute-pass-july-2022/day-2-mono-pass-to-fourth-recess/\n- http://www.davessierrafishing.com/destinations2/fourth_recess_lake.html\n- https://www.hikingproject.com/trail/7086567/fourth-recess-lake-trail-29e41\n- https://highsierratrails.com/pioneer_basin/pioneer_destination.html\n- https://www.highsierratopix.com/community/viewtopic.php?t=18587\n- https://calitrails.com/2012/07/11/mosquito-flats-to-mono-creek-where-no-dog-has-napped-before/\n- https://www.snwburd.com/bob/trip_reports/fourth_recess_1.html\n- https://electricant.net/grundyman/4threcess.html\n- https://flyfishingthesierra.com/mono-creek/\n- https://www.alltrails.com/explore/recording/mosquito-flat-to-fourth-recess-lake\n- https://www.alltrails.com/poi/us/california/shaver-lake/fourth-recess-lake\n- https://www.alltrails.com/trail/us/california/mono-pass-from-mosquito-flat-trailhead\n- https://www.komoot.com/smarttour/e1412859121/fourth-recess-lake-via-mono-pass-john-muir-wilderness\n- https://www.trailforks.com/trails/fourth-recess-lake-branch/\n- https://www.trailforks.com/trails/fourth-recess-lake-trail/\n- https://mapcarta.com/23046354\n- https://thedyrt.com/camping/california/4th-recess-lake-john-muir-wilderness\n- https://www.americansouthwest.net/california/eastern-sierra/ruby-lake-mono-pass-mt-starr.html\n- https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/mono_pass_rockcreek/mono_pass_rockcreek_detail\n- https://trailtopeak.com/2020/07/25/hiking-to-mono-pass-via-mosquito-flat-camping-overnight-at-ruby-lake/\n- https://www.mammothtimes.com/sports/big-effort-big-reward-hiking-the-mono-pass-trail/article_ac96b202-da95-11eb-9aba-8fb074c44661.html"
+}

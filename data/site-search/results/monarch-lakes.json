@@ -1,0 +1,145 @@
+{
+  "candidate": {
+    "name": "Monarch Lakes",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King (Sawtooth)",
+    "why": "Under Sawtooth Peak, with a Sawtooth Pass view NPS calls one of the grandest in the southern Sierra."
+  },
+  "site": {
+    "name": "Monarch Lakes",
+    "region": "Southern Sierra - Sequoia National Park (Mineral King)",
+    "area": "Mineral King",
+    "description": "Lower Monarch Lake sits in a dramatic cirque beneath Sawtooth Peak, about 4.5 trail miles and 2,600 ft above the Mineral King trailhead. Camp has a bear box and pit toilet on a rocky knoll west of the lower lake. A layover day allows a day hike over Sawtooth Pass to Columbine Lake, which is the trip's biggest highlight.",
+    "latitude": 36.448,
+    "longitude": -118.566,
+    "difficulty": "strenuous",
+    "distanceMiles": 4.5,
+    "elevationGainFt": 2600,
+    "campElevationFt": 10390,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Sawtooth Pass",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445857",
+    "permitNotes": "Rolling, first-come first-served, no lottery. Each entry date opens 6 months ahead at 7:00 AM Pacific and closes 1 week before. For a July 14, 2027 entry, booking opens Jan 14, 2027. NPS says Pacific Standard Time, so confirm the time on Recreation.gov. The first-night camp area is 'Monarch Lakes'. Don't pick Timber Gap, which uses the same parking lot. Group limit is 15 on trail and 12 off trail. Fees are $15 per permit plus $5 per person, with the per-person fee refundable up to 1 week before. Pick up the permit at the Mineral King Ranger Station from 1 pm the day before entry until 10 am on entry day. The whole party must attend the briefing. The quota season ran May 22–Sept 26 in 2026. Outside the quota season, permits are free and self-issued. Sawtooth Pass reportedly has the lowest daily quota of the Mineral King entry points, but the actual number is unconfirmed.",
+    "sceneryScore": 27,
+    "experienceScore": 19,
+    "accessScore": 13,
+    "permitScore": 14,
+    "rankingNotes": "Dramatic Sawtooth Peak cirque with a bear box and toilet at camp. Plan a layover for the Sawtooth Pass and Columbine Lake day hike. Solid trip, not epic (73/100).",
+    "sources": [
+      {
+        "label": "NPS Wilderness Permits",
+        "url": "https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm"
+      },
+      {
+        "label": "Recreation.gov SEKI Permits",
+        "url": "https://www.recreation.gov/permits/445857"
+      },
+      {
+        "label": "NPS Minimum Impact Restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS Trail Descriptions",
+        "url": "https://www.nps.gov/seki/planyourvisit/traildesc.htm"
+      },
+      {
+        "label": "NPS Mineral King Day Hikes",
+        "url": "https://www.nps.gov/seki/planyourvisit/mkdayhikesum.htm"
+      },
+      {
+        "label": "NPS Trail Conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/trailcond.htm"
+      },
+      {
+        "label": "NPS Road Construction",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-construction.htm"
+      },
+      {
+        "label": "NPS Road Conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-conditions.htm"
+      },
+      {
+        "label": "National Parks Traveler",
+        "url": "https://www.nationalparkstraveler.org/2025/04/mineral-king-road-construction-sequoia-national-park"
+      },
+      {
+        "label": "ABC30",
+        "url": "https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/"
+      },
+      {
+        "label": "HikingWalking",
+        "url": "https://www.hikingwalking.com/index.php/destinations/ca/ca_sws/mineral_king/monarch_lake/monarch_lake_detail"
+      },
+      {
+        "label": "Hikespeak",
+        "url": "https://www.hikespeak.com/trails/monarch-lakes-sequoia-mineral-kin/"
+      },
+      {
+        "label": "Modern Hiker",
+        "url": "https://modernhiker.com/hike/hike-monarch-lake-and-sawtooth-pass-in-sequoia-national-park/"
+      },
+      {
+        "label": "Kevin Gong",
+        "url": "http://kevingong.com/Hiking/201407MonarchLake.html"
+      },
+      {
+        "label": "The Trailmaster",
+        "url": "https://thetrailmaster.substack.com/p/mineral-king"
+      },
+      {
+        "label": "OutdoorStatus",
+        "url": "https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/monarch-lakes/"
+      },
+      {
+        "label": "Exploring Wild",
+        "url": "https://exploringwild.com/mineral-king-loop-variations/"
+      },
+      {
+        "label": "Jess Wandering",
+        "url": "https://jesswandering.com/complete-guide-to-backpacking-the-mineral-king-loop/"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/five-lakes-loop-in-mineral-king-backpacking/"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/sequoia-kings"
+      },
+      {
+        "label": "Permit Ranger",
+        "url": "https://permitranger.com/permits/seki"
+      },
+      {
+        "label": "Wikipedia Monarch Creek",
+        "url": "https://en.wikipedia.org/wiki/Monarch_Creek"
+      },
+      {
+        "label": "Wikipedia Sawtooth Peak",
+        "url": "https://en.wikipedia.org/wiki/Sawtooth_Peak"
+      },
+      {
+        "label": "SummitPost Sawtooth Peak",
+        "url": "https://www.summitpost.org/sawtooth-peak/151060"
+      },
+      {
+        "label": "AllTrails Upper Monarch Lake dam",
+        "url": "https://www.alltrails.com/poi/us/california/sequoia-national-park-6/upper-monarch-lake-104-020-dam"
+      },
+      {
+        "label": "YouTube fishing video",
+        "url": "https://www.youtube.com/watch?v=nB4GDd8nn2Q"
+      }
+    ],
+    "caveats": "The coordinates (36.448, -118.566) are the researcher's map-based estimate, not a confirmed source. Verify them on CalTopo or USGS. Distance figures conflict: the NPS official figure is 4.2 mi, while other sources give 4.5–5.0 mi. Gain ranges from 2,550 to 2,800 ft. The booking window is 6 months, which isn't stated as an exact day count, so permitAdvanceDays is left null. The Sawtooth Pass daily quota is unconfirmed. Sawtooth Pass elevation isn't established. Mineral King Road construction runs through fall 2027, with weekday closures 10 am–4 pm and limited pass-through times. Marmots damage parked cars, so tarp them. Campfires are banned. Campsites are overused and tight for 12 people, and mosquitoes are heavy early in the season. 2026 fire activity wasn't checked, so check NPS fire info before booking."
+  },
+  "notes": "I'll research this thoroughly. Starting with several parallel searches.\nNow the trail-data sources.\nI rate **Monarch Lakes 73/100 (27 / 19 / 13 / 14)**, a solid trip but not an epic one. It passes every hard limit. The setting under Sawtooth Peak is dramatic, but the lakes are small, the upper one is dammed, and the rock is mostly red and orange rather than white granite. The biggest \"wow\" is a day hike over Sawtooth Pass to Columbine Lake, not camp itself. The first day's climb (about 2,600 ft) is more than any trip you've done. Mineral King Road is still under construction through 2027.\n\nOne research gap: my search tools hit their limit before I could confirm three things. These are the daily quota number for the Sawtooth Pass entry point, the official lake coordinates, and any 2026 fire activity.\n\n## Trail facts and conflicting figures\n\n| Item | Figures found (source) | What I trust |\n|---|---|---|\n| **One-way miles to Lower Monarch** | 4.2 (NPS day-hike page and NPS wilderness trail descriptions; McKinney's 8.4 round trip); 4.5 (HikingWalking); 4.7 (Hikespeak); 4.8 (Modern Hiker); 4.9 (OutdoorStatus); 5.0 (Kevin Gong's report) | **About 4.5 mi.** 4.2 is the official NPS figure; hikers' trip logs usually come out at 4.5–4.8. Either way it's within your 3.6–5.5 mi range. |\n| **Elevation gain** | 2,550 ft, 7,840→10,390 (HikingWalking); 2,570 ft from 7,817 (Gong); 2,600 (Modern Hiker, McKinney); \"over 2,500\" (Hikespeak); 2,800 (OutdoorStatus) | **About 2,600 ft net.** Total climbing with ups and downs is probably close to 2,700–2,800. |\n| **Camp elevation** | Lower lake 10,390 ft and Upper 10,640 ft (HikingWalking); Upper 10,600 (Hikespeak); 10,648 (Wikipedia, Monarch Creek). An AllTrails pin labeled \"Upper Monarch Lake dam\" shows 3,165 m (about 10,384 ft). | **Camp at the lower lake, about 10,390 ft.** The AllTrails pin is probably mislabeled, since its elevation matches the lower lake. |\n| **Coordinates** | Wikipedia's Monarch Creek page lists 36.4522, -118.5987 as the creek's source. That is almost the same point as the trailhead (Hikespeak: 36.45305, -118.59665). Sawtooth Peak is at 36.4552, -118.5551 (Wikipedia). | **Don't use the Wikipedia point; it's the trailhead.** I estimate the lower lake at about **36.448, -118.566**, southwest of Sawtooth Peak. This is my map-based guess, not a confirmed source. Check it on CalTopo or the USGS Mineral King map. |\n\n**Route:** Trailhead at about 7,830 ft. Steep switchbacks for the first 0.7 mi, then past the Timber Gap junction. Groundhog Meadow has marmots. The Crystal Lake junction in Chihuahua Bowl is at about 3.5 mi. The trail runs along a west-facing slope, so start early to avoid the afternoon heat. NPS lists Lower Monarch as the first place camping is allowed on this trail.\n\n## Permits\n\n- **System:** Sequoia & Kings Canyon wilderness permits on Recreation.gov. Book at **https://www.recreation.gov/permits/445857**.\n- **Entry point:** **\"Sawtooth Pass.\"** Timber Gap uses the same parking lot, so don't pick it by mistake. First-night camp area: \"Monarch Lakes.\"\n- **Booking window:** Rolling, first-come first-served, **no lottery**. Each entry date opens **6 months ahead at 7:00 AM Pacific** and closes 1 week before. NPS says \"Pacific Standard Time\"; third-party guides just say Pacific. Assume 7 AM local time and confirm on Recreation.gov.\n  - For a Wednesday entry on July 14, 2027, booking opens **January 14, 2027 at 7 AM**.\n  - Other summer 2027 Wednesdays: July 7, 21, 28 and Aug 4, 11, 18.\n- **Quota season:** In 2026 it ran May 22–Sept 26. Outside that window, permits are free and self-issued with no quota.\n- **Quota size:** One guide says Sawtooth Pass has the **lowest** daily quota of the three Mineral King entry points (Sawtooth Pass, Timber Gap, Franklin Pass). I couldn't confirm the actual number. Check whether 12 seats are available at booking time.\n- **Group size:** **15 on trail, 12 off trail.** Your 12 fit on one permit, so no split is needed. Groups traveling together can't camp within 0.5 mi of each other if their combined size is over the limit.\n- **Fees:** $15 per permit plus $5 per person. The per-person part is refundable up to 1 week before the trip.\n- **Pickup:** At the Mineral King Ranger Station, from 1 pm the day before entry until 10 am on entry day. The whole party must attend the briefing. Unclaimed reservations go to walk-ups after 10 am.\n- **Demand:** Guides describe Mineral King permits as relatively low demand. NPS says the area is busy on weekends but often quiet mid-week, which suits your Wednesday start.\n\n## Closures and access problems\n\n- **Mineral King Road construction runs 2025 through fall 2027.**\n  - 2025 summer: weekday full closures 10 am–4 pm, with a single 1 pm pass-through.\n  - 2026: the road reopened May 21, construction paused May 29, then resumed Sept 8–Oct 28. During that stretch, Mon–Thu had full closures 10 am–4 pm; Fri–Sun allowed passage only at 10 am, 1 pm and 4 pm. The road closed for winter Oct 28.\n  - **Expect a 2027 schedule like this.** Arriving Tuesday and camping at Cold Springs or Atwell Mill works well: you avoid closures, pick up the permit after 1 pm, and adjust to the altitude.\n- **Marmots** have chewed through radiator hoses and cables on parked cars here. Tarp your cars, especially in early summer.\n- **Campfires are banned.** No fires above 9,000 ft on this side of the Great Western Divide, or in Mineral King Valley above the ranger station. Bring stoves only.\n- **Trail status:** NPS reported \"Sawtooth Pass and Monarch Lake… snow free\" on July 14, 2026. The park also notes that past fires and 2023 storm damage closed some other trails, but I found nothing affecting the Monarch Lakes trail. I couldn't finish a search on current or 2026 fires; check nps.gov/seki \"Current Fire Information\" before you book.\n\n## Basecamp, day hikes and fishing\n\n- **Camp:** The campsites are on a rocky knoll west of the lower lake, with a bear box and a partly screened pit toilet. HikingWalking describes them as overused. Space for 12 will be tight. Modern Hiker warns of heavy mosquitoes early in the season.\n- **Day hikes from camp:**\n  - Upper Monarch Lake: 0.25 mi.\n  - **Sawtooth Pass:** 1,200 ft of climbing in 1.3 mi on loose scree. NPS calls the view one of the grandest in the southern Sierra.\n  - **Columbine Lake** is just beyond the pass. Camping is banned there, but it makes a great day hike.\n  - Crystal Lake by way of Chihuahua Bowl.\n  - Sawtooth Peak for strong scramblers.\n- **Fishing:** Brook trout are present (Wikipedia; an older catch-and-release video). Above 9,000 ft, normal California rules apply and you need a fishing license. The upper lake is a Southern California Edison reservoir.\n\n## Score\n\n- **Scenery 27/35:** Sawtooth Peak looms over a cirque with waterfalls and big valley views. But the lakes are small, the upper one is dammed, and the rock around the lower lake is red-brown rather than white granite. One trip reporter found it \"not nearly as nice a scene as Eagle Lake.\" The pass and Columbine Lake add real wow, but camp itself isn't at Thousand Island level.\n- **Experience 19/25:** Excellent day hikes and a bear box and toilet at camp. Against that: cramped, worn sites for 12, average fishing, cold water and no campfires.\n- **Access 13/20:** The distance is ideal. But the gain is about 1,000 ft over your average, with a steep, hot start. The drive is slow (about 25 mi from Three Rivers), and you have to deal with construction closures and marmots.\n- **Permit 14/20:** Easier than the eastern Sierra, and one permit covers everyone. But it's the smallest quota in Mineral King, and the 12 seats are only reliable if someone is online at 7 AM six months out.\n- **Total: 73.**\n\nYou already did Mosquito Lakes, also in Mineral King, so this would feel less new. If you go, plan a layover day for the Sawtooth Pass and Columbine Lake hike.\n\n## URLs used\n- https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm\n- https://www.recreation.gov/permits/445857\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm\n- https://www.nps.gov/seki/planyourvisit/mkdayhikesum.htm\n- https://www.nps.gov/seki/planyourvisit/trailcond.htm\n- https://www.nps.gov/seki/planyourvisit/road-construction.htm\n- https://www.nps.gov/seki/planyourvisit/road-conditions.htm\n- https://www.nationalparkstraveler.org/2025/04/mineral-king-road-construction-sequoia-national-park\n- https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/\n- https://www.hikingwalking.com/index.php/destinations/ca/ca_sws/mineral_king/monarch_lake/monarch_lake_detail\n- https://www.hikespeak.com/trails/monarch-lakes-sequoia-mineral-kin/\n- https://modernhiker.com/hike/hike-monarch-lake-and-sawtooth-pass-in-sequoia-national-park/\n- http://kevingong.com/Hiking/201407MonarchLake.html\n- https://thetrailmaster.substack.com/p/mineral-king\n- https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/monarch-lakes/\n- https://exploringwild.com/mineral-king-loop-variations/\n- https://jesswandering.com/complete-guide-to-backpacking-the-mineral-king-loop/\n- https://backcountryemily.com/five-lakes-loop-in-mineral-king-backpacking/\n- https://campflare.com/permit/sequoia-kings\n- https://permitranger.com/permits/seki\n- https://en.wikipedia.org/wiki/Monarch_Creek\n- https://en.wikipedia.org/wiki/Sawtooth_Peak\n- https://www.summitpost.org/sawtooth-peak/151060\n- https://www.alltrails.com/poi/us/california/sequoia-national-park-6/upper-monarch-lake-104-020-dam\n- https://www.youtube.com/watch?v=nB4GDd8nn2Q"
+}

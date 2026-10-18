@@ -1,0 +1,145 @@
+{
+  "candidate": {
+    "name": "Big McGee / Steelhead Lakes",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "McGee Creek",
+    "why": "Red-, white- and purple-banded peaks with a McGee Pass day hike."
+  },
+  "site": {
+    "name": "Big McGee / Steelhead Lakes (Steelhead basecamp)",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "McGee Creek Canyon, Inyo National Forest (near Mammoth Lakes)",
+    "description": "Basecamp at Steelhead Lake, a granite basin with sites among the pines on its east and west shores, reached via the McGee Creek trail through colorful striped peaks. The fishing is strong, with brook and rainbow trout, and day trips go to Big McGee Lake, McGee Pass, Golden and Crocker Lakes, Little McGee Lake and Grass Lake. The hike in is longer and steeper than the ideal, and 12 people require two separate permit booking windows.",
+    "latitude": 37.49948,
+    "longitude": -118.80976,
+    "difficulty": "strenuous",
+    "distanceMiles": 5.7,
+    "elevationGainFt": 2500,
+    "campElevationFt": 10370,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": 180,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "McGee Pass (JM05)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF, no lottery. Daily quota is 15: 9 spots (60%) open 6 months ahead on the same date, and 6 spots (40%) open 2 weeks ahead on the same day of the week, both at 7 AM PT on Recreation.gov. Group max is 15 including day use, and separate groups can't combine to exceed 15. For 12 people, book all 9 early spots, then 3 more two weeks out; any other party of 4+ booking that day breaks the plan. Leader and alternate can't be changed after booking. Print the permit by 10 AM on the entry date or it is cancelled. Fees are $6 per reservation plus $5 per person, with per-person fees refunded if you cancel 12+ days ahead.",
+    "sceneryScore": 24,
+    "experienceScore": 19,
+    "accessScore": 14,
+    "permitScore": 12,
+    "rankingNotes": "69/100: Steelhead basecamp under McGee Canyon's striped peaks, with strong fishing and day trips to Big McGee and McGee Pass, but a long, steep hike in and a two-window permit for 12 people.",
+    "sources": [
+      {
+        "label": "Inyo NF McGee Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/mcgee-pass-trail"
+      },
+      {
+        "label": "Inyo NF Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo Trail Quota Sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Recreation.gov Inyo Permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Inyo NF Alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "Inyo NF McGee Creek Campground",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/mcgee-creek-campground"
+      },
+      {
+        "label": "Campflare McGee Creek Campground",
+        "url": "https://campflare.com/campground/mcgee-creek-238"
+      },
+      {
+        "label": "Campflare Inyo Permits",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Wikipedia Pack Fire",
+        "url": "https://en.wikipedia.org/wiki/Pack_Fire"
+      },
+      {
+        "label": "Wikipedia McGee Creek, California",
+        "url": "https://en.wikipedia.org/wiki/McGee_Creek,_California"
+      },
+      {
+        "label": "Hikingwalking McGee Creek",
+        "url": "https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/mcgee_creek/mcgee_creek_detail"
+      },
+      {
+        "label": "AllTrails Big McGee Lake",
+        "url": "https://www.alltrails.com/trail/us/california/big-mcgee-lake"
+      },
+      {
+        "label": "AllTrails McGee Backpacker Campground",
+        "url": "https://www.alltrails.com/poi/us/california/crowley-lake/mcgee-backpacker-campground"
+      },
+      {
+        "label": "CA Fly Fisher McGee Creek",
+        "url": "https://calflyfisher.com/destinations/backcountry-trout-the-mcgee-creek-trailhead/"
+      },
+      {
+        "label": "Mono County McGee Creek Trail",
+        "url": "https://www.monocounty.org/listing/mcgee-creek-trail/1306/"
+      },
+      {
+        "label": "The Outbound Steelhead Lake",
+        "url": "https://www.theoutbound.com/yosemite/hiking/hike-to-steelhead-lake-through-mcgee-creek-canyon"
+      },
+      {
+        "label": "Hiiker Steelhead Lake",
+        "url": "https://hiiker.app/hikes/california/mono-county/steelhead-lake-via-mcgee-pack-station-trail"
+      },
+      {
+        "label": "Hiiker Big McGee Lake",
+        "url": "https://hiiker.app/hikes/california/mono-county/big-mcgee-lake-trail"
+      },
+      {
+        "label": "Trailforks Steelhead Lake",
+        "url": "https://www.trailforks.com/trails/steelhead-lake/"
+      },
+      {
+        "label": "Trailforks Big McGee Lake",
+        "url": "https://www.trailforks.com/trails/big-mcgee-lake/"
+      },
+      {
+        "label": "TopoQuest Steelhead Lake",
+        "url": "https://topoquest.com/place-detail.php?id=267711"
+      },
+      {
+        "label": "FishCaddy Big McGee Lake",
+        "url": "https://fishcaddy.com/california/mono-county/big-mcgee-lake"
+      },
+      {
+        "label": "Fly Fishing the Sierra McGee Canyon",
+        "url": "https://flyfishingthesierra.com/mcgee-canyon/"
+      },
+      {
+        "label": "Sam Jezak McGee Pass trip report",
+        "url": "https://samjezak.substack.com/p/mcgee-pass-mosquitos-monsoons"
+      },
+      {
+        "label": "OutdoorStatus Steelhead Lake",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/steelhead-lake/"
+      },
+      {
+        "label": "Gaia GPS McGee Pass Trail",
+        "url": "https://www.gaiagps.com/hike/474493/mcgee-backpacker-campground-via-mcgee-pass-trail/"
+      }
+    ],
+    "caveats": "Mileage to Steelhead varies from 5.0 to 5.8 mi across sources and gain from 2,500 to 2,536 ft; lake elevation ranges from 10,350 to 10,381 ft. A Big McGee basecamp instead would be about 7.0 mi (±0.3) and about 2,750 ft gain at about 10,493 ft, and it scores 68; its coordinates (about 37.4886, -118.8405) are unconfirmed and its sites are limited and exposed. Trailhead elevation is about 7,850 ft (other sources give 7,840 and 8,100 ft). Both camp options exceed the 2,377 ft maximum gain and the 5.5 mi sweet spot. Log crossings of McGee Creek can be problematic early in the season, the last climb from the junction is steep and rocky, and expect pack stock traffic. The Pack Fire (about 1,974 acres, dated Nov–Dec 2025 by Wikipedia only) burned the mouth of McGee Creek, and McGee Creek Campground is closed for 2026. As of Oct 2026 there are no alerts, but check the lower canyon trail and campground status in 2027. JM05 sellout speed is unknown."
+  },
+  "notes": "**Big McGee / Steelhead Lakes scores 69/100.** That assumes a basecamp at Steelhead; a basecamp at Big McGee scores 68. It meets all your hard limits and is a solid trip, but it isn't quite in the \"epic\" tier with Thousand Island (81) or Lamarck (79). The two big drawbacks are a hike in that's longer and steeper than your sweet spot, and a permit that needs two separate booking windows to cover 12 people.\n\n## Key facts and conflicting figures\n\n**Trailhead:** McGee Creek, about 7,850 ft. Hikingwalking gives 7,840 ft and CA Fly Fisher gives 8,100 ft. You turn off US‑395 about 8.6 mi south of Mammoth, then drive 3.3 mi up McGee Creek Road. The last mile is dirt but any car can make it.\n\n| | Steelhead Lake | Big McGee Lake |\n|---|---|---|\n| One-way miles | 5.8 (Hikingwalking), 5.7 (OutdoorStatus, Hiiker), 5.68 (Outbound), 5.65 (AllTrails), 5 (Mono County, rounded) | 6.8 (Hikingwalking), 7.3 (AllTrails), 7 (Mono County, FlyFishingTheSierra), 6.5 (CA Fly Fisher), about 7.4 (Hiiker) |\n| **Figure I trust** | **About 5.7 mi** | **About 7.0 mi (±0.3)** |\n| Elevation gain | 2,510 (Hikingwalking), 2,536 (Outbound, Hiiker), 2,500 (OutdoorStatus) | 2,760 (Hikingwalking), 2,788 (AllTrails), 3,068 (Hiiker), 2,200 (CA Fly Fisher, too low) |\n| **Figure I trust** | **About 2,500 ft** | **About 2,750 ft** |\n| Lake elevation | 10,370 (TopoQuest, from USGS name data), 10,350, 10,380, 10,381 | 10,493 (FishCaddy), about 10,500 (Trailforks GPS), 10,550, 10,600 (Hikingwalking, probably the trail high point) |\n| Coordinates | **37.49948, -118.80976** (TopoQuest, USGS name data; reliable) | **About 37.4886, -118.8405** (FishCaddy; checks out against the map, but confirm on CalTopo) |\n\n- **Which sources I trust:** Hikingwalking gives a mile-by-mile log and is consistent with itself. The GPS-based sites run slightly longer for Big McGee. CA Fly Fisher's 2,200 ft for Big McGee can't be right, because the lake sits about 2,400–2,600 ft above the trailhead before counting any ups and downs.\n- **Trail notes (Hikingwalking):**\n  - You cross McGee Creek on logs at about 2.6 and 3.5 mi. These can be \"problematic\" early in the season.\n  - The Steelhead junction is at 4.6 mi. From there it's a steep, rocky climb of about 860 ft or more to the lake.\n  - The first few miles are exposed, and there's a pack station, so expect horse and mule traffic.\n\n## Permits (Inyo National Forest, no lottery)\n\n- **Entry point:** McGee Pass, code JM05. The total daily quota is 15 people: 9 spots open 6 months ahead and 6 open 2 weeks ahead (Inyo quota sheet).\n- **When bookings open:** daily at 7 AM Pacific on Recreation.gov.\n  - The 60% share opens 6 months ahead on the same date.\n  - The 40% share opens 2 weeks ahead on the same day of the week.\n  - Example for a Wednesday, July 14, 2027 entry: book on January 14, 2027, then again on Wednesday, June 30, 2027.\n- **Group size:** maximum 15, and that includes day use. Separate groups can't combine to exceed 15.\n- **What this means for 12 people:** at most 9 can book in the 6-month window. You'd need to grab all 9 at 7 AM, then 3 more two weeks out. Any other party of 4 or more booking that day breaks the plan.\n- **Other rules and costs:**\n  - The leader and alternate can't be changed after booking.\n  - You must print the permit by 10 AM on the entry date or it's cancelled.\n  - Fees are $6 per reservation plus $5 per person.\n  - Per-person fees are refunded if you cancel 12 or more days ahead.\n- **Booking page:** https://www.recreation.gov/permits/233262\n\n## Fire and closures\n\n- **Pack Fire:** it burned about 1,974 acres at the mouth of McGee Creek and destroyed 30 structures, including some at the McGee Creek RV Park. Wikipedia dates it November 13 – December 3, 2025. I couldn't confirm the year with a second source.\n- **McGee Creek Campground** (about 2 mi below the trailhead) is closed for 2026 because of fire damage. Plan your pre-trip night somewhere else.\n- **No current alerts:** as of October 2026, the Inyo alerts page lists nothing for McGee Creek, the road or the trail.\n- **Trail is in use:** an AllTrails review from June 19, 2026 for the Steelhead trail reports \"great conditions.\"\n- **Before you go:** check in 2027 whether the lower canyon trail was burned and whether the campground has reopened.\n\n## Scoring\n\n| | Scenery /35 | Experience /25 | Access /20 | Permit /20 | **Total** |\n|---|---|---|---|---|---|\n| Steelhead basecamp | 24 | 19 | 14 | 12 | **69** |\n| Big McGee basecamp | 27 | 18 | 11 | 12 | **68** |\n\n- **Scenery:** McGee Canyon's colorful striped peaks are distinctive. Big McGee sits under Red and White Mountain (12,816 ft), and Steelhead is in a granite basin. Neither is a classic iconic granite-and-turquoise lake on the level of Thousand Island.\n- **Experience:**\n  - **Fishing is strong.** Both lakes have brook and rainbow trout. Golden Lake has golden trout, and a 2026 trip report called the Big McGee fishing \"white hot.\"\n  - **Day hikes from camp** include Little McGee Lake, McGee Pass (11,900 ft, about 1.5 mi past Big McGee), Golden and Crocker Lakes, Grass Lake, and Red Slate Mountain.\n  - **Camping:** Big McGee's sites are limited and exposed, on a rocky peninsula, which is a poor fit for 12. Steelhead has sites among the pines on its east and west shores.\n- **Access:** both options are over your 2,377 ft maximum gain and your 5.5 mi sweet spot. The drive is easy.\n- **Permit:** a 15-person quota beats Lamarck's 10, but getting 12 people in requires two separate 7 AM bookings.\n\n**Recommendation:** make Steelhead the basecamp and do Big McGee and McGee Pass as day trips.\n\n**Gaps:** I hit the tool limit, so I couldn't load the High Sierra Topix trip reports, confirm Big McGee's official USGS coordinates, or find data on how fast JM05 sells out.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/mcgee-pass-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://www.fs.usda.gov/r05/inyo/recreation/mcgee-creek-campground\n- https://campflare.com/campground/mcgee-creek-238\n- https://campflare.com/permit/inyo\n- https://en.wikipedia.org/wiki/Pack_Fire\n- https://en.wikipedia.org/wiki/McGee_Creek,_California\n- https://www.hikingwalking.com/destinations/ca/ca_ses/mammoth_lakes/mcgee_creek/mcgee_creek_detail\n- https://www.alltrails.com/trail/us/california/big-mcgee-lake\n- https://www.alltrails.com/poi/us/california/crowley-lake/mcgee-backpacker-campground\n- https://calflyfisher.com/destinations/backcountry-trout-the-mcgee-creek-trailhead/\n- https://www.monocounty.org/listing/mcgee-creek-trail/1306/\n- https://www.theoutbound.com/yosemite/hiking/hike-to-steelhead-lake-through-mcgee-creek-canyon\n- https://hiiker.app/hikes/california/mono-county/steelhead-lake-via-mcgee-pack-station-trail\n- https://hiiker.app/hikes/california/mono-county/big-mcgee-lake-trail\n- https://www.trailforks.com/trails/steelhead-lake/\n- https://www.trailforks.com/trails/big-mcgee-lake/\n- https://topoquest.com/place-detail.php?id=267711\n- https://fishcaddy.com/california/mono-county/big-mcgee-lake\n- https://flyfishingthesierra.com/mcgee-canyon/\n- https://samjezak.substack.com/p/mcgee-pass-mosquitos-monsoons\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/steelhead-lake/\n- https://www.gaiagps.com/hike/474493/mcgee-backpacker-campground-via-mcgee-pass-trail/"
+}

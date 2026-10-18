@@ -1,0 +1,153 @@
+{
+  "candidate": {
+    "name": "Kennedy Lake",
+    "area": "Emigrant Wilderness (Stanislaus National Forest)",
+    "trailhead": "Kennedy Meadows (Hwy 108)",
+    "why": "Huge volcanic cliffs of Kennedy and Leavitt Peaks with few people."
+  },
+  "site": {
+    "name": "Kennedy Lake",
+    "region": "Central Sierra - Emigrant Wilderness",
+    "area": "Stanislaus National Forest, Hwy 108 / Sonora Pass",
+    "description": "A mid-elevation lake (about 7,800 ft) at the head of a long glacial valley, beneath the dramatic north face of Kennedy Peak, which rises about 3,000 ft above the water. Permits are free with no quota, and there is plenty of room for a group of 12, with brown trout fishing and day hikes up Kennedy Canyon or scrambles toward Night Cap and Kennedy Peaks. Expect cows, horse-churned mud and wet crossings.",
+    "latitude": 38.2607,
+    "longitude": -119.6533,
+    "difficulty": "moderate",
+    "distanceMiles": 8,
+    "elevationGainFt": 1500,
+    "campElevationFt": 7800,
+    "peakElevationFt": 10718,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Kennedy Meadows TH",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits",
+    "permitNotes": "There is no quota, reservation or lottery, and no recreation.gov booking. Permits are free and issued in person at the Sugar Pine (formerly Summit) Ranger Station, #1 Pinecrest Lake Road, Pinecrest. The station is open Mon–Fri 9am–3pm, with a self-issue kiosk when it is closed. The Supervisor's Office in Sonora also issues permits. Forest order STF-16-2026-08 caps groups at 15, so the group of 12 fits on one permit. Groups traveling together must stay at least 1 mile apart, so don't split the group. No camping within 100 ft of lakes, streams or trails. A CAL FIRE campfire permit is required, and fires are banned above 9,000 ft. Parking at the Forest Service lot is free, and camping there is $15/site/night.",
+    "sceneryScore": 22,
+    "experienceScore": 15,
+    "accessScore": 14,
+    "permitScore": 20,
+    "rankingNotes": "Easy no-quota permit and a dramatic 3,000-ft cliff face above the lake, but it's low, long, and grazed: good rather than epic (71/100).",
+    "sources": [
+      {
+        "label": "Stanislaus NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits"
+      },
+      {
+        "label": "Emigrant Wilderness use rules renewal",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/alerts/renewal-emigrant-wilderness-use-rules"
+      },
+      {
+        "label": "Emigrant Wilderness Hwy 108 access",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/recreation/emigrant-wilderness-highway-108-access"
+      },
+      {
+        "label": "Kennedy Meadows TH",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/recreation/kennedy-meadows-th"
+      },
+      {
+        "label": "Sonora Pass TH",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/recreation/sonora-pass-th"
+      },
+      {
+        "label": "ABC10 new wilderness rules",
+        "url": "https://www.abc10.com/article/news/local/new-wilderness-rules-renews-permit-camping-fire-limits-stanislaus-national-forest/103-c0ec77cd-8fb9-469c-99d5-fdc76150ecee"
+      },
+      {
+        "label": "HighSierraTrails Kennedy Lake",
+        "url": "https://www.highsierratrails.com/kennedy_lake/kennedy_overview.html"
+      },
+      {
+        "label": "HighSierraTrails Emigrant resources",
+        "url": "https://highsierratrails.com/emigrant/emigrant_resources.html"
+      },
+      {
+        "label": "SonoraPassVacations Kennedy Lake",
+        "url": "http://www.sonorapassvacations.com/hikes/kennedy_lake_hike.html"
+      },
+      {
+        "label": "TahoeToWhitney Kennedy Lake",
+        "url": "https://tahoetowhitney.com/TY-Sonora_Pass_to_Tuolumne/kennedy-lake-emigrant-wilderness.html"
+      },
+      {
+        "label": "Trailforks Kennedy Lake",
+        "url": "https://www.trailforks.com/trails/kennedy-lake/"
+      },
+      {
+        "label": "Gaia Kennedy Meadows via Kennedy Lake",
+        "url": "https://www.gaiagps.com/hike/266827/kennedy-meadows-via-kennedy-lake-trail/"
+      },
+      {
+        "label": "Gaia Kennedy Lake",
+        "url": "https://www.gaiagps.com/hike/242043/kennedy-lake/"
+      },
+      {
+        "label": "AllTrails Kennedy Lake",
+        "url": "https://www.alltrails.com/trail/us/california/kennedy-lake-trail"
+      },
+      {
+        "label": "SummitPost Kennedy Peak",
+        "url": "https://www.summitpost.org/kennedy-peak/151857"
+      },
+      {
+        "label": "SummitPost Kennedy Lake",
+        "url": "https://www.summitpost.org/kennedy-lake/440994"
+      },
+      {
+        "label": "High Sierra Topix trip report",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=25354"
+      },
+      {
+        "label": "Topozone Kennedy Lake",
+        "url": "https://www.topozone.com/california/tuolumne-ca/lake/kennedy-lake-6/"
+      },
+      {
+        "label": "Fishbrain Kennedy Lake",
+        "url": "https://fishbrain.com/fishing-waters/sX7yG2zO/kennedy-lake"
+      },
+      {
+        "label": "Wikipedia Kennedy Peak",
+        "url": "https://en.wikipedia.org/wiki/Kennedy_Peak_(Tuolumne_County,_California)"
+      },
+      {
+        "label": "YouTube brown trout (weak source)",
+        "url": "https://www.youtube.com/watch?v=N3ojzzQDvnk"
+      },
+      {
+        "label": "Dog Friendly SoCal Relief Reservoir",
+        "url": "https://dogfriendlysocal.com/kennedy-meadows-to-relief-reservoir-backpack/"
+      },
+      {
+        "label": "2014 grazing op-ed",
+        "url": "https://rtfitchauthor.com/2014/09/15/spencer-lennard-subsidies-turn-emigrant-wilderness-into-grazing-nightmare/"
+      },
+      {
+        "label": "MyMotherLode fire 1",
+        "url": "https://mymotherlode.com/news/local/11017422/stf-firefighters-battling-blaze-in-emigrant-wilderness.html"
+      },
+      {
+        "label": "MyMotherLode fire 2",
+        "url": "https://mymotherlode.com/news/local/11186209/fire-burning-in-forest-emigrant-wilderness.html"
+      },
+      {
+        "label": "Union Democrat",
+        "url": "https://www.uniondemocrat.com/news/article_67e05b4d-9910-40be-b4f3-ba476ac508b2.html"
+      },
+      {
+        "label": "Caltrans Sonora Pass advisory",
+        "url": "https://dot.ca.gov/caltrans-near-me/district-10/district-10-news/winter-pass-traffic-advisory-sonora-05-05-2026"
+      },
+      {
+        "label": "Sierra Mountain Passes Sonora Pass open",
+        "url": "https://sierramountainpasses.com/central-sierra/sonora-pass-is-open/"
+      }
+    ],
+    "caveats": "The Grouse Fire started July 24, 2026 east of Relief Reservoir near Kennedy Meadows, close to the route. Its final size, any closures and any trail burn are unconfirmed, so call Sugar Pine RS at (209) 965-3434. Mileage figures range from 6.7 to 8.1 mi. Plan on about 8 mi from the resort trailhead and about 9 mi from the free Forest Service lot, which is 0.75–1.5 mi away depending on the source. Gain is about 1,500 ft net but 1,850–2,000 ft total. Sources conflict on the permit season (Apr 15–Nov 15 vs Apr 1–Nov 30); the forest order says year-round. The permits page dates the order to July 8, 2025, but the order text says 2026. Hwy 108 reopened Apr 30, 2026 (May 7 per one Caltrans notice). 2026 reports describe cows and manure along the last ~4 mi, horse-churned mud and wet crossings. Expect mosquitoes at this elevation."
+  },
+  "notes": "I'd rate Kennedy Lake **71/100: worth considering, but not an \"epic\" trip.** Permits are easy and the cliff face above the lake is impressive. Against that, the lake sits low (about 7,800 ft), the hike is longer than your usual, and recent trip reports complain about cows and horses. I ran out of search capacity before I could check the July 2026 Grouse Fire, which started near this route.\n\n## Key figures\n\n| Item | Figures found | What I'd plan on |\n|---|---|---|\n| **One-way miles** | HighSierraTrails 7.7 · SonoraPassVacations 7 · SummitPost 7.5 · Gaia 6.7 / 7.6 · AllTrails 15.7 round trip (about 7.85 one-way) · June 2026 High Sierra Topix trip report with GPS: 8.1 to the inlet | **About 8 mi from the resort trailhead, about 9 mi from the free Forest Service backpacker lot.** That lot is 0.75–1.5 mi from the trailhead, depending on the source. TahoeToWhitney puts the Kennedy Lake trail junction 2.67 mi from the pack station, and Trailforks puts the lake 5.1 mi past the junction, which adds up to about 7.8 mi. That matches the 2026 GPS track. The 7-mile figures look too low. |\n| **Elevation gain** | HighSierraTrails / SonoraPass 1,500 · Gaia 1,430–1,529 · AllTrails 1,975 · trip report 1,840 up and 380 down | **About 1,500 ft net, 1,850–2,000 ft total.** The lower numbers ignore the ups and downs along the way. |\n| **Camp elevation** | 7,800 (HighSierraTrails) · 7,805 (Topozone, from USGS data) · 7,808 (Trailforks) | **About 7,800 ft**, roughly 3,300 ft lower than Cottonwood Lakes |\n| **Coordinates** | Topozone 38.2607°N, 119.6533°W · Fishbrain 38.2614°N, 119.6538°W | **38.2607, -119.6533.** The two sources agree to within about 100 m. |\n| **Peak above the lake** | Kennedy Peak is 10,718 ft (Wikipedia). SummitPost says its north face rises about 3,000 ft above the lake and calls it the most scenic peak in the Emigrant. | |\n\n## Permits (Stanislaus National Forest)\n- **There's no quota, reservation or lottery.** Most of the details you asked for don't exist here: no rolling window, no opening time, no lottery dates, no entry-point code and **no recreation.gov booking page.** The Forest Service says plainly that the Emigrant has no quota or reservation system. The only quota in the area is Kibbie Lake / Eleanor Lake.\n- **Getting it:** Permits are free and issued in person. Pick one up at the **Sugar Pine (formerly Summit) Ranger Station**, #1 Pinecrest Lake Road, Pinecrest. It's open Monday–Friday, 9 am–3 pm, and there's a self-issue kiosk out front when it's closed. The Supervisor's Office in Sonora also issues them. Pinecrest is on the drive in.\n- **Trailhead:** \"Kennedy Meadows TH.\" Parking at the Forest Service lot is free, and camping there costs $15 per site per night. One blog (2020) says you can also get an overnight parking permit in the resort lobby.\n- **Group size:** The new forest order (STF-16-2026-08, July 8, 2026 – June 30, 2029) caps groups at **15 people**, so your 12 fit on **one permit.** Don't split into two: groups traveling together have to camp and hike at least one mile apart.\n- **Other rules:**\n  - No camping within 100 ft of lakes, streams or trails.\n  - You need a CAL FIRE campfire permit. Campfires are banned above 9,000 ft, which doesn't apply at the lake.\n- **Conflicting rules and dates:**\n  - **Permit season:** One Forest Service page says permits are required April 15 – Nov 15, and HighSierraTrails says April 1 – Nov 30. The forest order requires a permit **year-round**. I trust the order.\n  - **Order start date:** The permits page says the order runs from July 8, 2025, but the order itself says 2026. I trust the order text.\n\n## Fire, closures and access\n- **Grouse Fire (biggest unknown):** It started July 24, 2026, **east of Relief Reservoir near Kennedy Meadows**, which is close to this route. It was estimated at 4–5 acres the next morning, with about 30 firefighters on it. I couldn't confirm the final size, any closure, or whether trail sections burned. Call Sugar Pine Ranger Station at (209) 965-3434 before you commit.\n- **Piute Fire:** A lightning fire near Piute Lake, Sept 30 – Oct 1, 2026, about 4 acres. It's far from this route and doesn't matter for this trip.\n- **Hwy 108 (Sonora Pass):** Reopened April 30, 2026. One Caltrans notice gives May 7 for the eastbound section at Kennedy Meadows. Either way, the road won't be an issue in summer.\n- **Trail conditions:** AllTrails reviews from 2026 describe:\n  - cows and heavy cow manure along roughly the last 4 miles, in the meadow and around the lake\n  - deep, horse-churned trail and muddy crossings\n\n  A 2014 newspaper op-ed made the same grazing complaint about Kennedy Creek. The June 2026 trip report also mentions wet crossings near the lake.\n\n## Score: 71/100\n\n| Category | Score | Why |\n|---|---|---|\n| **Scenery** | 22/35 | The cliff face above a long glacial valley is genuinely dramatic. But this is a meadow-edged, mid-elevation lake with grazing impacts. It isn't a clear, turquoise granite basin like Thousand Island (35) or Lamarck (28). |\n| **Experience** | 15/25 | There's plenty of room for 12 and good brown-trout fishing in the lake and creek. Day hikes from camp include Kennedy Canyon toward the Pacific Crest Trail, and scrambles up Night Cap Peak or toward Kennedy Peak. Against that: cows, mud, mosquitoes at lower elevation, and so-so swimming. |\n| **Access** | 14/20 | The gain fits your usual trips well. The distance (about 8–9 mi) is 3–4 mi past your sweet spot. The trailhead is about 50 mi past Sonora, and getting the permit on the way in is easy. That's close to Thousand Island's 14. |\n| **Permit** | 20/20 | No quota, free, and the 15-person limit covers the whole group on one permit. |\n\n**Bottom line:** The easy permit pushes the score up; the experience itself is more \"good\" than \"talked about for years.\" At 7,800 ft it also breaks your trend toward higher camps.\n\n## URLs used\n- https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/stanislaus/alerts/renewal-emigrant-wilderness-use-rules\n- https://www.fs.usda.gov/r05/stanislaus/recreation/emigrant-wilderness-highway-108-access\n- https://www.fs.usda.gov/r05/stanislaus/recreation/kennedy-meadows-th\n- https://www.fs.usda.gov/r05/stanislaus/recreation/sonora-pass-th\n- https://www.abc10.com/article/news/local/new-wilderness-rules-renews-permit-camping-fire-limits-stanislaus-national-forest/103-c0ec77cd-8fb9-469c-99d5-fdc76150ecee\n- https://www.highsierratrails.com/kennedy_lake/kennedy_overview.html\n- https://highsierratrails.com/emigrant/emigrant_resources.html\n- http://www.sonorapassvacations.com/hikes/kennedy_lake_hike.html\n- https://tahoetowhitney.com/TY-Sonora_Pass_to_Tuolumne/kennedy-lake-emigrant-wilderness.html\n- https://www.trailforks.com/trails/kennedy-lake/\n- https://www.gaiagps.com/hike/266827/kennedy-meadows-via-kennedy-lake-trail/\n- https://www.gaiagps.com/hike/242043/kennedy-lake/\n- https://www.alltrails.com/trail/us/california/kennedy-lake-trail\n- https://www.summitpost.org/kennedy-peak/151857\n- https://www.summitpost.org/kennedy-lake/440994\n- https://highsierratopix.com/community/viewtopic.php?t=25354\n- https://www.topozone.com/california/tuolumne-ca/lake/kennedy-lake-6/\n- https://fishbrain.com/fishing-waters/sX7yG2zO/kennedy-lake\n- https://en.wikipedia.org/wiki/Kennedy_Peak_(Tuolumne_County,_California)\n- https://www.youtube.com/watch?v=N3ojzzQDvnk (brown trout; a weak source)\n- https://dogfriendlysocal.com/kennedy-meadows-to-relief-reservoir-backpack/\n- https://rtfitchauthor.com/2014/09/15/spencer-lennard-subsidies-turn-emigrant-wilderness-into-grazing-nightmare/\n- https://mymotherlode.com/news/local/11017422/stf-firefighters-battling-blaze-in-emigrant-wilderness.html\n- https://mymotherlode.com/news/local/11186209/fire-burning-in-forest-emigrant-wilderness.html\n- https://www.uniondemocrat.com/news/article_67e05b4d-9910-40be-b4f3-ba476ac508b2.html\n- https://dot.ca.gov/caltrans-near-me/district-10/district-10-news/winter-pass-traffic-advisory-sonora-05-05-2026\n- https://sierramountainpasses.com/central-sierra/sonora-pass-is-open/"
+}

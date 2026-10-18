@@ -1,0 +1,85 @@
+{
+  "candidate": {
+    "name": "Jennie Lake",
+    "area": "Sequoia National Forest (Jennie Lakes Wilderness)",
+    "trailhead": "Big Meadows",
+    "why": "Granite cirque with no permit needed if you stay inside the wilderness."
+  },
+  "site": {
+    "name": "Jennie Lake",
+    "region": "Southern Sierra - Jennie Lakes Wilderness (Sequoia National Forest)",
+    "area": "Jennie Lakes Wilderness, Hume Lake Ranger District, near Big Meadows off Generals Highway",
+    "description": "A pretty lake in a granite and forest bowl below a ridge at about 9,000 ft, with about 19 established sites on the north and west shores, enough room for a group of 12. Fishing, swimming and quiet weekdays, with moderate day hikes to J.O. Pass, Weaver Lake and Mitchell Peak for High Sierra views. No permit or quota is needed, which makes it an easy-to-plan backup.",
+    "latitude": 0,
+    "longitude": 0,
+    "difficulty": "moderate",
+    "distanceMiles": 6.9,
+    "elevationGainFt": 2000,
+    "campElevationFt": 9012,
+    "peakElevationFt": 9166,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Big Meadows Trailhead (trail 29E03)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": null,
+    "permitNotes": "No wilderness permit and no quota; free voluntary self-registration at each trailhead. Group limit is 15 per party. A California Campfire Permit (free, readyforwildfire.org) is required for any flame, including stoves. Camping overnight inside Sequoia & Kings Canyon NP (e.g., past J.O. Pass) requires a park permit (recreation.gov/permits/445857). Access is via the Big Stump entrance of Kings Canyon NP, which charges a fee. Big Meadows Road (FS 14S11) is 5 miles from Generals Highway.",
+    "sceneryScore": 21,
+    "experienceScore": 17,
+    "accessScore": 15,
+    "permitScore": 20,
+    "rankingNotes": "No-permit, no-quota 9,000-ft forest-and-granite lake with room for 12: a solid, easy-to-plan backup, though not epic (73/100).",
+    "sources": [
+      {
+        "label": "USFS Jennie Lakes Wilderness",
+        "url": "https://www.fs.usda.gov/r05/sequoia/recreation/jennie-lakes-wilderness"
+      },
+      {
+        "label": "USFS 2025 Jennie Lakes brochure (PDF)",
+        "url": "https://www.fs.usda.gov/media/234871"
+      },
+      {
+        "label": "USFS Rowell Meadow Trailhead",
+        "url": "https://www.fs.usda.gov/r05/sequoia/recreation/rowell-meadow-trailhead"
+      },
+      {
+        "label": "USFS Sequoia NF fire restrictions",
+        "url": "https://www.fs.usda.gov/r05/sequoia/alerts/fire-restrictions-sequoia-national-forest"
+      },
+      {
+        "label": "NPS SEKI trail conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/trailcond.htm"
+      },
+      {
+        "label": "Hiking Project - Jennie Lake Out and Back",
+        "url": "https://www.hikingproject.com/trail/7116882/jennie-lake-out-and-back"
+      },
+      {
+        "label": "onX - Jennie Lake Out and Back",
+        "url": "https://www.onxmaps.com/hiking/k36nr4lm1z9j/jennie-lake-out-and-back"
+      },
+      {
+        "label": "Sierra Recreation Magazine - Jennie Lakes Wilderness (search snippet)",
+        "url": "https://sierrarecmagazine.com/wilderness-adventure/jennie-lakes-wilderness/"
+      },
+      {
+        "label": "Wikipedia - Jennie Lakes Wilderness (search snippet)",
+        "url": "https://en.wikipedia.org/wiki/Jennie_Lakes_Wilderness"
+      },
+      {
+        "label": "AllTrails - Jennie Lake via Fox Meadows TH (search snippet)",
+        "url": "https://www.alltrails.com/trail/us/california/jennie-lake-via-fox-meadows-th"
+      },
+      {
+        "label": "Recreation.gov SEKI wilderness permits",
+        "url": "https://www.recreation.gov/permits/445857"
+      }
+    ],
+    "caveats": "Lake coordinates are unverified. The researcher's estimate of about 36.66 N, 118.73 W is not sourced, so latitude and longitude are set to 0 as placeholders; check USGS GNIS or CalTopo. The trailhead is at 36.7176, -118.8337. One-way distance of 6.8–7.0 mi from Big Meadows (5.5–6 mi from Fox Meadow on a bumpy dirt road) and gain of about 1,900–2,200 ft in are derived ranges, entered as midpoints. Round-trip figures conflict: AllTrails 10.7 mi/2,070 ft; Hiking Project 13.9 mi/2,428 ft; onX 14.75 mi/3,040 ft. Plan on about 500 ft of climbing on the way back out. The peak elevation shown is Poop Out Pass (9,166 ft); onX's 9,551 ft likely reflects a ridge scramble. Hiking Project wrongly says permits are required; the FS 2025 brochure says none. Wood fires were banned under the FS order updated Sept 21, 2026, and similar restrictions are expected in summer 2027. Big Meadows Road is closed in winter and typically opens in late May. A final check for 2026 fires could not be run; call Hume Lake RD at 559-338-2251. The lot may fill and campsites can be taken, so a weekday start helps. There are no bear lockers at the trailhead."
+  },
+  "notes": "I'd score Jennie Lake **73/100 (scenery 21, experience 17, access 15, permit 20)**. Permits are the easiest you'll find: none are needed, there's no quota and the group limit is 15. But the scenery is pretty rather than \"epic,\" and the hike is longer and steeper than your usual sweet spot.\n\nOne limit on sourcing: my search tool hit its usage cap partway through. I opened the main pages below, but I couldn't run a final check for 2026 fires or confirm the lake's exact coordinates.\n\n## Key facts\n\n| Item | Best figure | Source I trust |\n|---|---|---|\n| One-way miles | **About 6.8–7.0 mi from Big Meadows Trailhead**, or about 5.5–6 mi from Fox Meadow Trailhead (bumpy dirt road) | Hiking Project GPS track: 13.9 mi round trip. A Gaia GPS user report says 6.8. Forest Service (FS) segment distances (junction at 1.7 mi; boundary to Poop Out Pass 2.67 mi) agree. |\n| Elevation gain (going in) | **About 1,900–2,200 ft**, plus about 500 ft climbing back out | Worked out from the round-trip gain on Hiking Project (2,428 ft) and onX (3,040 ft) |\n| Trailhead / high point | Trailhead about 7,570 ft; Poop Out Pass about 9,166 ft | Hiking Project |\n| Camp elevation | **9,012 ft** (most sources just say \"about 9,000\") | Sierra Recreation Magazine; Wikipedia and Hiking Project say about 9,000 |\n| Coordinates | Trailhead: 36.7176, −118.8337 (onX / Hiking Project). **Lake: roughly 36.66 N, 118.73 W. This is my own estimate, not from a source.** Check it in USGS GNIS or CalTopo before using it. | — |\n\n## Permits and rules\nSource: the official FS page and the FS 2025 Jennie Lakes brochure.\n- **No wilderness permit and no quota.** There's a free, voluntary self-registration station at each trailhead. That means no rolling window, no opening time, no lottery and no booking URL.\n- **Trailhead name:** Big Meadows Trailhead, trail 29E03, off Big Meadows Road (FS 14S11), 5 miles from Generals Highway. You drive in through the Big Stump entrance of Kings Canyon National Park, which charges a fee.\n- **Group limit: 15 people per party.** Your 12 fits as one group.\n- **California Campfire Permit** is required for any flame, including stoves. It's free at readyforwildfire.org.\n- If you camp overnight inside Sequoia & Kings Canyon National Parks (for example past J.O. Pass), you need a park permit: recreation.gov/permits/445857. Day hikes into the park don't need one.\n- **Conflicting claims:** Hiking Project says \"wilderness permits are required for camping.\" That's wrong for this Forest Service land. I trust the FS 2025 brochure.\n\n## Fire, closures and access\n- **Fire restrictions (FS order updated Sept 21, 2026):** wood fires are banned. Gas or liquid-fuel stoves with a shut-off valve are allowed if you have the campfire permit. Expect restrictions again in summer 2027.\n- **Big Meadows Road** is closed in winter and typically opens in late May, depending on weather. That's not a problem for your summer dates.\n- **Recent fires:** I found none in this area. The only one turned up was a tiny lightning fire in 2017 (the Rowell Fire, 0.1 acre). The National Park Service summer 2026 page mentions general closures from past fires and 2023 storms but nothing specific to Jennie. Call the Hume Lake Ranger District (559-338-2251) before you go.\n- **Parking:** one onX user found the Big Meadows lot full by 6 pm, and most lake campsites were taken. A Wednesday start helps. There are no bear lockers at the trailhead.\n\n## Other conflicting figures\n- **Round trip:** AllTrails 10.7 mi / 2,070 ft (from Fox Meadow); Hiking Project 13.9 mi / 2,428 ft; onX 14.75 mi / 3,040 ft. The onX high point of 9,551 ft probably comes from the user's ridge scramble, not the trail.\n- **Wilderness size:** 10,289 to 11,000 acres depending on the source. This doesn't matter for planning.\n\n## Score: 73/100\n- **Scenery 21/35:** A pretty lake in a granite and forest bowl below a ridge, at about 9,000 ft. It doesn't have turquoise water or the jagged peaks of Thousand Island (35) or Lamarck (28). The best views are from Poop Out Pass and Mitchell Peak.\n- **Experience 17/25:** About 19 established sites on the north and west shores, so room for 12. Fishing, swimming and quiet weekdays. Day hikes are moderate rather than spectacular: J.O. Pass and the pond above it (about 1 mi), Weaver Lake, the ridge above the lake, and Mitchell Peak (10,365 ft) for views of the High Sierra. No campfires under current rules.\n- **Access 15/20:** About 7 mi and about 2,000 ft in, above your 4.5 mi / 1,600 ft average but within your limits. The roads are paved to Big Meadows, and the drive is long from Northern California.\n- **Permit 20/20:** No permit, no quota, and your group is under the 15-person cap.\n\n**Bottom line:** it's a solid, easy-to-plan backup, but it probably won't be the trip people talk about for years. The 20 permit points are doing most of the work in that score.\n\n## URLs used\n**Opened and read:**\n- https://www.fs.usda.gov/r05/sequoia/recreation/jennie-lakes-wilderness\n- https://www.fs.usda.gov/media/234871 (FS 2025 brochure PDF)\n- https://www.fs.usda.gov/r05/sequoia/recreation/rowell-meadow-trailhead\n- https://www.fs.usda.gov/r05/sequoia/alerts/fire-restrictions-sequoia-national-forest\n- https://www.nps.gov/seki/planyourvisit/trailcond.htm\n- https://www.hikingproject.com/trail/7116882/jennie-lake-out-and-back\n- https://www.onxmaps.com/hiking/k36nr4lm1z9j/jennie-lake-out-and-back\n\n**Search-result text only (pages not opened):**\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm?fullweb=1\n- https://www.alltrails.com/trail/us/california/jennie-lake-via-fox-meadows-th\n- https://www.theoutbound.com/yosemite/backpacking/backpacking-to-jennie-lake\n- https://www.komoot.com/smarttour/e1978512491/jennie-lake-trail\n- https://jennielakeswilderness.wordpress.com/plan-your-trip/overnight-2-to-3-days/jennie-lake/\n- https://jennielakeswilderness.wordpress.com/faqs/\n- https://www.bewilder.club/experiences/sequoia-national-forest-jennie-lakes-wilderness-jennie-weaver-lakes\n- https://sierrarecmagazine.com/wilderness-adventure/jennie-lakes-wilderness/\n- https://en.wikipedia.org/wiki/Jennie_Lakes_Wilderness\n- https://www.summitpost.org/jennie-lakes-wilderness/441944\n- https://www.thearmchairexplorer.com/california/jennie-lakes-wilderness.php\n- https://www.recorderonline.com/news/second-wildfire-burning-in-jennie-lakes-area/article_6228a0e4-8a22-11e7-b117-bbcddb7f9d5e.html\n- https://squashchronicles.wordpress.com/adventures/2010-2019/2012-2/jennie-lake/\n- https://hiiker.app/hikes/california/tulare-county/weaver-lake-and-jennie-lake-via-big-meadows-trail\n- https://www.recreation.gov/permits/445857"
+}

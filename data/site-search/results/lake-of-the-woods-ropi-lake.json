@@ -1,0 +1,193 @@
+{
+  "candidate": {
+    "name": "Lake of the Woods / Ropi Lake",
+    "area": "Desolation Wilderness (Lake Tahoe Basin Management Unit)",
+    "trailhead": "Echo Lakes (water taxi optional)",
+    "why": "Base for climbing Pyramid Peak, Desolation's highest point."
+  },
+  "site": {
+    "name": "Lake of the Woods",
+    "region": "Lake Tahoe - Desolation Wilderness",
+    "area": "Desolation Wilderness, Eldorado National Forest (Echo Lakes trailhead)",
+    "description": "A pretty granite lake beneath Ralston and Pyramid peaks at 8,048 ft, reached by the PCT past Echo and Tamarack lakes to Haypress Meadows. It makes a strong, easy-to-reach basecamp, with excellent day hikes to Lake Aloha (0.7 mi), Ralston Peak, and the Pyramid Creek lakes. There is good swimming and trout fishing, but expect crowds.",
+    "latitude": 38.8502,
+    "longitude": -120.1194,
+    "difficulty": "moderate",
+    "distanceMiles": 5.3,
+    "elevationGainFt": 1200,
+    "campElevationFt": 8048,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Zone 40 Lake of Woods (start trailhead: Echo)",
+    "permitGroupSizeLimit": 12,
+    "permitUrl": "https://www.recreation.gov/permits/233261",
+    "permitNotes": "Desolation Wilderness permits are by first-night destination zone. 70% of each zone's quota is reservable 6 months to 1 day ahead on a rolling, first-come basis with no lottery. The other 30% is walk-in only at the Placerville Ranger Station. The 7:00 AM PT opening time comes from PermitRanger and Backcountry Emily, not the agency page. Example: a July 14, 2027 entry opens January 14, 2027. Quota season runs from the Friday before Memorial Day through Sept 30. Zone 40 quota is reportedly 20 people/day with 14 reservable (third-party source), and demand is very high. A 12-person group uses about 12 of the 14 reservable spots. Group size is capped at 12. Fees: $6 per permit plus $5 per adult for 1 night or $10 for 2–14 nights, capped at $100. Designated sites only on the north and east shores, one group per site. Bear canisters are required, campfires are banned, and you must carry a signed permit.",
+    "sceneryScore": 26,
+    "experienceScore": 21,
+    "accessScore": 18,
+    "permitScore": 9,
+    "rankingNotes": "74/100: easy 5.3-mi basecamp with Lake Aloha a short day hike away, but a hard 12-person permit in a very high-demand zone.",
+    "sources": [
+      {
+        "label": "USFS Desolation Wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits"
+      },
+      {
+        "label": "USFS Desolation trails and trailheads",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads"
+      },
+      {
+        "label": "Recreation.gov permit 233261",
+        "url": "https://www.recreation.gov/permits/233261"
+      },
+      {
+        "label": "Recreation.gov permit 233261 (alt URL)",
+        "url": "https://recreation.gov/permits/233261"
+      },
+      {
+        "label": "PermitRanger Desolation",
+        "url": "https://permitranger.com/permits/desolation"
+      },
+      {
+        "label": "PermitRanger Zone 40",
+        "url": "https://permitranger.com/passes/ca/desolation/40-lake-of-woods"
+      },
+      {
+        "label": "PermitRanger Desolation passes",
+        "url": "https://permitranger.com/passes/ca/desolation"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/desolation"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Discover Echo Summit",
+        "url": "http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html"
+      },
+      {
+        "label": "DWV trailhead mileages",
+        "url": "https://desowv.org/information/trailhead-mileages"
+      },
+      {
+        "label": "DWV guide PDF",
+        "url": "https://desowv.org/files/rog_wild_deso.pdf"
+      },
+      {
+        "label": "Sierra Rec trailhead mileage",
+        "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/"
+      },
+      {
+        "label": "Sierra Rec Lake of the Woods",
+        "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/explore-lake-of-the-woods/"
+      },
+      {
+        "label": "Sierra Rec Pyramid Creek",
+        "url": "https://sierrarecmagazine.com/exploring-the-lakes-of-pyramid-creek-a-desolation-wilderness-adventure/"
+      },
+      {
+        "label": "Sierra Rec Ropi Lake",
+        "url": "https://sierrarecmagazine.com/portfolio/ropi-lake-desolation-wilderness/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lake_of_the_Woods_(California)"
+      },
+      {
+        "label": "TopoZone",
+        "url": "https://www.topozone.com/california/el-dorado-ca/lake/lake-of-the-woods-36/"
+      },
+      {
+        "label": "AllTrails Echo Lake to Lake of the Woods",
+        "url": "https://www.alltrails.com/trail/us/california/echo-lake-to-lake-of-the-woods"
+      },
+      {
+        "label": "AllTrails Echo Lakes Trail",
+        "url": "https://www.alltrails.com/trail/us/california/echo-lakes-trail"
+      },
+      {
+        "label": "AllTrails Ropi Lake",
+        "url": "https://www.alltrails.com/trail/us/california/ropi-lake--2"
+      },
+      {
+        "label": "Outdoorstatus Lake of the Woods",
+        "url": "https://outdoorstatus.com/trips/us/california/desolation-wilderness/lake-of-the-woods/"
+      },
+      {
+        "label": "Outdoorstatus Ropi Lake",
+        "url": "https://outdoorstatus.com/trips/us/california/desolation-wilderness/ropi-lake-via-horsetail-falls/"
+      },
+      {
+        "label": "Tahoe Daily Tribune",
+        "url": "https://www.tahoedailytribune.com/news/lake-of-the-woods-great-for-a-quick-overnight-tahoe-hike/"
+      },
+      {
+        "label": "Trailing Ahead",
+        "url": "https://trailingahead.blogspot.com/2017/08/lake-of-woods-in-californias-desolation.html"
+      },
+      {
+        "label": "Trailforks",
+        "url": "https://www.trailforks.com/trails/lake-of-the-woods-384712/"
+      },
+      {
+        "label": "Visit Lake Tahoe",
+        "url": "https://visitlaketahoe.com/things-to-do/hikes/echo-lakes-trail/"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/desolation-wilderness-area/179411"
+      },
+      {
+        "label": "Medium trip report",
+        "url": "https://medium.com/@rajtravel18/3-days-in-tahoes-desolation-wilderness-4d5b8c7dd85a"
+      },
+      {
+        "label": "The Outbound Ropi",
+        "url": "https://www.theoutbound.com/lake-tahoe/backpacking/backpack-to-ropi-lake"
+      },
+      {
+        "label": "Mountain-du Ropi",
+        "url": "http://www.mountain-du.com/2025/06/ropi-lake.html"
+      },
+      {
+        "label": "Weekly Camper Ropi",
+        "url": "https://www.theweeklycamper.com/camping/ropi-lake"
+      },
+      {
+        "label": "SFGate water taxi",
+        "url": "https://www.sfgate.com/renotahoe/article/lake-tahoe-echo-lake-water-taxi-aloha-18297993.php"
+      },
+      {
+        "label": "Meetup listing",
+        "url": "https://www.meetup.com/easy-fun-hiking-in-reno/events/315859256/"
+      },
+      {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g45961-d145235-Reviews-Echo_Lakes_Hiking_Trail-Lake_Tahoe_Nevada_Nevada.html"
+      },
+      {
+        "label": "Tahoe Weekly",
+        "url": "https://thetahoeweekly.com/2018/08/echo-lakes-gateway-to-desolation-wilderness/"
+      },
+      {
+        "label": "The Backpack Guide",
+        "url": "https://thebackpackguide.com/desolation-wilderness-trip-report-echo-lakes-trailhead"
+      },
+      {
+        "label": "Calexplornia",
+        "url": "https://www.calexplornia.com/echo-lakes-trailhead/"
+      }
+    ],
+    "caveats": "x"
+  },
+  "notes": "I rate **Lake of the Woods 74/100**: Scenery 26, Experience 21, Access 18, Permit 9. That makes it a strong, easy-to-reach basecamp but not a top \"epic\" pick. Its scenery and campsite elevation don't match Thousand Island (81) or Lamarck (79), and for 12 people the permit is hard to get. Ropi as the camp scores lower, about **68**.\n\nOne limit: my search and fetch tools hit their usage cap partway through. A few items below are marked as unverified for that reason.\n\n## Key facts (Lake of the Woods from Echo Lakes)\n\n| Item | Value I trust | Conflicting figures and why I chose |\n|---|---|---|\n| One-way miles | **5.3 mi** from Echo Lakes trailhead. About **2.8 mi** if the water taxi drops you at the far end of Upper Echo Lake, which skips about 2.5 mi. | The volunteer group's mileage chart (DWV, which Sierra Rec repeats) gives 5.3 \"Moderate\". So do the Tahoe Daily Tribune and the Trailing Ahead blog. Sierra Rec and Visit Lake Tahoe say about 5. Outdoorstatus says 5.4. AllTrails gives 10.4 mi round trip, about 5.2 each way. All are close. |\n| Elevation gain | **About 1,100–1,300 ft going in**, about 400–500 ft coming out | Outdoorstatus says 1,100 in and 400 out. AllTrails says 1,729, but that is the round-trip total. Sierra Rec says 1,600 (probably round trip). The Tribune's 800 looks like net gain only. The numbers fit a 7,420 ft trailhead, a high point around 8,400 ft near Haypress Meadows, and the lake at 8,048 ft. |\n| Camp elevation | **8,048 ft** (USGS official place-names database, via Wikipedia and TopoZone) | This is lower than your recent trend toward higher camps (Cottonwood was 11,105 ft). |\n| Coordinates | **38.8502° N, 120.1194° W** | Wikipedia and TopoZone agree. |\n| Ropi Lake | **Zone 44 (\"Avalanche\")**. About 6.9 mi one way from Echo Lake Chalet (AllTrails \"Echo Lake Chalet to Lake Ropi\" is 13.8–13.9 mi round trip). From the Twin Bridges / Pyramid Creek trailhead it's 2.0 mi (DWV/Sierra Rec chart) to 2.4 mi with about 1,500 ft gain (Outdoorstatus); one 2025 trip report says 3 mi. | Ropi's coordinates and elevation are **unverified** (I estimate about 7,600 ft). Check them on USGS maps before relying on them. |\n\n**Route notes**\n- **To Lake of the Woods:** take the PCT past Echo and Tamarack lakes to Haypress Meadows, then the side trail west over a ridge and down to the lake.\n- **Ropi from Twin Bridges:** the trail fades above Horsetail Falls. AllTrails says it needs \"expert-level route-finding and scrambling,\" and Sierra Rec calls it a class 2 climb. That's a poor fit for 12 people with full packs.\n- **Ropi from Echo:** about 7 mi, including a rough descent down Pyramid Creek from Lake of the Woods. A Medium trip report camped at Ropi and day-hiked to Lake of the Woods, so the two connect.\n\n## Permit system (Desolation Wilderness, recreation.gov permit 233261)\n- **What you book:** a first-night **destination zone**, not a trailhead.\n  - **Zone 40 \"Lake of Woods\"**, with the start trailhead listed as \"Echo\".\n  - Ropi is **Zone 44 \"Avalanche\"**.\n  - You must sleep the first night in your permit zone. After that you may move anywhere (recreation.gov).\n- **Booking window:**\n  - The Forest Service says **70% of each zone's quota can be reserved 6 months to 1 day ahead**. The other 30% is walk-in only, at the Placerville Ranger Station in Camino.\n  - It's first-come, first-served on a rolling window. There is **no lottery**.\n  - Opening time is **7:00 AM Pacific**, but that comes from PermitRanger and Backcountry Emily, not the agency page.\n  - Example: a Wednesday, July 14, 2027 entry should open **January 14, 2027 at 7:00 AM PT**.\n- **Quota season:** Friday before Memorial Day through Sept 30. PermitRanger lists May 28–Sept 30 for 2027. AllTrails says \"May through October,\" but the Forest Service and recreation.gov are the authority.\n- **Zone quotas:** Zone 40 and Zone 44 are each **20 people per day, 14 reservable**. This comes from discoverechosummit.com, a third-party site; I couldn't confirm it on an agency page, but it matches the 70% rule. PermitRanger rates Zone 40's demand at \"very high\" (87/100).\n- **Group size:** **12 maximum together at any time**, per recreation.gov and the Forest Service. Your 12 fits exactly on one permit, but that one permit uses about 12 of 14 reservable spots. Splitting into two permits doesn't get around the quota. A 13th person can't legally be with the group.\n- **Fees:** $6 per permit, plus $5 per adult for 1 night or $10 for 2–14 nights, capped at $100 per permit. Cancel 8 or more days out for a refund of the per-person fees; the $6 is never refunded.\n- **Camping rules:**\n  - **Designated sites only on the north and east shores** of Lake of the Woods. They're marked with posts, and only one permit group may use each site. If all are taken, camp at least 500 ft from the lake.\n  - The west and south shores allow camping anywhere at least 100 ft from water.\n  - Bear canisters are required, campfires are banned, and you must carry a signed permit (a confirmation email doesn't count).\n  - The Taylor Creek Visitor Center is not issuing permits.\n\n## Fire, closures, access\n- Recreation.gov says the wilderness is open but **warns about areas burned in the 2021 Caldor Fire**, especially dead and weakened trees. I could not confirm current closures or post-fire details on the approach.\n- In October 2026 the Eldorado National Forest had forest-wide fire restrictions posted. Campfires are banned in Desolation regardless.\n- **Water taxi** (run by Echo Chalet, summer only):\n  - Reported prices: $15 (older TripAdvisor reviews), $20 (SFGate), **$25 (a 2026 Meetup listing)**. For 12 people at $25 that's about $300 each way.\n  - Runs about 9 a.m.–5 p.m. on demand, with a 3-person minimum.\n  - Usually **starts around mid-July** because it depends on water depth in the channel between the lakes, and it ends at **Labor Day**.\n  - Please confirm on echochalet.com; I couldn't fetch it.\n- **Parking:** Echo Lakes parking is limited and fills early, so carpool.\n\n## Scoring\n\n| | Lake of the Woods basecamp | Ropi variant |\n|---|---|---|\n| **Scenery (35)** | **26.** Pretty granite lake under Ralston and Pyramid peaks with partly wooded shores, at 8,048 ft. The \"talk about it for years\" part is Lake Aloha, a 0.7-mile day hike away. | 27. Pyramid Peak reflects in the lake, plus cascades, but the setting is smaller. |\n| **Experience (25)** | **21.** Excellent day hikes: Aloha, Ralston Peak, Pyramid Creek lakes, Lucille and Margery lakes. Rainbow and brook trout, good swimming. Downsides: crowds, and the designated-site rule makes fitting 12 tents hard on the north and east shores. | 19. Off-trail access and fewer large flat sites; one trip report found broken glass. |\n| **Access (20)** | **18.** 5.3 mi and about 1,200 ft is your sweet spot, and the taxi can shorten it. Minus points for the parking crunch and the taxi's season. | 12. About 7 mi with rough cross-country from Echo, or a scramble up Horsetail Falls with packs. |\n| **Permit (20)** | **9.** First-come at 7 AM; 12 people take nearly the whole 14-spot daily quota in a very high-demand zone. A Wednesday entry helps. | 10. Same quota, probably a bit less demand (my assumption). |\n| **Total** | **74** | **68** |\n\n**Ways to make it more \"epic\":**\n- Book Zone 40 for night 1, then move to the west shore of Lake Aloha for nights 2–4. This is allowed after the first night, and Aloha's granite-island scenery would push scenery to about 30.\n- Hold Zone 44 as a backup first-night zone.\n- Be online at exactly 7:00 AM PT on release day, six months before your entry date.\n\n## URLs used\n- https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits\n- https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-wilderness-trails-trailheads\n- https://www.recreation.gov/permits/233261\n- https://recreation.gov/permits/233261\n- https://permitranger.com/permits/desolation\n- https://permitranger.com/passes/ca/desolation/40-lake-of-woods\n- https://permitranger.com/passes/ca/desolation\n- https://campflare.com/permit/desolation\n- https://backcountryemily.com/california-backpacking-permits/\n- http://www.discoverechosummit.com/activities/desolation_wilderness_permits.html\n- https://desowv.org/information/trailhead-mileages\n- https://desowv.org/files/rog_wild_deso.pdf\n- https://sierrarecmagazine.com/explore-desolation-wilderness/desolation-wilderness-trailhead-and-mileage/\n- https://sierrarecmagazine.com/explore-desolation-wilderness/explore-lake-of-the-woods/\n- https://sierrarecmagazine.com/exploring-the-lakes-of-pyramid-creek-a-desolation-wilderness-adventure/\n- https://sierrarecmagazine.com/portfolio/ropi-lake-desolation-wilderness/\n- https://en.wikipedia.org/wiki/Lake_of_the_Woods_(California)\n- https://www.topozone.com/california/el-dorado-ca/lake/lake-of-the-woods-36/\n- https://www.alltrails.com/trail/us/california/echo-lake-to-lake-of-the-woods\n- https://www.alltrails.com/trail/us/california/echo-lakes-trail\n- https://www.alltrails.com/trail/us/california/ropi-lake--2\n- https://outdoorstatus.com/trips/us/california/desolation-wilderness/lake-of-the-woods/\n- https://outdoorstatus.com/trips/us/california/desolation-wilderness/ropi-lake-via-horsetail-falls/\n- https://www.tahoedailytribune.com/news/lake-of-the-woods-great-for-a-quick-overnight-tahoe-hike/\n- https://trailingahead.blogspot.com/2017/08/lake-of-woods-in-californias-desolation.html\n- https://www.trailforks.com/trails/lake-of-the-woods-384712/\n- https://visitlaketahoe.com/things-to-do/hikes/echo-lakes-trail/\n- https://www.summitpost.org/desolation-wilderness-area/179411\n- https://medium.com/@rajtravel18/3-days-in-tahoes-desolation-wilderness-4d5b8c7dd85a\n- https://www.theoutbound.com/lake-tahoe/backpacking/backpack-to-ropi-lake\n- http://www.mountain-du.com/2025/06/ropi-lake.html\n- https://www.theweeklycamper.com/camping/ropi-lake\n- https://www.sfgate.com/renotahoe/article/lake-tahoe-echo-lake-water-taxi-aloha-18297993.php\n- https://www.meetup.com/easy-fun-hiking-in-reno/events/315859256/\n- https://www.tripadvisor.com/Attraction_Review-g45961-d145235-Reviews-Echo_Lakes_Hiking_Trail-Lake_Tahoe_Nevada_Nevada.html\n- https://thetahoeweekly.com/2018/08/echo-lakes-gateway-to-desolation-wilderness/\n- https://thebackpackguide.com/desolation-wilderness-trip-report-echo-lakes-trailhead\n- https://www.calexplornia.com/echo-lakes-trailhead/"
+}

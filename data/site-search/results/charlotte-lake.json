@@ -1,0 +1,145 @@
+{
+  "candidate": {
+    "name": "Charlotte Lake",
+    "area": "Kings Canyon National Park",
+    "trailhead": "Onion Valley via Kearsarge Pass",
+    "why": "Beyond the Kearsarge Lakes with Charlotte Dome as the backdrop."
+  },
+  "site": {
+    "name": "Charlotte Lake",
+    "region": "Kings Canyon National Park via Inyo National Forest (Onion Valley / Kearsarge Pass)",
+    "area": "Kearsarge Pass / John Muir Trail, Kings Canyon National Park",
+    "description": "A large, partly forested lake just off the JMT, reached over Kearsarge Pass from Onion Valley. It has bear boxes, a ranger station, many campsites on the northwest shore, and trout fishing. Day hikes to Glen Pass and Rae Lakes make it a strong base, but the park allows only two nights of camping here.",
+    "latitude": 36.77528,
+    "longitude": -118.42861,
+    "difficulty": "strenuous",
+    "distanceMiles": 8.2,
+    "elevationGainFt": 2600,
+    "campElevationFt": 10370,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Kearsarge Pass (JMT) (JM31)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF permit; it also covers Kings Canyon. Quota is 60 people/day from May 1 to Nov 1. 60% (36 spots) opens 6 months ahead on the same calendar date, and 40% (24 spots) opens 2 weeks ahead on the same weekday. Releases open daily at 7:00 AM Pacific, first-come first-served, with no lottery. Cancellations return within 24 hours. Maximum group size is 15 and groups cannot combine to exceed it; Kings Canyon also limits groups to 12 off trail. Fees are $6 per permit plus $5 per person. The permit must be printed by 10 AM on the entry date or it is cancelled. The leader and alternate cannot be changed. The date can be changed online only if the entry is 12 or more days away. Charlotte Lake and Kearsarge Lakes each have a 2-night camping limit. No camping within 1/4 mi of Bullfrog Lake. No campfires. Bear canisters are required and bear spray is prohibited in the park.",
+    "sceneryScore": 30,
+    "experienceScore": 20,
+    "accessScore": 10,
+    "permitScore": 13,
+    "rankingNotes": "Iconic Kearsarge Pass and Rae Lakes scenery with a 60-person quota that can fit a group of 12, but it is a long, steep approach with a 2-night camping limit.",
+    "sources": [
+      {
+        "label": "NPS SEKI minimum impact restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS Rae Lakes Loop",
+        "url": "https://www.nps.gov/seki/planyourvisit/rae-lakes-loop.htm"
+      },
+      {
+        "label": "Inyo NF Kearsarge Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/kearsarge-pass-trail"
+      },
+      {
+        "label": "Inyo NF Kearsarge Pass Trail guide (PDF)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/ROG%20Kearsarge%20Pass%20Trail.pdf"
+      },
+      {
+        "label": "Inyo NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Onion Valley Campground",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/onion-valley-campground"
+      },
+      {
+        "label": "Inyo County road update 03.17.26",
+        "url": "https://www.inyocounty.us/sites/default/files/2026-03/CURRENT%20ROAD%20UPDATE%20%20%2003.17.26.pdf"
+      },
+      {
+        "label": "High Sierra Topix thread",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=22475&p=173942"
+      },
+      {
+        "label": "ABC30 Rock Fire",
+        "url": "https://abc30.com/post/rock-fire-erupts-east-kings-canyon-national-park-inyo-county-prompting-evacuations/19547124/"
+      },
+      {
+        "label": "YourCentralValley Rock Fire",
+        "url": "https://www.yourcentralvalley.com/news/wildfires/rock-fire-kings-canyon-national-park/"
+      },
+      {
+        "label": "The Unremarkable Climber",
+        "url": "https://theunremarkableclimber.com/backpacking-kearsarge-pass-trail-kearsarge-lakes-rae-lakes-60-lakes-basin/"
+      },
+      {
+        "label": "SoCal Hiker",
+        "url": "https://socalhiker.net/hikes/rae-lakes-loop-via-kearsarge-pass/"
+      },
+      {
+        "label": "Live and Let Hike",
+        "url": "https://liveandlethike.com/2021/12/21/john-muir-trail-northbound-section-2-onion-valley-to-muir-trail-ranch-kings-canyon-national-park-ca/"
+      },
+      {
+        "label": "HikeArizona",
+        "url": "https://hikearizona.com/decoder.php?ZTN=15623"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/onion-valley-to-kearsarge-pass-trail/864661"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/charlotte-lake--2"
+      },
+      {
+        "label": "onX",
+        "url": "https://www.onxmaps.com/hiking/1k36nekey69j/charlotte-lake"
+      },
+      {
+        "label": "The Outbound",
+        "url": "https://www.theoutbound.com/yosemite/backpacking/backpack-over-kearsarge-pass-to-charlotte-lake"
+      },
+      {
+        "label": "Fly Fishing the Sierra",
+        "url": "https://flyfishingthesierra.com/charlotte-lake/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Charlotte_Lake_(California)"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Backcountry Emily",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Hikeset",
+        "url": "https://hikeset.com/blog/jmt-permits-2026/"
+      },
+      {
+        "label": "Pathloom",
+        "url": "https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind"
+      }
+    ],
+    "caveats": "One-way mileage varies by source from 7.7 to 8.65 mi; 8.2 is used here. Gain on the way in is about 2,600 ft, and you climb roughly 1,450 ft back over the pass on the way out. Camp elevation figures conflict (10,370, 10,400, or 10,544 ft). Kearsarge Pass is listed at 11,700 to 11,800 ft and was not used as a peak elevation. The coordinates are database-derived and should be checked on a topo map. The rolling permit window is described as 6 months and 2 weeks rather than a fixed number of days, so advance days are left null. A 2-night limit means a 4-night trip must split between Kearsarge Lakes and Charlotte. Demand reports conflict. The Rock Fire (July 2026) briefly closed US-395, and its containment was not confirmed. Onion Valley Road has been closed by flood debris in the past. Glen Pass may hold snow until mid-to-late July. One report mentions 2025 smoke forcing hikers out."
+  },
+  "notes": "I'll research this thoroughly, starting with the agency pages and trip reports.\nNow the Inyo NF trail page, permit details, and road status.\nI rate Charlotte Lake **73/100 (30 / 20 / 10 / 13)**. It's an epic trip, but two things hold it back. First, Kings Canyon only lets you camp at Charlotte Lake for **two nights**, so a 4-night basecamp there isn't allowed. Second, the hike in is longer and steeper than your usual: about 8 mi with about 2,600 ft of climbing.\n\n## Key facts\n\n| Item | Best figure | What sources say (and which I trust) |\n|---|---|---|\n| One-way miles to camp | **About 8.2 mi** | 7.7 (Live and Let Hike, shortcut via Sandy Junction); 8.2 (HikeArizona; The Outbound gives 16.38 round trip); 8.5 (SoCal Hiker; AllTrails 17 round trip); 8.65 (onX 17.3 round trip). The agency guide only goes to the JMT junction: 7 mi. I trust **8–8.5 mi**. 7.7 is the shortest route. |\n| Gain on the way in | **About 2,600 ft** | 2,566 (SoCal Hiker), 2,623 (HikeArizona), about 2,660 to the pass alone (SummitPost). Round-trip totals of 4,078–4,297 (Outbound, onX, AllTrails) include roughly 1,400–1,500 ft of climbing back over the pass on the way out. |\n| Trailhead and pass | Onion Valley about 9,200 ft; Kearsarge Pass about 11,700–11,800 ft | The Forest Service contradicts itself: its trail page says 5 mi to an 11,700-ft pass, and its printed guide says 4.5 mi to 11,800 ft. SummitPost says 4.7 mi. I trust **4.5–4.7 mi**. |\n| Camp elevation | **About 10,370 ft** | 10,370 (SoCal Hiker); 10,400 (Fly Fishing the Sierra); 10,544 (Wikipedia, The Outbound). I trust 10,370. It matches the 10,700-ft JMT junction (agency guide) minus the roughly 300-ft drop to the lake (Live and Let Hike). The 10,544 figure looks like a database error. |\n| Coordinates | **36.77528° N, 118.42861° W** | From Wikipedia's database-derived entry. The lake is long, so check this point on a topo map before using it. |\n\n## Permit system (Inyo National Forest)\n- **Entry point:** \"Kearsarge Pass (JMT)\", code **JM31**. A permit from the Inyo forest also covers the Kings Canyon portion of the trip.\n- **Daily quota (May 1–Nov 1):** 60 people per day. 36 spots open 6 months ahead and 24 open 2 weeks ahead.\n- **No lottery.** It's first-come, first-served on a rolling window, opening **daily at 7:00 AM Pacific**:\n  - 60% of spots open 6 months ahead (July 4 opens January 4).\n  - 40% open 2 weeks ahead, on the same weekday.\n  - Cancelled spots return to the calendar within 24 hours.\n  - Example: a Wednesday Aug 4, 2027 entry opens Feb 4, 2027. The second release is Wednesday July 21, 2027.\n  - One planning blog says 50% opens at 6 months. The official pages say 60%, so trust 60%.\n- **Group size:** the maximum is **15**, and groups can't combine to exceed 15. Your 12 fit on one permit, but they take a third of the 36 early spots for that day.\n- **Kings Canyon party limits:** 15 on trail, **12 off trail**, 25 for day hikes.\n- **Fees:** $6 per permit plus $5 per person, so about $66 for 12.\n- **Rules to know:**\n  - The permit must be printed by 10 AM on the entry date or it's cancelled.\n  - The leader and alternate can't be changed after booking.\n  - The entry date can be changed online only if it's 12 or more days away.\n- **Booking URL:** https://www.recreation.gov/permits/233262\n- **Demand:** reports conflict. Campflare says Kearsarge \"sell[s] out within minutes of release.\" Hikeset says availability stays good through October. Expect peak-summer weekends to be very competitive and a Wednesday entry to be easier.\n\n## Camping rules that affect the plan\n- **Two-night limit at Charlotte Lake and two-night limit at Kearsarge Lakes.** No camping within ¼ mile of Bullfrog Lake.\n- A workable 4-night plan: 2 nights at Kearsarge Lakes, then 2 at Charlotte (or the reverse). I'd estimate Kearsarge Lakes at roughly 6 mi from the trailhead, but I didn't verify that.\n- **No campfires:** Kings Canyon bans them above 10,000 ft, and the Forest Service lists no campfires on this trail.\n- Bear canisters are required, and bear spray is prohibited in the park. Charlotte Lake has bear boxes and a ranger station.\n- Fishing: rainbow trout (planted in the 1950s, up to 12\") and brook trout. A California license is required.\n\n## Fire, closures and access\n- **Onion Valley Road** was open on Inyo County's March 17, 2026 status report. The Forest Service campground page showed \"Site Open\" as of Sept 28, 2026. The road usually opens May–November. It has been closed by flood debris before: a High Sierra Topix thread (year not shown) reports a closure followed by a reopening.\n- **Rock Fire (July 20–21, 2026):** about 1,795 acres near Poverty Hills / Black Rock Springs Rd. It briefly closed US-395 and forced evacuations in Aberdeen. That's on the valley floor, not the trail, but it shows 395 can be cut. I hit my search limit before confirming containment or any later closures.\n- **2025 smoke:** one trip report says smoke from a nearby fire forced thru-hikers out the following week.\n- **Snow:** the park service says Glen Pass may be impassable until mid-to-late July. That affects the best day hike.\n\n## Scoring\n- **Scenery: 30/35.** Charlotte itself is a large, pretty, partly forested lake, a notch below Thousand Island. But the trip includes Kearsarge Pass, the Kearsarge Lakes and Pinnacles, Bullfrog Lake, and a day hike to Glen Pass and Rae Lakes, some of the most iconic scenery in the Sierra.\n- **Experience: 20/25.** The day hikes are excellent: Glen Pass is 2.1 mi from the Charlotte Lake junction and Rae Lakes about 4 mi (park service mileage table). Add good fishing, many campsites on the northwest shore, and bear boxes. Points come off for the forced camp move, no campfires, and how popular the JMT is.\n- **Access: 10/20.** It's within your hard limits (10 mi, 3,500 ft) but about 60% longer than your sweet spot and climbs over an 11,760-ft pass. You also climb about 1,450 ft on the way out. On the plus side, the road to the trailhead is paved and the Onion Valley campground at 9,200 ft is good for acclimatizing the night before.\n- **Permit: 13/20.** A quota of 60 makes a group of 12 possible, unlike Lamarck's 10, but demand is heavy from Rae Lakes and JMT hikers.\n\n## URLs used\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/rae-lakes-loop.htm\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/kearsarge-pass-trail\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/ROG%20Kearsarge%20Pass%20Trail.pdf\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/recreation/onion-valley-campground\n- https://www.inyocounty.us/sites/default/files/2026-03/CURRENT%20ROAD%20UPDATE%20%20%2003.17.26.pdf\n- https://www.highsierratopix.com/community/viewtopic.php?t=22475&p=173942\n- https://abc30.com/post/rock-fire-erupts-east-kings-canyon-national-park-inyo-county-prompting-evacuations/19547124/\n- https://www.yourcentralvalley.com/news/wildfires/rock-fire-kings-canyon-national-park/ (says Mariposa County and \"Interstate 395\"; seems unreliable)\n- https://theunremarkableclimber.com/backpacking-kearsarge-pass-trail-kearsarge-lakes-rae-lakes-60-lakes-basin/\n- https://socalhiker.net/hikes/rae-lakes-loop-via-kearsarge-pass/\n- https://liveandlethike.com/2021/12/21/john-muir-trail-northbound-section-2-onion-valley-to-muir-trail-ranch-kings-canyon-national-park-ca/\n- https://hikearizona.com/decoder.php?ZTN=15623\n- https://www.summitpost.org/onion-valley-to-kearsarge-pass-trail/864661\n- https://www.alltrails.com/trail/us/california/charlotte-lake--2\n- https://www.onxmaps.com/hiking/1k36nekey69j/charlotte-lake\n- https://www.theoutbound.com/yosemite/backpacking/backpack-over-kearsarge-pass-to-charlotte-lake\n- https://flyfishingthesierra.com/charlotte-lake/ (its \"9 acre\" size seems far too small; ignored)\n- https://en.wikipedia.org/wiki/Charlotte_Lake_(California)\n- https://campflare.com/permit/inyo\n- https://backcountryemily.com/california-backpacking-permits/\n- https://hikeset.com/blog/jmt-permits-2026/\n- https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind"
+}

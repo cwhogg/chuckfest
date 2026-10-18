@@ -1,0 +1,141 @@
+{
+  "candidate": {
+    "name": "Crystal Lake",
+    "area": "Sequoia National Park",
+    "trailhead": "Mineral King (Sawtooth)",
+    "why": "Steep climb to a dammed alpine lake with views over the valley."
+  },
+  "site": {
+    "name": "Crystal Lake (Mineral King) via Sawtooth Trailhead",
+    "region": "Southern Sierra - Sequoia National Park, Mineral King",
+    "area": "Mineral King, Sequoia National Park",
+    "description": "A rugged high cirque lake at about 10,800 ft above the dramatic Mineral King valley, reached via the Monarch Lakes Trail and a steep fork past old mine remains at Chihuahua Bowl. It makes a good basecamp for day hikes to Monarch Lakes, Sawtooth Pass, and scrambles toward Mineral and Sawtooth Peaks. The lake has a small historic dam, and camping is rocky and exposed with no fires allowed.",
+    "latitude": 0,
+    "longitude": 0,
+    "difficulty": "strenuous",
+    "distanceMiles": 4.9,
+    "elevationGainFt": 3300,
+    "campElevationFt": 10800,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Sawtooth Pass",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/445857",
+    "permitNotes": "SEKI wilderness permits on Recreation.gov. There is no lottery; it is a rolling 6-month window with spots released daily at 7:00 AM PT, and you can reserve up to 1 week before entry. Entry date and entry point can't be changed. The 2026 quota season ran May 22–Sept 26. Cost is $15 per permit plus $5 per person. Group size is 15 max on trail and 12 off trail, so 12 people fit on one permit. Separate groups over the combined limit can't camp within ½ mi of each other. Sawtooth Pass reportedly has the lowest quota of the Mineral King entry points (exact number not verified). Pick up at the Mineral King Ranger Station from 1 pm the day before until 10 am on the entry day, or call 559-565-3766. No campfires. Bear canisters are required. Columbine Lake is closed to camping. Confirm a Crystal Lake camp option exists in the Recreation.gov dropdown.",
+    "sceneryScore": 28,
+    "experienceScore": 17,
+    "accessScore": 9,
+    "permitScore": 14,
+    "rankingNotes": "Dramatic Mineral King cirque on a gettable no-lottery permit, but a steep ~3,300 ft climb and road-construction hassles.",
+    "sources": [
+      {
+        "label": "NPS Mineral King Day Hikes",
+        "url": "https://www.nps.gov/seki/planyourvisit/mkdayhikesum.htm"
+      },
+      {
+        "label": "NPS Wilderness Permits",
+        "url": "https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm"
+      },
+      {
+        "label": "NPS Minimum Impact Restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS Trail Descriptions",
+        "url": "https://www.nps.gov/seki/planyourvisit/traildesc.htm"
+      },
+      {
+        "label": "NPS Mineral King",
+        "url": "https://www.nps.gov/seki/planyourvisit/mineral-king.htm"
+      },
+      {
+        "label": "NPS Road Construction",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-construction.htm"
+      },
+      {
+        "label": "NPS Road Information",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-information.htm"
+      },
+      {
+        "label": "NPS Road Conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/road-conditions.htm"
+      },
+      {
+        "label": "NPS Conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/conditions.htm"
+      },
+      {
+        "label": "NPS Entry Point Map",
+        "url": "https://www.nps.gov/seki/planyourvisit/upload/EntryPointMapAll_20210205.pdf"
+      },
+      {
+        "label": "SEKI Wilderness Permits shortlink",
+        "url": "https://go.nps.gov/SEKIwildernesspermits"
+      },
+      {
+        "label": "Recreation.gov SEKI permits",
+        "url": "https://www.recreation.gov/permits/445857"
+      },
+      {
+        "label": "ABC30 Mineral King Road reopens",
+        "url": "https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/"
+      },
+      {
+        "label": "Climber.org trip report",
+        "url": "https://climber.org/reports/2002/999.html"
+      },
+      {
+        "label": "onX Crystal Lake",
+        "url": "https://www.onxmaps.com/backcountry/trails/hiking/us/california/crystal-lake-mgd6gjrpy6o9"
+      },
+      {
+        "label": "Outdoor Project Crystal Lake",
+        "url": "https://www.outdoorproject.com/united-states/california/crystal-lake"
+      },
+      {
+        "label": "AllTrails Crystal Lake",
+        "url": "https://www.alltrails.com/trail/us/california/crystal-lake--5"
+      },
+      {
+        "label": "Gaia GPS Crystal Lake",
+        "url": "https://www.gaiagps.com/hike/347301/crystal-lake-via-sawtooth-pass-trail/"
+      },
+      {
+        "label": "10Adventures Crystal Lake",
+        "url": "https://www.10adventures.com/hikes/sequoia-and-kings-canyon-national-parks/crystal-lake-via-sawtooth-pass-trail/"
+      },
+      {
+        "label": "Outdoor Status Monarch Lakes",
+        "url": "https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/monarch-lakes/"
+      },
+      {
+        "label": "Exploring Wild Mineral King loops",
+        "url": "https://exploringwild.com/mineral-king-loop-variations/"
+      },
+      {
+        "label": "Backcountry Emily Five Lakes Loop",
+        "url": "https://backcountryemily.com/five-lakes-loop-in-mineral-king-backpacking/"
+      },
+      {
+        "label": "High Sierra Trails resources",
+        "url": "https://highsierratrails.com/high_sierra_trail/hst_resources.html"
+      },
+      {
+        "label": "Trailgroove forum Mineral King",
+        "url": "https://www.trailgroove.com/forums/topic/1228-mineral-king-sequoia-np/"
+      },
+      {
+        "label": "AllTrails Sawtooth Pass to Columbine Lake",
+        "url": "https://www.alltrails.com/trail/us/california/sawtooth-pass-trail-to-columbine-lake"
+      }
+    ],
+    "caveats": "LATITUDE/LONGITUDE ARE PLACEHOLDERS (0): the schema requires numbers, but the notes have no verified lake coordinates. Outdoor Project's 36.4532, -118.5968 likely marks the valley or trailhead, and the ~36.45, -118.57 figure was an unsourced guess. Verify on the USGS Mineral King 7.5' map or CalTopo before use. Elevation gain varies by source from ~2,976 to ~3,420 ft; 3,300 is a planning figure. Distance sources range from 4.5 to ~4.9 mi one-way, with NPS trusted. permitAdvanceDays is null because the window is described as 6 months, not a day count. The Sawtooth Pass quota number is unverified because the NPS trip planner failed to load. Trail has loose scree and talus and is hard to follow near the top. The lake has a small dam operated by SCE. Mineral King Road construction runs 2025–2027 with weekday closures (fall 2026: Mon–Thu 10am–4pm); the 2027 schedule isn't posted and could conflict with a Wednesday 10 am pickup deadline. The 2021 KNP Complex Fire burned parts of Mineral King. Marmots damage cars, so tarping is recommended. Campsite capacity for 12 and fishing quality are unconfirmed."
+  },
+  "notes": "Now the NPS day hikes page and trail descriptions page for official mileages and campsite rules.\n# Crystal Lake (Mineral King, Sequoia NP) via the Sawtooth Trailhead\n\n**Score: 68/100 (Scenery 28 / Experience 17 / Access 9 / Permit 14)**\n\nThis is a striking high cirque, and Mineral King is one of the Sierra's most dramatic valleys. It's legal for your group and probably gettable on one permit. But the climb is about twice your usual gain, the lake has a small dam, and 2027 road construction could interfere with a Wednesday start. It's a good trip, but I wouldn't put it in your \"epic\" tier.\n\n## Key facts\n\n| Item | Figure | Source I trust |\n|---|---|---|\n| One-way distance | **4.9 mi** | NPS Mineral King Day Hikes page |\n| Elevation gain | **About 3,000–3,400 ft** (trailhead about 7,800 ft) | GPS sources (no NPS figure exists) |\n| Camp elevation | **About 10,800 ft** | Climber.org trip report; Outdoor Project lists 10,815 ft |\n| Coordinates | **Not verified, see note** | — |\n| Route | Monarch Lakes Trail, then the Crystal Lake fork at Chihuahua Bowl, a steep climb past old mine remains. There's no maintained trail beyond the lake. A small dam was built on the lake in 1903–05 and Southern California Edison still runs it. | NPS |\n\n**Conflicting figures and which I trust:**\n- **Distance:** onX and Outdoor Project say 4.5 mi, but onX's own track is 9.49 mi round trip (about 4.75 one-way). AllTrails says 9.6 mi round trip, Gaia 9.5, and 10Adventures 14.2 km (about 8.8 mi). I trust **NPS's 4.9 mi**, which matches most GPS tracks.\n- **Gain:** Gaia 2,976 ft, onX 3,303, AllTrails 3,333, Outdoor Project 3,400, 10Adventures 1,043 m (about 3,420 ft, counting every climb). Plan for **about 3,300 ft**. That's under your 3,500 ft limit, but not by much. AllTrails reviewers mention loose scree and talus and spots where the trail is hard to follow near the top.\n- **Trailhead location:** NPS says the Sawtooth parking area is 1 mi past the ranger station; Climber.org (2002) says ½ mi. I trust NPS.\n- **Coordinates:** Outdoor Project gives 36.4532, -118.5968. That's almost certainly the valley or trailhead, not the lake. Sawtooth Peak is at -118.555 and the lake sits below the ridge west of it. My rough guess is around 36.45 N, 118.57 W, but that's from memory, not a source. Check it on the USGS Mineral King 7.5′ map or CalTopo before using it.\n\n## Permits\n\n- **System:** SEKI wilderness permits on Recreation.gov, **recreation.gov/permits/445857**. **There's no lottery.** It's a **rolling 6-month window**, with spots released **daily at 7:00 AM Pacific**. You can reserve up to one week before your entry date. Your entry date and entry point can't be changed later.\n- **Quota season (2026 dates):** May 22–Sept 26. Cost is $15 per permit plus $5 per person.\n- **Entry point:** **\"Sawtooth Pass.\"** Outdoor Status lists it that way for Monarch Lakes trips, with \"Sawtooth Pass: Monarch Lakes\" as the first-night camp. I couldn't confirm a \"Crystal Lake\" camp option on Recreation.gov, so check the dropdown.\n- **Quota size:** Not verified. The NPS trip-planner PDF wouldn't load. Exploring Wild says Sawtooth Pass has the **lowest quota** of the Mineral King entry points. Backcountry Emily describes Mineral King permits as relatively low-demand.\n- **Group size:** **15 max on trail, 12 off trail.** Crystal Lake is reached by trail, so 12 people fit on **one permit**. Separate groups that are traveling together can't camp within ½ mi of each other if their combined size is over the limit. So splitting into two permits wouldn't let you camp together beyond 15 anyway.\n- **Pickup:** At the Mineral King Ranger Station, 7:30–4:00. You can pick up from 1 pm the day before until 10 am on your entry day, or the reservation is canceled unless you call ahead (559-565-3766). Walk-up permits start at 1 pm the day before.\n- **Timing for 2027:** For a mid-July Wednesday start, be online at 7:00 AM PT exactly 6 months earlier (mid-January).\n- **Other rules:** No campfires (Sequoia bans fires above 9,000 ft west of the Great Western Divide). Bear canisters are required in most of the park. Columbine Lake, beyond Sawtooth Pass, is closed to camping.\n\n## Fire, closures and access problems\n\n- **Road construction 2025–2027:** NPS says there will be weekday closures and delays on Mineral King Road throughout all three years. The fall 2026 schedule was a full closure Monday–Thursday from 10 am to 4 pm. The 2027 schedule isn't out yet. **This affects you directly:** a Wednesday 10 am permit deadline could fall during a closure. Plan to pick up the permit Tuesday afternoon, or call ahead to arrange a late pickup.\n- The road was closed for construction in spring 2026 and reopened May 21, 2026. It's normally open from the Wednesday before Memorial Day to the last Wednesday in October.\n- **Fire:** The 2021 KNP Complex Fire burned parts of Mineral King, and NPS posts safety tips for burned areas.\n- **Marmots:** They chew radiator hoses and wiring through midsummer. NPS recommends wrapping each car in a tarp, and the ranger station has a few to lend.\n- **Drive:** The road is narrow, winding and partly unpaved. Three Rivers is about 1.5 hours away, and there's no gas in Mineral King.\n\n## How I scored it\n\n- **Scenery 28/35:** A rugged cirque around 10,800 ft with big views of the Mineral King valley, White Chief Peak and Farewell Gap. But the rock is mixed metamorphic and granite rather than classic clear granite, there's a dam, and it's less iconic than Thousand Island (35).\n- **Experience 17/25:** Good basecamp day hikes: Monarch Lakes, Sawtooth Pass (\"one of the grandest views in the southern Sierras,\" per NPS), and scrambles toward Mineral Peak and Sawtooth Peak. Against that: rocky, exposed camping at 10,800 ft with no fires. I couldn't confirm from sources that there are enough campsites for 12 or how good the fishing is.\n- **Access 9/20:** The distance fits your sweet spot. But the gain is about twice your average, with steep loose footing, plus a slow drive, marmots and the construction schedule.\n- **Permit 14/20:** Low overall demand, a midweek start, one permit covers 12 people, and no lottery. The catch is the small quota; your 12 people would probably take most of a day's spots.\n\n**Before booking:** confirm the quota number and a \"Crystal Lake\" camp option on Recreation.gov, and check the 2027 road schedule when NPS posts it.\n\n## URLs used\n- https://www.nps.gov/seki/planyourvisit/mkdayhikesum.htm\n- https://www.nps.gov/seki/planyourvisit/wilderness_permits.htm\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm\n- https://www.nps.gov/seki/planyourvisit/mineral-king.htm\n- https://www.nps.gov/seki/planyourvisit/road-construction.htm\n- https://www.nps.gov/seki/planyourvisit/road-information.htm\n- https://www.nps.gov/seki/planyourvisit/road-conditions.htm\n- https://www.nps.gov/seki/planyourvisit/conditions.htm\n- https://www.nps.gov/seki/planyourvisit/upload/EntryPointMapAll_20210205.pdf\n- https://www.nps.gov/seki/planyourvisit/upload/NoYear-Wilderness-Trip-Planner-Final-3.pdf (failed to load)\n- https://go.nps.gov/SEKIwildernesspermits\n- https://www.recreation.gov/permits/445857\n- https://abc30.com/post/mineral-king-road-reopens-sequoia-national-park-ahead-summer-season/19144015/\n- https://climber.org/reports/2002/999.html\n- https://www.onxmaps.com/backcountry/trails/hiking/us/california/crystal-lake-mgd6gjrpy6o9\n- https://www.outdoorproject.com/united-states/california/crystal-lake\n- https://www.alltrails.com/trail/us/california/crystal-lake--5\n- https://www.gaiagps.com/hike/347301/crystal-lake-via-sawtooth-pass-trail/\n- https://www.10adventures.com/hikes/sequoia-and-kings-canyon-national-parks/crystal-lake-via-sawtooth-pass-trail/\n- https://outdoorstatus.com/trips/us/california/sequoia-kings-canyon-national-parks/monarch-lakes/\n- https://exploringwild.com/mineral-king-loop-variations/\n- https://backcountryemily.com/five-lakes-loop-in-mineral-king-backpacking/\n- https://highsierratrails.com/high_sierra_trail/hst_resources.html\n- https://www.trailgroove.com/forums/topic/1228-mineral-king-sequoia-np/\n- https://www.alltrails.com/trail/us/california/sawtooth-pass-trail-to-columbine-lake"
+}

@@ -1,0 +1,173 @@
+{
+  "candidate": {
+    "name": "Chicken Spring Lake",
+    "area": "Inyo National Forest (Golden Trout Wilderness)",
+    "trailhead": "Cottonwood Pass",
+    "why": "At about 11,250 ft, the closest match to the well-loved Cottonwood Lakes."
+  },
+  "site": {
+    "name": "Chicken Spring Lake",
+    "region": "Southern Sierra - Golden Trout Wilderness",
+    "area": "Cottonwood Pass / Horseshoe Meadow (Inyo National Forest), near Lone Pine",
+    "description": "A pretty granite cirque lake with foxtail pines, just west of the crest above Cottonwood Pass on the PCT. The route is short and the trailhead high, so access is easy, and from the pass you get views west to the Great Western Divide. It is a good backup or easy-year trip, but it is less dramatic than the group's top picks and very similar to Cottonwood Lakes.",
+    "latitude": 36.4573567,
+    "longitude": -118.2272578,
+    "difficulty": "moderate",
+    "distanceMiles": 4.5,
+    "elevationGainFt": 1300,
+    "campElevationFt": 11242,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Cottonwood Pass (PCT)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Entry point is trail code GT60, with a daily quota of 40 people: 24 spots release 6 months ahead and 16 release 2 weeks ahead, at 7 AM Pacific. The quota applies only from the last Friday in June through Sept 15; outside that window a permit is still required but the daily cap does not apply. There is no lottery. Groups are limited to 15 and groups cannot combine to exceed 15. The permit must be printed by 10 AM on the start date or it is cancelled, and only the named leader or alternate can use it. A California campfire permit is required to use a stove. The fee is about $6 per permit plus $5 per person. Guided and pack-station trips don't count against the quota.",
+    "sceneryScore": 23,
+    "experienceScore": 15,
+    "accessScore": 19,
+    "permitScore": 16,
+    "rankingNotes": "An easy, high-altitude cirque lake on the PCT with realistic permits for 12; a solid backup at 73/100, but not an epic trip.",
+    "sources": [
+      {
+        "label": "USFS Cottonwood Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/cottonwood-pass-trail"
+      },
+      {
+        "label": "USFS Horseshoe Meadow Area",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/horseshoe-meadow-area"
+      },
+      {
+        "label": "Inyo Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo Trail Quota Sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Recreation.gov gateway",
+        "url": "https://www.recreation.gov/gateways/1064"
+      },
+      {
+        "label": "Inyo Alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "Wilderness Use Restrictions",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/wilderness-use-restrictions"
+      },
+      {
+        "label": "Golden Trout/Hoover Campfire Restrictions",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/golden-trout-and-hoover-wilderness-campfire-restrictions"
+      },
+      {
+        "label": "Stage 1 Fire Restrictions",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect"
+      },
+      {
+        "label": "Cottonwood Pass Walk-in Campground",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/cottonwood-pass-walk-campground"
+      },
+      {
+        "label": "Horseshoe Meadow Equestrian Camp",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/horseshoe-meadow-equestrian-camp"
+      },
+      {
+        "label": "Inyo County Road Update",
+        "url": "https://www.inyocounty.us/sites/default/files/2025-04/CURRENT%20ROAD%20UPDATE%2004.25.25_0.pdf"
+      },
+      {
+        "label": "HST forum 24139",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=24139"
+      },
+      {
+        "label": "HST forum 23186",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=23186"
+      },
+      {
+        "label": "Watch Duty",
+        "url": "https://app.watchduty.org/i/104112"
+      },
+      {
+        "label": "hikingwalking.com",
+        "url": "https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/lone_pine/chicken_spring_lake/chicken_spring_lake_detail"
+      },
+      {
+        "label": "Hikespeak Chicken Spring Lake",
+        "url": "https://www.hikespeak.com/trails/chicken-spring-lake-hike-golden-trout-wilderness/"
+      },
+      {
+        "label": "Hikespeak Cirque Peak",
+        "url": "https://www.hikespeak.com/trails/cirque-peak-inyo-national-forest/"
+      },
+      {
+        "label": "SummitPost Cirque Peak",
+        "url": "https://www.summitpost.org/cirque-peak/152203"
+      },
+      {
+        "label": "AllTrails",
+        "url": "https://www.alltrails.com/trail/us/california/chicken-spring-lake-trail"
+      },
+      {
+        "label": "Komoot 1",
+        "url": "https://www.komoot.com/smarttour/e2813486048/chicken-spring-lake-via-cottonwood-pass-trail"
+      },
+      {
+        "label": "Komoot 2",
+        "url": "https://www.komoot.com/smarttour/e1327747468/chicken-spring-lake-sequoia-national-park"
+      },
+      {
+        "label": "Topozone",
+        "url": "https://www.topozone.com/california/tulare-ca/lake/chicken-spring-lake/"
+      },
+      {
+        "label": "getamap",
+        "url": "http://www.getamap.net/maps/united_states/california/tulare/_chicken_spring_lake/"
+      },
+      {
+        "label": "SD Peakbagger",
+        "url": "https://www.sdpeakbagger.com/2024/10/05/chicken-spring-lake/"
+      },
+      {
+        "label": "Hiking Tales 2020",
+        "url": "https://hikingtales.com/sierra-nevada/high-sierra-trail-2020/day-1-horseshoe-meadows-to-chicken-spring-lake/"
+      },
+      {
+        "label": "100peaks 2013",
+        "url": "https://100peaks.com/blog/2013/07/25/chicken-spring-lake-backpacking-trip-mother-nature-had-other-plans"
+      },
+      {
+        "label": "jdboggs 2013",
+        "url": "http://jdboggs.blogspot.com/2013/09/chicken-spring-lake-backpacking-eastern.html"
+      },
+      {
+        "label": "Backcountry Emily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "The Big Outside",
+        "url": "https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/"
+      },
+      {
+        "label": "Pathloom",
+        "url": "https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind"
+      },
+      {
+        "label": "PCTA local permits",
+        "url": "https://www.pcta.org/discover-the-trail/permits/local-permits/"
+      }
+    ],
+    "caveats": "The notes describe the 6-month release only in months (e.g., a July 4 start opens January 4), so permitAdvanceDays is left null. Sources give one-way distances of 4.1, 4.5, 4.6 and 4.7 mi; 4.5 is used. Gain ranges from about 1,302 to 1,453 ft; 1,300 is net gain and the cumulative figure is about 1,400–1,450 ft. Lake elevation is 11,242 ft in several sources vs. about 11,260 ft from topozone. peakElevationFt is null because it is unclear which point the field refers to: Cottonwood Pass is about 11,140 ft (below camp) and the optional Cirque Peak is about 12,900 ft. Campfires are banned within 0.2 mi of the lake through June 10, 2027, and Stage 1 forest-wide fire restrictions run through Dec 31, 2026. Bear canisters are required, and there is no camping within 100 ft of water or trails. Horseshoe Meadow Road is usually open from Memorial Day to early November (it opened May 7 in 2025); Tropical Storm Hilary flooding in Aug 2023 closed the campgrounds and briefly the road. Fire history was not fully checked, so check InciWeb and Inyo alerts before the trip. The 2026 'Cottonwood Fire' is in Utah and unrelated. The fishing report of no fish dates from 2013. Live permit availability was not checked. Expect PCT hiker traffic, and plan to acclimatize because the trailhead is at about 10,000 ft."
+  },
+  "notes": "I'll research this thoroughly. Let me start with several parallel searches.\nLet me fetch the USFS Cottonwood Pass trail page and the Horseshoe Meadow area page, plus the Inyo wilderness permits page.\nKey agency data found. Now let me get the quota sheet, recreation.gov page, road status, and lake elevation/coordinates.\nI'd score **Chicken Spring Lake at 73/100**, below Lamarck Lakes (79) and Thousand Island (81). It's very easy to get to, permits for 12 are realistic and the camp is high (about 11,242 ft). But it's not the \"epic\" trip the group is after. It's a pretty cirque lake, not jaw-dropping granite, and the fishing reports are poor. It's also right next to Cottonwood Lakes, so it would feel like a repeat.\n\n## Key facts\n\n| Item | Best figure | Source I trust |\n|---|---|---|\n| One-way miles to camp | **About 4.5 mi.** The spur trail leaves at mile 4.3, just before the outlet stream. | hikingwalking.com, which gives a mile-by-mile breakdown |\n| Elevation gain | **About 1,300 ft net, roughly 1,400–1,450 ft counting the ups and downs** | hikingwalking.com (net) and AllTrails (cumulative) |\n| Trailhead | Cottonwood Pass Trailhead, Horseshoe Meadow, about 9,940 ft. Coordinates 36.44834, −118.17065. | hikingwalking.com and Hikespeak |\n| Cottonwood Pass | About 11,140 ft. This is where you meet the Pacific Crest Trail (PCT). | hikingwalking.com and Komoot |\n| Camp elevation | **11,242 ft** | Shown by several sources; topozone gives about 11,260 ft |\n| Lake coordinates | **36.4573567, −118.2272578** (USGS Cirque Peak map). The lake is in Tulare County, just west of the crest. | topozone.com; getamap.net agrees (36.4575, −118.22583) |\n\n**Conflicting figures:**\n- **Distance:** Hikespeak says 8.2 mi round trip (4.1 one way). hikingwalking.com says 9.0 (4.5). AllTrails says 9.2 (4.6). A 2020 trip report logged 4.7. I trust about 4.5, because hikingwalking.com is the only source that breaks it down mile by mile.\n- **Gain:** Sources range from 1,302 ft (hikingwalking.com) to 1,330 (Hikespeak), 1,395 (Komoot) and 1,453 (AllTrails). The low numbers are net gain; AllTrails counts every small climb.\n- **Lake elevation:** 11,242 ft (several sources) vs. about 11,260 ft (topozone's estimate from terrain data). I use 11,242.\n- **Drive:** The Forest Service says the road climbs to about 10,000 ft in roughly 15 miles. Its Horseshoe Meadow page puts the road's end 24 miles from Lone Pine, and Hikespeak says 20 miles on Horseshoe Meadow Road. These roughly agree once you add the 3 miles on Whitney Portal Road.\n\n## Permits (Inyo National Forest)\n- **Entry point name:** \"Cottonwood Pass (PCT)\", trail code GT60.\n- **Daily quota:** 40 people. 24 spots open 6 months ahead and 16 open 2 weeks ahead. Guided or pack-station trips don't count against it.\n- **Quota season:** Only from the **last Friday in June to September 15** for Golden Trout Wilderness trails. That's shorter than Inyo's usual May 1 to November 1. Outside that window you still need a permit, but the daily cap doesn't apply.\n- **When reservations open:** Every day at 7 AM Pacific, 6 months ahead (for example, a July 4 start opens January 4). The second batch opens 2 weeks ahead on the same weekday, which is a Wednesday for your trip. \"NR\" on the calendar means the 6-month batch is gone and the 2-week batch isn't out yet. There's **no lottery**; on Inyo, lotteries are only for Mt. Whitney.\n- **Group size:** No more than 15 people, and **\"Groups cannot combine to exceed 15 people.\"** Splitting into two permits doesn't let a bigger group travel together, but 12 people fit on one permit.\n- **Other rules:** You must print the permit by 10 AM on your start date or it's cancelled. Only the named leader or alternate can use it. A California campfire permit is required to use a stove. The fee is about $6 per permit plus $5 per person (backcountryemily.com).\n- **Where to book:** https://www.recreation.gov/permits/233262\n\n**Why it's a good bet:** 12 people would take half of the 24 spots that open 6 months ahead. That's very doable for a Wednesday start on a less-crowded trailhead. I couldn't check live availability.\n\n## Site rules, fires and access\n- **No campfires within 0.2 mi of Chicken Spring Lake** (order runs to June 10, 2027). Stoves are allowed. Separately, Stage 1 fire restrictions applied to the whole forest through December 31, 2026.\n- **Bear canisters are required** at the lake.\n- **No camping within 100 ft** of the lake, streams or trails.\n- **Road season:** Horseshoe Meadow Road is usually open from Memorial Day to early November. In 2025 it opened May 7.\n- **Past damage:** In August 2023, flooding from tropical storm Hilary closed the campgrounds and briefly the road.\n- **Night before:** The Cottonwood Pass walk-in campground at the trailhead has 18 sites with bear boxes and water, which helps with the altitude.\n- **Current closures:** I found none for Cottonwood Pass or Horseshoe Meadow. A 97,000-acre \"Cottonwood Fire\" in 2026 is in **Fishlake National Forest, Utah**, and has nothing to do with this trip.\n- **Gap:** I hit my search limit before I could fully check the fire history, so check inciweb.wildfire.gov and the Inyo alerts page before you go.\n\n## Score: 73/100\n\n| Category | Score | Why |\n|---|---|---|\n| Scenery | **23/35** | A pleasant cirque lake with granite walls, foxtail pines and big views west to the Great Western Divide from the pass. But the southern Sierra here is sandy and rounded, nowhere near Thousand Island. It also looks a lot like Cottonwood Lakes, which you've already done. |\n| Experience | **15/25** | **Fishing:** one group fished for hours and decided the lake had no fish (2013 report, so worth confirming locally). **Day hikes:** Cirque Peak, about 12,900 ft, is roughly 2 mi off-trail with easy scrambling; you can also walk the PCT toward Sequoia National Park. **Camp:** there are sites along the east shore. It's one lake, though, with no campfires and PCT hikers passing through, especially early in the season. |\n| Access | **19/20** | About 4.5 mi and 1,300–1,450 ft is almost exactly your average. The paved road reaches the trailhead at about 10,000 ft, so plan to acclimatize. |\n| Permit | **16/20** | 40-person daily quota, no lottery and a limit of 15 that easily fits 12 people. It isn't 20 because summer dates are still under quota. |\n\n**Bottom line:** It's a strong backup or a good \"easy year\", but not your next epic trip. If you go, consider hiking in the first day to Big Whitney Meadow or Rocky Basin Lakes. Rocky Basin is also a no-campfire zone and is named as a destination on this trail. I couldn't confirm the mileage, so check it on a map against your 10-mile limit.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/cottonwood-pass-trail\n- https://www.fs.usda.gov/r05/inyo/recreation/horseshoe-meadow-area\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.recreation.gov/permits/233262\n- https://www.recreation.gov/gateways/1064\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://www.fs.usda.gov/r05/inyo/alerts/wilderness-use-restrictions\n- https://www.fs.usda.gov/r05/inyo/alerts/golden-trout-and-hoover-wilderness-campfire-restrictions\n- https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect\n- https://www.fs.usda.gov/r05/inyo/recreation/cottonwood-pass-walk-campground\n- https://www.fs.usda.gov/r05/inyo/recreation/horseshoe-meadow-equestrian-camp\n- https://www.inyocounty.us/sites/default/files/2025-04/CURRENT%20ROAD%20UPDATE%2004.25.25_0.pdf\n- https://www.highsierratopix.com/community/viewtopic.php?t=24139\n- https://www.highsierratopix.com/community/viewtopic.php?t=23186\n- https://app.watchduty.org/i/104112\n- https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/lone_pine/chicken_spring_lake/chicken_spring_lake_detail\n- https://www.hikespeak.com/trails/chicken-spring-lake-hike-golden-trout-wilderness/\n- https://www.hikespeak.com/trails/cirque-peak-inyo-national-forest/\n- https://www.summitpost.org/cirque-peak/152203\n- https://www.alltrails.com/trail/us/california/chicken-spring-lake-trail\n- https://www.komoot.com/smarttour/e2813486048/chicken-spring-lake-via-cottonwood-pass-trail\n- https://www.komoot.com/smarttour/e1327747468/chicken-spring-lake-sequoia-national-park\n- https://www.topozone.com/california/tulare-ca/lake/chicken-spring-lake/\n- http://www.getamap.net/maps/united_states/california/tulare/_chicken_spring_lake/\n- https://www.sdpeakbagger.com/2024/10/05/chicken-spring-lake/\n- https://hikingtales.com/sierra-nevada/high-sierra-trail-2020/day-1-horseshoe-meadows-to-chicken-spring-lake/\n- https://100peaks.com/blog/2013/07/25/chicken-spring-lake-backpacking-trip-mother-nature-had-other-plans\n- http://jdboggs.blogspot.com/2013/09/chicken-spring-lake-backpacking-eastern.html\n- https://backcountryemily.com/california-backpacking-permits/\n- https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/\n- https://www.pathloom.com/post/how-to-get-inyo-backpacking-permits-without-losing-your-mind\n- https://www.pcta.org/discover-the-trail/permits/local-permits/"
+}

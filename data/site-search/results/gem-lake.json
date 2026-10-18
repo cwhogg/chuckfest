@@ -1,0 +1,161 @@
+{
+  "candidate": {
+    "name": "Gem Lake",
+    "area": "Inyo National Forest (Ansel Adams Wilderness)",
+    "trailhead": "Rush Creek (Silver Lake)",
+    "why": "Turquoise dammed lake with an old tram line along the trail."
+  },
+  "site": {
+    "name": "Gem Lake via Rush Creek",
+    "region": "Eastern Sierra - Ansel Adams Wilderness",
+    "area": "June Lake Loop / Rush Creek, Inyo National Forest",
+    "description": "A dammed reservoir reached from the Rush Creek Trailhead at Silver Lake. It has deep-blue water, granite walls and aspens, but it is held about 25 ft below full and the shores are steep and bare. It works best as a base camp for day hikes to Thousand Island Lake, Gem Pass and the Alger Lakes, Agnew Lake and the Clark Lakes.",
+    "latitude": 37.7519,
+    "longitude": -119.1403,
+    "difficulty": "moderate",
+    "distanceMiles": 4.1,
+    "elevationGainFt": 2200,
+    "campElevationFt": 9000,
+    "peakElevationFt": 9187,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Rush Creek",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF entry point Rush Creek (AA05), shared with the Thousand Island Lake via Rush Creek route. Daily quota of 30 people (about 2023 source; confirm): 60% (18) releases 6 months ahead and 40% (12) releases 2 weeks ahead on the same weekday, daily at 7:00 AM Pacific. Maximum group size is 15, and permits can't be combined to exceed it. Fees are $6 per reservation plus $5 per person. Print the permit by 10 AM on the entry date or it is canceled. Bear canisters are required. A 2019 PCTA summary lists Gem Lake (north side) as closed to campfires. A California Campfire Permit is needed for stoves.",
+    "sceneryScore": 22,
+    "experienceScore": 17,
+    "accessScore": 16,
+    "permitScore": 11,
+    "rankingNotes": "Solid, moderate base camp with an easy permit entry point and a day hike to Thousand Island Lake, but the scenery suffers because it's a drawn-down reservoir (66/100).",
+    "sources": [
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Inyo NF wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo NF wilderness regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "Inyo NF alert PDF",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/fseprd1123018.pdf"
+      },
+      {
+        "label": "Inyo NF June Lake Loop",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/june-lake-loop"
+      },
+      {
+        "label": "Silver Lake Campground (FS)",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/silver-lake-campground"
+      },
+      {
+        "label": "Silver Lake Campground (Recreation.gov)",
+        "url": "https://www.recreation.gov/camping/campgrounds/234330"
+      },
+      {
+        "label": "Sierra Rec trail quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Campflare Inyo",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "Backcountry Emily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "The Big Outside permits",
+        "url": "https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/"
+      },
+      {
+        "label": "Outdoorstatus Thousand Island Lake",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/thousand-island-lake-from-rush-creek/"
+      },
+      {
+        "label": "PCTA JMT regulations",
+        "url": "https://www.pcta.org/discover-the-trail/john-muir-trail/regulations/"
+      },
+      {
+        "label": "PCTA JMT regulations PDF 2019",
+        "url": "https://www.pcta.org/wp-content/uploads/2019/03/John-Muir-Trail-Regulations.pdf"
+      },
+      {
+        "label": "Water Boards gauge document",
+        "url": "https://rms.waterboards.ca.gov/DownloadDocument.ashx?type=Attachment&download=true&id=93386"
+      },
+      {
+        "label": "High Sierra Topix trip report",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=24516"
+      },
+      {
+        "label": "AllTrails Gem Lake trail",
+        "url": "https://www.alltrails.com/trail/us/california/gem-lake-via-rush-creek-trail"
+      },
+      {
+        "label": "AllTrails Gem Lake POI",
+        "url": "https://www.alltrails.com/poi/us/california/june-lake/gem-lake"
+      },
+      {
+        "label": "AllTrails loop",
+        "url": "https://www.alltrails.com/trail/us/california/agnew-lake-gem-lake-waugh-lake-and-clark-lakes-loop-trail"
+      },
+      {
+        "label": "Road Trips & Hikes",
+        "url": "https://roadtripsandhikes.blogspot.com/2001/08/hike-gem-lake-via-rush-creek-trail-mono.html"
+      },
+      {
+        "label": "Taylor's Tracks",
+        "url": "https://www.taylorstracks.com/hikes-in-june-lake/"
+      },
+      {
+        "label": "Kevin Gong",
+        "url": "https://kevingong.com/Hiking/201604RushCreekTrail.html"
+      },
+      {
+        "label": "Van Marmot",
+        "url": "https://vanmarmot.org/2022/08/06/gem-lake-sierra-nevada-ca-08-aug-2022/"
+      },
+      {
+        "label": "SummitPost Rush Creek",
+        "url": "https://www.summitpost.org/rush-creek/177294"
+      },
+      {
+        "label": "Linda Gass 2025",
+        "url": "https://www.lindagass.com/PhotoEssays/2025_JMTLakes/index.html"
+      },
+      {
+        "label": "Backcountry Post Oct 2023",
+        "url": "https://backcountrypost.com/threads/ansel-adams-wilderness-october-2023.10956/"
+      },
+      {
+        "label": "The Sheet - dams",
+        "url": "https://thesheetnews.com/2025/05/22/dammed-if-you-do/"
+      },
+      {
+        "label": "Federal Register SCE licensing",
+        "url": "https://www.federalregister.gov/documents/2025/02/11/2025-02473/southern-california-edison-company-notice-of-application-tendered-for-filing-with-the-commission-and-establishing-procedural-schedule-for-licensing-and-deadline-for-submission-of-final-amendments"
+      },
+      {
+        "label": "Frontier Pack Train",
+        "url": "https://frontierpacktrain.com/scheduled-trips/ansel-adams-trail-ride/"
+      },
+      {
+        "label": "CAL FIRE Lake Fire (location unverified)",
+        "url": "https://www.fire.ca.gov/incidents/2026/6/2/lake-fire/updates"
+      }
+    ],
+    "caveats": "Coordinates are for the dam gauge (NAD27), not the campsite; the inlet camp is about 2 mi west. Distance and gain figures conflict: AllTrails gives 7.3 mi round trip and 2,017 ft, while Taylor's Tracks and Road Trips & Hikes give 6.6 mi round trip. The 4.1 mi / about 2,200 ft figure (plus about 250 ft of descent) is measured to the inlet. Camp elevation is approximate (9,000–9,050 ft); the water has been capped at 9,027.5 ft since 2012. The advance window is 6 months rather than a fixed day count. The quota figures are from about 2023 and should be confirmed. Waugh Lake is drained. The 2025 Rush Creek log crossing was washed out. Gem Dam retrofit could begin in 2029 at the earliest. The current Inyo alerts page couldn't be loaded, and the location of the June 2026 Lake Fire is unverified; check https://www.fs.usda.gov/r05/inyo/alerts before booking. The 3.4 mi / 1,000 ft Thousand Island Lake day-hike figures are the researcher's estimate."
+  },
+  "notes": "I'd score **Gem Lake from Rush Creek at about 66/100**. It's a solid trip that fits your limits, but it isn't the \"epic\" trip you're after. Gem is a dammed reservoir kept well below full, and Waugh Lake just above it has been drained. That brings the scenery score well below Thousand Island Lake or Lamarck Lakes. Its best feature is that it's a launch point for a day hike to Thousand Island Lake.\n\n## Key facts\n\n| Item | Figure | Source I trust |\n|---|---|---|\n| Trailhead | Rush Creek Trailhead at the north end of Silver Lake, Hwy 158 (June Lake Loop). Paved access with pit toilets. Start is about 7,200–7,264 ft. | Forest Service June Lake Loop page; Kevin Gong (7,264 ft) |\n| One-way miles to camp | **About 4.1 mi to the inlet at the west end** | High Sierra Topix trip report, June 2025 |\n| Elevation gain | **About 2,200 ft up (plus about 250 ft down)** to the inlet | Same 2025 report |\n| Camp elevation | **About 9,000–9,050 ft**. Full pool (spillway) is 9,051.6 ft. Since 2012 an earthquake-safety limit has capped the water at 9,027.5 ft. The trail tops out around 9,187 ft. | Agency stream-gauge document (Water Boards) |\n| Coordinates | Gem Lake Dam gauge: **37°45′07″N, 119°08′25″W (NAD27) ≈ 37.7519, −119.1403**. The lake runs about 2 mi west of the dam toward the inlet. | Same gauge document. I couldn't find a sourced lake-center point; check it on the USGS Koip Peak map. |\n\n**Conflicting distance and gain figures:**\n- AllTrails: 7.3 mi round trip, 2,017 ft.\n- Taylor's Tracks: 6.6 mi round trip, 2,080 ft.\n- Road Trips & Hikes: 6.6 mi round trip, 1,943 ft.\n\nThose shorter figures stop near the dam or the first viewpoint. I trust the 4.1 mi / 2,205 ft from the 2025 trip report because it's measured to where you'd actually camp. A July 2025 AllTrails reviewer backs this up: the trail around Gem is \"way above the water,\" and the only easy water is \"the far west end of the lake by a creek inlet.\"\n\n## Permits (Inyo National Forest)\n- **Entry point name:** \"Rush Creek\" (trail code AA05). It's the same entry used for Thousand Island Lake via Rush Creek.\n- **Daily quota:** 30 people. 18 spots open 6 months ahead and 12 open 2 weeks ahead. This comes from a Sierra Rec article from about 2023, so confirm it on Recreation.gov.\n- **No lottery.** Permits release on a rolling basis **daily at 7:00 AM Pacific**:\n  - 60% opens 6 months ahead (a July 4 start opens January 4).\n  - 40% opens 2 weeks ahead, on the same weekday.\n  - Example: for a Wednesday, July 21, 2027 start, the first batch opens January 21, 2027 and the second opens Wednesday, July 7, 2027.\n- **Group size:** maximum 15, and groups can't combine permits to exceed 15. Your 12 fit on one permit. Splitting into two permits of 6 may help if only part of the quota is left.\n- **Fees:** $6 per reservation plus $5 per person. Print the permit by 10 AM on the entry date or it's canceled.\n- **Booking URL:** https://www.recreation.gov/permits/233262\n- **Other rules:**\n  - Bear canisters are required in the Mammoth Lakes / Rush Creek area.\n  - A 2019 PCTA summary of the regulations lists \"Gem Lake (north side)\" as closed to campfires.\n  - You need a California Campfire Permit to use stoves.\n\n## Problems and closures\n- **The lake is low.** The earthquake-safety limit holds Gem roughly 25 ft below full, which leaves steep, bare \"bathtub ring\" shorelines.\n- **Waugh Lake, just upstream, is drained.** It was a dry lakebed in October 2023 and \"a huge mud hole\" in July 2025.\n- **Rush Creek crossing:** a 2025 hiker said the crossing near the JMT junction was sketchy because the log was washed out.\n- **Future dam work:** the dam operator (Southern California Edison) is renewing its federal license. It proposes removing the Agnew and Rush Meadows dams and retrofitting Gem Dam, a job of up to three seasons, starting 2029 at the earliest. This shouldn't affect a 2027 trip.\n- **Fire:** I found no fire or trail closure affecting Rush Creek in 2025–2026. I couldn't load the current Inyo alerts page, and I couldn't confirm where CAL FIRE's June 2026 \"Lake Fire\" was. Check https://www.fs.usda.gov/r05/inyo/alerts before you book.\n\n## Score: 66/100\n- **Scenery 22/35.** Deep-blue water, granite walls and aspens, but it's a drawn-down reservoir with steep shores. It doesn't match Thousand Island Lake (35) or Lamarck (28).\n- **Experience 17/25.**\n  - Pros: good day hikes, including Gem Pass and the Alger Lakes, Agnew Lake, Clark Lakes, and **Thousand Island Lake and Banner Peak** (about 3.4 mi and roughly 1,000 ft each way, my estimate). There's trout fishing in Gem and Rush Creek.\n  - Cons: flat sites near water for 12 are limited to the inlet area, no campfires, and cold, steep swimming.\n- **Access 16/20.** Mileage is right in your sweet spot. The gain is about 600 ft over your average, on hot, exposed slopes. Paved road to the trailhead.\n- **Permit 11/20.** A group of 12 needs most of the 18 early spots on an entry point that's also a popular route to Thousand Island Lake. Be online at exactly 7 AM six months out.\n\n**Worth considering instead:** With the same Rush Creek permit, you could camp at Thousand Island Lake itself. Outdoorstatus lists it at 7.5 mi and 3,200 ft from this trailhead, which is still inside your hard limits. That gets you a top-scenery campsite and avoids the reservoir issues.\n\n## Every URL used\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/fseprd1123018.pdf\n- https://www.fs.usda.gov/r05/inyo/recreation/june-lake-loop\n- https://www.fs.usda.gov/r05/inyo/recreation/silver-lake-campground\n- https://www.recreation.gov/camping/campgrounds/234330\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://campflare.com/permit/inyo\n- https://backcountryemily.com/california-backpacking-permits/\n- https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/thousand-island-lake-from-rush-creek/\n- https://www.pcta.org/discover-the-trail/john-muir-trail/regulations/\n- https://www.pcta.org/wp-content/uploads/2019/03/John-Muir-Trail-Regulations.pdf\n- https://rms.waterboards.ca.gov/DownloadDocument.ashx?type=Attachment&download=true&id=93386\n- https://www.highsierratopix.com/community/viewtopic.php?t=24516\n- https://www.alltrails.com/trail/us/california/gem-lake-via-rush-creek-trail\n- https://www.alltrails.com/poi/us/california/june-lake/gem-lake\n- https://www.alltrails.com/trail/us/california/agnew-lake-gem-lake-waugh-lake-and-clark-lakes-loop-trail\n- https://roadtripsandhikes.blogspot.com/2001/08/hike-gem-lake-via-rush-creek-trail-mono.html\n- https://www.taylorstracks.com/hikes-in-june-lake/\n- https://kevingong.com/Hiking/201604RushCreekTrail.html\n- https://vanmarmot.org/2022/08/06/gem-lake-sierra-nevada-ca-08-aug-2022/\n- https://www.summitpost.org/rush-creek/177294\n- https://www.lindagass.com/PhotoEssays/2025_JMTLakes/index.html\n- https://backcountrypost.com/threads/ansel-adams-wilderness-october-2023.10956/\n- https://thesheetnews.com/2025/05/22/dammed-if-you-do/\n- https://www.federalregister.gov/documents/2025/02/11/2025-02473/southern-california-edison-company-notice-of-application-tendered-for-filing-with-the-commission-and-establishing-procedural-schedule-for-licensing-and-deadline-for-submission-of-final-amendments\n- https://frontierpacktrain.com/scheduled-trips/ansel-adams-trail-ride/\n- https://www.fire.ca.gov/incidents/2026/6/2/lake-fire/updates (location unverified)"
+}

@@ -1,0 +1,165 @@
+{
+  "candidate": {
+    "name": "Dusy Basin",
+    "area": "Kings Canyon National Park",
+    "trailhead": "South Lake via Bishop Pass (Inyo permit)",
+    "why": "Bare granite basin with high lakes and towering peaks."
+  },
+  "site": {
+    "name": "Dusy Basin via Bishop Pass",
+    "region": "Eastern Sierra / Kings Canyon National Park - Dusy Basin",
+    "area": "Bishop Pass - South Lake trailhead (Inyo National Forest permit)",
+    "description": "Granite slabs, many lakes, and walls of high peaks just over 11,972-ft Bishop Pass in Kings Canyon National Park. It makes great basecamp terrain for big day hikes like Knapsack Pass and the Le Conte Canyon overlook, and the fishing is good. Kings Canyon limits camping in the basin to two nights, so plan a split itinerary.",
+    "latitude": 37.0974,
+    "longitude": -118.559,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.9,
+    "elevationGainFt": 2200,
+    "campElevationFt": 11360,
+    "peakElevationFt": 11972,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Bishop Pass -South Lake",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF permit; FS quota sheet calls it Bishop Pass (JMT), code JM21. Quota is 36 people/day May 1-Nov 1: 22 spots release 6 months ahead (same date) and 14 release 2 weeks ahead (same weekday), at 7:00 AM PT. No lottery; sells out within minutes. Group max 15 and groups can't combine. Fees: $6 per reservation + $5 per person. Print the permit by 10 AM on entry day or it's cancelled. Per-person fees refunded if cancelled 12+ days ahead. Kings Canyon rules: two-night basin-wide camping limit in Dusy Basin; off-trail group limit of 8; bear canisters required; no campfires above 10,000 ft; CA fishing license needed.",
+    "sceneryScore": 34,
+    "experienceScore": 19,
+    "accessScore": 14,
+    "permitScore": 7,
+    "rankingNotes": "Thousand Island-caliber scenery in a high granite lake basin, held back by the two-night limit and a fiercely competitive permit.",
+    "sources": [
+      {
+        "label": "Inyo NF Bishop Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/bishop-pass-trail-south-lake"
+      },
+      {
+        "label": "Inyo wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Inyo trail names and quotas 2021",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf"
+      },
+      {
+        "label": "Recreation.gov permit",
+        "url": "https://recreation.gov/permits/233262"
+      },
+      {
+        "label": "NPS SEKI restrictions",
+        "url": "https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm"
+      },
+      {
+        "label": "NPS trail conditions",
+        "url": "https://www.nps.gov/seki/planyourvisit/trailcond.htm"
+      },
+      {
+        "label": "NPS trail descriptions",
+        "url": "https://www.nps.gov/seki/planyourvisit/traildesc.htm"
+      },
+      {
+        "label": "Bearfoot Theory",
+        "url": "https://bearfoottheory.com/bishop-pass-to-dusy-basin-backpacking-guide/"
+      },
+      {
+        "label": "Jack & Jill Travel",
+        "url": "https://www.jackandjilltravel.com/bishop-pass-to-dusy-basin/"
+      },
+      {
+        "label": "Lily Tang",
+        "url": "https://lilymtang.com/blog/dusy-basin-via-bishop-pass/"
+      },
+      {
+        "label": "AmericanSouthwest",
+        "url": "https://www.americansouthwest.net/california/eastern-sierra/bishop-pass-trail.html"
+      },
+      {
+        "label": "HikingWalking",
+        "url": "https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/bishop/bishop_pass/bishop_pass_detail"
+      },
+      {
+        "label": "SoCalHiker",
+        "url": "https://socalhiker.net/hikes/backpacking-the-northsouth-lake-loop-upper-dusy-basin-to-south-lake/"
+      },
+      {
+        "label": "Dreams of Infinity",
+        "url": "https://dreamsofinfinity.com/south-lake-north-lake/"
+      },
+      {
+        "label": "onX",
+        "url": "https://www.onxmaps.com/hiking/ndzd1lrrezkv/bishop-pass-trail-to-dusy-basin"
+      },
+      {
+        "label": "OutdoorStatus trip",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/dusy-basin-via-bishop-pass/"
+      },
+      {
+        "label": "OutdoorStatus tracker",
+        "url": "https://outdoorstatus.com/new-tracker/us/california/inyo-national-forest/wilderness-permit/"
+      },
+      {
+        "label": "CampObserver",
+        "url": "https://campobserver.com/facilities/inyo-national-forest-bishop-pass-south-lake"
+      },
+      {
+        "label": "Campflare",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "PermitSnag",
+        "url": "https://permitsnag.com/permits/california/inyo-national-forest"
+      },
+      {
+        "label": "Hikeset JMT permits 2027",
+        "url": "https://hikeset.com/blog/jmt-permits-2027/"
+      },
+      {
+        "label": "The Trek",
+        "url": "https://thetrek.co/competitive-hiking-permits/"
+      },
+      {
+        "label": "HikingTales fishing",
+        "url": "https://hikingtales.com/sierra-nevada/john-muir-trail-trout-fishing-guide/"
+      },
+      {
+        "label": "Fish removal paper",
+        "url": "https://www.academia.edu/4879239/Removal_of_nonnative_fish_results_in_population_expansion_of_a_declining_amphibian_mountain_yellow_legged_frog_Rana_muscosa"
+      },
+      {
+        "label": "TopoZone Dusy Basin",
+        "url": "https://www.topozone.com/california/fresno-ca/basin/dusy-basin/"
+      },
+      {
+        "label": "ResearchGate map",
+        "url": "https://www.researchgate.net/figure/Map-of-upper-Dusy-Basin-Kings-Canyon-National-Park-showing-takes-1-11-and-associated_fig1_43256933"
+      },
+      {
+        "label": "SummitPost",
+        "url": "https://www.summitpost.org/dusy-basin/1043698"
+      },
+      {
+        "label": "SlabLab road status",
+        "url": "https://www.slablab.co/road-status"
+      },
+      {
+        "label": "Caltrans advisory Sept 2026",
+        "url": "https://www.easternsierranow.com/caltrans-weekly-traffic-advisory-for-the-week-of-september-21-2026/"
+      },
+      {
+        "label": "Inyo County South Lake Road 2021",
+        "url": "https://www.inyocounty.us/services/public-works/news/south-lake-road-opening-status-press-release-april-2021"
+      }
+    ],
+    "caveats": "Advance window is stated as '6 months' (same calendar date) rather than a fixed day count, so permitAdvanceDays is null. Mileage sources range from 6 to 8.6 mi one way; 6.9 mi is the value two sources agree on. Gain is about 2,000-2,205 ft going in, plus about 658-700 ft climbing back to the pass on exit. Camp elevation is 11,360-11,393 ft at the upper lakes (lower basin about 11,100 ft). Coordinates are the USGS place-name point; the upper lakes are near 37.0944, -118.5625 (approximate); SummitPost's 36.71 N is wrong. Basin-wide two-night limit; off-trail group limit is 8, so the group of 12 must camp within 1/2 mile of the trail. Trout were removed from several lakes for frog recovery. Afternoon thunderstorms on the exposed pass are a hazard. Overnight parking at South Lake is limited. September 2026 had one-way utility work on Hwy 168 and Stage 1 fire restrictions. Several source figures come from search excerpts only, not opened pages."
+  },
+  "notes": "I'll research this thoroughly. Starting with several parallel searches.\nNow NPS SEKI rules (group size in park, Dusy Basin regulations), and trail-mileage sources.\n**Dusy Basin via Bishop Pass (South Lake trailhead, Inyo permit): 74/100 (Scenery 34 / Experience 19 / Access 14 / Permit 7)**\n\nThe scenery is as good as Thousand Island Lake. It scores lower because of three problems: Kings Canyon only lets you camp **two nights** in Dusy Basin, you need **12 of the 22 permit spots released each day** for advance booking, and the hike in is **about 6.9 mi over an 11,972-ft pass**. It meets all your hard limits.\n\n## Key facts\n\n**One-way miles to camp: about 6.9 mi to the upper lakes.** Sources disagree:\n- 6 mi (Jack & Jill trip report).\n- 6.9 mi (OutdoorStatus; SoCalHiker measured 6.9 mi from Upper Dusy Basin to South Lake).\n- 7.5 mi (AmericanSouthwest; Bearfoot Theory's description of the hike out).\n- 7.7 mi (Dreams of Infinity's 2021 GPS track, which went deeper into the lower basin).\n- 8.6 mi (onX's 17.2-mi round trip, which goes further into the basin).\n- Bearfoot Theory's stats box says \"12 mi round trip,\" which disagrees with its own 7.5-mi hike out. I don't trust that box.\n- **I trust 6.9 mi.** Two independent sources agree, and it fits about 5.5–6 mi to the pass (HikingWalking, AmericanSouthwest) plus about 1.5 mi down.\n\n**Elevation gain: about 2,200 ft going in, plus about 650–700 ft climbing back to the pass on the way out.**\n- The trailhead is listed at 9,782–9,829 ft depending on the source.\n- Bishop Pass is 11,972 ft (sign; Bearfoot's GPS read 11,979).\n- Climb from trailhead to pass: about 2,150 ft net (AmericanSouthwest, HikingWalking) or 2,200–2,205 ft total (OutdoorStatus, Dreams of Infinity). Jack & Jill says 2,000 ft.\n- Return climb: +658 ft (SoCalHiker) or +700 ft (OutdoorStatus).\n- Round-trip figures of 2,900 ft (Bearfoot) and 3,735 ft (onX) count both directions and/or go farther.\n\n**Camp elevation: about 11,360–11,393 ft (upper lakes).** That would be your highest camp yet, above Cottonwood's 11,105 ft.\n- Lily Tang camped at Lake 11,393.\n- HikingWalking says to leave the trail at the large lake at 11,360 ft.\n- The USGS place-name point for the basin is listed at 11,217 ft. Camps in the lower basin are about 11,100 ft.\n\n**Coordinates:**\n- Dusy Basin (USGS place-name point, via TopoZone): **37.0974, −118.5590**.\n- Upper basin and Lake 11,393 area: about **37.0944, −118.5625** at 3,470 m (11,385 ft), from a frog-study paper. This is approximate.\n- SummitPost lists 36.71 N, which is wrong.\n\n## Permit system (Inyo National Forest, even though you camp in Kings Canyon)\n- **Booking:** https://www.recreation.gov/permits/233262\n- **Entry point:** \"Bishop Pass -South Lake\" on recreation.gov. The Forest Service quota sheet calls it **\"Bishop Pass (JMT),\" code JM21**. A third-party site lists the camp area as \"SEKI - Dusy Basin.\"\n- **Quota:** 36 people per day from May 1 to Nov 1. **22 spots release 6 months ahead and 14 release 2 weeks ahead.**\n- **Release times:** every day at **7:00 AM Pacific**, on a rolling window. The 6-month release falls on the same date (July 4 opens Jan 4). The 2-week release falls on the same weekday.\n  - Example: entry Wed July 21, 2027 opens **Thu Jan 21, 2027** (6-month spots) and **Wed July 7, 2027** (2-week spots).\n- **No lottery.** Campflare says Bishop Pass sells out within minutes of release.\n- **Group size:** maximum 15 (Inyo), and groups can't combine to exceed 15. Your 12 fit on one permit. Splitting into two permits doesn't help, because both draw from the same daily quota.\n- **Kings Canyon rules:**\n  - Up to 15 people on trail.\n  - **Off trail in Dusy Basin the limit is 8.** \"Off trail\" means more than ½ mile from a maintained trail overnight, or more than 100 yards for day use.\n  - Affiliated groups can't camp within ½ mile of each other if together they exceed the limit.\n  - **Dusy Basin has a basin-wide two-night camping limit.**\n  - Bear canisters are required.\n  - No campfires above 10,000 ft.\n  - You need a California fishing license.\n- **Fees and deadlines:** $6 per reservation plus $5 per person. Print the permit by 10 AM on entry day or it's cancelled. Per-person fees are refunded if you cancel at least 12 days ahead.\n\n## Closures and access (checked October 2026)\n- No fire or trail closures found.\n- The Kings Canyon trail-conditions page (6/23/2026) only noted a large snow patch on the north side of the pass.\n- South Lake Road was open to the lake as of July 2026 (SlabLab).\n- In September 2026 there was temporary one-way utility work on Highway 168 near South Lake Road. Inyo had Stage 1 fire restrictions in effect.\n- Overnight parking at South Lake is limited; the overflow is roadside near Parcher's Resort.\n- The road's history: rebuilt in 2020, and the top 1.3 mi opened late in spring 2021.\n- Afternoon thunderstorms on the exposed pass are a known hazard.\n\n## Scoring rationale\n- **Scenery 34/35:** granite slabs, many lakes, and walls of high peaks, plus glacier-tinted lakes on the climb up.\n- **Experience 19/25:**\n  - Good: great basecamp terrain and big day hikes (Knapsack Pass, the Le Conte Canyon overlook). Fishing is good, with golden-hybrid trout of 5–11 in., some to 14 in., in Dusy and Lake 11,393, and brook trout in Bishop and Saddlerock Lakes.\n  - Bad: the two-night limit rules out a 4-night basecamp. Trout were removed from several Dusy lakes for frog recovery. The group of 12 must camp within ½ mile of the trail, and off-trail day hikes must go in groups of 8 or fewer. No campfires.\n- **Access 14/20:** about 6.9 mi and 2,200 ft, plus a climb back on exit, is long for your sweet spot but inside your limits. The trailhead is paved and about 22 mi from Bishop.\n- **Permit 7/20:** a group of 12 needs about 55% of the day's 22 advance spots, and they sell out within minutes.\n\n**Suggested itinerary:**\n1. Night 1 at Bishop or Saddlerock Lake. This is roughly 4–5 mi, a figure I couldn't confirm.\n2. Nights 2–3 in Dusy Basin, the most the park allows.\n3. Night 4 back at Bishop Lake.\n\nEach hiking day stays near your usual distance, and the plan follows the two-night rule. Book at exactly 7:00 AM PT, six months out, for a Wednesday entry.\n\nA tool limit cut my research short. I couldn't open the Jack & Jill, Pesto Lemon, Lily Tang, AmericanSouthwest, HikingWalking, SoCalHiker, Dreams of Infinity and onX pages directly, so those figures come from search-result excerpts.\n\n**URLs used:**\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/bishop-pass-trail-south-lake\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/List%20of%20Trail%20Names%20and%20Quotas%206-13-2021.pdf\n- https://recreation.gov/permits/233262\n- https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm\n- https://www.nps.gov/seki/planyourvisit/trailcond.htm\n- https://www.nps.gov/seki/planyourvisit/traildesc.htm\n- https://bearfoottheory.com/bishop-pass-to-dusy-basin-backpacking-guide/\n- https://www.jackandjilltravel.com/bishop-pass-to-dusy-basin/\n- https://lilymtang.com/blog/dusy-basin-via-bishop-pass/\n- https://www.americansouthwest.net/california/eastern-sierra/bishop-pass-trail.html\n- https://www.hikingwalking.com/index.php/destinations/ca/ca_ses/bishop/bishop_pass/bishop_pass_detail\n- https://socalhiker.net/hikes/backpacking-the-northsouth-lake-loop-upper-dusy-basin-to-south-lake/\n- https://dreamsofinfinity.com/south-lake-north-lake/\n- https://www.onxmaps.com/hiking/ndzd1lrrezkv/bishop-pass-trail-to-dusy-basin\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/dusy-basin-via-bishop-pass/\n- https://outdoorstatus.com/new-tracker/us/california/inyo-national-forest/wilderness-permit/\n- https://campobserver.com/facilities/inyo-national-forest-bishop-pass-south-lake\n- https://campflare.com/permit/inyo\n- https://permitsnag.com/permits/california/inyo-national-forest\n- https://hikeset.com/blog/jmt-permits-2027/\n- https://thetrek.co/competitive-hiking-permits/\n- https://hikingtales.com/sierra-nevada/john-muir-trail-trout-fishing-guide/\n- https://www.academia.edu/4879239/Removal_of_nonnative_fish_results_in_population_expansion_of_a_declining_amphibian_mountain_yellow_legged_frog_Rana_muscosa\n- https://www.topozone.com/california/fresno-ca/basin/dusy-basin/\n- https://www.researchgate.net/figure/Map-of-upper-Dusy-Basin-Kings-Canyon-National-Park-showing-takes-1-11-and-associated_fig1_43256933\n- https://www.summitpost.org/dusy-basin/1043698\n- https://www.slablab.co/road-status\n- https://www.easternsierranow.com/caltrans-weekly-traffic-advisory-for-the-week-of-september-21-2026/\n- https://www.inyocounty.us/services/public-works/news/south-lake-road-opening-status-press-release-april-2021"
+}

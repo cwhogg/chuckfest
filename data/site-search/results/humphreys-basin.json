@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "name": "Humphreys Basin",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "North Lake (Piute Pass)",
+    "why": "Wide granite plateau full of lakes under Mt. Humphreys, with golden trout."
+  },
+  "site": {
+    "name": "Humphreys Basin (Muriel Lake)",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Bishop Creek / North Lake - Piute Pass",
+    "description": "A wide, open granite basin beyond Piute Pass with dozens of lakes. Muriel Lake makes an excellent basecamp, with swimming, brook and golden trout, and a direct view of Mt. Humphreys. Many off-trail day hikes start from here, including Desolation, Golden Trout and Wahoo Lakes, Goethe Cirque and Pilot Knob.",
+    "latitude": 37.23325,
+    "longitude": -118.69668,
+    "difficulty": "moderate",
+    "distanceMiles": 6.5,
+    "elevationGainFt": 2200,
+    "campElevationFt": 11329,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Piute Pass",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF wilderness permit with no lottery. The entry point is also listed as 'Piute Pass (North Lake) (JMT)', code JM15; do not book Lamarck Lakes. The quota is 30 people per day from May 1 to Nov 1. A 2023 third-party table splits this into 18 spots released 6 months ahead on the matching date and 12 released 2 weeks ahead on the same weekday, both at 7:00 AM PT. Cancellations return within about 24 hours. Cost is $6 per permit plus $5 per person. Group size is limited to 15. Permits are extremely competitive and popular trailheads sell out within seconds; starting on a Wednesday helps, and two permits of 6 is a backup plan. A free California campfire permit is needed for stoves.",
+    "sceneryScore": 31,
+    "experienceScore": 23,
+    "accessScore": 15,
+    "permitScore": 10,
+    "rankingNotes": "A huge lake-studded granite basin under Mt. Humphreys, with a superb basecamp at Muriel Lake and endless day hikes. It scores 79/100 but the permit is hard to get.",
+    "sources": [
+      {
+        "label": "Inyo NF Piute Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/piute-pass-trail-north-lake"
+      },
+      {
+        "label": "Inyo NF North Lake Campground",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/north-lake-campground"
+      },
+      {
+        "label": "Stage 1 fire restrictions June 22 2026",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect-starting-june-22-2026"
+      },
+      {
+        "label": "Stage 1 fire restrictions",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect"
+      },
+      {
+        "label": "Rock Fire closure order",
+        "url": "https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/"
+      },
+      {
+        "label": "Sierra Rec Magazine trail quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Backcountry Emily Humphreys Basin guide",
+        "url": "https://backcountryemily.com/humphreys-basin-backpacking-guide/"
+      },
+      {
+        "label": "Backcountry Emily California permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Campflare Inyo",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "OutdoorStatus Golden Trout Lakes",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/golden-trout-lakes-via-piute-pass/"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "100peaks 2024 trip report",
+        "url": "https://100peaks.com/blog/2025/8/14/humphreys-basin-backpacking-2024-reunion-and-rescue"
+      },
+      {
+        "label": "Sierra Club outing",
+        "url": "https://content.sierraclub.org/outings/humphreys-high-country-circuit-john-muir-wilderness-california"
+      },
+      {
+        "label": "donsnotes Humphreys Basin",
+        "url": "https://donsnotes.com/places/california/humphreys_basin.html"
+      },
+      {
+        "label": "Fishcaddy Muriel Lake",
+        "url": "https://fishcaddy.com/california/fresno-county/muriel-lake"
+      },
+      {
+        "label": "Topozone Muriel Lake",
+        "url": "https://www.topozone.com/california/fresno-ca/lake/muriel-lake/"
+      },
+      {
+        "label": "Trailforks Muriel Lake",
+        "url": "https://www.trailforks.com/trails/muriel-lake-trail/"
+      },
+      {
+        "label": "Trailforks Desolation Lake",
+        "url": "https://www.trailforks.com/trails/desolation-lake-trail/"
+      },
+      {
+        "label": "AllTrails Piute Pass",
+        "url": "https://www.alltrails.com/trail/us/california/piute-pass-trail"
+      },
+      {
+        "label": "AllTrails Humphreys Basin",
+        "url": "https://www.alltrails.com/trail/us/california/humphreys-basin-trail"
+      },
+      {
+        "label": "AllTrails recording",
+        "url": "https://www.alltrails.com/explore/recording/evening-hike-at-humphreys-basin-trail-9f6f238"
+      },
+      {
+        "label": "SoCal Hiker",
+        "url": "https://socalhiker.net/hikes/backpacking-the-north-south-lake-loop-piute-pass-to-hutchinson-meadow/"
+      },
+      {
+        "label": "American Southwest Piute Pass",
+        "url": "https://www.americansouthwest.net/california/eastern-sierra/piute-pass-trail.html"
+      },
+      {
+        "label": "Calipidder 2009",
+        "url": "https://www.calipidder.com/2009/09/piute-canyon-humphreys-basin-and-piute-pass-days-5-and-6-of-6/"
+      },
+      {
+        "label": "High Sierra Topix forum",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=22128"
+      },
+      {
+        "label": "Mono County road closures",
+        "url": "https://monocounty.ca.gov/road-closures"
+      },
+      {
+        "label": "Bishop Visitor North Lake",
+        "url": "https://bishopvisitor.com/places/north-lake/"
+      }
+    ],
+    "caveats": "Distance to Muriel is given as about 6.3–6.6 mi from the hiker lot; 6.5 is a midpoint, and the figures come from an AllTrails user recording. The hiker lot is 0.6–0.7 mi before the trailhead. Muriel's elevation is listed as 11,329 ft (topo) or 11,344 ft (Trailforks). Piute Pass is listed at 11,402–11,417 ft. permitAdvanceDays is null because the notes say '6 months ahead on the matching date', not a fixed number of days. The recreation.gov permit ID is 233262 per three sites, but Backcountry Emily links to 445858, so check before booking day. The 18/12 quota split comes from a third-party 2023 table. There are no trees, so camp is windy and exposed to lightning. Campfires are banned and bear canisters are effectively required. Finding tent sites for 12 will take scouting. Stage 1 fire restrictions run June 22 to Dec 31, 2026. The Rock Fire closure covers a different area, and no Piute Pass closure was found. North Lake Road is steep, narrow and dirt, and Hwy 168 has closed for mudslides before. Snow can linger on the pass into July. A 2009 report of a 500 ft no-camping buffer at Lower Golden Trout Lake is unverified. Some research was cut short by search limits."
+  },
+  "notes": "I'll research this thoroughly. Starting with several parallel searches.\nI scored **Humphreys Basin at 79/100 (31 scenery, 23 experience, 15 access, 10 permit), with Muriel Lake as the camp.** That ties Lamarck Lakes (79) and is just under Thousand Island Lake (81). The scenery is better than Lamarck's, but the hike in is longer and the permit is harder to get.\n\nMy search tool hit its usage limit partway through, so a few items below are marked unverified.\n\n## Which lake to camp at\nHumphreys Basin is a wide, open granite basin past Piute Pass with dozens of lakes. **Muriel Lake** is the best basecamp: it's the closest good lake, swimmable, with brook and golden trout and a direct view of Mt. Humphreys. A Sierra Club group outing uses it as a layover camp, and a group trip report from 2024 camped there.\n\n## Trail numbers (starting from the backpacker parking lot)\nBackpackers can't park at North Lake Campground. The hiker lot is about 0.7 mi before the trailhead (one AllTrails reviewer says 0.6 mi). A lot of published mileage leaves this out.\n\n| Camp | One-way miles | Gain | Camp elevation | Coordinates |\n|---|---|---|---|---|\n| **Muriel Lake** (recommended) | **~6.3–6.6** | **~2,200 ft** | 11,329 ft | 37.23325, -118.69668 |\n| Lower Desolation Lake | 7.0 | +2,500 / -650 ft | 11,188 ft | about 37.2597, -118.7075 |\n| Upper Golden Trout Lake | 7.7 | 2,200 ft | about 10,790 ft | 37.24219, -118.72042 |\n| Desolation Lake | about 8 (my estimate) | about 2,500 ft | 11,381 ft | about 37.2742, -118.7056 |\n\n- **Piute Pass:** about 4.6–5 mi from the trailhead, ~2,060–2,080 ft gain, at about 11,402–11,417 ft (37.23901, -118.68408).\n- **Parking lot elevation:** about 9,260 ft.\n- **Difficulty:** The climb is gentle (under 500 ft per mile on average). The steepest part is the first 2 miles, which are in forest.\n- **Altitude:** Muriel would be your highest camp yet, above Cottonwood's 11,105 ft. Spending the night before at a Bishop Creek campground would help the group acclimatize.\n\n**Conflicting figures and which I trust:**\n- **Pass elevation:** 11,402 ft (federal place-name database, via donsnotes), 11,417 ft (americansouthwest), \"11,400\" (Backcountry Emily). I use about 11,402–11,417.\n- **Mileage:** AllTrails gives 9.3 mi round trip and 2,080 ft from the campground; SoCal Hiker gives 2,056 ft. I trust Backcountry Emily's 7 mi / +2,500 ft to Lower Desolation and OutdoorStatus's 7.7 mi / 2,200 ft to Golden Trout most, because both count from the hiker lot. The Muriel figures come from an AllTrails user recording (13.14 mi round trip, 2,178 ft).\n- **Muriel elevation:** 11,329 ft (topo listings) vs. 11,344 ft (Trailforks).\n\n## Permits\n- **Agency and booking:** Inyo National Forest wilderness permit on recreation.gov: https://www.recreation.gov/permits/233262 . Backcountry Emily's Humphreys guide links to /permits/445858 instead. I trust 233262 because three separate sites use it. Check before booking day.\n- **Entry point:** **\"Piute Pass\"**, also listed as \"Piute Pass (North Lake) (JMT)\", trail code JM15 in a 2023 table. Don't book \"Lamarck Lakes\" even though it starts at the same trailhead.\n- **Quota:** 30 people per day, May 1 to November 1 (Forest Service page). The 2023 table splits that into **18 released 6 months ahead and 12 released 2 weeks ahead**. That split matches the official 60/40 rule, but it comes from a third-party site.\n- **How booking works:** There's no lottery. Each start date opens at **7:00 AM Pacific, 6 months ahead on the matching date** (a July 14, 2027 start opens January 14, 2027). The other 40% opens 2 weeks before, on the same weekday. Cancellations come back within about 24 hours.\n- **Cost:** $6 per permit plus $5 per person.\n- **Group size:** **15 maximum**, including day hikes. Twelve people fit on one permit. Splitting into two permits of 6 is a good backup plan.\n- **Demand:** Backcountry Emily calls these permits \"incredibly popular.\" In 2022, one forum user failed six times and said popular trailheads were gone within a second of 7:00 AM. Your group needs 12 of the 18 advance spots, so any big party that books first can block you. Starting on a Wednesday helps.\n\n## Rules, fire and access problems\n- **No campfires** from the trailhead to the pass, or anywhere above 10,000 ft north of Glacier Divide. That covers the whole basin.\n- **Food storage:** Bear-proof containers or counterbalance hanging are allowed, but there are no usable trees past Loch Leven, so plan on bear canisters. You also need a free California campfire permit to use stoves.\n- **Fire:** Stage 1 fire restrictions were in effect from June 22, 2026 through December 31, 2026. The 2026 Rock Fire closure (through December 31) covers the Birch Lake to Sawmill Pass area south of Big Pine, not Bishop Creek. I found **no current closure of Piute Pass or North Lake**.\n- **Road:** North Lake Road is steep, narrow and mostly dirt, and not recommended for trailers. Highway 168 has closed for mudslides before (an older notice), so check Caltrans before you go.\n- **Snow:** The best season is roughly late June to mid-October. Snow can linger on the pass into July.\n- **Unverified:** A 2009 blog says there's no camping within 500 ft of Lower Golden Trout Lake. I couldn't confirm whether that rule still exists.\n\n## Score: 79/100\n- **Scenery 31/35:** Huge granite basin with many lakes, Mt. Humphreys at alpenglow, Glacier Divide, and Desolation Lake, one of the largest natural lakes in the Sierra. The approach past Loch Leven and Piute Lake is beautiful. It's more open and stark than Thousand Island's wall-of-peaks drama, so it scores below that 35.\n- **Experience 23/25:** Excellent basecamp, with many off-trail day hikes (Desolation, Golden Trout and Wahoo Lakes, Goethe Cirque, Pilot Knob, the cols). Fishing for golden and brook trout and cold swims at Muriel. The downsides: there are no trees, so it's windy and exposed to lightning, and there are no campfires. Flat tent sites for 12 will take some scouting; one party had trouble finding good spots for 3 tents at Muriel.\n- **Access 15/20:** About 6.3 mi and 2,200 ft, which is above your sweet spot but within your limits, plus the walk from the hiker lot and the dirt road.\n- **Permit 10/20:** The quota is a decent size, but demand is very high and 12 people need two-thirds of the advance spots.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/piute-pass-trail-north-lake\n- https://www.fs.usda.gov/r05/inyo/recreation/north-lake-campground\n- https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect-starting-june-22-2026\n- https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect\n- https://sierrawave.net/forest-order-no-05-04-54-26-29-usda-forest-service-inyo-national-forest-rock-fire-area-closure/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://backcountryemily.com/humphreys-basin-backpacking-guide/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://campflare.com/permit/inyo\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/golden-trout-lakes-via-piute-pass/\n- https://www.recreation.gov/permits/233262\n- https://100peaks.com/blog/2025/8/14/humphreys-basin-backpacking-2024-reunion-and-rescue\n- https://content.sierraclub.org/outings/humphreys-high-country-circuit-john-muir-wilderness-california\n- https://donsnotes.com/places/california/humphreys_basin.html\n- https://fishcaddy.com/california/fresno-county/muriel-lake\n- https://www.topozone.com/california/fresno-ca/lake/muriel-lake/\n- https://www.trailforks.com/trails/muriel-lake-trail/\n- https://www.trailforks.com/trails/desolation-lake-trail/\n- https://www.alltrails.com/trail/us/california/piute-pass-trail\n- https://www.alltrails.com/trail/us/california/humphreys-basin-trail\n- https://www.alltrails.com/explore/recording/evening-hike-at-humphreys-basin-trail-9f6f238\n- https://socalhiker.net/hikes/backpacking-the-north-south-lake-loop-piute-pass-to-hutchinson-meadow/\n- https://www.americansouthwest.net/california/eastern-sierra/piute-pass-trail.html\n- https://www.calipidder.com/2009/09/piute-canyon-humphreys-basin-and-piute-pass-days-5-and-6-of-6/\n- https://www.highsierratopix.com/community/viewtopic.php?t=22128\n- https://monocounty.ca.gov/road-closures\n- https://bishopvisitor.com/places/north-lake/"
+}

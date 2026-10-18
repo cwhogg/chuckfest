@@ -1,0 +1,177 @@
+{
+  "candidate": {
+    "name": "Pioneer Basin",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Mosquito Flat via Mono Pass",
+    "why": "Big lake basin under Mts. Stanford, Crocker, Hopkins and Huntington."
+  },
+  "site": {
+    "name": "Pioneer Basin via Mono Pass (Mosquito Flat)",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Rock Creek / Mono Creek drainage (Inyo NF permit; basin in Fresno County, west of crest)",
+    "description": "A broad, open treeline basin of seven lakes under Mts. Crocker, Stanford, Huntington and Hopkins, reached from Mosquito Flat over 12,060-ft Mono Pass. It makes an excellent basecamp for lake wandering, fishing, Fourth Recess and Golden Lakes, and an easy class 1 walk-up of Mt. Hopkins. The lowest lake has a large pack-train campsite that suits a group of 12.",
+    "latitude": 37.47,
+    "longitude": -118.8,
+    "difficulty": "strenuous",
+    "distanceMiles": 8,
+    "elevationGainFt": 2150,
+    "campElevationFt": 10384,
+    "peakElevationFt": 12060,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Mono Pass (JMT) (Rock Creek) - JM08",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Daily quota of 20 people from May 1 to Nov 1. 12 slots open 6 months ahead on a rolling window and 8 open 2 weeks ahead, both released at 7:00 AM PT; cancellations return within 24 hours. A group of 12 needs all 12 of the 6-month slots, so splitting only works across different entry dates or with the 2-week release. Fees are $5 per person plus a $6 reservation fee. The permit must be printed (up to 7 days before) or it is cancelled, and leader/alternate names can't be changed. Bear canisters are required between the trailhead and Mono Pass and are practically necessary beyond it. No campfires above 10,000 ft.",
+    "sceneryScore": 27,
+    "experienceScore": 22,
+    "accessScore": 11,
+    "permitScore": 13,
+    "rankingNotes": "Seven-lake basecamp under Mt. Crocker with great day hikes and fishing, but a long haul over a 12,000-ft pass (73/100).",
+    "sources": [
+      {
+        "label": "Inyo NF Mono Pass Trail",
+        "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/mono-pass-trail"
+      },
+      {
+        "label": "Inyo NF Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo trail quota sheet",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Inyo NF alerts",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts"
+      },
+      {
+        "label": "Inyo Rock Creek Road closure release",
+        "url": "https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road"
+      },
+      {
+        "label": "Inyo Rock Fire area closure",
+        "url": "https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure"
+      },
+      {
+        "label": "InciWeb Rock Fire",
+        "url": "https://inciweb.wildfire.gov/incident-information/cainf-rock-fire"
+      },
+      {
+        "label": "CAL FIRE Rock Fire",
+        "url": "https://www.fire.ca.gov/incidents/2026/7/20/rock-fire"
+      },
+      {
+        "label": "The Sheet Rock Fire update",
+        "url": "https://thesheetnews.com/2026/07/23/rock-fire-update/"
+      },
+      {
+        "label": "ABC30 Rock Fire",
+        "url": "https://abc30.com/post/rock-fire-burning-inyo-county-forces-partial-closure-national-forest/19564908/"
+      },
+      {
+        "label": "Sierra Rec Magazine road closure",
+        "url": "https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/"
+      },
+      {
+        "label": "Sierra Rec Magazine trail quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Recreation.gov Inyo permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Campflare Inyo",
+        "url": "https://campflare.com/permit/inyo"
+      },
+      {
+        "label": "OutdoorStatus Inyo permit",
+        "url": "https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/"
+      },
+      {
+        "label": "OutdoorStatus Pioneer Basin trip",
+        "url": "https://outdoorstatus.com/trips/us/california/inyo-national-forest/pioneer-basin-lakes-via-mono-pass/"
+      },
+      {
+        "label": "The Big Outside permits",
+        "url": "https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/"
+      },
+      {
+        "label": "Backcountry Emily permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Inga's Adventures Inyo permits",
+        "url": "https://ingasadventures.com/deciphering-the-inyo-national-forest-permit-system/"
+      },
+      {
+        "label": "Happier Outdoors Inyo",
+        "url": "https://happieroutdoors.com/camping-in-inyo-national-forest/"
+      },
+      {
+        "label": "High Sierra Trails overview",
+        "url": "https://highsierratrails.com/pioneer_basin/pioneer_overview.html"
+      },
+      {
+        "label": "High Sierra Trails trail",
+        "url": "https://highsierratrails.com/pioneer_basin/pioneer_trail.html"
+      },
+      {
+        "label": "High Sierra Trails destination",
+        "url": "https://highsierratrails.com/pioneer_basin/pioneer_destination.html"
+      },
+      {
+        "label": "High Sierra Trails resources",
+        "url": "https://highsierratrails.com/pioneer_basin/pioneer_resources.html"
+      },
+      {
+        "label": "High Sierra Topix t=23346",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=23346"
+      },
+      {
+        "label": "High Sierra Topix t=23436",
+        "url": "https://highsierratopix.com/community/viewtopic.php?t=23436"
+      },
+      {
+        "label": "High Sierra Topix t=23618",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=23618"
+      },
+      {
+        "label": "Hiking Project Pioneer Basin",
+        "url": "https://www.hikingproject.com/trail/7085455/pioneer-basin-29e47"
+      },
+      {
+        "label": "AllTrails Pioneer Basin Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/pioneer-basin-lakes-trail"
+      },
+      {
+        "label": "AllTrails Upper Pioneer Basin",
+        "url": "https://www.alltrails.com/trail/us/california/upper-pioneer-basin-lakes-and-mono-creek"
+      },
+      {
+        "label": "AllTrails Mono Pass",
+        "url": "https://cdn.alltrails.com/trail/us/california/mono-pass-from-mosquito-flat-trailhead"
+      },
+      {
+        "label": "Icy Seas trip report",
+        "url": "https://icyseas.org/2025/12/06/back-packing-to-pioneer-basin-in-californias-high-sierra-beaches-and-swimming-and-trout/"
+      },
+      {
+        "label": "TopoZone Pioneer Basin",
+        "url": "https://www.topozone.com/california/fresno-ca/basin/pioneer-basin-2/"
+      },
+      {
+        "label": "YellowMaps Pioneer Basin Lakes",
+        "url": "https://www.yellowmaps.com/usgs/topo.cfm?map=ca-264806-pioneer-basin-lakes"
+      }
+    ],
+    "caveats": "Distance and gain are for the lowest lake (8 mi, 2,150 ft per High Sierra Trails). The upper lakes are about 9-9.5 mi and add about 500 ft. Other sources give 8.4 mi / 2,700 ft (OutdoorStatus) and 9.1 mi one way / 4,816 ft round trip (AllTrails). There is also about 2,000 ft of descent to Mono Creek that you climb back on the way out. Camp elevation is 10,383-10,390 ft at the lowest lake; the scenic upper lakes are about 10,825-10,915 ft. Mono Pass is given as 12,060-12,073 ft. Coordinates are approximate (USGS 37.47, -118.80; TopoZone 37.4749, -118.8010), so verify on CalTopo. The rolling window is described as '6 months', not a day count, so permitAdvanceDays is null. The 7 AM time comes from third-party sources, and the Recreation.gov page couldn't be fetched. Hiking Project and Backcountry Emily have outdated quota info. Rock Creek Road is closed to vehicles Oct 19-23, 2026, which doesn't affect summer 2027. The Rock Fire closure is about 50 mi south and doesn't affect this route. Stage 1 fire restrictions are in effect forest-wide. Expect early-season snow, heavy mosquitoes until mid-August, exposed windy camps with thunderstorms, and a rough spur trail to the upper lakes."
+  },
+  "notes": "# Pioneer Basin via Mono Pass (Mosquito Flat): research and score\n\n**Score: 73/100.** Scenery 27, experience 22, access 11, permit 13.\n\nIt's a great basecamp with a lot to do, but it scores below your two benchmarks. The hike in is about 8–9.5 miles and climbs over a 12,060-ft pass, which is well outside your usual sweet spot. Also, the basin is wide and open rather than a dramatic granite bowl.\n\n## Key facts\n\n| Item | Best figure | Notes |\n|---|---|---|\n| Trailhead | Mosquito Flat, about 10,240 ft, at the end of the paved Rock Creek Road off US-395 at Tom's Place | The highest trailhead you can drive to in the Sierra |\n| High point | Mono Pass, about 12,060–12,073 ft | About 3.5–4.3 miles from the trailhead |\n| One-way miles | **About 8 mi to the lowest lake; about 9–9.5 mi to the upper lakes** | Under your 10-mile limit |\n| Elevation gain (one way) | **About 2,200–2,500 ft to the lowest lake; about 2,700–3,000 ft to the upper lakes** | Under your 3,500-ft limit. You also lose about 2,000 ft dropping to Mono Creek, which you climb back up on the way out |\n| Camp elevation | Lowest lake 10,383–10,390 ft (most sheltered). Lakes with the best views are about 10,825–10,915 ft | Fits your trend toward higher camps |\n| Coordinates | Pioneer Basin Lakes (USGS place-name database): **37.47, -118.80**, 10,869 ft. Basin center (TopoZone): 37.4749, -118.8010, about 11,023 ft | These are only approximate. Pin your exact lake on CalTopo before the trip |\n| Land agency | The basin is on the west side of the crest (Fresno County, Mono Creek drainage), but Inyo NF issues the permit because you enter from Rock Creek | |\n\n**Conflicting figures and which I trust:**\n- **Distance:**\n  - High Sierra Trails: 8 mi (3.5 to the pass + 4.5 beyond)\n  - High Sierra Topix poster: 8 mi to the lowest lake, 9.5 mi to Lake 10,862\n  - OutdoorStatus: 8.4 mi\n  - AllTrails: 18.2 mi round trip (9.1 one way)\n  - Hiking Project: \"about 7 miles over Mono Pass\" to the Pioneer Basin trail junction\n  - **I trust 8 mi to the lowest lake and about 9–9.5 mi to the upper lakes.**\n- **Gain:**\n  - High Sierra Trails: 2,150 ft up / 2,006 ft down. That checks out: 10,240 + 2,150 − 2,006 = 10,384, the lowest lake's elevation.\n  - OutdoorStatus: 2,700 ft in.\n  - AllTrails: 4,816 ft round trip, which roughly matches OutdoorStatus's 2,700 in + 2,100 out.\n  - GPS tracks usually overcount gain a little, so **I trust High Sierra Trails for the lowest lake.** Add about 500 ft for the upper lakes.\n\n## Permits\n\n- **Booking URL:** https://www.recreation.gov/permits/233262 (Inyo National Forest – Wilderness Permits)\n- **Entry point name:** \"Mono Pass (JMT) (Rock Creek),\" code **JM08**. OutdoorStatus shows the first-night camp area as \"Pioneer Basin (Mono Pass).\"\n- **Daily quota (May 1–Nov 1):** 20 people, set by the official Inyo quota sheet.\n  - **12 open 6 months ahead.** It's a rolling window, with each day released at **7:00 AM Pacific**.\n  - **8 open 2 weeks ahead** at 7:00 AM PT.\n  - Cancellations go back on the calendar within 24 hours.\n  - The 7 AM time comes from Campflare, OutdoorStatus and The Big Outside; the Inyo page doesn't give a time.\n- **No lottery.** Inyo only runs one for Mt. Whitney.\n- **Group size limit: 15** (including day use).\n- **Fees:** $5 per person + $6 reservation fee.\n- **Paperwork:** You must print the permit (up to 7 days before) or the reservation is cancelled. Leader and alternate names can't be changed.\n- **Rules:**\n  - Bear canisters are required if you camp between the trailhead and Mono Pass (for example, at Ruby Lake). Beyond the pass they're the only practical option because the trees are too short to hang food.\n  - No campfires above 10,000 ft, so none in the basin.\n- **The catch for 12 people:** your group needs **all 12** of the slots released 6 months ahead. If anyone else books first, even one person, a single 12-person permit is gone for that date. Two permits on the same day share the same quota, so splitting only helps if you use **two different entry dates**, or one 6-month permit plus the 2-week release.\n- **Release dates for 2027:**\n\n  | Wednesday start | 6-month release (7 AM PT) | 2-week release (7 AM PT) |\n  |---|---|---|\n  | July 21 | Jan 21 | July 7 |\n  | July 28 | Jan 28 | July 14 |\n  | Aug 4 | Feb 4 | July 21 |\n  | Aug 11 | Feb 11 | July 28 |\n  | Aug 18 | Feb 18 | Aug 4 |\n\n- **Outdated or conflicting sources:**\n  - Hiking Project says 15 reservable + 10 walk-in, with walk-ins issued at 11 AM the day before. That's an old system.\n  - Backcountry Emily says 50% is released 6 months ahead.\n  - **I trust the official Inyo pages (60/40 split, quota 20/12/8).**\n\n## Fire, closures and access\n- **Rock Creek Road maintenance closure, Oct 19–23, 2026** (Inyo release dated Oct 14, 2026): no driving between the pack station and Mosquito Flat, though you can walk in. This doesn't affect summer 2027.\n- **Rock Fire (July 2026, about 12,000 acres, 100% contained per CAL FIRE):** it burned near Big Pine and Independence, roughly 50 miles south. Its closure covers Sawmill, Taboose, Red Lake and Birch Lake through Dec 31, 2026. **It doesn't affect Rock Creek or Mono Pass.**\n- None of the current Inyo alerts mention the Mono Pass trail. Stage 1 fire restrictions are in effect forest-wide.\n- **Conditions:**\n  - Snow on the Mono Pass approach in late June 2024 called for microspikes.\n  - Mosquitoes are bad until mid-August.\n  - The basin is exposed, windy and gets thunderstorms.\n  - A September 2025 AllTrails review called the Pioneer Basin spur trail rough, with steep climbs to lakes 2 and 3.\n\n## How I scored it\n- **Scenery 27/35:**\n  - On the way in: Little Lakes Valley, Ruby Lake under granite walls, and big views across Mono Creek.\n  - The basin has seven lakes under Mts. Crocker, Stanford, Huntington and Hopkins. The uppermost lake sits in a cirque under Mt. Crocker.\n  - Against that, it's a broad, open basin right at treeline, not a granite bowl with turquoise water. One High Sierra Topix poster found it \"not as scenic as I would have liked.\" It looks best while the meadows are still green.\n- **Experience 22/25:**\n  - Excellent basecamp for day hikes: wandering between the lakes, Fourth Recess Lake, Golden Lake, and Mt. Hopkins (an easy, sandy class 1 walk-up).\n  - Fishing: brook and rainbow trout, golden trout in some upper lakes, and golden/rainbow hybrids at Fourth Recess.\n  - Hiking Project says the lowest lake has a large campsite used by pack trains, which suits 12 people.\n  - Downsides: the upper lakes have little wind shelter, no campfires are allowed, and the lowest lake is shallow.\n- **Access 11/20:** Driving and the trailhead are easy, and Rock Creek Pack Station can carry your gear in. But 8–9.5 miles with 2,200–3,000 ft of gain over a 12,000-ft pass is far beyond your 4.5 mi / 1,600 ft average. You start at 10,240 ft, so plan an acclimatization night.\n- **Permit 13/20:** Twelve slots open 6 months ahead (Lamarck has only 6), and Mono Pass is less contested than the High Trail toward Thousand Island Lake. Still, you'd need every one of those 12 slots, so book at 7:00 AM PT sharp or plan a split across two dates.\n\n**Option:** For an easier first day, camp at Trail Lakes (about 5.5 mi) or Fourth Recess Lake. Fourth Recess skips the final climb, and you can day-hike to Pioneer Basin from there.\n\n## URLs used\n- https://www.fs.usda.gov/r05/inyo/recreation/trails/mono-pass-trail\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf\n- https://www.fs.usda.gov/r05/inyo/alerts\n- https://www.fs.usda.gov/r05/inyo/newsroom/releases/temporary-closure-rock-creek-road\n- https://www.fs.usda.gov/r05/inyo/alerts/rock-fire-area-closure\n- https://inciweb.wildfire.gov/incident-information/cainf-rock-fire\n- https://www.fire.ca.gov/incidents/2026/7/20/rock-fire\n- https://thesheetnews.com/2026/07/23/rock-fire-update/\n- https://abc30.com/post/rock-fire-burning-inyo-county-forces-partial-closure-national-forest/19564908/\n- https://sierrarecmagazine.com/rock-creek-road-to-close-oct-19-23-for-maintenance/\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://www.recreation.gov/permits/233262 (I couldn't fetch this page directly; the details come from the sources above)\n- https://campflare.com/permit/inyo\n- https://outdoorstatus.com/permits/us/california/inyo-national-forest/wilderness-permit/\n- https://outdoorstatus.com/trips/us/california/inyo-national-forest/pioneer-basin-lakes-via-mono-pass/\n- https://thebigoutside.com/how-to-get-a-yosemite-or-high-sierra-wilderness-permit/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://ingasadventures.com/deciphering-the-inyo-national-forest-permit-system/\n- https://happieroutdoors.com/camping-in-inyo-national-forest/\n- https://highsierratrails.com/pioneer_basin/pioneer_overview.html\n- https://highsierratrails.com/pioneer_basin/pioneer_trail.html\n- https://highsierratrails.com/pioneer_basin/pioneer_destination.html\n- https://highsierratrails.com/pioneer_basin/pioneer_resources.html\n- https://highsierratopix.com/community/viewtopic.php?t=23346\n- https://highsierratopix.com/community/viewtopic.php?t=23436\n- https://www.highsierratopix.com/community/viewtopic.php?t=23618\n- https://www.hikingproject.com/trail/7085455/pioneer-basin-29e47\n- https://www.alltrails.com/trail/us/california/pioneer-basin-lakes-trail\n- https://www.alltrails.com/trail/us/california/upper-pioneer-basin-lakes-and-mono-creek\n- https://cdn.alltrails.com/trail/us/california/mono-pass-from-mosquito-flat-trailhead\n- https://icyseas.org/2025/12/06/back-packing-to-pioneer-basin-in-californias-high-sierra-beaches-and-swimming-and-trout/\n- https://www.topozone.com/california/fresno-ca/basin/pioneer-basin-2/\n- https://www.yellowmaps.com/usgs/topo.cfm?map=ca-264806-pioneer-basin-lakes"
+}

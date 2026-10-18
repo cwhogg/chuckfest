@@ -1,0 +1,225 @@
+{
+  "candidate": {
+    "name": "Raymond Lake",
+    "area": "Mokelumne Wilderness (Humboldt-Toiyabe National Forest)",
+    "trailhead": "Pacific Crest Trail at Ebbetts Pass",
+    "why": "Little-known lake under the spires of Raymond Peak."
+  },
+  "site": {
+    "name": "Raymond Lake (via Ebbetts Pass)",
+    "region": "Ebbetts Pass - Mokelumne Wilderness",
+    "area": "Humboldt-Toiyabe / Stanislaus National Forest, Alpine County, CA",
+    "description": "A single lake at about 9,000 ft under the volcanic andesite spires of Raymond Peak, reached by the PCT north from Ebbetts Pass and then a short side trail. Fishing is good and the dawn light on the peak is dramatic. However, it is about 10.5 miles one way, and the Mokelumne's 8-person overnight cap plus its one-mile separation rule prevent a shared basecamp for this group.",
+    "latitude": 38.6098,
+    "longitude": -119.8351,
+    "difficulty": "strenuous",
+    "distanceMiles": 10.5,
+    "elevationGainFt": 1900,
+    "campElevationFt": 9000,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Ebbetts Pass Trailhead",
+    "permitGroupSizeLimit": 8,
+    "permitUrl": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits",
+    "permitNotes": "Free, with no quota, lottery, rolling window or recreation.gov listing (the Carson Pass quota area does not apply). Download the General Mokelumne Wilderness permit, print and sign it, then email a scan or photo to SM.FS.mowilderness@usda.gov, or get one in person at the Amador Ranger District office in Pioneer, CA. Write 'Ebbetts Pass Trailhead' as the entry point; you must start from the trailhead on the permit. The self-issue permits at the trailhead are for Carson-Iceberg, not this trip. Groups are capped at 8 overnight (12 day use) under Forest Order 04-17-01-26-05, in effect July 10, 2026 to May 31, 2029. Related groups may not camp or travel within 1 mile of each other. Wood fires are banned throughout the Mokelumne, and a free CAL FIRE campfire permit is required to use a stove.",
+    "sceneryScore": 22,
+    "experienceScore": 12,
+    "accessScore": 4,
+    "permitScore": 10,
+    "rankingNotes": "Dramatic volcanic peak above a trout lake, but it fails the 10-mile limit and the 8-person cap prevents a shared basecamp for 12. Drop it (48/100).",
+    "sources": [
+      {
+        "label": "H-T Wilderness",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/wilderness"
+      },
+      {
+        "label": "H-T Mokelumne restricted use alert",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/restricted-use-mokelumne-wilderness-area-carson-ranger-district"
+      },
+      {
+        "label": "H-T Raymond Lake Trail",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/trails/raymond-lake-trail"
+      },
+      {
+        "label": "H-T Ebbetts Pass Trailhead",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/ebbetts-pass-trailhead-pct-access"
+      },
+      {
+        "label": "H-T PCT Sonora-Carson",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/trails/pacific-crest-trail-sonora-pass-carson-pass"
+      },
+      {
+        "label": "H-T Permits",
+        "url": "https://www.fs.usda.gov/r04/humboldt-toiyabe/permits"
+      },
+      {
+        "label": "Eldorado Mokelumne overnight permits",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits"
+      },
+      {
+        "label": "Stanislaus wilderness permits",
+        "url": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits"
+      },
+      {
+        "label": "Eldorado brochure (search snippet only)",
+        "url": "https://www.fs.usda.gov/media/246223"
+      },
+      {
+        "label": "Eldorado brochure (search snippet only)",
+        "url": "https://www.fs.usda.gov/media/246222"
+      },
+      {
+        "label": "2023 Moke permit instructions (search snippet only)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/eldorado/2023%20moke%20permit%20instructions%20summer.pdf"
+      },
+      {
+        "label": "2025 Moke permit instructions (search snippet only)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/eldorado/publication/2025%20Moke%20Permit%20Instructions%20Summer.pdf"
+      },
+      {
+        "label": "FS media 202 (search snippet only)",
+        "url": "https://www.fs.usda.gov/media/202"
+      },
+      {
+        "label": "FS media 121988 (search snippet only)",
+        "url": "https://www.fs.usda.gov/media/121988"
+      },
+      {
+        "label": "Moke day use PDF (search snippet only)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/eldorado/rog_wild_moke_dayuse.pdf"
+      },
+      {
+        "label": "Moke day use parking (search snippet only)",
+        "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-day-use-permit-parking"
+      },
+      {
+        "label": "Sierra Rec Magazine",
+        "url": "https://sierrarecmagazine.com/explore-mokelumne-wilderness/backpacking-trails-mokelumne-wilderness/"
+      },
+      {
+        "label": "Lily Tang permits guide",
+        "url": "https://lilymtang.com/blog/guide-to-wilderness-permits/"
+      },
+      {
+        "label": "PCTA local permits",
+        "url": "https://www.pcta.org/discover-the-trail/permits/local-permits/"
+      },
+      {
+        "label": "Tahoe-to-Whitney Raymond Lake Junction to Ebbetts",
+        "url": "https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Raymond_Lake_Junction_to_Ebbetts_Pass.html"
+      },
+      {
+        "label": "Tahoe-to-Whitney Wet Meadows to Raymond Lake",
+        "url": "https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Mokelumne_Wilderness_Wet_Meadows_to_Raymond_Lake.html"
+      },
+      {
+        "label": "Tahoe-to-Whitney Carson Pass",
+        "url": "https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Carson_Pass.html"
+      },
+      {
+        "label": "Tahoe-to-Whitney miles/elevations",
+        "url": "https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Carson_to_Ebbetts_Maps/Backpacking-Miles-Elevations-Carson-Pass-Lake-Alpine.html"
+      },
+      {
+        "label": "AllTrails Ebbetts to Raymond Lake",
+        "url": "https://www.alltrails.com/trail/us/california/ebbetts-pass-trailhead-to-raymond-lake"
+      },
+      {
+        "label": "AllTrails via Wet Meadows",
+        "url": "https://www.alltrails.com/trail/us/california/raymond-lake-via-wet-meadows-trailhead"
+      },
+      {
+        "label": "AllTrails Mokelumne list",
+        "url": "https://www.alltrails.com/lists/mokelumne-wilderness-hikes"
+      },
+      {
+        "label": "AllTrails Mokelumne fishing",
+        "url": "https://www.alltrails.com/parks/us/california/mokelumne-wilderness/fishing"
+      },
+      {
+        "label": "TheOutbound",
+        "url": "https://www.theoutbound.com/california/hiking/ebbetts-pass-trailhead-to-raymond-lake"
+      },
+      {
+        "label": "SummitPost North Slope",
+        "url": "https://www.summitpost.org/north-slope-raymond-lake/530218"
+      },
+      {
+        "label": "SummitPost Raymond Peak",
+        "url": "https://www.summitpost.org/raymond-peak/151495"
+      },
+      {
+        "label": "SummitPost Mokelumne",
+        "url": "https://www.summitpost.org/mokelumne-wilderness/280630"
+      },
+      {
+        "label": "TopoZone Raymond Lake",
+        "url": "https://www.topozone.com/california/alpine-ca/lake/raymond-lake-3/"
+      },
+      {
+        "label": "Trailforks Raymond Lake Trail",
+        "url": "https://www.trailforks.com/trails/raymond-lake-trail/"
+      },
+      {
+        "label": "Trailforks Wet Meadows route",
+        "url": "https://www.trailforks.com/route/raymond-lake-via-wet-meadows-trail/"
+      },
+      {
+        "label": "Komoot",
+        "url": "https://www.komoot.com/smarttour/e2813422187/raymond-lake-via-wet-meadows-trailhead"
+      },
+      {
+        "label": "Backpacker",
+        "url": "https://www.backpacker.com/trips/pacific-crest-trail-best-weekend-mokelumne-wilderness-ca/"
+      },
+      {
+        "label": "Reynolds McLaughlin blog",
+        "url": "http://www.blogs.reynoldsmclaughlin.com/?p=131"
+      },
+      {
+        "label": "Greg Lamy",
+        "url": "https://www.greglamy.net/Hiking/RaymondLake.html"
+      },
+      {
+        "label": "The Huntin Daddy",
+        "url": "https://thehuntindaddy.com/index.php/peak-bagging/raymond-peak/"
+      },
+      {
+        "label": "NorCal Fish Reports",
+        "url": "https://www.norcalfishreports.com/lakes/2541/raymond-lake-(alpine-county).php"
+      },
+      {
+        "label": "Wikipedia Raymond Peak",
+        "url": "https://en.wikipedia.org/wiki/Raymond_Peak"
+      },
+      {
+        "label": "Wikipedia Tamarack Fire",
+        "url": "https://en.wikipedia.org/wiki/Tamarack_Fire"
+      },
+      {
+        "label": "YubaNet Tamarack",
+        "url": "https://yubanet.com/containedca16/tamarack/"
+      },
+      {
+        "label": "SFGate Tamarack",
+        "url": "https://www.sfgate.com/california-wildfires/article/Tamarack-Fire-Markleeville-California-wildfire-16326378.php"
+      },
+      {
+        "label": "KUNR Tamarack",
+        "url": "https://www.kunr.org/local-stories/2021-07-26/updates-tamarack-fire"
+      },
+      {
+        "label": "Alpine County BAER report",
+        "url": "https://alpinecountyca.gov/DocumentCenter/View/4709/2500-8_Tmerack-BAER_2021_Public_Aug17?bidId="
+      }
+    ],
+    "caveats": "One-way distance figures conflict: 10.2 (TheOutbound), about 10 (SummitPost, trip blog), about 10.5 (Forest Service side trail plus Tahoe-to-Whitney PCT mileage) and 10.8 (AllTrails). Elevation gain of about 1,900 ft comes from AllTrails and TheOutbound; no agency figure exists, and the rolling trail means a similar climb on the way out. Peak elevation is not given in the notes. The 2021 Tamarack Fire started near Raymond Peak; no current closure was found, but it is unconfirmed whether the lake basin burned. Highway 4 is unplowed and usually opens around Memorial Day, and snow was reported on May 21, 2026; current status was not checked. The PCT on Raymond Peak's northeast flank is 'subject to cyclic degradation.' A 2024 article gives a different permit email (SM.FS.mokewild@usda.gov). The latest Eldorado permit-instructions PDF was not opened. Some sources say fires are only banned above 8,000 ft; that is outdated. Wet Meadows is an alternative approach (about 6 mi per SummitPost; 11.6 mi round trip from a 4WD start), but the group-size rules still apply."
+  },
+  "notes": "Now the Ebbetts Pass trailhead page, the Stanislaus permits page, and the H-T permits page.\nLet me check whether I can still run searches for the trail-distance and fire details.\nRaymond Lake from Ebbetts Pass doesn't work for this group, for two reasons:\n\n1. **It breaks your 10-mile limit.** Every source I found puts the lake 10 to 10.8 miles one way from Ebbetts Pass, not around 5.\n2. **The group can't legally camp together.** As of July 2026, the Mokelumne Wilderness allows at most 8 people per overnight group. Related groups may not camp or travel within one mile of each other, and Raymond Lake is the only real lake in that part of the wilderness. So two permits of 6 couldn't share a basecamp there.\n\n**Score: 48/100 (scenery 22 / experience 12 / access 4 / permit 10)**, and it fails your hard limits. I'd drop it.\n\n## Key facts\n\n| Item | Best figure | Conflicts and which source I trust |\n|---|---|---|\n| One-way distance | **About 10.5 mi** | Tahoe-to-Whitney: the Raymond Lake turnoff is 9.78 mi north of Ebbetts Pass on the PCT, then 0.97 mi to the lake. The Forest Service says the side trail is 0.7 mi, which gives about 10.5 mi; I trust that most. AllTrails says 10.8 mi one way, TheOutbound 10.2, SummitPost and a trip blog \"about 10.\" |\n| Elevation gain | **About 1,900 ft going in** | AllTrails 1,902 ft, TheOutbound 1,909 ft. The trailhead and lake are only about 250 ft apart in height, but the trail goes up and down a lot, so expect a similar climb on the way out. No agency figure exists. |\n| Camp elevation | **About 9,000 ft** | USGS (via TopoZone) 8,999 ft, SummitPost 8,994, AllTrails 9,000. They agree. |\n| Lake coordinates | **38.6098, -119.8351** | USGS (via TopoZone). The side-trail turnoff is about 38.6169, -119.8318 (Trailforks and Backpacker waypoints agree). |\n| Trailhead | **Ebbetts Pass Trailhead – PCT Access**, on Highway 4, 38.5432, -119.8056, 8,750 ft | Humboldt-Toiyabe trailhead page. Vault toilet, no fee, season May–October. |\n\n## Permit system\n\n- **There is no quota, lottery, rolling window, opening time or recreation.gov listing.** The Stanislaus forest page says there are no quotas or reservations for the Mokelumne except the Carson Pass area, which doesn't apply here.\n- **How to get one:** download the General Mokelumne Wilderness permit, print it, sign it, and email a scan or photo to SM.FS.mowilderness@usda.gov. You can also get one in person at the Amador Ranger District office in Pioneer, CA. It's free.\n- **Entry point:** write \"Ebbetts Pass Trailhead\" on the form; you must start from the trailhead listed on the permit. The self-issue permits at that trailhead are for the Carson-Iceberg Wilderness, not this trip.\n- **Group size:** at most 8 people overnight (12 for day use), under Forest Order 04-17-01-26-05, in effect July 10, 2026 to May 31, 2029. Eldorado's permit page adds that you may not camp or travel within one mile of a related group.\n- **Fires:** wood fires are banned anywhere in the Mokelumne at any time. You still need a free CAL FIRE campfire permit to use a stove. AllTrails and a fishing site say fires are only banned above 8,000 ft; that's out of date.\n- **Conflict:** one 2024 magazine article gives a different email (SM.FS.mokewild@usda.gov). I trust the Eldorado page, updated March 2026.\n\n## Fire, closures and access\n\n- **Tamarack Fire (2021):** started by lightning on July 4, 2021 near Raymond Peak (around PCT mile 1060, Pleasant Valley Creek area) and burned 68,637 acres, spreading mostly northeast toward Markleeville. The PCT between Highways 88 and 4 was closed that summer. I found no current closure. Trail reviews from 2024 and May 2026 sound normal. I couldn't confirm whether the lake basin itself burned.\n- **Highway 4** isn't plowed. It closes after the first big snow and usually reopens around Memorial Day. An AllTrails hiker went in on May 21, 2026 and still hit some snow.\n- **Trail condition:** Tahoe-to-Whitney says the PCT stretch on Raymond Peak's northeast flank, just before the turnoff, is \"subject to cyclic degradation.\" The route is very exposed.\n- **Scenery:** the rock is volcanic (andesite spires), not granite. A trip blog describes it as quite different from typical Sierra granite.\n\n## Scoring\n\n- **Scenery 22/35:** a dramatic spiky peak above a single lake with good dawn light. But there's no granite or turquoise water, and Lamarck Lakes earned 28.\n- **Experience 12/25:** fishing is good (a 2022 review describes the lake as full of jumping trout). Day hikes are limited to Raymond Peak (a loose, steep cross-country climb of about 1,100 ft in 0.6 mi) and walks along the PCT. No campfires, and no legal shared camp for 12.\n- **Access 4/20:** more than twice your 4.5-mile average and over the 10-mile limit. The paved road to the trailhead is the only plus.\n- **Permit 10/20:** getting permits is guaranteed and free, but the 8-person cap and one-mile rule rule out the shared basecamp you want.\n\n**If you still like the lake:** SummitPost says it's about 6 miles from the Wet Meadows/Sunset Lakes side. A 2019 trip from a 4WD-only start reported 11.6 miles round trip with 2,230 ft of gain, which fits your sweet spot. The group-size rules still apply, though. Also note that I hit my tool limit before I could open Eldorado's latest permit-instructions PDF or check current Highway 4 status.\n\n## URLs used\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/wilderness\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts/restricted-use-mokelumne-wilderness-area-carson-ranger-district\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/trails/raymond-lake-trail\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/ebbetts-pass-trailhead-pct-access\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/trails/pacific-crest-trail-sonora-pass-carson-pass\n- https://www.fs.usda.gov/r04/humboldt-toiyabe/permits\n- https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits\n- https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits\n- https://www.fs.usda.gov/media/246223 and https://www.fs.usda.gov/media/246222 (Eldorado brochures, search snippets only)\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/eldorado/2023%20moke%20permit%20instructions%20summer.pdf (search snippet only)\n- https://www.fs.usda.gov/sites/nfs/files/r05/eldorado/publication/2025%20Moke%20Permit%20Instructions%20Summer.pdf (search snippet only)\n- https://www.fs.usda.gov/media/202 (search snippet only)\n- https://www.fs.usda.gov/media/121988 (search snippet only)\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/eldorado/rog_wild_moke_dayuse.pdf (search snippet only)\n- https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-day-use-permit-parking (search snippet only)\n- https://sierrarecmagazine.com/explore-mokelumne-wilderness/backpacking-trails-mokelumne-wilderness/\n- https://lilymtang.com/blog/guide-to-wilderness-permits/\n- https://www.pcta.org/discover-the-trail/permits/local-permits/\n- https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Raymond_Lake_Junction_to_Ebbetts_Pass.html\n- https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Mokelumne_Wilderness_Wet_Meadows_to_Raymond_Lake.html\n- https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Carson_Pass.html\n- https://tahoetowhitney.com/Carson_Pass%20to%20Ebbetts%20Pass/Carson_to_Ebbetts_Maps/Backpacking-Miles-Elevations-Carson-Pass-Lake-Alpine.html\n- https://www.alltrails.com/trail/us/california/ebbetts-pass-trailhead-to-raymond-lake\n- https://www.alltrails.com/trail/us/california/raymond-lake-via-wet-meadows-trailhead\n- https://www.alltrails.com/lists/mokelumne-wilderness-hikes\n- https://www.alltrails.com/parks/us/california/mokelumne-wilderness/fishing\n- https://www.theoutbound.com/california/hiking/ebbetts-pass-trailhead-to-raymond-lake\n- https://www.summitpost.org/north-slope-raymond-lake/530218\n- https://www.summitpost.org/raymond-peak/151495\n- https://www.summitpost.org/mokelumne-wilderness/280630\n- https://www.topozone.com/california/alpine-ca/lake/raymond-lake-3/\n- https://www.trailforks.com/trails/raymond-lake-trail/\n- https://www.trailforks.com/route/raymond-lake-via-wet-meadows-trail/\n- https://www.komoot.com/smarttour/e2813422187/raymond-lake-via-wet-meadows-trailhead\n- https://www.backpacker.com/trips/pacific-crest-trail-best-weekend-mokelumne-wilderness-ca/\n- http://www.blogs.reynoldsmclaughlin.com/?p=131\n- https://www.greglamy.net/Hiking/RaymondLake.html\n- https://thehuntindaddy.com/index.php/peak-bagging/raymond-peak/\n- https://www.norcalfishreports.com/lakes/2541/raymond-lake-(alpine-county).php\n- https://en.wikipedia.org/wiki/Raymond_Peak\n- https://en.wikipedia.org/wiki/Tamarack_Fire\n- https://yubanet.com/containedca16/tamarack/\n- https://www.sfgate.com/california-wildfires/article/Tamarack-Fire-Markleeville-California-wildfire-16326378.php\n- https://www.kunr.org/local-stories/2021-07-26/updates-tamarack-fire\n- https://alpinecountyca.gov/DocumentCenter/View/4709/2500-8_Tmerack-BAER_2021_Public_Aug17?bidId="
+}

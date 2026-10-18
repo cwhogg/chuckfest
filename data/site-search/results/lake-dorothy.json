@@ -1,0 +1,125 @@
+{
+  "candidate": {
+    "name": "Lake Dorothy",
+    "area": "Inyo National Forest (John Muir Wilderness)",
+    "trailhead": "Convict Lake",
+    "why": "Wild canyon geology with off-trail day trips to Bighorn Lake and Lake Wit-So-Nah-Pah."
+  },
+  "site": {
+    "name": "Lake Dorothy",
+    "region": "Eastern Sierra - John Muir Wilderness",
+    "area": "Convict Canyon / Convict Lake, Inyo National Forest (near Mammoth Lakes)",
+    "description": "A large, clear lake that shifts from aquamarine to blue beneath Red Slate Mountain, reached by a dramatic canyon walk past Mt. Morrison and striped metamorphic rock. It makes a strong basecamp with day hikes to Bighorn, Genevieve, Edith and Mildred Lakes and a scramble option up Mt. Baldwin. The approach is long and steep with a dangerous Convict Creek ford where the bridge washed out.",
+    "latitude": 37.54,
+    "longitude": -118.87,
+    "difficulty": "strenuous",
+    "distanceMiles": 6.05,
+    "elevationGainFt": 2800,
+    "campElevationFt": 10275,
+    "peakElevationFt": null,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": "rolling",
+    "permitAdvanceDays": null,
+    "permitOpenTime": "07:00",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Convict Creek (JM04)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.recreation.gov/permits/233262",
+    "permitNotes": "Inyo NF, online only, no walk-ups. Releases daily at 7 AM Pacific: 60% of quota 6 months ahead, 40% 2 weeks ahead (same weekday). Quota season May 1-Nov 1. No lottery. Max group 15; groups can't combine above 15. Must start on permit date/trailhead; print by 10 AM on start date or cancelled. $6/permit + $5/person; leader names can't change. Sierra Rec Magazine (2023) lists daily quota of 10 (6 at 6-month, 4 at 2-week release), unconfirmed against official sheet; if correct, a group of 12 cannot start the same day and must split (e.g., two permits of 6 on consecutive days).",
+    "sceneryScore": 29,
+    "experienceScore": 21,
+    "accessScore": 12,
+    "permitScore": 6,
+    "rankingNotes": "Gorgeous aquamarine lake and colorful canyon basecamp (68/100), but a tight ~10-person quota forces staggered starts and the 6-mile, ~2,900 ft climb includes a dangerous ford.",
+    "sources": [
+      {
+        "label": "Z&B Johnson Adventures - Convict Canyon to Lake Dorothy",
+        "url": "https://sites.google.com/site/zbjohnsonadventures/hikes/california-nevada/convict-canyon-to-lake-dorothy"
+      },
+      {
+        "label": "Recreation.gov - Inyo wilderness permits",
+        "url": "https://www.recreation.gov/permits/233262"
+      },
+      {
+        "label": "Inyo NF Wilderness Permits",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits"
+      },
+      {
+        "label": "Inyo NF Wilderness Regulations",
+        "url": "https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations"
+      },
+      {
+        "label": "Inyo trail quota sheet (linked, not opened)",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf"
+      },
+      {
+        "label": "Sierra Rec Magazine - Inyo trail quotas",
+        "url": "https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/"
+      },
+      {
+        "label": "Backcountry Emily - California backpacking permits",
+        "url": "https://backcountryemily.com/california-backpacking-permits/"
+      },
+      {
+        "label": "Inyo JMT Min Impact Wilderness Regs",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf"
+      },
+      {
+        "label": "USFS media 267435",
+        "url": "https://www.fs.usda.gov/media/267435"
+      },
+      {
+        "label": "Komoot - Lake Dorothy",
+        "url": "https://www.komoot.com/smarttour/e1211010241/lake-dorothy-mammoth-lakes"
+      },
+      {
+        "label": "AllTrails - Convict Lake to Mildred, Dorothy and Bighorn Lakes",
+        "url": "https://www.alltrails.com/trail/us/california/convict-lake-mildred-lake-lake-dorthy-and-bighorn-lake"
+      },
+      {
+        "label": "AllTrails - Convict Creek Trail to Mildred Lake",
+        "url": "https://www.alltrails.com/trail/us/california/convict-creek-trail-to-mildred-lake"
+      },
+      {
+        "label": "AllTrails - Convict Lake POI",
+        "url": "https://www.alltrails.com/poi/us/california/crowley-lake/convict-lake"
+      },
+      {
+        "label": "Modern Hiker - Mildred Lake via Convict Canyon",
+        "url": "https://modernhiker.com/hike/mildred-lake-via-convict-canyon/"
+      },
+      {
+        "label": "BSA campbook - Lake Dorothy",
+        "url": "http://www.bsahighadventure.org/OA_campbook/inyo_mono/dorothy.html"
+      },
+      {
+        "label": "High Sierra Topix thread 21884",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?t=21884"
+      },
+      {
+        "label": "High Sierra Topix thread 9494",
+        "url": "https://www.highsierratopix.com/community/viewtopic.php?f=1&t=9494&p=71239"
+      },
+      {
+        "label": "My Own 100 Hikes - Convict Lake towards Mildred Lake",
+        "url": "https://myown100hikes.blogspot.com/2023/12/convict-lake-towards-mildred-lake-hiked.html"
+      },
+      {
+        "label": "CAL FIRE - Pack Fire update",
+        "url": "https://www.fire.ca.gov/incidents/2025/11/13/pack-fire/updates/9426ed9d-aa7b-4fd0-bdfa-e3c9394703a5"
+      },
+      {
+        "label": "Wikipedia - Pack Fire",
+        "url": "https://en.wikipedia.org/wiki/Pack_Fire"
+      },
+      {
+        "label": "IQAir - Pack Fire spotlight",
+        "url": "https://www.iqair.com/us/newsroom/wildfire-map-spotlight-pack-fire-california"
+      }
+    ],
+    "caveats": "Coordinates (37.54, -118.87) are the researcher's own estimate, not sourced; verify on CalTopo/USGS. Daily quota of 10 (6/4) is from Sierra Rec Magazine 2023, not confirmed on official sheet. Rolling release is two-stage (6 months and 2 weeks), so a single advance-day figure was left null. Mileage conflicts: Z&B 6.05 mi from day-use lot (+0.25 from backpacker lot); Komoot 12.5 mi RT; Modern Hiker sign implies ~6.9 mi; AllTrails 14.2 mi/3,274 ft includes Bighorn Lake. Gain 2,800 (Z&B) vs 2,974 ft (Komoot). Convict Creek bridge is out; ford very dangerous in spring/high water—go late July or later. 2020 report of four washouts between old bridge and Mildred Lake; hot, exposed climb. Pack Fire (Nov 2025, ~3,400 acres) put Convict Lake under evacuation warning; burn extent in Convict Canyon not verified. Stage 1 fire restrictions in effect; no campfires above 10,000 ft. Backcountry Emily inconsistently cites 50% vs 60% release share; official is 60%."
+  },
+  "notes": "I'd score Lake Dorothy **68/100**. The scenery is beautiful, but the permit system almost certainly can't fit 12 people starting on the same day, and the hike in is longer and steeper than your sweet spot, with a creek ford where the bridge washed out.\n\nI ran out of web lookups before I could check three things: the official trailhead quota sheet, the lake's coordinates, and the Pack Fire burn map. Those are flagged below.\n\n## Trail facts\n\n| Item | Figure | Source / confidence |\n|---|---|---|\n| Trailhead | Convict Lake, ~7,600 ft. Paved road off US-395, about 4.4 mi south of the Mammoth Lakes turnoff | Z&B Johnson (good) |\n| One-way miles | **About 6.05 mi** from the day-use lot, about 0.25 mi more from the backpacker lot | Z&B GPS trip report (**trusted**) |\n| Gain | **About 2,800–3,000 ft** one way | Z&B says 2,800; Komoot says 2,974 |\n| Camp elevation | **10,275 ft** | Komoot |\n| Coordinates | **About 37.54° N, 118.87° W. This is my own estimate, not from a source.** Check on CalTopo or USGS. | Unverified |\n\n**Where the sources disagree:**\n- AllTrails says 14.2 mi round trip with 3,274 ft of gain, but that route goes on to Bighorn Lake.\n- Komoot says 12.5 mi round trip.\n- Modern Hiker reports a sign 0.9 mi in reading \"6 miles to Lake Dorothy,\" which makes about 6.9 mi total.\n- A Boy Scouts guide says 6 miles and \"strenuous to very strenuous.\"\n\nI trust Z&B because they logged mileage at each landmark: 3.7 mi to the washed-out bridge, 5.0 to Mildred Lake's outlet, 6.05 to Dorothy. They also describe a use-trail shortcut that saves about 0.45 mi over the round trip.\n\n## Hazards, fire and closures\n- **Convict Creek ford:** The bridge is still out. A 2023 trailhead sign warned about it. Z&B call the crossing \"very dangerous in spring\" or whenever the water is more than moderate, and recommend going later in summer.\n- **Trail washouts:** A 2020 High Sierra Topix report described four spots between the old bridge and Mildred Lake where the trail was gone, leaving loose rock. AllTrails reviewers also mention snowmelt damage and a hot, exposed climb with little shade.\n- **Pack Fire (Nov 2025):** A roughly 3,400-acre fire near McGee Creek and Crowley Lake put Convict Lake under an evacuation warning. I found nothing saying it burned in Convict Canyon, but I couldn't check the burn map.\n- **Current alerts:** Inyo's alerts list Stage 1 fire restrictions, the Reds Meadow road project and road work in Silver and Wyman Canyon. Nothing is listed for Convict. AllTrails shows people hiking the route in July 2026.\n- **No campfires:** The Inyo National Forest (USFS) bans campfires above 10,000 ft in the John Muir Wilderness, which includes this camp.\n\n## Permits\n- **Entry point:** \"Convict Creek,\" code **JM04**, in the John Muir Wilderness. Permits are issued by Inyo National Forest.\n- **Booking:** https://www.recreation.gov/permits/233262. Everything is booked online; there are no walk-up permits.\n- **Release schedule:** Bookings open daily at 7 AM Pacific. 60% of each day's quota opens 6 months ahead, and the other 40% opens 2 weeks ahead on the same weekday. Quota applies May 1 to Nov 1.\n  - Example: for Wednesday July 14, 2027, the first batch opens Jan 14, 2027 and the second opens Wed June 30, 2027.\n- **No lottery:** Inyo only runs one for Mt. Whitney.\n- **Group size:** 15 maximum. Separate groups can't combine to go over 15.\n- **Other rules:** You must start on the date and trailhead on the permit. Print it by 10 AM on the start date or it's cancelled. Costs $6 per permit plus $5 per person. Leader names can't be changed after booking.\n- **Possible conflict:** Backcountry Emily's guide mentions 50% in one place but 60% elsewhere. The official 60% figure is the one to trust.\n\n**The quota problem:** Sierra Rec Magazine (2023) lists Convict Creek's daily quota as **10 people: 6 at the 6-month release and 4 at the 2-week release**. I couldn't open the official quota sheet to confirm. If it's right, **12 people cannot all start on one day.** Your realistic options:\n- **Two permits of 6, starting a day apart** (Tue + Wed, or Wed + Thu). Each needs the entire 6-month share for its day at 7 AM, and any other party booking first blocks you.\n- **10 people on Wednesday plus 2 on another day.** This requires winning both the 6-month and the 2-week releases.\n\n## Score: 68/100\n\n| Category | Score | Why |\n|---|---|---|\n| Scenery | **29/35** | Large, clear lake that shifts from aquamarine to blue, with Red Slate Mountain behind it. The canyon walk past Mt. Morrison and the striped rock is a highlight. But the rock is mostly colourful metamorphic, not the white granite of Thousand Island, so a bit above Lamarck. |\n| Experience | **21/25** | Strong basecamp: Bighorn, Genevieve, Edith and Mildred Lakes are all day hikes, and Mt. Baldwin is a scramble option. Decent fishing, high camp, plenty of campsites reported. Points off for no campfires and a cold swim. |\n| Access | **12/20** | Easy drive and paved road. But about 6.2 mi and about 2,900 ft is well beyond your sweet spot and your past maximum (2,377 ft). Add the ford, the washouts and the exposed climb. |\n| Permit | **6/20** | A daily quota of about 10 with 6 reservable means the group must split across days and win two competitive 7 AM bookings. Worse than Thousand Island's 8. |\n\nCompared with your benchmarks, it sits clearly below Thousand Island (81) and Lamarck (79). It's worth it only if you accept staggered start days and go in late July or later, when the creek is low.\n\n## URLs used\n- https://sites.google.com/site/zbjohnsonadventures/hikes/california-nevada/convict-canyon-to-lake-dorothy\n- https://www.recreation.gov/permits/233262\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits\n- https://www.fs.usda.gov/r05/inyo/permits/wilderness-regulations\n- https://www.fs.usda.gov/sites/nfs/files/publication/trail%20quota%20sheet.pdf_0.pdf (official quota sheet: linked, not opened)\n- https://sierrarecmagazine.com/backpacking-inyo-national-forest-trail-quotas/\n- https://backcountryemily.com/california-backpacking-permits/\n- https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/JMT%20MinImpact%20WildReg.pdf\n- https://www.fs.usda.gov/media/267435\n- https://www.komoot.com/smarttour/e1211010241/lake-dorothy-mammoth-lakes\n- https://www.alltrails.com/trail/us/california/convict-lake-mildred-lake-lake-dorthy-and-bighorn-lake\n- https://www.alltrails.com/trail/us/california/convict-creek-trail-to-mildred-lake\n- https://www.alltrails.com/poi/us/california/crowley-lake/convict-lake\n- https://modernhiker.com/hike/mildred-lake-via-convict-canyon/\n- http://www.bsahighadventure.org/OA_campbook/inyo_mono/dorothy.html\n- https://www.highsierratopix.com/community/viewtopic.php?t=21884\n- https://www.highsierratopix.com/community/viewtopic.php?f=1&t=9494&p=71239\n- https://myown100hikes.blogspot.com/2023/12/convict-lake-towards-mildred-lake-hiked.html\n- https://www.fire.ca.gov/incidents/2025/11/13/pack-fire/updates/9426ed9d-aa7b-4fd0-bdfa-e3c9394703a5\n- https://en.wikipedia.org/wiki/Pack_Fire\n- https://www.iqair.com/us/newsroom/wildfire-map-spotlight-pack-fire-california\n\n**Still to check:** the Convict Creek quota on the official quota sheet, the lake's coordinates on CalTopo or USGS, and the Pack Fire burn map on InciWeb."
+}

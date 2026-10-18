@@ -1,0 +1,129 @@
+{
+  "candidate": {
+    "name": "Maggie Lakes",
+    "area": "Sequoia National Forest (Golden Trout Wilderness)",
+    "trailhead": "Summit TH (Mountain Home)",
+    "why": "Rarely visited west-side lakes with golden trout."
+  },
+  "site": {
+    "name": "Maggie Lakes via Summit Trailhead",
+    "region": "Southern Sierra - Golden Trout Wilderness",
+    "area": "Sequoia National Forest - Western Divide Ranger District",
+    "description": "Lower Maggie Lake sits at 9,020 ft among granite-ringed lakes, reached by a long forested trail with repeated climbs and drops from Summit Trailhead. It is a strong basecamp for solitude, trout fishing, and day hikes to the middle and upper lakes, Frog Lake, Twin Lakes, and Maggie Mountain. Permits are free and easy to get, but the hike in is long and the scenery is pleasant rather than epic.",
+    "latitude": 36.276079,
+    "longitude": -118.620497,
+    "difficulty": "strenuous",
+    "distanceMiles": 8.9,
+    "elevationGainFt": 2144,
+    "campElevationFt": 9020,
+    "peakElevationFt": 10042,
+    "campAtLake": true,
+    "inSierraNevada": true,
+    "permitType": null,
+    "permitAdvanceDays": null,
+    "permitOpenTime": "",
+    "permitLotteryOpen": null,
+    "permitLotteryClose": null,
+    "permitEntryPoint": "Summit Trailhead (trail 31E14)",
+    "permitGroupSizeLimit": 15,
+    "permitUrl": "https://www.fs.usda.gov/r05/sequoia/permits",
+    "permitNotes": "The permit is free, issued by Sequoia NF, has no recreation.gov listing, and no quota was found, so there is no rolling window, opening time, or lottery. Apply with the Golden Trout Wilderness Overnight Visitor's Permit application by email (SM.FS.SequoiaNF@usda.gov), by mail, or in person at the Western Divide Ranger District, 32588 Hwy 190, Springville (559-539-2607). The permits page asks for applications at least 30 days ahead, and the form says to allow 2 weeks for processing. Permits are typically issued June 15–Nov 30, weather permitting. The 2025 brochure sets a maximum of 15 per party, while the form says groups 'less than 15'; either way, 12 people fit on one permit. A free California Campfire Permit is also required.",
+    "sceneryScore": 19,
+    "experienceScore": 18,
+    "accessScore": 9,
+    "permitScore": 20,
+    "rankingNotes": "66/100 — easiest permit in the Sierra with great solitude and fishing, but about 8.9 mi in for pretty, not epic, scenery.",
+    "sources": [
+      {
+        "label": "Sequoia NF permits",
+        "url": "https://www.fs.usda.gov/r05/sequoia/permits"
+      },
+      {
+        "label": "Visitor's Permit Application",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/publication/Visitor%27s%20Permit%20Application%20MASTER%20-%20Fillable%20%201-21-2026_0.pdf"
+      },
+      {
+        "label": "Golden Trout Wilderness 2025 brochure",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/Golden%20Trout%20Wilderness%202025_0.pdf"
+      },
+      {
+        "label": "Summit Trailhead (USFS)",
+        "url": "https://www.fs.usda.gov/r05/sequoia/recreation/summit-trailhead"
+      },
+      {
+        "label": "Summit Trail (USFS)",
+        "url": "https://www.fs.usda.gov/r05/sequoia/recreation/trails/summit-trail"
+      },
+      {
+        "label": "Western Divide Hiking Trails 2025",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/Western%20Divide%20Hiking%20Trails%202025.pdf"
+      },
+      {
+        "label": "Sequoia NF fire restrictions (snippet)",
+        "url": "https://www.fs.usda.gov/r05/sequoia/alerts/fire-restrictions-sequoia-national-forest"
+      },
+      {
+        "label": "Recorder: Castle/Windy fire reopening",
+        "url": "https://www.recorderonline.com/news/forest-burned-by-castle-and-windy-fires-to-reopen/article_4fd50f1c-b1d8-11ec-8085-e3638b839d55.html"
+      },
+      {
+        "label": "Mountain Home Demonstration State Forest (snippet)",
+        "url": "https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/mountain-home-demonstration-state-forest"
+      },
+      {
+        "label": "Wikipedia: SQF Complex (snippet)",
+        "url": "https://en.wikipedia.org/wiki/SQF_Complex"
+      },
+      {
+        "label": "GTW wordpress: Maggie Lakes",
+        "url": "https://goldentroutwilderness.wordpress.com/sequoia-nf-trips/weekend/maggie-lakes/"
+      },
+      {
+        "label": "The Mighty 190",
+        "url": "https://themighty190.com/golden-trout-wilderness/"
+      },
+      {
+        "label": "PlanetRambler",
+        "url": "https://150mph.planetrambler.com/080927-28_maggielakes/index.html"
+      },
+      {
+        "label": "Burmeister trip report",
+        "url": "https://www.markburmeister.com/tripreport.php?tripid=48"
+      },
+      {
+        "label": "AllTrails (snippets and reviews)",
+        "url": "https://www.alltrails.com/trail/us/california/maggie-lakes-via-summit-trail"
+      },
+      {
+        "label": "Komoot",
+        "url": "https://www.komoot.com/smarttour/e2813590415/maggie-lakes-via-summit-trail"
+      },
+      {
+        "label": "The Outbound (snippet)",
+        "url": "https://www.theoutbound.com/california/hiking/maggie-lakes-via-summit-trail"
+      },
+      {
+        "label": "SierraPeaks (snippet)",
+        "url": "https://sierrapeaks.org/archives/sps00746.htm"
+      },
+      {
+        "label": "Wikipedia: Silver Knapsack Trail (snippet)",
+        "url": "https://en.wikipedia.org/wiki/Silver_Knapsack_Trail"
+      },
+      {
+        "label": "Gaia GPS (snippet)",
+        "url": "https://www.gaiagps.com/hike/369990/maggie-lakes/"
+      },
+      {
+        "label": "HometownLocator GNIS 272310",
+        "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,272310,n,maggie%20lakes.cfm"
+      },
+      {
+        "label": "Calicomaps permit info (snippet)",
+        "url": "https://www.calicomaps.com/sierra-nevada-wilderness-permit-info/"
+      }
+    ],
+    "caveats": "Summit Trailhead is reached via FR 21S50 (North Road) off Hwy 190 near Quaking Aspen, not via Mountain Home. Mileage figures conflict: the sign and Burmeister say 7 mi, Silver Knapsack segments add up to about 12.9 mi, and GPS tracks say about 8.9 mi. Elevation gain going in is about 2,100–2,300 ft (net only about 755 ft), with about 3,900 ft round trip. The 2020 Castle and 2021 Windy fires, plus a 2006 fire, left burn scars; North Road and the trailhead were closed all of 2022. The trail may have washouts, downed trees, and faint sections, with cairn-following near the lakes. The road is rough, narrow, and rocky, with limited parking (plan 3–4 carpools), and rodents have damaged parked cars. The trailhead is open June 15–Nov 15, and North Road may open late in snowy years. There are only two reliable water sources, one unbridged crossing of South Mountaineer Creek, and possible cattle. Lower Maggie has only about 4 good campsites. Current campfire rules and 2026 trip reports were not confirmed, and the 2027 trailhead list has not been published yet. Call the Western Divide Ranger District before committing. The permit open-time field is left empty because there is no reservation window; the schema allows no null there."
+  },
+  "notes": "**Maggie Lakes via Summit Trailhead (Golden Trout Wilderness, Sequoia NF): 66/100**\n\nPermits are about as easy as they get in the Sierra. The problems are that it's about twice as far as your usual hike in, and the scenery is pretty but not epic. It scores well below Thousand Island Lake (81) and Lamarck Lakes (79).\n\n**Correction to the brief:** Summit Trailhead isn't reached through Mountain Home. You get there on Forest Road 21S50 (\"North Road\"), about 10 miles north of Quaking Aspen off Highway 190. Mountain Home State Forest (via Balch Park Road) leads to Shake Camp and the Long Meadow Trail, which is a much longer way to the lakes.\n\n## Key facts\n\n| Item | Best figure | Sources and conflicts |\n|---|---|---|\n| One-way miles to Lower Maggie | **About 8.9 mi** | AllTrails says 17.8 mi round trip and Komoot says 8.9 mi. The goldentroutwilderness.wordpress guide gives about 7.5 mi to the Pecks Canyon vista, then about 1.5 mi more. PlanetRambler estimates 8.5–9 mi and SierraPeaks says 9 mi. **Conflicts:** the trailhead sign and Burmeister's report say 7 mi, which is probably too short. Wikipedia's Silver Knapsack segments add up to about 12.9 mi, likely an older loop route. PlanetRambler's \"12–13 mi\" box covers its trip on to Twin Lakes. I trust the GPS tracks and the mile-by-mile guide, which agree. |\n| Elevation gain | **About 2,100–2,300 ft going in**; about 3,900 ft round trip | Komoot says 2,144 ft, PlanetRambler 2,000–2,200 ft, AllTrails 3,904 ft round trip. Net gain is only about 755 ft (trailhead 8,265 ft to lake 9,020 ft). The trail drops about 1,000 ft at the start and then makes three climbs, so you also gain about 1,600–1,800 ft hiking out. |\n| Camp elevation | **9,020 ft** (Lower Maggie) | Mighty190 and the GTW wordpress guide agree. I didn't find elevations for the middle and upper lakes. |\n| Lake coordinates | **36.276079, −118.620497** | USGS place-name database (GNIS) entry 272310, via HometownLocator |\n| Trailhead coordinates | About 36.2106, −118.5779 | Burmeister's map link |\n\n## Permits\n- **System:** Sequoia National Forest issues these permits itself. They're free, there's no recreation.gov listing, and I found no quota for Summit Trailhead. That means there's **no rolling reservation window, no opening time and no lottery**.\n- **How to apply:** Fill out the \"Application for Golden Trout Wilderness Overnight Visitor's Permit.\" Email it to SM.FS.SequoiaNF@usda.gov, mail it, or drop it off at the Western Divide Ranger District, 32588 Hwy 190, Springville (559-539-2607).\n  - The permits page asks you to apply at least 30 days ahead. The form asks you to allow 2 weeks for processing.\n  - Permits are typically issued June 15–Nov 30, weather permitting.\n  - Info page: https://www.fs.usda.gov/r05/sequoia/permits\n- **Entry point name:** \"Summit Trailhead,\" trail 31E14. It's on the Forest Service's list of open trailheads for 2026. The 2027 list hasn't come out yet.\n- **Group size:** The 2025 wilderness brochure sets a maximum of 15 people per party. The application form words it as groups \"less than 15\" need one permit and larger groups can't be combined. Either way, 12 people fit on one permit.\n- You also need a free California Campfire Permit, and fire restrictions may apply.\n\n## Fire, closures and access problems\n- **Fires:** The 2020 Castle Fire burned Mountain Home and parts of the wilderness, and the 2021 Windy Fire burned near Quaking Aspen. North Road and Summit Trailhead were closed for the whole 2022 season for hazard-tree cleanup. A smaller 2006 fire also scarred the route.\n- **Current trail condition:** The Forest Service page (updated Sept 24, 2026) shows the site open. It warns that because of fires and flooding the trail may have washouts and downed trees, and may disappear in places.\n- **Recent reports:** AllTrails reviews mention many downed trees, burn zones and cairn-following near the lakes. A September 2025 review reports rodents damaging parked cars at the trailhead and a rough road (fine in a 4WD Tacoma), and says the trail is in poor shape but the lakes are worth it.\n- **Road and parking:** The trailhead is open June 15–Nov 15. Parking is limited and hard to turn around in, so plan on 3–4 carpools. The last miles of North Road are a narrow, rocky one-lane road. North Road has been late to open in snowy years (for example 2019).\n- There are only two reliable water sources on the way in, one unbridged creek crossing (South Mountaineer Creek), and you may meet cattle.\n\n## Score\n\n| Category | Score | Why |\n|---|---|---|\n| Scenery | **19/35** | Pleasant lakes ringed by granite at 9,000 ft. The hike in is mostly forest with few views. Burmeister rated the scenery 3 out of 5. This isn't the turquoise, high-alpine \"wow\" the group is after. |\n| Experience | **18/25** | A strong basecamp. Day hikes include the middle and upper lakes (5–15 minutes away), Frog Lake (1 mi), Twin Lakes (2 mi), Summit Lake, and Maggie Mountain (10,042 ft, a fairly easy class 2 scramble). Rainbow/golden hybrid trout are in all the lakes, with bigger fish in the upper lake. Rules are barbless artificial lures only, and the season ends Nov 15. Solitude is excellent. However, Lower Maggie has only about 4 good sites, so 12 people would spread out. |\n| Access | **9/20** | It's 8.9 mi one way, well past your 5.5 mi maximum. The trail climbs and drops repeatedly and is in poor shape, and the trailhead is at the end of a long rough road. |\n| Permit | **20/20** | Free, no quota, email application, and a 15-person limit. |\n| **Total** | **66/100** | |\n\n**Bottom line:** I'd pass on this for an epic trip. It's a good choice for solitude and fishing, but you'd be hiking about 60% farther than usual for scenery below Lamarck's level.\n\n## Sources\n- https://www.fs.usda.gov/r05/sequoia/permits\n- https://www.fs.usda.gov/sites/nfs/files/publication/Visitor%27s%20Permit%20Application%20MASTER%20-%20Fillable%20%201-21-2026_0.pdf\n- https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/Golden%20Trout%20Wilderness%202025_0.pdf\n- https://www.fs.usda.gov/r05/sequoia/recreation/summit-trailhead\n- https://www.fs.usda.gov/r05/sequoia/recreation/trails/summit-trail\n- https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/Western%20Divide%20Hiking%20Trails%202025.pdf\n- https://www.fs.usda.gov/r05/sequoia/alerts/fire-restrictions-sequoia-national-forest (search snippet only)\n- https://www.recorderonline.com/news/forest-burned-by-castle-and-windy-fires-to-reopen/article_4fd50f1c-b1d8-11ec-8085-e3638b839d55.html\n- https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/mountain-home-demonstration-state-forest (snippet)\n- https://en.wikipedia.org/wiki/SQF_Complex (snippet)\n- https://goldentroutwilderness.wordpress.com/sequoia-nf-trips/weekend/maggie-lakes/\n- https://themighty190.com/golden-trout-wilderness/\n- https://150mph.planetrambler.com/080927-28_maggielakes/index.html\n- https://www.markburmeister.com/tripreport.php?tripid=48\n- https://www.alltrails.com/trail/us/california/maggie-lakes-via-summit-trail (snippets and reviews)\n- https://www.komoot.com/smarttour/e2813590415/maggie-lakes-via-summit-trail\n- https://www.theoutbound.com/california/hiking/maggie-lakes-via-summit-trail (snippet)\n- https://sierrapeaks.org/archives/sps00746.htm (snippet; the full page wouldn't load)\n- https://en.wikipedia.org/wiki/Silver_Knapsack_Trail (snippet)\n- https://www.gaiagps.com/hike/369990/maggie-lakes/ (snippet)\n- https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,272310,n,maggie%20lakes.cfm\n- https://www.calicomaps.com/sierra-nevada-wilderness-permit-info/ (snippet)\n\nI hit the tool limit before I could confirm current campfire rules at the lakes or find 2026 trip reports. Call the Western Divide Ranger District before committing."
+}
