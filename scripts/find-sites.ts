@@ -7,6 +7,7 @@
  *   npx tsx scripts/find-sites.ts research   # per-candidate web research → structured site data
  *   npx tsx scripts/find-sites.ts report     # apply hard filters + epic bar → review.md
  *   npx tsx scripts/find-sites.ts import     # passing sites → hike_ideas (status "new") for admin review
+ *   npx tsx scripts/find-sites.ts import --near-misses   # also sites within 2 scenery points of the bar, total ≥ 74
  *
  * Every number the model reports must come with a source URL; the report flags any
  * site missing sources. Admins approve each site on /admin/ideas before it goes live.
@@ -207,6 +208,12 @@ function loadResults(): { site: SiteResult; failures: string[] }[] {
     })
 }
 
+/** Sites cut only for scenery, by at most 2 points, with a strong total. */
+function isNearMiss({ site: s, failures }: { site: SiteResult; failures: string[] }) {
+  const total = s.sceneryScore + s.experienceScore + s.accessScore + s.permitScore
+  return failures.length === 1 && failures[0].startsWith('scenery') && s.sceneryScore >= 26 && total >= 74
+}
+
 function report() {
   const rows = loadResults().sort(
     (a, b) =>
@@ -230,13 +237,13 @@ function report() {
   console.log(`${pass.length} pass, ${rows.length - pass.length} cut. See ${OUT}/review.md`)
 }
 
-async function importPassing() {
-  const pass = loadResults().filter((r) => !r.failures.length)
+async function importPassing(nearMisses: boolean) {
+  const pass = loadResults().filter((r) => !r.failures.length || (nearMisses && isNearMiss(r)))
   await withDb(async (db) => {
     const [chris] = await db.select({ id: members.id }).from(members).where(eq(members.email, 'cwhogg@gmail.com'))
     const existing = new Set((await db.select({ name: hikeIdeas.name }).from(hikeIdeas)).map((r) => r.name))
     let n = 0
-    for (const { site: s } of pass) {
+    for (const { site: s, failures } of pass) {
       if (existing.has(s.name)) continue
       const draft = {
         name: s.name,
@@ -270,7 +277,7 @@ async function importPassing() {
         memberId: chris?.id ?? null,
         name: s.name,
         link: s.sources[0]?.url ?? null,
-        notes: `Found by the site search. ${s.rankingNotes}`,
+        notes: `Found by the site search${failures.length ? ` (near miss: ${failures[0]})` : ''}. ${s.rankingNotes}`,
         draft,
       })
       n++
@@ -285,7 +292,7 @@ async function main() {
   if (stage === 'discover') await discover()
   else if (stage === 'research') await researchAll()
   else if (stage === 'report') report()
-  else if (stage === 'import') await importPassing()
+  else if (stage === 'import') await importPassing(process.argv.includes('--near-misses'))
   else console.log('Usage: npx tsx scripts/find-sites.ts discover|research|report|import')
 }
 
