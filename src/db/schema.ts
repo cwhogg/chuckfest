@@ -481,6 +481,14 @@ export const settings = pgTable('settings', {
   updatedAt: updatedAt(),
 })
 
+/** Small private images (e.g. photos of the crew), kept out of the public repo; served only to members. */
+export const media = pgTable('media', {
+  name: text('name').primaryKey(),
+  contentType: text('content_type').notNull(),
+  dataBase64: text('data_base64').notNull(),
+  updatedAt: updatedAt(),
+})
+
 export const auditLog = pgTable('audit_log', {
   id: id(),
   memberId: text('member_id').references(() => members.id, { onDelete: 'set null' }),

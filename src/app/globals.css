@@ -21,23 +21,26 @@
   --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-html {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  -webkit-tap-highlight-color: transparent;
-}
+/* In a layer, so utility classes (e.g. text-card on a heading) can override these. */
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-tap-highlight-color: transparent;
+  }
 
-body {
-  font-family: var(--font-sans);
-}
+  body {
+    font-family: var(--font-sans);
+  }
 
-h1, h2, h3 {
-  font-family: var(--font-display);
-  color: var(--color-bark);
-  letter-spacing: -0.01em;
-}
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    color: var(--color-bark);
+    letter-spacing: -0.01em;
+  }
 
-:focus-visible {
-  outline: 2px solid var(--color-lake);
-  outline-offset: 2px;
+  :focus-visible {
+    outline: 2px solid var(--color-lake);
+    outline-offset: 2px;
+  }
 }
